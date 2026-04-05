@@ -11,11 +11,11 @@
 #define I_BERRY_EV_JUMP                 GEN_LATEST  // In Gen4 only, EV-lowering Berries lower a stat's EV to 100 if it is above 100.
 #define I_GRISEOUS_ORB_FORM_CHANGE      GEN_LATEST  // In Gen9+, the Griseous Orb no longer changes Giratina's form when held.
 #define I_GEM_BOOST_POWER               GEN_LATEST  // In Gen6+, the Gem boost power was reduced from 50% to 30%.
-#define I_USE_EVO_HELD_ITEMS_FROM_BAG   FALSE       // If TRUE, items such as Razor Claw or Electirizer will be usable from the bag to evolve a Pokémon just like in LA.
+#define I_USE_EVO_HELD_ITEMS_FROM_BAG   TRUE       // If TRUE, items such as Razor Claw or Electirizer will be usable from the bag to evolve a Pokémon just like in LA.
 #define I_TYPE_BOOST_POWER              GEN_LATEST  // In Gen4+, type-enhancing held items (such as Charcoal) had their multiplier increased from 1.1x to 1.2x. Sea Incense was changed from 1.05x to 1.2x.
-#define I_SELL_VALUE_FRACTION           GEN_LATEST  // In Gen9+, items sell for 1/4 of their value instead of 1/2.
+#define I_SELL_VALUE_FRACTION           GEN_8      // In Gen9+, items sell for 1/4 of their value instead of 1/2.
 #define I_PRICE                         GEN_LATEST  // Some items have varied in value across generations.
-#define I_BERRY_PRICE                   GEN_7       // Since Berries have become unplantable (Gen8+), their price has gone up.
+#define I_BERRY_PRICE                   GEN_LATEST  // Since Berries have become unplantable (Gen8+), their price has gone up.
 #define I_POWER_ITEM_BOOST              GEN_LATEST  // In Gen7+, Power Items grant 8 EVs instead of 4 EVs.
 #define I_PREMIER_BALL_BONUS            GEN_LATEST  // In LGPE onwards (Gen8+ here), you are given a Premier Ball for every 10 Poké Balls of any type and in the same purchase. Previously, it only applied to regular Poké Balls and only 1 could be obtained per purchase.
 #define I_ROTOM_CATALOG_THUNDER_SHOCK   GEN_LATEST  // In Gen9+, reverting Rotom to its base form will teach it Thunder Shock even if it knows another move.
@@ -23,13 +23,13 @@
 #define I_LAX_INCENSE_BOOST             GEN_LATEST  // In Gen4+, Lax Incense increases evasion by 10% instead of 5%.
 
 // TM config
-#define I_REUSABLE_TMS          FALSE       // In Gen5-8, TMs are reusable. Setting this to TRUE will make all vanilla TMs reusable, though they can also be cherry-picked by setting their importance to 1.
+#define I_REUSABLE_TMS          TRUE       // In Gen5-8, TMs are reusable. Setting this to TRUE will make all vanilla TMs reusable, though they can also be cherry-picked by setting their importance to 1.
 
 // Exp. Share config
 // To use this feature, replace the 0 with the flag ID you're assigning it to.
 // Eg: Replace with FLAG_UNUSED_0x264 so you can use that flag to toggle the feature.
-#define I_EXP_SHARE_FLAG        0           // If this flag is set, every Pokémon in the party will gain experience, regardless if they participated in the battle or not.
-#define I_EXP_SHARE_ITEM        GEN_5       // In Gen6+, the Exp. Share was changed from a held item to a Key item that toggles the effect described above.
+#define I_EXP_SHARE_FLAG        FLAG_UNUSED 0x264    // If this flag is set, every Pokémon in the party will gain experience, regardless if they participated in the battle or not.
+#define I_EXP_SHARE_ITEM        GEN_6               // In Gen6+, the Exp. Share was changed from a held item to a Key item that toggles the effect described above.
 
 // Repel/Lure config
 // These two settings are both independent and complementary.
