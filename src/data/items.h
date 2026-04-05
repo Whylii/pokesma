@@ -1633,8 +1633,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ABILITY_PATCH] =
     {
-        .name = ITEM_NAME("Fähigkeiten-Pflaster"),
-        .pluralName = ITEM_PLURAL_NAME("Fähigkeiten-Pflaster"),
+        .name = ITEM_NAME("Fähigk.-Pflaster"),
+        .pluralName = ITEM_PLURAL_NAME("Fähigk.-Pflaster"),
         .price = (I_PRICE >= GEN_9) ? 250000 : 20,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -14875,8 +14875,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SCROLL_OF_DARKNESS] =
     {
-        .name = ITEM_NAME("Unlicht-Schriftrolle"),
-        .pluralName = ITEM_PLURAL_NAME("Unlicht-Schriftrollen"),
+        .name = ITEM_NAME("Unlicht-Scroll"),
+        .pluralName = ITEM_PLURAL_NAME("Unlicht-Scrolls"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A peculiar scroll\n"
@@ -14894,8 +14894,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SCROLL_OF_WATERS] =
     {
-        .name = ITEM_NAME("Wasser-Schriftrolle"),
-        .pluralName = ITEM_PLURAL_NAME("Wasser-Schriftrollen"),
+        .name = ITEM_NAME("Wasser-Scroll"),
+        .pluralName = ITEM_PLURAL_NAME("Wasser-Scrolls"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A peculiar scroll\n"
@@ -14946,7 +14946,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BUG_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Käfer)"),
+        .name = ITEM_NAME("Tera-Stück Käfer"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -14959,7 +14959,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DARK_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Unlicht)"),
+        .name = ITEM_NAME("Tera-Stück Unlicht"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -14972,7 +14972,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DRAGON_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Drache)"),
+        .name = ITEM_NAME("Tera-Stück Drache"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -14985,7 +14985,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ELECTRIC_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Elektro)"),
+        .name = ITEM_NAME("Tera-Stück Elektro"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -14998,7 +14998,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FAIRY_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Fee)"),
+        .name = ITEM_NAME("Tera-Stück Fee"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -15011,7 +15011,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FIGHTING_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Kampf)"),
+        .name = ITEM_NAME("Tera-Stück Kampf"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -15024,7 +15024,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FIRE_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Feuer)"),
+        .name = ITEM_NAME("Tera-Stück Feuer"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -15037,7 +15037,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FLYING_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Flug)"),
+        .name = ITEM_NAME("Tera-Stück Flug"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -15050,7 +15050,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GHOST_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Geist)"),
+        .name = ITEM_NAME("Tera-Stück Geist"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -15063,7 +15063,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GRASS_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Pflanze)"),
+        .name = ITEM_NAME("Tera-Stück Pflanze"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -15076,7 +15076,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GROUND_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Boden)"),
+        .name = ITEM_NAME("Tera-Stück Boden"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -15089,7 +15089,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ICE_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Eis)"),
+        .name = ITEM_NAME("Tera-Stück Eis"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -15102,7 +15102,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_NORMAL_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Normal)"),
+        .name = ITEM_NAME("Tera-Stück Normal"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -15115,7 +15115,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POISON_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Gift)"),
+        .name = ITEM_NAME("Tera-Stück Gift"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -15128,7 +15128,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PSYCHIC_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Psycho)"),
+        .name = ITEM_NAME("Tera-Stück Psycho"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -15141,7 +15141,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ROCK_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Gestein)"),
+        .name = ITEM_NAME("Tera-Stück Gestein"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -15154,7 +15154,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STEEL_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Stahl)"),
+        .name = ITEM_NAME("Tera-Stück Stahl"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -15167,7 +15167,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WATER_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Tera-Stück (Wasser)"),
+        .name = ITEM_NAME("Tera-Stück Wasser"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
@@ -15517,8 +15517,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SWIFT_MOCHI] =
     {
-        .name = ITEM_NAME("Schnelligkeits-Mochi"),
-        .pluralName = ITEM_PLURAL_NAME("Swift Mochi"),
+        .name = ITEM_NAME("Swift-Mochi"),
+        .pluralName = ITEM_PLURAL_NAME("Swift-Mochi"),
         .price = 500,
         .description = sSwiftFeatherDesc,
         .pocket = POCKET_ITEMS,
@@ -15585,7 +15585,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STELLAR_TERA_SHARD] =
     {
-        .name = ITEM_NAME("Stellar-Tera-Splitter"),
+        .name = ITEM_NAME("Stellar-Tera-Stück"),
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
