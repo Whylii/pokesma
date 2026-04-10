@@ -9747,7 +9747,6 @@ bool32 AreMultiPartiesFullTeams(void)
             gSpecialVar_Result = FALSE;
             return FALSE;
         }
-
     }
     else if (B_MULTI_HALF_TEAMS
      || TRAINER_BATTLE_PARAM.opponentA == TRAINER_LINK_OPPONENT
