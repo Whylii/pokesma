@@ -1294,6 +1294,11 @@ const u8 *const gStdStrings[] =
     [STDSTRING_BATTLE_ARENA] = gText_BattleArena,
     [STDSTRING_BATTLE_PIKE] = gText_BattlePike,
     [STDSTRING_BATTLE_PYRAMID] = gText_BattlePyramid,
+    //For bag expansion
+    [STDSTRING_MEDICINE] = gText_Medicine,
+    [STDSTRING_BATTLEITEMS] = gText_BattleItems,
+    [STDSTRING_POWERUPITEMS] = gText_PowerUp,
+
     [STDSTRING_BOULDER_BADGE]    = gText_Boulderbadge,
     [STDSTRING_CASCADE_BADGE]    = gText_Cascadebadge,
     [STDSTRING_THUNDER_BADGE]    = gText_Thunderbadge,

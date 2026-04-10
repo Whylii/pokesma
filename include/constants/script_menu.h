@@ -220,9 +220,12 @@
 #define STDSTRING_VOLCANO_BADGE    36
 #define STDSTRING_EARTH_BADGE      37
 #define STDSTRING_COINS            38
+//For bag expansion
+#define STDSTRING_MEDICINE         39
+#define STDSTRING_BATTLEITEMS      40
+#define STDSTRING_POWERUPITEMS     41
 
 // Dynamic Multichoice Callbacks
-
 #define DYN_MULTICHOICE_CB_DEBUG      0
 #define DYN_MULTICHOICE_CB_SHOW_ITEM  1
 #define DYN_MULTICHOICE_CB_NONE       255
