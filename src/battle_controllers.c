@@ -54,7 +54,8 @@ static void SpriteCB_FreeOpponentSprite(struct Sprite *sprite);
 static u32 ReturnAnimIdForBattler(bool32 isPlayerSide, u32 specificBattler);
 static void LaunchKOAnimation(enum BattlerId battlerId, u16 animId, bool32 isFront);
 static void AnimateMonAfterKnockout(enum BattlerId battler);
-
+static void SetLastPartyIndexes(void);
+static void SetBattlerTrainers(void);
 
 bool32 IsAiVsAiBattle(void)
 {
@@ -169,6 +170,8 @@ void InitBattleControllers(void)
 
     InitBtlControllersInternal();
 
+    SetLastPartyIndexes();
+    SetBattlerTrainers();
     SetBattlePartyIds();
 
     if (!(gBattleTypeFlags & BATTLE_TYPE_MULTI))
@@ -3296,26 +3299,11 @@ void FreeShinyStars(void)
 
 enum BattleTrainer GetBattlerTrainer(enum BattlerId battler)
 {
-    if (gBattleTypeFlags & BATTLE_TYPE_LINK && gBattleTypeFlags & BATTLE_TYPE_MULTI)
-    {
-        switch (gBattlerBattleController[battler])
-        {
-        case BATTLE_CONTROLLER_PLAYER:
-        case BATTLE_CONTROLLER_RECORDED_PLAYER:
-            return B_TRAINER_0;
-        case BATTLE_CONTROLLER_LINK_PARTNER:
-        case BATTLE_CONTROLLER_RECORDED_PARTNER:
-            return B_TRAINER_2;
-        case BATTLE_CONTROLLER_LINK_OPPONENT:
-        case BATTLE_CONTROLLER_RECORDED_OPPONENT:
-        case BATTLE_CONTROLLER_OPPONENT:
-            return (battler & BIT_FLANK) ? B_TRAINER_3 : B_TRAINER_1;
-        default:
-            break;
-        }
-    }
-
-    return (enum BattleTrainer)(BattleSideHasTwoTrainers(battler & BIT_SIDE) ? battler : battler & BIT_SIDE);
+#if TESTING   
+    if (!gMain.inBattle)         
+        return (gBattleTestRunnerState->data.battlerTrainers >> (battler * 2)) & 0x3;
+#endif
+    return (gBattleStruct->battlerTrainers >> (battler * 2)) & 0x3;
 }
 
 enum BattleTrainer GetTrainerFromBattlePosition(enum BattlerPosition position)
@@ -3339,4 +3327,55 @@ bool32 BattlersShareParty(enum BattlerId battler1, enum BattlerId battler2)
 bool32 TrainerHasParty(enum BattleTrainer trainer)
 {
     return (trainer < B_TRAINER_2 || BattleSideHasTwoTrainers((enum BattleSide)(trainer & BIT_SIDE)));
+}
+
+static void SetLastPartyIndexes(void)
+{
+    for (enum BattlerId battler = B_BATTLER_0; battler < gBattlersCount; battler++)
+    {
+        bool32 fullTeam = TRUE;
+        if (BattleSideHasTwoTrainers(GetBattlerSide(battler)) && !AreMultiPartiesFullTeams())
+            fullTeam = FALSE;
+
+        if (fullTeam)
+            gBattleStruct->battlerFullTeam |= (1 << battler);
+    }
+}
+
+static void SetBattlerTrainers(void)
+{
+    enum BattleTrainer trainer = B_TRAINER_0;
+
+    if (gBattleTypeFlags & BATTLE_TYPE_LINK && gBattleTypeFlags & BATTLE_TYPE_MULTI)
+    {
+        for (enum BattlerId battler = B_BATTLER_0; battler < gBattlersCount; battler++)
+        {
+            if (IsControllerPlayer(battler)
+             || IsControllerRecordedPlayer(battler))
+            {
+                trainer = B_TRAINER_0;
+            }
+            else if (IsControllerLinkPartner(battler)
+             || IsControllerRecordedPartner(battler))
+            {
+                trainer = B_TRAINER_2;
+            }
+            else if (IsControllerLinkOpponent(battler)
+             || IsControllerRecordedOpponent(battler)
+             || IsControllerOpponent(battler))
+            {
+                trainer = (battler & BIT_FLANK) ? B_TRAINER_3 : B_TRAINER_1;
+            }
+
+            gBattleStruct->battlerTrainers |= (trainer << (battler * 2));
+        }
+    }
+    else
+    {
+        for (enum BattlerId battler = B_BATTLER_0; battler < gBattlersCount; battler++)
+        {
+            trainer = (enum BattleTrainer)(BattleSideHasTwoTrainers(battler & BIT_SIDE) ? battler : battler & BIT_SIDE);
+            gBattleStruct->battlerTrainers |= (trainer << (battler * 2));
+        }
+    }
 }

@@ -52,6 +52,7 @@
 #include "constants/trainers.h"
 #include "constants/weather.h"
 #include "constants/pokemon.h"
+#include "test/battle.h"
 
 static bool32 TryRemoveScreens(enum BattlerId battler);
 static bool32 IsUnnerveAbilityOnOpposingSide(enum BattlerId battler);
@@ -9725,7 +9726,30 @@ bool32 AreMultiPartiesFullTeams(void)
 {
     enum DifficultyLevel difficulty = GetCurrentDifficultyLevel();
 
-    if (B_MULTI_HALF_TEAMS
+    if (TESTING)
+    {
+        u8 *partySizes = gBattleTestRunnerState->data.partySizes;
+        bool32 fullTeam = FALSE;
+
+        if (partySizes[B_TRAINER_0] && partySizes[B_TRAINER_2]
+         && (partySizes[B_TRAINER_0] > MULTI_PARTY_SIZE || partySizes[B_TRAINER_2] > MULTI_PARTY_SIZE))
+        {
+            fullTeam = TRUE;
+        }
+        if (partySizes[B_TRAINER_1] && partySizes[B_TRAINER_3]
+         && (partySizes[B_TRAINER_1] > MULTI_PARTY_SIZE || partySizes[B_TRAINER_3] > MULTI_PARTY_SIZE))
+        {
+            fullTeam = TRUE;
+        }
+
+        if (!fullTeam)
+        {
+            gSpecialVar_Result = FALSE;
+            return FALSE;
+        }
+
+    }
+    else if (B_MULTI_HALF_TEAMS
      || TRAINER_BATTLE_PARAM.opponentA == TRAINER_LINK_OPPONENT
      || gBattleTypeFlags & BATTLE_TYPE_TOWER_LINK_MULTI
      || (gTrainers[difficulty][TRAINER_BATTLE_PARAM.opponentA].multiTeamSize == MULTI_TEAM_SIZE_HALF)
