@@ -3295,10 +3295,6 @@ void FreeShinyStars(void)
 
 enum BattleTrainer GetBattlerTrainer(enum BattlerId battler)
 {
-#if TESTING   
-    if (!gMain.inBattle)         
-        return (gBattleTestRunnerState->data.battlerTrainers >> (battler * 2)) & 0x3;
-#endif
     if (gBattleTypeFlags & BATTLE_TYPE_LINK && gBattleTypeFlags & BATTLE_TYPE_MULTI)
     {
         switch (gBattlerBattleController[battler])
