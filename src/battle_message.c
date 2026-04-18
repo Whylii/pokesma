@@ -2445,7 +2445,6 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
                 }
                 else if (gBattleTypeFlags & BATTLE_TYPE_MULTI)
                 {
-                    // Recorded link multi with various conditions
                     if (gBattleTypeFlags & BATTLE_TYPE_RECORDED)
                     {
                         if (gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK)
@@ -2507,9 +2506,9 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
             if (IsDoubleBattle() && IsValidForBattle(GetBattlerMon(BATTLE_PARTNER(battler))))
             {
                 if (gBattleTypeFlags & BATTLE_TYPE_MULTI && (gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK || gBattleTypeFlags & BATTLE_TYPE_LINK))
-                    stringPtr = BattlerIsPlayer(battler) ? sText_LinkPartnerSentOutPkmn2GoPkmn : sText_LinkPartnerSentOutPkmn1GoPkmn;
+                    stringPtr = BattlerIsPlayer(battler) ? sText_LinkPartnerSentOutPkmn2GoPkmn : sText_LinkPartnerSentOutPkmn1GoPkmn; // Player is on left : Link Partner on left
                 else if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER)
-                    stringPtr = (BattlerIsPlayer(battler) && (battler & BIT_FLANK) == B_FLANK_LEFT) ? sText_InGamePartnerSentOutZGoN : sText_InGamePartnerSentOutNGoZ;
+                    stringPtr = (BattlerIsPlayer(battler) && (battler & BIT_FLANK) == B_FLANK_LEFT) ? sText_InGamePartnerSentOutZGoN : sText_InGamePartnerSentOutNGoZ; // Player is on left : Partner on left
                 else
                     stringPtr = sText_GoTwoPkmn;
             }
@@ -2530,7 +2529,7 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
                     stringPtr = sText_TwoLinkTrainersIntroSendOutPkmn;
                 else if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS || gBattleTypeFlags & BATTLE_TYPE_TOWER_LINK_MULTI)
                     stringPtr = sText_TwoTrainersSentPkmn;
-                else if (BattlerIsLink(battler) || (BattlerIsRecorded(battler) && BattlerIsOpponent(battler)))
+                else if (BattlerIsLink(battler) || (BattlerIsRecorded(battler) && BattlerIsOpponent(battler))) // Link Opponent doubles and test opponent
                     stringPtr = sText_LinkTrainerSentOutTwoPkmn;
                 else
                     stringPtr = sText_Trainer1SentOutTwoPkmn;
@@ -2638,7 +2637,7 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
         }
         else // battler 2 and 3
         {
-            if (BattlerIsPlayer(gBattleScripting.battler))
+            if (BattlerIsPlayer(gBattleScripting.battler)) // Player
             {
                 if (*(&gBattleStruct->hpScale) == 0)
                     stringPtr = sText_GoPkmn2;
@@ -2653,7 +2652,8 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
             {
                 stringPtr = (BattlerIsLink(gBattleScripting.battler) || gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK) ? sText_LinkPartnerSentOutPkmn2 : sText_InGamePartnerSentOutPkmn2;
             }
-            else if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_LINK_OPPONENT || gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK) // Link Opponent B and test opponent
+            else if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_LINK_OPPONENT
+             || gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK) // Link Opponent B and test opponent
             {
                 stringPtr = (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS || (gBattleTypeFlags & BATTLE_TYPE_MULTI && gBattleTypeFlags & BATTLE_TYPE_LINK)) ? sText_LinkTrainer2SentOutPkmn2 : sText_LinkTrainerSentOutPkmn2;
             }
@@ -2661,7 +2661,7 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
             {
                 stringPtr = sText_Trainer2SentOutPkmn;
             }
-            else
+            else // Single trainer double Opponent A
             {
                 stringPtr = sText_Trainer1SentOutPkmn2;
             }
