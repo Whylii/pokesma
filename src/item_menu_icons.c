@@ -60,55 +60,55 @@ static const struct OamData sBagOamData =
 
 static const union AnimCmd sSpriteAnim_Bag_Closed[] =
 {
-    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(0 * 64, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Bag_Items[] =
 {
-    ANIMCMD_FRAME(64, 4),
+    ANIMCMD_FRAME(1 * 64, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Bag_Medicine[] =
 {
-    ANIMCMD_FRAME(192, 4),
+    ANIMCMD_FRAME(3 * 64, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Bag_Pokeballs[] =
 {
-    ANIMCMD_FRAME(256, 4),
+    ANIMCMD_FRAME(6 * 64, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Bag_BattleItems[] =
 {
-    ANIMCMD_FRAME(64, 4),
+    ANIMCMD_FRAME(4 * 64, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Bag_Berries[] =
 {
-    ANIMCMD_FRAME(192, 4),
+    ANIMCMD_FRAME(5 * 64, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Bag_PowerUp[] =
 {
-    ANIMCMD_FRAME(256, 4),
+    ANIMCMD_FRAME(1 * 64, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Bag_TMsHMs[] =
 {
-    ANIMCMD_FRAME(320, 4),
+    ANIMCMD_FRAME(4 * 64, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Bag_KeyItems[] =
 {
-    ANIMCMD_FRAME(128, 4),
+    ANIMCMD_FRAME(2 * 64, 4),
     ANIMCMD_END
 };
 
@@ -151,14 +151,16 @@ static const union AffineAnimCmd *const sBagAffineAnimCmds[] =
     [ANIM_BAG_SHAKE]  = sSpriteAffineAnim_BagShake
 };
 
+#define BAG_SPRITE_SIZE ((64 * 448) / 2)
+
 const struct CompressedSpriteSheet gBagMaleSpriteSheet =
 {
-    gBagMaleTiles, 0x3000, TAG_BAG_GFX
+    gBagMaleTiles, BAG_SPRITE_SIZE, TAG_BAG_GFX
 };
 
 const struct CompressedSpriteSheet gBagFemaleSpriteSheet =
 {
-    gBagFemaleTiles, 0x3000, TAG_BAG_GFX
+    gBagFemaleTiles, BAG_SPRITE_SIZE, TAG_BAG_GFX
 };
 
 const struct SpritePalette gBagPaletteTable =
