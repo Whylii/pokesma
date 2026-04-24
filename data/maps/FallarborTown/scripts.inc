@@ -52,44 +52,48 @@ FallarborTown_EventScript_MoveTutorSign::
 	end
 
 FallarborTown_Text_ShadyCharactersCozmosHome:
-	.string "Something's happening,\n"
-	.string "and I don't like it!\p"
-	.string "I've seen shady characters wandering\n"
-	.string "in and out of PROF. COZMO's home…$"
+	.string "Was ist los? Was ist los?\p"
+	.string "Ich habe eine zwielichtige Gestalt aus\n"
+	.string "dem Labor von Prof. Kosmo flitzen\l"
+	.string "sehen.$"
 
 FallarborTown_Text_RegionKnownForMeteors:
-	.string "This region's been known for meteors\n"
-	.string "since the olden days.\p"
-	.string "They say METEOR FALLS was gouged out\n"
-	.string "by a falling meteorite long ago.$"
+	.string "Diese Region ist schon seit Urzeiten\n"
+	.string "für ihre Meteoritenschauer bekannt.\p"
+	.string "Man sagt, die Meteorfälle seien durch\n"
+	.string "den Aufprall eines Meteoriten\l"
+	.string "entstanden.$"
 
 FallarborTown_Text_MyPreciousAzurill:
-	.string "See! Take a look!\n"
-	.string "This is my precious AZURILL!\p"
-	.string "It's slick and smooth and plushy, too!$"
+	.string "Schau mal! Guck doch mal!\n"
+	.string "Das ist mein süßes Azurill!\p"
+	.string "Es ist glatt, weich und plüschig!$"
 
 FallarborTown_Text_Azurill:
-	.string "AZURILL: Rooreelooo.$"
+	.string "Azurill: Rooreelooo.$"
 
 FallarborTown_Text_HaveYouChallengedFlannery:
-	.string "Have you already challenged FLANNERY,\n"
-	.string "the LEADER of LAVARIDGE GYM?\p"
-	.string "The girl's grandfather was famous.\n"
-	.string "He was one of the ELITE FOUR in the\l"
-	.string "POKéMON LEAGUE at one point.\p"
-	.string "It wouldn't surprise me to see FLANNERY\n"
-	.string "become a great TRAINER in her own\l"
-	.string "right.$"
+	.string "Hast du schon Flavia, die Leiterin\n"
+	.string "der Arena von Bad Lavastadt,\l"
+	.string "herausgefordert?\p"
+	.string "Ihr Großvater ist sehr berühmt.\n"
+	.string "Er war einer der Top Vier in der\l"
+	.string "Pokémon Liga.\p"
+	.string "Es würde mich gar nicht wundern, wenn\n"
+	.string "Flavia ebenfalls eine große Trainerin\l"
+	.string "wird.$"
 
 FallarborTown_Text_BattleTentSign:
-	.string "BATTLE TENT FALLARBOR SITE\n"
-	.string "“May the Greatest Teams Gather!”$"
+	.string "Kampfcamp Laubwechselfeld\n"
+	.string "“Mögen Sich Die Besten Teams Hier\l"
+	.string "Treffen!”$"
 
 FallarborTown_Text_TownSign:
-	.string "FALLARBOR TOWN\n"
-	.string "“A farm community with small gardens.”$"
+	.string "Laubwechselfeld\n"
+	.string "“Eine Gemeinschaft von Farmern mit\l"
+	.string "kleinen Gärten.”$"
 
 FallarborTown_Text_MoveTutorSign:
-	.string "MOVE TUTOR'S HOUSE\n"
-	.string "“New moves taught to POKéMON.”$"
+	.string "Haus des Attacken-Helfers\n"
+	.string "“Neue Attacken für deine Pokémon.”$"
 
