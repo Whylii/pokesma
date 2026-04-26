@@ -80,40 +80,40 @@ GraniteCave_StevensRoom_Movement_StevenExitSouth:
 	step_end
 
 GraniteCave_StevensRoom_Text_ImStevenLetterForMe:
-	.string "My name is STEVEN.\p"
-	.string "I'm interested in rare stones,\n"
-	.string "so I travel here and there.\p"
+	.string "Mein Name ist Troy.\p"
+	.string "Ich sammle seltene Steine, daher gehe\n"
+	.string "ich immer mal wieder auf Reisen.\p"
 	.string "Oh?\n"
-	.string "A LETTER for me?$"
+	.string "Ein Brief? Für mich?$"
 
 GraniteCave_StevensRoom_Text_ThankYouTakeThis:
-	.string "STEVEN: Okay, thank you.\p"
-	.string "You went through all this trouble to\n"
-	.string "deliver that. I need to thank you.\p"
-	.string "Let me see…\n"
-	.string "I'll give you this TM.\p"
-	.string "It contains my favorite move,\n"
-	.string "STEEL WING.$"
+	.string "Troy: Okay, danke schön.\p"
+	.string "Du hast all die Beschwerlichkeiten auf\n"
+	.string "dich genommen, um ihn mir zu bringen.\p"
+	.string "Ich muss mich bedanken. Ehrlich.\n"
+	.string "Ich werde dir diese TM geben.\p"
+	.string "Sie enthält meine Lieblingsattacke,\n"
+	.string "Stahlflügel.$"
 
 GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister:
-	.string "STEVEN: Your POKéMON appear quite\n"
-	.string "capable.\p"
-	.string "If you keep training, you could even\n"
-	.string "become the CHAMPION of the POKéMON\l"
-	.string "LEAGUE one day. That's what I think.\p"
-	.string "I know, since we've gotten to know each\n"
-	.string "other, let's register one another in\l"
-	.string "our POKéNAVS.\p"
-	.string "… … … … … …$"
+	.string "Troy: Deine Pokémon sehen recht\n"
+	.string "talentiert aus.\p"
+	.string "Wenn du fleißig trainierst, wirst du\n"
+	.string "vielleicht eines Tages der Champ der\l"
+	.string "Pokémon Liga. Das ist meine Meinung.\p"
+	.string "Und da wir uns jetzt so gut kennen\n"
+	.string "gelernt haben, sollten wir uns in\l"
+	.string "unseren Pokénavs eintragen.\p"
+	.string "… … … … …\n"
 
 GraniteCave_StevensRoom_Text_RegisteredSteven:
-	.string "Registered STEVEN\n"
-	.string "in the POKéNAV.$"
+	.string "Troy wurde im Pokénav-Verzeichnis\n"
+	.string "eingetragen.$"
 
 GraniteCave_StevensRoom_Text_IveGotToHurryAlong:
-	.string "Now, I've got to hurry along.$"
+	.string "Nun muss ich mich aber wirklich beeilen.$"
 
 GraniteCave_StevensRoom_Text_OhBagIsFull:
-	.string "Oh, your BAG is full…\n"
-	.string "That's too bad, then.$"
+	.string "Oh, dein Beutel ist voll.\n"
+	.string "Das ist aber wirklich schade.$"
 
