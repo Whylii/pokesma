@@ -40,5 +40,3 @@ AbandonedShip_CaptainsOffice_Text_ThisIsSSCactus:
 	.string "Dieses Schiff heißt MS Cactus. Es\n"
 	.string "scheint aus einer früheren Epoche zu\l"
 	.string "stammen.$"
-	.endif
-

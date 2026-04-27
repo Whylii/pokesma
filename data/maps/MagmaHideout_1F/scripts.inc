@@ -28,7 +28,7 @@ MagmaHideout_1F_Text_Grunt1Defeat:
 	.string "Ich komme auch immer zu spät zum\n"
 	.string "Training!\p"
 	.string "Ich gebe es nur ungern zu, aber ich gebe\n"
-	.string "ein jämmerliches Mitglied ab…$""
+	.string "ein jämmerliches Mitglied ab…$"
 
 MagmaHideout_1F_Text_Grunt1PostBattle:
 	.string "Von nun an werde ich mich in allen\n"
