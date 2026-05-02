@@ -1,6 +1,24 @@
-gText_WouldYouLikeToRestYourPkmn::
-	.string "Hallo, Willkommen im\n"
-	.string "Pokémon-Center.\p"
+gText_NurseIntro_Morning::
+	.string "Guten Morgen!\n"
+	.string "Willkommen im Pokémon Center.\p"
+	.string "Möchtest du deine Pokémon\n"
+	.string "heilen lassen?$"
+
+gText_NurseIntro_Day::
+	.string "Guten Tag!\n"
+	.string "Willkommen im Pokémon Center.\p"
+	.string "Möchtest du deine Pokémon\n"
+	.string "heilen lassen?$"
+
+gText_NurseIntro_Evening::
+	.string "Guten Abend!\n"
+	.string "Willkommen im Pokémon Center.\p"
+	.string "Möchtest du deine Pokémon\n"
+	.string "heilen lassen?$"
+
+gText_NurseIntro_Night::
+	.string "Guten Abend!\n"
+	.string "Willkommen im Pokémon Center.\p"
 	.string "Möchtest du deine Pokémon\n"
 	.string "heilen lassen?$"
 
@@ -21,19 +39,38 @@ gText_WelcomeCutShort::
 	.string "heilen lassen?$"
 
 gText_NoticesGoldCard::
-	.string "Th-that card…\n"
-	.string "Could it be… The GOLD CARD?!\p"
-	.string "Oh, the gold color is brilliant!\n"
-	.string "The four stars seem to sparkle!\p"
-	.string "I've seen several TRAINERS with\n"
-	.string "a SILVER CARD before, but, {PLAYER},\l"
-	.string "you're the first TRAINER I've ever\l"
-	.string "seen with a GOLD CARD!\p"
-	.string "Okay, {PLAYER}, please allow me\n"
-	.string "the honor of resting your POKéMON!$"
+	.string "Hallo, Trainer!\n"
+	.string "Willkommen im Pokémon-Center!\p"
+	.string "Wir heilen deine Pokémon und machen\n"
+	.string "sie wieder fit.\p"
+	.string "Sollen wir deine... D-dein Trainerpass!\n"
+	.string "Diese intensive Farbe! Dieses Glitzern!\l"
+	.string "Ich habe ja schon einige Trainer\n"
+	.string "mit einem Silberpass getroffen,\l"
+	.string "aber du stellst sie mit deinem Pass in\n"
+	.string "dieser Farbe alle in den Schatten.\p"
+	.string "{PLAYER}, erweist du mir die Ehre,\n"
+	.string "dein Pokémon-Team heilen zu dürfen?$"
 
-gText_YouWantTheUsual::
-	.string "Hallo! Alles wie immer, {PLAYER}?$"
+gText_YouWantTheUsual_Morning::
+	.string "Einen wunderschönen\n"
+	.string "guten Morgen, {PLAYER}!\p"
+	.string "Alles wie immer?$"
+
+gText_YouWantTheUsual_Day::
+	.string "Einen wunderschönen\n"
+	.string "guten Tag, {PLAYER}!\p"
+	.string "Alles wie immer?$"
+
+gText_YouWantTheUsual_Evening::
+	.string "Einen wunderschönen\n"
+	.string "guten Abend, {PLAYER}!\p"
+	.string "Alles wie immer?$"
+
+gText_YouWantTheUsual_Night::
+	.string "Eine wunderschöne, gute\n"
+	.string "Nacht, nicht wahr {PLAYER}?\p"
+	.string "Alles wie immer?$"
 
 gText_IllTakeYourPkmn2::
 	.string "Okay, ich nehme deine Pokémon\n"

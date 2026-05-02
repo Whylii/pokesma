@@ -1259,7 +1259,7 @@ static void PokeballGlowEffect_PlaceBalls(struct Sprite *sprite)
     u8 spriteId;
     if (sprite->sTimer == 0 || (--sprite->sTimer) == 0)
     {
-        sprite->sTimer = 25;
+        sprite->sTimer = 15;
         spriteId = CreateSpriteAtEnd(&sSpriteTemplate_PokeballGlow, sPokeballCoordOffsets[sprite->sCounter].x + sprite->x2, sPokeballCoordOffsets[sprite->sCounter].y + sprite->y2, 0);
         gSprites[spriteId].oam.priority = 2;
         gSprites[spriteId].sEffectSpriteId = sprite->sSpriteId;
@@ -1269,7 +1269,7 @@ static void PokeballGlowEffect_PlaceBalls(struct Sprite *sprite)
     }
     if (sprite->sNumMons == 0)
     {
-        sprite->sTimer = 32;
+        sprite->sTimer = 20;
         sprite->sState++;
     }
 }
@@ -1279,7 +1279,7 @@ static void PokeballGlowEffect_TryPlaySe(struct Sprite *sprite)
     if ((--sprite->sTimer) == 0)
     {
         sprite->sState++;
-        sprite->sTimer = 8;
+        sprite->sTimer = 5;
         sprite->sCounter = 0;
         sprite->data[3] = 0;
         if (sprite->sPlayHealSe)
@@ -1294,7 +1294,7 @@ static void PokeballGlowEffect_Flash1(struct Sprite *sprite)
     u8 phase;
     if ((--sprite->sTimer) == 0)
     {
-        sprite->sTimer = 8;
+        sprite->sTimer = 5;
         sprite->sCounter++;
         sprite->sCounter &= 3;
 
@@ -1313,7 +1313,7 @@ static void PokeballGlowEffect_Flash1(struct Sprite *sprite)
     if (sprite->data[3] > 2)
     {
         sprite->sState++;
-        sprite->sTimer = 8;
+        sprite->sTimer = 5;
         sprite->sCounter = 0;
     }
 }
@@ -1323,13 +1323,13 @@ static void PokeballGlowEffect_Flash2(struct Sprite *sprite)
     u8 phase;
     if ((--sprite->sTimer) == 0)
     {
-        sprite->sTimer = 8;
+        sprite->sTimer = 5;
         sprite->sCounter++;
         sprite->sCounter &= 3;
         if (sprite->sCounter == 3)
         {
             sprite->sState++;
-            sprite->sTimer = 30;
+            sprite->sTimer = 20;
         }
     }
     phase = sprite->sCounter;
@@ -1356,6 +1356,13 @@ static void PokeballGlowEffect_WaitForSound(struct Sprite *sprite)
     if (sprite->sPlayHealSe == FALSE || IsFanfareTaskInactive())
     {
         sprite->sState++;
+    }
+    else
+    {
+        if (sprite->data[3]++ > 30)
+        {
+            sprite->sState++;
+        }
     }
 }
 
@@ -1398,6 +1405,11 @@ static void SpriteCB_PokecenterMonitor(struct Sprite *sprite)
         sprite->data[0] = 0;
         sprite->invisible = FALSE;
         StartSpriteAnim(sprite, 1);
+    }
+    if (!sprite->animEnded)
+    {
+        if (sprite->animDelayCounter > 0)
+            sprite->animDelayCounter -= 2;
     }
     if (sprite->animEnded)
     {
