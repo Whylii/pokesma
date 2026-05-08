@@ -1,7 +1,7 @@
 gText_Birch_Welcome::
 	.string "Sorry, dass du warten musstest.\p"
 	.string "Willkommen in der Welt der Pokémon!\p"
-	.string "Mein Name ist BIRK.\p"
+	.string "Mein Name ist Birk.\p"
 	.string "Aber jeder nennt mich nur\n"
 	.string "Professor Pokémon.\p"
 	.string "$"
