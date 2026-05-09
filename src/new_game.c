@@ -48,6 +48,7 @@
 #include "union_room_chat.h"
 #include "constants/map_groups.h"
 #include "constants/items.h"
+#include "tx_registered_items_menu.h"
 #include "difficulty.h"
 #include "follower_npc.h"
 
@@ -199,7 +200,7 @@ void NewGameInitData(void)
     ZeroPlayerPartyMons();
     ResetPokemonStorageSystem();
     DeactivateAllRoamers();
-    gSaveBlock1Ptr->registeredItem = ITEM_NONE;
+    gSaveBlock1Ptr->registeredItemSelect = ITEM_NONE;
     ClearBag();
     NewGameInitPCItems();
     ClearPokeblocks();
