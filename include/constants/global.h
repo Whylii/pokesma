@@ -109,6 +109,9 @@ enum Language
 #define PYRAMID_BAG_ITEMS_COUNT 10
 #define ROAMER_COUNT 1 // Number of maximum concurrent active roamers
 
+//tx_registered_items_menu
+#define REGISTERED_ITEMS_MAX 10
+
 // Bag constants
 #define BAG_ITEMS_COUNT 50
 #define BAG_KEYITEMS_COUNT 30
