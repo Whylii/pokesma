@@ -13867,7 +13867,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_OLD_ROD] =
     {
-        .name = ITEM_NAME("Angel"),
+        .name = ITEM_NAME("Kombi-Angel"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Use by any body of\n"
@@ -13876,10 +13876,10 @@ const struct ItemInfo gItemsInfo[] =
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
-        .fieldUseFunc = ItemUseOutOfBattle_Rod,
+        .fieldUseFunc = ItemUseOutOfBattle_VariableRod,
         .secondaryId = OLD_ROD,
-        .iconPic = gItemIcon_OldRod,
-        .iconPalette = gItemIconPalette_OldRod,
+        .iconPic = gItemIcon_SuperRod,
+        .iconPalette = gItemIconPalette_SuperRod,
     },
 
     [ITEM_GOOD_ROD] =
