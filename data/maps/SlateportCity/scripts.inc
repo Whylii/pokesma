@@ -1089,6 +1089,7 @@ SlateportCity_Text_SinkOldBoats:
 	.string "Sie werden im Meer versenkt und so\n"
 	.string "zu Lebensraum für Pokémon.$"
 
+SlateportCity_Text_BuyTooMuch:
 	.string "Immer wenn ich hierher komme, vergesse\n"
 	.string "ich mich und kaufe wie bescheuert ein.$"
 
