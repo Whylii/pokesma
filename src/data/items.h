@@ -15829,9 +15829,10 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
 
+// QOL Field Moves
     [ITEM_CUT_TOOL] =
     {
-        .name = ITEM_NAME("Cut Item"),
+        .name = ITEM_NAME("Axt"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A handy tool that\n"
@@ -15841,8 +15842,8 @@ const struct ItemInfo gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Cut,
-        .iconPic = gItemIcon_QuestionMark,
-        .iconPalette = gItemIconPalette_QuestionMark,
+        .iconPic = gItemIcon_Axe,
+        .iconPalette = gItemIconPalette_Axe,
     },
 
     [ITEM_FLY_TOOL] =
@@ -15863,7 +15864,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SURF_TOOL] =
     {
-        .name = ITEM_NAME("Surf Item"),
+        .name = ITEM_NAME("Surfboard"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A device that lets\n"
@@ -15873,13 +15874,13 @@ const struct ItemInfo gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Surf,
-        .iconPic = gItemIcon_QuestionMark,
-        .iconPalette = gItemIconPalette_QuestionMark,
+        .iconPic = gItemIcon_Surfboard,
+        .iconPalette = gItemIconPalette_Surfboard,
     },
 
     [ITEM_STRENGTH_TOOL] =
     {
-        .name = ITEM_NAME("Strength Item"),
+        .name = ITEM_NAME("Stärke-Handschuh"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Grants the power\n"
@@ -15889,13 +15890,13 @@ const struct ItemInfo gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Strength,
-        .iconPic = gItemIcon_QuestionMark,
-        .iconPalette = gItemIconPalette_QuestionMark,
+        .iconPic = gItemIcon_PowerGlove,
+        .iconPalette = gItemIconPalette_PowerGlove,
     },
 
     [ITEM_FLASH_TOOL] =
     {
-        .name = ITEM_NAME("Flash Item"),
+        .name = ITEM_NAME("Laterne"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A bright light\n"
@@ -15905,13 +15906,13 @@ const struct ItemInfo gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Flash,
-        .iconPic = gItemIcon_QuestionMark,
-        .iconPalette = gItemIconPalette_QuestionMark,
+        .iconPic = gItemIcon_Lantern,
+        .iconPalette = gItemIconPalette_Lantern,
     },
 
     [ITEM_ROCK_SMASH_TOOL] =
     {
-        .name = ITEM_NAME("Rock Smash Item"),
+        .name = ITEM_NAME("Spitzhacke"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A sturdy tool for\n"
@@ -15921,8 +15922,8 @@ const struct ItemInfo gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_RockSmash,
-        .iconPic = gItemIcon_QuestionMark,
-        .iconPalette = gItemIconPalette_QuestionMark,
+        .iconPic = gItemIcon_Pickaxe,
+        .iconPalette = gItemIconPalette_Pickaxe,
     },
 
     [ITEM_WATERFALL_TOOL] =
@@ -15943,7 +15944,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DIVE_TOOL] =
     {
-        .name = ITEM_NAME("Dive Item"),
+        .name = ITEM_NAME("Tauchausrüstung"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A diving apparatus\n"
@@ -15953,8 +15954,8 @@ const struct ItemInfo gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Dive,
-        .iconPic = gItemIcon_QuestionMark,
-        .iconPalette = gItemIconPalette_QuestionMark,
+        .iconPic = gItemIcon_ScubaGear,
+        .iconPalette = gItemIconPalette_ScubaGear,
     },
 };
 
