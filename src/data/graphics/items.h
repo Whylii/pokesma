@@ -1758,26 +1758,6 @@ const u16 gItemIconPalette_SteelTMHM[] = INCGFX_U16("graphics/items/icon_palette
 
 const u16 gItemIconPalette_FairyTMHM[] = INCGFX_U16("graphics/items/icon_palettes/fairy_tm_hm.pal", ".gbapal");
 
-// Modern QOL Field Moves
-const u32 gItemIcon_Axe[] = INCGFX_U32("graphics/items/icons/axe.png", ".4bpp.smol");
-const u16 gItemIconPalette_Axe[] = INCGFX_U16("graphics/items/icon_palettes/axe.pal", ".gbapal");
-
-const u32 gItemIcon_Surfboard[] = INCGFX_U32("graphics/items/icons/surfboard.png", ".4bpp.smol");
-const u16 gItemIconPalette_Surfboard[] = INCGFX_U16("graphics/items/icon_palettes/surfboard.pal", ".gbapal");
-
-const u32 gItemIcon_PowerGlove[] = INCGFX_U32("graphics/items/icons/power_glove.png", ".4bpp.smol");
-const u16 gItemIconPalette_PowerGlove[] = INCGFX_U16("graphics/items/icon_palettes/power_glove.pal", ".gbapal");
-
-const u32 gItemIcon_Lantern[] = INCGFX_U32("graphics/items/icons/lantern.png", ".4bpp.smol");
-const u16 gItemIconPalette_Lantern[] = INCGFX_U16("graphics/items/icon_palettes/lantern.pal", ".gbapal");
-
-const u32 gItemIcon_Pickaxe[] = INCGFX_U32("graphics/items/icons/pickaxe.png", ".4bpp.smol");
-const u16 gItemIconPalette_Pickaxe[] = INCGFX_U16("graphics/items/icon_palettes/pickaxe.pal", ".gbapal");
-
-const u32 gItemIcon_ScubaGear[] = INCGFX_U32("graphics/items/icons/scuba_gear.png", ".4bpp.smol");
-const u16 gItemIconPalette_ScubaGear[] = INCGFX_U16("graphics/items/icon_palettes/scuba_gear.pal", ".gbapal");
-
-
 // Charms
 
 const u32 gItemIcon_OvalCharm[] = INCGFX_U32("graphics/items/icons/oval_charm.png", ".4bpp.smol");

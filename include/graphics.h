@@ -1526,19 +1526,6 @@ extern const u16 gItemIconPalette_DragonTMHM[];
 extern const u16 gItemIconPalette_DarkTMHM[];
 extern const u16 gItemIconPalette_SteelTMHM[];
 extern const u16 gItemIconPalette_FairyTMHM[];
-// Modern QOL Field Moves
-extern const u32 gItemIcon_Axe[];
-extern const u16 gItemIconPalette_Axe[];
-extern const u32 gItemIcon_Surfboard[];
-extern const u16 gItemIconPalette_Surfboard[];
-extern const u32 gItemIcon_PowerGlove[];
-extern const u16 gItemIconPalette_PowerGlove[];
-extern const u32 gItemIcon_Lantern[];
-extern const u16 gItemIconPalette_Lantern[];
-extern const u32 gItemIcon_Pickaxe[];
-extern const u16 gItemIconPalette_Pickaxe[];
-extern const u32 gItemIcon_ScubaGear[];
-extern const u16 gItemIconPalette_ScubaGear[];
 // Charms
 extern const u32 gItemIcon_OvalCharm[];
 extern const u16 gItemIconPalette_OvalCharm[];
