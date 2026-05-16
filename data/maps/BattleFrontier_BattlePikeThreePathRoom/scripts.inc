@@ -262,107 +262,106 @@ BattleFrontier_BattlePikeThreePathRoom_Movement_HintGiverReturnToPos:
 	step_end
 
 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom1:
-	.string "Du befindest dich im\n"
-	.string "ersten Raum…$"
+	.string "You are currently in\n"
+	.string "the 1st room…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom3:
-	.string "Du befindest dich im\n"
-	.string "dritten Raum…$"
+	.string "You are currently in\n"
+	.string "the 3rd room…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom5:
-	.string "Du befindest dich im\n"
-	.string "fünften Raum…$"
+	.string "You are currently in\n"
+	.string "the 5th room…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom7:
-	.string "Du befindest dich im\n"
-	.string "siebten Raum…$"
+	.string "You are currently in\n"
+	.string "the 7th room…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom9:
-	.string "Du befindest dich im\n"
-	.string "neunten Raum…$"
+	.string "You are currently in\n"
+	.string "the 9th room…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom11:
-	.string "Du befindest dich im\n"
-	.string "elften Raum…$"
+	.string "You are currently in\n"
+	.string "the 11th room…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom13:
-	.string "Du befindest dich im\n"
-	.string "dreizehnten Raum…$"
+	.string "You are currently in\n"
+	.string "the 13th room…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_ContinueWithChallenge:
-	.string "Möchtest du die Herausforderung\n"
-	.string "fortsetzen?$"
+	.string "Will you continue with\n"
+	.string "your challenge?$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_SaveChallengeAndQuit:
-	.string "Möchtest du das Spiel speichern und\n"
-	.string "beenden?$"
+	.string "Would you like to save your challenge\n"
+	.string "and quit the game for now?$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_RetireFromChallenge:
-	.string "Möchtest du die Kampfbahn-\n"
-	.string "Herausforderung abbrechen?$"
+	.string "Do you wish to retire from your\n"
+	.string "Battle Choice challenge?$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_AwaitingReturnSaveBeforeResume:
-	.string "Wir haben dich schon erwartet…\p"
-	.string "Bevor du die Herausforderung\n"
-	.string "fortsetzt, speicher ich dein Spiel…$"
+	.string "We've been awaiting your return…\p"
+	.string "Before resuming your Battle Choice\n"
+	.string "challenge, let me save the game…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_PleaseEnjoyChallenge:
-	.string "Wir hoffen, du genießt die Kampf-\n"
-	.string "bahn-Herausforderung…$"
+	.string "Please do enjoy your Battle Choice\n"
+	.string "challenge…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_SavingYourData:
-	.string "Ich speichere nun deine Daten…\n"
-	.string "Einen Moment bitte…$"
+	.string "I am saving your data…\n"
+	.string "A little time, please…$"
 
 BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack:
-	.string "Der Weg ist versperrt!\n"
-	.string "Und es gibt kein Zurück…$"
+	.string "The path is blocked!\n"
+	.string "And there is no turning back…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_FindingItDifficultToChoose:
-	.string "Ich bitte um Entschuldigung, aber\n"
-	.string "Es scheint, du hast Schwierigkeiten,\n"
-	.string "dich für einen Weg zu entscheiden?$"
+	.string "I beg your pardon, but…\p"
+	.string "Are you perhaps finding it difficult\n"
+	.string "to choose your path?$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_ApologizeForImpertinence:
-	.string "Ich verstehe…\p"
-	.string "Das war etwas vorschnell von mir.\n"
-	.string "Entschuldigung…$"
+	.string "I see…\n"
+	.string "I apologize for my impertinence…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutRightPath:
-	.string "Mh, mal sehen… Irgendetwas war\n"
-	.string "mit dem Weg dort rechts…$"
+	.string "Ah, let me see… There is something\n"
+	.string "about the path on the right…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutCenterPath:
-	.string "Mh, mal sehen… Irgendetwas war\n"
-	.string "mit dem mittleren Weg…$"
+	.string "Ah, let me see… There is something\n"
+	.string "about the path in the center…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutLeftPath:
-	.string "Mh, mal sehen… Irgendetwas war\n"
-	.string "mit dem Weg dort links…$"
+	.string "Ah, let me see… There is something\n"
+	.string "about the path on the left…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_AromaOfPokemon:
-	.string "Der typische Duft von Pokémon scheint\n"
-	.string "dort vorhanden zu sein…$"
+	.string "It seems to have the distinct aroma\n"
+	.string "of POKéMON wafting around it…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_PresenceOfPeople:
-	.string "Ist das ein… Trainer? Ich\n"
-	.string "spüre die Anwesenheit von Menschen…$"
+	.string "Is it… A TRAINER?\n"
+	.string "I sense the presence of people…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_HeardWhispering:
-	.string "Ich meine, etwas gehört zu haben… Und\n"
-	.string "sei es nur ein Flüstern gewesen.$"
+	.string "I seem to have heard something…\n"
+	.string "It may have been whispering…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_WaveOfNostaliga:
-	.string "Ich spüre einen Hauch von Nostalgie\n"
-	.string "aus dieser Richtung kommen…$"
+	.string "For some odd reason, I felt a wave\n"
+	.string "of nostalgia coming from it…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_TerrifyingEvent:
-	.string "Es tut mir sehr Leid…\p"
-	.string "Ein schreckliches, ja, fürchterliches\n"
-	.string "Erlebnis steht dir bevor…\p"
-	.string "Ich bitte dich: Sei auf das Schlimmste\n"
-	.string "gefasst…$"
+	.string "I am sorry to say…\p"
+	.string "A terrifying event, yes, a horrible one,\n"
+	.string "is about to befall you…\p"
+	.string "I urge you to pay the utmost care\n"
+	.string "and prepare for the worst…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_DreadfulPresence:
-	.string "Jeder Weg strahlt etwas Bedrohliches\n"
-	.string "aus…$"
+	.string "From every path I sense a dreadful\n"
+	.string "presence…$"

@@ -118,7 +118,6 @@ VerdanturfTown_Text_TownSign:
 VerdanturfTown_Text_WandasHouse:
 	.string "Heikes Haus$"
 
-VerdanturfTown_Text_BattleTentSign:
 	.string "Kampfcamp Wiesenflur\n"
 	.string "“Wo Kämpfe Eine Augenweide Sind”$"
 
