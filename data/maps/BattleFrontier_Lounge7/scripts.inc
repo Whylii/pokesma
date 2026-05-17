@@ -496,3 +496,4 @@ BattleFrontier_Lounge7_Text_FirePunchDesc::
 	.string "Schlag, der dem\n"
 	.string "Gegner evtl. Ver-\n"
 	.string "brennung zufügt.$"
+
