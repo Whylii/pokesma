@@ -42,14 +42,14 @@ BattleFrontier_Lounge5_EventScript_LittleBoy::
 	end
 
 BattleFrontier_Lounge5_Text_NatureGirlGreeting::
-	.string "Ehehe!\n"
-	.string "I can tell what POKéMON are thinking!\p"
-	.string "Please!\n"
-	.string "Can I see your POKéMON?$"
+	.string "Hihihi! Ich kann die Gedanken\n"
+	.string "von Pokémon lesen!\p"
+	.string "Bitte! Darf ich deine Pokémon mal\n"
+	.string "sehen? Bitte, bitte!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlNoneShown::
-	.string "Boo!\n"
-	.string "Cheapie!$"
+	.string "Booh!\n"
+	.string "Fiesling!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow::
 	.string "Hmhm…\p"
@@ -70,10 +70,10 @@ BattleFrontier_Lounge5_Text_NatureGirlAttackHighSupportLow::
 	.string "it will turn sneaky!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlDefenseHighAttackLow::
-	.string "Hmhm…\p"
-	.string "This one says it looks after itself!\n"
-	.string "But if it gets enough ouchies,\l"
-	.string "it will hit back!$"
+	.string "Hmm…\p"
+	.string "Dieses hier sagt, es liebt Kämpfe!\n"
+	.string "Es wird sogar kämpfen, wenn es\l"
+	.string "ganz viele Autschies hat!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlDefenseHighDefenseLow::
 	.string "Hmhm…\p"
@@ -106,20 +106,20 @@ BattleFrontier_Lounge5_Text_NatureGirlSupportHighSupportLow::
 	.string "if it has a lot of ouchies!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlEgg::
-	.string "That's silly! An EGG is asleep!\n"
-	.string "I can't talk to it!$"
+	.string "Du bist komisch! Das ist ein EI. Das\n"
+	.string "schläft doch! Wie soll ich damit reden?!$"
 
 BattleFrontier_Lounge5_Text_LadyClaimsSheUnderstandsPokemon::
-	.string "How charming!\n"
-	.string "That little lady claims she can\l"
-	.string "understand POKéMON!$"
+	.string "Wie charmant!\n"
+	.string "Diese kleine Dame hier behauptet, sie\l"
+	.string "könne die Pokémon verstehen!$"
 
 BattleFrontier_Lounge5_Text_GirlSayingSomethingProfound::
-	.string "I have this feeling that the little girl\n"
-	.string "is saying something profound.$"
+	.string "Ich habe das Gefühl, dies kleine\n"
+	.string "Mädchen sagt profunde Dinge!$"
 
 BattleFrontier_Lounge5_Text_GirlPlaysAtRedHouseALot::
-	.string "I know something!\p"
-	.string "That little girl plays at the red house\n"
-	.string "a lot!$"
+	.string "Ich weiß was! Ich weiß was!\p"
+	.string "Das kleine Mädchen spielt ganz oft\n"
+	.string "im roten Haus!$"
 
