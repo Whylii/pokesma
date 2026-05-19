@@ -1222,3 +1222,4 @@ const u8 gText_Volcanobadge[] = _("Vulkanorden");
 const u8 gText_Earthbadge[] = _("Erdorden");
 const u8 gText_OakImportantToGetToKnowPokemonThroughly[] = _("Eich: Es ist wichtig,\ndeine Pokémon zu kennen.\p");
 const u8 gText_OakThisIsListOfPokemon[] = _("This is a list of your Pokémon,\n{PLAYER}.\pOpen this to check the skills\nand moves of your Pokémon.\pYou also choose Pokémon here if\nyou want to use an item on one.{PAUSE_UNTIL_PRESS}");
+const u8 gText_HoursMinutes[] = _("Uhr");
