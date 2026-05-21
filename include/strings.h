@@ -193,6 +193,17 @@ extern const u8 gText_SafariBallStock[];
 extern const u8 gText_MenuSafariStats[];
 extern const u8 gText_BattlePyramidFloor[];
 
+extern const u8 gText_MenuPal[];
+extern const u8 gText_MenuPalColor[];
+extern const u8 gText_MenuPalNumber[];
+
+extern const u8 gText_SmallDot[];
+extern const u8 gText_LargeDot[];
+extern const u8 gText_PageNav[];
+
+extern const u8 gText_AM[];
+extern const u8 gText_PM[];
+
 extern const u8 gText_MenuOptionPokedex[];
 extern const u8 gText_MenuOptionPokemon[];
 extern const u8 gText_MenuOptionBag[];

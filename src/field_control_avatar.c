@@ -22,6 +22,7 @@
 #include "follower_npc.h"
 #include "item_menu.h"
 #include "link.h"
+#include "map_name_popup.h"
 #include "match_call.h"
 #include "metatile_behavior.h"
 #include "overworld.h"
@@ -158,6 +159,8 @@ void FieldGetPlayerInput(struct FieldInput *input, u16 newKeys, u16 heldKeys)
     }
 }
 
+#include "heat_start_menu.h"
+
 int ProcessPlayerFieldInput(struct FieldInput *input)
 {
     struct MapPosition position;
@@ -226,7 +229,8 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
     {
         FlagSet(FLAG_OPENED_START_MENU);
         PlaySE(SE_WIN_OPEN);
-        ShowStartMenu();
+        HideMapNamePopUpWindow();   // Fix Map name popup
+        HeatStartMenu_Init();
         return TRUE;
     }
 
