@@ -581,12 +581,12 @@ static void CreateStartMenuTask(TaskFunc followupFunc)
     SetTaskFuncWithFollowupFunc(taskId, StartMenuTask, followupFunc);
 }
 
-// vol start menu
-#include "heat_start_menu.h"
-
 static bool8 FieldCB_ReturnToFieldStartMenu(void)
 {
-    HeatStartMenu_Init();
+    if (InitStartMenuStep() == FALSE)
+    {
+        return FALSE;
+    }
 
     ReturnToFieldOpenStartMenu();
     return TRUE;

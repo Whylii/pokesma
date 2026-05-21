@@ -238,9 +238,6 @@ extern const u8 gText_Birch_AreYouReady[];
 extern const u8 gText_BirchInTrouble[];
 extern const u8 gText_ConfirmStarterChoice[];
 
-// vol start menu
-extern const u8 gText_HoursMinutes[];
-
 // mystery event menu text
 extern const u8 gText_EventSafelyLoaded[];
 extern const u8 gText_LoadErrorEndingSession[];
