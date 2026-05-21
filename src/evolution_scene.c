@@ -3,7 +3,6 @@
 #include "battle.h"
 #include "battle_message.h"
 #include "bg.h"
-#include "bw_summary_screen.h"
 #include "data.h"
 #include "decompress.h"
 #include "evolution_scene.h"
@@ -979,13 +978,6 @@ static void Task_EvolutionScene(u8 taskId)
             if (!gPaletteFade.active)
             {
                 FreeAllWindowBuffers();
-                if (BW_SUMMARY_SCREEN)
-                {
-                    ShowSelectMovePokemonSummaryScreen_BW(gPlayerParty, gTasks[taskId].tPartyId,
-                                CB2_EvolutionSceneLoadGraphics,
-                                gMoveToLearn);
-                }
-                else
                 ShowSelectMovePokemonSummaryScreen(gPlayerParty, gTasks[taskId].tPartyId,
                             CB2_EvolutionSceneLoadGraphics,
                             gMoveToLearn);
@@ -1377,15 +1369,6 @@ static void Task_TradeEvolutionScene(u8 taskId)
                 if (gTasks[taskId].tPartyId == PC_MON_CHOSEN)
                 {
                     ShowSelectMovePokemonSummaryScreen(
-                        if (BW_SUMMARY_SCREEN)
-                {
-                    ShowSelectMovePokemonSummaryScreen_BW(
-                            gEnemyParty, 
-                            TRADEMON_FROM_PC,
-                            CB2_TradeEvolutionSceneLoadGraphics,
-                            gMoveToLearn);
-                }
-                else
                                 gEnemyParty, 
                                 TRADEMON_FROM_PC,
                                 CB2_TradeEvolutionSceneLoadGraphics,
@@ -1395,15 +1378,6 @@ static void Task_TradeEvolutionScene(u8 taskId)
                 else
                 {
                     ShowSelectMovePokemonSummaryScreen(
-                        if (BW_SUMMARY_SCREEN)
-                {
-                    ShowSelectMovePokemonSummaryScreen_BW(
-                            gPlayerParty, 
-                            gTasks[taskId].tPartyId,
-                            CB2_TradeEvolutionSceneLoadGraphics,
-                            gMoveToLearn);
-                }
-                else
                                 gPlayerParty, 
                                 gTasks[taskId].tPartyId,
                                 CB2_TradeEvolutionSceneLoadGraphics,
