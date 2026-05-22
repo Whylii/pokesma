@@ -15347,7 +15347,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_UNREMARKABLE_TEACUP] =
     {
-        .name = ITEM_NAME("Unauffällige Tasse"),
+        .name = ITEM_NAME("Teetasse"),
         .price = 1600,
         .description = COMPOUND_STRING(
             "A cracked teacup\n"
