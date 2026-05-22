@@ -41,7 +41,6 @@ enum
 };
 
 // Page 2
-
 enum
 {
     MENUITEM_MENUPAL,
@@ -96,25 +95,41 @@ static void DrawBgWindowFrames(void);
 EWRAM_DATA static bool8 sArrowPressed = FALSE;
 EWRAM_DATA static u8 sCurrPage = 0;
 
-static const u16 sOptionMenuText_Pal[] = INCBIN_U16("graphics/interface/option_menu_text.gbapal");
+static const u8 gText_Option[]             = _("OPTION");
+static const u8 gText_TextSpeedSlow[]      = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}SLOW");
+static const u8 gText_TextSpeedMid[]       = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}MID");
+static const u8 gText_TextSpeedFast[]      = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}FAST");
+static const u8 gText_BattleSceneOn[]      = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}ON");
+static const u8 gText_BattleSceneOff[]     = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}OFF");
+static const u8 gText_BattleStyleShift[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}SHIFT");
+static const u8 gText_BattleStyleSet[]     = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}SET");
+static const u8 gText_SoundMono[]          = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}MONO");
+static const u8 gText_SoundStereo[]        = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}STEREO");
+static const u8 gText_FrameType[]          = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}TYPE");
+static const u8 gText_FrameTypeNumber[]    = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}");
+static const u8 gText_ButtonTypeNormal[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}NORMAL");
+static const u8 gText_ButtonTypeLR[]       = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}LR");
+static const u8 gText_ButtonTypeLEqualsA[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}L=A");
+
+static const u16 sOptionMenuText_Pal[] = INCGFX_U16("graphics/interface/option_menu_text.pal", ".gbapal");
 // note: this is only used in the Japanese release
-static const u8 sEqualSignGfx[] = INCBIN_U8("graphics/interface/option_menu_equals_sign.4bpp");
+static const u8 sEqualSignGfx[] = INCGFX_U8("graphics/interface/option_menu_equals_sign.png", ".4bpp");
 
 static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
 {
-    [MENUITEM_TEXTSPEED]   = gText_TextSpeed,
-    [MENUITEM_BATTLESCENE] = gText_BattleScene,
-    [MENUITEM_BATTLESTYLE] = gText_BattleStyle,
-    [MENUITEM_SOUND]       = gText_Sound,
-    [MENUITEM_BUTTONMODE]  = gText_ButtonMode,
-    [MENUITEM_FRAMETYPE]   = gText_Frame,
-    [MENUITEM_CANCEL]      = gText_OptionMenuCancel,
+    [MENUITEM_TEXTSPEED]   = COMPOUND_STRING("Text-Tempot"),
+    [MENUITEM_BATTLESCENE] = COMPOUND_STRING("Animationen"),
+    [MENUITEM_BATTLESTYLE] = COMPOUND_STRING("Kampfstil"),
+    [MENUITEM_SOUND]       = COMPOUND_STRING("Sound"),
+    [MENUITEM_BUTTONMODE]  = COMPOUND_STRING("Tastenmodus"),
+    [MENUITEM_FRAMETYPE]   = COMPOUND_STRING("Rahmen"),
+    [MENUITEM_CANCEL]      = COMPOUND_STRING("Abbrechen"),
 };
 
 static const u8 *const sOptionMenuItemsNames_Pg2[MENUITEM_COUNT_PG2] =
 {
     [MENUITEM_MENUPAL]        = gText_MenuPal,
-    [MENUITEM_CANCEL_PG2]      = gText_OptionMenuCancel,
+    [MENUITEM_CANCEL_PG2]      = COMPOUND_STRING("Abbrechen"),
 };
 
 static const struct WindowTemplate sOptionMenuWinTemplates[] =
@@ -347,6 +362,7 @@ static void Task_ChangePage(u8 taskId)
         break;
     }
 }
+
 static void Task_OptionMenuFadeIn(u8 taskId)
 {
     if (!gPaletteFade.active)
@@ -509,7 +525,6 @@ static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
         }
     }
 }
-
 
 static void Task_OptionMenuSave(u8 taskId)
 {
@@ -842,6 +857,7 @@ static void MenuPal_DrawChoices(u8 selection)
     DrawOptionMenuChoice(text, 134, YPOS_MENUPAL, 1);
 }
 
+
 static void DrawHeaderText(void)
 {
     u32 i, widthOptions, xMid;
@@ -861,7 +877,7 @@ static void DrawHeaderText(void)
     FillWindowPixelBuffer(WIN_HEADER, PIXEL_FILL(1));
     AddTextPrinterParameterized(WIN_HEADER, FONT_NORMAL, gText_Option, 8, 1, TEXT_SKIP_DRAW, NULL);
     AddTextPrinterParameterized(WIN_HEADER, FONT_NORMAL, pageDots, xMid, 1, TEXT_SKIP_DRAW, NULL);
-    AddTextPrinterParameterized(WIN_HEADER, FONT_NORMAL, gText_PageNav, GetStringRightAlignXOffset(FONT_NORMAL, gText_PageNav, 198), 1, TEXT_SKIP_DRAW, NULL);     
+    AddTextPrinterParameterized(WIN_HEADER, FONT_NORMAL, gText_PageNav, GetStringRightAlignXOffset(FONT_NORMAL, gText_PageNav, 198), 1, TEXT_SKIP_DRAW, NULL); 
     CopyWindowToVram(WIN_HEADER, COPYWIN_FULL);
 }
 
