@@ -215,6 +215,22 @@ Route101_EventScript_RouteSign::
 	msgbox Route101_Text_RouteSign, MSGBOX_SIGN
 	end
 
+Route101_EventScript_PKMNsign::
+	msgbox Route101_Text_PKMNsign, MSGBOX_SIGN
+	showmonpic SPECIES_WURMPLE, 10, 3
+	playmoncry SPECIES_WURMPLE, 0
+	delay 60
+	hidemonpic
+	showmonpic SPECIES_POOCHYENA, 10, 3
+	playmoncry SPECIES_POOCHYENA, 0
+	delay 60
+	hidemonpic
+	showmonpic SPECIES_ZIGZAGOON, 10, 3
+	playmoncry SPECIES_ZIGZAGOON, 0
+	delay 60
+	hidemonpic
+	end
+
 Route101_EventScript_BirchsBag::
 	lock
 	faceplayer
@@ -297,4 +313,8 @@ Route101_Text_WildPokemonInTallGrass:
 Route101_Text_RouteSign:
 	.string "Route 101\n"
 	.string "{UP_ARROW} Rosaltstadt$"
+
+Route101_Text_PKMNsign:
+	.string "Folgende Pokémon verstecken\n"
+	.string "sich im hohen Gras:$"
 

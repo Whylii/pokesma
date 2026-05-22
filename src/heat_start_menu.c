@@ -76,7 +76,7 @@ static void HeatStartMenu_CreateSprites(void);
 static void HeatStartMenu_SafariZone_CreateSprites(void);
 static void HeatStartMenu_LoadBgGfx(void);
 static void HeatStartMenu_ShowTimeWindow(void);
-static void HeatStartMenu_UpdateClockDisplay(void);
+//static void HeatStartMenu_UpdateClockDisplay(void);
 static void HeatStartMenu_UpdateMenuName(void);
 static u8 RunSaveCallback(void);
 static u8 SaveDoSaveCallback(void);
@@ -84,7 +84,7 @@ static void HideSaveInfoWindow(void);
 static void HideSaveMessageWindow(void);
 static u8 SaveOverwriteInputCallback(void);
 static u8 SaveConfirmOverwriteDefaultNoCallback(void);
-static u8 SaveConfirmOverwriteCallback(void);
+//static u8 SaveConfirmOverwriteCallback(void);
 static void ShowSaveMessage(const u8 *message, u8 (*saveCallback)(void));
 static u8 SaveFileExistsCallback(void);
 static u8 SaveSavingMessageCallback(void);
@@ -565,13 +565,13 @@ static void SpriteCB_IconFlag(struct Sprite* sprite) {
 // If you want to shorten the dates to Sat., Sun., etc., change this to 70
 #define CLOCK_WINDOW_WIDTH 100
 
-static const u8 gText_Friday[]    = _("Fri,");
-static const u8 gText_Saturday[]  = _("Sat,");
-static const u8 gText_Sunday[]    = _("Sun,");
-static const u8 gText_Monday[]    = _("Mon,");
-static const u8 gText_Tuesday[]   = _("Tue,");
-static const u8 gText_Wednesday[] = _("Wed,");
-static const u8 gText_Thursday[]  = _("Thu,");
+static const u8 gText_Friday[]    = _("Freitag,");
+static const u8 gText_Saturday[]  = _("Samstag,");
+static const u8 gText_Sunday[]    = _("Sonntag,");
+static const u8 gText_Monday[]    = _("Montag,");
+static const u8 gText_Tuesday[]   = _("Dienstag,");
+static const u8 gText_Wednesday[] = _("Mittwoch,");
+static const u8 gText_Thursday[]  = _("Donnerstag,");
 
 static const u8 *const gDayNameStringsTable[] =
 {
@@ -586,10 +586,10 @@ static const u8 *const gDayNameStringsTable[] =
 
 static const u8 gText_CurrentTime[]      = _("  {STR_VAR_3} {CLEAR_TO 64}{STR_VAR_1}:{STR_VAR_2}");
 static const u8 gText_CurrentTimeOff[]   = _("  {STR_VAR_3} {CLEAR_TO 64}{STR_VAR_1} {STR_VAR_2}");
-static const u8 gText_CurrentTimeAM[]    = _("  {STR_VAR_3} {CLEAR_TO 51}{STR_VAR_1}:{STR_VAR_2} AM");
-static const u8 gText_CurrentTimeAMOff[] = _("  {STR_VAR_3} {CLEAR_TO 51}{STR_VAR_1} {STR_VAR_2} AM");
-static const u8 gText_CurrentTimePM[]    = _("  {STR_VAR_3} {CLEAR_TO 51}{STR_VAR_1}:{STR_VAR_2} PM");
-static const u8 gText_CurrentTimePMOff[] = _("  {STR_VAR_3} {CLEAR_TO 51}{STR_VAR_1} {STR_VAR_2} PM");
+static const u8 gText_CurrentTimeAM[]    = _("  {STR_VAR_3} {CLEAR_TO 51}{STR_VAR_1}:{STR_VAR_2}");
+static const u8 gText_CurrentTimeAMOff[] = _("  {STR_VAR_3} {CLEAR_TO 51}{STR_VAR_1} {STR_VAR_2}");
+static const u8 gText_CurrentTimePM[]    = _("  {STR_VAR_3} {CLEAR_TO 51}{STR_VAR_1}:{STR_VAR_2}");
+static const u8 gText_CurrentTimePMOff[] = _("  {STR_VAR_3} {CLEAR_TO 51}{STR_VAR_1} {STR_VAR_2}");
 
 static void SetSelectedMenu(void) {
   if (FlagGet(FLAG_SYS_POKENAV_GET) == TRUE) {
@@ -762,7 +762,6 @@ static void HeatStartMenu_LoadBgGfx(void) {
 
 static void HeatStartMenu_ShowTimeWindow(void)
 {
-    u8 analogHour;
 
 	RtcCalcLocalTime();
       // print window
@@ -771,24 +770,19 @@ static void HeatStartMenu_ShowTimeWindow(void)
   PutWindowTilemap(sHeatStartMenu->sStartClockWindowId);
 	FlagSet(FLAG_TEMP_5);
 
-    analogHour = (gLocalTime.hours >= 13 && gLocalTime.hours <= 24) ? gLocalTime.hours - 12 : gLocalTime.hours;
-
 	StringCopy(gStringVar3, gDayNameStringsTable[(gLocalTime.days % 7)]);
     ConvertIntToDecimalStringN(gStringVar1, gLocalTime.hours, STR_CONV_MODE_LEADING_ZEROS, 2);
 	ConvertIntToDecimalStringN(gStringVar2, gLocalTime.minutes, STR_CONV_MODE_LEADING_ZEROS, 2);
-	    ConvertIntToDecimalStringN(gStringVar1, analogHour, STR_CONV_MODE_LEADING_ZEROS, 2);
+	    ConvertIntToDecimalStringN(gStringVar1, gLocalTime.hours, STR_CONV_MODE_LEADING_ZEROS, 2);
     
 	StringExpandPlaceholders(gStringVar4, gText_CurrentTime);
-        if (gLocalTime.hours >= 13 && gLocalTime.hours <= 24)
-            StringExpandPlaceholders(gStringVar4, gText_CurrentTimePM); 
-        else
-            StringExpandPlaceholders(gStringVar4, gText_CurrentTimeAM);  
+    StringExpandPlaceholders(gStringVar4, gText_CurrentTime); // This uses the 24-hour format string    
     
 	AddTextPrinterParameterized(sHeatStartMenu->sStartClockWindowId, 1, gStringVar4, 0, 1, 0xFF, NULL);
 	CopyWindowToVram(sHeatStartMenu->sStartClockWindowId, COPYWIN_GFX);
 }
 
-static void HeatStartMenu_UpdateClockDisplay(void)
+/*static void HeatStartMenu_UpdateClockDisplay(void)
 {
     u8 analogHour;
 
@@ -826,15 +820,16 @@ static void HeatStartMenu_UpdateClockDisplay(void)
 	AddTextPrinterParameterized(sHeatStartMenu->sStartClockWindowId, 1, gStringVar4, 0, 1, 0xFF, NULL);
 	CopyWindowToVram(sHeatStartMenu->sStartClockWindowId, COPYWIN_GFX);
 }
+*/
 
-static const u8 gText_Poketch[] = _("  PokeNav");
+static const u8 gText_Poketch[] = _("  PokéNav");
 static const u8 gText_Pokedex[] = _("  Pokédex");
-static const u8 gText_Party[]   = _("    Party ");
-static const u8 gText_Bag[]     = _("      Bag  ");
-static const u8 gText_Trainer[] = _("   Trainer");
-static const u8 gText_Save[]    = _("     Save  ");
-static const u8 gText_Options[] = _("   Options");
-static const u8 gText_Flag[]    = _("   Retire");
+static const u8 gText_Party[]   = _("  Pokémon");
+static const u8 gText_Bag[]     = _("   Beutel");
+static const u8 gText_Trainer[] = _("  Trainer");
+static const u8 gText_Save[]    = _("Speichern");
+static const u8 gText_Options[] = _(" Optionen");
+static const u8 gText_Flag[]    = _("  Beenden");
 
 static void HeatStartMenu_UpdateMenuName(void) {
   
@@ -1120,12 +1115,13 @@ static u8 SaveConfirmOverwriteDefaultNoCallback(void)
     return SAVE_IN_PROGRESS;
 }
 
-static u8 SaveConfirmOverwriteCallback(void)
+/*static u8 SaveConfirmOverwriteCallback(void)
 {
     DisplayYesNoMenuDefaultYes(); // Show Yes/No menu
     sSaveDialogCallback = SaveOverwriteInputCallback;
     return SAVE_IN_PROGRESS;
 }
+    */
 
 static void ShowSaveMessage(const u8 *message, u8 (*saveCallback)(void)) {
     StringExpandPlaceholders(gStringVar4, message);
@@ -1412,7 +1408,7 @@ static void Task_HeatStartMenu_HandleMainInput(u8 taskId) {
       }
       sHeatStartMenu->loadState = 1;
     }
-  } else if (JOY_NEW(B_BUTTON) && sHeatStartMenu->loadState == 0) {
+  } else if ((JOY_NEW(B_BUTTON) || JOY_NEW(START_BUTTON)) && sHeatStartMenu->loadState == 0) {
     PlaySE(SE_SELECT);
     HeatStartMenu_ExitAndClearTilemap();  
     DestroyTask(taskId);
@@ -1490,7 +1486,7 @@ static void Task_HeatStartMenu_SafariZone_HandleMainInput(u8 taskId) {
       }
       sHeatStartMenu->loadState = 1;
     }
-  } else if (JOY_NEW(B_BUTTON) && sHeatStartMenu->loadState == 0) {
+  } else if ((JOY_NEW(B_BUTTON) || JOY_NEW(START_BUTTON)) && sHeatStartMenu->loadState == 0) {
     PlaySE(SE_SELECT);
     HeatStartMenu_ExitAndClearTilemap();  
     DestroyTask(taskId);
