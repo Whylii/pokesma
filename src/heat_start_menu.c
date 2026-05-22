@@ -1028,7 +1028,7 @@ static u8 SaveReturnSuccessCallback(void)
 
 static u8 SaveSuccessCallback(void)
 {
-    if (!IsTextPrinterActive(0))
+    if (!TextPrinterWait(0))
     {
         PlaySE(SE_SAVE);
         sSaveDialogCallback = SaveReturnSuccessCallback;
@@ -1052,7 +1052,7 @@ static u8 SaveReturnErrorCallback(void)
 
 static u8 SaveErrorCallback(void)
 {
-    if (!IsTextPrinterActive(0))
+    if (!TextPrinterWait(0))
     {
         PlaySE(SE_BOO);
         sSaveDialogCallback = SaveReturnErrorCallback;
@@ -1130,7 +1130,7 @@ static u8 SaveConfirmOverwriteCallback(void)
 static void ShowSaveMessage(const u8 *message, u8 (*saveCallback)(void)) {
     StringExpandPlaceholders(gStringVar4, message);
     LoadMessageBoxAndFrameGfx(0, TRUE);
-    AddTextPrinterForMessage_2(TRUE);
+    AddTextPrinterForMessage(TRUE);
     sSaveDialogCallback = saveCallback;
 }
 
@@ -1197,8 +1197,8 @@ static void ShowSaveInfoWindow(void) {
     u8 color;
     u32 xOffset;
     u32 yOffset;
-    const u8 *suffix;
-    u8 *alignedSuffix = gStringVar3;
+   // const u8 *suffix;
+   // u8 *alignedSuffix = gStringVar3;
 
     if (!FlagGet(FLAG_SYS_POKEDEX_GET))
     {
