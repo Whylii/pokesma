@@ -76,7 +76,7 @@ static void HeatStartMenu_CreateSprites(void);
 static void HeatStartMenu_SafariZone_CreateSprites(void);
 static void HeatStartMenu_LoadBgGfx(void);
 static void HeatStartMenu_ShowTimeWindow(void);
-static void HeatStartMenu_UpdateClockDisplay(void);
+//static void HeatStartMenu_UpdateClockDisplay(void);
 static void HeatStartMenu_UpdateMenuName(void);
 static u8 RunSaveCallback(void);
 static u8 SaveDoSaveCallback(void);
@@ -84,7 +84,7 @@ static void HideSaveInfoWindow(void);
 static void HideSaveMessageWindow(void);
 static u8 SaveOverwriteInputCallback(void);
 static u8 SaveConfirmOverwriteDefaultNoCallback(void);
-static u8 SaveConfirmOverwriteCallback(void);
+//static u8 SaveConfirmOverwriteCallback(void);
 static void ShowSaveMessage(const u8 *message, u8 (*saveCallback)(void));
 static u8 SaveFileExistsCallback(void);
 static u8 SaveSavingMessageCallback(void);
@@ -762,7 +762,6 @@ static void HeatStartMenu_LoadBgGfx(void) {
 
 static void HeatStartMenu_ShowTimeWindow(void)
 {
-    u8 analogHour;
 
 	RtcCalcLocalTime();
       // print window
@@ -771,12 +770,10 @@ static void HeatStartMenu_ShowTimeWindow(void)
   PutWindowTilemap(sHeatStartMenu->sStartClockWindowId);
 	FlagSet(FLAG_TEMP_5);
 
-    analogHour = (gLocalTime.hours >= 13 && gLocalTime.hours <= 24) ? gLocalTime.hours - 12 : gLocalTime.hours;
-
 	StringCopy(gStringVar3, gDayNameStringsTable[(gLocalTime.days % 7)]);
     ConvertIntToDecimalStringN(gStringVar1, gLocalTime.hours, STR_CONV_MODE_LEADING_ZEROS, 2);
 	ConvertIntToDecimalStringN(gStringVar2, gLocalTime.minutes, STR_CONV_MODE_LEADING_ZEROS, 2);
-	    ConvertIntToDecimalStringN(gStringVar1, analogHour, STR_CONV_MODE_LEADING_ZEROS, 2);
+	    ConvertIntToDecimalStringN(gStringVar1, gLocalTime.hours, STR_CONV_MODE_LEADING_ZEROS, 2);
     
 	StringExpandPlaceholders(gStringVar4, gText_CurrentTime);
     StringExpandPlaceholders(gStringVar4, gText_CurrentTime); // This uses the 24-hour format string    
@@ -785,8 +782,7 @@ static void HeatStartMenu_ShowTimeWindow(void)
 	CopyWindowToVram(sHeatStartMenu->sStartClockWindowId, COPYWIN_GFX);
 }
 
-/* not used 
-static void HeatStartMenu_UpdateClockDisplay(void)
+/*static void HeatStartMenu_UpdateClockDisplay(void)
 {
     u8 analogHour;
 
@@ -826,14 +822,14 @@ static void HeatStartMenu_UpdateClockDisplay(void)
 }
 */
 
-static const u8 gText_Poketch[] = _("  PokeNav");
+static const u8 gText_Poketch[] = _("  PokéNav");
 static const u8 gText_Pokedex[] = _("  Pokédex");
-static const u8 gText_Party[]   = _("    Party ");
-static const u8 gText_Bag[]     = _("      Bag  ");
-static const u8 gText_Trainer[] = _("   Trainer");
-static const u8 gText_Save[]    = _("     Save  ");
-static const u8 gText_Options[] = _("   Options");
-static const u8 gText_Flag[]    = _("   Retire");
+static const u8 gText_Party[]   = _("  Pokémon");
+static const u8 gText_Bag[]     = _("   Beutel");
+static const u8 gText_Trainer[] = _("  Trainer");
+static const u8 gText_Save[]    = _("Speichern");
+static const u8 gText_Options[] = _(" Optionen");
+static const u8 gText_Flag[]    = _("  Beenden");
 
 static void HeatStartMenu_UpdateMenuName(void) {
   
@@ -1119,14 +1115,13 @@ static u8 SaveConfirmOverwriteDefaultNoCallback(void)
     return SAVE_IN_PROGRESS;
 }
 
-// not used
 /*static u8 SaveConfirmOverwriteCallback(void)
 {
     DisplayYesNoMenuDefaultYes(); // Show Yes/No menu
     sSaveDialogCallback = SaveOverwriteInputCallback;
     return SAVE_IN_PROGRESS;
 }
-*/
+    */
 
 static void ShowSaveMessage(const u8 *message, u8 (*saveCallback)(void)) {
     StringExpandPlaceholders(gStringVar4, message);
@@ -1413,7 +1408,7 @@ static void Task_HeatStartMenu_HandleMainInput(u8 taskId) {
       }
       sHeatStartMenu->loadState = 1;
     }
-  } else if (JOY_NEW(B_BUTTON || JOY_NEW(START_BUTTON))) && sHeatStartMenu->loadState == 0) {
+  } else if (JOY_NEW(B_BUTTON) && sHeatStartMenu->loadState == 0) {
     PlaySE(SE_SELECT);
     HeatStartMenu_ExitAndClearTilemap();  
     DestroyTask(taskId);
@@ -1491,7 +1486,7 @@ static void Task_HeatStartMenu_SafariZone_HandleMainInput(u8 taskId) {
       }
       sHeatStartMenu->loadState = 1;
     }
-  } else if (JOY_NEW(B_BUTTON || JOY_NEW(START_BUTTON))) && sHeatStartMenu->loadState == 0) {
+  } else if (JOY_NEW(B_BUTTON) && sHeatStartMenu->loadState == 0) {
     PlaySE(SE_SELECT);
     HeatStartMenu_ExitAndClearTilemap();  
     DestroyTask(taskId);
