@@ -1408,7 +1408,7 @@ static void Task_HeatStartMenu_HandleMainInput(u8 taskId) {
       }
       sHeatStartMenu->loadState = 1;
     }
-  } else if (JOY_NEW(B_BUTTON) && sHeatStartMenu->loadState == 0) {
+  } else if ((JOY_NEW(B_BUTTON) || JOY_NEW(START_BUTTON)) && sHeatStartMenu->loadState == 0) {
     PlaySE(SE_SELECT);
     HeatStartMenu_ExitAndClearTilemap();  
     DestroyTask(taskId);
@@ -1486,7 +1486,7 @@ static void Task_HeatStartMenu_SafariZone_HandleMainInput(u8 taskId) {
       }
       sHeatStartMenu->loadState = 1;
     }
-  } else if (JOY_NEW(B_BUTTON) && sHeatStartMenu->loadState == 0) {
+  } else if ((JOY_NEW(B_BUTTON) || JOY_NEW(START_BUTTON)) && sHeatStartMenu->loadState == 0) {
     PlaySE(SE_SELECT);
     HeatStartMenu_ExitAndClearTilemap();  
     DestroyTask(taskId);

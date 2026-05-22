@@ -231,6 +231,7 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
         PlaySE(SE_WIN_OPEN);
         HideMapNamePopUpWindow();   // Fix Map name popup
         HeatStartMenu_Init();
+        gMain.newKeys = 0;
         return TRUE;
     }
 
