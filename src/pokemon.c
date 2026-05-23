@@ -6160,6 +6160,7 @@ const u8 *GetTrainerPartnerName(void)
 
 #define sAnimId    data[2]
 #define sAnimDelay data[3]
+#define tIsShadow data[4]
 
 static void Task_AnimateAfterDelay(u8 taskId)
 {
@@ -6169,8 +6170,6 @@ static void Task_AnimateAfterDelay(u8 taskId)
         DestroyTask(taskId);
     }
 }
-
-#define tIsShadow data[4]
 
 static void Task_PokemonSummaryAnimateAfterDelay(u8 taskId)
 {

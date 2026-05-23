@@ -979,16 +979,18 @@ static void Task_EvolutionScene(u8 taskId)
             if (!gPaletteFade.active)
             {
                 FreeAllWindowBuffers();
-                if (BW_SUMMARY_SCREEN)
+if (BW_SUMMARY_SCREEN)
                 {
                     ShowSelectMovePokemonSummaryScreen_BW(gPlayerParty, gTasks[taskId].tPartyId,
                                 CB2_EvolutionSceneLoadGraphics,
                                 gMoveToLearn);
                 }
                 else
-                ShowSelectMovePokemonSummaryScreen(gPlayerParty, gTasks[taskId].tPartyId,
-                            CB2_EvolutionSceneLoadGraphics,
-                            gMoveToLearn);
+                {
+                    ShowSelectMovePokemonSummaryScreen(gPlayerParty, gTasks[taskId].tPartyId,
+                                CB2_EvolutionSceneLoadGraphics,
+                                gMoveToLearn);
+                }
                 gTasks[taskId].tLearnMoveState++;
             }
             break;
@@ -1374,41 +1376,17 @@ static void Task_TradeEvolutionScene(u8 taskId)
                 Free(GetBgTilemapBuffer(0));
                 FreeAllWindowBuffers();
 
-                if (gTasks[taskId].tPartyId == PC_MON_CHOSEN)
+                if (BW_SUMMARY_SCREEN)
                 {
-                    ShowSelectMovePokemonSummaryScreen(
-                        if (BW_SUMMARY_SCREEN)
-                {
-                    ShowSelectMovePokemonSummaryScreen_BW(
-                            gEnemyParty, 
-                            TRADEMON_FROM_PC,
-                            CB2_TradeEvolutionSceneLoadGraphics,
-                            gMoveToLearn);
-                }
-                else
-                                gEnemyParty, 
-                                TRADEMON_FROM_PC,
+                    ShowSelectMovePokemonSummaryScreen_BW(gPlayerParty, gTasks[taskId].tPartyId,
                                 CB2_TradeEvolutionSceneLoadGraphics,
-                                gMoveToLearn
-                            );
+                                gMoveToLearn);
                 }
                 else
                 {
-                    ShowSelectMovePokemonSummaryScreen(
-                        if (BW_SUMMARY_SCREEN)
-                {
-                    ShowSelectMovePokemonSummaryScreen_BW(
-                            gPlayerParty, 
-                            gTasks[taskId].tPartyId,
-                            CB2_TradeEvolutionSceneLoadGraphics,
-                            gMoveToLearn);
-                }
-                else
-                                gPlayerParty, 
-                                gTasks[taskId].tPartyId,
+                    ShowSelectMovePokemonSummaryScreen(gPlayerParty, gTasks[taskId].tPartyId,
                                 CB2_TradeEvolutionSceneLoadGraphics,
-                                gMoveToLearn
-                            );
+                                gMoveToLearn);
                 }
                 gTasks[taskId].tLearnMoveState++;
             }

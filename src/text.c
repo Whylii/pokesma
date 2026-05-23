@@ -1164,12 +1164,11 @@ static u16 FontFunc_ShortNarrow(struct TextPrinter *textPrinter)
 
 static u16 FontFunc_BW_Summary_Screen(struct TextPrinter *textPrinter)
 {
-    struct TextPrinterSubStruct *subStruct = (struct TextPrinterSubStruct *)(&textPrinter->subStructFields);
 
-    if (subStruct->hasFontIdBeenSet == FALSE)
+    if (textPrinter->hasFontIdBeenSet == FALSE)
     {
-        subStruct->fontId = FONT_BW_SUMMARY_SCREEN;
-        subStruct->hasFontIdBeenSet = TRUE;
+        textPrinter->fontId = FONT_BW_SUMMARY_SCREEN;
+        textPrinter->hasFontIdBeenSet = TRUE;
     }
     return RenderText(textPrinter);
 }
@@ -1397,7 +1396,7 @@ static u16 RenderText(struct TextPrinter *textPrinter)
                     textPrinter->printerTemplate.spriteId = gSprites[textPrinter->printerTemplate.firstSpriteInRow].nextY;
                     textPrinter->printerTemplate.firstSpriteInRow = textPrinter->printerTemplate.spriteId;
                 }
-                if (subStruct->fontId == FONT_BW_SUMMARY_SCREEN)
+                if (textPrinter->fontId == FONT_BW_SUMMARY_SCREEN)
                 textPrinter->printerTemplate.currentY -= 2;
             }
             return RENDER_REPEAT;
