@@ -565,13 +565,13 @@ static void SpriteCB_IconFlag(struct Sprite* sprite) {
 // If you want to shorten the dates to Sat., Sun., etc., change this to 70
 #define CLOCK_WINDOW_WIDTH 100
 
-static const u8 gText_Friday[]    = _("Freitag,");
-static const u8 gText_Saturday[]  = _("Samstag,");
-static const u8 gText_Sunday[]    = _("Sonntag,");
-static const u8 gText_Monday[]    = _("Montag,");
-static const u8 gText_Tuesday[]   = _("Dienstag,");
-static const u8 gText_Wednesday[] = _("Mittwoch,");
-static const u8 gText_Thursday[]  = _("Donnerstag,");
+static const u8 gText_Friday[]    = _("Freitag");
+static const u8 gText_Saturday[]  = _("Samstag");
+static const u8 gText_Sunday[]    = _("Sonntag");
+static const u8 gText_Monday[]    = _("Montag");
+static const u8 gText_Tuesday[]   = _("Dienstag");
+static const u8 gText_Wednesday[] = _("Mittwoch");
+static const u8 gText_Thursday[]  = _("Donnerstag");
 
 static const u8 *const gDayNameStringsTable[] =
 {
