@@ -174,19 +174,19 @@ static void Task_EndScreenShake(u8 taskId);
 
 static const u8 sText_BigGuy[] = _("Big guy");
 static const u8 sText_BigGirl[] = _("Big girl");
-static const u8 sText_Son[] = _("son");
-static const u8 sText_Daughter[] = _("daughter");
-static const u8 sText_99TimesPlus[] = _("99 times +");
-static const u8 sText_1MinutePlus[] = _("1 minute +");
-static const u8 sText_SpaceSeconds[] = _(" seconds");
-static const u8 sText_SpaceTimes[] = _(" time(s)");
+static const u8 sText_Son[] = _("Sohn");
+static const u8 sText_Daughter[] = _("Tochter");
+static const u8 sText_99TimesPlus[] = _("99 mal +");
+static const u8 sText_1MinutePlus[] = _("1 Minute +");
+static const u8 sText_SpaceSeconds[] = _(" Sekunden");
+static const u8 sText_SpaceTimes[] = _(" mal");
 
-static const u8 sText_Wallace[] = _("WALLACE");
-static const u8 sText_Steven[] = _("STEVEN");
-static const u8 sText_Brawly[] = _("BRAWLY");
-static const u8 sText_Winona[] = _("WINONA");
-static const u8 sText_Phoebe[] = _("PHOEBE");
-static const u8 sText_Glacia[] = _("GLACIA");
+static const u8 sText_Wallace[] = _("Walter");
+static const u8 sText_Steven[] = _("Troy");
+static const u8 sText_Brawly[] = _("Kamillo");
+static const u8 sText_Winona[] = _("Wibke");
+static const u8 sText_Phoebe[] = _("Antonia");
+static const u8 sText_Glacia[] = _("Frosina");
 
 void Special_ShowDiploma(void)
 {
@@ -5326,7 +5326,7 @@ static void Task_ElevatorShake(u8 taskId)
     }
 }
 
-static const u8 sText_NowOn[] = _("Now on:");
+static const u8 sText_NowOn[] = _("Standort:");
 
 void DrawElevatorCurrentFloorWindow(void)
 {
