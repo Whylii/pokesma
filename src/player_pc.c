@@ -188,7 +188,7 @@ static const u8 *const sItemStorage_OptionDescriptions[] =
 
 static const struct MenuAction sPlayerPCMenuActions[] =
 {
-    [MENU_ITEMSTORAGE] = { COMPOUND_STRING("{PLAYER}s PC"), {PlayerPC_ItemStorage} },
+    [MENU_ITEMSTORAGE] = { COMPOUND_STRING("Items"),    {PlayerPC_ItemStorage} },
     [MENU_MAILBOX]     = { sText_Mailbox,                   {PlayerPC_Mailbox} },
     [MENU_DECORATION]  = { COMPOUND_STRING("Dekorationen"),   {PlayerPC_Decoration} },
     [MENU_TURNOFF]     = { COMPOUND_STRING("Ausschalten"),     {PlayerPC_TurnOff} }
