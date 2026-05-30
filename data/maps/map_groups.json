@@ -133,17 +133,14 @@
     "Underwater_Route128",
     "Underwater_Route129",
     "Underwater_Route105",
-    "Underwater_Route125",
-    "NewBarkTown"
+    "Underwater_Route125"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
     "LittlerootTown_BrendansHouse_2F",
     "LittlerootTown_MaysHouse_1F",
     "LittlerootTown_MaysHouse_2F",
-    "LittlerootTown_ProfessorBirchsLab",
-    "LittlerootCave",
-    "LittlerootCave_2F"
+    "LittlerootTown_ProfessorBirchsLab"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",
