@@ -322,7 +322,7 @@ PlayersHouse_1F_Text_ItsOverWeMissedHim:
 
 PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor:
 	.string "Ach ja.\n"
-	.string "Einer von Papss Freunden lebt hier.\p"
+	.string "Einer von Paps Freunden lebt hier.\p"
 	.string "Prof. Birk ist sein Name.\p"
 	.string "Er lebt gleich nebenan, daher solltest\n"
 	.string "du hinübergehen und dich vorstellen.$"
