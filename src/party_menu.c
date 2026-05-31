@@ -2434,6 +2434,7 @@ static void InitPartyMenuWindows(enum PartyMenuLayout layout)
     {
     case PARTY_LAYOUT_SINGLE:
         InitWindows(sSinglePartyMenuWindowTemplate_Equal); //sSinglePartyMenuWindowTemplate
+        break;
     case PARTY_LAYOUT_MULTI_SHOWCASE:
         InitWindows(sShowcaseMultiPartyMenuWindowTemplate);
         break;
@@ -2444,7 +2445,7 @@ static void InitPartyMenuWindows(enum PartyMenuLayout layout)
         InitWindows(sMultiPartyMenuWindowTemplate);
         break;
     default: // Singles and full-party multibattle menus
-        InitWindows(sSinglePartyMenuWindowTemplate);
+        InitWindows(sSinglePartyMenuWindowTemplate_Equal);
         break;
     }
     LoadPartyMenuWindows();
