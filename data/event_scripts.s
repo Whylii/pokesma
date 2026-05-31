@@ -1359,11 +1359,11 @@ Common_EventScript_PlayerHandedOverTheItem::
 @ The below and surf.inc could be split into some text/notices.inc
 gText_PokemartSign::
 	.string "“Ausgewählte Items zum besten Preis!”\n"
-	.string "POKéMON-Markt$"
+	.string "Pokémon-Markt$"
 
 gText_PokemonCenterSign::
 	.string "“Erfrische deine müden Partner!”\n"
-	.string "POKéMON-Center$"
+	.string "Pokémon-Center$"
 
 gText_MomOrDadMightLikeThisProgram::
 	.string "{STR_VAR_1} würde dieses Programm gefallen.\n"
@@ -1384,14 +1384,14 @@ gText_SelectWithoutRegisteredItem::
 	.string "Select gelegt werden. Sehr praktisch!$"
 
 gText_PokemonTrainerSchoolEmail::
-	.string "Da ist eine E-Mail von der POKéMON\n"
+	.string "Da ist eine E-Mail von der Pokémon\n"
 	.string "Trainerschule.\p"
 	.string "… … … … … …\p"
-	.string "Ein POKéMON kann bis zu vier Attacken\n"
+	.string "Ein Pokémon kann bis zu vier Attacken\n"
 	.string "lernen.\p"
 	.string "Die Fähigkeiten eines Trainers werden\n"
 	.string "durch die Attacken, die er seinen\l"
-	.string "POKéMON beibringt, erprobt.\p"
+	.string "Pokémon beibringt, erprobt.\p"
 	.string "… … … … … …$"
 
 gText_PlayerHouseBootPC::
@@ -1405,25 +1405,25 @@ gText_UnusedNicknameReceivedPokemon::
 	.string "the {STR_VAR_2} you received?$"
 
 gText_PlayerWhitedOut::
-	.string "{PLAYER} hat kein kampffähiges POKéMON\n"
+	.string "{PLAYER} hat kein kampffähiges Pokémon\n"
 	.string "mehr!\p"
 	.string "{PLAYER} wird ohnmächtig!$"
 
 gText_FirstShouldRestoreMonsHealth::
 	.string "Zuerst sollten wir deine\n"
-	.string "POKéMON vollständig heilen.$"
+	.string "Pokémon vollständig heilen.$"
 
 gText_MonsHealedShouldBuyPotions::
-	.string "Deine POKéMON sind vollständig\n"
+	.string "Deine Pokémon sind vollständig\n"
 	.string "geheilt.\p"
-	.string "Wenn die KP deiner POKéMON niedrig sind,\n"
+	.string "Wenn die KP deiner Pokémon niedrig sind,\n"
 	.string "solltest du zu uns kommen.\p"
 	.string "Wenn du viel unterwegs bist,\n"
 	.string "solltest du Tränke dabeihaben.\p"
 	.string "Viel Erfolg!$"
 
 gText_MonsHealed::
-	.string "Deine POKéMON wurden vollständig\n"
+	.string "Deine Pokémon wurden vollständig\n"
 	.string "geheilt.\p"
 	.string "Viel Erfolg!$"
 
@@ -1434,13 +1434,13 @@ gText_HadQuiteAnExperienceTakeRest::
 
 gText_MomExplainHPGetPotions::
 	.string "Mum: Oh, gut! Du und deine\n"
-	.string "POKéMON sehen erholt aus.\p"
+	.string "Pokémon sehen erholt aus.\p"
 	.string "{STR_VAR_1} hat mir erzählt,\n"
-	.string "dass die Energie der POKéMON\l"
+	.string "dass die Energie der Pokémon\l"
 	.string "als KP gemessen wird.\p"
-	.string "Wenn deine POKéMON alle KP verlieren,\n"
+	.string "Wenn deine Pokémon alle KP verlieren,\n"
 	.string "kannst du sie in einem\l"
-	.string "POKéMON-Center heilen lassen.\p"
+	.string "Pokémon-Center heilen lassen.\p"
 	.string "Wenn du viel unterwegs bist,\n"
 	.string "solltest du Tränke dabeihaben.\p"
 	.string "Ich bin stolz auf dich!\p"
@@ -1461,12 +1461,12 @@ gText_ComeBackWithSecretPower::
 	.string "Sachen verkaufen.$"
 
 gText_PokerusExplanation::
-	.string "Dein POKéMON scheint von dem\n"
+	.string "Dein Pokémon scheint von dem\n"
 	.string "Pokérus befallen zu sein.\p"
 	.string "Über den Pokérus ist bisher wenig be-\n"
 	.string "kannt, außer dass es Mikroorganismen\l"
-	.string "sind, die POKéMON befallen.\p"
-	.string "Sind deine POKéMON infiziert, wachsen\n"
+	.string "sind, die Pokémon befallen.\p"
+	.string "Sind deine Pokémon infiziert, wachsen\n"
 	.string "sie besonders gut.$"
 
 	.include "data/text/surf.inc"

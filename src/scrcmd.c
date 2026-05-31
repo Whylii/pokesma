@@ -2349,12 +2349,12 @@ static u16 GetKeyItemForFieldMove(u16 move)
     u32 i;
 
     // 1. Check for a party Pokémon that can learn the move.
-    for (i = 0; i < gPlayerPartyCount; i++)
+    for (i = 0; i < gPartiesCount[B_TRAINER_PLAYER]; i++)
     {
         enum Species species = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES);
         if (!species)
             break;
-        if (!GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
+        if (!GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_IS_EGG))
         {
             if (CanLearnTeachableMove(species, move))
             {
