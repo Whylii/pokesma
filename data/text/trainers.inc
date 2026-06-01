@@ -4968,4 +4968,3 @@ VSSeeker_Text_TrainersNotReady::
 	.string "Die Trainer sind nicht bereit\n"
 	.string "für einen Kampf.\p"
 	.string "Vielleicht später.{PAUSE_UNTIL_PRESS}$"
-	
