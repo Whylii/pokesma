@@ -333,7 +333,7 @@ PetalburgWoods_Text_IWasGoingToAmbushYou:
 	.string "Also, hier bin ich.$"
 
 PetalburgWoods_Text_HandOverThosePapers:
-	.string "He, du! Devn-Forscher!\p"
+	.string "He, du! Devon-Forscher!\p"
 	.string "Gib sofort die Papiere her!$"
 
 PetalburgWoods_Text_YouHaveToHelpMe:
