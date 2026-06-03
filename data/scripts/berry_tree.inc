@@ -325,7 +325,8 @@ BerryTree_Text_PickedTheBerry:
 BerryTree_Text_PutAwayBerry:
 	.string "{PLAYER} packt die {STR_VAR_1}\n"
 	.string "in die Beerentasche des Beutels.\p"
-	.string "Der Boden ist wieder weich und lehmig.$"
+	.string "Der Boden ist wieder weich\n"
+	.string "und lehmig.$"
 
 BerryTree_Text_BerryPocketFull:
 	.string "Die Beerentasche des Beutels ist voll.\p"
