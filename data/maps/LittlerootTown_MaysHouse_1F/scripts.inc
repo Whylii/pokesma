@@ -323,7 +323,7 @@ RivalsHouse_1F_Text_OhYoureTheNewNeighbor:
 	.string "Oh, du bist {PLAYER}{KUN}, unser neuer\n"
 	.string "Nachbar! Hallo!\p"
 	.string "Wir haben ein Kind in deinem Alter.\p"
-	.string "Mein(e) {STR_VAR_1} freut sich schon\n"
+	.string "{RIVAL}freut sich schon\n"
 	.string "darauf, mit dir Freundschaft zu\l"
 	.string "schließen.$"
 

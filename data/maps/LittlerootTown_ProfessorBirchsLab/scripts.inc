@@ -658,14 +658,14 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall::
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork:
 	.string "Wie? Prof. Birk?\p"
-	.string "Der PROF arbeitet an einer Feld-Studie.\n"
+	.string "Der Prof arbeitet an einer Feld-Studie.\n"
 	.string "Also ist er nicht hier.\p"
 	.string "Oh, ich erkläre dir, was eine Feld-Studie\n"
 	.string "in diesem Falle ist:\p"
 	.string "Man beobachtet und studiert Dinge in\n"
 	.string "ihrem natürlichen Umfeld. In Feldern\l"
 	.string "oder auf Bergen, anstatt im Labor.\p"
-	.string "Der PROF ist kein Typ, der am Schreib-\n"
+	.string "Der Prof ist kein Typ, der am Schreib-\n"
 	.string "tisch arbeiten kann. Er muss einfach\l"
 	.string "draußen in der freien Natur die Dinge\l"
 	.string "beobachten und studieren.$"
@@ -886,9 +886,7 @@ LittlerootTown_ProfessorBirchsLab_Text_CompletedDexChoosePokemon:
 	.string "Lass mich einen Blick auf deinen\l"
 	.string "Pokédex werfen.\p"
 	.string "… … … … …\n"
-	.string "…\l"
 	.string "… … … … …\l"
-	.string "…\p"
 	.string "Ja, es besteht kein Zweifel.\p"
 	.string "Dein Pokédex der Hoenn-Region ist\n"
 	.string "vollständig!\p"
@@ -992,7 +990,6 @@ LittlerootTown_ProfessorBirchsLab_Text_BrendanHaveYouGoneToBattleFrontier:
 
 LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "… … … … …\n"
-	.string "…\l"
 	.string "… … … … …Piep!\p"
 	.string "Scott: Hallo {PLAYER}!\n"
 	.string "Ich bin’s, Scott.\p"
@@ -1007,5 +1004,4 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "Alles Weitere besprechen wir, wenn\n"
 	.string "wir uns an Bord treffen. Bis dann!\p"
 	.string "… … … … …\n"
-	.string "…\l"
 	.string "… … … … …Klick!$"
