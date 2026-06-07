@@ -2,7 +2,7 @@ Route103_EventScript_PkmnSign::
 # 2 "data/maps/Route103/scripts.pory"
 	msgbox Route103_EventScript_PkmnSign_Text_0, MSGBOX_SIGN
 # 4 "data/maps/Route103/scripts.pory"
-	dynmultichoice 10, 3, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, Route103_EventScript_PkmnSign_Text_1, Route103_EventScript_PkmnSign_Text_2, Route103_EventScript_PkmnSign_Text_3
+	dynmultichoice 1, 3, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, Route103_EventScript_PkmnSign_Text_1, Route103_EventScript_PkmnSign_Text_2, Route103_EventScript_PkmnSign_Text_3
 # 5 "data/maps/Route103/scripts.pory"
 	compare VAR_RESULT, 127
 	goto_if_eq Route103_EventScript_PkmnSign_2
@@ -776,7 +776,7 @@ Route103_Text_MayTimeToHeadBack:
 # 411 "data/maps/Route103/scripts.pory"
 	.string "jeder Art von Pokémon anzufreunden.\p"
 # 412 "data/maps/Route103/scripts.pory"
-	.string "Nun wird es aber Zeit, zurück ins Labor\n"
+	.string "Nun wird es aber Zeit, zurück ins LABOR\n"
 # 413 "data/maps/Route103/scripts.pory"
 	.string "zu gehen!$"
 # 414 "data/maps/Route103/scripts.pory"

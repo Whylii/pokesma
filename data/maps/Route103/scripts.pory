@@ -1,7 +1,7 @@
 script Route103_EventScript_PkmnSign{
     msgbox ("Hier findest du Informationen über die 
     Pokémon, die auf dieser Route leben.", MSGBOX_SIGN)
-    dynmultichoice(10, 3, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Hohes Gras", "Wasser", "Angel")
+    dynmultichoice(1, 3, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Hohes Gras", "Wasser", "Angel")
     if (var(VAR_RESULT) == 127) {
         release
     end
