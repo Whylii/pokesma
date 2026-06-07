@@ -6,7 +6,7 @@ gText_PleaseComeAgain::
 	.string "Bitte komm bald wieder!$"
 
 gText_PlayerWhatCanIDoForYou::
-	.string "{PLAYER}{STRING 5}, willkommen!\p"
+	.string "{PLAYER}{KUN}, willkommen!\p"
 	.string "Wie kann ich dir behilflich sein?$"
 
 Pokemart_DefaultItemList::
