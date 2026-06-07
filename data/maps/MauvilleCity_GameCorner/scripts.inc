@@ -1435,68 +1435,66 @@ MauvilleCity_GameCorner_Text_ThisIsMauvilleGameCorner:
 	.string "Willkommen in unserer Spielhalle.$"
 
 MauvilleCity_GameCorner_Text_PachinkoGuy:
-	.string "I used to own one of these dusty old\n"
-	.string "DROPSPIN MACHINES.\p"
-	.string "The manual always said 'Use the\n"
-	.string "DIRECTIONAL BUTTONS to TILT and\l"
-	.string "change the DROP SPEED…'\p"
-	.string "I've always wondered what that\n"
-	.string "means.$"
+	.string "Ich besaß früher einen dieser\n"
+	.string "staubigen alten Dropspin-Automaten.\p"
+	.string "Das Handbuch sagte immer 'Mit den\n"
+	.string "Richtungstasten Neigen und\l"
+	.string "Fallgeschwindigkeit anpassen…'\p"
+	.string "Ich habe mich immer gefragt\n"
+	.string "was das bedeutet.$"
 
 MauvilleCity_GameCorner_Text_Hiker:
-	.string "Gah!\n"
-	.string "I blew it all on that ONIX game.\p"
-	.string "You need to be careful…\p"
-	.string "You only win 2 COINS for\n"
-	.string "every point in these machines.$"
+	.string "Aah!\n"
+	.string "Ich habe alles bei diesem Onix-\l"
+	.string "Spiel verloren…\p"
+	.string "Man gewinnt nur 2 Münzen\n"
+	.string "für jeden Punkt.$"
 	
 MauvilleCity_GameCorner_Text_Derby_1:
-	.string "Looking to bet on the DERBY?\n"
-	.string "We've gone digital!\p"
-	.string "Use one of the tablets\n"
-	.string "in front of the counter.$"	
+	.string "Willst du auf das Rennen wetten?\n"
+	.string "Wir sind jetzt digital!\p"
+	.string "Benutze eines der Tablets\n"
+	.string "vor dem Schalter.$"	
 	
 MauvilleCity_GameCorner_Text_Derby_2:
-	.string "It's not all about CONDITION.\p"
-	.string "At the end of the day, it's\n"
-	.string "really all luck.\p"
-	.string "Sometimes it's best to just\n"
-	.string "pick your favorite!$"	
+	.string "Es geht nicht nur um die Ausdauer.\p"
+	.string "Am Ende des Tages, gehört\n"
+	.string "auch Glück dazu.$"	
 	
 MauvilleCity_GameCorner_Text_Fisherman:
-	.string "I come here for the food.\p"
-	.string "It's no CELADON CAFE…\n"
-	.string "But it'll do.$"		
+	.string "Ich komme für das Essen.\p"
+	.string "Es ist nicht das Prismania Cafe…\n"
+	.string "Aber gut genug.$"		
 	
 MauvilleCity_GameCorner_Text_Gachalady:
-	.string "The LOTTERY MACHINES have odds,\n"
-	.string "but nothing is guaranteed.\p"
-	.string "Some machines are better than\n"
-	.string "others, and there are different\l"
-	.string "rarities in all of them.\p"
-	.string "New POKéMON are also weighted\n"
-	.string "By your POKéDEX, so be wary.$"	
+	.string "Die Lotterie-Automaten haben\n"
+	.string "Gewinnchancen, doch nichts ist.\l"
+	.string "garantiert.\p"
+	.string "Einige Automaten sind besser,\l"
+	.string "mit anderen Seltenheitsstufen.\p"
+	.string "Neue Pokémon werden zudem auch\n"
+	.string "von deinem Pokédex beeinflusst.$"	
 	
 MauvilleCity_GameCorner_Text_Employee:
-	.string "I'm on the lookout for cheaters.\n"
-	.string "Nobody likes a cheater!$"
+	.string "Ich bin ein Angestellter hier…\n"
+	.string "und ein Kunde.$"
 	
 MauvilleCity_GameCorner_Text_Bouncer1:
-	.string "You need a valid TRAINER ID\n"
-	.string "to enter the GAME CORNER.\p"
-	.string "Let's see…\p"
+	.string "Du benötigst eine Trainer ID\n"
+	.string "um die Spielhalle zu betreten.\p"
+	.string "Mal seh'n…\p"
 	.string "…\p"
 	.string "Hmm…\p"
 	.string "…\p"
-	.string "Everything looks good here.\n"
-	.string "Enjoy the GAME CORNER!$"	
+	.string "Wunderbar.\n"
+	.string "Viel Spaß in der Spielhalle!$"	
 	
 MauvilleCity_GameCorner_Text_Bouncer2:
-	.string "Enjoy the GAME CORNER!$"	
+	.string "Viel Spaß in der Spielhalle!$"	
 	
 MauvilleCity_GameCorner_Text_Pachinko:
-	.string "A DROPSPIN MACHINE!\n"
-	.string "It's 3 COINS per BALL.$"
+	.string "Ein Dropspin-Automat!\n"
+	.string "3 Münzen pro Ball.$"
 	
 MauvilleCity_GameCorner_Text_NeedCoinCaseForCoins:
 	.string "Okay, du möchtest Münzen für die\n"
@@ -1538,52 +1536,52 @@ MauvilleCity_GameCorner_Text_SoYourChoiceIsTheTMX:
 	.string "{STR_VAR_1} {STR_VAR_2}?$"
 	
 MauvilleCity_GameCorner_Text_SoYourChoiceIsTheNewX:
-	.string "So your choice is\n"
-	.string "the {STR_VAR_1}?$"
+	.string "Du möchtest also\n"
+	.string "{STR_VAR_1}?$"
 
 MauvilleCity_GameCorner_Text_BlackJack:
-	.string "It's a BLACKJACK TABLE!\n"
-	.string "Want to play?$"
+	.string "Es ist ein Blackjack-Tisch!\n"
+	.string "Spielen?$"
 	
 MauvilleCity_GameCorner_Text_Derby:
-	.string "It's the MAUVILLE DERBY!\n"
-	.string "Want to place a bet?$"	
+	.string "Das Malvenfroh-Rennen!\n"
+	.string "Wetten?$"	
 	
 MauvilleCity_GameCorner_Text_Snake:
-	.string "It's ONIX!\n"
-	.string "It costs 25 COINS to play.$"		
+	.string "Onix!\n"
+	.string "25 Münzen pro Spiel.$"		
 	
 MauvilleCity_GameCorner_Text_Bird:
-	.string "It's FLUTTERFREE!\n"
-	.string "It costs 25 COINS to play.$"		
+	.string "Smettbird!\n"
+	.string "25 Münzen pro Spiel.$"		
 	
 MauvilleCity_GameCorner_Text_Pinball_Meowth:
-	.string "It's a PINBALL MACHINE!\n"
-	.string "It costs 25 COINS to play.$"
+	.string "Es ist ein Pinball-Automat!\n"
+	.string "25 Münzen pro Spiel.$"	
 
 MauvilleCity_GameCorner_Text_BS:
-	.string "It's BLOCK BUILDER!\n"
-	.string "It costs 25 COINS to play.$"
+	.string "Block-Bauer!\n"
+	.string "25 Münzen pro Spiel.$"	
 	
 MauvilleCity_GameCorner_Text_Pinball_Seel:
-	.string "It's a PINBALL MACHINE!\n"
-	.string "It costs 25 COINS to play.$"
+	.string "Es ist ein Pinball-Automat!\n"
+	.string "25 Münzen pro Spiel.$"	
 	
 MauvilleCity_GameCorner_Text_Pinball_Diglett:
-	.string "It's a PINBALL MACHINE!\n"
-	.string "It costs 50 COINS to play.$"
+	.string "Es ist ein Pinball-Automat!\n"
+	.string "50 Münzen pro Spiel.$"	
 	
 MauvilleCity_GameCorner_Text_Pinball_Gengar:
-	.string "It's a PINBALL MACHINE!\n"
-	.string "It costs 100 COINS to play.$"
+	.string "Es ist ein Pinball-Automat!\n"
+	.string "100 Münzen pro Spiel.$"	
 	
 MauvilleCity_GameCorner_Text_VF:
-	.string "It's VOLTORB FLIP!\n"
-	.string "It costs 50 COINS to play.$"
+	.string "Voltobal-Flip!\n"
+	.string "50 Münzen pro Spiel.$"	
 
 VF_Come_Again_Text:
-	.string "Too bad.\n"
-	.string "Try again soon!$"
+	.string "Zu schade.\n"
+	.string "Viel Glück beim nächsten Mal!$"
 
 MauvilleCity_GameCorner_Text_SendToYourHomePC:
 	.string "Danke!\n"
@@ -1593,31 +1591,31 @@ MauvilleCity_GameCorner_Text_NotEnoughCoins:
 	.string "Du hast nicht genügend Münzen.$"
 
 PB_YOU_WON_TEXT:
-	.string "You won\n"
-	.string "{STR_VAR_1} COINS!$"
+	.string "Du hast\n"
+	.string "{STR_VAR_1} Münzen gewonnen!$"
 
 PB_Not_Enough:
-	.string "It's a PINBALL MACHINE!\p"
-	.string "You don't have enough COINS…$"
+	.string "Es ist ein Pinball-Automat!\n"
+	.string "Nicht genügend Münzen…$"
 	
 Snake_Not_Enough:
-	.string "It's ONIX!\p"
-	.string "You don't have enough COINS…$"	
+	.string "Onix!\p"
+	.string "Nicht genügend Münzen…$"
 	
 Bjuice_Not_Enough:
-	.string "You don't have enough COINS.$"	
+	.string "Nicht genügend Münzen…$"
 	
 Bird_Not_Enough:
-	.string "It's FLUTTERFREE!\p"
-	.string "You don't have enough COINS…$"		
+	.string "Smettbird!\p"
+	.string "Nicht genügend Münzen…$"	
 	
 BS_Not_Enough:
-	.string "It's BLOCK BUILDER!\p"
-	.string "You don't have enough COINS…$"	
+	.string "Block-Bauer!\p"
+	.string "Nicht genügend Münzen…$"
 
 Flip_Not_Enough:
-	.string "It's VOLTORB FLIP!\p"
-	.string "You don't have enough COINS…$"
+	.string "Voltobal-Flip!\p"
+	.string "Nicht genügend Münzen…$"
 
 @ Unused
 MauvilleCity_GameCorner_Text_NoRoomForPlacingDecor:
@@ -1625,8 +1623,8 @@ MauvilleCity_GameCorner_Text_NoRoomForPlacingDecor:
 	.string "placing {STR_VAR_1}.$"
 	
 MauvilleCity_GameCorner_Text_VF_Keep_Going:
-	.string "You've made {STR_VAR_1} COINS.\n"
-	.string "Keep going?$"
+	.string "Du hast {STR_VAR_1} Münzen gewonnen.\n"
+	.string "Weiterspielen?$"
 
 MauvilleCity_GameCorner_Text_OhIsThatSo:
 	.string "Oh, wirklich?\n"
@@ -1696,24 +1694,25 @@ MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay:
 	.string "Spielhalle spielen zu können.$"
 	
 	MauvilleCity_GameCorner_Text_Dealer:
-	.string "Some say BLACKJACK is about skill.\n"
-	.string "Others say it's about luck.\p"
-	.string "I say it's about having fun…\n"
-	.string "and maybe winning big!$"
+	.string "Manche sagen beim Blackjack.\n"
+	.string "benötigt man Skills, andere\l"
+	.string "sagen Glück.\p"
+	.string "Ich sage, es geht um Spaß…\n"
+	.string "und einen großen Gewinn!$"
 	
 	MauvilleCity_GameCorner_Text_Dealer2:
-	.string "You can bet anything divisible\n"
-	.string "by 10 here.\p"
-	.string "Maybe you should go all in!$"	
+	.string "Du kannst Wetten, die ein\n"
+	.string "Vielfaches von 10 sind abschließen.\p"
+	.string "Vielleicht ein All-in?$"	
 
 MauvilleCity_GameCorner_Text_VFGuy1:
-	.string "You want to play VOLTORB FLIP?\p"
-	.string "You need to be on the other\n"
-	.string "side of the table.$"
+	.string "Möchtest du Voltobal-Flip spielen?\p"
+	.string "Das geht nur von der\n"
+	.string "anderen Seite des Tisches.$"
 	
 MauvilleCity_GameCorner_Text_VFGuy2:
-	.string "Try the other side of\n"
-	.string "the table, pal.$"	
+	.string "Versuch's auf der anderen\n"
+	.string "Seite des Tisches.$"	
 
 MauvilleCity_GameCorner_Text_RouletteOnlyLuck:
 	.string "Dieses Roulette-Dingens…\n"
@@ -1750,9 +1749,9 @@ MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase:
 	.string "Du kannst ohne Münzkorb nicht spielen.$"
 
 MauvilleCity_GameCorner_Text_CantBuyWithNoCoinCase:
-	.string "Huh? Looks like you need\n"
-	.string "a COIN CASE.$"
+	.string "Oh? Es scheint du benötigst\n"
+	.string "einen Münzkorb.$"
 	
 MauvilleCity_GameCorner_Text_Juice:
-	.string "BERRY JUICE!\n"
-	.string "Just 10 COINS.$"	
+	.string "Beerensaft!\n"
+	.string "Nur 10 Münzen.$"	
