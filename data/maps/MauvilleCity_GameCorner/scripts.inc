@@ -1480,7 +1480,7 @@ MauvilleCity_GameCorner_Text_Employee:
 	.string "und ein Kunde.$"
 	
 MauvilleCity_GameCorner_Text_Bouncer1:
-	.string "Du benötigst eine Trainer ID\n"
+	.string "Du benötigst einen Trainerpass\n"
 	.string "um die Spielhalle zu betreten.\p"
 	.string "Mal seh'n…\p"
 	.string "…\p"
