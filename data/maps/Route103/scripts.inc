@@ -776,7 +776,7 @@ Route103_Text_MayTimeToHeadBack:
 # 411 "data/maps/Route103/scripts.pory"
 	.string "jeder Art von Pokémon anzufreunden.\p"
 # 412 "data/maps/Route103/scripts.pory"
-	.string "Nun wird es aber Zeit, zurück ins LABOR\n"
+	.string "Nun wird es aber Zeit, zurück ins Labor\n"
 # 413 "data/maps/Route103/scripts.pory"
 	.string "zu gehen!$"
 # 414 "data/maps/Route103/scripts.pory"

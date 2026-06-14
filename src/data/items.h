@@ -282,8 +282,8 @@ const struct ItemInfo gItemsInfo[] =
         .pluralName = ITEM_PLURAL_NAME("Heilbälle"),
         .price = 300,
         .description = COMPOUND_STRING(
-            "Ein wohltuender Ball.\n"
-            "Heilt das gefangene\n"
+            "Ein wohltuender\n"
+            "Ball. Heilt das\n"
             "Pokémon komplett."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
@@ -13623,7 +13623,7 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "Steinbrecherische\n"
-            "Attacke, die VERT.-\n"
+            "Attacke, die Vert.-\n"
             "Wert senken kann."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
@@ -14897,7 +14897,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BIG_BAMBOO_SHOOT] =
     {
-        .name = ITEM_NAME("Riesenbambusspross"),
+        .name = ITEM_NAME("Riesenspross"),
         .price = 3000,
         .description = COMPOUND_STRING(
             "A large and rare\n"
@@ -15454,7 +15454,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_UNREMARKABLE_TEACUP] =
     {
-        .name = ITEM_NAME("Teetasse"),
+        .name = ITEM_NAME("Tasse"),
         .price = 1600,
         .description = COMPOUND_STRING(
             "A cracked teacup\n"
