@@ -9759,7 +9759,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Senkt Genauigkeit\n"
             "des Gegners."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9783,7 +9783,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Stellt gesenkten\n"
             "Status wieder her."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9835,7 +9835,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die\n"
             "Erstschlagquote."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9859,7 +9859,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die\n"
             "Freundschaft."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9889,7 +9889,7 @@ const struct ItemInfo gItemsInfo[] =
             "von einer\n"
             "Anziehung."),
         #endif
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9911,7 +9911,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_FLINCH,
         .holdEffectParam = 10,
         .description = sKingsRockDesc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
@@ -9997,7 +9997,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Kann K.O.\n"
             "verhindern."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10040,7 +10040,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die\n"
             "Volltrefferchance."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10066,7 +10066,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Füllt jede Runde\n"
             "wenige KP auf."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10091,7 +10091,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Füllt KP um 1/8\n"
             "des Schadens auf."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10117,7 +10117,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die\n"
             "Genaugkeit."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10142,7 +10142,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die Stärke\n"
             "von physischen Att."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10168,7 +10168,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die Stärke\n"
             "von speziellen Att."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10193,7 +10193,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die Stärke\n"
             "von sehr effekt. Att."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10217,7 +10217,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Verlängt Dauer von\n"
             "Barriere-Attacken."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10241,7 +10241,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erhöht Stärke,\n"
             "aber Träger verliert\n"
             "ständig KP."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10265,7 +10265,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erlaubt direktes\n"
             "Einsetzen einer\n"
             "Lade-Attacke."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10290,7 +10290,7 @@ const struct ItemInfo gItemsInfo[] =
             "Verhindert K.O.-\n"
             "Attacken bei\n"
             "vollen KP mit 1 KP."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10316,7 +10316,7 @@ const struct ItemInfo gItemsInfo[] =
             "Agiert der Träger\n"
             "nach dem Gegner, wird\n"
             "Genauigkeit erhöht."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10341,7 +10341,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die Stärke\n"
             "von wiederholten Att."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10365,7 +10365,7 @@ const struct ItemInfo gItemsInfo[] =
             "Verringert Init.\n"
             "und nimmt Schaden\n"
             "von Boden-Att."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10386,7 +10386,7 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_LAGGING_TAIL,
         .description = sFullIncenseDesc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10410,7 +10410,7 @@ const struct ItemInfo gItemsInfo[] =
             "Verliebt sich der\n"
             "Träger, dann auch\n"
             "der Gegner."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10434,7 +10434,7 @@ const struct ItemInfo gItemsInfo[] =
             "Füllt KP für Gift-\n"
             "Pokémon auf.\n"
             "Schadet allen anderen."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10458,7 +10458,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Verlängert Dauer\n"
             "von Wickel-Att."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10482,7 +10482,7 @@ const struct ItemInfo gItemsInfo[] =
             "Träger nimmt jede\n"
             "Runde Schaden, kann auf\n"
             "Gegner überspringen."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10506,7 +10506,7 @@ const struct ItemInfo gItemsInfo[] =
             "Träger kann\n"
             "garantiert\n"
             "Wechseln."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10531,7 +10531,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die Stärke\n"
             "von absorbierenden Att."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10555,7 +10555,7 @@ const struct ItemInfo gItemsInfo[] =
             "Eine scharfe Klaue,\n"
             "die die Volltreffer-\n"
             "quote erhöht."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
@@ -10578,7 +10578,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_FLINCH,
         .holdEffectParam = 10,
         .description = sKingsRockDesc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
@@ -10604,7 +10604,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erhöht Vert. und Sp.\n"
             "Vert. von sich\n"
             "entwickelnden Pokémon."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10627,7 +10627,7 @@ const struct ItemInfo gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Halbiert das Gewicht\n"
             "des Trägers."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10652,7 +10652,7 @@ const struct ItemInfo gItemsInfo[] =
             "Schadet dem Gegner,\n"
             "wenn dieser den\n"
             "Träger berührt."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10677,7 +10677,7 @@ const struct ItemInfo gItemsInfo[] =
             "Träger schwebt in\n"
             "der Luft. Platzt\n"
             "wenn getroffen."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10702,7 +10702,7 @@ const struct ItemInfo gItemsInfo[] =
             "Gegner muss Wechseln,\n"
             "wenn dieser den\n"
             "Träger trifft."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10727,7 +10727,7 @@ const struct ItemInfo gItemsInfo[] =
             "Träger wird von\n"
             "Attacken getroffen, die\n"
             "sonst ohne Effekt sind."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10751,7 +10751,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erhöht die Stärke\n"
             "von Wickel-\n"
             "Attacken."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10776,7 +10776,7 @@ const struct ItemInfo gItemsInfo[] =
             "Träger wird aus-\n"
             "gewechselt wenn\n"
             "getroffen."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10795,7 +10795,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erhöht Angr. und Sp.\n"
             "Angr., wenn von sehr\n"
             "effekt. Att. getroffen."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10814,7 +10814,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erhöht Sp. Vert.,\n"
             "aber kann keine\n"
             "Statusatt. einsetzen."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10839,7 +10839,7 @@ const struct ItemInfo gItemsInfo[] =
             "Schützt vor Wetter\n"
             "und Pulver-\n"
             "Attacken."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10863,7 +10863,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erhöht Init.,\n"
             "wenn der Träger\n"
             "bedroht ist."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10881,7 +10881,7 @@ const struct ItemInfo gItemsInfo[] =
             "Verlängert die\n"
             "Dauer vom aktiven\n"
             "Terrain."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10899,7 +10899,7 @@ const struct ItemInfo gItemsInfo[] =
             "Guard the holder\n"
             "from contact move\n"
             "effects."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10917,7 +10917,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erhöht Sp. Angr.,\n"
             "wenn Träger Sound\n"
             "einsetzt."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10935,7 +10935,7 @@ const struct ItemInfo gItemsInfo[] =
             "Sinkt ein Statuswert,\n"
             "wird der Träger\n"
             "ausgewechselt."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10953,7 +10953,7 @@ const struct ItemInfo gItemsInfo[] =
             "Verhindert den\n"
             "Effekt von Fallen\n"
             "im Feld."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10971,7 +10971,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erhöht Init., wenn\n"
             "Träger durch Ge-\n"
             "nauigk. nicht trifft."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10989,7 +10989,7 @@ const struct ItemInfo gItemsInfo[] =
             "Senkt Init.,\n"
             "wenn Bizarroraum\n"
             "wirkt."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -11007,7 +11007,7 @@ const struct ItemInfo gItemsInfo[] =
             "Ein Regenschirm,\n"
             "der vor Wetter-\n"
             "effekten schützt."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,

@@ -338,8 +338,8 @@ BerryTree_Text_BerryLeftUnpicked:
 	.string "{STR_VAR_1}.$"
 
 BerryTree_Text_WantToWater:
-	.string "Möchtest du die {STR_VAR_1} mit der\n"
-	.string "Wailmerkanne gießen?$"
+	.string "Möchtest du die {STR_VAR_1}\n"
+	.string "mit der Wailmerkanne gießen?$"
 
 BerryTree_Text_WateredTheBerry:
 	.string "{PLAYER} gießt die {STR_VAR_1}.$"

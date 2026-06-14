@@ -17050,7 +17050,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .weight = 680,
         .description = COMPOUND_STRING(
             "Aus den Enden seiner Arme feuert\n"
-            "es 2 000 °C heiße Feuerbälle ab.\n"
+            "es 2 000 Grad heiße Feuerbälle ab.\n"
             "Dadurch verkohlen sie nach\n"
             "mehrmaligem Einsatz leicht."),
         .pokemonScale = 259,
@@ -17351,7 +17351,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "Es zeichnet sich durch seine\n"
             "dicken Muskeln und sein wildes\n"
             "Temperament aus. Diese Form\n"
-            "wird „Gefechtvariante“ genannt."),
+            "wird 'Gefechtvariante' genannt."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17415,7 +17415,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .weight = 850,
         .description = COMPOUND_STRING(
             "Seine Hörner erreichen mithilfe von\n"
-            "Feuer-Energie 1000 ℃. Spießt es\n"
+            "Feuer-Energie 1000 Grad. Spießt es\n"
             "damit Gegner auf, so erleiden diese\n"
             "Verletzungen und Verbrennungen."),
         .pokemonScale = 256,

@@ -31,7 +31,7 @@ gText_PkmnTransferredLanettesPCBoxFull::
 	.string "“{STR_VAR_1}” übertragen.$"
 
 gText_PkmnSentToPCAfterCatch::
-	.string "{STR_VAR_2}wurde auf\n"
+	.string "{STR_VAR_2} wurde auf\n"
 	.string "{B_PC_CREATOR_NAME} PC übertragen.\p"
 	.string "Es wurde in\n"
 	.string "Box “{STR_VAR_1}”platziert.$"

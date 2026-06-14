@@ -267,10 +267,10 @@ RustboroCity_PokemonSchool_Text_AlwaysWantedSeedot:
 	.string "haben - und endlich habe ich eines!$"
 
 RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems:
-	.string "Pokémon können Items tragen, aber sie\n"
-	.string "wissen nicht, was sie mit von Menschen\l"
-	.string "gemachten Items wie Trank oder Gegengift\l"
-	.string "machen sollen.$"
+	.string "Pokémon können Items tragen, aber\n"
+	.string "sie wissen nicht, was sie mit von\l"
+	.string "Menschen gemachten Items wie Trank\l"
+	.string "oder Gegengift machen sollen.$"
 
 RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself:
 	.string "Weißt du, wie man mit einigen Pokémon-\n"
