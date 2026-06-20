@@ -1,0 +1,123 @@
+script RustboroCity_CuttersHouse_EventScript_Cutter {
+    lock
+    faceplayer
+    if (checkitem(ITEM_CUT_TOOL) == TRUE) {
+        msgbox (RustboroCity_CuttersHouse_Text_AlreadyHasTool, MSGBOX_NPC)
+    release
+    end
+    }
+    if (checkitem(ITEM_HM_CUT) == FALSE) {
+        msgbox (RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse, MSGBOX_NPC)
+        giveitem (ITEM_HM_CUT)
+        setflag (FLAG_RECEIVED_HM_CUT)
+        msgbox (RustboroCity_CuttersHouse_Text_ExplainCut, MSGBOX_NPC)
+    release
+    end
+    }
+    if (flag(FLAG_BADGE01_GET) && (checkitem(ITEM_CUT_TOOL) == FALSE)) {
+        msgbox (RustboroCity_CuttersHouse_EventScript_BattleOffer, MSGBOX_YESNO)
+        if (var(VAR_RESULT) == NO) {
+            goto (RustboroCity_CuttersHouse_EventScript_PlayerAnsweredNo)
+        }
+        else {  
+        trainerbattle_single (TRAINER_CUTTER_1 Text_CutterIntro Text_CutterDefeat RustboroCity_CuttersHouse_EventScript_AfterBattle)
+            }
+        }
+    else {
+        msgbox ("Komm zurück, wenn du den
+        Steinorden hast, und ich bringe
+        dir eine weitere Technik bei.")
+    }
+    release
+    end
+}
+
+script RustboroCity_CuttersHouse_EventScript_PlayerAnsweredNo {
+    msgbox (RustboroCity_CuttersHouse_Text_PlayerRefused, MSGBOX_NPC)
+    release
+    end
+}
+
+script RustboroCity_CuttersHouse_EventScript_AfterBattle {
+    msgbox (RustboroCity_CuttersHouse_Text_AfterBattle, MSGBOX_NPC)
+    giveitem (ITEM_CUT_TOOL)
+    release
+    end
+}   
+
+text RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse {
+"Diese Entschlossenheit…\n"
+"Deine Beweglichkeit…\l"
+"Deine Hingabe für Pokémon…\p"
+"Du bist wirklich ein talentierter\n"
+"Trainer!\p"
+"Nein, warte. Sag jetzt nichts.\n"
+"Ich brauche dich nur anzuschauen.\p"
+"Ich bin mir sicher, dass du mit dieser\n"
+"VM sehr gut umgehen wirst.\p"
+"Kein Grund, so schüchtern zu sein.\n"
+"Hier, nimm sie!$"
+}
+
+text RustboroCity_CuttersHouse_Text_ExplainCut {
+"Diese Versteckte Maschine, sie enthält\n"
+"Zerschneider. Eine VM ist eine Attacke,\l"
+"die auch außerhalb des Kampfes von\l"
+"einem Pokémon angewandt werden kann.\p"
+"Jedes Pokémon, das diese Attacke\n"
+"gelernt hat, kann Bäume damit\l"
+"zerschneiden, wenn der Trainer den\l"
+"Steinorden besitzt.\p"
+"Und, wie eine TM, kann eine VM\n"
+"mehrfach gelehrt werden.$"
+}
+
+text RustboroCity_CuttersHouse_Text_AlreadyHasTool {
+"Die Axt dient dir sicher
+gut. Viel Erfolg!"
+}
+
+text RustboroCity_CuttersHouse_Text_PlayerRefused {
+"Also gut. Komm zurück,
+wenn du bereit bist."
+}
+
+text RustboroCity_CuttersHouse_Text_AfterBattle {
+"Gut gemacht. Hier ist
+eine spezielle Axt!"
+}
+
+text Text_CutterIntro {
+"Ich zeige dir, was
+Holzfäller drauf haben!"
+}
+
+text Text_CutterDefeat {
+"Hätte ich doch nur
+härter trainiert."
+}
+
+text RustboroCity_CuttersHouse_EventScript_BattleOffer {
+"So, du hast also den Orden
+gewonnen.
+Bist du bereit, ein Holzfäller
+zu sein?"
+}
+
+raw `
+RustboroCity_CuttersHouse_MapScripts::
+	.byte 0	
+
+RustboroCity_CuttersHouse_EventScript_Lass::
+	msgbox RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees, MSGBOX_NPC
+	end
+
+RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees:
+	.string "Als sie die Stadt Metarost City\n"
+	.string "vergrößert haben, hat mein Vater ihnen\l"
+	.string "geholfen.\p"
+	.string "Seine Pokémon fällten die Bäume mit\n"
+	.string "Zerschneider.$"
+
+
+`

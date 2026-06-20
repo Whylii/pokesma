@@ -16877,3 +16877,28 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CUTTER_1 ===
+Name: Schmitt
+Class: Expert
+Pic: Expert M
+Gender: Male
+Music: Intense
+Double Battle: Yes
+AI: Check Bad Move
+
+Scyther
+Level: 15
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+
+Scizor
+Level: 15
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+
+Scyther
+Level: 15
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+
+Kleavor @ Black Belt
+Level: 18
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
