@@ -10205,6 +10205,16 @@
       "border_height": 2,
       "border_width": 2,
       "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_LITTLEROOT_TOWN_HOUSE3_1F",
+      "name": "LittlerootTown_House3_1F_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/LittlerootTown_House3_1F/border.bin",
+      "blockdata_filepath": "data/layouts/LittlerootTown_House3_1F/map.bin"
     }
   ]
 }
