@@ -26,14 +26,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Endivie"),
         .cryId = CRY_CHIKORITA,
         .natDexNum = NATIONAL_DEX_CHIKORITA,
-        .categoryName = _("Leaf"),
+        .categoryName = _("Laub"),
         .height = 9,
         .weight = 64,
         .description = COMPOUND_STRING(
-            "It waves its leaf around to keep foes\n"
-            "at bay. However, a sweet fragrance also\n"
-            "wafts from the leaf, creating a friendly\n"
-            "atmosphere that becalms the battlers."),
+            "Im Kampf wedelt Endivie mit seinem Blatt,\n"
+            "um den Feind fern zu halten. Das Blatt\n"
+            "verströmt einen tollen Duft, der Pokémon\n"
+            "beruhigt und eine nette Atmosphäre schafft."),
         .pokemonScale = 512,
         .pokemonOffset = 20,
         .trainerScale = 256,
@@ -96,14 +96,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Lorblatt"),
         .cryId = CRY_BAYLEEF,
         .natDexNum = NATIONAL_DEX_BAYLEEF,
-        .categoryName = _("Leaf"),
+        .categoryName = _("Laub"),
         .height = 12,
         .weight = 158,
         .description = COMPOUND_STRING(
-            "A Bayleef's neck is ringed by curled-up\n"
-            "leaves. Inside each leaf is a small tree\n"
-            "shoot. The fragrance of this shoot\n"
-            "makes people peppy."),
+            "Lorblatts Nacken ist mit zusammengeroll-\n"
+            "ten Blättern behangen. In jedem Blatt be-\n"
+            "findet sich ein kleiner Trieb eines Baumes.\n"
+            "Die Triebe bringen Menschen auf Trab."),
         .pokemonScale = 296,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -170,14 +170,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Meganie"),
         .cryId = CRY_MEGANIUM,
         .natDexNum = NATIONAL_DEX_MEGANIUM,
-        .categoryName = _("Herb"),
+        .categoryName = _("Kräuter"),
         .height = 18,
         .weight = 1005,
         .description = COMPOUND_STRING(
-            "The fragrance of a Meganium's flower\n"
-            "soothes and calms emotions. In battle,\n"
-            "it gives off more of its becalming scent\n"
-            "to blunt the foe's fighting spirit."),
+            "Der Duft von Meganies Blume besänftigt\n"
+            "Gemüter. Im Kampf gibt Meganie mehr\n"
+            "von seinem beruhigenden Duftstoff ab, um\n"
+            "den Kampfgeist des Gegners zu schwächen."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 277,
@@ -313,14 +313,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Feurigel"),
         .cryId = CRY_CYNDAQUIL,
         .natDexNum = NATIONAL_DEX_CYNDAQUIL,
-        .categoryName = _("Fire Mouse"),
+        .categoryName = _("Feuermaus"),
         .height = 5,
         .weight = 79,
         .description = COMPOUND_STRING(
-            "It flares flames from its back to protect\n"
-            "itself. The fire burns vigorously if the\n"
-            "Pokémon is angry. When it is tired,\n"
-            "it sputters with incomplete combustion."),
+            "Feurigel lässt Flammen aus seinem Rücken\n"
+            "lodern, um sich zu schützen. Sie sind sehr\n"
+            "groß, wenn es wütend ist, aber klein, wenn\n"
+            "es müde und erschöpft ist."),
         .pokemonScale = 539,
         .pokemonOffset = 21,
         .trainerScale = 256,
@@ -384,14 +384,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Igelavar"),
         .cryId = CRY_QUILAVA,
         .natDexNum = NATIONAL_DEX_QUILAVA,
-        .categoryName = _("Volcano"),
+        .categoryName = _("Vulkan"),
         .height = 9,
         .weight = 190,
         .description = COMPOUND_STRING(
-            "It intimidates foes with intense gusts of\n"
-            "flames and superheated air. Its quick\n"
-            "nimbleness lets it dodge attacks even\n"
-            "while scorching an enemy."),
+            "Igelavar hält seine Gegner mit Flammen\n"
+            "auf Distanz. Es nutzt seine Gewandtheit\n"
+            "dazu, Angriffen auszuweichen und seinen\n"
+            "Gegner gleichzeitig zu versengen."),
         .pokemonScale = 329,
         .pokemonOffset = 11,
         .trainerScale = 256,
@@ -461,14 +461,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Tornupto"),
         .cryId = CRY_TYPHLOSION,
         .natDexNum = NATIONAL_DEX_TYPHLOSION,
-        .categoryName = _("Volcano"),
+        .categoryName = _("Vulkan"),
         .height = 17,
         .weight = 795,
         .description = COMPOUND_STRING(
-            "It can hide behind a shimmering heat haze\n"
-            "that it creates using its intense flames.\n"
-            "Typhlosion create blazing explosive\n"
-            "blasts that burn everything to cinders."),
+            "Tornupto versteckt sich hinter einem\n"
+            "Hitzeschild, den es mit Hilfe seiner\n"
+            "Flammen erzeugt. Es erzeugt Explosionen,\n"
+            "die alles in Schutt und Asche legen."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 268,
@@ -530,14 +530,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Tornupto"),
         .cryId = CRY_TYPHLOSION,
         .natDexNum = NATIONAL_DEX_TYPHLOSION,
-        .categoryName = _("Ghost Flame"),
+        .categoryName = _("Irrlicht"),
         .height = 16,
         .weight = 698,
         .description = COMPOUND_STRING(
-            "Said to purify lost, forsaken souls with\n"
-            "its flames and guide them to the afterlife.\n"
-            "It's believed its form was influenced by\n"
-            "the energy of Mt. Coronet in ancient times."),
+            "Es heißt, es reinige verlorene\n"
+            "Seelen in seinen Flammen,\n"
+            "um sie sodann ins Jenseits zu führen."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 268,
@@ -598,14 +597,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Karnimani"),
         .cryId = CRY_TOTODILE,
         .natDexNum = NATIONAL_DEX_TOTODILE,
-        .categoryName = _("Big Jaw"),
+        .categoryName = _("Großmaul"),
         .height = 6,
         .weight = 95,
         .description = COMPOUND_STRING(
-            "Despite its small body, Totodile's jaws\n"
-            "are very powerful. While it may think it is\n"
-            "just playfully nipping, its bite has enough\n"
-            "strength to cause serious injury."),
+            "Karnimani ist zwar sehr klein, aber seine\n"
+            "Kiefer sind sehr stark. Es denkt, dass es\n"
+            "nur spielerisch knabbert, aber sein Biss\n"
+            "kann zu schweren Verletzungen führen."),
         .pokemonScale = 487,
         .pokemonOffset = 20,
         .trainerScale = 256,
@@ -672,14 +671,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Tyracroc"),
         .cryId = CRY_CROCONAW,
         .natDexNum = NATIONAL_DEX_CROCONAW,
-        .categoryName = _("Big Jaw"),
+        .categoryName = _("Großmaul"),
         .height = 11,
         .weight = 250,
         .description = COMPOUND_STRING(
-            "Once its jaws clamp down on its foe, it will\n"
-            "absolutely not let go. Because the tips of\n"
-            "its fangs are forked back like fishhooks,\n"
-            "they become irremovably embedded."),
+            "Hat Tyracroc einen Feind mit seinen Kie-\n"
+            "fern eingeklemmt, lässt es ihn nicht mehr\n"
+            "los. Seine angelhakenförmigen Zähne\n"
+            "kann man nicht mehr entfernen."),
         .pokemonScale = 378,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -746,14 +745,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Impergator"),
         .cryId = CRY_FERALIGATR,
         .natDexNum = NATIONAL_DEX_FERALIGATR,
-        .categoryName = _("Big Jaw"),
+        .categoryName = _("Großmaul"),
         .height = 23,
         .weight = 888,
         .description = COMPOUND_STRING(
-            "It opens its huge mouth to intimidate\n"
-            "enemies. In battle, it runs using its thick\n"
-            "and powerful hind legs to charge the\n"
-            "foe with incredible speed."),
+            "Impergator schüchtert seine Feinde mit\n"
+            "seinem riesigen Maul ein. Im Kampf rennt es\n"
+            "mit riesiger Geschwindigkeit auf den\n"
+            "Gegner los und greift ihn an."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 342,
@@ -879,14 +878,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Wiesor"),
         .cryId = CRY_SENTRET,
         .natDexNum = NATIONAL_DEX_SENTRET,
-        .categoryName = _("Scout"),
+        .categoryName = _("Späher"),
         .height = 8,
         .weight = 60,
         .description = COMPOUND_STRING(
-            "They take turns standing guard when it\n"
-            "is time to sleep. The sentry awakens the\n"
-            "others if it senses danger. If one becomes\n"
-            "separated, it turns sleepless with fear."),
+            "Wenn Wiesor schläft, hält immer jemand\n"
+            "Wache. Bei Gefahr weckt die Wache die\n"
+            "anderen auf. Wird es von seinen Artgenos-\n"
+            "sen getrennt, kann es nicht mehr schlafen."),
         .pokemonScale = 439,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -949,14 +948,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Wiesenior"),
         .cryId = CRY_FURRET,
         .natDexNum = NATIONAL_DEX_FURRET,
-        .categoryName = _("Long Body"),
+        .categoryName = _("Langleib"),
         .height = 18,
         .weight = 325,
         .description = COMPOUND_STRING(
-            "A Furret has a very slim build. When under\n"
-            "attack, it can squirm through narrow\n"
-            "spaces and get away. In spite of its short\n"
-            "limbs, it is very nimble and fleet."),
+            "Wiesenior ist schlank. Wird es angegrif-\n"
+            "fen, kann es sich durch enge Zwischen-\n"
+            "räume schlängeln und entkommen. Trotz\n"
+            "seiner kurzen Gliedmaßen ist es sehr flink."),
         .pokemonScale = 346,
         .pokemonOffset = 11,
         .trainerScale = 256,
@@ -1017,14 +1016,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Hoothoot"),
         .cryId = CRY_HOOTHOOT,
         .natDexNum = NATIONAL_DEX_HOOTHOOT,
-        .categoryName = _("Owl"),
+        .categoryName = _("Eule"),
         .height = 7,
         .weight = 212,
         .description = COMPOUND_STRING(
-            "It has an internal organ that senses\n"
-            "the earth's rotation. Using this special\n"
-            "organ, a Hoothoot begins hooting at\n"
-            "precisely the same time every day."),
+            "Hoothoot besitzt ein inneres Organ, das\n"
+            "die Erdumdrehung wahrnimmt. Dieses Organ\n"
+            "ermöglicht es ihm, jeden Tag zur selben\n"
+            "Zeit zu schreien."),
         .pokemonScale = 380,
         .pokemonOffset = -2,
         .trainerScale = 256,
@@ -1102,14 +1101,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Noctuh"),
         .cryId = CRY_NOCTOWL,
         .natDexNum = NATIONAL_DEX_NOCTOWL,
-        .categoryName = _("Owl"),
+        .categoryName = _("Eule"),
         .height = 16,
         .weight = 408,
         .description = COMPOUND_STRING(
-            "It unfailingly catches prey in darkness.\n"
-            "Noctowl owe their success to superior\n"
-            "vision that allows them to see in minimal\n"
-            "light, and to their supple and silent wings."),
+            "Dank seines Sehvermögens, mit dem es auch\n"
+            "bei wenig Licht sehen kann, und dank\n"
+            "seiner Flügel, mit denen es geräuschlos\n"
+            "fliegt, entgeht Noctuh keine Beute."),
         .pokemonScale = 278,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -1170,14 +1169,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Ledyba"),
         .cryId = CRY_LEDYBA,
         .natDexNum = NATIONAL_DEX_LEDYBA,
-        .categoryName = _("Five Star"),
+        .categoryName = _("Fünf-Punkt"),
         .height = 10,
         .weight = 108,
         .description = COMPOUND_STRING(
-            "Ledyba communicate using a fluid that\n"
-            "they secrete from where the legs join the\n"
-            "body. They are said to convey feelings to\n"
-            "others by altering the fluid's scent."),
+            "Ledyba sondert eine duftende Flüssigkeit\n"
+            "ab. Darüber kommuniziert es mit anderen.\n"
+            "Es übermittelt seine Gefühle, indem es die\n"
+            "Duftnote des Sekrets verändert."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -1253,14 +1252,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Ledian"),
         .cryId = CRY_LEDIAN,
         .natDexNum = NATIONAL_DEX_LEDIAN,
-        .categoryName = _("Five Star"),
+        .categoryName = _("Fünf-Punkt"),
         .height = 14,
         .weight = 356,
         .description = COMPOUND_STRING(
-            "It is said that in lands with clean air,\n"
-            "where the stars fill the sky, there live\n"
-            "many Ledian. For good reason, they use\n"
-            "the light of the stars as energy."),
+            "In Ländern mit frischer Luft und Sternen\n"
+            "am Himmel leben unzählig viele Ledian.\n"
+            "Dafür gibt es einen guten Grund: Es\n"
+            "nutzt das Licht der Sterne als Energie."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 256,
@@ -1337,14 +1336,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Webarak"),
         .cryId = CRY_SPINARAK,
         .natDexNum = NATIONAL_DEX_SPINARAK,
-        .categoryName = _("String Spit"),
+        .categoryName = _("Fadenwurf"),
         .height = 5,
         .weight = 85,
         .description = COMPOUND_STRING(
-            "The web it spins can be considered its\n"
-            "second nervous system. It is said that a\n"
-            "Spinarak determines its prey by the tiny\n"
-            "vibrations it feels through the web."),
+            "Das von Webarak gesponnene Netz ist sein\n"
+            "zweites Nervensystem. Es kann anhand der\n"
+            "feinen Vibrationen der Netzfäden bestim-\n"
+            "men, welche Beute sich darauf befindet."),
         .pokemonScale = 414,
         .pokemonOffset = 21,
         .trainerScale = 256,
@@ -1417,14 +1416,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Ariados"),
         .cryId = CRY_ARIADOS,
         .natDexNum = NATIONAL_DEX_ARIADOS,
-        .categoryName = _("Long Leg"),
+        .categoryName = _("Langbein"),
         .height = 11,
         .weight = 335,
         .description = COMPOUND_STRING(
-            "Its feet are tipped with tiny hooked claws\n"
-            "that enable it to scuttle on ceilings and\n"
-            "vertical walls. It constricts its foe with\n"
-            "thin and strong silk webbing."),
+            "Ariados hat kleine hakenförmige Krallen\n"
+            "an seinen Füßen. Damit kann es an Decken\n"
+            "und Wänden entlang flitzen. Es erdrückt\n"
+            "seine Gegner mit starkem Seidenfaden."),
         .pokemonScale = 316,
         .pokemonOffset = 8,
         .trainerScale = 256,
@@ -1492,10 +1491,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 5,
         .weight = 120,
         .description = COMPOUND_STRING(
-            "When it senses danger, it discharges\n"
-            "positive and negative electricity from its\n"
-            "two antennae. It lives in depths beyond\n"
-            "sunlight's reach."),
+            "Bei Gefahr entlädt es positive und\n"
+            "negative Ladungen zwischen seinen\n"
+            "Antennen. Es lebt so tief verborgen,\n"
+            "dass es kein Sonnenlicht kennt."),
         .pokemonScale = 424,
         .pokemonOffset = -2,
         .trainerScale = 256,
@@ -1560,14 +1559,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Lanturn"),
         .cryId = CRY_LANTURN,
         .natDexNum = NATIONAL_DEX_LANTURN,
-        .categoryName = _("Light"),
+        .categoryName = _("Leuchte"),
         .height = 12,
         .weight = 225,
         .description = COMPOUND_STRING(
-            "The light-emitting orbs on its back are\n"
-            "very bright. They are formed from a part of\n"
-            "its dorsal fin. This Pokémon illuminates\n"
-            "the inky darkness of deep seas."),
+            "Seine Leuchten sind sehr stark. Sie\n"
+            "wurden aus Teilen seiner Rückenflosse\n"
+            "gebildet. Lanturn erhellt die finstersten\n"
+            "Meeresgründe."),
         .pokemonScale = 269,
         .pokemonOffset = 6,
         .trainerScale = 256,
@@ -1634,14 +1633,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Togepi"),
         .cryId = CRY_TOGEPI,
         .natDexNum = NATIONAL_DEX_TOGEPI,
-        .categoryName = _("Spike Ball"),
+        .categoryName = _("Zackenball"),
         .height = 3,
         .weight = 15,
         .description = COMPOUND_STRING(
-            "As its energy, it uses the feelings of\n"
-            "compassion and pleasure exuded by\n"
-            "people and Pokémon. It stores up happy\n"
-            "feelings in its shell, then shares them out."),
+            "Togepi nutzt die positiven Emotionen, wie\n"
+            "Freude und Mitgefühl, von Menschen und\n"
+            "Pokémon als Energie. Es speichert Glücks-\n"
+            "gefühle in seiner Schale und teilt sie."),
         .pokemonScale = 507,
         .pokemonOffset = 23,
         .trainerScale = 256,
@@ -1704,14 +1703,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Togetic"),
         .cryId = CRY_TOGETIC,
         .natDexNum = NATIONAL_DEX_TOGETIC,
-        .categoryName = _("Happiness"),
+        .categoryName = _("Freude"),
         .height = 6,
         .weight = 32,
         .description = COMPOUND_STRING(
-            "It is said to be a Pokémon that brings good\n"
-            "fortune. When it spots someone who is pure\n"
-            "of heart, a Togetic appears and shares its\n"
-            "happiness with that person."),
+            "Togetic ist ein Pokémon, das Glück\n"
+            "bringt. Wenn es jemanden trifft, der\n"
+            "reinen Herzens ist, zeigt es sich und\n"
+            "teilt sein Glück mit dieser Person."),
         .pokemonScale = 424,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1783,14 +1782,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Togekiss"),
         .cryId = CRY_TOGEKISS,
         .natDexNum = NATIONAL_DEX_TOGEKISS,
-        .categoryName = _("Jubilee"),
+        .categoryName = _("Jubilierer"),
         .height = 15,
         .weight = 380,
         .description = COMPOUND_STRING(
-            "As everyone knows, it visits peaceful\n"
-            "regions, bringing them gifts of kindness\n"
-            "and sweet blessings. It will never appear\n"
-            "where there is strife."),
+            "Es zeigt sich nie an Orten, wo Streit\n"
+            "und Zwietracht herrschen. In letzter\n"
+            "Zeit wird es kaum noch gesehen."),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
@@ -1858,14 +1856,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Natu"),
         .cryId = CRY_NATU,
         .natDexNum = NATIONAL_DEX_NATU,
-        .categoryName = _("Tiny Bird"),
+        .categoryName = _("Kleinvogel"),
         .height = 2,
         .weight = 20,
         .description = COMPOUND_STRING(
-            "It runs up short trees that grow on the\n"
-            "savanna to peck at new shoots.\n"
-            "A Natu's eyes look as if they are\n"
-            "always observing something."),
+            "Es klettert auf kleine Bäume in der Wüste,\n"
+            "um die neuen Triebe anzuknabbern.\n"
+            "Seine Augen scheinen stets etwas\n"
+            "zu beobachten."),
         .pokemonScale = 610,
         .pokemonOffset = 25,
         .trainerScale = 256,
@@ -1932,14 +1930,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Xatu"),
         .cryId = CRY_XATU,
         .natDexNum = NATIONAL_DEX_XATU,
-        .categoryName = _("Mystic"),
+        .categoryName = _("Mystik"),
         .height = 15,
         .weight = 150,
         .description = COMPOUND_STRING(
-            "It has the enigmatic power of foreseeing\n"
-            "the future. Some people in different lands\n"
-            "have long believed that Xatu are\n"
-            "emissaries from another world."),
+            "Es kann in die Zukunft blicken.\n"
+            "Menschen unterschiedlicher Nationen\n"
+            "glaubten lange Zeit, dass Xatu ein\n"
+            "Abgesandter einer anderen Welt sei."),
         .pokemonScale = 256,
         .pokemonOffset = 6,
         .trainerScale = 318,
@@ -2017,14 +2015,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Voltilamm"),
         .cryId = CRY_MAREEP,
         .natDexNum = NATIONAL_DEX_MAREEP,
-        .categoryName = _("Wool"),
+        .categoryName = _("Wolle"),
         .height = 6,
         .weight = 78,
         .description = COMPOUND_STRING(
-            "Its fluffy wool rubs together and builds\n"
-            "a static charge. The more energy is\n"
-            "charged, the more brightly the lightbulb\n"
-            "at the tip of its tail glows."),
+            "Voltilamms flauschiges, wollenes Fell er-\n"
+            "zeugt durch Reibung statische Aufladung.\n"
+            "Je höher die elektrische Ladung wird,\n"
+            "desto heller leuchtet seine Glühbirne."),
         .pokemonScale = 379,
         .pokemonOffset = 18,
         .trainerScale = 256,
@@ -2090,14 +2088,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Waaty"),
         .cryId = CRY_FLAAFFY,
         .natDexNum = NATIONAL_DEX_FLAAFFY,
-        .categoryName = _("Wool"),
+        .categoryName = _("Wolle"),
         .height = 8,
         .weight = 133,
         .description = COMPOUND_STRING(
-            "Its fleece quality changes to generate\n"
-            "strong static electricity with a small\n"
-            "amount of wool. The bare, slick parts of its\n"
-            "hide are shielded against electricity."),
+            "Die Qualität von Waatys Wolle verändert\n"
+            "sich, so dass mit wenig Wolle große Auf-\n"
+            "ladungen erzeugt werden. Die kahlen Stel-\n"
+            "len sind gegen Elektrizität abgeschirmt."),
         .pokemonScale = 372,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -2168,14 +2166,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Ampharos"),
         .cryId = CRY_AMPHAROS,
         .natDexNum = NATIONAL_DEX_AMPHAROS,
-        .categoryName = _("Light"),
+        .categoryName = _("Leuchte"),
         .height = 14,
         .weight = 615,
         .description = COMPOUND_STRING(
-            "It gives off so much light that it can be\n"
-            "seen even from space. People in the old\n"
-            "days used its light to send signals back\n"
-            "and forth with others far away."),
+            "Ampharos’ Licht ist so stark, dass es so-\n"
+            "gar aus dem Weltraum gesehen werden kann.\n"
+            "In der Antike benutzten die Menschen\n"
+            "sein Licht, um Signale auszutauschen."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -2319,14 +2317,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Azurill"),
         .cryId = CRY_AZURILL,
         .natDexNum = NATIONAL_DEX_AZURILL,
-        .categoryName = _("Polka Dot"),
+        .categoryName = _("Gepunktet"),
         .height = 2,
         .weight = 20,
         .description = COMPOUND_STRING(
-            "Its tail, which is packed with nutrition,\n"
-            "is very bouncy like a rubber ball. On sunny\n"
-            "days they gather at the edge of water and\n"
-            "splash about for fun."),
+            "Sein mit Nährstoffen gefüllter Schwanz\n"
+            "ist elastisch wie ein Gummiball. An\n"
+            "sonnigen Tagen treffen sie sich am\n"
+            "Ufer und planschen einfach so herum."),
         .pokemonScale = 603,
         .pokemonOffset = 23,
         .trainerScale = 256,
@@ -2397,14 +2395,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Marill"),
         .cryId = CRY_MARILL,
         .natDexNum = NATIONAL_DEX_MARILL,
-        .categoryName = _("Aqua Mouse"),
+        .categoryName = _("Aquamaus"),
         .height = 4,
         .weight = 85,
         .description = COMPOUND_STRING(
-            "Its body is covered with water-repellent\n"
-            "fur. Because of the fur, it can swim\n"
-            "through water at high speed without being\n"
-            "slowed by the water's resistance."),
+            "Sein Fell ist wasserabweisend. Daher kann\n"
+            "Marill mit hoher Geschwindigkeit, ohne\n"
+            "vom Wasser gebremst zu werden, schwimmen."),
         .pokemonScale = 476,
         .pokemonOffset = 20,
         .trainerScale = 256,
@@ -2479,14 +2476,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Azumarill"),
         .cryId = CRY_AZUMARILL,
         .natDexNum = NATIONAL_DEX_AZUMARILL,
-        .categoryName = _("Aqua Rabbit"),
+        .categoryName = _("Aquahase"),
         .height = 8,
         .weight = 285,
         .description = COMPOUND_STRING(
-            "It lives in water virtually all day long.\n"
-            "Its body color and pattern act as\n"
-            "camouflage that makes it tough for\n"
-            "enemies to spot in water."),
+            "Es ist quasi den ganzen Tag im Wasser.\n"
+            "Sowohl die Farbe als auch das Muster\n"
+            "seines Körpers dienen als Tarnung vor\n"
+            "Feinden im Wasser."),
         .pokemonScale = 448,
         .pokemonOffset = 16,
         .trainerScale = 256,
@@ -2555,10 +2552,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 5,
         .weight = 150,
         .description = COMPOUND_STRING(
-            "Bonsly prefers an arid atmosphere.\n"
-            "In order to adjust the level of fluids\n"
-            "in its body, it exudes water from its eyes.\n"
-            "This makes it appear to be crying."),
+            "Es sondert sowohl Schweiß als auch\n"
+            "Tränen über seine Augen ab. Sein Schweiß\n"
+            "schmeckt leicht salzig, seine Tränen\n"
+            "ein bisschen bitter."),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -2627,10 +2624,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 12,
         .weight = 380,
         .description = COMPOUND_STRING(
-            "It mimics a tree to avoid being attacked\n"
-            "by enemies. But since its forelegs\n"
-            "remain green throughout the year, it is\n"
-            "easily identified as a fake in the winter."),
+            "Mogelbaum tarnt sich als Baum, um Angrif-\n"
+            "fen aus dem Weg zu gehen. Da seine Vorder-\n"
+            "beine aber das ganze Jahr über grünen,\n"
+            "fällt seine Tarnung im Winter leicht auf."),
         .pokemonScale = 305,
         .pokemonOffset = 8,
         .trainerScale = 256,
@@ -2713,14 +2710,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Hoppspross"),
         .cryId = CRY_HOPPIP,
         .natDexNum = NATIONAL_DEX_HOPPIP,
-        .categoryName = _("Cottonweed"),
+        .categoryName = _("Löwenzahn"),
         .height = 4,
         .weight = 5,
         .description = COMPOUND_STRING(
-            "This Pokémon drifts and floats with the\n"
-            "wind. If it senses the approach of strong\n"
-            "winds, a Hoppip links leaves with others\n"
-            "to prepare against being blown away."),
+            "Hoppspross lässt sich vom Wind treiben.\n"
+            "Bemerkt es, dass ein Sturm aufkommt, ver-\n"
+            "bindet es seine Blätter mit anderen seiner\n"
+            "Art, damit es nicht davongeweht wird."),
         .pokemonScale = 562,
         .pokemonOffset = -7,
         .trainerScale = 256,
@@ -2788,14 +2785,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Hubelupf"),
         .cryId = CRY_SKIPLOOM,
         .natDexNum = NATIONAL_DEX_SKIPLOOM,
-        .categoryName = _("Cottonweed"),
+        .categoryName = _("Löwenzahn"),
         .height = 6,
         .weight = 10,
         .description = COMPOUND_STRING(
-            "It blossoms when the temperature rises\n"
-            "above 64 degrees F. Because its flower's\n"
-            "blooming changes with the temperature,\n"
-            "it is sometimes used as a thermometer."),
+            "Hubelupfs Blume beginnt bei 18 Grad zu\n"
+            "blühen. Wie weit sich die Blüte öffnet,\n"
+            "hängt von der Temperatur ab. Daher wird es\n"
+            "manchmal als Thermometer eingesetzt."),
         .pokemonScale = 387,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2874,14 +2871,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Papungha"),
         .cryId = CRY_JUMPLUFF,
         .natDexNum = NATIONAL_DEX_JUMPLUFF,
-        .categoryName = _("Cottonweed"),
+        .categoryName = _("Löwenzahn"),
         .height = 8,
         .weight = 30,
         .description = COMPOUND_STRING(
-            "Jumpluff ride warm southern winds to\n"
-            "cross the sea and fly to foreign lands.\n"
-            "This Pokémon lands when it encounters\n"
-            "cold air while it is floating."),
+            "Papungha nutzt den Südwind, um das Meer\n"
+            "zu überqueren und in ferne Länder zu flie-\n"
+            "gen. Es sinkt zu Boden, wenn es während\n"
+            "des Fluges auf kalte Luftschichten stößt."),
         .pokemonScale = 418,
         .pokemonOffset = -4,
         .trainerScale = 256,
@@ -2947,14 +2944,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Griffel"),
         .cryId = CRY_AIPOM,
         .natDexNum = NATIONAL_DEX_AIPOM,
-        .categoryName = _("Long Tail"),
+        .categoryName = _("Langschweif"),
         .height = 8,
         .weight = 115,
         .description = COMPOUND_STRING(
-            "Its tail ends with a dexterous, handlike\n"
-            "appendage. However, because it uses the\n"
-            "tail so much, Aipom's real hands have\n"
-            "become rather clumsy."),
+            "An Griffels Schweif befindet sich ein \n"
+            "handähnliches Anhängsel, mit dem es ge-\n"
+            "schickt umgehen kann. Da es häufig den\n"
+            "Schweif einsetzt, sind seine Hände plump."),
         .pokemonScale = 363,
         .pokemonOffset = 6,
         .trainerScale = 256,
@@ -3031,14 +3028,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Ambidiffel"),
         .cryId = CRY_AMBIPOM,
         .natDexNum = NATIONAL_DEX_AMBIPOM,
-        .categoryName = _("Long Tail"),
+        .categoryName = _("Langschweif"),
         .height = 12,
         .weight = 203,
         .description = COMPOUND_STRING(
-            "They live on large trees. Split into two,\n"
-            "the tails are so adept at handling and\n"
-            "doing things, Ambipom rarely uses\n"
-            "its hands now."),
+            "Wenn es hungrig ist, knackt es mit\n"
+            "seinen beiden Schweifen geschickt Nüsse.\n"
+            "Seine eigentlichen Arme verwendet\n"
+            "es kaum noch."),
         .pokemonScale = 282,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -3118,14 +3115,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Sonnkern"),
         .cryId = CRY_SUNKERN,
         .natDexNum = NATIONAL_DEX_SUNKERN,
-        .categoryName = _("Seed"),
+        .categoryName = _("Samen"),
         .height = 3,
         .weight = 18,
         .description = COMPOUND_STRING(
-            "Sunkern try to minimize movement to\n"
-            "conserve the nutrients they have stored\n"
-            "in their bodies for evolution. They will\n"
-            "not eat, subsisting only on morning dew."),
+            "Sonnkern versucht, sich wenig zu bewegen,\n"
+            "um alle gespeicherten Nährstoffe für\n"
+            "seine Entwicklung aufzusparen. Außer\n"
+            "Morgentau nimmt es nichts weiter zu sich."),
         .pokemonScale = 541,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3194,14 +3191,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Sonnflora"),
         .cryId = CRY_SUNFLORA,
         .natDexNum = NATIONAL_DEX_SUNFLORA,
-        .categoryName = _("Sun"),
+        .categoryName = _("Sonne"),
         .height = 8,
         .weight = 85,
         .description = COMPOUND_STRING(
-            "Sunflora convert solar energy into\n"
-            "nutrition. They are highly active in the\n"
-            "warm daytime but suddenly stop moving as\n"
-            "soon as the sun sets."),
+            "Sonnflora verwandelt Solarenergie in\n"
+            "Nährstoffe. Tagsüber, wenn es warm ist,\n"
+            "ist es aktiv. Wenn aber die Sonne unter-\n"
+            "gegangen ist, hört es auf sich zu bewegen."),
         .pokemonScale = 444,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -3264,14 +3261,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Yanma"),
         .cryId = CRY_YANMA,
         .natDexNum = NATIONAL_DEX_YANMA,
-        .categoryName = _("Clear Wing"),
+        .categoryName = _("Libelle"),
         .height = 12,
         .weight = 380,
         .description = COMPOUND_STRING(
-            "It can see 360 degrees without moving\n"
-            "its eyes. It is a great flier capable of\n"
-            "making sudden stops and turning midair to\n"
-            "quickly chase down targeted prey."),
+            "Yanma hat einen Blickwinkel von 360 Grad,\n"
+            "ohne die Augen zu bewegen. Es ist ein\n"
+            "toller Flieger und geübt darin, im Flug\n"
+            "anzuhalten oder zu wenden."),
         .pokemonScale = 274,
         .pokemonOffset = -1,
         .trainerScale = 256,
@@ -3357,14 +3354,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Yanmega"),
         .cryId = CRY_YANMEGA,
         .natDexNum = NATIONAL_DEX_YANMEGA,
-        .categoryName = _("Ogre Darner"),
+        .categoryName = _("Agrion"),
         .height = 19,
         .weight = 515,
         .description = COMPOUND_STRING(
-            "This six-legged Pokémon is easily capable\n"
-            "of transporting an adult in flight. It is\n"
-            "adept at biting apart foes while flying\n"
-            "by at high speed."),
+            "Die Kraft seines Kiefers ist unglaublich.\n"
+            "Es kann Gegner zerbeißen, während\n"
+            "es mit hoher Geschwindigkeit\n"
+            "an ihnen vorbeifliegt."),
         .pokemonScale = 256,
         .pokemonOffset = 1,
         .trainerScale = 326,
@@ -3451,14 +3448,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Felino"),
         .cryId = CRY_WOOPER,
         .natDexNum = NATIONAL_DEX_WOOPER,
-        .categoryName = _("Water Fish"),
+        .categoryName = _("Fisch"),
         .height = 4,
         .weight = 85,
         .description = COMPOUND_STRING(
-            "Wooper usually live in water but come\n"
-            "out onto land seeking food occasionally.\n"
-            "On land, they coat their bodies with a\n"
-            "gooey, toxic film."),
+            "Felino lebt eigentlich im Wasser. Manchmal\n"
+            "kommt es jedoch an Land, um nach Nahrung\n"
+            "zu suchen. An Land bedeckt es seinen\n"
+            "Körper mit einem schleimigen Giftfilm."),
         .pokemonScale = 479,
         .pokemonOffset = 21,
         .trainerScale = 256,
@@ -3534,14 +3531,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Morlord"),
         .cryId = CRY_QUAGSIRE,
         .natDexNum = NATIONAL_DEX_QUAGSIRE,
-        .categoryName = _("Water Fish"),
+        .categoryName = _("Fisch"),
         .height = 14,
         .weight = 750,
         .description = COMPOUND_STRING(
-            "A Quagsire hunts by leaving its mouth wide\n"
-            "open in water and waiting for its prey to\n"
-            "blunder in. Because it doesn't move, it\n"
-            "does not get very hungry."),
+            "Morlord jagt seine Nahrung, indem es im\n"
+            "Wasser sein Maul weit aufmacht und auf\n"
+            "Beute wartet. Da es sich nicht bewegt,\n"
+            "wird es auch nicht besonders hungrig."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -3614,14 +3611,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Felino"),
         .cryId = CRY_WOOPER,
         .natDexNum = NATIONAL_DEX_WOOPER,
-        .categoryName = _("Poison Fish"),
+        .categoryName = _("Giftfisch"),
         .height = 4,
         .weight = 110,
         .description = COMPOUND_STRING(
-            "After losing a territorial struggle,\n"
-            "Wooper began living on land.\n"
-            "The Pokémon changed over time, developing\n"
-            "a poisonous film to protect its body."),
+            "Da allein zu reisen für sie zu gefährlich\n"
+            "ist, durchstreifen sie Sümpfe in Reihen\n"
+            "aus drei bis vier Exemplaren und helfen\n"
+            "dabei einander."),
         .pokemonScale = 479,
         .pokemonOffset = 21,
         .trainerScale = 256,
@@ -3678,17 +3675,17 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
         .abilities = { ABILITY_POISON_POINT, ABILITY_WATER_ABSORB, ABILITY_UNAWARE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Clodsire"),
+        .speciesName = _("Suelord"),
         .cryId = CRY_CLODSIRE,
         .natDexNum = NATIONAL_DEX_CLODSIRE,
-        .categoryName = _("Spiny Fish"),
+        .categoryName = _("Dornfisch"),
         .height = 18,
         .weight = 2230,
         .description = COMPOUND_STRING(
-            "When attacked, this Pokémon will\n"
-            "retaliate by sticking thick spines out\n"
-            "from its body. It's a risky move\n"
-            "that puts everything on the line."),
+            "Wird Suelord angegriffen, wehrt es\n"
+            "sich, indem es dicke Stacheln ausfährt.\n"
+            "Setzt es diese riskante Attacke ein,\n"
+            "ist es bereit, aufs Ganze zu gehen."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -3751,14 +3748,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Kramurx"),
         .cryId = CRY_MURKROW,
         .natDexNum = NATIONAL_DEX_MURKROW,
-        .categoryName = _("Darkness"),
+        .categoryName = _("Finsternis"),
         .height = 5,
         .weight = 21,
         .description = COMPOUND_STRING(
-            "Murkrow were feared as the alleged\n"
-            "bearers of ill fortune. It shows strong\n"
-            "interest in anything that sparkles. It will\n"
-            "even try to steal rings from women."),
+            "Kramurx wurde als vermeintlicher Über-\n"
+            "bringer des Unheils gefürchtet. Es hat ein\n"
+            "großes Interesse an allem, was funkelt und\n"
+            "glitzert. Es stiehlt auch Ringe von Frauen."),
         .pokemonScale = 401,
         .pokemonOffset = -8,
         .trainerScale = 256,
@@ -3837,14 +3834,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Kramshef"),
         .cryId = CRY_HONCHKROW,
         .natDexNum = NATIONAL_DEX_HONCHKROW,
-        .categoryName = _("Big Boss"),
+        .categoryName = _("Anführer"),
         .height = 9,
         .weight = 273,
         .description = COMPOUND_STRING(
-            "Becoming active at night, it is known\n"
-            "to swarm with numerous Murkrow in tow.\n"
-            "It is said that it never forgives the\n"
-            "mistakes of its cronies."),
+            "Ein nachtaktives Pokémon, das\n"
+            "dafür bekannt ist, zahlreiche Kramurx\n"
+            "um sich zu scharen und so\n"
+            "große Schwärme zu bilden."),
         .pokemonScale = 338,
         .pokemonOffset = 8,
         .trainerScale = 256,
@@ -3909,14 +3906,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Traunfugil"),
         .cryId = CRY_MISDREAVUS,
         .natDexNum = NATIONAL_DEX_MISDREAVUS,
-        .categoryName = _("Screech"),
+        .categoryName = _("Kreischer"),
         .height = 7,
         .weight = 10,
         .description = COMPOUND_STRING(
-            "A Misdreavus frightens people with a\n"
-            "creepy, sobbing cry. It apparently uses\n"
-            "its red spheres to absorb the fear of foes\n"
-            "as its nutrition."),
+            "Traunfugil erschreckt Menschen mit einem\n"
+            "markerschütternden Schrei. Mit seinen\n"
+            "roten Kugeln nimmt es die Ängste seiner\n"
+            "Feinde auf und wandelt sie in Nahrung um."),
         .pokemonScale = 407,
         .pokemonOffset = -8,
         .trainerScale = 256,
@@ -3990,14 +3987,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Traunmagil"),
         .cryId = CRY_MISMAGIUS,
         .natDexNum = NATIONAL_DEX_MISMAGIUS,
-        .categoryName = _("Magical"),
+        .categoryName = _("Magisch"),
         .height = 9,
         .weight = 44,
         .description = COMPOUND_STRING(
-            "Its cries sound like incantations.\n"
-            "Those hearing it are tormented by\n"
-            "headaches and hallucinations.\n"
-            "It appears where you least expect it."),
+            "Es erscheint aus dem Nichts,\n"
+            "flüstert Beschwörungen, spricht\n"
+            "Flüche aus und erzeugt\n"
+            "furchteinflößende Trugbilder."),
         .pokemonScale = 338,
         .pokemonOffset = 8,
         .trainerScale = 256,
@@ -4164,14 +4161,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Isso"),
         .cryId = CRY_WYNAUT,
         .natDexNum = NATIONAL_DEX_WYNAUT,
-        .categoryName = _("Bright"),
+        .categoryName = _("Strahlekind"),
         .height = 6,
         .weight = 140,
         .description = COMPOUND_STRING(
-            "A Wynaut loves to eat sweet fruits.\n"
-            "It cleverly picks fruits using its earlike\n"
-            "arms. They gather in fruit gardens, drawn\n"
-            "by the fragrance."),
+            "Isso liebt süße Früchte. Geschickt\n"
+            "pflückt es mit seinen ohrenartigen Armen\n"
+            "Obst. Sie versammeln sich in Obstgärten,\n"
+            "da sie vom Geruch angezogen werden."),
         .pokemonScale = 484,
         .pokemonOffset = 19,
         .trainerScale = 256,
@@ -4237,14 +4234,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Woingenau"),
         .cryId = CRY_WOBBUFFET,
         .natDexNum = NATIONAL_DEX_WOBBUFFET,
-        .categoryName = _("Patient"),
+        .categoryName = _("Geduld"),
         .height = 13,
         .weight = 285,
         .description = COMPOUND_STRING(
-            "Usually docile, a Wobbuffet strikes back\n"
-            "ferociously if its black tail is attacked.\n"
-            "It makes its lair in caves where it waits\n"
-            "for nightfall."),
+            "Woingenau ist sehr ruhig. Wird jedoch sein\n"
+            "schwarzer Schwanz angegriffen, schlägt es\n"
+            "erbarmungslos zurück. Es lebt in Höhlen, wo\n"
+            "es den Einbruch der Nacht erwartet."),
         .pokemonScale = 274,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -4326,14 +4323,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Girafarig"),
         .cryId = CRY_GIRAFARIG,
         .natDexNum = NATIONAL_DEX_GIRAFARIG,
-        .categoryName = _("Long Neck"),
+        .categoryName = _("Langhals"),
         .height = 15,
         .weight = 415,
         .description = COMPOUND_STRING(
-            "A Girafarig is an herbivore--it eats\n"
-            "grass and tree shoots. While it is eating,\n"
-            "its tail makes chewing and swallowing\n"
-            "motions as if it were also eating."),
+            "Girafarig ist ein Pflanzenfresser, denn\n"
+            "es ernährt sich von Gräsern und Pflanzen.\n"
+            "Beim Essen macht sein Schwanz auch\n"
+            "Esslaute und gibt vor zu kauen."),
         .pokemonScale = 281,
         .pokemonOffset = 1,
         .trainerScale = 256,
@@ -4411,14 +4408,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Farigiraf"),
         .cryId = CRY_FARIGIRAF,
         .natDexNum = NATIONAL_DEX_FARIGIRAF,
-        .categoryName = _("Long Neck"),
+        .categoryName = _("Langhals"),
         .height = 32,
         .weight = 1600,
         .description = COMPOUND_STRING(
-            "Now that the brain waves from the\n"
-            "head and tail are synced up, the\n"
-            "psychic power of this Pokémon is 10\n"
-            "times stronger than Girafarig's."),
+            "Aufgrund der synchronisierten\n"
+            "Gehirnströme von Kopf und Schweif\n"
+            "sind seine Psycho-Kräfte zehnmal so\n"
+            "stark wie die von Girafarig."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -4477,14 +4474,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Tannza"),
         .cryId = CRY_PINECO,
         .natDexNum = NATIONAL_DEX_PINECO,
-        .categoryName = _("Bagworm"),
+        .categoryName = _("Beutelwurm"),
         .height = 6,
         .weight = 72,
         .description = COMPOUND_STRING(
-            "A Pineco hangs from a tree branch and\n"
-            "waits for prey. While eating, if it is\n"
-            "disturbed by someone shaking its tree, it\n"
-            "falls on the ground and suddenly explodes."),
+            "Tannza hängt an Ästen und wartet auf\n"
+            "Beute. Schüttelt man es bei einer\n"
+            "Mahlzeit vom Baum, explodiert es ohne\n"
+            "Vorwarnung."),
         .pokemonScale = 445,
         .pokemonOffset = 2,
         .trainerScale = 256,
@@ -4551,14 +4548,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Forstellka"),
         .cryId = CRY_FORRETRESS,
         .natDexNum = NATIONAL_DEX_FORRETRESS,
-        .categoryName = _("Bagworm"),
+        .categoryName = _("Beutelwurm"),
         .height = 12,
         .weight = 1258,
         .description = COMPOUND_STRING(
-            "It keeps itself inside its steel shell.\n"
-            "The shell is opened when it is catching\n"
-            "prey, but it is so quick that the shell's\n"
-            "inside cannot be seen."),
+            "Forstellka versteckt sich in seiner\n"
+            "Schale. Sie öffnet sich, wenn es nach\n"
+            "Beute schnappt. Dies geht jedoch so\n"
+            "schnell, dass man das Innere nicht sieht."),
         .pokemonScale = 293,
         .pokemonOffset = 5,
         .trainerScale = 256,
@@ -4627,14 +4624,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Dummisel"),
         .cryId = CRY_DUNSPARCE,
         .natDexNum = NATIONAL_DEX_DUNSPARCE,
-        .categoryName = _("Land Snake"),
+        .categoryName = _("Schlange"),
         .height = 15,
         .weight = 140,
         .description = COMPOUND_STRING(
-            "Its drill-tipped tail is used to burrow into\n"
-            "the ground backwards. This Pokémon is\n"
-            "known to make its nest in complex shapes\n"
-            "deep under the ground."),
+            "Dummisel hat einen Bohrer als Schweif.\n"
+            "Damit gräbt es sich rückwärts in den\n"
+            "Boden. Es baut seinen Nestkomplex tief\n"
+            "unter der Erdoberfläche auf."),
         .pokemonScale = 316,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -4702,14 +4699,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Dummimisel"),
         .cryId = CRY_DUDUNSPARCE,
         .natDexNum = NATIONAL_DEX_DUDUNSPARCE,
-        .categoryName = _("Land Snake"),
+        .categoryName = _("Erdschlange"),
         .height = 36,
         .weight = 392,
         .description = COMPOUND_STRING(
-            "This Pokémon uses its hard tail to\n"
-            "make its nest by boring holes into\n"
-            "bedrock deep underground. The nest\n"
-            "can reach lengths of over six miles."),
+            "Mit seinem harten Schweif höhlt es\n"
+            "tief unter der Erde Felsgestein aus,\n"
+            "um seinen Bau zu graben. Dessen Gänge\n"
+            "können bis zu 10 km lang werden."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -4766,14 +4763,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Dudunsparce"),
         .cryId = CRY_DUDUNSPARCE,
         .natDexNum = NATIONAL_DEX_DUDUNSPARCE,
-        .categoryName = _("Land Snake"),
+        .categoryName = _("Erdschlange"),
         .height = 45,
         .weight = 474,
         .description = COMPOUND_STRING(
-            "A recent study uncovered that the\n"
-            "number of segments a Dudunsparce's\n"
-            "body has is determined by the\n"
-            "Pokémon's genes."),
+            "Es hat ein sehr sanftes Gemüt.\n"
+            "Pokémon, die sich in sein Nest\n"
+            "verirren, trägt es auf seinem\n"
+            "Rücken zurück zum Eingang."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -4833,14 +4830,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Skorgla"),
         .cryId = CRY_GLIGAR,
         .natDexNum = NATIONAL_DEX_GLIGAR,
-        .categoryName = _("Fly Scorpion"),
+        .categoryName = _("Flugskorpion"),
         .height = 11,
         .weight = 648,
         .description = COMPOUND_STRING(
-            "It glides without making a single sound.\n"
-            "It grasps the face of its foe using its\n"
-            "hind and large front claws, then stabs\n"
-            "with its poison barb."),
+            "Skorgla segelt lautlos durch die Lüfte.\n"
+            "Es verankert sich mit Hilfe der Krallen und\n"
+            "riesigen Scheren am Gesicht eines\n"
+            "Feindes und vergiftet ihn anschließend."),
         .pokemonScale = 350,
         .pokemonOffset = -1,
         .trainerScale = 256,
@@ -4919,14 +4916,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Skorgro"),
         .cryId = CRY_GLISCOR,
         .natDexNum = NATIONAL_DEX_GLISCOR,
-        .categoryName = _("Fang Scorp"),
+        .categoryName = _("Zahnskorpion"),
         .height = 20,
         .weight = 425,
         .description = COMPOUND_STRING(
-            "Gliscor observes prey while hanging\n"
-            "upside down from branches. Its flight is\n"
-            "soundless. When the chance presents\n"
-            "itself, it swoops!"),
+            "Es fliegt lautlos am Himmel.\n"
+            "Sobald es sich seiner Beute\n"
+            "genähert hat, landet es augen-\n"
+            "blicklich einen Volltreffer."),
         .pokemonScale = 261,
         .pokemonOffset = 1,
         .trainerScale = 334,
@@ -4995,14 +4992,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Snubbull"),
         .cryId = CRY_SNUBBULL,
         .natDexNum = NATIONAL_DEX_SNUBBULL,
-        .categoryName = _("Fairy"),
+        .categoryName = _("Fee"),
         .height = 6,
         .weight = 78,
         .description = COMPOUND_STRING(
-            "By baring its fangs and making a scary\n"
-            "face, it sends smaller Pokémon scurrying\n"
-            "in terror. The Snubbull does seem a\n"
-            "little sad at making its foes flee."),
+            "Indem es seine Zähne fletscht und ein\n"
+            "Furcht erregendes Gesicht macht, schlägt\n"
+            "Snubbul kleinere Pokémon in die Flucht.\n"
+            "Darüber ist es jedoch etwas traurig."),
         .pokemonScale = 465,
         .pokemonOffset = 19,
         .trainerScale = 256,
@@ -5071,14 +5068,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Granbull"),
         .cryId = CRY_GRANBULL,
         .natDexNum = NATIONAL_DEX_GRANBULL,
-        .categoryName = _("Fairy"),
+        .categoryName = _("Fee"),
         .height = 14,
         .weight = 487,
         .description = COMPOUND_STRING(
-            "It has a particularly well-developed lower\n"
-            "jaw. The huge fangs are heavy, causing\n"
-            "it to tilt its head. Unless it is startled,\n"
-            "it will not try to bite."),
+            "GRANBULL besitzt einen besonders aus-\n"
+            "geprägten Unterkiefer. Wegen seiner\n"
+            "schweren Zähne wackelt es mit dem Kopf.\n"
+            "Es beißt nur zu, wenn es erschreckt wird."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -5146,14 +5143,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Baldorfish"),
         .cryId = CRY_QWILFISH,
         .natDexNum = NATIONAL_DEX_QWILFISH,
-        .categoryName = _("Balloon"),
+        .categoryName = _("Ballon"),
         .height = 5,
         .weight = 39,
         .description = COMPOUND_STRING(
-            "A Qwilfish uses the pressure of water\n"
-            "it swallows to shoot toxic quills all at\n"
-            "once from all over its body. It finds\n"
-            "swimming to be somewhat challenging."),
+            "Baldorfish saugt Wasser ein, um sich auf-\n"
+            "zublasen. Es nutzt den Druck des Wassers\n"
+            "dazu, Giftstacheln aus seinem Körper zu\n"
+            "verschießen. Schwimmen fällt ihm schwer."),
         .pokemonScale = 430,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5223,14 +5220,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Baldorfish"),
         .cryId = CRY_QWILFISH,
         .natDexNum = NATIONAL_DEX_QWILFISH,
-        .categoryName = _("Balloon"),
+        .categoryName = _("Ballon"),
         .height = 5,
         .weight = 39,
         .description = COMPOUND_STRING(
-            "A form of Qwilfish from the distant past.\n"
-            "Fishers detest this troublesome Pokémon\n"
-            "because it sprays poison from its spines,\n"
-            "getting it everywhere."),
+            "Es lebt ufernah in Gewässern kalter\n"
+            "Gefilde. Verglichen mit den Baldorfish\n"
+            "anderer Regionen sind seine Giftstacheln\n"
+            "dicker und kürzer."),
         .pokemonScale = 430,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5289,17 +5286,17 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_POISON_POINT, ABILITY_SWIFT_SWIM, ABILITY_INTIMIDATE },
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
-        .speciesName = _("Overqwil"),
+        .speciesName = _("Myriador"),
         .cryId = CRY_OVERQWIL,
         .natDexNum = NATIONAL_DEX_OVERQWIL,
-        .categoryName = _("Pin Cluster"),
+        .categoryName = _("Tausenddorn"),
         .height = 25,
         .weight = 605,
         .description = COMPOUND_STRING(
-            "Its lancelike spikes and savage\n"
-            "temperament have earned it the\n"
-            "nickname “Sea Fiend”.\n"
-            "It slurps up poison to nourish itself."),
+            "Selbst im Schlaf reagieren\n"
+            "Myriadors Giftstacheln von\n"
+            "allein und spießen alles auf,\n"
+            "was sich ihm nähert."),
         .pokemonScale = 257,
         .pokemonOffset = 10,
         .trainerScale = 423,
@@ -5365,14 +5362,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Pottrott"),
         .cryId = CRY_SHUCKLE,
         .natDexNum = NATIONAL_DEX_SHUCKLE,
-        .categoryName = _("Mold"),
+        .categoryName = _("Schimmel"),
         .height = 6,
         .weight = 205,
         .description = COMPOUND_STRING(
-            "A Shuckle hides under rocks, keeping its\n"
-            "body concealed inside its shell while\n"
-            "eating stored berries. The berries mix with\n"
-            "its body fluids to become a juice."),
+            "Es versteckt sich unter Steinen, wenn es\n"
+            "gesammelte Beeren zu sich nimmt. Die\n"
+            "Beeren vermischen sich mit seinen\n"
+            "Körperflüssigkeiten zu einem Saft."),
         .pokemonScale = 485,
         .pokemonOffset = 18,
         .trainerScale = 256,
@@ -5435,14 +5432,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Skaraborn"),
         .cryId = CRY_HERACROSS,
         .natDexNum = NATIONAL_DEX_HERACROSS,
-        .categoryName = _("Single Horn"),
+        .categoryName = _("Einzelhorn"),
         .height = 15,
         .weight = 540,
         .description = COMPOUND_STRING(
-            "They gather in forests seeking the sweet\n"
-            "sap of trees. It is completely clad in a\n"
-            "steel-hard shell. It is proud of its horn,\n"
-            "which it uses to fling foes."),
+            "Es versammelt sich mit seinen Artgenossen\n"
+            "im Wald, um nach Baumharz zu suchen.\n"
+            "Skaraborn ist stolz auf sein Horn, mit dem\n"
+            "es Gegner herumwirft."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5599,14 +5596,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Sniebel"),
         .cryId = CRY_SNEASEL,
         .natDexNum = NATIONAL_DEX_SNEASEL,
-        .categoryName = _("Sharp Claw"),
+        .categoryName = _("Stichklaue"),
         .height = 9,
         .weight = 280,
         .description = COMPOUND_STRING(
-            "A Sneasel scales trees by punching its\n"
-            "hooked claws into the bark. It seeks out\n"
-            "unguarded nests and steals eggs for food\n"
-            "while the parents are away."),
+            "Sniebel klettert an Bäumen hoch, indem es\n"
+            "seine Krallen in die Rinde schlägt. Es\n"
+            "sucht nach unbewachten Nestern und\n"
+            "stiehlt die Eier, wenn die Eltern weg sind."),
         .pokemonScale = 413,
         .pokemonOffset = -3,
         .trainerScale = 256,
@@ -5691,14 +5688,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Snibunna"),
         .cryId = CRY_WEAVILE,
         .natDexNum = NATIONAL_DEX_WEAVILE,
-        .categoryName = _("Sharp Claw"),
+        .categoryName = _("Stichklaue"),
         .height = 11,
         .weight = 340,
         .description = COMPOUND_STRING(
-            "They travel in groups of four or five,\n"
-            "leaving signs for one another on trees\n"
-            "and rocks. They bring down their prey\n"
-            "with coordinated attacks."),
+            "Sie sind immer zu viert oder fünft\n"
+            "unterwegs. Bei der Jagd arbeiten sie\n"
+            "zusammen, indem sie Zeichen in Felsen\n"
+            "und Bäume ritzen."),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
@@ -5774,14 +5771,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Sniebel"),
         .cryId = CRY_SNEASEL,
         .natDexNum = NATIONAL_DEX_SNEASEL,
-        .categoryName = _("Sharp Claw"),
+        .categoryName = _("Stichklaue"),
         .height = 9,
         .weight = 270,
         .description = COMPOUND_STRING(
-            "Its sturdy, curved claws are ideal for\n"
-            "traversing precipitous cliffs. From the\n"
-            "tips of these claws drips a venom that\n"
-            "infiltrates the nerves of any prey caught."),
+            "Seine robusten Krallen eignen sich ideal\n"
+            "dazu, steile Felswände zu erklimmen.\n"
+            "Von den Spitzen tropft Gift, welches die\n"
+            "Nerven seiner Beute lähmt."),
         .pokemonScale = 413,
         .pokemonOffset = -3,
         .trainerScale = 256,
@@ -5853,17 +5850,17 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_PRESSURE, ABILITY_UNBURDEN, ABILITY_POISON_TOUCH },
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = TRUE,
-        .speciesName = _("Sneasler"),
+        .speciesName = _("Snieboss"),
         .cryId = CRY_SNEASLER,
         .natDexNum = NATIONAL_DEX_SNEASLER,
         .categoryName = _("Free Climb"),
         .height = 13,
         .weight = 430,
         .description = COMPOUND_STRING(
-            "Because of its wicked poison and daunting\n"
-            "physical prowess, no other species could\n"
-            "hope to best it on frozen highlands. It\n"
-            "prefers solitude and doesn't form packs."),
+            "Im frostigen Hochland kann diesem Pokémon\n"
+            "kein anderes das Wasser reichen, da es\n"
+            "neben hochwirksamem Gift über herausragende\n"
+            "körperliche Fähigkeiten verfügt."),
         .pokemonScale = 272,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -5928,14 +5925,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Teddiursa"),
         .cryId = CRY_TEDDIURSA,
         .natDexNum = NATIONAL_DEX_TEDDIURSA,
-        .categoryName = _("Little Bear"),
+        .categoryName = _("Kleinbär"),
         .height = 6,
         .weight = 88,
         .description = COMPOUND_STRING(
-            "It licks its palms that are sweetened by\n"
-            "being soaked in honey. A Teddiursa makes\n"
-            "its own honey by blending fruits and pollen\n"
-            "collected by Beedrill."),
+            "Teddiursa leckt gern seine mit Honig be-\n"
+            "deckten Pranken ab. Es bereitet seinen\n"
+            "eigenen Honig zu, indem es die von Bibor\n"
+            "gesammelten Früchte und Pollen vermengt."),
         .pokemonScale = 455,
         .pokemonOffset = 19,
         .trainerScale = 256,
@@ -6000,14 +5997,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Ursaring"),
         .cryId = CRY_URSARING,
         .natDexNum = NATIONAL_DEX_URSARING,
-        .categoryName = _("Hibernator"),
+        .categoryName = _("Winterschläfer"),
         .height = 18,
         .weight = 1258,
         .description = COMPOUND_STRING(
-            "In forests, it is said that there are many\n"
-            "streams and towering trees where an\n"
-            "Ursaring gathers food. It walks through\n"
-            "its forest collecting food every day."),
+            "In den von Ursaring bewohnten Wäldern\n"
+            "gibt es viele Flüsse und Bäume, in denen\n"
+            "es Nahrung findet. Es läuft täglich durch\n"
+            "den Wald, um nach Essbarem zu suchen."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6085,13 +6082,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Ursaluna"),
         .cryId = CRY_URSALUNA,
         .natDexNum = NATIONAL_DEX_URSALUNA,
-        .categoryName = _("Peat"),
+        .categoryName = _("Torf"),
         .height = 24,
         .weight = 2900,
         .description = COMPOUND_STRING(
-            "Swampy terrain gives Ursaluna its burly\n"
-            "physique and newfound capacity to\n"
-            "manipulate peat at will."),
+            "Vermutlich ist das sumpfige Gelände\n"
+            "der Grund für seine robuste Statur sowie\n"
+            "die neu errungene Fähigkeit, Torf nach\n"
+            "Belieben manipulieren zu können."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 369,
@@ -6149,14 +6147,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Ursaluna"),
         .cryId = CRY_URSALUNA_BLOODMOON,
         .natDexNum = NATIONAL_DEX_URSALUNA,
-        .categoryName = _("Peat"),
+        .categoryName = _("Torf"),
         .height = 27,
         .weight = 3330,
         .description = COMPOUND_STRING(
-            "It crossed the sea and drifted\n"
-            "ashore in a new land. Surviving in this\n"
-            "place led it to take on a unique\n"
-            "appearance and gain special powers."),
+            "Es überquerte den Ozean und erreichte\n"
+            "fremdes Land, wo es ums Überleben\n"
+            "kämpfte und dabei besondere Fertigkeiten\n"
+            "und Merkmale erlangte."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 369,
@@ -6211,10 +6209,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 7,
         .weight = 350,
         .description = COMPOUND_STRING(
-            "It is a species of Pokémon that lives in\n"
-            "volcanic areas. If its body cools, its skin\n"
-            "hardens and immobilizes it. To avoid that,\n"
-            "it sleeps near magma."),
+            "Dieses Pokémon lebt in vulkanischen Ge-\n"
+            "bieten. Kühlt sich sein Körper ab, erhärtet\n"
+            "seine Haut und es wird bewegungsunfähig.\n"
+            "Daher schläft es neben Magma."),
         .pokemonScale = 329,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -6289,10 +6287,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 8,
         .weight = 550,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of hardened\n"
-            "magma. Tens of thousands of years spent\n"
-            "living in volcanic craters have turned\n"
-            "Magcargo's bodies into magma."),
+            "Das Haus auf seinem Rücken ist erhärtetes\n"
+            "Magma. Zehntausende von Jahren in\n"
+            "Vulkankratern ließen den Körper von\n"
+            "Magcargo zu Magma werden."),
         .pokemonScale = 332,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -6360,14 +6358,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Quiekel"),
         .cryId = CRY_SWINUB,
         .natDexNum = NATIONAL_DEX_SWINUB,
-        .categoryName = _("Pig"),
+        .categoryName = _("Ferkel"),
         .height = 4,
         .weight = 65,
         .description = COMPOUND_STRING(
-            "It roots for food by rubbing its snout\n"
-            "against the ground. Its favorite food is a\n"
-            "mushroom that grows under dried grass.\n"
-            "It occasionally roots out hot springs."),
+            "Auf Nahrungssuche schnüffelt Quiekel am\n"
+            "Boden entlang. Seine Lieblingsspeise ist\n"
+            "ein Pilz, der unter verwesendem Gras\n"
+            "wächst. Manchmal findet es heiße Quellen."),
         .pokemonScale = 324,
         .pokemonOffset = 20,
         .trainerScale = 256,
@@ -6435,14 +6433,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Keifel"),
         .cryId = CRY_PILOSWINE,
         .natDexNum = NATIONAL_DEX_PILOSWINE,
-        .categoryName = _("Swine"),
+        .categoryName = _("Schwein"),
         .height = 11,
         .weight = 558,
         .description = COMPOUND_STRING(
-            "A Piloswine is covered by a thick coat\n"
-            "of long hair for enduring freezing cold.\n"
-            "It uses its tusks to dig up food that has\n"
-            "been buried under ice."),
+            "Keifel hat ein dichtes Fell aus langen\n"
+            "Haaren. Dadurch ist es gegen eisige Kälte\n"
+            "gewappnet. Es benutzt seine Hauer, um an\n"
+            "die Nahrung unter dem Eis zu gelangen."),
         .pokemonScale = 306,
         .pokemonOffset = 10,
         .trainerScale = 256,
@@ -6526,14 +6524,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Mamutel"),
         .cryId = CRY_MAMOSWINE,
         .natDexNum = NATIONAL_DEX_MAMOSWINE,
-        .categoryName = _("Twin Tusk"),
+        .categoryName = _("Doppelstoßzahn"),
         .height = 25,
         .weight = 2910,
         .description = COMPOUND_STRING(
-            "A frozen Mamoswine was dug from ice\n"
-            "dating back 10,000 years. It woke up to\n"
-            "much amazement. This Pokémon has been\n"
-            "around for a long, long, long time."),
+            "Ein gefrorenes Exemplar wurde aus\n"
+            "10.000 Jahre altem Erdreich ausgegraben.\n"
+            "Dass es obendrein erwachte,\n"
+            "erregte viel Aufsehen."),
         .pokemonScale = 257,
         .pokemonOffset = 6,
         .trainerScale = 423,
@@ -6615,14 +6613,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Corasonn"),
         .cryId = CRY_CORSOLA,
         .natDexNum = NATIONAL_DEX_CORSOLA,
-        .categoryName = _("Coral"),
+        .categoryName = _("Koralle"),
         .height = 6,
         .weight = 50,
         .description = COMPOUND_STRING(
-            "Corsola live in warm southern seas.\n"
-            "If the sea becomes polluted, the beautiful\n"
-            "coral stalks become discolored and crumble\n"
-            "away in tatters."),
+            "Corasonn lebt in den Gewässern der\n"
+            "Südsee. Wird die See verschmutzt,\n"
+            "entfärben sich die Korallenarme und\n"
+            "zerbröseln ganz langsam."),
         .pokemonScale = 410,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -6687,14 +6685,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Corasonn"),
         .cryId = CRY_CORSOLA,
         .natDexNum = NATIONAL_DEX_CORSOLA,
-        .categoryName = _("Coral"),
+        .categoryName = _("Koralle"),
         .height = 6,
         .weight = 5,
         .description = COMPOUND_STRING(
-            "Sudden climate change wiped out this\n"
-            "ancient kind of Corsola. With its branches,\n"
-            "it absorbs others' life-force. It curses\n"
-            "those unaware that kick it by accident."),
+            "Es entstand aus einem Corasonn, das\n"
+            "durch plötzliche Änderungen in seinem\n"
+            "Habitat umkam. Mit den Armen raubt\n"
+            "es Leuten Lebensenergie."),
         .pokemonScale = 410,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -6752,17 +6750,17 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_WEAK_ARMOR, ABILITY_NONE, ABILITY_PERISH_BODY },
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
-        .speciesName = _("Cursola"),
+        .speciesName = _("Gorgasonn"),
         .cryId = CRY_CURSOLA,
         .natDexNum = NATIONAL_DEX_CURSOLA,
-        .categoryName = _("Coral"),
+        .categoryName = _("Koralle"),
         .height = 10,
         .weight = 4,
         .description = COMPOUND_STRING(
-            "Its shell is overflowing with its\n"
-            "heightened otherworldly energy. The\n"
-            "ectoplasm serves as protection for this\n"
-            "Pokémon's core spirit."),
+            "Vor dem geisterhaften Ektoplasma,\n"
+            "das seine Seele umhüllt, ist Vorsicht\n"
+            "geboten. Berührt man es, erstarrt\n"
+            "man zu Stein."),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -6825,14 +6823,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Remoraid"),
         .cryId = CRY_REMORAID,
         .natDexNum = NATIONAL_DEX_REMORAID,
-        .categoryName = _("Jet"),
+        .categoryName = _("Hochdruck"),
         .height = 6,
         .weight = 120,
         .description = COMPOUND_STRING(
-            "A Remoraid uses its abdominal muscles\n"
-            "to forcefully expel swallowed water, then\n"
-            "shoot down flying prey. When evolution\n"
-            "approaches, it travels down rivers."),
+            "Remoraid spritzt eingesogenes Wasser\n"
+            "mittels seiner Bauchmuskeln heraus, um\n"
+            "fliegende Beute zu erlegen. Rückt seine\n"
+            "Entwicklung näher, geht es flussabwärts."),
         .pokemonScale = 316,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -6899,14 +6897,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Octillery"),
         .cryId = CRY_OCTILLERY,
         .natDexNum = NATIONAL_DEX_OCTILLERY,
-        .categoryName = _("Jet"),
+        .categoryName = _("Hochdruck"),
         .height = 9,
         .weight = 285,
         .description = COMPOUND_STRING(
-            "It ensnares its foe with its suction-\n"
-            "cupped tentacles before delivering the\n"
-            "finishing blow. If the foe turns out to be\n"
-            "too strong, it spews ink to escape."),
+            "Octillery saugt sich mit seinen Tentakeln\n"
+            "am Feind fest. Es betäubt seinen Gegner,\n"
+            "bevor es ihm den Rest gibt. Ist ein Feind\n"
+            "zu stark, speit es Tinte aus und flüchtet."),
         .pokemonScale = 296,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -6984,14 +6982,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Botogel"),
         .cryId = CRY_DELIBIRD,
         .natDexNum = NATIONAL_DEX_DELIBIRD,
-        .categoryName = _("Delivery"),
+        .categoryName = _("Lieferung"),
         .height = 9,
         .weight = 160,
         .description = COMPOUND_STRING(
-            "It carries food bundled up in its tail.\n"
-            "There was a famous explorer who\n"
-            "managed to scale Mt. Everest thanks\n"
-            "to a Delibird sharing its food."),
+            "Botogel sammelt seine Nahrung im Schweif.\n"
+            "Ein Entdecker bestieg einst dank eines\n"
+            "Botogels, das seine Nahrung mit ihm\n"
+            "teilte, einen der höchsten Berge der Welt."),
         .pokemonScale = 293,
         .pokemonOffset = 11,
         .trainerScale = 256,
@@ -7055,14 +7053,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Mantirps"),
         .cryId = CRY_MANTYKE,
         .natDexNum = NATIONAL_DEX_MANTYKE,
-        .categoryName = _("Kite"),
+        .categoryName = _("Flugrochen"),
         .height = 10,
         .weight = 650,
         .description = COMPOUND_STRING(
-            "When it swims close to the surface\n"
-            "of the ocean, people aboard ships are\n"
-            "able to observe the pattern on its back.\n"
-            "It often swims in a school of Remoraid."),
+            "Es mischt sich unter Remoraid-Schwärme\n"
+            "und schwimmt mit ihnen. Werden diese\n"
+            "angegriffen, kämpft es gemeinsam\n"
+            "an ihrer Seite."),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -7133,14 +7131,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Mantax"),
         .cryId = CRY_MANTINE,
         .natDexNum = NATIONAL_DEX_MANTINE,
-        .categoryName = _("Kite"),
+        .categoryName = _("Flugrochen"),
         .height = 21,
         .weight = 2200,
         .description = COMPOUND_STRING(
-            "On sunny days, schools of Mantine can be\n"
-            "seen elegantly leaping over the waves.\n"
-            "It is not bothered by the Remoraid that\n"
-            "hitches rides."),
+            "Ist es schön, sieht man Mantax-Schwärme\n"
+            "elegant über die Ozeanwellen springen.\n"
+            "Durch Remoraid, die an ihm haften und ihn\n"
+            "begleiten, fühlt es sich nicht belästigt."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 342,
@@ -7206,14 +7204,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Panzaeron"),
         .cryId = CRY_SKARMORY,
         .natDexNum = NATIONAL_DEX_SKARMORY,
-        .categoryName = _("Armor Bird"),
+        .categoryName = _("Flugstahl"),
         .height = 17,
         .weight = 505,
         .description = COMPOUND_STRING(
-            "A Pokémon that has a body and wings of\n"
-            "steel. People in the past used feathers\n"
-            "fallen from Skarmory to make swords and\n"
-            "knives."),
+            "Panzaerons Körper und Flügel sind aus\n"
+            "Stahl. Einst haben die Menschen seine\n"
+            "abgefallenen Federn zu Schwertern und\n"
+            "Messern weiterverarbeitet."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 271,
@@ -7338,14 +7336,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Hunduster"),
         .cryId = CRY_HOUNDOUR,
         .natDexNum = NATIONAL_DEX_HOUNDOUR,
-        .categoryName = _("Dark"),
+        .categoryName = _("Hades"),
         .height = 6,
         .weight = 108,
         .description = COMPOUND_STRING(
-            "Houndour communicate with each other\n"
-            "using a variety of cries to corner their\n"
-            "prey. This Pokémon's remarkable teamwork\n"
-            "is simply unparalleled."),
+            "Hunduster jagen in Gruppen. Sie kommuni-\n"
+            "zieren miteinander über verschiedene Ge-\n"
+            "heularten und treiben ihre Feinde in die\n"
+            "Enge. Ihre Zusammenarbeit ist einzigartig."),
         .pokemonScale = 393,
         .pokemonOffset = 16,
         .trainerScale = 256,
@@ -7406,14 +7404,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Hundemon"),
         .cryId = CRY_HOUNDOOM,
         .natDexNum = NATIONAL_DEX_HOUNDOOM,
-        .categoryName = _("Dark"),
+        .categoryName = _("Hades"),
         .height = 14,
         .weight = 350,
         .description = COMPOUND_STRING(
-            "In a Houndoom pack, the one with its horns\n"
-            "raked sharply back serves a leadership\n"
-            "role. They choose their leader by fighting\n"
-            "among themselves."),
+            "In einer Gruppe von Hundemon ist\n"
+            "dasjenige mit den nach hinten gebogenen\n"
+            "Hörnern der Anführer. Sie legen den\n"
+            "Anführer durch Kämpfe fest."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -7562,14 +7560,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Phanpy"),
         .cryId = CRY_PHANPY,
         .natDexNum = NATIONAL_DEX_PHANPY,
-        .categoryName = _("Long Nose"),
+        .categoryName = _("Langrüssel"),
         .height = 5,
         .weight = 335,
         .description = COMPOUND_STRING(
-            "Phanpy's big ears serve as broad fans.\n"
-            "When it becomes hot, it flaps the ears\n"
-            "busily to cool down. Even the young are\n"
-            "very strong."),
+            "Phanpys große Ohren dienen als Fächer.\n"
+            "Wird es ihm zu warm, fächelt es mit den\n"
+            "Ohren, um sich abzukühlen. Selbst junge\n"
+            "Exemplare sind schon sehr stark."),
         .pokemonScale = 465,
         .pokemonOffset = 21,
         .trainerScale = 256,
@@ -7636,14 +7634,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Donphan"),
         .cryId = CRY_DONPHAN,
         .natDexNum = NATIONAL_DEX_DONPHAN,
-        .categoryName = _("Armor"),
+        .categoryName = _("Panzertier"),
         .height = 11,
         .weight = 1200,
         .description = COMPOUND_STRING(
-            "A Donphan is so strong it can easily haul\n"
-            "a dump truck. Its hide has toughened to a\n"
-            "rock-hard state. An ordinary sort of\n"
-            "attack won't even leave a scratch."),
+            "Donphan ist so stark, dass es selbst\n"
+            "Kipplaster umwerfen kann. Seine Haut ist\n"
+            "felsenhart und normale Angriffe\n"
+            "hinterlassen nicht mal einen Kratzer."),
         .pokemonScale = 313,
         .pokemonOffset = 9,
         .trainerScale = 256,
@@ -7722,14 +7720,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Damhirplex"),
         .cryId = CRY_STANTLER,
         .natDexNum = NATIONAL_DEX_STANTLER,
-        .categoryName = _("Big Horn"),
+        .categoryName = _("Vielender"),
         .height = 14,
         .weight = 712,
         .description = COMPOUND_STRING(
-            "Stantler's magnificent antlers were\n"
-            "once traded at high prices as works of art.\n"
-            "As a result, this Pokémon was hunted\n"
-            "close to extinction."),
+            "Damhirplex hat ein prächtiges Geweih, für\n"
+            "das hohe Preise gezahlt werden, da es als\n"
+            "Kunstwerk gilt. Daher wurde es\n"
+            "gejagt und wäre beinahe ausgestorben."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7794,14 +7792,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Damythir"),
         .cryId = CRY_WYRDEER,
         .natDexNum = NATIONAL_DEX_WYRDEER,
-        .categoryName = _("Big Horn"),
+        .categoryName = _("Vielender"),
         .height = 18,
         .weight = 951,
         .description = COMPOUND_STRING(
-            "The black orbs shine with an uncanny light\n"
-            "when it is erecting invisible barriers.\n"
-            "The fur shed from its beard retains heat\n"
-            "and is useful for winter clothing."),
+            "Die schwarzen Kugeln leuchten auf ominöse\n"
+            "Weise, wenn es unsichtbare Wände erschafft.\n"
+            "Das Barthaar, das es verliert, wird als\n"
+            "warme Winterkleidung hoch geschätzt."),
         .pokemonScale = 267,
         .pokemonOffset = 2,
         .trainerScale = 286,
@@ -7865,14 +7863,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Farbeagle"),
         .cryId = CRY_SMEARGLE,
         .natDexNum = NATIONAL_DEX_SMEARGLE,
-        .categoryName = _("Painter"),
+        .categoryName = _("Maler"),
         .height = 12,
         .weight = 580,
         .description = COMPOUND_STRING(
-            "A Smeargle marks its territory using a\n"
-            "fluid that leaks out from the tip of its\n"
-            "tail. About 5,000 different marks left by\n"
-            "this Pokémon have been found."),
+            "Farbeagle markiert sein Revier mit einer\n"
+            "Flüssigkeit, die aus seiner Schweifspitze\n"
+            "austritt. Es wurden über 5000 Markierun-\n"
+            "gen entdeckt, die es hinterlassen hat."),
         .pokemonScale = 287,
         .pokemonOffset = 5,
         .trainerScale = 256,
@@ -7942,14 +7940,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Miltank"),
         .cryId = CRY_MILTANK,
         .natDexNum = NATIONAL_DEX_MILTANK,
-        .categoryName = _("Milk Cow"),
+        .categoryName = _("Milchkuh"),
         .height = 12,
         .weight = 755,
         .description = COMPOUND_STRING(
-            "It gives over five gallons of milk daily.\n"
-            "Its sweet milk is enjoyed by children and\n"
-            "grown-ups alike. People who can't drink\n"
-            "milk turn it into yogurt and eat it instead."),
+            "Miltank gibt täglich 20 Liter Milch. Sie ist\n"
+            "süßlich und bei Kindern und Erwachsenen\n"
+            "beliebt. Menschen, die keine Milch trinken,\n"
+            "essen sie stattdessen als Joghurt."),
         .pokemonScale = 280,
         .pokemonOffset = 5,
         .trainerScale = 256,
@@ -8022,14 +8020,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Raikou"),
         .cryId = CRY_RAIKOU,
         .natDexNum = NATIONAL_DEX_RAIKOU,
-        .categoryName = _("Thunder"),
+        .categoryName = _("Donner"),
         .height = 19,
         .weight = 1780,
         .description = COMPOUND_STRING(
-            "Raikou embodies the speed of lightning.\n"
-            "Its roars send shock waves shuddering\n"
-            "through the air and ground as if\n"
-            "lightning bolts were crashing down."),
+            "Raikou ist so schnell wie der Blitz. Sein\n"
+            "Gebrüll sendet Schockwellen aus, die\n"
+            "wie Donnerschläge durch die Luft beben\n"
+            "und den Boden erschüttern."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 345,
@@ -8104,14 +8102,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Entei"),
         .cryId = CRY_ENTEI,
         .natDexNum = NATIONAL_DEX_ENTEI,
-        .categoryName = _("Volcano"),
+        .categoryName = _("Vulkan"),
         .height = 21,
         .weight = 1980,
         .description = COMPOUND_STRING(
-            "Entei embodies the passion of magma.\n"
-            "It is thought to have been born in the\n"
-            "eruption of a volcano. It blasts fire that\n"
-            "consumes all that it touches."),
+            "Entei verfügt über die Leidenschaft von\n"
+            "Magma. Es wurde bei einem Vulkanaus-\n"
+            "bruch geboren und bringt Feuersbrünste\n"
+            "hervor, die alles auslöschen."),
         .pokemonScale = 259,
         .pokemonOffset = 0,
         .trainerScale = 345,
@@ -8185,14 +8183,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Suicune"),
         .cryId = CRY_SUICUNE,
         .natDexNum = NATIONAL_DEX_SUICUNE,
-        .categoryName = _("Aurora"),
+        .categoryName = _("Polarlicht"),
         .height = 20,
         .weight = 1870,
         .description = COMPOUND_STRING(
-            "Suicune embodies the compassion of\n"
-            "a pure spring of water. It runs across\n"
-            "the land with gliding elegance. It has the\n"
-            "power to purify dirty water."),
+            "Suicune wohnt die Reinheit einer Quelle\n"
+            "inne. Es bewegt sich graziös und hat die\n"
+            "Macht, schmutziges Wasser zu reinigen."),
         .pokemonScale = 269,
         .pokemonOffset = 0,
         .trainerScale = 345,
@@ -8255,14 +8252,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Larvitar"),
         .cryId = CRY_LARVITAR,
         .natDexNum = NATIONAL_DEX_LARVITAR,
-        .categoryName = _("Rock Skin"),
+        .categoryName = _("Felshaut"),
         .height = 6,
         .weight = 720,
         .description = COMPOUND_STRING(
-            "A Larvitar is born deep under the ground.\n"
-            "It must eat its way through the soil above\n"
-            "and reach the surface for it to see its\n"
-            "parents' faces."),
+            "Larvitar wird unter der Erde geboren.\n"
+            "Um an die Oberfläche zu gelangen, muss\n"
+            "es sich durch das Erdreich fressen. Erst\n"
+            "dann bekommt es seine Eltern zu Gesicht."),
         .pokemonScale = 472,
         .pokemonOffset = 18,
         .trainerScale = 256,
@@ -8325,14 +8322,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Pupitar"),
         .cryId = CRY_PUPITAR,
         .natDexNum = NATIONAL_DEX_PUPITAR,
-        .categoryName = _("Hard Shell"),
+        .categoryName = _("Hartschale"),
         .height = 12,
         .weight = 1520,
         .description = COMPOUND_STRING(
-            "A Pupitar creates a gas inside its body\n"
-            "that it ejects under compression to propel\n"
-            "itself like a jet. Its body can withstand\n"
-            "a collision with solid steel."),
+            "Pupitar erzeugt in seinem Körper ein Gas,\n"
+            "das es kraftvoll ausstößt, um sich wie ein\n"
+            "Düsenflugzeug anzutreiben. Sein Körper\n"
+            "ist sehr robust und hält Stahl stand."),
         .pokemonScale = 292,
         .pokemonOffset = 8,
         .trainerScale = 256,
@@ -8398,14 +8395,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Despotar"),
         .cryId = CRY_TYRANITAR,
         .natDexNum = NATIONAL_DEX_TYRANITAR,
-        .categoryName = _("Armor"),
+        .categoryName = _("Panzertier"),
         .height = 20,
         .weight = 2020,
         .description = COMPOUND_STRING(
-            "A Tyranitar is so overwhelmingly powerful,\n"
-            "it can bring down a whole mountain to make\n"
-            "its nest. It roams in mountains seeking\n"
-            "new opponents to fight."),
+            "Despotar ist erstaunlich stark. Es kann\n"
+            "einen ganzen Berg vernichten, um sein Nest\n"
+            "zu bauen. Es wandert in den Bergen umher\n"
+            "und sucht nach Gegnern für einen Kampf."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 345,
@@ -8550,14 +8547,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Lugia"),
         .cryId = CRY_LUGIA,
         .natDexNum = NATIONAL_DEX_LUGIA,
-        .categoryName = _("Diving"),
+        .categoryName = _("Taucher"),
         .height = 52,
         .weight = 2160,
         .description = COMPOUND_STRING(
-            "Lugia is so powerful even a light\n"
-            "fluttering of its wings can blow apart\n"
-            "houses. As a result, it chooses to live out\n"
-            "of sight deep under the sea."),
+            "Lugias Flügel haben eine zerstörerische\n"
+            "Kraft. Bereits ein leichtes Flattern kann\n"
+            "Häuser hinfortwehen. Daher hat es sich\n"
+            "dafür entschieden, tief im Meer zu leben."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 721,
@@ -8641,14 +8638,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Ho-Oh"),
         .cryId = CRY_HO_OH,
         .natDexNum = NATIONAL_DEX_HO_OH,
-        .categoryName = _("Rainbow"),
+        .categoryName = _("Regenbogen"),
         .height = 38,
         .weight = 1990,
         .description = COMPOUND_STRING(
-            "Its feathers--which glow in seven colors\n"
-            "depending on the angle at which they are\n"
-            "struck by light--are thought to bring joy.\n"
-            "It is said to live at the foot of a rainbow."),
+            "Ho-Ohs Federn leuchten in sieben Farben,\n"
+            "je nachdem aus welchem Winkel das\n"
+            "Licht auf sie fällt. Die Federn sollen ihrem\n"
+            "Besitzer Glück bringen."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 610,
@@ -8721,14 +8718,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Celebi"),
         .cryId = CRY_CELEBI,
         .natDexNum = NATIONAL_DEX_CELEBI,
-        .categoryName = _("Time Travel"),
+        .categoryName = _("Zeitreise"),
         .height = 6,
         .weight = 50,
         .description = COMPOUND_STRING(
-            "This Pokémon came from the future by\n"
-            "crossing over time. It is thought that so\n"
-            "long as Celebi appears, a bright and\n"
-            "shining future awaits us."),
+            "Dieses Pokémon kommt aus der Zukunft und\n"
+            "ist durch die Zeit gereist. Solange Celebi\n"
+            "auftaucht, ist der Menschheit angeblich\n"
+            "eine rosige Zukunft beschieden."),
         .pokemonScale = 393,
         .pokemonOffset = -10,
         .trainerScale = 256,

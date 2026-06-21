@@ -1248,7 +1248,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 7,
         .weight = 99,
         .description = COMPOUND_STRING(
-            "Der Panzer dieses POKéMON ist hart wie\n"
+            "Der Panzer dieses Pokémon ist hart wie\n"
             "Stahl. Safcon bewegt sich kaum, da es das\n"
             "weiche Innere unter seiner harten Schale\n"
             "auf seine Entwicklung vorbereitet."),
@@ -1961,10 +1961,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 15,
         .weight = 395,
         .description = COMPOUND_STRING(
-            "Dieses POKéMON hat ein wunderschönes,\n"
+            "Dieses Pokémon hat ein wunderschönes,\n"
             "glänzendes Gefieder. Viele Trainer sind\n"
             "von der Pracht des Gefieders begeistert,\n"
-            "so dass sie es als ihr POKéMON wählen."),
+            "so dass sie es als ihr Pokémon wählen."),
         .pokemonScale = 269,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2707,7 +2707,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 35,
         .weight = 650,
         .description = COMPOUND_STRING(
-            "Dieses POKéMON ist unheimlich stark. Es\n"
+            "Dieses Pokémon ist unheimlich stark. Es\n"
             "kann sogar Ölfässer zerdrücken. Wenn\n"
             "Arbok einen Gegner umwickelt, ist\n"
             "es ihm unmöglich zu entkommen."),
@@ -4493,7 +4493,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .weight = 70,
         .description = COMPOUND_STRING(
             "Nidoran besitzt Giftstacheln, die dem\n"
-            "Schutz dieses schmächtigen POKéMON\n"
+            "Schutz dieses schmächtigen Pokémon\n"
             "dienen. Wenn es wütend wird, stößt es ein\n"
             "gefährliches Gift aus seinem Horn aus."),
         .pokemonScale = 488,
@@ -4653,7 +4653,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .description = COMPOUND_STRING(
             "Es ist sehr geschickt darin, Gegner\n"
             "mit starken Attacken wegzuschleudern.\n"
-            "Dieses POKéMON entwickelt am meisten\n"
+            "Dieses Pokémon entwickelt am meisten\n"
             "Kraft, wenn es seine Jungen verteidigt."),
         .pokemonScale = 293,
         .pokemonOffset = 4,
@@ -4723,7 +4723,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .description = COMPOUND_STRING(
             "Das männliche Nidoran hat Muskeln ent-\n"
             "wickelt, um seine Ohren bewegen zu kön-\n"
-            "nen. Diesem POKéMON entgeht nicht\n"
+            "nen. Diesem Pokémon entgeht nicht\n"
             "einmal das leiseste Geräusch."),
         .pokemonScale = 511,
         .pokemonOffset = 20,
@@ -5036,7 +5036,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .weight = 75,
         .description = COMPOUND_STRING(
             "In Vollmondnächten sammeln sich einige\n"
-            "dieser POKéMON, um zu spielen. Wird es Tag,\n"
+            "dieser Pokémon, um zu spielen. Wird es Tag,\n"
             "kehren sie in die Berge zurück und\n"
             "schlafen eingekuschelt neben anderen."),
         .pokemonScale = 441,
@@ -7061,7 +7061,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .description = COMPOUND_STRING(
             "Mauzi zieht seine scharfen Krallen ein, um\n"
             "umherschleichen zu können, ohne Spuren\n"
-            "zu hinterlassen. Dieses POKéMON hat eine\n"
+            "zu hinterlassen. Dieses Pokémon hat eine\n"
             "Vorliebe für Münzen, die im Licht glitzern."),
         .pokemonScale = 480,
         .pokemonOffset = 19,
@@ -7980,7 +7980,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .description = COMPOUND_STRING(
             "Arkani ist sehr schnell. Es kann an\n"
             "einem Tag fast 10.000 km zurücklegen.\n"
-            "Das Feuer, das im Innern dieses POKéMON\n"
+            "Das Feuer, das im Innern dieses Pokémon\n"
             "lodert, dient ihm als Energiequelle."),
         .pokemonScale = 256,
         .pokemonOffset = 1,
@@ -11042,7 +11042,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .description = COMPOUND_STRING(
             "Porenta trifft man immer mit einer Lauch-\n"
             "stange an. Es gibt gute und schlechte\n"
-            "Stangen. Dieses POKéMON kämpft mit\n"
+            "Stangen. Dieses Pokémon kämpft mit\n"
             "Hilfe seiner Stange gegen seine Gegner."),
         .pokemonScale = 330,
         .pokemonOffset = 2,
@@ -11350,7 +11350,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 18,
         .weight = 852,
         .description = COMPOUND_STRING(
-            "Eine besondere POKéMON-Art mit drei\n"
+            "Eine besondere Pokémon-Art mit drei\n"
             "Köpfen. Es rennt selbst in Trockenzeiten\n"
             "voller Energie über unendliche Wiesen."),
         .pokemonScale = 256,
@@ -12869,7 +12869,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "Kingler hat eine riesige Schere. Es winkt\n"
             "damit, um mit anderen zu kommunizieren.\n"
             "Da seine Schere aber so schwer ist, wird\n"
-            "dieses POKéMON schnell müde."),
+            "dieses Pokémon schnell müde."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 256,
@@ -13948,7 +13948,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .description = COMPOUND_STRING(
             "Nockchan besitzt das Herz eines Boxers,\n"
             "der sich auf eine Weltmeisterschaft\n"
-            "vorbereitet. Dieses POKéMON hat einen\n"
+            "vorbereitet. Dieses Pokémon hat einen\n"
             "unbeugsamen Willen und gibt niemals auf."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
@@ -17936,7 +17936,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "Ditto verändert seine Zellstruktur, um\n"
             "sich zu verwandeln. Verlässt es sich dabei\n"
             "jedoch auf sein Gedächtnis, unterlaufen \n"
-            "diesem POKéMON schon mal Fehler."),
+            "diesem Pokémon schon mal Fehler."),
         .pokemonScale = 633,
         .pokemonOffset = 23,
         .trainerScale = 256,
@@ -19991,7 +19991,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 20,
         .weight = 600,
         .description = COMPOUND_STRING(
-            "Lavados ist ein legendäres Vogel-POKéMON,\n"
+            "Lavados ist ein legendäres Vogel-Pokémon,\n"
             "das Feuer manipulieren kann. Wird es ver-\n"
             "letzt, taucht es seinen Körper in das Mag-\n"
             "ma eines Vulkans, um sich selbst zu heilen."),

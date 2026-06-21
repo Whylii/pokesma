@@ -273,7 +273,7 @@ FortreeCity_Gym_Text_ExplainAerialAce:
 	.string "… … … … … …$"
 
 FortreeCity_Gym_Text_RegisteredWinona:
-	.string "ArenaLeiterin Wibke wurde im Pokénav-\n"
+	.string "Arenaleiterin Wibke wurde im Pokénav-\n"
 	.string "Verzeichnis eingetragen.$"
 
 FortreeCity_Gym_Text_WinonaPostBattle:

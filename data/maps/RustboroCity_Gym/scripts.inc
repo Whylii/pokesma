@@ -237,7 +237,7 @@ RustboroCity_Gym_Text_GymStatue:
 
 RustboroCity_Gym_Text_GymStatueCertified:
 	.string "Pokémon Arena von Metarost City\p"
-	.string "FeliziaS anerkannte Trainer:\n"
+	.string "Felizias anerkannte Trainer:\n"
 	.string "{PLAYER}$"
 
 RustboroCity_Gym_Text_RoxanneRegisterCall:

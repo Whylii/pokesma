@@ -7,54 +7,54 @@ const u8 gFallbackPokedexText[] = _(
 
 // Gen 1 families
 const u8 gRaticateAlolaPokedexText[] = _(
-    "It forms a group of Rattata, which it \n"
-    "assumes command of. Each group\n"
-    "has its own territory, and disputes\n"
-    "over food happen often.");
+    "Es lässt sich sein Futter von\n"
+    "untergebenen Rattfratz zusammentragen\n"
+    "und nimmt nur die nährstoffreichsten,\n"
+    "leckersten Dinge zu sich.");
 
 const u8 gPichuPokedexText[] = _(
-    "It is still inept at retaining electricity.\n"
-    "When it is startled, it discharges power\n"
-    "accidentally. It gets better at holding\n"
-    "power as it grows older.");
+    "Es kann noch nicht mit Elektrizität um-\n"
+    "gehen. Erschrickt es, entlädt es zufällig\n"
+    "Energie. Mit zunehmendem Alter wird es in\n"
+    "der Beherrschung der Energie erfahrener.");
 
 const u8 gPikachuPokedexText[] = _(
-    "It stores electricity in the electric sacs\n"
-    "on its cheeks. When it releases pent-up\n"
-    "energy in a burst, the electric power is\n"
-    "equal to a lightning bolt.");
+    "Es speichert Elektrizität in seinen\n"
+    "Backentaschen. Entlädt es die\n"
+    "aufgestaute Energie auf einmal, kommt\n"
+    "dies einem Blitz gleich.");
 
 const u8 gMarowakAlolaPokedexText[] = _(
-    "The cursed flames that light up the bone\n"
-    "carried by this Pokémon are said\n"
-    "to cause both mental and physical\n"
-    "pain that will never fade.");
+    "Es hat die Seele seiner verstorbenen\n"
+    "Mutter in Flammen umgewandelt.\n"
+    "Nachts führt es zu Ehren der verlorenen\n"
+    "Artgenossen einen Trauertanz auf.");
 
 const u8 gEeveePokedexText[] = _(
-    "An Eevee has an unstable genetic makeup\n"
-    "that suddenly mutates due to its\n"
-    "environment. Radiation from various\n"
-    "Stones causes this Pokémon to evolve.");
+    "Evolis genetisches Erbmaterial ist so\n"
+    "instabil, dass die Umgebung Mutationen\n"
+    "auslösen kann. Die Wirkung verschiedener\n"
+    "Steine führt zur Entwicklung.");
 
 // Gen 2 families
 const u8 gUnownPokedexText[] = _(
-    "This Pokémon is shaped like ancient text\n"
-    "characters. Although research is ongoing,\n"
-    "it is a mystery as to which came first,\n"
-    "the ancient writings or the various Unown.");
+    "Icognito hat die Form antiker Schrift-\n"
+    "zeichen. Bis heute ist unklar, was zuerst\n"
+    "da war: Die antiken Schriftzeichen oder die\n"
+    "vielen unterschiedlichen Icognito.");
 
 // Gen 4 families
 const u8 gMothimPokedexText[] = _(
-    "It does not keep a nest. While it\n"
-    "loves floral honey, it won't gather\n"
-    "any itself. Instead, it plots to steal\n"
-    "honey collected by Combee.");
+    "Es baut sich kein festes Nest\n"
+    "und fliegt auf der Suche nach seiner\n"
+    "Leibspeise Blütennektar über\n"
+    "Felder und Wiesen.");
 
 const u8 gArceusPokedexText[] = _(
-    "It is told in mythology that this Pokémon\n"
-    "emerged from an egg and shaped all there\n"
-    "is in this world, before the universe\n"
-    "even existed.");
+    "Die Mythologie beschreibt es als das\n"
+    "Pokémon, welches unter Einsatz seiner\n"
+    "tausend Arme das Universum\n"
+    "erschaffen habe.");
 
 // Gen 5 families
 const u8 gGenesectPokedexText[] = _(
