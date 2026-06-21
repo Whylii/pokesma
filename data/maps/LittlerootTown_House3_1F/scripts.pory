@@ -1,0 +1,20 @@
+script LittlerootTown_House3_OldLady {
+    if (flag(0x265)) {
+        msgbox("Viel Glück!", MSGBOX_NPC)
+        release
+        end
+    }
+    msgbox ("Für dich.", MSGBOX_NPC)
+    givemon (SPECIES_TORCHIC, 5, item=ITEM_NONE, ball=ITEM_POKE_BALL, nature=NATURE_ADAMANT, abilityNum=0, gender=MON_GENDERLESS, hpEv=0, atkEv=0, defEv=0, speedEv=0, spAtkEv=0, spDefEv=0, hpIv=31, atkIv=31, defIv=31, speedIv=31, spAtkIv=31, spDefIv=31)
+    givemon (SPECIES_PIPLUP, 5, item=ITEM_NONE, ball=ITEM_POKE_BALL, nature=NATURE_SERIOUS, abilityNum=0, gender=MON_GENDERLESS, hpEv=0, atkEv=0, defEv=0, speedEv=0, spAtkEv=0, spDefEv=0, hpIv=31, atkIv=31, defIv=31, speedIv=31, spAtkIv=31, spDefIv=31)
+    givemon (SPECIES_TURTWIG, 5, item=ITEM_NONE, ball=ITEM_POKE_BALL, nature=NATURE_DOCILE, abilityNum=2, gender=MON_GENDERLESS, hpEv=0, atkEv=0, defEv=0, speedEv=0, spAtkEv=0, spDefEv=0, hpIv=31, atkIv=31, defIv=31, speedIv=31, spAtkIv=31, spDefIv=31)
+    playfanfare (MUS_OBTAIN_ITEM)
+    setflag (0x265)
+    release
+    end
+}
+
+raw `
+LittlerootTown_House3_1F_MapScripts::
+	.byte 0
+` 
