@@ -3,6 +3,7 @@
 #include "field_move.h"
 #include "fldeff.h"
 #include "fldeff_misc.h"
+#include "fldeff_multitool.h"
 #include "party_menu.h"
 #include "constants/field_move.h"
 #include "constants/moves.h"
@@ -106,6 +107,11 @@ static bool32 IsFieldMoveUnlocked_SweetScent(void)
 static bool32 IsFieldMoveUnlocked_Defog(void)
 {
     return OW_DEFOG_FIELD_MOVE;
+}
+
+static bool32 IsFieldMoveUnlocked_Multitool(void)
+{
+    return TRUE;
 }
 
 const struct FieldMoveInfo gFieldMoveInfo[FIELD_MOVES_COUNT] =
@@ -235,6 +241,14 @@ const struct FieldMoveInfo gFieldMoveInfo[FIELD_MOVES_COUNT] =
         .moveID = MOVE_DEFOG,
         .partyMsgID = PARTY_MSG_CANT_USE_HERE,
     },
+
+    [FIELD_MOVE_MULTITOOL] =
+    {
+        .fieldMoveFunc = SetUpFieldMove_Multitool,
+        .isUnlockedFunc = IsFieldMoveUnlocked_Multitool,
+        .moveID = MOVE_TELEPORT,
+        .partyMsgID = PARTY_MSG_CANT_USE_HERE,
+    },
 };
 
 u8 GetFieldMoveSource(void)
@@ -270,7 +284,7 @@ bool8 CanUseFly(void)
     }
 
     // If no Pokémon is found, check for the Fly Tool item.
-    if (CheckBagHasItem(ITEM_FLY_TOOL, 1))
+    if (CheckBagHasItem(ITEM_FLY_TOOL, 1) || CheckBagHasItem(ITEM_MULTITOOL, 1))
     {
         sFieldMoveSource = FIELD_MOVE_SOURCE_ITEM;
         return TRUE; // Found the item
@@ -308,7 +322,7 @@ bool8 CanUseFlash(void)
     }
 
     // 3. Check for the item
-    if (CheckBagHasItem(ITEM_FLASH_TOOL, 1))
+    if (CheckBagHasItem(ITEM_FLASH_TOOL, 1) || CheckBagHasItem(ITEM_MULTITOOL, 1))
     {
         sFieldMoveSource = FIELD_MOVE_SOURCE_ITEM;
         return TRUE;

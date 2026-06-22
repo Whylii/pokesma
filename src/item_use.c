@@ -93,6 +93,7 @@ static void ItemUseOnFieldCB_RockSmash(u8 taskId);
 static void ItemUseOnFieldCB_Waterfall(u8 taskId);
 static void ItemUseOnFieldCB_Dive(u8 taskId);
 static void ItemUseOnFieldCB_DiveUnderwater(u8 taskId);
+static void ItemUseOnFieldCB_Multitool(u8 taskId);
 
 static const u8 sText_CantDismountBike[] = _("You can't dismount your BIKE here.{PAUSE_UNTIL_PRESS}");
 static const u8 sText_ItemFinderNearby[] = _("Huh?\nThe ITEMFINDER's responding!\pThere's an item buried around here!{PAUSE_UNTIL_PRESS}");
@@ -1881,6 +1882,32 @@ void ItemUseOutOfBattle_Dive(u8 taskId)
         SetUpItemUseOnFieldCallback(taskId);
     }
     else // Not a valid spot
+    {
+        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].data[3]);
+    }
+}
+
+static void ItemUseOnFieldCB_Multitool(u8 taskId)
+{
+    ScriptContext_SetupScript(EventScript_UseMultitool);
+    DestroyTask(taskId);
+}
+
+void ItemUseOutOfBattle_Multitool(u8 taskId)
+{
+    if (IsFieldMoveUnlocked(FIELD_MOVE_CUT) == TRUE
+     || IsFieldMoveUnlocked(FIELD_MOVE_FLY) == TRUE
+     || IsFieldMoveUnlocked(FIELD_MOVE_SURF) == TRUE
+     || IsFieldMoveUnlocked(FIELD_MOVE_STRENGTH) == TRUE
+     || IsFieldMoveUnlocked(FIELD_MOVE_FLASH) == TRUE
+     || IsFieldMoveUnlocked(FIELD_MOVE_ROCK_SMASH) == TRUE
+     || IsFieldMoveUnlocked(FIELD_MOVE_DIVE) == TRUE
+     || IsFieldMoveUnlocked(FIELD_MOVE_WATERFALL) == TRUE)
+    {
+        sItemUseOnFieldCB = ItemUseOnFieldCB_Multitool;
+        SetUpItemUseOnFieldCallback(taskId);
+    }
+    else
     {
         DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].data[3]);
     }
