@@ -2324,8 +2324,6 @@ static u16 GetKeyItemForFieldMove(u16 move)
             return ITEM_WATERFALL_TOOL;
         case MOVE_DIVE:
             return ITEM_DIVE_TOOL;
-        case MOVE_TELEPORT:
-            return ITEM_MULTITOOL;
         // Add more cases here for future tools
         default:
             return ITEM_NONE;

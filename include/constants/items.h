@@ -1061,7 +1061,6 @@ enum __attribute__((packed)) Item
     ITEM_ROCK_SMASH_TOOL,
     ITEM_WATERFALL_TOOL,
     ITEM_DIVE_TOOL,
-    ITEM_MULTITOOL,
 
     ITEMS_COUNT,
     ITEM_FIELD_ARROW = ITEMS_COUNT,

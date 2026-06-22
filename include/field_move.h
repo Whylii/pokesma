@@ -16,9 +16,6 @@ void SetFieldMoveSource(u8 source);
 // Get the source of the current field move operation
 u8 GetFieldMoveSource(void);
 
-// Setup function for the multitool field move
-bool32 SetUpFieldMove_Multitool(void);
-
 // Check if Fly can be used (either via Pokémon or FLY_TOOL item)
 bool8 CanUseFly(void);
 
