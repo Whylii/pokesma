@@ -12,8 +12,12 @@ LittlerootTown_House3_OldLady::
 # 11 "data/maps/LittlerootTown_House3_1F/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 12 "data/maps/LittlerootTown_House3_1F/scripts.pory"
-	setflag 0x265
+	msgbox LittlerootTown_House3_OldLady_Text_2, MSGBOX_NPC
 # 13 "data/maps/LittlerootTown_House3_1F/scripts.pory"
+	waitfanfare
+# 14 "data/maps/LittlerootTown_House3_1F/scripts.pory"
+	setflag 0x265
+# 15 "data/maps/LittlerootTown_House3_1F/scripts.pory"
 	release
 	end
 
@@ -25,11 +29,11 @@ LittlerootTown_House3_OldLady_2:
 	end
 
 
-# 17 "data/maps/LittlerootTown_House3_1F/scripts.pory"
-
-# 18 "data/maps/LittlerootTown_House3_1F/scripts.pory"
-LittlerootTown_House3_1F_MapScripts::
 # 19 "data/maps/LittlerootTown_House3_1F/scripts.pory"
+
+# 20 "data/maps/LittlerootTown_House3_1F/scripts.pory"
+LittlerootTown_House3_1F_MapScripts::
+# 21 "data/maps/LittlerootTown_House3_1F/scripts.pory"
 	.byte 0
 
 LittlerootTown_House3_OldLady_Text_0:
@@ -38,4 +42,8 @@ LittlerootTown_House3_OldLady_Text_0:
 
 LittlerootTown_House3_OldLady_Text_1:
 # 7 "data/maps/LittlerootTown_House3_1F/scripts.pory"
+	.string "Hallo.$"
+
+LittlerootTown_House3_OldLady_Text_2:
+# 12 "data/maps/LittlerootTown_House3_1F/scripts.pory"
 	.string "Für dich.$"
