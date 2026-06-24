@@ -1798,7 +1798,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 12,
         .weight = 316,
         .description = COMPOUND_STRING(
-            "Dieses POKéMON ist nachtaktiv und fliegt\n"
+            "Dieses Pokémon ist nachtaktiv und fliegt\n"
             "bei Dunkelheit von den Feldern und Bergen\n"
             "zum Licht der Laternen. Dabei verstreut es\n"
             "giftigen Puder von seinen Flügeln."),
@@ -1895,7 +1895,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .weight = 26,
         .description = COMPOUND_STRING(
             "Es ist in Teichen mit reinem Wasser zu\n"
-            "Hause. Kleine POKéMON werden von ihm\n"
+            "Hause. Kleine Pokémon werden von ihm\n"
             "auf seinem weiten Blatt sicher über den\n"
             "Teich befördert."),
         .pokemonScale = 406,
@@ -2707,7 +2707,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .weight = 66,
         .description = COMPOUND_STRING(
             "Trasla kann die Emotionen der Menschen\n"
-            "und POKéMON mit seinem Horn fühlen.\n"
+            "und Pokémon mit seinem Horn fühlen.\n"
             "Fühlt es Feindseligkeit, versteckt es sich."),
         .pokemonScale = 457,
         .pokemonOffset = -3,
@@ -3851,7 +3851,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 8,
         .weight = 12,
         .description = COMPOUND_STRING(
-            "Dieses besondere POKéMON schwebt\n"
+            "Dieses besondere Pokémon schwebt\n"
             "in der Luft, auch wenn es seine Flügel\n"
             "nicht bewegt. Das Innere seines Körpers\n"
             "ist hohl und stockfinster."),
@@ -5752,7 +5752,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 4,
         .weight = 42,
         .description = COMPOUND_STRING(
-            "Bei einem Kongress von POKéMON-Weisen\n"
+            "Bei einem Kongress von Pokémon-Weisen\n"
             "wurde bekannt gegeben, dass die\n"
             "Elektrizität von Plusle und Minun\n"
             "den Kreislauf und die Vitalität steigert."),
@@ -6239,7 +6239,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 4,
         .weight = 103,
         .description = COMPOUND_STRING(
-            "Die Magensäure dieses POKéMON ist so\n"
+            "Die Magensäure dieses Pokémon ist so\n"
             "stark, dass sie selbst Gusseisen\n"
             "zersetzen kann. Es kann einen Gegenstand\n"
             "seiner Größe auf einmal verschlucken."),
@@ -6411,7 +6411,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .description = COMPOUND_STRING(
             "Schiffe werden von Kanivanha in Schwär-\n"
             "men angegriffen und versenkt. Obwohl es\n"
-            "ein sehr brutales POKéMON sein soll,\n"
+            "ein sehr brutales Pokémon sein soll,\n"
             "ergreift es die Flucht, wenn es allein ist."),
         .pokemonScale = 362,
         .pokemonOffset = 0,
@@ -8122,7 +8122,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .weight = 1680,
         .description = COMPOUND_STRING(
             "Bei Vollmond wird es sehr aktiv. Dieses\n"
-            "POKéMON wurde erst vor 40 Jahren neben\n"
+            "Pokémon wurde erst vor 40 Jahren neben\n"
             "der Einschlagstelle eines Meteoriten\n"
             "entdeckt."),
         .pokemonScale = 300,
@@ -9132,7 +9132,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .description = COMPOUND_STRING(
             "Man sagt, es lebe am Grund von großen\n"
             "Seen. Da es als das schönste aller\n"
-            "POKéMON gilt, wurde es schon oft\n"
+            "Pokémon gilt, wurde es schon oft\n"
             "gemalt und als Statue dargestellt."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
@@ -9700,7 +9700,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 11,
         .weight = 125,
         .description = COMPOUND_STRING(
-            "Dieses POKéMON war einst eine zurück-\n"
+            "Dieses Pokémon war einst eine zurück-\n"
             "gelassene Plüschpuppe. Banette lebt\n"
             "auf Müllhalden und hält nach dem Kind\n"
             "Ausschau, das es weggeworfen hat."),
@@ -13076,7 +13076,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 70,
         .weight = 2065,
         .description = COMPOUND_STRING(
-            "Dieses POKéMON fliegt ständig in der\n"
+            "Dieses Pokémon fliegt ständig in der\n"
             "Ozonschicht. Man sagt, es würde auf die\n"
             "Erde zurückkehren, wenn Kyogre und\n"
             "Groudon zu kämpfen beginnen."),

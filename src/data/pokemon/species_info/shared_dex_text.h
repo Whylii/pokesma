@@ -45,10 +45,9 @@ const u8 gUnownPokedexText[] = _(
 
 // Gen 4 families
 const u8 gMothimPokedexText[] = _(
-    "Es baut sich kein festes Nest\n"
-    "und fliegt auf der Suche nach seiner\n"
-    "Leibspeise Blütennektar über\n"
-    "Felder und Wiesen.");
+    "Es liebt Honig und stiehlt den\n"
+    "Honig, der von WADRIBIE\n"
+    "gesammelt wurde.");
 
 const u8 gArceusPokedexText[] = _(
     "Die Mythologie beschreibt es als das\n"

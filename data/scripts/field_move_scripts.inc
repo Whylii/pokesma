@@ -60,6 +60,7 @@ EventScript_CancelCut::
 @ Use cut from party menu (for the bag item)
 EventScript_UseCut::
     lockall
+    setfieldeffectargument 1, TRUE
     goto EventScript_CutTreeCommon
 
 Movement_CutTreeDown:
@@ -120,6 +121,7 @@ EventScript_RockSmashWithItem::
 @ Use rock smash from party menu
 EventScript_UseRockSmash::
     lockall
+    setfieldeffectargument 1, TRUE
     goto EventScript_RockSmashCommon
 
 EventScript_RockSmashCommon:
@@ -216,6 +218,7 @@ EventScript_StrengthWithItem::
 @ Entry point for using Strength from a menu.
 EventScript_UseStrength::
 	lockall
+    setfieldeffectargument 1, TRUE
 	dofieldeffect FLDEFF_USE_STRENGTH
 	waitstate
 	goto EventScript_ActivateStrength
