@@ -26,14 +26,14 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .speciesName = _("Chelast"),
         .cryId = CRY_TURTWIG,
         .natDexNum = NATIONAL_DEX_TURTWIG,
-        .categoryName = _("Tiny Leaf"),
+        .categoryName = _("Winziglaub"),
         .height = 4,
         .weight = 102,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "Der Panzer auf seinem Rücken\n"
+            "besteht aus Lehm und wird härter,\n"
+            "wenn das Pokémon Wasser trinkt.\n"
+            "Es lebt am Ufer von Seen."),
         .pokemonScale = 491,
         .pokemonOffset = 20,
         .trainerScale = 256,
@@ -96,14 +96,14 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .speciesName = _("Chelcarain"),
         .cryId = CRY_GROTLE,
         .natDexNum = NATIONAL_DEX_GROTLE,
-        .categoryName = _("Grove"),
+        .categoryName = _("Hain"),
         .height = 11,
         .weight = 970,
         .description = COMPOUND_STRING(
-            "A Grotle that lives in the forest is said\n"
-            "to have its own secret springwater well. \n"
-            "It carries fellow Pokémon there on \n"
-            "its back."),
+            "Es lebt in der Nähe von Gewässern im\n"
+            "Wald. Tagsüber verlässt es diesen, um\n"
+            "die Bäume auf seinem Panzer im\n"
+            "Sonnenlicht zu baden."),
         .pokemonScale = 320,
         .pokemonOffset = 9,
         .trainerScale = 256,
@@ -172,14 +172,13 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .speciesName = _("Chelterrar"),
         .cryId = CRY_TORTERRA,
         .natDexNum = NATIONAL_DEX_TORTERRA,
-        .categoryName = _("Continent"),
+        .categoryName = _("Kontinent"),
         .height = 22,
         .weight = 3100,
         .description = COMPOUND_STRING(
-            "Some Pokémon are born on a Torterra's\n"
-            "back and spend their entire life there.\n"
-            "Ancient people imagined that beneath \n"
-            "the ground, a gigantic Torterra dwelled."),
+            "Kleine Pokémon versammeln sich\n"
+            "manchmal auf seinem reglosen Rücken\n"
+            "und beginnen dort mit dem Nestbau."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 348,
@@ -241,14 +240,14 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .speciesName = _("Panflam"),
         .cryId = CRY_CHIMCHAR,
         .natDexNum = NATIONAL_DEX_CHIMCHAR,
-        .categoryName = _("Chimp"),
+        .categoryName = _("Schimpanse"),
         .height = 5,
         .weight = 62,
         .description = COMPOUND_STRING(
-            "Its fiery rear end is fueled by gas made\n"
-            "in its belly. Before going to sleep,\n"
-            "Chimchar extinguish the flame on their\n"
-            "tails to prevent fires."),
+            "Es lebt auf zerklüfteten Bergen und\n"
+            "klettert mit Leichtigkeit steile Felswände\n"
+            "hinauf. Bevor es schlafen geht, löscht\n"
+            "es seine Flamme."),
         .pokemonScale = 432,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -315,14 +314,13 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .speciesName = _("Panpyro"),
         .cryId = CRY_MONFERNO,
         .natDexNum = NATIONAL_DEX_MONFERNO,
-        .categoryName = _("Playful"),
+        .categoryName = _("Verspielt"),
         .height = 9,
         .weight = 220,
         .description = COMPOUND_STRING(
-            "It carefully controls the intensity of\n"
-            "the flame on its tail, so as to keep its\n"
-            "foes at an adequate distance.\n"
-            "Its fiery tail is but one weapon."),
+            "Um Angreifer abzuschrecken,\n"
+            "verstärkt es das Feuer an seinem\n"
+            "Schweif, wodurch es größer wirkt."),
         .pokemonScale = 338,
         .pokemonOffset = 9,
         .trainerScale = 256,
@@ -393,14 +391,14 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .speciesName = _("Panferno"),
         .cryId = CRY_INFERNAPE,
         .natDexNum = NATIONAL_DEX_INFERNAPE,
-        .categoryName = _("Flame"),
+        .categoryName = _("Flamme"),
         .height = 12,
         .weight = 550,
         .description = COMPOUND_STRING(
-            "Its crown of fire is indicative of its\n"
-            "fiery nature. It uses a special kind of\n"
-            "martial arts involving all of its limbs to\n"
-            "take on any opponent."),
+            "Sein Temperament ist ebenso feurig\n"
+            "wie die Flamme auf seinem Kopf.\n"
+            "Niemand kann ihm in Sachen Schnelligkeit\n"
+            "das Wasser reichen."),
         .pokemonScale = 282,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -466,14 +464,14 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .speciesName = _("Plinfa"),
         .cryId = CRY_PIPLUP,
         .natDexNum = NATIONAL_DEX_PIPLUP,
-        .categoryName = _("Penguin"),
+        .categoryName = _("Pinguin"),
         .height = 4,
         .weight = 52,
         .description = COMPOUND_STRING(
-            "A poor walker, it often falls down. However,\n"
-            "its strong pride makes it puff up its chest\n"
-            "without a care. It's difficult to bond with\n"
-            "since it won't listen to its Trainer."),
+            "Sein stark ausgeprägter Stolz hält es\n"
+            "davon ab, von Menschen Futter anzunehmen.\n"
+            "Die dicke Daunenschicht schützt\n"
+            "es vor Kälte."),
         .pokemonScale = 491,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -539,14 +537,14 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .speciesName = _("Pliprin"),
         .cryId = CRY_PRINPLUP,
         .natDexNum = NATIONAL_DEX_PRINPLUP,
-        .categoryName = _("Penguin"),
+        .categoryName = _("Pinguin"),
         .height = 8,
         .weight = 230,
         .description = COMPOUND_STRING(
-            "Because every Prinplup considers itself\n"
-            "to be the most important, they can never\n"
-            "form a group. It searches for prey in\n"
-            "icy seas."),
+            "Dieses Pokémon kann durch Schläge\n"
+            "seiner kräftigen Flügel selbst dicke\n"
+            "Bäume umknicken. Es sucht im\n"
+            "Eismeer nach Beute."),
         .pokemonScale = 366,
         .pokemonOffset = 10,
         .trainerScale = 257,
@@ -623,14 +621,14 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .speciesName = _("Impoleon"),
         .cryId = CRY_EMPOLEON,
         .natDexNum = NATIONAL_DEX_EMPOLEON,
-        .categoryName = _("Emperor"),
+        .categoryName = _("Kaiser"),
         .height = 17,
         .weight = 845,
         .description = COMPOUND_STRING(
-            "The three horns that extend from its\n"
-            "beak attest to its power. It avoids\n"
-            "unnecessary disputes, but it will decimate\n"
-            "anything that threatens its pride."),
+            "Es schwimmt so schnell wie ein\n"
+            "Rennboot. Seine Flügel haben scharfe\n"
+            "Kanten, die sogar Treibeis\n"
+            "durchschneiden können."),
         .pokemonScale = 259,
         .pokemonOffset = 0,
         .trainerScale = 290,

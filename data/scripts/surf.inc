@@ -20,7 +20,7 @@ EventScript_UseSurf::
 
 EventScript_UseSurfWithItem::
     @ --- Item logic ---
-    bufferitemname STR_VAR_2, ITEM_SURF_TOOL
+    bufferitemname STR_VAR_2, ITEM_MULTITOOL
     setfieldeffectargument 0, PARTY_SIZE
     lockall
     msgbox gText_WantToSurfWithItem, MSGBOX_YESNO

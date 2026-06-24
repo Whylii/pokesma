@@ -22,7 +22,7 @@ EventScript_CutTree::
 
 EventScript_CutTreeWithItem::
     @ --- The key item was found ---
-    bufferitemname STR_VAR_2, ITEM_CUT_TOOL
+    bufferitemname STR_VAR_2, ITEM_MULTITOOL
     msgbox Text_WantToCutWithItem, MSGBOX_YESNO
     goto_if_eq VAR_RESULT, NO, EventScript_CancelCut
     msgbox Text_PlayerUsedFieldTool, MSGBOX_DEFAULT
@@ -108,7 +108,7 @@ EventScript_RockSmash::
 
 EventScript_RockSmashWithItem::
     @ --- The key item was found ---
-    bufferitemname STR_VAR_2, ITEM_ROCK_SMASH_TOOL
+    bufferitemname STR_VAR_2, ITEM_MULTITOOL
     setfieldeffectargument 0, PARTY_SIZE
     msgbox Text_WantToSmashWithItem, MSGBOX_YESNO
     goto_if_eq VAR_RESULT, NO, EventScript_CancelSmash
@@ -203,7 +203,7 @@ EventScript_StrengthBoulder::
 
 EventScript_StrengthWithItem::
     @ --- The key item was found ---
-    bufferitemname STR_VAR_2, ITEM_STRENGTH_TOOL
+    bufferitemname STR_VAR_2, ITEM_MULTITOOL
     setfieldeffectargument 0, PARTY_SIZE @ No Pokémon is involved
     msgbox Text_WantToUseStrengthWithItem, MSGBOX_YESNO
     goto_if_eq VAR_RESULT, NO, EventScript_CancelStrength
@@ -283,7 +283,7 @@ EventScript_UseWaterfall::
 
 EventScript_UseWaterfallWithItem::
     @ --- The key item was found ---
-    bufferitemname STR_VAR_2, ITEM_WATERFALL_TOOL
+    bufferitemname STR_VAR_2, ITEM_MULTITOOL
     setfieldeffectargument 0, PARTY_SIZE
     msgbox Text_WantToUseWaterfallWithItem, MSGBOX_YESNO
     goto_if_eq VAR_RESULT, NO, EventScript_EndWaterfall
@@ -348,7 +348,7 @@ EventScript_UseDive::
 
 EventScript_UseDiveWithItem::
     @ --- The key item was found ---
-    bufferitemname STR_VAR_2, ITEM_DIVE_TOOL
+    bufferitemname STR_VAR_2, ITEM_MULTITOOL
     setfieldeffectargument 0, PARTY_SIZE
     msgbox Text_WantToDiveWithItem, MSGBOX_YESNO
     goto_if_eq VAR_RESULT, NO, EventScript_EndDive
@@ -388,7 +388,7 @@ EventScript_UseDiveUnderwater::
 
 EventScript_UseSurfaceWithItem::
     @ --- The key item was found ---
-    bufferitemname STR_VAR_2, ITEM_DIVE_TOOL
+    bufferitemname STR_VAR_2, ITEM_MULTITOOL
     setfieldeffectargument 0, PARTY_SIZE
     msgbox Text_WantToSurfaceWithItem, MSGBOX_YESNO
     goto_if_eq VAR_RESULT, NO, EventScript_NoSurface

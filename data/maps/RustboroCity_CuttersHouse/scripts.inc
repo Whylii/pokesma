@@ -3,7 +3,7 @@ RustboroCity_CuttersHouse_EventScript_Cutter::
 	lock
 # 3 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	faceplayer
-	checkitem ITEM_CUT_TOOL
+	checkitem ITEM_MULTITOOL
 # 0 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq RustboroCity_CuttersHouse_EventScript_Cutter_2
@@ -52,7 +52,7 @@ RustboroCity_CuttersHouse_EventScript_Cutter_8:
 	goto RustboroCity_CuttersHouse_EventScript_Cutter_7
 
 RustboroCity_CuttersHouse_EventScript_Cutter_10:
-	checkitem ITEM_CUT_TOOL
+	checkitem ITEM_MULTITOOL
 # 0 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq RustboroCity_CuttersHouse_EventScript_Cutter_8
@@ -76,7 +76,7 @@ RustboroCity_CuttersHouse_EventScript_AfterBattle::
 # 42 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	msgbox RustboroCity_CuttersHouse_Text_AfterBattle, MSGBOX_NPC
 # 43 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	giveitem ITEM_CUT_TOOL
+	giveitem ITEM_MULTITOOL
 # 44 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	release
 	end
@@ -146,8 +146,8 @@ RustboroCity_CuttersHouse_Text_ExplainCut::
 
 RustboroCity_CuttersHouse_Text_AlreadyHasTool::
 # 75 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	.string "Die Axt dient dir sicher\n"
-	.string "gut. Viel Erfolg!$"
+	.string "Das Multitool dient dir\n"
+	.string "sicher gut. Viel Erfolg!$"
 
 RustboroCity_CuttersHouse_Text_PlayerRefused::
 # 80 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
@@ -157,7 +157,7 @@ RustboroCity_CuttersHouse_Text_PlayerRefused::
 RustboroCity_CuttersHouse_Text_AfterBattle::
 # 85 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	.string "Gut gemacht. Hier ist\n"
-	.string "eine spezielle Axt!$"
+	.string "ein spezielles Multitool!$"
 
 Text_CutterIntro::
 # 90 "data/maps/RustboroCity_CuttersHouse/scripts.pory"

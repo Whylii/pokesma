@@ -16067,6 +16067,22 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_ScubaGear,
         .iconPalette = gItemIconPalette_ScubaGear,
     },
+
+    [ITEM_MULTITOOL] =
+    {
+        .name = ITEM_NAME("Multitool"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Ein praktisches\n"
+            "Werkzeug für\n"
+            "alle Fälle."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_Multitool,
+        .iconPic = gItemIcon_QuestionMark,
+        .iconPalette = gItemIconPalette_QuestionMark,
+    },
 };
 
 #undef ITEM_NAME

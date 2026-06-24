@@ -1625,7 +1625,7 @@ Text_PlayerUsedFieldTool:
 
 FieldMove_EventScript_Cut::
 	lockall
-	bufferitemname STR_VAR_2, ITEM_CUT_TOOL
+    bufferitemname STR_VAR_2, ITEM_MULTITOOL
 	msgbox Text_PlayerUsedFieldTool, MSGBOX_DEFAULT
 	closemessage
 	goto EventScript_CutTree

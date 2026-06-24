@@ -21,6 +21,7 @@
 #include "field_weather.h"
 #include "fishing.h"
 #include "fldeff.h"
+#include "field_camera.h"
 #include "follower_npc.h"
 #include "item.h"
 #include "item_menu.h"
@@ -43,6 +44,7 @@
 #include "task.h"
 #include "text.h"
 #include "vs_seeker.h"
+#include "window.h"
 #include "constants/event_bg.h"
 #include "constants/event_objects.h"
 #include "constants/item_effects.h"
@@ -51,6 +53,7 @@
 #include "region_map.h"
 #include "field_move.h"
 #include "field_control_avatar.h"
+#include "script_menu.h"
 
 static void SetUpItemUseCallback(u8);
 static void FieldCB_UseItemOnField(void);
@@ -58,6 +61,7 @@ static void Task_CallItemUseOnFieldCallback(u8);
 static void Task_PartyMenuItemUseFromField(u8);
 static void Task_UseItemfinder(u8);
 static void Task_CloseItemfinderMessage(u8);
+static void ItemUseOnFieldCB_Multitool(u8 taskId);
 static void Task_HiddenItemNearby(u8);
 static void Task_StandingOnHiddenItem(u8);
 static void PlayerFaceHiddenItem(enum Direction);
@@ -1883,6 +1887,233 @@ void ItemUseOutOfBattle_Dive(u8 taskId)
     else // Not a valid spot
     {
         DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].data[3]);
+    }
+}
+
+// Multitool
+enum {
+    MULTITOOL_CUT,
+    MULTITOOL_FLY,
+    MULTITOOL_SURF,
+    MULTITOOL_STRENGTH,
+    MULTITOOL_FLASH,
+    MULTITOOL_ROCK_SMASH,
+    MULTITOOL_WATERFALL,
+    MULTITOOL_DIVE,
+    MULTITOOL_COUNT,
+};
+
+
+
+static const u8 sMultitoolText_Cut[] = _("Axt");
+static const u8 sMultitoolText_Fly[] = _("Fluggerät");
+static const u8 sMultitoolText_Surf[] = _("Surfboard");
+static const u8 sMultitoolText_Strength[] = _("Stärke-Handschuh");
+static const u8 sMultitoolText_Flash[] = _("Laterne");
+static const u8 sMultitoolText_RockSmash[] = _("Spitzhacke");
+static const u8 sMultitoolText_Waterfall[] = _("Kaskaden-Seil");
+static const u8 sMultitoolText_Dive[] = _("Tauchausrüstung");
+
+static const struct MenuAction sMultitoolMenuItems[MULTITOOL_COUNT] = {
+    [MULTITOOL_CUT]         = {sMultitoolText_Cut,          {NULL}},
+    [MULTITOOL_FLY]         = {sMultitoolText_Fly,          {NULL}},
+    [MULTITOOL_SURF]        = {sMultitoolText_Surf,         {NULL}},
+    [MULTITOOL_STRENGTH]    = {sMultitoolText_Strength,     {NULL}},
+    [MULTITOOL_FLASH]       = {sMultitoolText_Flash,        {NULL}},
+    [MULTITOOL_ROCK_SMASH]  = {sMultitoolText_RockSmash,    {NULL}},
+    [MULTITOOL_WATERFALL]   = {sMultitoolText_Waterfall,    {NULL}},
+    [MULTITOOL_DIVE]        = {sMultitoolText_Dive,         {NULL}},
+};
+
+void ItemUseOutOfBattle_Multitool(u8 taskId)
+{
+    sItemUseOnFieldCB = ItemUseOnFieldCB_Multitool;
+    SetUpItemUseOnFieldCallback(taskId);
+    if (gTasks[taskId].tUsingRegisteredKeyItem)
+        gTasks[taskId].func = ItemUseOnFieldCB_Multitool;
+}
+
+static bool32 IsMultitoolActionUnlocked(u32 action)
+{
+    static const enum FieldMove sActionToFieldMove[MULTITOOL_COUNT] = {
+        [MULTITOOL_CUT]         = FIELD_MOVE_CUT,
+        [MULTITOOL_FLY]         = FIELD_MOVE_FLY,
+        [MULTITOOL_SURF]        = FIELD_MOVE_SURF,
+        [MULTITOOL_STRENGTH]    = FIELD_MOVE_STRENGTH,
+        [MULTITOOL_FLASH]       = FIELD_MOVE_FLASH,
+        [MULTITOOL_ROCK_SMASH]  = FIELD_MOVE_ROCK_SMASH,
+        [MULTITOOL_WATERFALL]   = FIELD_MOVE_WATERFALL,
+        [MULTITOOL_DIVE]        = FIELD_MOVE_DIVE,
+    };
+    return IsFieldMoveUnlocked(sActionToFieldMove[action]);
+}
+
+static struct MenuAction sMultitoolDynamicItems[MULTITOOL_COUNT];
+
+static bool32 IsMultitoolActionFacingEnvironment(u32 action)
+{
+    switch (action)
+    {
+    case MULTITOOL_CUT:
+        return CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_CUTTABLE_TREE);
+    case MULTITOOL_SURF:
+        return IsPlayerFacingSurfableFishableWater();
+    case MULTITOOL_FLASH:
+        return GetFlashLevel() > 0;
+    case MULTITOOL_ROCK_SMASH:
+        return CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_BREAKABLE_ROCK);
+    case MULTITOOL_WATERFALL:
+        return IsPlayerFacingWaterfall();
+    default:
+        return TRUE;
+    }
+}
+
+static void ItemUseOnFieldCB_Multitool(u8 taskId)
+{
+    s16 *data = gTasks[taskId].data;
+
+    switch (data[0])
+    {
+    case 0:
+    {
+        u8 windowId;
+        u8 i;
+        u8 unlockedCount = 0;
+        u8 unlockedMap[MULTITOOL_COUNT];
+
+        LockPlayerFieldControls();
+
+        for (i = 0; i < MULTITOOL_COUNT; i++)
+        {
+            if (IsMultitoolActionUnlocked(i))
+            {
+                unlockedMap[unlockedCount] = i;
+                sMultitoolDynamicItems[unlockedCount] = sMultitoolMenuItems[i];
+                unlockedCount++;
+            }
+        }
+
+        if (unlockedCount == 0)
+        {
+            DisplayItemMessageOnField(taskId, gText_DadsAdvice, Task_CloseCantUseKeyItemMessage);
+            break;
+        }
+
+        windowId = CreateWindowFromRect(3, 1, 24, unlockedCount * 2);
+        SetStandardWindowBorderStyle(windowId, FALSE);
+        PrintMenuTable(windowId, unlockedCount, sMultitoolDynamicItems);
+        data[1] = InitMenuInUpperLeftCornerNormal(windowId, unlockedCount, 0);
+        data[4] = windowId;
+        for (i = 0; i < unlockedCount; i++)
+            data[5 + i] = unlockedMap[i];
+        data[14] = unlockedCount;
+        data[0] = 1;
+        ScheduleBgCopyTilemapToVram(0);
+        break;
+    }
+    case 1:
+    {
+        s8 selection = Menu_ProcessInput();
+
+        if (selection == MENU_B_PRESSED)
+        {
+            ClearToTransparentAndRemoveWindow(data[4]);
+            UnlockPlayerFieldControls();
+            ScriptUnfreezeObjectEvents();
+            DestroyTask(taskId);
+        }
+        else if (selection >= 0 && selection < data[14])
+        {
+            ClearToTransparentAndRemoveWindow(data[4]);
+            data[2] = data[5 + selection];
+            data[0] = 2;
+        }
+        break;
+    }
+    case 2:
+    {
+        DrawWholeMapView();
+
+        if (!IsMultitoolActionFacingEnvironment(data[2]))
+        {
+            DisplayItemMessageOnField(taskId, gText_DadsAdvice, Task_CloseCantUseKeyItemMessage);
+            break;
+        }
+
+        switch (data[2])
+        {
+        case MULTITOOL_CUT:
+        {
+            UnlockPlayerFieldControls();
+            ScriptContext_SetupScript(EventScript_UseCut);
+            DestroyTask(taskId);
+            break;
+        }
+        case MULTITOOL_FLY:
+            CleanupOverworldWindowsAndTilemaps();
+            SetMainCallback2(CB2_OpenFlyMap);
+            DestroyTask(taskId);
+            break;
+        case MULTITOOL_SURF:
+        {
+            UnlockPlayerFieldControls();
+            ScriptContext_SetupScript(EventScript_UseSurf);
+            DestroyTask(taskId);
+            break;
+        }
+        case MULTITOOL_STRENGTH:
+        {
+            UnlockPlayerFieldControls();
+            ScriptContext_SetupScript(EventScript_UseStrength);
+            DestroyTask(taskId);
+            break;
+        }
+        case MULTITOOL_FLASH:
+        {
+            UnlockPlayerFieldControls();
+            ScriptContext_SetupScript(EventScript_UseFlash);
+            DestroyTask(taskId);
+            break;
+        }
+        case MULTITOOL_ROCK_SMASH:
+        {
+            UnlockPlayerFieldControls();
+            ScriptContext_SetupScript(EventScript_UseRockSmash);
+            DestroyTask(taskId);
+            break;
+        }
+        case MULTITOOL_WATERFALL:
+        {
+            UnlockPlayerFieldControls();
+            ScriptContext_SetupScript(EventScript_UseWaterfall);
+            DestroyTask(taskId);
+            break;
+        }
+        case MULTITOOL_DIVE:
+        {
+            u8 diveWarpStatus = TrySetDiveWarp();
+            if (diveWarpStatus == 2)
+            {
+                UnlockPlayerFieldControls();
+                ScriptContext_SetupScript(EventScript_UseDive);
+                DestroyTask(taskId);
+            }
+            else if (diveWarpStatus == 1)
+            {
+                UnlockPlayerFieldControls();
+                ScriptContext_SetupScript(EventScript_UseDiveUnderwater);
+                DestroyTask(taskId);
+            }
+            else
+            {
+                DisplayItemMessageOnField(taskId, gText_DadsAdvice, Task_CloseCantUseKeyItemMessage);
+            }
+            break;
+        }
+        }
+        break;
+    }
     }
 }
 

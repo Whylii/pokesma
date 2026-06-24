@@ -270,7 +270,7 @@ bool8 CanUseFly(void)
     }
 
     // If no Pokémon is found, check for the Fly Tool item.
-    if (CheckBagHasItem(ITEM_FLY_TOOL, 1))
+    if (CheckBagHasItem(ITEM_MULTITOOL, 1))
     {
         sFieldMoveSource = FIELD_MOVE_SOURCE_ITEM;
         return TRUE; // Found the item
@@ -308,7 +308,7 @@ bool8 CanUseFlash(void)
     }
 
     // 3. Check for the item
-    if (CheckBagHasItem(ITEM_FLASH_TOOL, 1))
+    if (CheckBagHasItem(ITEM_MULTITOOL, 1))
     {
         sFieldMoveSource = FIELD_MOVE_SOURCE_ITEM;
         return TRUE;

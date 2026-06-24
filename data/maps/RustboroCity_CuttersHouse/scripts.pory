@@ -1,7 +1,7 @@
 script RustboroCity_CuttersHouse_EventScript_Cutter {
     lock
     faceplayer
-    if (checkitem(ITEM_CUT_TOOL) == TRUE) {
+    if (checkitem(ITEM_MULTITOOL) == TRUE) {
         msgbox (RustboroCity_CuttersHouse_Text_AlreadyHasTool, MSGBOX_NPC)
     release
     end
@@ -14,7 +14,7 @@ script RustboroCity_CuttersHouse_EventScript_Cutter {
     release
     end
     }
-    if (flag(FLAG_BADGE01_GET) && (checkitem(ITEM_CUT_TOOL) == FALSE)) {
+    if (flag(FLAG_BADGE01_GET) && (checkitem(ITEM_MULTITOOL) == FALSE)) {
         msgbox (RustboroCity_CuttersHouse_EventScript_BattleOffer, MSGBOX_YESNO)
         if (var(VAR_RESULT) == NO) {
             goto (RustboroCity_CuttersHouse_EventScript_PlayerAnsweredNo)
@@ -40,7 +40,7 @@ script RustboroCity_CuttersHouse_EventScript_PlayerAnsweredNo {
 
 script RustboroCity_CuttersHouse_EventScript_AfterBattle {
     msgbox (RustboroCity_CuttersHouse_Text_AfterBattle, MSGBOX_NPC)
-    giveitem (ITEM_CUT_TOOL)
+    giveitem (ITEM_MULTITOOL)
     release
     end
 }   
@@ -73,8 +73,8 @@ text RustboroCity_CuttersHouse_Text_ExplainCut {
 }
 
 text RustboroCity_CuttersHouse_Text_AlreadyHasTool {
-"Die Axt dient dir sicher
-gut. Viel Erfolg!"
+"Das Multitool dient dir
+sicher gut. Viel Erfolg!"
 }
 
 text RustboroCity_CuttersHouse_Text_PlayerRefused {
@@ -84,7 +84,7 @@ wenn du bereit bist."
 
 text RustboroCity_CuttersHouse_Text_AfterBattle {
 "Gut gemacht. Hier ist
-eine spezielle Axt!"
+ein spezielles Multitool!"
 }
 
 text Text_CutterIntro {

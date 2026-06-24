@@ -2309,22 +2309,14 @@ static u16 GetKeyItemForFieldMove(u16 move)
     switch (move)
     {
         case MOVE_CUT:
-            return ITEM_CUT_TOOL;
         case MOVE_FLY:
-            return ITEM_FLY_TOOL;
         case MOVE_SURF:
-            return ITEM_SURF_TOOL;
         case MOVE_STRENGTH:
-            return ITEM_STRENGTH_TOOL;
         case MOVE_FLASH:
-            return ITEM_FLASH_TOOL;
         case MOVE_ROCK_SMASH:
-            return ITEM_ROCK_SMASH_TOOL;
         case MOVE_WATERFALL:
-            return ITEM_WATERFALL_TOOL;
         case MOVE_DIVE:
-            return ITEM_DIVE_TOOL;
-        // Add more cases here for future tools
+            return ITEM_MULTITOOL;
         default:
             return ITEM_NONE;
     }
