@@ -16080,8 +16080,8 @@ const struct ItemInfo gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Multitool,
-        .iconPic = gItemIcon_QuestionMark,
-        .iconPalette = gItemIconPalette_QuestionMark,
+        .iconPic = gItemIcon_Multitool,
+        .iconPalette = gItemIconPalette_Multitool,
     },
 };
 

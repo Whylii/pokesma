@@ -1779,6 +1779,9 @@ const u16 gItemIconPalette_Pickaxe[] = INCGFX_U16("graphics/items/icon_palettes/
 const u32 gItemIcon_ScubaGear[] = INCGFX_U32("graphics/items/icons/scuba_gear.png", ".4bpp.smol");
 const u16 gItemIconPalette_ScubaGear[] = INCGFX_U16("graphics/items/icon_palettes/scuba_gear.pal", ".gbapal");
 
+const u32 gItemIcon_Multitool[] = INCGFX_U32("graphics/items/icons/multitool.png", ".4bpp.smol");
+const u16 gItemIconPalette_Multitool[] = INCGFX_U16("graphics/items/icon_palettes/multitool.pal", ".gbapal");
+
 
 // Charms
 
