@@ -410,7 +410,7 @@ Route103_Text_MayTimeToHeadBack:
 	.string "sehr kurze Zeit und es mag dich bereits.\p"
 	.string "Du wirst es einfach haben, dich mit\n"
 	.string "jeder Art von Pokémon anzufreunden.\p"
-	.string "Nun wird es aber Zeit, zurück ins LABOR\n"
+	.string "Nun wird es aber Zeit, zurück ins Labor\n"
 	.string "zu gehen!$"
 
 Route103_Text_BrendanRoute103Pokemon:

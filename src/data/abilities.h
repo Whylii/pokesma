@@ -496,28 +496,28 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_OVERGROW] =
     {
         .name = _("Notdünger"),
-        .description = COMPOUND_STRING("Erhöht Pfl.-Att. i. d. Not."),
+        .description = COMPOUND_STRING("Erhöht Pflanzen-Attacken in der Not."),
         .aiRating = 5,
     },
 
     [ABILITY_BLAZE] =
     {
         .name = _("Großbrand"),
-        .description = COMPOUND_STRING("Erhöht Feuer-Att. in Not."),
+        .description = COMPOUND_STRING("Erhöht Feuer-Attacken in der Not."),
         .aiRating = 5,
     },
 
     [ABILITY_TORRENT] =
     {
         .name = _("Sturzbach"),
-        .description = COMPOUND_STRING("Erhöht Wasser-Att. in Not."),
+        .description = COMPOUND_STRING("Erhöht Wasser-Attacken in der Not."),
         .aiRating = 5,
     },
 
     [ABILITY_SWARM] =
     {
         .name = _("Hexaplaga"),
-        .description = COMPOUND_STRING("Erhöht Käfer-Att. in Not."),
+        .description = COMPOUND_STRING("Erhöht Käfer-Attacken in der Not."),
         .aiRating = 5,
     },
 

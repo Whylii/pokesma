@@ -9800,7 +9800,7 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
-            "Item zum Tragen.\n"
+            "Basis-Item.\n"
             "Teilt Kampf-EP\n"
             "mit dem Team."),
         .pocket = POCKET_KEY_ITEMS,
