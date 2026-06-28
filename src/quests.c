@@ -208,32 +208,27 @@ static const u32 sQuestMenuTilemap[] = INCGFX_U32("graphics/quest_menu/menu.bin"
 
 //Strings used for the Quest Menu
 static const u8 sText_Empty[] = _("");
-static const u8 sText_AllHeader[] = _("All Missions");
-static const u8 sText_InactiveHeader[] = _("Inactive Missions");
-static const u8 sText_ActiveHeader[] = _("Active Missions");
-static const u8 sText_RewardHeader[] = _("Reward Available");
-static const u8 sText_CompletedHeader[] =
-      _("Completed Missions");
-static const u8 sText_QuestNumberDisplay[] =
-      _("{STR_VAR_1}/{STR_VAR_2}");
+static const u8 sText_AllHeader[] = _("Alle Missionen");
+static const u8 sText_InactiveHeader[] = _("Inaktive Missionen");
+static const u8 sText_ActiveHeader[] = _("Aktive Missionen");
+static const u8 sText_RewardHeader[] = _("Belohnung");
+static const u8 sText_CompletedHeader[] = _("Erledigte Missionen");
+static const u8 sText_QuestNumberDisplay[] = _("{STR_VAR_1}/{STR_VAR_2}");
 static const u8 sText_Unk[] = _("??????");
-static const u8 sText_Active[] = _("Active");
-static const u8 sText_Reward[] = _("Reward");
-static const u8 sText_Complete[] = _("Done");
-static const u8 sText_ShowLocation[] =
-      _("Location: {STR_VAR_2}");
-static const u8 sText_StartForMore[] =
-      _("Start for more details.");
-static const u8 sText_ReturnRecieveReward[] =
-      _("Return to {STR_VAR_2}\nto recieve your reward!");
+static const u8 sText_Active[] = _("Aktiv");
+static const u8 sText_Reward[] = _("Belohnung");
+static const u8 sText_Complete[] = _("Erledigt");
+static const u8 sText_ShowLocation[] = _("Fundort: {STR_VAR_2}");
+static const u8 sText_StartForMore[] = _("Start für Details.");
+static const u8 sText_ReturnRecieveReward[] = _("Besuche {STR_VAR_2}, für\neine Belohnung!");
 static const u8 sText_SubQuestButton[] = _(" {A_BUTTON}");
-static const u8 sText_Type[] = _("{R_BUTTON}Type");
-static const u8 sText_Caught[] = _("Caught");
-static const u8 sText_Found[] = _("Found");
-static const u8 sText_Read[] = _("Read");
-static const u8 sText_Back[] = _("Back");
+static const u8 sText_Type[] = _("{R_BUTTON}Typ");
+static const u8 sText_Caught[] = _("Gefangen");
+static const u8 sText_Found[] = _("Gefunden");
+static const u8 sText_Read[] = _("Gelesen");
+static const u8 sText_Back[] = _("Zurück");
 static const u8 sText_DotSpace[] = _(". ");
-static const u8 sText_Close[] = _("Close");
+static const u8 sText_Close[] = _("Schließen");
 static const u8 sText_ColorGreen[] = _("{COLOR}{GREEN}");
 static const u8 sText_AZ[] = _(" A-Z");
 
@@ -2184,7 +2179,7 @@ static void QuestMenu_CreateSprite(u16 itemId, u8 idx, u8 spriteType)
             case OBJECT:
                 {
                     u16 palBuffer[256];
-                    DecompressDataWithHeaderWram(sQuestMenuBgPals, palBuffer);
+                    LoadPalette(sQuestMenuBgPals, 0, PLTT_SIZE_4BPP);
                     const struct SpritePalette palStruct = { .tag = 102, .data = palBuffer };
                     LoadSpritePalette(&palStruct);
                 }
