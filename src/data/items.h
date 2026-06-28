@@ -13549,7 +13549,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HM_CUT] =
     {
-        .name = ITEM_NAME("HM01"),
+        .name = ITEM_NAME("VM01"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Gegner wird mit\n"
@@ -13563,7 +13563,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HM_FLY] =
     {
-        .name = ITEM_NAME("HM02"),
+        .name = ITEM_NAME("VM02"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Pokémon fliegt hoch,\n"
@@ -13577,7 +13577,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HM_SURF] =
     {
-        .name = ITEM_NAME("HM03"),
+        .name = ITEM_NAME("VM03"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Eine riesige Flut-\n"
@@ -13591,7 +13591,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HM_STRENGTH] =
     {
-        .name = ITEM_NAME("HM04"),
+        .name = ITEM_NAME("VM04"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Den Gegner trifft \n"
@@ -13605,7 +13605,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HM_FLASH] =
     {
-        .name = ITEM_NAME("HM05"),
+        .name = ITEM_NAME("VM05"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Ein gleißender\n"
@@ -13619,7 +13619,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HM_ROCK_SMASH] =
     {
-        .name = ITEM_NAME("HM06"),
+        .name = ITEM_NAME("VM06"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Steinbrecherische\n"
@@ -13633,7 +13633,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HM_WATERFALL] =
     {
-        .name = ITEM_NAME("HM07"),
+        .name = ITEM_NAME("VM07"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Mächtige Attacke,\n"
@@ -13647,7 +13647,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HM_DIVE] =
     {
-        .name = ITEM_NAME("HM08"),
+        .name = ITEM_NAME("VM08"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Pokémon taucht ab,\n"

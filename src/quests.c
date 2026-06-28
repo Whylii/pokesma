@@ -202,9 +202,9 @@ static void Task_QuestMenuTurnOff1(u8 taskId);
 static void Task_QuestMenuTurnOff2(u8 taskId);
 
 // Tiles, palettes and tilemaps for the Quest Menu
-static const u32 sQuestMenuTiles[] = INCBIN_U32("graphics/quest_menu/menu.4bpp.lz");
-static const u16 sQuestMenuBgPals[] = INCBIN_U16("graphics/quest_menu/menu.gbapal");
-static const u32 sQuestMenuTilemap[] = INCBIN_U32("graphics/quest_menu/menu.bin.lz");
+static const u32 sQuestMenuTiles[] = INCGFX_U32("graphics/quest_menu/menu.png", ".4bpp.smol");
+static const u16 sQuestMenuBgPals[] = INCGFX_U16("graphics/quest_menu/menu.pal", ".gbapal");
+static const u32 sQuestMenuTilemap[] = INCGFX_U32("graphics/quest_menu/menu.bin", ".smolTM");
 
 //Strings used for the Quest Menu
 static const u8 sText_Empty[] = _("");
@@ -2172,7 +2172,7 @@ void DetermineSpriteType(s32 questId)
 static void QuestMenu_CreateSprite(u16 itemId, u8 idx, u8 spriteType)
 {
     u8 *ptr = &sItemMenuIconSpriteIds[10];
-    u32 spriteId = MAX_SPRITES; // Typ auf u32 geändert
+    u32 spriteId = MAX_SPRITES;
 
     if (ptr[idx] == 0xFF)
     {
@@ -2183,50 +2183,34 @@ static void QuestMenu_CreateSprite(u16 itemId, u8 idx, u8 spriteType)
         {
             case OBJECT:
                 {
-                    u16 palBuffer[256]; // Puffer für 256 Farben (512 Bytes)
-                    
-                    // 1. Dekomprimiere die u16-Daten (sQuestMenuBgPals) in den u16-Puffer
-                    // sQuestMenuBgPals ist das u16-Array aus deiner Definition oben
+                    u16 palBuffer[256];
                     DecompressDataWithHeaderWram(sQuestMenuBgPals, palBuffer);
-
-                    // 2. Definiere die Struktur und lade sie
-                    // Der Tag (102) MUSS mit dem .paletteTag in deinem SpriteTemplate übereinstimmen!
                     const struct SpritePalette palStruct = { .tag = 102, .data = palBuffer };
                     LoadSpritePalette(&palStruct);
                 }
-                
-                // Jetzt erst das Sprite erstellen
                 spriteId = CreateObjectGraphicsSprite(itemId, SpriteCallbackDummy, 20, 132, 0);
-                break;   
-                
+                break;             
             case ITEM:
                 spriteId = AddItemIconSprite(102 + idx, 102 + idx, itemId);
                 break;
-                
             case PKMN:
                 LoadMonIconPalettes();
                 spriteId = CreateMonIcon(itemId, SpriteCallbackDummy, 20, 132, 0, 1);
-                break;
-                
+                break;   
             default:
-                break;
+            break;
         }
-
-        // WICHTIG: Zugriff auf gSprites NUR wenn spriteId gültig ist
         if (spriteId < MAX_SPRITES)
         {
             ptr[idx] = spriteId;
             
-            // Hier ist der Zugriff sicher
             gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
-
             if (spriteType == ITEM)
             {
                 gSprites[spriteId].x2 = 24;
                 gSprites[spriteId].y2 = 140;
             }
         }
-        // else: Kein Sprite-Slot frei. Nichts tun.
     }
 }   
 

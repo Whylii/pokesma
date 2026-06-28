@@ -68,19 +68,19 @@ Movement_CutTreeDown:
     step_end
 
 Text_WantToCutWithPokemon:
-    .string "This tree can be CUT down.\n"
-    .string "Want {STR_VAR_1} to help?$"
+    .string "Möchtest du {STR_VAR_1} bitten,\n"
+    .string "diesen Baum zu fällen?$"
 
 Text_MonHelpedCut:
-    .string "{STR_VAR_1} helped you clear the way!$"
+    .string "{STR_VAR_1} hilft dir gerne!$"
 
 Text_WantToCutWithItem:
-    .string "This tree can be CUT down.\n"
-    .string "Use the {STR_VAR_2}?$"
+    .string "Möchtest du mit dem Multitool\n"
+    .string "diesen Baum fällen?$"
 
 Text_CantCut:
-    .string "This tree looks like it can be\n"
-    .string "CUT down!$"
+    .string "Dieser Baum kann\n"
+    .string "gefällt werden!$"
 
 Text_MonUsedFieldMove:
     .string "{STR_VAR_1} used {STR_VAR_2}!$"
@@ -148,16 +148,16 @@ EventScript_SmashRock::
 
 @ --- Text ---
 Text_WantToSmashWithPokemon:
-    .string "This rock may be breakable.\n"
-    .string "Want {STR_VAR_1} to help?$"
+    .string "Möchtest du {STR_VAR_1} bitten,\n"
+    .string "diesen Stein zu zertrümmern?$"
 
 Text_WantToSmashWithItem:
-    .string "This rock may be breakable.\n"
-    .string "Use the {STR_VAR_2}?$"
+    .string "Möchtest du mit dem Multitool\n"
+    .string "diesen Stein zertrümmern?$"
 
 Text_PlayerUsedRockHammer:
-    .string "You used the {STR_VAR_2} and\n"
-	.string "smashed the rock!$"
+    .string "Der Stein wurde\n"
+	.string "erfolgreich zertrümmert!$"
 
 Movement_SmashRock:
 	rock_smash_break
@@ -174,12 +174,12 @@ EventScript_CancelSmash::
 	end
 
 Text_WantToSmash:
-	.string "This rock appears to be breakable.\n"
-	.string "Would you like to use ROCK SMASH?$"
+    .string "Möchtest du Zertrümmerer\n"
+    .string "einsetzen?$"
 
 Text_CantSmash:
-	.string "It's a rugged rock, but a POKéMON\n"
-	.string "may be able to smash it.$"
+	.string "Ein stabiler Stein, der\n"
+	.string "zertrümmert werden kann.$"
 
 @##################################################################
 @ Strength
@@ -247,23 +247,23 @@ EventScript_CancelStrength::
 	end
 
 Text_WantToUseStrengthWithPokemon:
-    .string "It's a big boulder.\n"
-    .string "Want {STR_VAR_1} to help move it?$"
+    .string "Möchtest du {STR_VAR_1} bitten,\n"
+    .string "diesen Fels zu bewegen?$"
 
 Text_WantToUseStrengthWithItem:
-    .string "It's a big boulder.\n"
-    .string "Use the {STR_VAR_2}?$"
+    .string "Möchtest du mit dem Multitool\n"
+    .string "diesen Fels bewegen?$"
 
 Text_StrengthActivated:
-    .string "STRENGTH made it possible to move\n"
-    .string "boulders around!$"
+    .string "Stärke ermöglicht es,\n"
+    .string "Felsen zu bewegen!$"
 
 Text_StrengthAlreadyActivated:
-    .string "STRENGTH is already in effect.$"
+    .string "Stärke ist bereits aktiv.$"
 
 Text_CantStrength:
-	.string "It's a big boulder, but a POKéMON\n"
-	.string "may be able to push it aside.$"
+	.string "Ein großer Felsbrocken,\n"
+	.string "der bewegt werden kann.$"
 
 @##################################################################
 @ Waterfall
@@ -312,23 +312,26 @@ EventScript_EndWaterfall::
 	end
 
 Text_WantToUseWaterfallWithPokemon:
-    .string "It's a large waterfall.\n"
-    .string "Want {STR_VAR_1} to help you ascend?$"
+    .string "Möchtest du {STR_VAR_1} bitten,\n"
+    .string "diesen Wasserfall zu überwinden?$"
+
 Text_MonHelpedWaterfall:
-    .string "{STR_VAR_1} helped you scale the waterfall!$"
+    .string "{STR_VAR_1} hilft dir gerne!$"
+
 Text_WantToUseWaterfallWithItem:
-    .string "It's a large waterfall.\n"
-    .string "Use the {STR_VAR_2}?$"
+    .string "Möchtest du mit dem Multitool\n"
+    .string "diesen Wasserfall überwinden?$"
+
 Text_PlayerUsedWaterfallItem:
-    .string "You used the {STR_VAR_2} to scale the waterfall!$"
+    .string "Der Wasserfall wird überwunden!$"
 
 Text_CantWaterfall:
-	.string "A wall of water is crashing down with\n"
-	.string "a mighty roar.$"
+	.string "Gigantische Mengen von Wasser\n"
+	.string "stürzen in die Tiefe.$"
 
 Text_WantToWaterfall:
-	.string "It's a large waterfall.\n"
-	.string "Would you like to use WATERFALL?$"
+	.string "Riesige Wassermassen stürzen herab!\n"
+	.string "Möchtest du Wasserfall einsetzen?$"
 
 @##################################################################
 @ Dive
@@ -417,25 +420,24 @@ EventScript_NoSurface::
     releaseall
     end
 
-@ --- New Text ---
 Text_WantToDiveWithPokemon:
-    .string "The sea is deep here.\n"
-    .string "Want {STR_VAR_1} to help you DIVE?$"
+    .string "Möchtest du {STR_VAR_1} bitten,\n"
+    .string "hier tauchen zu gehen?$"
 
 Text_WantToDiveWithItem:
-    .string "The sea is deep here.\n"
-    .string "Use the {STR_VAR_2}?$"
+    .string "Möchtest du mit dem Multitool\n"
+    .string "hier tauchen gehen?$"
 
 Text_PlayerUsedDiveItem:
-    .string "You used the {STR_VAR_2}.$"
+    .string "Tauchgang erfolgreich!$"
 
 Text_WantToSurfaceWithPokemon:
-    .string "Light is filtering down from above.\n"
-    .string "Want {STR_VAR_1} to help you surface?$"
+    .string "Licht scheint herab.\n"
+    .string "Zur Oberfläche zurückkehren?$"
 
 Text_WantToSurfaceWithItem:
-    .string "Light is filtering down from above.\n"
-    .string "Use the {STR_VAR_2}?$"
+    .string "Licht scheint herab.\n"
+    .string "Zur Oberfläche zurückkehren?$"
 
 @##################################################################
 @ Other Field Moves
@@ -474,23 +476,22 @@ EventScript_UseCutGrass::
 	goto EventScript_CutGrassCommon
 
 Text_CantDive:
-	.string "The sea is deep here. A POKéMON\n"
-	.string "may be able to go underwater.$"
+	.string "Hier scheint das Meer tief\n"
+	.string "zu sein.$"
 
 Text_WantToDive:
-	.string "The sea is deep here.\n"
-	.string "Would you like to use DIVE?$"
+	.string "Das Meer scheint hier tief\n"
+	.string "zu sein. Untertauchen?$"
 
 Text_MonUsedDive:
-	.string "{STR_VAR_1} used DIVE.$"
+	.string "{STR_VAR_1} taucht unter.$"
 
 Text_CantSurface:
-	.string "Light is filtering down from above.\n"
-	.string "A POKéMON may be able to surface.$"
+    .string "Licht scheint herab.$"
 
 Text_WantToSurface:
-	.string "Light is filtering down from above.\n"
-	.string "Would you like to use DIVE?$"
+    .string "Licht scheint herab.\n"
+    .string "Zur Oberfläche zurückkehren?$"
 
 EventScript_FailSweetScent::
 	msgbox Text_FailSweetScent, MSGBOX_SIGN
@@ -539,15 +540,14 @@ EventScript_EndRockClimb::
 	end
 
 Text_WantToRockClimb:
-	.string "The cliff is steep.\n"
-	.string "Would you like to use Rock Climb?$"
+	.string "Eine Steile Wand.\n"
+	.string "Hochkraxeln?$"
 
 Text_MonUsedRockClimb:
-	.string "{STR_VAR_1} used Rock Climb!$"
+	.string "{STR_VAR_1} kraxelt die Wand hoch!$"
 
 Text_CantRockClimb:
-    .string "The cliff is steep.\n"
-    .string "A Pokémon may be able to climb it.$"
+	.string "Eine Steile Wand.$"
 
 @##################################################################
 @ Follower-related Scripts
