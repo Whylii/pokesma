@@ -1540,6 +1540,9 @@ extern const u32 gItemIcon_Pickaxe[];
 extern const u16 gItemIconPalette_Pickaxe[];
 extern const u32 gItemIcon_ScubaGear[];
 extern const u16 gItemIconPalette_ScubaGear[];
+extern const u32 gItemIcon_Multitool[];
+extern const u16 gItemIconPalette_Multitool[];
+
 // Charms
 extern const u32 gItemIcon_OvalCharm[];
 extern const u16 gItemIconPalette_OvalCharm[];

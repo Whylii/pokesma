@@ -1,11 +1,23 @@
 script LittlerootTown_EventScript_OldMan{
-    msgbox (LittlerootTownOldMan, MSGBOX_NPC)
+    checkitem(ITEM_EXP_SHARE)
+	if (var(VAR_RESULT) == TRUE) {
+		msgbox (LittlerootTownOldManAlreadyHasEXPShare, MSGBOX_NPC)
+	}
+	else {
+		msgbox (LittlerootTownOldMan, MSGBOX_NPC)
+		giveitem(ITEM_EXP_SHARE)
+	}
     release
 }
-
+text LittlerootTownOldManAlreadyHasEXPShare{
+	"Na dann,
+	Viel Spaß!"
+}
 text LittlerootTownOldMan{
     "Oh,
-    Hallo {PLAYER}!"
+    Hallo {PLAYER}!
+	Hier, ein EP-Teiler
+	für dich!"
 }
 
 raw `
