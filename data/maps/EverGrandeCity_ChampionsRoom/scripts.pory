@@ -286,7 +286,7 @@ EverGrandeCity_ChampionsRoom_Text_BrendanAdvice:
 EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon:
 	.string "Brix: {PLAYER}!\p"
 	.string "Willst du mir etwa sagen…\n"
-	.string "Du hast den Champ besiegt?!?!?!$"
+	.string "Du hast den Champ besiegt?$"
 
 EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex:
 	.string "Prof. Birk: Siehst du?\n"

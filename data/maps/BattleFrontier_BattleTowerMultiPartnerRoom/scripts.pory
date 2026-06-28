@@ -355,7 +355,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Mon2Ask::
 	.string "Bitte, bitte, nimm mich als Partner!$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Accept::
-	.string "Oh, wirklich?!? Echt?!\n"
+	.string "Oh, wirklich?! Echt?!\n"
 	.string "Wahnsinn! Irre! Toll! Juhuuuu!\p"
 	.string "Oh… Hihihi… Tut mir Leid…\n"
 	.string "Ich bin so glücklich, dass ich weine…\p"

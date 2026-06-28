@@ -57,7 +57,7 @@ Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel:
 	.string "Malvenfroh City reisen.$"
 
 Route116_TunnelersRestHouse_Text_TunnelHasGoneThrough:
-	.string "Hast du schon gehört!?! Der Tunnel bei\n"
+	.string "Hast du schon gehört? Der Tunnel bei\n"
 	.string "Wiesenflur ist fertig!\p"
 	.string "Wenn man nur fest an seine Träume\n"
 	.string "glaubt, werden sie irgendwann wahr.$"

@@ -334,7 +334,7 @@ BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere:
 	.string "zu sehen!\p"
 	.string "Ich hoffe, du hast ein bisschen Zeit\n"
 	.string "mitgebracht, um dir hier alles\l"
-	.string "anzusehen?!?\p"
+	.string "anzusehen?!\p"
 	.string "Und natürlich hoffe ich auch, dass\n"
 	.string "du die Reinheit unserer Kämpfe hier\l"
 	.string "genießen wirst!\p"

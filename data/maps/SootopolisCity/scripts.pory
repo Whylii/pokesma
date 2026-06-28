@@ -1600,7 +1600,7 @@ SootopolisCity_Text_AfterAllOurScheming:
 	.string "Hahahaha…$"
 
 SootopolisCity_Text_KyogreCalmDown:
-	.string "Adrian: Kyogre! Was ist los?!?\n"
+	.string "Adrian: Kyogre! Was ist los?!\n"
 	.string "Schau hierher! Dies ist die rote Kugel!\l"
 	.string "Beruhige dich! Kyogre!\p"
 	.string "… … … … … …\n"

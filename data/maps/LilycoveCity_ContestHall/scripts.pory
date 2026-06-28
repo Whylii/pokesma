@@ -343,7 +343,7 @@ LilycoveCity_ContestHall_Text_IsntThisPlaceHumongous:
 
 LilycoveCity_ContestHall_Text_GiveItBestSmartAppeal:
 	.string "MC: Okay, kluge Pokémon und Trainer.\n"
-	.string "Seid ihr bereit?!?\p"
+	.string "Seid ihr bereit?!\p"
 	.string "Gebt euer Bestes!\n"
 	.string "Es geht um den Ausdruck!$"
 
@@ -510,7 +510,7 @@ LilycoveCity_ContestHall_Text_ThatGirlThereIsCutest:
 	.string "Ich finde, die Frau dort drüben ist\n"
 	.string "das anmutigste Geschöpf von allen.\p"
 	.string "Wie bitte? Sie bewerten die Pokémon\n"
-	.string "nach ihrer Anmut?!?$"
+	.string "nach ihrer Anmut?!$"
 
 LilycoveCity_ContestHall_Text_WantCuteMonOfMyOwn:
 	.string "Oooh, all diese anmutigen Pokémon!\n"

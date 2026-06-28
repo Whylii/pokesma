@@ -650,7 +650,7 @@ Route104_Text_LandedInDewfordDeliverLetter:
 	.string "Mr. Brack: Ahoi! Wir haben in\n"
 	.string "Faustauhaven Anker geworfen.\p"
 	.string "Ich vermute, du wirst diesen Brief\n"
-	.string "jetzt diesem… Troy bringen!?!$"
+	.string "jetzt diesem… Troy bringen?$"
 
 DewfordTown_Text_SetSailBackToPetalburg:
 	.string "Mr. Brack: Hast du den Brief\n"

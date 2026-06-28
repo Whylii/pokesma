@@ -26,7 +26,7 @@ BattleFrontier_Lounge8_Text_WhatATrainerNeeds:
 	.string "Nun, das bringe ich alles mit!\n"
 	.string "Ich werde überall einfach unschlagbar\l"
 	.string "sein!\p"
-	.string "Was? Pokémon?!?\n"
+	.string "Was? Pokémon?!\n"
 	.string "Was ist das denn? Kann man das essen?$"
 
 BattleFrontier_Lounge8_Text_KnowAboutFrontierBrains:

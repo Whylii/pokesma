@@ -351,7 +351,7 @@ BattleFrontier_OutsideEast_Text_HeardPrettyGirlAtBattleArena:
 	.string "gehört, dass hier ein umwerfend süßes\p"
 	.string "Mädchen im Kampfring sein soll.\n"
 	.string "Und weißt du, auf wen ich getroffen bin,\l"
-	.string "als ich dann endlich hier ankam?!?\p"
+	.string "als ich dann endlich hier ankam?!\p"
 	.string "Auf ein Team stinkender, schwitzender,\n"
 	.string "primitiver und nervtötender\l"
 	.string "Kampfsportler. Ich könnte platzen…$"

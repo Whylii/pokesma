@@ -368,7 +368,7 @@ MossdeepCity_SpaceCenter_2F_Text_WishOrdinaryPeopleCouldGoIntoSpace:
 
 MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace:
 	.string "Team Magma…\n"
-	.string "Ob sie auch ins Weltall fliegen wollen?!?$"
+	.string "Ob sie auch ins Weltall fliegen wollen?!$"
 
 MossdeepCity_SpaceCenter_2F_Text_YoureOutnumberedTakeUsOn:
 	.string "Was ist los mit dir?\p"
@@ -424,7 +424,7 @@ MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou:
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere:
 	.string "Marc: Geh aus dem Weg!\n"
-	.string "Du wagst es, uns aufhalten zu wollen?!?$"
+	.string "Du wagst es, uns aufhalten zu wollen?!$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenWhyStealRocketFuel:
 	.string "Troy: Team Magma…\p"

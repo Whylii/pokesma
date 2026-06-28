@@ -630,7 +630,7 @@ LilycoveCity_Text_SomeoneStoleMyPokemon:
 	.string "Und da hat mir jemand mein Pokémon\n"
 	.string "gestohlen!\p"
 	.string "Wer ist der schändliche Dieb?\n"
-	.string "Team Aqua? Es war Team Aqua?!?$"
+	.string "Team Aqua? Es war Team Aqua?!$"
 
 LilycoveCity_Text_MissingPokemonCameBack:
 	.string "Mein gestohlenes Pokémon…\n"
