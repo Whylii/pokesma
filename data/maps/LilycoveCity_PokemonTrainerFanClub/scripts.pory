@@ -692,7 +692,7 @@ LilycoveCity_PokemonTrainerFanClub_Text_AlwaysCheerForYou:
 
 LilycoveCity_PokemonTrainerFanClub_Text_EveryoneThinksTrainerIsCool:
 	.string "{STR_VAR_1} ist wirklich megacool…\p"
-	.string "Jeder denkt das, stimmt’s? Stimmt’s?!?$"
+	.string "Jeder denkt das, stimmt’s? Stimmt’s?!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsReallyCoolItsJustMe:
 	.string "{STR_VAR_1} ist cooool, meinst du nicht\n"

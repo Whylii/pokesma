@@ -199,7 +199,7 @@ BattleFrontier_Lounge3_EventScript_FaceOriginalDirection::
 	end
 
 BattleFrontier_Lounge3_Text_CantYouSeeWereBusyHere::
-	.string "Was willst du von uns?!?\p"
+	.string "Was willst du von uns?!\p"
 	.string "Siehst du nicht, dass wir beschäftigt\n"
 	.string "sind? Hat das nicht Zeit bis später?$"
 

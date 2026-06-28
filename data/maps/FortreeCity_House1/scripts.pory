@@ -49,7 +49,7 @@ FortreeCity_House1_Text_YouWillTradeWontYou:
 	.string "Meinen Ruf aus tiefstem Herzen?\p"
 	.string "Nachdem du den gehört hast, tauschst\n"
 	.string "du doch bestimmt dein {STR_VAR_1}\l"
-	.string "gegen mein {STR_VAR_2}?!?$"
+	.string "gegen mein {STR_VAR_2}?!$"
 
 FortreeCity_House1_Text_MonYouTakeCare:
 	.string "Oh, super! Dann mal los!\p"

@@ -41,7 +41,7 @@ MagmaHideout_1F_Text_Grunt2Intro:
 	.string "daher haben wir gegraben und gegraben…\p"
 	.string "Und dann haben wir etwas gefunden, was\n"
 	.string "uns den Atem verschlug.\p"
-	.string "Was das war?!?\p"
+	.string "Was das war?!\p"
 	.string "Hahaha! Das verrate ich dir, wenn\n"
 	.string "du mich besiegst.$"
 

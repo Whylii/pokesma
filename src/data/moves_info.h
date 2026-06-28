@@ -16540,7 +16540,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Kulleraugen"),
         .description = COMPOUND_STRING(
-            "Senkt ANG. und\n"
+            "Senkt Angr. und\n"
             "greift zuerst an."),
         .effect = EFFECT_STAT_CHANGE,
         .power = 0,

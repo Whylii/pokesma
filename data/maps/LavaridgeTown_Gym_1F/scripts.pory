@@ -282,7 +282,7 @@ LavaridgeTown_Gym_B1F_Text_JeffDefeat:
 	.string "Irgendwas ist da schief gelaufen.$"
 
 LavaridgeTown_Gym_B1F_Text_JeffPostBattle:
-	.string "Ach, was soll’s?!? Mir doch egal. Dafür\n"
+	.string "Ach, was soll’s?! Mir doch egal. Dafür\n"
 	.string "kann ich barfuß über glühende Kohlen\l"
 	.string "laufen. … Versuch das bloß nicht!$"
 

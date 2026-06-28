@@ -513,7 +513,7 @@ BattleFrontier_BattlePalaceLobby_Text_LadyCanTellWhatMonsThink:
 	.string "Pokémon denken.\p"
 	.string "Ich kenn mich damit nicht aus, aber ich\n"
 	.string "weiß, dass die Lady verdammt süß ist.\p"
-	.string "Was?!?\n"
+	.string "Was?!\n"
 	.string "Warum schaust du mich so komisch an?$"
 
 BattleFrontier_BattlePalaceLobby_Text_NatureAndMovesKeyHere:

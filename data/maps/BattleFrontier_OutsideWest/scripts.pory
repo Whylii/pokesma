@@ -421,7 +421,7 @@ BattleFrontier_OutsideWest_Text_ChooseFishingOverBattling:
 	.string "Ich glaube, ich bin das einzige Wesen\n"
 	.string "hier, das lieber angelt als kämpft.\l"
 	.string "Warum auch immer…\p"
-	.string "Wie? Hier kann man gar nichts fangen?!?\n"
+	.string "Wie? Hier kann man gar nichts fangen?!\n"
 	.string "Was für eine Enttäuschung…$"
 
 BattleFrontier_OutsideWest_Text_KeepBattlingUntilIGetSymbol:
@@ -443,7 +443,7 @@ BattleFrontier_OutsideWest_Text_DomeIsHereGrandpa:
 	.string "Los, Opa, zeig’s ihnen!$"
 
 BattleFrontier_OutsideWest_Text_WontLetGentlemenBeatMe:
-	.string "So, dies ist also das Kampfstadion?!?\n"
+	.string "So, dies ist also das Kampfstadion?!\n"
 	.string "Kein Gentleman wird mich besiegen!\p"
 	.string "Aber wo ist denn nur der Eingang?$"
 
@@ -475,7 +475,7 @@ BattleFrontier_OutsideWest_Text_MetOlderGirlAtPike:
 	.string "Angst.\p"
 	.string "… Mampf… … Mampf…\p"
 	.string "Sie wurde richtig giftig: “KÖNNTEST DU\n"
-	.string "WOHL ENDLICH AUFHÖREN ZU ESSEN?!?”\p"
+	.string "WOHL ENDLICH AUFHÖREN ZU ESSEN?!”\p"
 	.string "Dann hat sie sich lustig über mich\n"
 	.string "gemacht.\p"
 	.string "Das war wirklich haarsträubend\n"

@@ -60,10 +60,10 @@ AquaHideout_1F_Text_OurBossIsSnatchingSomething:
 	.string "… …\n"
 	.string "Wo er hin ist?\p"
 	.string "Uahahaha! Du glaubst doch nicht im\n"
-	.string "Ernst, dass ich dir das verrate!?!$"
+	.string "Ernst, dass ich dir das verrate?$"
 
 AquaHideout_1F_Text_WhereMightMagmaHideoutBe:
-	.string "Was? Wie?!?\n"
+	.string "Was? Wie?!\n"
 	.string "Du bist einer von Team Magma?\p"
 	.string "Ich habe gehört, dass Team Magma\n"
 	.string "versucht, ein großartiges Pokémon in\l"
@@ -79,7 +79,7 @@ AquaHideout_1F_Text_BossWentToJackASubmarine:
 	.string "… …\n"
 	.string "Wo er hin ist?\p"
 	.string "Uahahaha! Du glaubst doch nicht im\n"
-	.string "Ernst, dass ich dir das verrate!?!$"
+	.string "Ernst, dass ich dir das verrate?$"
 
 AquaHideout_1F_Text_BossIsOnRoute122:
 	.string "Was? Wie? Was hast du mit Team Aqua zu\n"
@@ -90,10 +90,10 @@ AquaHideout_1F_Text_BossIsOnRoute122:
 	.string "… …\n"
 	.string "Warum er dorthin ist?\p"
 	.string "Uahahaha! Du glaubst doch nicht im\n"
-	.string "Ernst, dass ich dir das verrate!?!$"
+	.string "Ernst, dass ich dir das verrate?$"
 
 AquaHideout_1F_Text_TeamMagmaAtMtChimney:
-	.string "Was? Wie?!?\n"
+	.string "Was? Wie?!\n"
 	.string "Bist du einer von den Team Magma\l"
 	.string "Rüpeln?\p"
 	.string "Ich habe gehört, dass Team Magma am\n"
@@ -109,7 +109,7 @@ AquaHideout_1F_Text_BossIsInSlateportCity:
 	.string "… …\n"
 	.string "Warum er dorthin ist?\p"
 	.string "Uahahaha! Du glaubst doch nicht im\n"
-	.string "Ernst, dass ich dir das verrate!?!$"
+	.string "Ernst, dass ich dir das verrate?$"
 
 AquaHideout_1F_Text_Grunt1Intro:
 	.string "Huhuuhuhuu!\n"

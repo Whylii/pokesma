@@ -289,8 +289,8 @@ DewfordTown_Hall_Text_MyHunchWasRight:
 	.string "Bemühungen, hip und aufregend zu sein!$"
 
 DewfordTown_Hall_Text_NotEasyToKeepUp:
-	.string "Was?!?\n"
-	.string "Wirklich?!?\p"
+	.string "Was?!\n"
+	.string "Wirklich?!\p"
 	.string "Für einen alten Menschen ist es gar\n"
 	.string "nicht so leicht, mit der Mode zu gehen!$"
 

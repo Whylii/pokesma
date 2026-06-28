@@ -635,7 +635,7 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_WaitFewMoments:
 	.string "Würdest du bitte einen Moment warten?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_UnderstoodSirWillDo:
-	.string "…Oh-oh. Was?!?… Hui!\n"
+	.string "…Oh-oh. Was?!… Hui!\n"
 	.string "Ja, verstanden! Sofort!$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_MessageFromHeadComeRightNow:

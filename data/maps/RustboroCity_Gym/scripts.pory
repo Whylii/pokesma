@@ -167,7 +167,7 @@ RustboroCity_Gym_Text_TommyPostBattle:
 
 RustboroCity_Gym_Text_MarcIntro:
 	.string "Wir sind hier mitten in einer Stadt,\n"
-	.string "na und?!?\p"
+	.string "na und?!\p"
 	.string "Meine Gesteins-Pokémon müssen sich\n"
 	.string "einfach austoben!$"
 

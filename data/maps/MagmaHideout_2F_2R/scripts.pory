@@ -72,7 +72,7 @@ MagmaHideout_2F_2R_Text_Grunt8Intro:
 	.string "gerastet. Es hat sein Magmaemblem\l"
 	.string "verloren!\p"
 	.string "Warte mal! Du hast das doch nicht\n"
-	.string "etwa gefunden?!?$"
+	.string "etwa gefunden?!$"
 
 MagmaHideout_2F_2R_Text_Grunt8Defeat:
 	.string "Das kann ich einfach nicht glauben…$"

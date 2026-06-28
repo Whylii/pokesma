@@ -43,7 +43,7 @@ MagmaHideout_2F_1R_Text_Grunt3Intro:
 	.string "Stopp!\p"
 	.string "Du erwartest doch nicht ernsthaft,\n"
 	.string "dass ich dich einfach so vorbeigehen\l"
-	.string "lasse?!?$"
+	.string "lasse?!$"
 
 MagmaHideout_2F_1R_Text_Grunt3Defeat:
 	.string "Ooh wow!\n"

@@ -121,10 +121,10 @@ Route110_TrickHousePuzzle2_Text_TedPostBattle:
 
 Route110_TrickHousePuzzle2_Text_PaulIntro:
 	.string "Oh! Du forderst das Rätselhaus schon\n"
-	.string "zum zweiten Mal heraus!?!$"
+	.string "zum zweiten Mal heraus?$"
 
 Route110_TrickHousePuzzle2_Text_PaulDefeat:
-	.string "Du bist auch im Kämpfen so gut!?!$"
+	.string "Du bist auch im Kämpfen so gut?$"
 
 Route110_TrickHousePuzzle2_Text_PaulPostBattle:
 	.string "Der Rätselmeister tüftelt alle Tricks\n"

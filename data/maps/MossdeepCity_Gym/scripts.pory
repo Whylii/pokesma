@@ -579,7 +579,7 @@ MossdeepCity_Gym_Text_TateAndLizaIntro:
 	.string "Svenja: Kannst du sie besiegen?$"
 
 MossdeepCity_Gym_Text_TateAndLizaDefeat:
-	.string "Ben: Was?!? Unsere Kombination…\n"
+	.string "Ben: Was?! Unsere Kombination…\n"
 	.string "Svenja: Wurde auseinander gerissen!\p"
 	.string "Ben: So sieht’s aus. Du hast gewonnen.\n"
 	.string "Svenja: Daher überreichen wir dir dies.$"

@@ -385,7 +385,7 @@ Route116_EventScript_Johnson::
 	end
 
 Route116_Text_ScoundrelMadeOffWithPeeko:
-	.string "Oooh, was mache ich nur?!?\p"
+	.string "Oooh, was mache ich nur?!\p"
 	.string "Pecko und ich waren auf einem Spazier-\n"
 	.string "gang und da kam so ein Schlägertyp…\p"
 	.string "Der Schurke hat mir meinen Liebling\n"

@@ -554,7 +554,7 @@ MtChimney_Text_MeteoriteWillActivateVolcano:
 
 MtChimney_Text_MaxieIntro:
 	.string "Marc: Hm?\n"
-	.string "Wer bist du denn?!?\p"
+	.string "Wer bist du denn?!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "Adrian hat sich über ein Kind beklagt,\n"
@@ -582,9 +582,9 @@ MtChimney_Text_MaxieIntro:
 	.string "passiert, wenn du uns aufhalten willst!$"
 
 MtChimney_Text_MaxieDefeat:
-	.string "Wie bitte?!?\p"
+	.string "Wie bitte?!\p"
 	.string "Ich, Marc, wurde ganz hinterhältig\n"
-	.string "besiegt?!?$"
+	.string "besiegt?!$"
 
 MtChimney_Text_MaxieYouHaventSeenLastOfMagma:
 	.string "Marc: Genug.\n"

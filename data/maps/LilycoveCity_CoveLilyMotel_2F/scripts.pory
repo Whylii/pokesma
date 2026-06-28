@@ -100,7 +100,7 @@ LilycoveCity_CoveLilyMotel_2F_Text_GirlsAreCute:
 	.string "sind total niedlich, meinst du nicht?\l"
 	.string "Ein Kampf gegen so niedliche Frauen…\p"
 	.string "Huuh, das ist vielleicht ein Spaß!\p"
-	.string "Und die Zwillinge erst! Sind die süß!?!\n"
+	.string "Und die Zwillinge erst! Sind die süß?\n"
 	.string "Ein 2-gegen-2-Kampf mit Zwillingen…\p"
 	.string "Huuh, einfach unglaublicher Spaß!$"
 
@@ -120,7 +120,7 @@ LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles:
 	.string "… … … … …\l"
 	.string "Zzzzz…\p"
 	.string "… … … … …\n"
-	.string "Wie?!?\l"
+	.string "Wie?!\l"
 	.string "Oh, tut mir Leid!\l"
 	.string "Ich habe ein bisschen gedöst!\p"
 	.string "Ich wollte mir mal einen Pokémon\n"
