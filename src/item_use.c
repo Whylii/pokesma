@@ -1809,6 +1809,7 @@ void ItemUseOutOfBattle_Flash(u8 taskId)
 
 static void ItemUseOnFieldCB_Flash(u8 taskId)
 {
+    FlagSet(FLAG_SYS_USE_FLASH);
     ScriptContext_SetupScript(EventScript_UseFlash);
     DestroyTask(taskId);
 }
@@ -1923,7 +1924,10 @@ static const struct MenuAction sMultitoolMenuItems[MULTITOOL_COUNT] = {
     [MULTITOOL_ROCK_SMASH]  = {sMultitoolText_RockSmash,    {NULL}},
     [MULTITOOL_WATERFALL]   = {sMultitoolText_Waterfall,    {NULL}},
     [MULTITOOL_DIVE]        = {sMultitoolText_Dive,         {NULL}},
+
 };
+
+static const u8 sText_FlashAlreadyBright[] = _("Es ist bereits hell.{PAUSE_UNTIL_PRESS}");
 
 void ItemUseOutOfBattle_Multitool(u8 taskId)
 {
@@ -2041,6 +2045,12 @@ static void ItemUseOnFieldCB_Multitool(u8 taskId)
             break;
         }
 
+        if (data[2] == MULTITOOL_FLASH && FlagGet(FLAG_SYS_USE_FLASH))
+        {
+            DisplayItemMessageOnField(taskId, sText_FlashAlreadyBright, Task_CloseCantUseKeyItemMessage);
+            break;
+        }
+
         switch (data[2])
         {
         case MULTITOOL_CUT:
@@ -2071,6 +2081,7 @@ static void ItemUseOnFieldCB_Multitool(u8 taskId)
         }
         case MULTITOOL_FLASH:
         {
+            FlagSet(FLAG_SYS_USE_FLASH);
             UnlockPlayerFieldControls();
             ScriptContext_SetupScript(EventScript_UseFlash);
             DestroyTask(taskId);

@@ -135,6 +135,7 @@ struct HeatStartMenu {
   u32 spriteIdSave;
   u32 spriteIdOptions;
   u32 spriteIdFlag;
+  u32 savedWinout;
 };
 
 static EWRAM_DATA struct HeatStartMenu *sHeatStartMenu = NULL;
@@ -757,6 +758,13 @@ static void HeatStartMenu_LoadBgGfx(void) {
     const u16 *selectedPalette = GetStartMenuPalette(gSaveBlock2Ptr->optionsStartMenuPalette);
     LoadPalette(selectedPalette, BG_PLTT_ID(14), PLTT_SIZE_4BPP);
 
+    // Make sprite icons visible in dark areas (caves with flash effect)
+    if (GetFlashLevel() > 0)
+    {
+        sHeatStartMenu->savedWinout = GetGpuReg(REG_OFFSET_WINOUT);
+        SetGpuRegBits(REG_OFFSET_WINOUT, WINOUT_WIN01_OBJ);
+    }
+
     ScheduleBgCopyTilemapToVram(0);
 }
 
@@ -922,7 +930,10 @@ static void HeatStartMenu_ExitAndClearTilemap(void) {
   DestroySprite(&gSprites[sHeatStartMenu->spriteIdOptions]);
 
   if (sHeatStartMenu != NULL) {
-    FreeSpriteTilesByTag(TAG_ICON_GFX);  
+    // Restore WINOUT if it was modified for dark area visibility
+    if (sHeatStartMenu->savedWinout != 0)
+        SetGpuReg(REG_OFFSET_WINOUT, sHeatStartMenu->savedWinout);
+    FreeSpriteTilesByTag(TAG_ICON_GFX);
     Free(sHeatStartMenu);
     sHeatStartMenu = NULL;
   }

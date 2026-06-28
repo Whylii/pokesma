@@ -1062,6 +1062,8 @@ static u8 StartUpdateOrbFlashEffect(s32 centerX, s32 centerY, s32 initialFlashRa
 void AnimateFlash(u8 newFlashLevel)
 {
     u8 curFlashLevel = GetFlashLevel();
+    if (curFlashLevel == newFlashLevel)
+        return;
     bool8 fullBrightness = FALSE;
     if (newFlashLevel == 0)
         fullBrightness = TRUE;
