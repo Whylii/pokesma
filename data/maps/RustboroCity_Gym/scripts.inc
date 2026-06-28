@@ -337,7 +337,7 @@ RustboroCity_Gym_Text_MarcIntro:
 # 169 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "Wir sind hier mitten in einer Stadt,\n"
 # 170 "data/maps/RustboroCity_Gym/scripts.pory"
-	.string "na und?!?\p"
+	.string "na und?!\p"
 # 171 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "Meine Gesteins-Pokémon müssen sich\n"
 # 172 "data/maps/RustboroCity_Gym/scripts.pory"

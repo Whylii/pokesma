@@ -3203,7 +3203,7 @@ SootopolisCity_Text_AfterAllOurScheming:
 # 1602 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_Text_KyogreCalmDown:
 # 1603 "data/maps/SootopolisCity/scripts.pory"
-	.string "Adrian: Kyogre! Was ist los?!?\n"
+	.string "Adrian: Kyogre! Was ist los?!\n"
 # 1604 "data/maps/SootopolisCity/scripts.pory"
 	.string "Schau hierher! Dies ist die rote Kugel!\l"
 # 1605 "data/maps/SootopolisCity/scripts.pory"

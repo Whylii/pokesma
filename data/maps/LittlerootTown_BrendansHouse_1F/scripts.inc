@@ -879,7 +879,7 @@ PlayersHouse_1F_Text_LatiEmergencyNewsFlash:
 # 440 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 PlayersHouse_1F_Text_WhatColorDidTheySay:
 # 441 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "Mum: {PLAYER}, hast du das gehört?!?\p"
+	.string "Mum: {PLAYER}, hast du das gehört?!\p"
 # 442 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	.string "Was hat der Sprecher gesagt? Welche\n"
 # 443 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"

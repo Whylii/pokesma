@@ -147,7 +147,7 @@ FallarborTown_MoveRelearnersHouse_Text_ThatsAHeartScaleWantMeToTeachMove:
 # 74 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
 	.string "Lass mich raten… Ich soll einem Pokémon\n"
 # 75 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
-	.string "eine neue Attacke beibringen?!?$"
+	.string "eine neue Attacke beibringen?!$"
 # 76 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
 
 # 77 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"

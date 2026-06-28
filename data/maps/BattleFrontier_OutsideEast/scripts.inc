@@ -705,7 +705,7 @@ BattleFrontier_OutsideEast_Text_HeardPrettyGirlAtBattleArena:
 # 353 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
 	.string "Und weißt du, auf wen ich getroffen bin,\l"
 # 354 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
-	.string "als ich dann endlich hier ankam?!?\p"
+	.string "als ich dann endlich hier ankam?!\p"
 # 355 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
 	.string "Auf ein Team stinkender, schwitzender,\n"
 # 356 "data/maps/BattleFrontier_OutsideEast/scripts.pory"

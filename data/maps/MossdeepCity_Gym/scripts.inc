@@ -1161,7 +1161,7 @@ MossdeepCity_Gym_Text_TateAndLizaIntro:
 # 581 "data/maps/MossdeepCity_Gym/scripts.pory"
 MossdeepCity_Gym_Text_TateAndLizaDefeat:
 # 582 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "Ben: Was?!? Unsere Kombination…\n"
+	.string "Ben: Was?! Unsere Kombination…\n"
 # 583 "data/maps/MossdeepCity_Gym/scripts.pory"
 	.string "Svenja: Wurde auseinander gerissen!\p"
 # 584 "data/maps/MossdeepCity_Gym/scripts.pory"

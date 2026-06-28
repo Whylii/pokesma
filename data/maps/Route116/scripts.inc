@@ -759,7 +759,7 @@ Route116_EventScript_Johnson::
 # 387 "data/maps/Route116/scripts.pory"
 Route116_Text_ScoundrelMadeOffWithPeeko:
 # 388 "data/maps/Route116/scripts.pory"
-	.string "Oooh, was mache ich nur?!?\p"
+	.string "Oooh, was mache ich nur?!\p"
 # 389 "data/maps/Route116/scripts.pory"
 	.string "Pecko und ich waren auf einem Spazier-\n"
 # 390 "data/maps/Route116/scripts.pory"

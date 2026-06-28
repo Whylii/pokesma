@@ -581,9 +581,9 @@ DewfordTown_Hall_Text_MyHunchWasRight:
 # 291 "data/maps/DewfordTown_Hall/scripts.pory"
 DewfordTown_Hall_Text_NotEasyToKeepUp:
 # 292 "data/maps/DewfordTown_Hall/scripts.pory"
-	.string "Was?!?\n"
+	.string "Was?!\n"
 # 293 "data/maps/DewfordTown_Hall/scripts.pory"
-	.string "Wirklich?!?\p"
+	.string "Wirklich?!\p"
 # 294 "data/maps/DewfordTown_Hall/scripts.pory"
 	.string "Für einen alten Menschen ist es gar\n"
 # 295 "data/maps/DewfordTown_Hall/scripts.pory"

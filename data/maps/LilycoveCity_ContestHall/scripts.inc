@@ -689,7 +689,7 @@ LilycoveCity_ContestHall_Text_GiveItBestSmartAppeal:
 # 345 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	.string "MC: Okay, kluge Pokémon und Trainer.\n"
 # 346 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	.string "Seid ihr bereit?!?\p"
+	.string "Seid ihr bereit?!\p"
 # 347 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	.string "Gebt euer Bestes!\n"
 # 348 "data/maps/LilycoveCity_ContestHall/scripts.pory"
@@ -1023,7 +1023,7 @@ LilycoveCity_ContestHall_Text_ThatGirlThereIsCutest:
 # 512 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 	.string "Wie bitte? Sie bewerten die Pokémon\n"
 # 513 "data/maps/LilycoveCity_ContestHall/scripts.pory"
-	.string "nach ihrer Anmut?!?$"
+	.string "nach ihrer Anmut?!$"
 # 514 "data/maps/LilycoveCity_ContestHall/scripts.pory"
 
 # 515 "data/maps/LilycoveCity_ContestHall/scripts.pory"

@@ -1029,7 +1029,7 @@ BattleFrontier_BattlePalaceLobby_Text_LadyCanTellWhatMonsThink:
 # 515 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 	.string "weiß, dass die Lady verdammt süß ist.\p"
 # 516 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
-	.string "Was?!?\n"
+	.string "Was?!\n"
 # 517 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 	.string "Warum schaust du mich so komisch an?$"
 # 518 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"

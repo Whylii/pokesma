@@ -1111,7 +1111,7 @@ MtChimney_Text_MaxieIntro:
 # 556 "data/maps/MtChimney/scripts.pory"
 	.string "Marc: Hm?\n"
 # 557 "data/maps/MtChimney/scripts.pory"
-	.string "Wer bist du denn?!?\p"
+	.string "Wer bist du denn?!\p"
 # 558 "data/maps/MtChimney/scripts.pory"
 	.string "… … … … … …\n"
 # 559 "data/maps/MtChimney/scripts.pory"
@@ -1167,11 +1167,11 @@ MtChimney_Text_MaxieIntro:
 # 584 "data/maps/MtChimney/scripts.pory"
 MtChimney_Text_MaxieDefeat:
 # 585 "data/maps/MtChimney/scripts.pory"
-	.string "Wie bitte?!?\p"
+	.string "Wie bitte?!\p"
 # 586 "data/maps/MtChimney/scripts.pory"
 	.string "Ich, Marc, wurde ganz hinterhältig\n"
 # 587 "data/maps/MtChimney/scripts.pory"
-	.string "besiegt?!?$"
+	.string "besiegt?!$"
 # 588 "data/maps/MtChimney/scripts.pory"
 
 # 589 "data/maps/MtChimney/scripts.pory"

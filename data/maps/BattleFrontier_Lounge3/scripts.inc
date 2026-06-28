@@ -401,7 +401,7 @@ BattleFrontier_Lounge3_EventScript_FaceOriginalDirection::
 # 201 "data/maps/BattleFrontier_Lounge3/scripts.pory"
 BattleFrontier_Lounge3_Text_CantYouSeeWereBusyHere::
 # 202 "data/maps/BattleFrontier_Lounge3/scripts.pory"
-	.string "Was willst du von uns?!?\p"
+	.string "Was willst du von uns?!\p"
 # 203 "data/maps/BattleFrontier_Lounge3/scripts.pory"
 	.string "Siehst du nicht, dass wir beschäftigt\n"
 # 204 "data/maps/BattleFrontier_Lounge3/scripts.pory"

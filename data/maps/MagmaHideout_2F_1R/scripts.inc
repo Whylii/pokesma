@@ -89,7 +89,7 @@ MagmaHideout_2F_1R_Text_Grunt3Intro:
 # 45 "data/maps/MagmaHideout_2F_1R/scripts.pory"
 	.string "dass ich dich einfach so vorbeigehen\l"
 # 46 "data/maps/MagmaHideout_2F_1R/scripts.pory"
-	.string "lasse?!?$"
+	.string "lasse?!$"
 # 47 "data/maps/MagmaHideout_2F_1R/scripts.pory"
 
 # 48 "data/maps/MagmaHideout_2F_1R/scripts.pory"

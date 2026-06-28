@@ -55,7 +55,7 @@ BattleFrontier_Lounge8_Text_WhatATrainerNeeds:
 # 28 "data/maps/BattleFrontier_Lounge8/scripts.pory"
 	.string "sein!\p"
 # 29 "data/maps/BattleFrontier_Lounge8/scripts.pory"
-	.string "Was? Pokémon?!?\n"
+	.string "Was? Pokémon?!\n"
 # 30 "data/maps/BattleFrontier_Lounge8/scripts.pory"
 	.string "Was ist das denn? Kann man das essen?$"
 # 31 "data/maps/BattleFrontier_Lounge8/scripts.pory"

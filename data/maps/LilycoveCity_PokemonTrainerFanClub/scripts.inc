@@ -1387,7 +1387,7 @@ LilycoveCity_PokemonTrainerFanClub_Text_EveryoneThinksTrainerIsCool:
 # 694 "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.pory"
 	.string "{STR_VAR_1} ist wirklich megacool…\p"
 # 695 "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.pory"
-	.string "Jeder denkt das, stimmt’s? Stimmt’s?!?$"
+	.string "Jeder denkt das, stimmt’s? Stimmt’s?!$"
 # 696 "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.pory"
 
 # 697 "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.pory"

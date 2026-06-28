@@ -713,7 +713,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Mon2Ask::
 # 357 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Accept::
 # 358 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "Oh, wirklich?!? Echt?!\n"
+	.string "Oh, wirklich?! Echt?!\n"
 # 359 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "Wahnsinn! Irre! Toll! Juhuuuu!\p"
 # 360 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"

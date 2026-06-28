@@ -101,7 +101,7 @@ FortreeCity_House1_Text_YouWillTradeWontYou:
 # 51 "data/maps/FortreeCity_House1/scripts.pory"
 	.string "du doch bestimmt dein {STR_VAR_1}\l"
 # 52 "data/maps/FortreeCity_House1/scripts.pory"
-	.string "gegen mein {STR_VAR_2}?!?$"
+	.string "gegen mein {STR_VAR_2}?!$"
 # 53 "data/maps/FortreeCity_House1/scripts.pory"
 
 # 54 "data/maps/FortreeCity_House1/scripts.pory"

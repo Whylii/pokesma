@@ -575,7 +575,7 @@ EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon:
 # 288 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	.string "Willst du mir etwa sagen…\n"
 # 289 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	.string "Du hast den Champ besiegt?!?!?!$"
+	.string "Du hast den Champ besiegt?$"
 # 290 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 
 # 291 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"

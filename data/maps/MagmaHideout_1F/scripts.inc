@@ -85,7 +85,7 @@ MagmaHideout_1F_Text_Grunt2Intro:
 # 43 "data/maps/MagmaHideout_1F/scripts.pory"
 	.string "uns den Atem verschlug.\p"
 # 44 "data/maps/MagmaHideout_1F/scripts.pory"
-	.string "Was das war?!?\p"
+	.string "Was das war?!\p"
 # 45 "data/maps/MagmaHideout_1F/scripts.pory"
 	.string "Hahaha! Das verrate ich dir, wenn\n"
 # 46 "data/maps/MagmaHideout_1F/scripts.pory"

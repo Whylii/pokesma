@@ -245,13 +245,13 @@ Route110_TrickHousePuzzle2_Text_PaulIntro:
 # 123 "data/maps/Route110_TrickHousePuzzle2/scripts.pory"
 	.string "Oh! Du forderst das Rätselhaus schon\n"
 # 124 "data/maps/Route110_TrickHousePuzzle2/scripts.pory"
-	.string "zum zweiten Mal heraus!?!$"
+	.string "zum zweiten Mal heraus?$"
 # 125 "data/maps/Route110_TrickHousePuzzle2/scripts.pory"
 
 # 126 "data/maps/Route110_TrickHousePuzzle2/scripts.pory"
 Route110_TrickHousePuzzle2_Text_PaulDefeat:
 # 127 "data/maps/Route110_TrickHousePuzzle2/scripts.pory"
-	.string "Du bist auch im Kämpfen so gut!?!$"
+	.string "Du bist auch im Kämpfen so gut?$"
 # 128 "data/maps/Route110_TrickHousePuzzle2/scripts.pory"
 
 # 129 "data/maps/Route110_TrickHousePuzzle2/scripts.pory"

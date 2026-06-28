@@ -1263,7 +1263,7 @@ LilycoveCity_Text_SomeoneStoleMyPokemon:
 # 632 "data/maps/LilycoveCity/scripts.pory"
 	.string "Wer ist der schändliche Dieb?\n"
 # 633 "data/maps/LilycoveCity/scripts.pory"
-	.string "Team Aqua? Es war Team Aqua?!?$"
+	.string "Team Aqua? Es war Team Aqua?!$"
 # 634 "data/maps/LilycoveCity/scripts.pory"
 
 # 635 "data/maps/LilycoveCity/scripts.pory"

@@ -567,7 +567,7 @@ LavaridgeTown_Gym_B1F_Text_JeffDefeat:
 # 284 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 LavaridgeTown_Gym_B1F_Text_JeffPostBattle:
 # 285 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	.string "Ach, was soll’s?!? Mir doch egal. Dafür\n"
+	.string "Ach, was soll’s?! Mir doch egal. Dafür\n"
 # 286 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	.string "kann ich barfuß über glühende Kohlen\l"
 # 287 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"

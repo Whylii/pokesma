@@ -739,7 +739,7 @@ MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace:
 # 370 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Team Magma…\n"
 # 371 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	.string "Ob sie auch ins Weltall fliegen wollen?!?$"
+	.string "Ob sie auch ins Weltall fliegen wollen?!$"
 # 372 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 
 # 373 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -851,7 +851,7 @@ MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere:
 # 426 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Marc: Geh aus dem Weg!\n"
 # 427 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	.string "Du wagst es, uns aufhalten zu wollen?!?$"
+	.string "Du wagst es, uns aufhalten zu wollen?!$"
 # 428 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 
 # 429 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"

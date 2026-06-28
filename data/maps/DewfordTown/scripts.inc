@@ -1303,7 +1303,7 @@ Route104_Text_LandedInDewfordDeliverLetter:
 # 652 "data/maps/DewfordTown/scripts.pory"
 	.string "Ich vermute, du wirst diesen Brief\n"
 # 653 "data/maps/DewfordTown/scripts.pory"
-	.string "jetzt diesem… Troy bringen!?!$"
+	.string "jetzt diesem… Troy bringen?$"
 # 654 "data/maps/DewfordTown/scripts.pory"
 
 # 655 "data/maps/DewfordTown/scripts.pory"

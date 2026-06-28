@@ -147,7 +147,7 @@ MagmaHideout_2F_2R_Text_Grunt8Intro:
 # 74 "data/maps/MagmaHideout_2F_2R/scripts.pory"
 	.string "Warte mal! Du hast das doch nicht\n"
 # 75 "data/maps/MagmaHideout_2F_2R/scripts.pory"
-	.string "etwa gefunden?!?$"
+	.string "etwa gefunden?!$"
 # 76 "data/maps/MagmaHideout_2F_2R/scripts.pory"
 
 # 77 "data/maps/MagmaHideout_2F_2R/scripts.pory"

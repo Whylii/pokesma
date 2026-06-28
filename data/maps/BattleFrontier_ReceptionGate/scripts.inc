@@ -671,7 +671,7 @@ BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere:
 # 336 "data/maps/BattleFrontier_ReceptionGate/scripts.pory"
 	.string "mitgebracht, um dir hier alles\l"
 # 337 "data/maps/BattleFrontier_ReceptionGate/scripts.pory"
-	.string "anzusehen?!?\p"
+	.string "anzusehen?!\p"
 # 338 "data/maps/BattleFrontier_ReceptionGate/scripts.pory"
 	.string "Und natürlich hoffe ich auch, dass\n"
 # 339 "data/maps/BattleFrontier_ReceptionGate/scripts.pory"

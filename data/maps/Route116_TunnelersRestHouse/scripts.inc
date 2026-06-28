@@ -117,7 +117,7 @@ Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel:
 # 59 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
 Route116_TunnelersRestHouse_Text_TunnelHasGoneThrough:
 # 60 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
-	.string "Hast du schon gehört!?! Der Tunnel bei\n"
+	.string "Hast du schon gehört? Der Tunnel bei\n"
 # 61 "data/maps/Route116_TunnelersRestHouse/scripts.pory"
 	.string "Wiesenflur ist fertig!\p"
 # 62 "data/maps/Route116_TunnelersRestHouse/scripts.pory"

@@ -1273,7 +1273,7 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_WaitFewMoments:
 # 637 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 BattleFrontier_BattleFactoryPreBattleRoom_Text_UnderstoodSirWillDo:
 # 638 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "…Oh-oh. Was?!?… Hui!\n"
+	.string "…Oh-oh. Was?!… Hui!\n"
 # 639 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "Ja, verstanden! Sofort!$"
 # 640 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"

@@ -123,13 +123,13 @@ AquaHideout_1F_Text_OurBossIsSnatchingSomething:
 # 62 "data/maps/AquaHideout_1F/scripts.pory"
 	.string "Uahahaha! Du glaubst doch nicht im\n"
 # 63 "data/maps/AquaHideout_1F/scripts.pory"
-	.string "Ernst, dass ich dir das verrate!?!$"
+	.string "Ernst, dass ich dir das verrate?$"
 # 64 "data/maps/AquaHideout_1F/scripts.pory"
 
 # 65 "data/maps/AquaHideout_1F/scripts.pory"
 AquaHideout_1F_Text_WhereMightMagmaHideoutBe:
 # 66 "data/maps/AquaHideout_1F/scripts.pory"
-	.string "Was? Wie?!?\n"
+	.string "Was? Wie?!\n"
 # 67 "data/maps/AquaHideout_1F/scripts.pory"
 	.string "Du bist einer von Team Magma?\p"
 # 68 "data/maps/AquaHideout_1F/scripts.pory"
@@ -161,7 +161,7 @@ AquaHideout_1F_Text_BossWentToJackASubmarine:
 # 81 "data/maps/AquaHideout_1F/scripts.pory"
 	.string "Uahahaha! Du glaubst doch nicht im\n"
 # 82 "data/maps/AquaHideout_1F/scripts.pory"
-	.string "Ernst, dass ich dir das verrate!?!$"
+	.string "Ernst, dass ich dir das verrate?$"
 # 83 "data/maps/AquaHideout_1F/scripts.pory"
 
 # 84 "data/maps/AquaHideout_1F/scripts.pory"
@@ -183,13 +183,13 @@ AquaHideout_1F_Text_BossIsOnRoute122:
 # 92 "data/maps/AquaHideout_1F/scripts.pory"
 	.string "Uahahaha! Du glaubst doch nicht im\n"
 # 93 "data/maps/AquaHideout_1F/scripts.pory"
-	.string "Ernst, dass ich dir das verrate!?!$"
+	.string "Ernst, dass ich dir das verrate?$"
 # 94 "data/maps/AquaHideout_1F/scripts.pory"
 
 # 95 "data/maps/AquaHideout_1F/scripts.pory"
 AquaHideout_1F_Text_TeamMagmaAtMtChimney:
 # 96 "data/maps/AquaHideout_1F/scripts.pory"
-	.string "Was? Wie?!?\n"
+	.string "Was? Wie?!\n"
 # 97 "data/maps/AquaHideout_1F/scripts.pory"
 	.string "Bist du einer von den Team Magma\l"
 # 98 "data/maps/AquaHideout_1F/scripts.pory"
@@ -221,7 +221,7 @@ AquaHideout_1F_Text_BossIsInSlateportCity:
 # 111 "data/maps/AquaHideout_1F/scripts.pory"
 	.string "Uahahaha! Du glaubst doch nicht im\n"
 # 112 "data/maps/AquaHideout_1F/scripts.pory"
-	.string "Ernst, dass ich dir das verrate!?!$"
+	.string "Ernst, dass ich dir das verrate?$"
 # 113 "data/maps/AquaHideout_1F/scripts.pory"
 
 # 114 "data/maps/AquaHideout_1F/scripts.pory"
