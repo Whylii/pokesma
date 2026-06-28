@@ -15,6 +15,7 @@
 #include "malloc.h"
 #include "menu.h"
 #include "menu_helpers.h"
+#include "sprite.h"
 #include "palette.h"
 #include "party_menu.h"
 #include "scanline_effect.h"
@@ -1159,12 +1160,12 @@ static bool8 LoadGraphics(void)
 		case 1:
 			if (FreeTempTileDataBuffersIfPossible() != TRUE)
 			{
-				LZDecompressWram(sQuestMenuTilemap, sBg1TilemapBuffer);
+				DecompressDataWithHeaderWram(sQuestMenuTilemap, sBg1TilemapBuffer);
 				sStateDataPtr->data[0]++;
 			}
 			break;
 		case 2:
-			LoadCompressedPalette(sQuestMenuBgPals, 0x00, 0x60);
+			LoadPalette(sQuestMenuBgPals, 0x00, 0x60);
 			sStateDataPtr->data[0]++;
 			break;
 		case 3:
@@ -2169,47 +2170,48 @@ void DetermineSpriteType(s32 questId)
 	QuestMenu_DestroySprite(sStateDataPtr->spriteIconSlot ^ 1);
 	sStateDataPtr->spriteIconSlot ^= 1;
 }
+
 static void QuestMenu_CreateSprite(u16 itemId, u8 idx, u8 spriteType)
 {
-	u8 *ptr = &sItemMenuIconSpriteIds[10];
-	u8 spriteId = 0xFF;
+    u8 *ptr = &sItemMenuIconSpriteIds[10];
+    u32 spriteId = MAX_SPRITES;
 
-	if (ptr[idx] == 0xFF)
-	{
-		FreeSpriteTilesByTag(102 + idx);
-		FreeSpritePaletteByTag(102 + idx);
+    if (ptr[idx] == 0xFF)
+    {
+        FreeSpriteTilesByTag(102 + idx);
+        FreeSpritePaletteByTag(102 + idx);
 
-		switch (spriteType)
-		{
-			case OBJECT:
-				spriteId = CreateObjectGraphicsSprite(itemId, SpriteCallbackDummy, 20,
-				                                      132, 0);
-				break;
-			case ITEM:
-				spriteId = AddItemIconSprite(102 + idx, 102 + idx, itemId);
-				break;
-			case PKMN:
-				LoadMonIconPalettes();
-				spriteId = CreateMonIcon(itemId, SpriteCallbackDummy, 20, 132, 0, 1, 1);
-				break;
-			default:
-				break;
-		}
+        switch (spriteType)
+        {
+            case OBJECT:
+                // Palette wird automatisch über das SpriteTemplate geladen.
+                // Kein manueller Puffer nötig.
+                spriteId = CreateObjectGraphicsSprite(itemId, SpriteCallbackDummy, 20, 132, 0);
+                break;
+            case ITEM:
+                spriteId = AddItemIconSprite(102 + idx, 102 + idx, itemId);
+                break;
+            case PKMN:
+                LoadMonIconPalettes();
+                spriteId = CreateMonIcon(itemId, SpriteCallbackDummy, 20, 132, 0, 1);
+                break;
+            default:
+                break;
+        }
 
-		gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
+        if (spriteId < MAX_SPRITES)
+        {
+            gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
+            ptr[idx] = spriteId;
 
-		if (spriteId != MAX_SPRITES)
-		{
-			ptr[idx] = spriteId;
-
-			if (spriteType == ITEM)
-			{
-				gSprites[spriteId].x2 = 24;
-				gSprites[spriteId].y2 = 140;
-			}
-		}
-	}
-}
+            if (spriteType == ITEM)
+            {
+                gSprites[spriteId].x2 = 24;
+                gSprites[spriteId].y2 = 140;
+            }
+        }
+    }
+}   
 
 void ResetSpriteState(void)
 {

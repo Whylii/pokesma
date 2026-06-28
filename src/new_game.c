@@ -235,14 +235,11 @@ void NewGameInitData(void)
     ResetTrainerHillResults();
     ResetTrainerTowerResults();
     ResetContestLinkResults();
-<<<<<<< HEAD
     SetCurrentDifficultyLevel(DIFFICULTY_NORMAL);
     ResetItemFlags();
     ResetDexNav();
     ClearFollowerNPCData();
-=======
     QuestMenu_ResetMenuSaveData();
->>>>>>> 80c8dab1dc2d059bfdf273384707784945933732
 }
 
 static void ResetMiniGamesRecords(void)

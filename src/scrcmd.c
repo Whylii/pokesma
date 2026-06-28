@@ -3467,6 +3467,7 @@ bool8 ScrCmd_getbraillestringwidth(struct ScriptContext * ctx)
 
     gSpecialVar_0x8004 = GetStringWidth(FONT_BRAILLE, msg, -1);
     return FALSE;
+}
 bool8 ScrCmd_questmenu(struct ScriptContext *ctx)
 {
     u8 caseId = ScriptReadByte(ctx);
