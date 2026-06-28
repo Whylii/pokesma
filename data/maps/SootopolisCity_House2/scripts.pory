@@ -1,0 +1,36 @@
+raw `
+SootopolisCity_House2_MapScripts::
+	.byte 0
+
+SootopolisCity_House2_EventScript_ExpertF::
+	lock
+	faceplayer
+	msgbox SootopolisCity_House2_Text_DidYouKnowAboutMtPyreOrbs, MSGBOX_YESNO
+	call_if_eq VAR_RESULT, YES, SootopolisCity_House2_EventScript_KnowAboutOrbs
+	call_if_eq VAR_RESULT, NO, SootopolisCity_House2_EventScript_DontKnowAboutOrbs
+	release
+	end
+
+SootopolisCity_House2_EventScript_KnowAboutOrbs::
+	msgbox SootopolisCity_House2_Text_YesTwoOrbsSideBySide, MSGBOX_DEFAULT
+	return
+
+SootopolisCity_House2_EventScript_DontKnowAboutOrbs::
+	msgbox SootopolisCity_House2_Text_OughtToVisitAndSee, MSGBOX_DEFAULT
+	return
+
+SootopolisCity_House2_Text_DidYouKnowAboutMtPyreOrbs:
+	.string "Pyroberg…\p"
+	.string "Auf seiner Spitze liegen 2 Kugeln.\n"
+	.string "Wusstest du das?$"
+
+SootopolisCity_House2_Text_YesTwoOrbsSideBySide:
+	.string "Ja, genau. 2 Kugeln nebeneinander…\p"
+	.string "Der Anblick dieser beiden…\n"
+	.string "Irgendwie wirkt er beruhigend…$"
+
+SootopolisCity_House2_Text_OughtToVisitAndSee:
+	.string "Ehrlich?\n"
+	.string "Du solltest dir das mal selber ansehen…$"
+
+`

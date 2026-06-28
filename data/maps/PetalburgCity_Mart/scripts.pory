@@ -1,0 +1,90 @@
+script PetalburgCity_Mart_EventScript_Clerk {
+    lock
+    faceplayer
+    if (!checkitem(ITEM_ESCAPE_ROPE)) {
+        msgbox(PetalburgCity_Mart_Text_GiftEscapeRope, MSGBOX_NPC)
+        giveitem(ITEM_ESCAPE_ROPE)
+        release
+        end
+    }
+    msgbox(gText_HowMayIServeYou, MSGBOX_NPC)
+    waitmessage
+    if (flag(FLAG_PETALBURG_MART_EXPANDED_ITEMS)) {
+        pokemart(PetalburgCity_Mart_Pokemart_Expanded)
+    } else {
+        pokemart(PetalburgCity_Mart_Pokemart_Basic)
+    }
+    msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+    release
+    end
+}   
+
+mart PetalburgCity_Mart_Pokemart_Basic {
+    ITEM_POKE_BALL
+    ITEM_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_REPEL
+    ITEM_X_SPEED
+    ITEM_X_ATTACK
+    ITEM_X_DEFENSE
+    ITEM_ORANGE_MAIL
+}
+
+mart PetalburgCity_Mart_Pokemart_Expanded {
+    ITEM_POKE_BALL
+    ITEM_GREAT_BALL
+    ITEM_POTION
+    ITEM_SUPER_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_REPEL
+    ITEM_X_SPEED
+    ITEM_X_ATTACK
+    ITEM_X_DEFENSE
+    ITEM_ORANGE_MAIL
+}
+
+text PetalburgCity_Mart_Text_GiftEscapeRope {
+    "Vor kurzem kam hier ein Trainer\n"
+    "vorbei und hat ein Seil verschenkt.\p"
+    "Da ich nichts damit anfangen kann,\n"
+    "schenke ich es dir.$"
+}   
+
+raw `
+PetalburgCity_Mart_MapScripts::
+	.byte 0
+
+PetalburgCity_Mart_EventScript_Woman::
+	msgbox PetalburgCity_Mart_Text_WeakWillGrowStronger, MSGBOX_NPC
+	end
+
+PetalburgCity_Mart_EventScript_Boy::
+	msgbox PetalburgCity_Mart_Text_RepelIsUseful, MSGBOX_NPC
+	end
+
+PetalburgCity_Mart_EventScript_Man::
+	msgbox PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou, MSGBOX_NPC
+	end
+
+PetalburgCity_Mart_Text_WeakWillGrowStronger:
+	.string "Auch wenn ein Pokémon jetzt noch\n"
+	.string "schwach ist - es wird ständig stärker.\p"
+	.string "Das Schlüsselwort heißt Liebe!\n"
+	.string "Liebe für deine Pokémon!$"
+
+PetalburgCity_Mart_Text_RepelIsUseful:
+	.string "Setzt du Schutz ein?\n"
+	.string "Das hält Pokémon fern und ist sehr\l"
+	.string "nützlich, wenn du es eilig hast.$"
+
+PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou:
+	.string "Hast du etwas Gegengift dabei?\p"
+	.string "Ein vergiftetes Pokémon verliert\n"
+	.string "ständig KP, bis es kampfunfähig wird.\l"
+	.string "Halte deshalb stets Gegengift bereit!$"
+
+`

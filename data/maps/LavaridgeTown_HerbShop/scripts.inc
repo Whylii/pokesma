@@ -1,63 +1,126 @@
+# 1 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
+
+# 2 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 LavaridgeTown_HerbShop_MapScripts::
+# 3 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.byte 0
+# 4 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 
+# 5 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 LavaridgeTown_HerbShop_EventScript_Clerk::
+# 6 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	lock
+# 7 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	faceplayer
+# 8 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	message LavaridgeTown_HerbShop_Text_WelcomeToHerbShop
+# 9 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	waitmessage
+# 10 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	pokemart LavaridgeTown_HerbShop_Pokemart
+# 11 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+# 12 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	release
+# 13 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	end
+# 14 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 
+# 15 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.align 2
+# 16 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 LavaridgeTown_HerbShop_Pokemart:
+# 17 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.2byte ITEM_ENERGY_POWDER
+# 18 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.2byte ITEM_ENERGY_ROOT
+# 19 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.2byte ITEM_HEAL_POWDER
+# 20 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.2byte ITEM_REVIVAL_HERB
+# 21 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	pokemartlistend
+# 22 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 
+# 23 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 LavaridgeTown_HerbShop_EventScript_ExpertM::
+# 24 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	msgbox LavaridgeTown_HerbShop_Text_HerbalMedicineWorksButMonWillDislike, MSGBOX_NPC
+# 25 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	end
+# 26 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 
+# 27 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 LavaridgeTown_HerbShop_EventScript_OldMan::
+# 28 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	lock
+# 29 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	faceplayer
+# 30 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	goto_if_set FLAG_RECEIVED_CHARCOAL, LavaridgeTown_HerbShop_EventScript_ExplainCharcoal
+# 31 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	msgbox LavaridgeTown_HerbShop_Text_YouveComeToLookAtHerbalMedicine, MSGBOX_DEFAULT
+# 32 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	giveitem ITEM_CHARCOAL
+# 33 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+# 34 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	setflag FLAG_RECEIVED_CHARCOAL
+# 35 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	release
+# 36 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	end
+# 37 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 
+# 38 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 LavaridgeTown_HerbShop_EventScript_ExplainCharcoal::
+# 39 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	msgbox LavaridgeTown_HerbShop_Text_ExplainCharcoal, MSGBOX_DEFAULT
+# 40 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	release
+# 41 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	end
+# 42 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 
+# 43 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 LavaridgeTown_HerbShop_Text_WelcomeToHerbShop:
+# 44 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.string "Willkommen im Kräuterladen! Dem Heim\n"
+# 45 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.string "wirkungsvoller und preiswerter Medizin!$"
+# 46 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 
+# 47 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 LavaridgeTown_HerbShop_Text_YouveComeToLookAtHerbalMedicine:
+# 48 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.string "Du kommst nach Bad Lavastadt, um\n"
+# 49 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.string "Kräutermedizin zu kaufen?\p"
+# 50 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.string "Das ist lobenswert!\p"
+# 51 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.string "Ich finde dich nett! Hier, für dich!$"
+# 52 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 
+# 53 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 LavaridgeTown_HerbShop_Text_ExplainCharcoal:
+# 54 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.string "Mit dieser Holzkohle wird die Kräuter-\n"
+# 55 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.string "medizin hergestellt.\p"
+# 56 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.string "Sie wirkt auch Wunder, wenn sie von\n"
+# 57 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.string "einem Pokémon getragen wird.\p"
+# 58 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.string "Sie verstärkt Feuer-Attacken.$"
+# 59 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 
+# 60 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 LavaridgeTown_HerbShop_Text_HerbalMedicineWorksButMonWillDislike:
+# 61 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.string "Kräutermedizin ist erstaunlich\n"
+# 62 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.string "wirkungsvoll. Aber deine Pokémon mögen\l"
+# 63 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.string "sie nicht. Sie schmeckt bitter…$"
-
