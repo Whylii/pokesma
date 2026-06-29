@@ -109,7 +109,7 @@ const struct EasyChatWordInfo gEasyChatGroup_TrendySaying[] = {
     },
     [EC_INDEX(EC_WORD_SHADY)] =
     {
-        .text = COMPOUND_STRING("Rock`n`roll"),
+        .text = COMPOUND_STRING("Rock'n'Roll"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MEGA),
         .enabled = TRUE,
     },

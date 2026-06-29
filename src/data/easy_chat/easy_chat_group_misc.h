@@ -139,19 +139,19 @@ const struct EasyChatWordInfo gEasyChatGroup_Misc[] = {
     },
     [EC_INDEX(EC_WORD_THAT_S_IT_EXCL)] =
     {
-        .text = COMPOUND_STRING("Das Ist`s!"),
+        .text = COMPOUND_STRING("Das ist's!"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_RIGHT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_AM)] =
     {
-        .text = COMPOUND_STRING("Das Sind"),
+        .text = COMPOUND_STRING("Das sind"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SHALLOW),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THAT_WAS)] =
     {
-        .text = COMPOUND_STRING("Das War"),
+        .text = COMPOUND_STRING("Das war"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THAT),
         .enabled = TRUE,
     },

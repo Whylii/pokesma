@@ -139,7 +139,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Events[] = {
     },
     [EC_INDEX(EC_WORD_POKEBLOCK)] =
     {
-        .text = COMPOUND_STRING("{Pokéblock}"),
+        .text = COMPOUND_STRING("{POKEBLOCK}"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_POKEBLOCK),
         .enabled = TRUE,
     },

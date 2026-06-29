@@ -47,7 +47,7 @@ script GraniteCave_1F_EventScript_Hiker {
             goto (GraniteCave_1F_EventScript_PlayerAnsweredNo)
         }
         else {
-            trainerbattle_single (TRAINER_Flasher_1 Text_FlasherIntro Text_FlasherDefeat GraniteCave_1F_EventScript_AfterBattle)
+            trainerbattle_single (TRAINER_FLASHER_1 Text_FlasherIntro Text_FlasherDefeat GraniteCave_1F_EventScript_AfterBattle)
         }
     }
     else {

@@ -88,7 +88,7 @@ GraniteCave_1F_EventScript_Hiker_8:
 	compare VAR_RESULT, NO
 	goto_if_eq GraniteCave_1F_EventScript_Hiker_13
 # 50 "data/maps/GraniteCave_1F/scripts.pory"
-	trainerbattle_single TRAINER_Flasher_1 Text_FlasherIntro Text_FlasherDefeat GraniteCave_1F_EventScript_AfterBattle
+	trainerbattle_single TRAINER_FLASHER_1 Text_FlasherIntro Text_FlasherDefeat GraniteCave_1F_EventScript_AfterBattle
 	goto GraniteCave_1F_EventScript_Hiker_7
 
 GraniteCave_1F_EventScript_Hiker_10:
