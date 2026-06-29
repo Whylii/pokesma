@@ -88,6 +88,27 @@ script Route110_EventScript_PkmnSign{
     }
 }
 
+text Route110_Text_PkmnSignGras{
+    "Folgende Pokémon verstecken
+    sich im hohen Gras:"
+}
+text Route110_Text_PkmnSignWasser{
+    "Folgende Pokémon verstecken
+    sich im Wasser:"
+}
+text Route110_Text_PkmnSignAngel{
+    "Folgende Pokémon verstecken
+    sich tief im Wasser:"
+}
+text Route110_Text_PkmnSignAngel2{
+    "Folgende Pokémon verstecken
+    sich tiefer im Wasser:"
+}
+text Route110_Text_PkmnSignAngel3{
+    "Folgende Pokémon verstecken
+    sich sehr tief im Wasser:"
+}
+
 raw `
 Route110_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, Route110_OnResume

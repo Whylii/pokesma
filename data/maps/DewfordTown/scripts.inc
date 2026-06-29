@@ -1704,7 +1704,7 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 DewfordTown_EventScript_PkmnSign_Text_0:
 # 2 "data/maps/DewfordTown/scripts.pory"
 	.string "Hier findest du Informationen über die \n"
-	.string "Pokémon, die auf dieser Route leben.$"
+	.string "Pokémon, die in diesem Ort leben.$"
 
 DewfordTown_EventScript_PkmnSign_Text_1:
 # 4 "data/maps/DewfordTown/scripts.pory"
