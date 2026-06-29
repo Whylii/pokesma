@@ -93,7 +93,7 @@ DewfordTown_House2_Text_ExplainSilkScarf:
 # 47 "data/maps/DewfordTown_House2/scripts.pory"
 	.string "der Normalen Attacken.\p"
 # 48 "data/maps/DewfordTown_House2/scripts.pory"
-	.string "Dieser wunderbare SCHAL passt einfach\n"
+	.string "Dieser wunderbare Schal passt einfach\n"
 # 49 "data/maps/DewfordTown_House2/scripts.pory"
 	.string "zu fast allen Pokémon!$"
 # 50 "data/maps/DewfordTown_House2/scripts.pory"

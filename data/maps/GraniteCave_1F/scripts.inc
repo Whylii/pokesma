@@ -130,7 +130,7 @@ GraniteCave_1F_MapScripts::
 GraniteCave_1F_EventScript_Hiker_Text_0:
 # 54 "data/maps/GraniteCave_1F/scripts.pory"
 	.string "Komm zurück, wenn du den\n"
-	.string "Ahmorden hast, und ich bringe\l"
+	.string "Knöchelorden hast, und ich bringe\l"
 	.string "dir eine weitere Technik bei.$"
 
 GraniteCave_1F_Text_PkmnSignCave::

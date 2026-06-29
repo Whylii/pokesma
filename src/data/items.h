@@ -826,6 +826,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_SODA_POP] =
     {
         .name = ITEM_NAME("Sprudel"),
+        .pluralName = ITEM_PLURAL_NAME("Sprudel"),
         .price = 300,
         .holdEffectParam = 50,
         .description = COMPOUND_STRING(
@@ -9759,7 +9760,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Senkt Genauigkeit\n"
             "des Gegners."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9783,7 +9784,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Stellt gesenkten\n"
             "Status wieder her."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9835,7 +9836,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die\n"
             "Erstschlagquote."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9859,7 +9860,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die\n"
             "Freundschaft."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9889,7 +9890,7 @@ const struct ItemInfo gItemsInfo[] =
             "von einer\n"
             "Anziehung."),
         #endif
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9911,7 +9912,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_FLINCH,
         .holdEffectParam = 10,
         .description = sKingsRockDesc,
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
@@ -9997,7 +9998,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Kann K.O.\n"
             "verhindern."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10040,7 +10041,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die\n"
             "Volltrefferchance."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10066,7 +10067,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Füllt jede Runde\n"
             "wenige KP auf."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10091,7 +10092,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Füllt KP um 1/8\n"
             "des Schadens auf."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10117,7 +10118,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die\n"
             "Genaugkeit."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10142,7 +10143,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die Stärke\n"
             "von physischen Att."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10168,7 +10169,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die Stärke\n"
             "von speziellen Att."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10193,7 +10194,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die Stärke\n"
             "von sehr effekt. Att."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10217,7 +10218,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Verlängt Dauer von\n"
             "Barriere-Attacken."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10241,7 +10242,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erhöht Stärke,\n"
             "aber Träger verliert\n"
             "ständig KP."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10265,7 +10266,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erlaubt direktes\n"
             "Einsetzen einer\n"
             "Lade-Attacke."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10290,7 +10291,7 @@ const struct ItemInfo gItemsInfo[] =
             "Verhindert K.O.-\n"
             "Attacken bei\n"
             "vollen KP mit 1 KP."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10316,7 +10317,7 @@ const struct ItemInfo gItemsInfo[] =
             "Agiert der Träger\n"
             "nach dem Gegner, wird\n"
             "Genauigkeit erhöht."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10341,7 +10342,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die Stärke\n"
             "von wiederholten Att."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10365,7 +10366,7 @@ const struct ItemInfo gItemsInfo[] =
             "Verringert Init.\n"
             "und nimmt Schaden\n"
             "von Boden-Att."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10386,7 +10387,7 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_LAGGING_TAIL,
         .description = sFullIncenseDesc,
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10410,7 +10411,7 @@ const struct ItemInfo gItemsInfo[] =
             "Verliebt sich der\n"
             "Träger, dann auch\n"
             "der Gegner."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10434,7 +10435,7 @@ const struct ItemInfo gItemsInfo[] =
             "Füllt KP für Gift-\n"
             "Pokémon auf.\n"
             "Schadet allen anderen."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10458,7 +10459,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Verlängert Dauer\n"
             "von Wickel-Att."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10482,7 +10483,7 @@ const struct ItemInfo gItemsInfo[] =
             "Träger nimmt jede\n"
             "Runde Schaden, kann auf\n"
             "Gegner überspringen."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10506,7 +10507,7 @@ const struct ItemInfo gItemsInfo[] =
             "Träger kann\n"
             "garantiert\n"
             "Wechseln."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10531,7 +10532,7 @@ const struct ItemInfo gItemsInfo[] =
             "Item zum Tragen.\n"
             "Erhöht die Stärke\n"
             "von absorbierenden Att."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10555,7 +10556,7 @@ const struct ItemInfo gItemsInfo[] =
             "Eine scharfe Klaue,\n"
             "die die Volltreffer-\n"
             "quote erhöht."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
@@ -10578,7 +10579,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_FLINCH,
         .holdEffectParam = 10,
         .description = sKingsRockDesc,
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
@@ -10604,7 +10605,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erhöht Vert. und Sp.\n"
             "Vert. von sich\n"
             "entwickelnden Pokémon."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10627,7 +10628,7 @@ const struct ItemInfo gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Halbiert das Gewicht\n"
             "des Trägers."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10652,7 +10653,7 @@ const struct ItemInfo gItemsInfo[] =
             "Schadet dem Gegner,\n"
             "wenn dieser den\n"
             "Träger berührt."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10677,7 +10678,7 @@ const struct ItemInfo gItemsInfo[] =
             "Träger schwebt in\n"
             "der Luft. Platzt\n"
             "wenn getroffen."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10702,7 +10703,7 @@ const struct ItemInfo gItemsInfo[] =
             "Gegner muss Wechseln,\n"
             "wenn dieser den\n"
             "Träger trifft."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10727,7 +10728,7 @@ const struct ItemInfo gItemsInfo[] =
             "Träger wird von\n"
             "Attacken getroffen, die\n"
             "sonst ohne Effekt sind."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10751,7 +10752,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erhöht die Stärke\n"
             "von Wickel-\n"
             "Attacken."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10776,7 +10777,7 @@ const struct ItemInfo gItemsInfo[] =
             "Träger wird aus-\n"
             "gewechselt wenn\n"
             "getroffen."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10795,7 +10796,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erhöht Angr. und Sp.\n"
             "Angr., wenn von sehr\n"
             "effekt. Att. getroffen."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10814,7 +10815,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erhöht Sp. Vert.,\n"
             "aber kann keine\n"
             "Statusatt. einsetzen."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10839,7 +10840,7 @@ const struct ItemInfo gItemsInfo[] =
             "Schützt vor Wetter\n"
             "und Pulver-\n"
             "Attacken."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10863,7 +10864,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erhöht Init.,\n"
             "wenn der Träger\n"
             "bedroht ist."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10881,7 +10882,7 @@ const struct ItemInfo gItemsInfo[] =
             "Verlängert die\n"
             "Dauer vom aktiven\n"
             "Terrain."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10899,7 +10900,7 @@ const struct ItemInfo gItemsInfo[] =
             "Guard the holder\n"
             "from contact move\n"
             "effects."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10917,7 +10918,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erhöht Sp. Angr.,\n"
             "wenn Träger Sound\n"
             "einsetzt."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10953,7 +10954,7 @@ const struct ItemInfo gItemsInfo[] =
             "Verhindert den\n"
             "Effekt von Fallen\n"
             "im Feld."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10971,7 +10972,7 @@ const struct ItemInfo gItemsInfo[] =
             "Erhöht Init., wenn\n"
             "Träger durch Ge-\n"
             "nauigk. nicht trifft."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10989,7 +10990,7 @@ const struct ItemInfo gItemsInfo[] =
             "Senkt Init.,\n"
             "wenn Bizarroraum\n"
             "wirkt."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -11007,7 +11008,7 @@ const struct ItemInfo gItemsInfo[] =
             "Ein Regenschirm,\n"
             "der vor Wetter-\n"
             "effekten schützt."),
-        .pocket = POCKET_BATTLE_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -12279,14 +12280,11 @@ const struct ItemInfo gItemsInfo[] =
 
 // TMs/HMs. They don't have a set flingPower, as that's handled by GetFlingPowerFromItemId.
 
-    [ITEM_TM_FOCUS_PUNCH] =
+    [ITEM_TM_HONE_CLAWS] =
     {
         .name = ITEM_NAME("TM01"),
         .price = 3000,
-        .description = COMPOUND_STRING(
-            "Stark. Pokémon schreckt\n"
-            "vielleicht bei gegn.\n"
-            "Attacke zurück."),
+        .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -12307,14 +12305,11 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_WATER_PULSE] =
+    [ITEM_TM_PSYSHOCK] =
     {
         .name = ITEM_NAME("TM03"),
         .price = 3000,
-        .description = COMPOUND_STRING(
-            "Eine Ultraschall-\n"
-            "welle, die den Geg-\n"
-            "ner verwirren kann."),
+        .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -12398,14 +12393,11 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_BULLET_SEED] =
+    [ITEM_TM_VENOSHOCK] =
     {
         .name = ITEM_NAME("TM09"),
         .price = 3000,
-        .description = COMPOUND_STRING(
-            "Beschießt den\n"
-            "Gegner mit 2 bis 5\n"
-            "Samen auf einmal."),
+        .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -12549,14 +12541,12 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_GIGA_DRAIN] =
+    [ITEM_TM_ROOST] =
     {
         .name = ITEM_NAME("TM19"),
-        .price = 3000,
+        .price = 2000,
         .description = COMPOUND_STRING(
-            "Füllt KP um die\n"
-            "Hälfte des zuge-\n"
-            "fügten Schadens auf."),
+            "???"),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -12605,14 +12595,11 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_IRON_TAIL] =
+    [ITEM_TM_SMACK_DOWN] =
     {
         .name = ITEM_NAME("TM23"),
         .price = 3000,
-        .description = COMPOUND_STRING(
-            "Schlag mit harter\n"
-            "Rute. Kann gleichz.\n"
-            "Vert.-Wert senken."),
+        .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -12759,14 +12746,11 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_SHOCK_WAVE] =
+    [ITEM_TM_SLUDGE_WAVE] =
     {
         .name = ITEM_NAME("TM34"),
         .price = 3000,
-        .description = COMPOUND_STRING(
-            "Fügt Gegner einen\n"
-            "Stromschlag zu,\n"
-            "der nie verfehlt."),
+        .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -12885,7 +12869,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_SECRET_POWER] =
+    [ITEM_TM43] =
     {
         .name = ITEM_NAME("TM43"),
         .price = 3000,
@@ -12955,28 +12939,22 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_SKILL_SWAP] =
+    [ITEM_TM_ROUND] =
     {
         .name = ITEM_NAME("TM48"),
         .price = 3000,
-        .description = COMPOUND_STRING(
-            "Austausch der\n"
-            "Fähigkeiten bei der\n"
-            "nächsten Attacke."),
+        .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_SNATCH] =
+    [ITEM_TM_ECHOED_VOICE] =
     {
         .name = ITEM_NAME("TM49"),
         .price = 3000,
-        .description = COMPOUND_STRING(
-            "Stiehlt die\n"
-            "Effekte der gegne-\n"
-            "rischen Attacke."),
+        .description = sQuestionMarksDesc, // Todo
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -12997,7 +12975,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM51] =
+    [ITEM_TM_LOW_SWEEP] =
     {
         .name = ITEM_NAME("TM51"),
         .price = 3000,
@@ -13008,7 +12986,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM52] =
+    [ITEM_TM_FOCUS_BLAST] =
     {
         .name = ITEM_NAME("TM52"),
         .price = 3000,
@@ -13019,7 +12997,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM53] =
+    [ITEM_TM_ENERGY_BALL] =
     {
         .name = ITEM_NAME("TM53"),
         .price = 3000,
@@ -13030,7 +13008,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM54] =
+    [ITEM_TM_FALSE_SWIPE] =
     {
         .name = ITEM_NAME("TM54"),
         .price = 3000,
@@ -13041,7 +13019,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM55] =
+    [ITEM_TM_SCALD] =
     {
         .name = ITEM_NAME("TM55"),
         .price = 3000,
@@ -13052,7 +13030,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM56] =
+    [ITEM_TM_FLING] =
     {
         .name = ITEM_NAME("TM56"),
         .price = 3000,
@@ -13063,7 +13041,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM57] =
+    [ITEM_TM_CHARGE_BEAM] =
     {
         .name = ITEM_NAME("TM57"),
         .price = 3000,
@@ -13074,7 +13052,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM58] =
+    [ITEM_TM_SKY_DROP] =
     {
         .name = ITEM_NAME("TM58"),
         .price = 3000,
@@ -13085,7 +13063,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM59] =
+    [ITEM_TM_INCINERATE] =
     {
         .name = ITEM_NAME("TM59"),
         .price = 3000,
@@ -13096,7 +13074,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM60] =
+    [ITEM_TM_QUASH] =
     {
         .name = ITEM_NAME("TM60"),
         .price = 3000,
@@ -13107,7 +13085,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM61] =
+    [ITEM_TM_WILL_O_WISP] =
     {
         .name = ITEM_NAME("TM61"),
         .price = 3000,
@@ -13118,7 +13096,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM62] =
+    [ITEM_TM_ACROBATICS] =
     {
         .name = ITEM_NAME("TM62"),
         .price = 3000,
@@ -13129,7 +13107,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM63] =
+    [ITEM_TM_EMBARGO] =
     {
         .name = ITEM_NAME("TM63"),
         .price = 3000,
@@ -13140,7 +13118,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM64] =
+    [ITEM_TM_EXPLOSION] =
     {
         .name = ITEM_NAME("TM64"),
         .price = 3000,
@@ -13151,7 +13129,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM65] =
+    [ITEM_TM_SHADOW_CLAW] =
     {
         .name = ITEM_NAME("TM65"),
         .price = 3000,
@@ -13162,7 +13140,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM66] =
+    [ITEM_TM_PAYBACK] =
     {
         .name = ITEM_NAME("TM66"),
         .price = 3000,
@@ -13173,7 +13151,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM67] =
+    [ITEM_TM_RETALIATE] =
     {
         .name = ITEM_NAME("TM67"),
         .price = 3000,
@@ -13184,7 +13162,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM68] =
+    [ITEM_TM_GIGA_IMPACT] =
     {
         .name = ITEM_NAME("TM68"),
         .price = 3000,
@@ -13195,7 +13173,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM69] =
+    [ITEM_TM_ROCK_POLISH] =
     {
         .name = ITEM_NAME("TM69"),
         .price = 3000,
@@ -13206,18 +13184,21 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM70] =
+    [ITEM_TM_BULLET_SEED] =
     {
         .name = ITEM_NAME("TM70"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "Beschießt den\n"
+            "Gegner mit 2 bis 5\n"
+            "Samen auf einmal."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM71] =
+    [ITEM_TM_STONE_EDGE] =
     {
         .name = ITEM_NAME("TM71"),
         .price = 3000,
@@ -13228,7 +13209,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM72] =
+    [ITEM_TM_VOLT_SWITCH] =
     {
         .name = ITEM_NAME("TM72"),
         .price = 3000,
@@ -13239,7 +13220,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM73] =
+    [ITEM_TM_THUNDER_WAVE] =
     {
         .name = ITEM_NAME("TM73"),
         .price = 3000,
@@ -13250,7 +13231,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM74] =
+    [ITEM_TM_GYRO_BALL] =
     {
         .name = ITEM_NAME("TM74"),
         .price = 3000,
@@ -13261,7 +13242,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM75] =
+    [ITEM_TM_SWORDS_DANCE] =
     {
         .name = ITEM_NAME("TM75"),
         .price = 3000,
@@ -13272,7 +13253,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM76] =
+    [ITEM_TM_STRUGGLE_BUG] =
     {
         .name = ITEM_NAME("TM76"),
         .price = 3000,
@@ -13283,7 +13264,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM77] =
+    [ITEM_TM_PSYCH_UP] =
     {
         .name = ITEM_NAME("TM77"),
         .price = 3000,
@@ -13294,7 +13275,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM78] =
+    [ITEM_TM_BULLDOZE] =
     {
         .name = ITEM_NAME("TM78"),
         .price = 3000,
@@ -13305,7 +13286,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM79] =
+    [ITEM_TM_FROST_BREATH] =
     {
         .name = ITEM_NAME("TM79"),
         .price = 3000,
@@ -13316,7 +13297,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM80] =
+    [ITEM_TM_ROCK_SLIDE] =
     {
         .name = ITEM_NAME("TM80"),
         .price = 3000,
@@ -13327,7 +13308,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM81] =
+    [ITEM_TM_X_SCISSOR] =
     {
         .name = ITEM_NAME("TM81"),
         .price = 3000,
@@ -13338,7 +13319,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM82] =
+    [ITEM_TM_DRAGON_TAIL] =
     {
         .name = ITEM_NAME("TM82"),
         .price = 3000,
@@ -13349,7 +13330,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM83] =
+    [ITEM_TM_INFESTATION] =
     {
         .name = ITEM_NAME("TM83"),
         .price = 3000,
@@ -13360,7 +13341,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM84] =
+    [ITEM_TM_POISON_JAB] =
     {
         .name = ITEM_NAME("TM84"),
         .price = 3000,
@@ -13371,7 +13352,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM85] =
+    [ITEM_TM_DREAM_EATER] =
     {
         .name = ITEM_NAME("TM85"),
         .price = 3000,
@@ -13382,7 +13363,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM86] =
+    [ITEM_TM_GRASS_KNOT] =
     {
         .name = ITEM_NAME("TM86"),
         .price = 3000,
@@ -13393,7 +13374,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM87] =
+    [ITEM_TM_SWAGGER] =
     {
         .name = ITEM_NAME("TM87"),
         .price = 3000,
@@ -13404,7 +13385,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM88] =
+    [ITEM_TM_SLEEP_TALK] =
     {
         .name = ITEM_NAME("TM88"),
         .price = 3000,
@@ -13415,7 +13396,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM89] =
+    [ITEM_TM_U_TURN] =
     {
         .name = ITEM_NAME("TM89"),
         .price = 3000,
@@ -13426,7 +13407,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM90] =
+    [ITEM_TM_SUBSTITUTE] =
     {
         .name = ITEM_NAME("TM90"),
         .price = 3000,
@@ -13437,7 +13418,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM91] =
+    [ITEM_TM_FLASH_CANNON] =
     {
         .name = ITEM_NAME("TM91"),
         .price = 3000,
@@ -13448,7 +13429,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM92] =
+    [ITEM_TM_TRICK_ROOM] =
     {
         .name = ITEM_NAME("TM92"),
         .price = 3000,
@@ -13459,7 +13440,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM93] =
+    [ITEM_TM_WILD_CHARGE] =
     {
         .name = ITEM_NAME("TM93"),
         .price = 3000,
@@ -13470,7 +13451,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM94] =
+    [ITEM_TM_SECRET_POWER] =
     {
         .name = ITEM_NAME("TM94"),
         .price = 3000,
@@ -13481,7 +13462,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM95] =
+    [ITEM_TM_SNARL] =
     {
         .name = ITEM_NAME("TM95"),
         .price = 3000,
@@ -13492,7 +13473,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM96] =
+    [ITEM_TM_NATURE_POWER] =
     {
         .name = ITEM_NAME("TM96"),
         .price = 3000,
@@ -13503,7 +13484,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM97] =
+    [ITEM_TM_DARK_PULSE] =
     {
         .name = ITEM_NAME("TM97"),
         .price = 3000,
@@ -13514,7 +13495,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM98] =
+    [ITEM_TM_POWER_UP_PUNCH] =
     {
         .name = ITEM_NAME("TM98"),
         .price = 3000,
@@ -13525,7 +13506,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM99] =
+    [ITEM_TM_DAZZLING_GLEAM] =
     {
         .name = ITEM_NAME("TM99"),
         .price = 3000,
@@ -13536,7 +13517,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM100] =
+    [ITEM_TM_CONFIDE] =
     {
         .name = ITEM_NAME("TM100"),
         .price = 3000,

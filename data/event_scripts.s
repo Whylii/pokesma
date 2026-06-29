@@ -1448,7 +1448,7 @@ gText_MomExplainHPGetPotions::
 	.string "Pass auf dich auf!$"
 
 gText_RegisteredTrainerinPokeNav::
-	.string "{STR_VAR_1} {STR_VAR_2} wurde(n) in\n"
+	.string "{STR_VAR_1} {STR_VAR_2} wurde in\n"
 	.string "das Pokénav-Verzeichnis eingetragen.$"
 
 gText_ComeBackWithSecretPower::

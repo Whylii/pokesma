@@ -88,77 +88,77 @@ Route103_Text_DaisyPostBattle:
 	.string "mentalen Kur, die mit Düften arbeitet.$"
 
 Route103_Text_AmyIntro:
-	.string "Nora: Hallo, ich bin Nora.\n"
-	.string "Und das ist meine kleine Schwester JO.\l"
+	.string "Lea: Hallo, ich bin Lea.\n"
+	.string "Und das ist meine kleine Schwester Lara.\l"
 	.string "Wir kämpfen stets zusammen!$"
 
 Route103_Text_AmyDefeated:
-	.string "Nora: Oh, wir haben verloren.$"
+	.string "Lea: Oh, wir haben verloren.$"
 
 Route103_Text_AmyPostBattle:
-	.string "Nora: Du musst auf alles Mögliche\n"
+	.string "Lea: Du musst auf alles Mögliche\n"
 	.string "achten, wenn du gegen zwei Trainer\l"
 	.string "antrittst.$"
 
 Route103_Text_AmyNotEnoughPokemon:
-	.string "Nora: Oh oh, du hast nur ein Pokémon\n"
+	.string "Lea: Oh oh, du hast nur ein Pokémon\n"
 	.string "dabei. Damit kannst du nicht gegen uns\l"
 	.string "beide antreten.$"
 
 Route103_Text_LivIntro:
-	.string "Jo: Wir kämpfen als Team…$"
+	.string "Lara: Wir kämpfen als Team…$"
 
 Route103_Text_LivDefeated:
-	.string "Jo: Schwesterherz, wir haben verloren.$"
+	.string "Lara: Schwesterherz, wir haben verloren.$"
 
 Route103_Text_LivPostBattle:
-	.string "Jo: Wir arbeiten sehr gut zusammen, ich\n"
+	.string "Lara: Wir arbeiten sehr gut zusammen, ich\n"
 	.string "und meine große Schwester…\p"
 	.string "Aber wir haben verloren…$"
 
 Route103_Text_AmyLivRegister:
-	.string "Jo: Wirklich, wir sind viel besser\n"
+	.string "Lara: Wirklich, wir sind viel besser\n"
 	.string "geworden… Das beweisen wir dir das\l"
 	.string "nächste Mal!$"
 
 Route103_Text_LivNotEnoughPokemon:
-	.string "Jo: Wenn du gegen uns kämpfen willst,\n"
+	.string "Lara: Wenn du gegen uns kämpfen willst,\n"
 	.string "brauchst du zwei Pokémon. Hast du die\l"
 	.string "nicht, wäre der Kampf unfair!$"
 
 Route103_Text_AmyRematchIntro:
-	.string "Nora: Hallo, ich bin Nora.\n"
-	.string "Und das ist meine kleine Schwester Jo.\l"
+	.string "Lea: Hallo, ich bin Lea.\n"
+	.string "Und das ist meine kleine Schwester Lara.\l"
 	.string "Wir kämpfen stets zusammen!$"
 
 Route103_Text_AmyRematchDefeated:
-	.string "Nora: Aahaaa, buuuh!\n"
+	.string "Lea: Aahaaa, buuuh!\n"
 	.string "Wir haben es nicht geschafft…$"
 
 Route103_Text_AmyRematchPostBattle:
-	.string "Nora: Du musst auf alles Mögliche\n"
+	.string "Lea: Du musst auf alles Mögliche\n"
 	.string "achten, wenn du gegen zwei Trainer\l"
 	.string "antrittst.$"
 
 Route103_Text_AmyRematchNotEnoughPokemon:
-	.string "Nora: Oh oh, du hast nur ein Pokémon\n"
+	.string "Lea: Oh oh, du hast nur ein Pokémon\n"
 	.string "dabei. Damit kannst du nicht gegen uns\l"
 	.string "beide antreten.$"
 
 Route103_Text_LivRematchIntro:
-	.string "Jo: Wir kämpfen als Team…$"
+	.string "Lara: Wir kämpfen als Team…$"
 
 Route103_Text_LivRematchDefeated:
-	.string "Jo: Heul… Große Schwester, wir haben\n"
+	.string "Lara: Heul… Große Schwester, wir haben\n"
 	.string "schon wieder verloren.$"
 
 Route103_Text_LivRematchPostBattle:
-	.string "Jo: Wir haben wieder perfekt zusammen-\n"
+	.string "Lara: Wir haben wieder perfekt zusammen-\n"
 	.string "gearbeitet, ich und meine Schwester…\p"
 	.string "Warum haben wir wieder verloren?$"
 
 Route103_Text_LivRematchNotEnoughPokemon:
-	.string "Jo: Wenn du gegen uns kämpfen willst,\n"
+	.string "Lara: Wenn du gegen uns kämpfen willst,\n"
 	.string "brauchst du zwei Pokémon. Hast du die\l"
 	.string "nicht, wäre der Kampf unfair!$"
 

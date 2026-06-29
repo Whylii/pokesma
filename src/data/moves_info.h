@@ -1154,8 +1154,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Nadelrakete"),
         .description = COMPOUND_STRING(
-            "Schießt Nadeln\n"
-            "strike 2 to 5 times."),
+            "Schießt Nadeln,\n"
+            "trifft 2 bis 5 mal."),
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 25 : 14,
         .type = TYPE_BUG,
@@ -2748,8 +2748,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Teleport"),
         #if B_TELEPORT_BEHAVIOR >= GEN_8
         .description = COMPOUND_STRING(
-            "Ermöglicht Flucht aus\n"
-            "Kampf: Letzt. Wechsel."),
+            "Kehrt langsam zum\n"
+            "Trainer zurück. Wilde\n"
+            "Pokémon fliehen."),
         #else
         .description = COMPOUND_STRING(
             "Ermöglicht Flucht aus\n"
@@ -4864,8 +4865,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Fluch"),
         .description = COMPOUND_STRING(
-            "Wirkt: hängt ab,\n"
-            "ob Anwender Geist ist."),
+            "Wirkung hängt ab,\n"
+            "ob Anwender vom Typ\n"
+            "Geist ist."),
         .effect = EFFECT_CURSE,
         .power = 0,
         .type = B_UPDATED_MOVE_TYPES >= GEN_5 ? TYPE_GHOST : TYPE_MYSTERY,
@@ -9334,8 +9336,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Jauler"),
         .description = COMPOUND_STRING(
-            "Jault, um in sich geh.\n"
-            "Erhöht ANGR.-Wert."),
+            "Jault, um sich und Team\n"
+            "zu motivieren.\n"
+            "Erhöht Angriff."),
         .power = 0,
         .effect = EFFECT_STAT_CHANGE,
         .type = TYPE_NORMAL,
@@ -9534,7 +9537,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Bezirzer"),
         .description = COMPOUND_STRING(
             "Bittet charmant um das\n"
-            "Item des Ggn."),
+            "Item des Gegners."),
         .effect = EFFECT_STEAL_ITEM,
         .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 60 : 40,
         .type = TYPE_NORMAL,

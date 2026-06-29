@@ -52,7 +52,7 @@ script GraniteCave_1F_EventScript_Hiker {
     }
     else {
         msgbox ("Komm zurück, wenn du den
-        Ahmorden hast, und ich bringe
+        Knöchelorden hast, und ich bringe
         dir eine weitere Technik bei.")
     }
     release
