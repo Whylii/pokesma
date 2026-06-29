@@ -25,7 +25,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Battle[] = {
     },
     [EC_INDEX(EC_WORD_LET_ME_WIN)] =
     {
-        .text = COMPOUND_STRING("Ich Siege!"),
+        .text = COMPOUND_STRING("Ich siege!"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CAN_WIN),
         .enabled = TRUE,
     },
@@ -49,25 +49,25 @@ const struct EasyChatWordInfo gEasyChatGroup_Battle[] = {
     },
     [EC_INDEX(EC_WORD_IF_I_WIN)] =
     {
-        .text = COMPOUND_STRING("Gewinne Ich"),
+        .text = COMPOUND_STRING("Gewinne ich"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DECIDE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WHEN_I_WIN)] =
     {
-        .text = COMPOUND_STRING("Siege Ich"),
+        .text = COMPOUND_STRING("Siege ich"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DECIDED),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CAN_T_WIN)] =
     {
-        .text = COMPOUND_STRING("Sieg Unmögl."),
+        .text = COMPOUND_STRING("Sieg unmögl."),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EASY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CAN_WIN)] =
     {
-        .text = COMPOUND_STRING("Kann Siegen"),
+        .text = COMPOUND_STRING("Kann siegen"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ESCAPE),
         .enabled = TRUE,
     },
@@ -97,13 +97,13 @@ const struct EasyChatWordInfo gEasyChatGroup_Battle[] = {
     },
     [EC_INDEX(EC_WORD_TAKE_THAT)] =
     {
-        .text = COMPOUND_STRING("Nimm Das"),
+        .text = COMPOUND_STRING("Nimm das"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GIVE_UP),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_COME_ON)] =
     {
-        .text = COMPOUND_STRING("Komm Schon"),
+        .text = COMPOUND_STRING("Komm schon"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GO),
         .enabled = TRUE,
     },
@@ -199,7 +199,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Battle[] = {
     },
     [EC_INDEX(EC_WORD_TOO_STRONG)] =
     {
-        .text = COMPOUND_STRING("Zu Stark"),
+        .text = COMPOUND_STRING("Zu stark"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_NO_MATCH),
         .enabled = TRUE,
     },
@@ -283,7 +283,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Battle[] = {
     },
     [EC_INDEX(EC_WORD_IF_I_LOSE)] =
     {
-        .text = COMPOUND_STRING("Verliere Ich"),
+        .text = COMPOUND_STRING("Verliere ich"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SPIRIT),
         .enabled = TRUE,
     },
@@ -349,7 +349,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Battle[] = {
     },
     [EC_INDEX(EC_WORD_TOO_WEAK)] =
     {
-        .text = COMPOUND_STRING("Zu Schwach"),
+        .text = COMPOUND_STRING("Zu schwach"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WEAK),
         .enabled = TRUE,
     },

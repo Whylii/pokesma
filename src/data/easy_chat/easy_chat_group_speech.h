@@ -7,7 +7,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Speech[] = {
     },
     [EC_INDEX(EC_WORD_NOT_VERY)] =
     {
-        .text = COMPOUND_STRING("Nicht Sehr"),
+        .text = COMPOUND_STRING("Nicht sehr"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_A_LOT),
         .enabled = TRUE,
     },
@@ -91,7 +91,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Speech[] = {
     },
     [EC_INDEX(EC_WORD_HOW)] =
     {
-        .text = COMPOUND_STRING("Genau Wie"),
+        .text = COMPOUND_STRING("Genau wie"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EVEN_SO),
         .enabled = TRUE,
     },
@@ -103,7 +103,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Speech[] = {
     },
     [EC_INDEX(EC_WORD_ENOUGH)] =
     {
-        .text = COMPOUND_STRING("Reicht Aus"),
+        .text = COMPOUND_STRING("Reicht aus"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FEELING),
         .enabled = TRUE,
     },
@@ -115,7 +115,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Speech[] = {
     },
     [EC_INDEX(EC_WORD_A_LITTLE)] =
     {
-        .text = COMPOUND_STRING("Ein Bisschen"),
+        .text = COMPOUND_STRING("Ein bisschen"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FOR_NOW),
         .enabled = TRUE,
     },
@@ -175,7 +175,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Speech[] = {
     },
     [EC_INDEX(EC_WORD_THAT_S)] =
     {
-        .text = COMPOUND_STRING("Noch Mal"),
+        .text = COMPOUND_STRING("Noch mal"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LIE),
         .enabled = TRUE,
     },
@@ -205,7 +205,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Speech[] = {
     },
     [EC_INDEX(EC_WORD_FOR_NOW)] =
     {
-        .text = COMPOUND_STRING("Für Nun"),
+        .text = COMPOUND_STRING("Für nun"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MOOD),
         .enabled = TRUE,
     },
@@ -259,7 +259,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Speech[] = {
     },
     [EC_INDEX(EC_WORD_AS_MUCH_AS)] =
     {
-        .text = COMPOUND_STRING("So Viel Wie"),
+        .text = COMPOUND_STRING("So viel wie"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_QUITE),
         .enabled = TRUE,
     },
@@ -295,7 +295,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Speech[] = {
     },
     [EC_INDEX(EC_WORD_AS_IF)] =
     {
-        .text = COMPOUND_STRING("Als Ob"),
+        .text = COMPOUND_STRING("Als ob"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SOMEHOW),
         .enabled = TRUE,
     },
@@ -331,7 +331,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Speech[] = {
     },
     [EC_INDEX(EC_WORD_TOO_LATE)] =
     {
-        .text = COMPOUND_STRING("Zu Spät"),
+        .text = COMPOUND_STRING("Zu spät"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TRULY),
         .enabled = TRUE,
     },

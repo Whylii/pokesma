@@ -7,7 +7,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Endings[] = {
     },
     [EC_INDEX(EC_WORD_WILL_BE_HERE)] =
     {
-        .text = COMPOUND_STRING("Wird Da Sein"),
+        .text = COMPOUND_STRING("Wird da sein"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ABOUT),
         .enabled = TRUE,
     },
@@ -31,7 +31,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Endings[] = {
     },
     [EC_INDEX(EC_WORD_IS_IT_QUES)] =
     {
-        .text = COMPOUND_STRING("Es Ist"),
+        .text = COMPOUND_STRING("Es ist"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ANYWHERE),
         .enabled = TRUE,
     },
@@ -43,7 +43,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Endings[] = {
     },
     [EC_INDEX(EC_WORD_GIMME)] =
     {
-        .text = COMPOUND_STRING("Gib Mir"),
+        .text = COMPOUND_STRING("Gib mir"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_AS),
         .enabled = TRUE,
     },
@@ -73,13 +73,13 @@ const struct EasyChatWordInfo gEasyChatGroup_Endings[] = {
     },
     [EC_INDEX(EC_WORD_ISN_T_IT_QUES)] =
     {
-        .text = COMPOUND_STRING("Nicht Wahr?"),
+        .text = COMPOUND_STRING("Nicht wahr?"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_BETTER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LET_S)] =
     {
-        .text = COMPOUND_STRING("Lass Uns"),
+        .text = COMPOUND_STRING("Lass uns"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CAN),
         .enabled = TRUE,
     },
@@ -115,13 +115,13 @@ const struct EasyChatWordInfo gEasyChatGroup_Endings[] = {
     },
     [EC_INDEX(EC_WORD_ISN_T)] =
     {
-        .text = COMPOUND_STRING("Ist Kein"),
+        .text = COMPOUND_STRING("Ist kein"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DOES),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WON_T)] =
     {
-        .text = COMPOUND_STRING("Werde Nicht"),
+        .text = COMPOUND_STRING("Werde nicht"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DOESN_T),
         .enabled = TRUE,
     },
@@ -169,7 +169,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Endings[] = {
     },
     [EC_INDEX(EC_WORD_WASN_T)] =
     {
-        .text = COMPOUND_STRING("War Nicht"),
+        .text = COMPOUND_STRING("War nicht"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_IS),
         .enabled = TRUE,
     },
@@ -187,7 +187,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Endings[] = {
     },
     [EC_INDEX(EC_WORD_HAVEN_T)] =
     {
-        .text = COMPOUND_STRING("Haben Nicht"),
+        .text = COMPOUND_STRING("Haben nicht"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ISN_T_IT_QUES),
         .enabled = TRUE,
     },
@@ -205,7 +205,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Endings[] = {
     },
     [EC_INDEX(EC_WORD_NOT)] =
     {
-        .text = COMPOUND_STRING("Nicht Nur"),
+        .text = COMPOUND_STRING("Nicht nur"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LIKE),
         .enabled = TRUE,
     },
@@ -217,7 +217,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Endings[] = {
     },
     [EC_INDEX(EC_WORD_OK_QUES)] =
     {
-        .text = COMPOUND_STRING("O.k.?"),
+        .text = COMPOUND_STRING("O.K.?"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MAYBE),
         .enabled = TRUE,
     },
@@ -319,7 +319,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Endings[] = {
     },
     [EC_INDEX(EC_WORD_BELONGS_TO)] =
     {
-        .text = COMPOUND_STRING("Gehört Zu"),
+        .text = COMPOUND_STRING("Gehört zu"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TO),
         .enabled = TRUE,
     },
@@ -361,7 +361,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Endings[] = {
     },
     [EC_INDEX(EC_WORD_DIDN_T)] =
     {
-        .text = COMPOUND_STRING("Nicht Getan"),
+        .text = COMPOUND_STRING("Nicht getan"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WHILE),
         .enabled = TRUE,
     },

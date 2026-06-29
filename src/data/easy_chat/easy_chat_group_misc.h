@@ -73,7 +73,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Misc[] = {
     },
     [EC_INDEX(EC_WORD_OUTSIDE)] =
     {
-        .text = COMPOUND_STRING("Aussen"),
+        .text = COMPOUND_STRING("Außen"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FRONT),
         .enabled = TRUE,
     },
@@ -85,7 +85,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Misc[] = {
     },
     [EC_INDEX(EC_WORD_THIS_IS_IT_EXCL)] =
     {
-        .text = COMPOUND_STRING("Das Ist Es!"),
+        .text = COMPOUND_STRING("Das ist es!"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HIGH),
         .enabled = TRUE,
     },
@@ -109,7 +109,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Misc[] = {
     },
     [EC_INDEX(EC_WORD_THESE_WERE)] =
     {
-        .text = COMPOUND_STRING("Diese Waren"),
+        .text = COMPOUND_STRING("Diese waren"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LOWS),
         .enabled = TRUE,
     },

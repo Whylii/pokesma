@@ -1,13 +1,13 @@
 const struct EasyChatWordInfo gEasyChatGroup_Trainer[] = {
     [EC_INDEX(EC_WORD_I_CHOOSE_YOU)] =
     {
-        .text = COMPOUND_STRING("Du Bist Dran"),
+        .text = COMPOUND_STRING("Du bist dran"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_BAG),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GOTCHA)] =
     {
-        .text = COMPOUND_STRING("Hab Dich"),
+        .text = COMPOUND_STRING("Hab dich"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CENTER),
         .enabled = TRUE,
     },

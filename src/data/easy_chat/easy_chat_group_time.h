@@ -109,7 +109,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Time[] = {
     },
     [EC_INDEX(EC_WORD_ANOTHER)] =
     {
-        .text = COMPOUND_STRING("Am Anderen"),
+        .text = COMPOUND_STRING("Am anderen"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LATER),
         .enabled = TRUE,
     },

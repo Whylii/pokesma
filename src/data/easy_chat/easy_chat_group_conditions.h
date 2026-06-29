@@ -1,7 +1,7 @@
 const struct EasyChatWordInfo gEasyChatGroup_Conditions[] = {
     [EC_INDEX(EC_WORD_HOT)] =
     {
-        .text = COMPOUND_STRING("Heiss"),
+        .text = COMPOUND_STRING("Heiß"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ABSENT),
         .enabled = TRUE,
     },
@@ -13,7 +13,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Conditions[] = {
     },
     [EC_INDEX(EC_WORD_EXCESS)] =
     {
-        .text = COMPOUND_STRING("Übermässig"),
+        .text = COMPOUND_STRING("Übermäßig"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_AMUSING),
         .enabled = TRUE,
     },
@@ -115,7 +115,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Conditions[] = {
     },
     [EC_INDEX(EC_WORD_BIG)] =
     {
-        .text = COMPOUND_STRING("Gross"),
+        .text = COMPOUND_STRING("Groß"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EXCELLENT),
         .enabled = TRUE,
     },
@@ -127,7 +127,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Conditions[] = {
     },
     [EC_INDEX(EC_WORD_CLOSE)] =
     {
-        .text = COMPOUND_STRING("Nahe Bei"),
+        .text = COMPOUND_STRING("Nahebei"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EXISTS),
         .enabled = TRUE,
     },
@@ -205,7 +205,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Conditions[] = {
     },
     [EC_INDEX(EC_WORD_OVERWHELMING)] =
     {
-        .text = COMPOUND_STRING("Mitreissend"),
+        .text = COMPOUND_STRING("Mitreißend"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LATE),
         .enabled = TRUE,
     },

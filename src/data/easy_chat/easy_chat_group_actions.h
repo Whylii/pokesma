@@ -79,7 +79,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Actions[] = {
     },
     [EC_INDEX(EC_WORD_WAKES_UP)] =
     {
-        .text = COMPOUND_STRING("Wacht Auf"),
+        .text = COMPOUND_STRING("Wacht auf"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CONCEDE),
         .enabled = TRUE,
     },
@@ -133,7 +133,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Actions[] = {
     },
     [EC_INDEX(EC_WORD_LAVISH)] =
     {
-        .text = COMPOUND_STRING("Grosszügig"),
+        .text = COMPOUND_STRING("Großzügig"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GIVE),
         .enabled = TRUE,
     },
@@ -271,7 +271,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Actions[] = {
     },
     [EC_INDEX(EC_WORD_COULDN_T)] =
     {
-        .text = COMPOUND_STRING("Können Nicht"),
+        .text = COMPOUND_STRING("Können nicht"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SAID),
         .enabled = TRUE,
     },
