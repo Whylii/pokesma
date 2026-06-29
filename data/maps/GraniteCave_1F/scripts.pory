@@ -68,6 +68,8 @@ script GraniteCave_1F_EventScript_PlayerAnsweredNo {
 script GraniteCave_1F_EventScript_AfterBattle {
     msgbox (GraniteCave_1F_Text_AfterBattle, MSGBOX_NPC)
     setflag (FLAG_UNLOCKED_FLASH_TOOL)
+    playfanfare(MUS_OBTAIN_ITEM)
+    waitfanfare()
     release
     end
 }   

@@ -116,15 +116,19 @@ GraniteCave_1F_EventScript_AfterBattle::
 # 70 "data/maps/GraniteCave_1F/scripts.pory"
 	setflag FLAG_UNLOCKED_FLASH_TOOL
 # 71 "data/maps/GraniteCave_1F/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 72 "data/maps/GraniteCave_1F/scripts.pory"
+	waitfanfare
+# 73 "data/maps/GraniteCave_1F/scripts.pory"
 	release
 	end
 
 
-# 129 "data/maps/GraniteCave_1F/scripts.pory"
-
-# 130 "data/maps/GraniteCave_1F/scripts.pory"
-GraniteCave_1F_MapScripts::
 # 131 "data/maps/GraniteCave_1F/scripts.pory"
+
+# 132 "data/maps/GraniteCave_1F/scripts.pory"
+GraniteCave_1F_MapScripts::
+# 133 "data/maps/GraniteCave_1F/scripts.pory"
 	.byte 0
 
 GraniteCave_1F_EventScript_Hiker_Text_0:
@@ -139,7 +143,7 @@ GraniteCave_1F_Text_PkmnSignCave::
 	.string "auf dieser Ebene der Höhle:$"
 
 GraniteCave_1F_Text_GetsDarkAheadHereYouGo::
-# 75 "data/maps/GraniteCave_1F/scripts.pory"
+# 77 "data/maps/GraniteCave_1F/scripts.pory"
 	.string "Hey, du!\n"
 	.string "Hier ist es schrecklich dunkel.\l"
 	.string "Eine Erforschung wird damit schwierig.\p"
@@ -152,7 +156,7 @@ GraniteCave_1F_Text_GetsDarkAheadHereYouGo::
 	.string "Deshalb bekommst du dies von mir.$"
 
 GraniteCave_1F_Text_ExplainFlash::
-# 88 "data/maps/GraniteCave_1F/scripts.pory"
+# 90 "data/maps/GraniteCave_1F/scripts.pory"
 	.string "Bringe einem Pokémon die VM Blitz\n"
 	.string "bei und setze sie ein.\p"
 	.string "Damit wird selbst die dunkelste Höhle\n"
@@ -161,32 +165,32 @@ GraniteCave_1F_Text_ExplainFlash::
 	.string "Orden der Arena von Faustauhaven.$"
 
 GraniteCave_1F_Text_AlreadyHasTool::
-# 97 "data/maps/GraniteCave_1F/scripts.pory"
+# 99 "data/maps/GraniteCave_1F/scripts.pory"
 	.string "Die Laterne dient dir\n"
 	.string "sicher gut. Viel Erfolg!$"
 
 GraniteCave_1F_Text_PlayerRefused::
-# 102 "data/maps/GraniteCave_1F/scripts.pory"
+# 104 "data/maps/GraniteCave_1F/scripts.pory"
 	.string "Also gut. Komm zurück,\n"
 	.string "wenn du bereit bist.$"
 
 GraniteCave_1F_Text_AfterBattle::
-# 107 "data/maps/GraniteCave_1F/scripts.pory"
+# 109 "data/maps/GraniteCave_1F/scripts.pory"
 	.string "Gut gemacht. Ich statte dein\n"
 	.string "Multitool mit der Laterne aus!$"
 
 Text_FlasherIntro::
-# 112 "data/maps/GraniteCave_1F/scripts.pory"
+# 114 "data/maps/GraniteCave_1F/scripts.pory"
 	.string "Ich zeige dir, was\n"
 	.string "Wanderer drauf haben!$"
 
 Text_FlasherDefeat::
-# 117 "data/maps/GraniteCave_1F/scripts.pory"
+# 119 "data/maps/GraniteCave_1F/scripts.pory"
 	.string "Hätte ich doch nur\n"
 	.string "härter trainiert.$"
 
 GraniteCave_1F_Text_BattleOffer::
-# 122 "data/maps/GraniteCave_1F/scripts.pory"
+# 124 "data/maps/GraniteCave_1F/scripts.pory"
 	.string "So, du hast also den Orden\n"
 	.string "gewonnen.\l"
 	.string "Bist du bereit, ein Wanderer\l"

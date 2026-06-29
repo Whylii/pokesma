@@ -1,6 +1,6 @@
 script DewfordTown_EventScript_PkmnSign{
     msgbox ("Hier findest du Informationen über die 
-    Pokémon, die auf dieser Route leben.", MSGBOX_DEFAULT)
+    Pokémon, die in diesem Ort leben.", MSGBOX_DEFAULT)
     dynmultichoice(1, 3, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Wasser", "Angel")
     if (var(VAR_RESULT) == 127) {
         release

@@ -164,3 +164,33 @@ We want to allow the player to purchase the Light Ball, but only after they have
 +        .shopCriteriaFunc = ShopCriteriaHasPikachu,
       },
 ```
+
+### Badge-gated items (pokesma default)
+
+pokesma gates the following items behind badge count. The `pokemart` engine
+filters them automatically — no mart script changes required.
+
+| Item               | Required badges |
+|--------------------|-----------------|
+| Antidote           | 1               |
+| Paralyze Heal      | 1               |
+| Awakening          | 1               |
+| Ice Heal           | 1               |
+| Burn Heal          | 1               |
+| Repel              | 1               |
+| Great Ball         | 2               |
+| Super Potion       | 2               |
+| Super Repel        | 3               |
+| Revive             | 3               |
+| Hyper Potion       | 4               |
+| Full Heal          | 4               |
+| Max Repel          | 4               |
+| Ultra Ball         | 5               |
+| Max Potion         | 6               |
+| Full Restore       | 7               |
+
+Potion and Poké Ball remain always-available.
+
+To add or change a gate, declare another wrapper in `include/shop_criteria.h`
+(e.g. `ShopCriteriaByFiveBadges`) and assign it to the item in `src/data/items.h`.
+

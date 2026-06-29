@@ -31,100 +31,112 @@ FallarborTown_Mart_EventScript_Clerk::
 # 16 "data/maps/FallarborTown_Mart/scripts.pory"
 FallarborTown_Mart_Pokemart:
 # 17 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_POKE_BALL
 # 18 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_SUPER_POTION
+	.2byte ITEM_GREAT_BALL
 # 19 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_ANTIDOTE
+	.2byte ITEM_ULTRA_BALL
 # 20 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_POTION
 # 21 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_SUPER_POTION
 # 22 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_SUPER_REPEL
+	.2byte ITEM_HYPER_POTION
 # 23 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_X_SP_ATK
+	.2byte ITEM_MAX_POTION
 # 24 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_X_SPEED
+	.2byte ITEM_REVIVE
 # 25 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_X_ATTACK
+	.2byte ITEM_FULL_RESTORE
 # 26 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_X_DEFENSE
+	.2byte ITEM_ANTIDOTE
 # 27 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_DIRE_HIT
+	.2byte ITEM_PARALYZE_HEAL
 # 28 "data/maps/FallarborTown_Mart/scripts.pory"
-	.2byte ITEM_GUARD_SPEC
+	.2byte ITEM_AWAKENING
 # 29 "data/maps/FallarborTown_Mart/scripts.pory"
-	pokemartlistend
+	.2byte ITEM_ICE_HEAL
 # 30 "data/maps/FallarborTown_Mart/scripts.pory"
-
+	.2byte ITEM_BURN_HEAL
 # 31 "data/maps/FallarborTown_Mart/scripts.pory"
-FallarborTown_Mart_EventScript_Woman::
+	.2byte ITEM_FULL_HEAL
 # 32 "data/maps/FallarborTown_Mart/scripts.pory"
-	msgbox FallarborTown_Mart_Text_DecidingSkittyEvolve, MSGBOX_NPC
+	.2byte ITEM_REPEL
 # 33 "data/maps/FallarborTown_Mart/scripts.pory"
-	end
+	.2byte ITEM_SUPER_REPEL
 # 34 "data/maps/FallarborTown_Mart/scripts.pory"
-
+	.2byte ITEM_MAX_REPEL
 # 35 "data/maps/FallarborTown_Mart/scripts.pory"
-FallarborTown_Mart_EventScript_PokefanM::
+	pokemartlistend
 # 36 "data/maps/FallarborTown_Mart/scripts.pory"
-	msgbox FallarborTown_Mart_Text_SellNuggetIFound, MSGBOX_NPC
+
 # 37 "data/maps/FallarborTown_Mart/scripts.pory"
-	end
+FallarborTown_Mart_EventScript_Woman::
 # 38 "data/maps/FallarborTown_Mart/scripts.pory"
-
+	msgbox FallarborTown_Mart_Text_DecidingSkittyEvolve, MSGBOX_NPC
 # 39 "data/maps/FallarborTown_Mart/scripts.pory"
-FallarborTown_Mart_EventScript_Skitty::
-# 40 "data/maps/FallarborTown_Mart/scripts.pory"
-	lock
-# 41 "data/maps/FallarborTown_Mart/scripts.pory"
-	faceplayer
-# 42 "data/maps/FallarborTown_Mart/scripts.pory"
-	waitse
-# 43 "data/maps/FallarborTown_Mart/scripts.pory"
-	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
-# 44 "data/maps/FallarborTown_Mart/scripts.pory"
-	msgbox FallarborTown_Mart_Text_Skitty, MSGBOX_DEFAULT
-# 45 "data/maps/FallarborTown_Mart/scripts.pory"
-	waitmoncry
-# 46 "data/maps/FallarborTown_Mart/scripts.pory"
-	release
-# 47 "data/maps/FallarborTown_Mart/scripts.pory"
 	end
+# 40 "data/maps/FallarborTown_Mart/scripts.pory"
+
+# 41 "data/maps/FallarborTown_Mart/scripts.pory"
+FallarborTown_Mart_EventScript_PokefanM::
+# 42 "data/maps/FallarborTown_Mart/scripts.pory"
+	msgbox FallarborTown_Mart_Text_SellNuggetIFound, MSGBOX_NPC
+# 43 "data/maps/FallarborTown_Mart/scripts.pory"
+	end
+# 44 "data/maps/FallarborTown_Mart/scripts.pory"
+
+# 45 "data/maps/FallarborTown_Mart/scripts.pory"
+FallarborTown_Mart_EventScript_Skitty::
+# 46 "data/maps/FallarborTown_Mart/scripts.pory"
+	lock
+# 47 "data/maps/FallarborTown_Mart/scripts.pory"
+	faceplayer
 # 48 "data/maps/FallarborTown_Mart/scripts.pory"
-
+	waitse
 # 49 "data/maps/FallarborTown_Mart/scripts.pory"
-FallarborTown_Mart_Text_DecidingSkittyEvolve:
+	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
 # 50 "data/maps/FallarborTown_Mart/scripts.pory"
-	.string "Ich habe lange überlegt, ob sich mein\n"
+	msgbox FallarborTown_Mart_Text_Skitty, MSGBOX_DEFAULT
 # 51 "data/maps/FallarborTown_Mart/scripts.pory"
-	.string "Eneco entwickeln soll oder nicht.\p"
+	waitmoncry
 # 52 "data/maps/FallarborTown_Mart/scripts.pory"
-	.string "Ich müsste nur diesen Mondstein ein-\n"
+	release
 # 53 "data/maps/FallarborTown_Mart/scripts.pory"
-	.string "setzen, aber das ist eine schwere\l"
+	end
 # 54 "data/maps/FallarborTown_Mart/scripts.pory"
-	.string "Entscheidung…\p"
+
 # 55 "data/maps/FallarborTown_Mart/scripts.pory"
-	.string "Würde es sich entwickeln, wäre es viel\n"
+FallarborTown_Mart_Text_DecidingSkittyEvolve:
 # 56 "data/maps/FallarborTown_Mart/scripts.pory"
-	.string "stärker.\p"
+	.string "Ich habe lange überlegt, ob sich mein\n"
 # 57 "data/maps/FallarborTown_Mart/scripts.pory"
-	.string "Aber es würde auch anders aussehen.$"
+	.string "Eneco entwickeln soll oder nicht.\p"
 # 58 "data/maps/FallarborTown_Mart/scripts.pory"
-
+	.string "Ich müsste nur diesen Mondstein ein-\n"
 # 59 "data/maps/FallarborTown_Mart/scripts.pory"
-FallarborTown_Mart_Text_Skitty:
+	.string "setzen, aber das ist eine schwere\l"
 # 60 "data/maps/FallarborTown_Mart/scripts.pory"
-	.string "Eneco: Miyao?$"
+	.string "Entscheidung…\p"
 # 61 "data/maps/FallarborTown_Mart/scripts.pory"
-
+	.string "Würde es sich entwickeln, wäre es viel\n"
 # 62 "data/maps/FallarborTown_Mart/scripts.pory"
-FallarborTown_Mart_Text_SellNuggetIFound:
+	.string "stärker.\p"
 # 63 "data/maps/FallarborTown_Mart/scripts.pory"
-	.string "Ich habe hier ein Nugget gefunden…\n"
+	.string "Aber es würde auch anders aussehen.$"
 # 64 "data/maps/FallarborTown_Mart/scripts.pory"
-	.string "Das werde ich wohl verkaufen. Was soll\l"
+
 # 65 "data/maps/FallarborTown_Mart/scripts.pory"
+FallarborTown_Mart_Text_Skitty:
+# 66 "data/maps/FallarborTown_Mart/scripts.pory"
+	.string "Eneco: Miyao?$"
+# 67 "data/maps/FallarborTown_Mart/scripts.pory"
+
+# 68 "data/maps/FallarborTown_Mart/scripts.pory"
+FallarborTown_Mart_Text_SellNuggetIFound:
+# 69 "data/maps/FallarborTown_Mart/scripts.pory"
+	.string "Ich habe hier ein Nugget gefunden…\n"
+# 70 "data/maps/FallarborTown_Mart/scripts.pory"
+	.string "Das werde ich wohl verkaufen. Was soll\l"
+# 71 "data/maps/FallarborTown_Mart/scripts.pory"
 	.string "ich sonst damit machen?$"

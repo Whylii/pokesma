@@ -223,6 +223,7 @@ const struct ItemInfo gItemsInfo[] =
         .secondaryId = BALL_GREAT,
         .iconPic = gItemIcon_GreatBall,
         .iconPalette = gItemIconPalette_GreatBall,
+        .shopCriteriaFunc = ShopCriteriaByTwoBadges,
     },
 
     [ITEM_ULTRA_BALL] =
@@ -240,6 +241,7 @@ const struct ItemInfo gItemsInfo[] =
         .secondaryId = BALL_ULTRA,
         .iconPic = gItemIcon_UltraBall,
         .iconPalette = gItemIconPalette_UltraBall,
+        .shopCriteriaFunc = ShopCriteriaByFiveBadges,
     },
 
     [ITEM_MASTER_BALL] =
@@ -697,6 +699,7 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_Potion,
         .iconPalette = gItemIconPalette_SuperPotion,
+        .shopCriteriaFunc = ShopCriteriaByTwoBadges,
     },
 
     [ITEM_HYPER_POTION] =
@@ -722,6 +725,7 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_Potion,
         .iconPalette = gItemIconPalette_HyperPotion,
+        .shopCriteriaFunc = ShopCriteriaByFourBadges,
     },
 
     [ITEM_MAX_POTION] =
@@ -742,6 +746,7 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_LargePotion,
         .iconPalette = gItemIconPalette_MaxPotion,
+        .shopCriteriaFunc = ShopCriteriaBySixBadges,
     },
 
     [ITEM_FULL_RESTORE] =
@@ -762,6 +767,7 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_LargePotion,
         .iconPalette = gItemIconPalette_FullRestore,
+        .shopCriteriaFunc = ShopCriteriaBySevenBadges,
     },
 
     [ITEM_REVIVE] =
@@ -781,6 +787,7 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_Revive,
         .iconPalette = gItemIconPalette_Revive,
+        .shopCriteriaFunc = ShopCriteriaByThreeBadges,
     },
 
     [ITEM_MAX_REVIVE] =
@@ -995,6 +1002,7 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_StatusHeal,
         .iconPalette = gItemIconPalette_Antidote,
+        .shopCriteriaFunc = ShopCriteriaByOneBadge,
     },
 
     [ITEM_PARALYZE_HEAL] =
@@ -1013,6 +1021,7 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_StatusHeal,
         .iconPalette = gItemIconPalette_ParalyzeHeal,
+        .shopCriteriaFunc = ShopCriteriaByOneBadge,
     },
 
     [ITEM_BURN_HEAL] =
@@ -1037,6 +1046,7 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_StatusHeal,
         .iconPalette = gItemIconPalette_BurnHeal,
+        .shopCriteriaFunc = ShopCriteriaByOneBadge,
     },
 
     [ITEM_ICE_HEAL] =
@@ -1061,6 +1071,7 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_StatusHeal,
         .iconPalette = gItemIconPalette_IceHeal,
+        .shopCriteriaFunc = ShopCriteriaByOneBadge,
     },
 
     [ITEM_AWAKENING] =
@@ -1085,6 +1096,7 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_StatusHeal,
         .iconPalette = gItemIconPalette_Awakening,
+        .shopCriteriaFunc = ShopCriteriaByOneBadge,
     },
 
     [ITEM_FULL_HEAL] =
@@ -1101,6 +1113,7 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_FullHeal,
         .iconPalette = gItemIconPalette_FullHeal,
+        .shopCriteriaFunc = ShopCriteriaByFourBadges,
     },
 
     [ITEM_ETHER] =
@@ -2338,6 +2351,7 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_Repel,
         .iconPalette = gItemIconPalette_Repel,
+        .shopCriteriaFunc = ShopCriteriaByOneBadge,
     },
 
     [ITEM_SUPER_REPEL] =
@@ -2356,6 +2370,7 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_Repel,
         .iconPalette = gItemIconPalette_SuperRepel,
+        .shopCriteriaFunc = ShopCriteriaByThreeBadges,
     },
 
     [ITEM_MAX_REPEL] =
@@ -2374,6 +2389,7 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_Repel,
         .iconPalette = gItemIconPalette_MaxRepel,
+        .shopCriteriaFunc = ShopCriteriaByFourBadges,
     },
 
     [ITEM_LURE] =
