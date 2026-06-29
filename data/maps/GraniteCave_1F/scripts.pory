@@ -1,41 +1,133 @@
+script GraniteCave_1F_EventScript_PkmnSign{
+    msgbox (GraniteCave_1F_Text_PkmnSignCave, MSGBOX_SIGN)
+    showmonpic (SPECIES_ZUBAT, 10, 3)
+    playmoncry (SPECIES_ZUBAT, 0)
+    delay (60)
+    hidemonpic
+	showmonpic (SPECIES_MAKUHITA, 10, 3)
+    playmoncry (SPECIES_MAKUHITA, 0)
+    delay (60)
+    hidemonpic
+	showmonpic (SPECIES_ABRA, 10, 3)
+    playmoncry (SPECIES_ABRA, 0)
+    delay (60)
+    hidemonpic
+	showmonpic (SPECIES_GEODUDE, 10, 3)
+    playmoncry (SPECIES_GEODUDE, 0)
+    delay (60)
+    hidemonpic
+    release
+end
+}
+
+text GraniteCave_1F_Text_PkmnSignCave{
+    "Folgende Pokémon verstecken
+    auf dieser Ebene der Höhle:"
+}
+
+script GraniteCave_1F_EventScript_Hiker {
+    lock
+    faceplayer
+    if (checkitem(ITEM_MULTITOOL) == TRUE) {
+        msgbox (GraniteCave_1F_Text_AlreadyHasTool, MSGBOX_NPC)
+    release
+    end
+    }
+    if (checkitem(ITEM_HM_FLASH) == FALSE) {
+        msgbox (GraniteCave_1F_Text_GetsDarkAheadHereYouGo, MSGBOX_NPC)
+        giveitem (ITEM_HM_FLASH)
+        setflag (FLAG_RECEIVED_HM_FLASH)
+        msgbox (GraniteCave_1F_Text_ExplainFlash, MSGBOX_NPC)
+    release
+    end
+    }
+    if (flag(FLAG_BADGE01_GET) && (checkitem(ITEM_MULTITOOL) == FALSE)) {
+        msgbox (GraniteCave_1F_EventScript_BattleOffer, MSGBOX_YESNO)
+        if (var(VAR_RESULT) == NO) {
+            goto (GraniteCave_1F_EventScript_PlayerAnsweredNo)
+        }
+        else {  
+        trainerbattle_single (TRAINER_Flasher_1 Text_FlasherIntro Text_FlasherDefeat GraniteCave_1F_EventScript_AfterBattle)
+            }
+        }
+    else {
+        msgbox ("Komm zurück, wenn du den
+        Ahmorden hast, und ich bringe
+        dir eine weitere Technik bei.")
+    }
+    release
+    end
+}
+
+script GraniteCave_1F_EventScript_PlayerAnsweredNo {
+    msgbox (GraniteCave_1F_Text_PlayerRefused, MSGBOX_NPC)
+    release
+    end
+}
+
+script GraniteCave_1F_EventScript_AfterBattle {
+    msgbox (GraniteCave_1F_Text_AfterBattle, MSGBOX_NPC)
+    giveitem (ITEM_MULTITOOL)
+    release
+    end
+}   
+
+text GraniteCave_1F_Text_GetsDarkAheadHereYouGo {
+"Hey, du!\n"
+"Hier ist es schrecklich dunkel.\l"
+"Eine Erforschung wird damit schwierig.\p"
+"Der Typ, der vorher schon mal hier war…\n"
+"Troy heißt er, glaube ich…\p"
+"Der weiß, wie man Blitz einsetzt, daher\n"
+"wird es ihm wohl gut gehen, aber…\p"
+"Das Motto unter uns Wanderern heißt:\n"
+"Jedem aus der Klemme helfen.\p"
+"Deshalb bekommst du dies von mir.$"
+}
+
+text GraniteCave_1F_Text_ExplainFlash {
+"Bringe einem Pokémon die VM Blitz\n"
+"bei und setze sie ein.\p"
+"Damit wird selbst die dunkelste Höhle\n"
+"von Licht erfüllt.\p"
+"Aber um das zu können, brauchst du den\n"
+"Orden der Arena von Faustauhaven.$"
+}
+
+text GraniteCave_1F_Text_AlreadyHasTool {
+"Die Laterne dient dir
+sicher gut. Viel Erfolg!"
+}
+
+text GraniteCave_1F_Text_PlayerRefused {
+"Also gut. Komm zurück,
+wenn du bereit bist."
+}
+
+text GraniteCave_1F_Text_AfterBattle {
+"Gut gemacht. Ich statte dein
+Multitool mit der Laterne aus!"
+}
+
+text Text_FlasherIntro {
+"Ich zeige dir, was
+Wanderer drauf haben!"
+}
+
+text Text_FlasherDefeat {
+"Hätte ich doch nur
+härter trainiert."
+}
+
+text GraniteCave_1F_EventScript_BattleOffer {
+"So, du hast also den Orden
+gewonnen.
+Bist du bereit, ein Wanderer
+zu sein?"
+}
+
 raw `
 GraniteCave_1F_MapScripts::
 	.byte 0
-
-GraniteCave_1F_EventScript_Hiker::
-	lock
-	faceplayer
-	goto_if_set FLAG_RECEIVED_HM_FLASH, GraniteCave_1F_EventScript_ReceivedFlash
-	msgbox GraniteCave_1F_Text_GetsDarkAheadHereYouGo, MSGBOX_DEFAULT
-	giveitem ITEM_HM_FLASH
-	setflag FLAG_RECEIVED_HM_FLASH
-	msgbox GraniteCave_1F_Text_ExplainFlash, MSGBOX_DEFAULT
-	release
-	end
-
-GraniteCave_1F_EventScript_ReceivedFlash::
-	msgbox GraniteCave_1F_Text_ExplainFlash, MSGBOX_DEFAULT
-	release
-	end
-
-GraniteCave_1F_Text_GetsDarkAheadHereYouGo:
-	.string "Hey, du!\n"
-	.string "Hier ist es schrecklich dunkel.\l"
-	.string "Eine Erforschung wird damit schwierig.\p"
-	.string "Der Typ, der vorher schon mal hier war…\n"
-	.string "Troy heißt er, glaube ich…\p"
-	.string "Der weiß, wie man Blitz einsetzt, daher\n"
-	.string "wird es ihm wohl gut gehen, aber…\p"
-	.string "Das Motto unter uns Wanderern heißt:\n"
-	.string "Jedem aus der Klemme helfen.\p"
-	.string "Deshalb bekommst du dies von mir.$"
-
-GraniteCave_1F_Text_ExplainFlash:
-	.string "Bringe einem Pokémon die VM Blitz\n"
-	.string "bei und setze sie ein.\p"
-	.string "Damit wird selbst die dunkelste Höhle\n"
-	.string "von Licht erfüllt.\p"
-	.string "Aber um das zu können, brauchst du den\n"
-	.string "Orden der Arena von Faustauhaven.$"
 
 `

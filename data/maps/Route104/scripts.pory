@@ -1161,15 +1161,13 @@ Route104_Text_PrettyPetalFlowShop:
 
 Route104_Text_TrainerTipsDoubleBattles:
 	.string "Tipps für Trainer\p"
-	.string "In der Hoenn-Region gibt es Paare von\n"
-	.string "Trainern, die andere zu einem\l"
-	.string "2-gegen-2-Pokémon-Kampf, einem\l"
-	.string "Doppelkampf, herausfordern.\p"
-	.string "In einem Doppelkampf muss der Trainer\n"
-	.string "zwei Pokémon antreten lassen. Das \l"
-	.string "Pokémon links neben der Liste und das\l"
-	.string "an der Spitze der Liste. Achte also auf\l"
-	.string "die Reihenfolge der Pokémon.$"
+	.string "Hast du ein Pokémon gefangen,\n"
+	.string "wird dir die Effektivität\l"
+	.string "deiner Attacken angezeigt.\p"
+	.string "{CIRCLE_DOT} = sehr effektiv,\n"
+	.string "{TRIANGLE} = nicht sehr effektiv,\l"
+	.string "{BIG_MULT_X} = keine Wirkung,\l"
+	.string "{CIRCLE_HOLLOW} = normale Effektivität.$"
 
 Route104_Text_MayWeShouldRegister:
 	.string "Maike: Oh, hi, {PLAYER}{KUN}!\p"

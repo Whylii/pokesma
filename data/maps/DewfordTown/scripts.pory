@@ -1,3 +1,78 @@
+script DewfordTown_EventScript_PkmnSign{
+    msgbox ("Hier findest du Informationen über die 
+    Pokémon, die auf dieser Route leben.", MSGBOX_DEFAULT)
+    dynmultichoice(1, 3, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Wasser", "Angel")
+    if (var(VAR_RESULT) == 127) {
+        release
+    end
+    }
+    switch (var(VAR_RESULT)) {
+    case 0:
+        msgbox (DewfordTown_Text_PkmnSignWasser, MSGBOX_DEFAULT)
+        showmonpic (SPECIES_TENTACOOL, 10, 3)
+        playmoncry (SPECIES_TENTACOOL, 0)
+        delay (60)
+        hidemonpic
+        showmonpic (SPECIES_WINGULL, 10, 3)
+        playmoncry (SPECIES_WINGULL, 0)
+        delay (60)
+        hidemonpic
+        showmonpic (SPECIES_PELIPPER, 10, 3)
+        playmoncry (SPECIES_PELIPPER, 0)
+        delay (60)
+        hidemonpic
+		release
+    end
+    case 1:
+        msgbox (DewfordTown_Text_PkmnSignAngel, MSGBOX_DEFAULT)
+        showmonpic (SPECIES_MAGIKARP, 10, 3)
+        playmoncry (SPECIES_MAGIKARP, 0)
+        delay (60)
+        hidemonpic
+        showmonpic (SPECIES_TENTACOOL, 10, 3)
+        playmoncry (SPECIES_TENTACOOL, 0)
+        delay (60)
+        hidemonpic
+        msgbox (DewfordTown_Text_PkmnSignAngel2, MSGBOX_DEFAULT)
+        showmonpic (SPECIES_MAGIKARP, 10, 3)
+        playmoncry (SPECIES_MAGIKARP, 0)
+        delay (60)
+        hidemonpic
+        showmonpic (SPECIES_TENTACOOL, 10, 3)
+        playmoncry (SPECIES_TENTACOOL, 0)
+        delay (60)
+        hidemonpic
+        showmonpic (SPECIES_WAILMER, 10, 3)
+        playmoncry (SPECIES_WAILMER, 0)
+        delay (60)
+        hidemonpic
+        msgbox (DewfordTown_Text_PkmnSignAngel3, MSGBOX_DEFAULT)
+        showmonpic (SPECIES_WAILMER, 10, 3)
+        playmoncry (SPECIES_WAILMER, 0)
+        delay (60)
+        hidemonpic
+    	release
+    end
+    }
+}
+
+text DewfordTown_Text_PkmnSignWasser{
+    "Folgende Pokémon verstecken
+    sich im Wasser:"
+}
+text DewfordTown_Text_PkmnSignAngel{
+    "Folgende Pokémon verstecken
+    sich tief im Wasser:"
+}
+text DewfordTown_Text_PkmnSignAngel2{
+    "Folgende Pokémon verstecken
+    sich tiefer im Wasser:"
+}
+text DewfordTown_Text_PkmnSignAngel3{
+    "Folgende Pokémon verstecken
+    sich sehr tief im Wasser:"
+}
+
 raw `
 DewfordTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, DewfordTown_OnTransition

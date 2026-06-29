@@ -1,3 +1,18 @@
+script RusturfTunnel_EventScript_PkmnSign{
+    msgbox (RusturfTunnel_Text_PkmnSignCave, MSGBOX_SIGN)
+    showmonpic (SPECIES_WHISMUR, 10, 3)
+    playmoncry (SPECIES_WHISMUR, 0)
+    delay (60)
+    hidemonpic
+    release
+end
+}
+
+text RusturfTunnel_Text_PkmnSignCave{
+    "Folgende Pokémon verstecken
+    sich in dieser Höhle:"
+}
+
 raw `
 RusturfTunnel_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, RusturfTunnel_OnTransition

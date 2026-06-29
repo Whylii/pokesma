@@ -84,7 +84,10 @@ wenn du bereit bist."
 
 text RustboroCity_CuttersHouse_Text_AfterBattle {
 "Gut gemacht. Hier ist
-ein spezielles Multitool!"
+ein spezielles Multitool!
+Dieses kannst du mit weiteren
+Modulen aufrüsten, von
+mir bekommst du die Axt."
 }
 
 text Text_CutterIntro {

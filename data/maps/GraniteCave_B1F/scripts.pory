@@ -1,3 +1,34 @@
+script GraniteCave_B1F_EventScript_PkmnSign{
+    msgbox (GraniteCave_B1F_Text_PkmnSignCave, MSGBOX_SIGN)
+    showmonpic (SPECIES_ZUBAT, 10, 3)
+    playmoncry (SPECIES_ZUBAT, 0)
+    delay (60)
+    hidemonpic
+	showmonpic (SPECIES_ARON, 10, 3)
+    playmoncry (SPECIES_ARON, 0)
+    delay (60)
+    hidemonpic
+	showmonpic (SPECIES_ABRA, 10, 3)
+    playmoncry (SPECIES_ABRA, 0)
+    delay (60)
+    hidemonpic
+	showmonpic (SPECIES_MAKUHITA, 10, 3)
+    playmoncry (SPECIES_MAKUHITA, 0)
+    delay (60)
+    hidemonpic
+	showmonpic (SPECIES_SABLEYE, 10, 3)
+    playmoncry (SPECIES_SABLEYE, 0)
+    delay (60)
+    hidemonpic
+    release
+end
+}
+
+text GraniteCave_B1F_Text_PkmnSignCave{
+    "Folgende Pokémon verstecken
+    auf dieser Ebene der Höhle:"
+}
+
 raw `
 GraniteCave_B1F_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, CaveHole_CheckFallDownHole
