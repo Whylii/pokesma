@@ -16904,8 +16904,8 @@ Level: 15
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 
-=== TRAINER_Flasher_1 ===
-Name: Wanderer
+=== TRAINER_FLASHER_1 ===
+Name: Flash
 Class: Hiker
 Pic: Hiker
 Gender: Male

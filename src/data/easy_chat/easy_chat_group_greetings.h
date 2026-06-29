@@ -1,253 +1,253 @@
 const struct EasyChatWordInfo gEasyChatGroup_Greetings[] = {
     [EC_INDEX(EC_WORD_THANKS)] =
     {
-        .text = COMPOUND_STRING("THANKS"),
+        .text = COMPOUND_STRING("Dank"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_APOLOGIZE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_YES)] =
     {
-        .text = COMPOUND_STRING("YES"),
+        .text = COMPOUND_STRING("Ja"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_APPRECIATE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HERE_GOES)] =
     {
-        .text = COMPOUND_STRING("HERE GOES"),
+        .text = COMPOUND_STRING("Hier Kommt"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_BYE_BYE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HERE_I_COME)] =
     {
-        .text = COMPOUND_STRING("HERE I COME"),
+        .text = COMPOUND_STRING("Hier Bin Ich"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_COME_OVER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HERE_IT_IS)] =
     {
-        .text = COMPOUND_STRING("HERE IT IS"),
+        .text = COMPOUND_STRING("Hier Ist Es"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CONGRATS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_YEAH)] =
     {
-        .text = COMPOUND_STRING("YEAH"),
+        .text = COMPOUND_STRING("Yeah"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_COUNT_ON),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WELCOME)] =
     {
-        .text = COMPOUND_STRING("WELCOME"),
+        .text = COMPOUND_STRING("Willkommen"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EXCUSE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OI)] =
     {
-        .text = COMPOUND_STRING("OI"),
+        .text = COMPOUND_STRING("Au"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EXCUSE_ME),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HOW_DO)] =
     {
-        .text = COMPOUND_STRING("HOW DO"),
+        .text = COMPOUND_STRING("Wie"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FORGIVE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CONGRATS)] =
     {
-        .text = COMPOUND_STRING("CONGRATS"),
+        .text = COMPOUND_STRING("Glückwunsch"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GIVE_ME),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GIVE_ME)] =
     {
-        .text = COMPOUND_STRING("GIVE ME"),
+        .text = COMPOUND_STRING("Gib"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GO_AHEAD),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SORRY)] =
     {
-        .text = COMPOUND_STRING("SORRY"),
+        .text = COMPOUND_STRING("Sorry"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GOOD_BYE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_APOLOGIZE)] =
     {
-        .text = COMPOUND_STRING("APOLOGIZE"),
+        .text = COMPOUND_STRING("Verzeihung"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HELLO),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FORGIVE)] =
     {
-        .text = COMPOUND_STRING("FORGIVE"),
+        .text = COMPOUND_STRING("Schon Gut"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HERE_GOES),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HEY_THERE)] =
     {
-        .text = COMPOUND_STRING("HEY, THERE"),
+        .text = COMPOUND_STRING("Hey Da"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HERE_I_COME),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HELLO)] =
     {
-        .text = COMPOUND_STRING("HELLO"),
+        .text = COMPOUND_STRING("Hallo"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HERE_IT_IS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GOOD_BYE)] =
     {
-        .text = COMPOUND_STRING("GOOD-BYE"),
+        .text = COMPOUND_STRING("Tschüss"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HEY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THANK_YOU)] =
     {
-        .text = COMPOUND_STRING("THANK YOU"),
+        .text = COMPOUND_STRING("Danke Schön"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HEY_THERE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_I_VE_ARRIVED)] =
     {
-        .text = COMPOUND_STRING("I'VE ARRIVED"),
+        .text = COMPOUND_STRING("Ich Bin Da"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HEY_QUES),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PARDON)] =
     {
-        .text = COMPOUND_STRING("PARDON"),
+        .text = COMPOUND_STRING("Pardon"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HI),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_EXCUSE)] =
     {
-        .text = COMPOUND_STRING("EXCUSE"),
+        .text = COMPOUND_STRING("Tagchen"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HOO_HAH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SEE_YA)] =
     {
-        .text = COMPOUND_STRING("SEE YA"),
+        .text = COMPOUND_STRING("Bis Dann"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HOW_DO),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_EXCUSE_ME)] =
     {
-        .text = COMPOUND_STRING("EXCUSE ME"),
+        .text = COMPOUND_STRING("Entschuldige"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HUH_QUES),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WELL_THEN)] =
     {
-        .text = COMPOUND_STRING("WELL, THEN"),
+        .text = COMPOUND_STRING("Nun, Dann"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_I_VE_ARRIVED),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GO_AHEAD)] =
     {
-        .text = COMPOUND_STRING("GO AHEAD"),
+        .text = COMPOUND_STRING("Weiter So"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LISTENING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_APPRECIATE)] =
     {
-        .text = COMPOUND_STRING("APPRECIATE"),
+        .text = COMPOUND_STRING("Schätzen"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MEET_YOU),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HEY_QUES)] =
     {
-        .text = COMPOUND_STRING("HEY?"),
+        .text = COMPOUND_STRING("Hey?"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_NO),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WHAT_S_UP_QUES)] =
     {
-        .text = COMPOUND_STRING("WHAT'S UP?"),
+        .text = COMPOUND_STRING("Was Ist Los?"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_OI),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HUH_QUES)] =
     {
-        .text = COMPOUND_STRING("HUH?"),
+        .text = COMPOUND_STRING("Wie?"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_PARDON),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_NO)] =
     {
-        .text = COMPOUND_STRING("NO"),
+        .text = COMPOUND_STRING("Nein"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SEE_YA),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HI)] =
     {
-        .text = COMPOUND_STRING("HI"),
+        .text = COMPOUND_STRING("Tag Auch"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SMELL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_YEAH_YEAH)] =
     {
-        .text = COMPOUND_STRING("YEAH, YEAH"),
+        .text = COMPOUND_STRING("Yeah, Yeah"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SORRY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BYE_BYE)] =
     {
-        .text = COMPOUND_STRING("BYE-BYE"),
+        .text = COMPOUND_STRING("Tschau"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THANK_YOU),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MEET_YOU)] =
     {
-        .text = COMPOUND_STRING("MEET YOU"),
+        .text = COMPOUND_STRING("Bis Bald"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THANKS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HEY)] =
     {
-        .text = COMPOUND_STRING("HEY"),
+        .text = COMPOUND_STRING("Hey"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WELCOME),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SMELL)] =
     {
-        .text = COMPOUND_STRING("SMELL"),
+        .text = COMPOUND_STRING("Geruch"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WELL_THEN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LISTENING)] =
     {
-        .text = COMPOUND_STRING("LISTENING"),
+        .text = COMPOUND_STRING("Hör Zu"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WHAT_S_UP_QUES),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HOO_HAH)] =
     {
-        .text = COMPOUND_STRING("HOO-HAH"),
+        .text = COMPOUND_STRING("Huh Hah"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_YAHOO),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_YAHOO)] =
     {
-        .text = COMPOUND_STRING("YAHOO"),
+        .text = COMPOUND_STRING("Juchuu"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_YEAH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_YO)] =
     {
-        .text = COMPOUND_STRING("YO"),
+        .text = COMPOUND_STRING("Jepp"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_YEAH_YEAH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_COME_OVER)] =
     {
-        .text = COMPOUND_STRING("COME OVER"),
+        .text = COMPOUND_STRING("Ach, Komm"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_YES),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_COUNT_ON)] =
     {
-        .text = COMPOUND_STRING("COUNT ON"),
+        .text = COMPOUND_STRING("Zählen Auf"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_YO),
         .enabled = TRUE,
     },
