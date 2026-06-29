@@ -883,9 +883,9 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PARTYCUREDFREEZE]                     = COMPOUND_STRING("{B_BUFF1} ist aufgetaut!"),
     [STRINGID_PARTYCUREDFROSTBITE]                  = COMPOUND_STRING("Erfrierung von {B_BUFF1} wurde geheilt!"),
     [STRINGID_PKMNATKNOTLOWERED]                    = COMPOUND_STRING("Angriff von {B_SCR_NAME_WITH_PREFIX} wurde nicht gesenkt!"),
-    [STRINGID_REFLECTWOREOFF]                       = COMPOUND_STRING("Reflektor von {B_DEF_TEAM1} lässt nach!"),
-    [STRINGID_LIGHTSCREENWOREOFF]                   = COMPOUND_STRING("Lichtschild von {B_DEF_TEAM1} lässt nach!"),
-    [STRINGID_AURORAVEILWOREOFF]                    = COMPOUND_STRING("Auroraschleier von {B_DEF_TEAM1} lässt nach!"),
+    [STRINGID_REFLECTWOREOFF]                       = COMPOUND_STRING("Reflektor von {B_DEF_NAME} lässt nach!"),
+    [STRINGID_LIGHTSCREENWOREOFF]                   = COMPOUND_STRING("Lichtschild von {B_DEF_NAME} lässt nach!"),
+    [STRINGID_AURORAVEILWOREOFF]                    = COMPOUND_STRING("Auroraschleier von {B_DEF_NAME} lässt nach!"),
     [STRINGID_STICKYWEBDISAPPEAREDFROMYOU]          = COMPOUND_STRING("Das Klebenetz um dein Team verschwindet!"),
 };
 

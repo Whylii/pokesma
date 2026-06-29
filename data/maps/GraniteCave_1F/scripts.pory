@@ -28,28 +28,28 @@ text GraniteCave_1F_Text_PkmnSignCave{
 script GraniteCave_1F_EventScript_Hiker {
     lock
     faceplayer
-    if (checkitem(ITEM_MULTITOOL) == TRUE) {
+    if (flag(FLAG_UNLOCKED_FLASH_TOOL) == TRUE) {
         msgbox (GraniteCave_1F_Text_AlreadyHasTool, MSGBOX_NPC)
-    release
-    end
+        release
+        end
     }
     if (checkitem(ITEM_HM_FLASH) == FALSE) {
         msgbox (GraniteCave_1F_Text_GetsDarkAheadHereYouGo, MSGBOX_NPC)
         giveitem (ITEM_HM_FLASH)
         setflag (FLAG_RECEIVED_HM_FLASH)
         msgbox (GraniteCave_1F_Text_ExplainFlash, MSGBOX_NPC)
-    release
-    end
+        release
+        end
     }
-    if (flag(FLAG_BADGE01_GET) && (checkitem(ITEM_MULTITOOL) == FALSE)) {
-        msgbox (GraniteCave_1F_EventScript_BattleOffer, MSGBOX_YESNO)
+    if (checkitem(ITEM_MULTITOOL) == TRUE && flag(FLAG_BADGE02_GET) == TRUE) {
+        msgbox (GraniteCave_1F_Text_BattleOffer, MSGBOX_YESNO)
         if (var(VAR_RESULT) == NO) {
             goto (GraniteCave_1F_EventScript_PlayerAnsweredNo)
         }
-        else {  
-        trainerbattle_single (TRAINER_Flasher_1 Text_FlasherIntro Text_FlasherDefeat GraniteCave_1F_EventScript_AfterBattle)
-            }
+        else {
+            trainerbattle_single (TRAINER_Flasher_1 Text_FlasherIntro Text_FlasherDefeat GraniteCave_1F_EventScript_AfterBattle)
         }
+    }
     else {
         msgbox ("Komm zurück, wenn du den
         Ahmorden hast, und ich bringe
@@ -67,7 +67,7 @@ script GraniteCave_1F_EventScript_PlayerAnsweredNo {
 
 script GraniteCave_1F_EventScript_AfterBattle {
     msgbox (GraniteCave_1F_Text_AfterBattle, MSGBOX_NPC)
-    giveitem (ITEM_MULTITOOL)
+    setflag (FLAG_UNLOCKED_FLASH_TOOL)
     release
     end
 }   
@@ -119,7 +119,7 @@ text Text_FlasherDefeat {
 härter trainiert."
 }
 
-text GraniteCave_1F_EventScript_BattleOffer {
+text GraniteCave_1F_Text_BattleOffer {
 "So, du hast also den Orden
 gewonnen.
 Bist du bereit, ein Wanderer

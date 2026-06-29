@@ -82,33 +82,33 @@ RustboroCity_CuttersHouse_EventScript_AfterBattle::
 	end
 
 
-# 107 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-
-# 108 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-RustboroCity_CuttersHouse_MapScripts::
-# 109 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	.byte 0	
 # 110 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 
 # 111 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-RustboroCity_CuttersHouse_EventScript_Lass::
+RustboroCity_CuttersHouse_MapScripts::
 # 112 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	msgbox RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees, MSGBOX_NPC
+	.byte 0	
 # 113 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	end
-# 114 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 
+# 114 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
+RustboroCity_CuttersHouse_EventScript_Lass::
 # 115 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees:
+	msgbox RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees, MSGBOX_NPC
 # 116 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	.string "Als sie die Stadt Metarost City\n"
+	end
 # 117 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	.string "vergrößert haben, hat mein Vater ihnen\l"
+
 # 118 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	.string "geholfen.\p"
+RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees:
 # 119 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	.string "Seine Pokémon fällten die Bäume mit\n"
+	.string "Als sie die Stadt Metarost City\n"
 # 120 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
+	.string "vergrößert haben, hat mein Vater ihnen\l"
+# 121 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
+	.string "geholfen.\p"
+# 122 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
+	.string "Seine Pokémon fällten die Bäume mit\n"
+# 123 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	.string "Zerschneider.$"
 
 RustboroCity_CuttersHouse_EventScript_Cutter_Text_0:
@@ -157,20 +157,23 @@ RustboroCity_CuttersHouse_Text_PlayerRefused::
 RustboroCity_CuttersHouse_Text_AfterBattle::
 # 85 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	.string "Gut gemacht. Hier ist\n"
-	.string "ein spezielles Multitool!$"
+	.string "ein spezielles Multitool!\l"
+	.string "Dieses kannst du mit weiteren\l"
+	.string "Modulen aufrüsten, von\l"
+	.string "mir bekommst du die Axt.$"
 
 Text_CutterIntro::
-# 90 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
+# 93 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	.string "Ich zeige dir, was\n"
 	.string "Holzfäller drauf haben!$"
 
 Text_CutterDefeat::
-# 95 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
+# 98 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	.string "Hätte ich doch nur\n"
 	.string "härter trainiert.$"
 
 RustboroCity_CuttersHouse_EventScript_BattleOffer::
-# 100 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
+# 103 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	.string "So, du hast also den Orden\n"
 	.string "gewonnen.\l"
 	.string "Bist du bereit, ein Holzfäller\l"

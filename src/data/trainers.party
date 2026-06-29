@@ -16902,3 +16902,29 @@ IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 Kleavor @ Focus Sash
 Level: 15
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+
+
+=== TRAINER_Flasher_1 ===
+Name: Wanderer
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: Yes
+AI: Check Bad Move
+
+Geodude
+Level: 13
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+
+Machop
+Level: 13
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+
+Graveler
+Level: 15
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+
+Machoke @ Focus Sash
+Level: 15
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
