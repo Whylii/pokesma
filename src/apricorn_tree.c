@@ -10,12 +10,12 @@
 
 static bool32 IsApricornTreePicked(u32 id)
 {
-    return GetApricornTreeStage(id) == APRICORN_STAGE_SAPLING;
+    return GetApricornTreeStage(id) < APRICORN_STAGE_MATURE;
 }
 
 u8 GetApricornTreeStage(u32 id)
 {
-    if (id > APRICORN_TREE_COUNT)
+    if (id >= APRICORN_TREE_COUNT)
         return APRICORN_STAGE_SAPLING;
 #if (APRICORN_TREE_COUNT > 0)
     return gSaveBlock3Ptr->apricornTrees[id];
@@ -26,7 +26,7 @@ u8 GetApricornTreeStage(u32 id)
 
 void SetApricornTreeStage(u32 id, u8 stage)
 {
-    if (id > APRICORN_TREE_COUNT)
+    if (id >= APRICORN_TREE_COUNT)
         return;
 #if (APRICORN_TREE_COUNT > 0)
     gSaveBlock3Ptr->apricornTrees[id] = stage;
@@ -41,7 +41,7 @@ void AdvanceApricornTrees(void)
     {
         u8 stage = gSaveBlock3Ptr->apricornTrees[i];
         if (stage < APRICORN_STAGE_MATURE)
-            gSaveBlock3Ptr->apricornTrees[i] = stage + 1;
+            gSaveBlock3Ptr->apricornTrees[i] = APRICORN_STAGE_MATURE;
     }
 #endif
 }
