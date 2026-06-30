@@ -4436,6 +4436,14 @@ void MovementType_ApricornTreeGrowth(struct Sprite *sprite)
     }
 }
 
+void ApricornTreeResetSprite(u8 objectEventId)
+{
+    struct ObjectEvent *objectEvent = &gObjectEvents[objectEventId];
+    struct Sprite *sprite = &gSprites[objectEvent->spriteId];
+    sprite->sBerryTreeFlags &= ~BERRY_FLAG_SET_GFX;
+    UpdateApricornTreeSprite(objectEvent, sprite);
+}
+
 // BERRYTREEFUNC_NORMAL
 bool8 MovementType_BerryTreeGrowth_Normal(struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {

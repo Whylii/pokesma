@@ -534,6 +534,7 @@ bool8 MovementAction_EmoteDoubleExclamationMark_Step0(struct ObjectEvent *, stru
 bool8 PlayerIsUnderWaterfall(struct ObjectEvent *objectEvent);
 
 u8 GetObjectEventApricornTreeId(u8 objectEventId);
+void ApricornTreeResetSprite(u8 objectEventId);
 u16 GetGraphicsIdForMon(enum Species species, bool32 shiny, bool32 female);
 
 // Overworld Wild Encounter

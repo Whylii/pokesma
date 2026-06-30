@@ -15,7 +15,7 @@
 #include "constants/vars.h"
 #include "constants/species.h"
 #include "constants/pokedex.h"
-#include "constants/apricorn_tree.h"
+#include "apricorn_tree.h"
 #include "constants/berry.h"
 #include "constants/maps.h"
 #include "constants/pokemon.h"
@@ -267,7 +267,7 @@ struct SaveBlock3
 #endif
     u8 dexNavChain;
 #if APRICORN_TREE_COUNT > 0
-    u8 apricornTrees[APRICORN_TREE_COUNT];
+    struct ApricornTreeSave apricornTrees[APRICORN_TREE_COUNT];
 #endif
 }; /* max size 1624 bytes */
 

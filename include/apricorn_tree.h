@@ -3,6 +3,12 @@
 
 #include "constants/apricorn_tree.h"
 
+struct ApricornTreeSave
+{
+    u8 stage;
+    u8 count;
+};
+
 u8 GetApricornTreeStage(u32 id);
 void SetApricornTreeStage(u32 id, u8 stage);
 void AdvanceApricornTrees(void);

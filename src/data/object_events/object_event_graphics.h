@@ -468,8 +468,13 @@ const u16 gObjectEventPal_StrangeBall[] = INCGFX_U16("graphics/object_events/pic
 const u32 gFieldEffectObjectPic_CaveDust[] = INCGFX_U32("graphics/field_effects/pics/cave_dust.png", ".4bpp");
 const u16 gFieldEffectObjectPalette_CaveDust[] = INCGFX_U16("graphics/field_effects/palettes/cave_dust.pal", ".gbapal");
 
-const u32 gObjectEventPic_ApricornTreePink[] = INCGFX_U32("graphics/object_events/pics/misc/apricorn_tree_pink.png", ".4bpp", "-mwidth 2 -mheight 2");
-const u32 gObjectEventPic_ApricornTreeBlue[] = INCGFX_U32("graphics/object_events/pics/misc/apricorn_tree_blue.png", ".4bpp", "-mwidth 2 -mheight 2");
+const u32 gObjectEventPic_ApricornTreeRed[] = INCGFX_U32("graphics/object_events/pics/misc/apricorn_red.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_ApricornTreePink[] = INCGFX_U32("graphics/object_events/pics/misc/apricorn_pink.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_ApricornTreeWhite[] = INCGFX_U32("graphics/object_events/pics/misc/apricorn_white.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_ApricornTreeYellow[] = INCGFX_U32("graphics/object_events/pics/misc/apricorn_yellow.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_ApricornTreeBlue[] = INCGFX_U32("graphics/object_events/pics/misc/apricorn_blue.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_ApricornTreeBlack[] = INCGFX_U32("graphics/object_events/pics/misc/apricorn_black.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_ApricornTreeGreen[] = INCGFX_U32("graphics/object_events/pics/misc/apricorn_green.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u16 gObjectEventPal_ApricornTreePink[] = INCGFX_U16("graphics/object_events/palettes/apricorn_tree_pink.pal", ".gbapal");
 const u16 gObjectEventPal_ApricornTreeBlue[] = INCGFX_U16("graphics/object_events/palettes/apricorn_tree_blue.pal", ".gbapal");
 
