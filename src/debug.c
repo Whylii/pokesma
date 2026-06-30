@@ -3737,15 +3737,22 @@ static void DebugAction_PCBag_Fill_PCBoxes_Fast(u8 taskId) //Credit: Sierraffini
 
     for (boxId = 0; boxId < TOTAL_BOXES_COUNT; boxId++)
     {
-        for (boxPosition = 0; boxPosition < IN_BOX_COUNT; boxPosition++, species++)
+        for (boxPosition = 0; boxPosition < IN_BOX_COUNT; boxPosition++)
         {
             if (!GetBoxMonData(&gPokemonStoragePtr->boxes[boxId][boxPosition], MON_DATA_SANITY_HAS_SPECIES))
             {
+                while (!IsSpeciesEnabled(species))
+                {
+                    species++;
+                    if (species >= NUM_SPECIES)
+                        species = SPECIES_BULBASAUR;
+                }
                 StringCopy(speciesName, GetSpeciesName(species));
                 SetBoxMonData(&boxMon, MON_DATA_NICKNAME, &speciesName);
                 SetBoxMonData(&boxMon, MON_DATA_SPECIES, &species);
                 GiveBoxMonInitialMoveset(&boxMon);
                 gPokemonStoragePtr->boxes[boxId][boxPosition] = boxMon;
+                species++;
             }
         }
     }
@@ -3771,6 +3778,12 @@ static void DebugAction_PCBag_Fill_PCBoxes_Slow(u8 taskId)
             {
                 if (!spaceAvailable)
                     PlayBGM(MUS_RG_MYSTERY_GIFT);
+                while (!IsSpeciesEnabled(species))
+                {
+                    species++;
+                    if (species >= NUM_SPECIES)
+                        species = SPECIES_BULBASAUR;
+                }
                 CreateBoxMon(&boxMon, species, 100, Random32(), OTID_STRUCT_PLAYER_ID);
                 SetBoxMonIVs(&boxMon, USE_RANDOM_IVS);
                 GiveBoxMonInitialMoveset(&boxMon);
