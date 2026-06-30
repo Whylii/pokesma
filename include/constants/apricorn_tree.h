@@ -84,7 +84,21 @@ enum ApricornType
 
 // Trees
 #define APRICORN_TREE_NONE 0
+#define APRICORN_TREE_PWOODS_RED1 1
+#define APRICORN_TREE_PWOODS_BLUE1 2
+#define APRICORN_TREE_PWOODS_YELLOW1 3
 
-#define APRICORN_TREE_COUNT 0
+#define APRICORN_TREE_COUNT 32
+
+// Stages: 0 = smallest sapling, 5 = fully grown / pickable.
+enum ApricornTreeStage
+{
+    APRICORN_STAGE_SAPLING = 0,
+    APRICORN_STAGE_GROWING_1 = 1,
+    APRICORN_STAGE_GROWING_2 = 2,
+    APRICORN_STAGE_BUDDING = 3,
+    APRICORN_STAGE_FLOWERING = 4,
+    APRICORN_STAGE_MATURE = 5,
+};
 
 #endif //GUARD_CONSTANTS_APRICORN_TREE_H

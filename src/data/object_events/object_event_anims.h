@@ -1197,6 +1197,22 @@ static const union AnimCmd *const sAnimTable_Inanimate[] = {
     [ANIM_STAY_STILL] = sAnim_StayStill,
 };
 
+static const union AnimCmd sAnim_ApricornStage0[] = { ANIMCMD_FRAME(0, 63), ANIMCMD_JUMP(0) };
+static const union AnimCmd sAnim_ApricornStage1[] = { ANIMCMD_FRAME(1, 63), ANIMCMD_JUMP(0) };
+static const union AnimCmd sAnim_ApricornStage2[] = { ANIMCMD_FRAME(2, 63), ANIMCMD_JUMP(0) };
+static const union AnimCmd sAnim_ApricornStage3[] = { ANIMCMD_FRAME(3, 63), ANIMCMD_JUMP(0) };
+static const union AnimCmd sAnim_ApricornStage4[] = { ANIMCMD_FRAME(4, 63), ANIMCMD_JUMP(0) };
+static const union AnimCmd sAnim_ApricornStage5[] = { ANIMCMD_FRAME(5, 63), ANIMCMD_JUMP(0) };
+
+static const union AnimCmd *const sAnimTable_ApricornTree[] = {
+    [APRICORN_STAGE_SAPLING]    = sAnim_ApricornStage0,
+    [APRICORN_STAGE_GROWING_1]  = sAnim_ApricornStage1,
+    [APRICORN_STAGE_GROWING_2]  = sAnim_ApricornStage2,
+    [APRICORN_STAGE_BUDDING]    = sAnim_ApricornStage3,
+    [APRICORN_STAGE_FLOWERING]  = sAnim_ApricornStage4,
+    [APRICORN_STAGE_MATURE]     = sAnim_ApricornStage5,
+};
+
 static const union AnimCmd *const sAnimTable_QuintyPlump[] = {
     [ANIM_STD_FACE_SOUTH] = sAnim_QuintyPlumpFaceSouth,
     [ANIM_STD_FACE_NORTH] = sAnim_QuintyPlumpFaceNorth,

@@ -4468,22 +4468,40 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BallLight = {
     .images = gFieldEffectObjectPicTable_BallLight,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ApricornTree = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ApricornTreePink = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
+    .paletteTag = OBJ_EVENT_PAL_TAG_APRICORN_TREE_PINK,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
-    .size = 128,
+    .size = 256,
     .width = 16,
-    .height = 16,
+    .height = 32,
     .paletteSlot = PALSLOT_NPC_3,
     .shadowSize = SHADOW_SIZE_S,
     .inanimate = TRUE,
     .compressed = FALSE,
     .tracks = TRACKS_NONE,
-    .oam = &gObjectEventBaseOam_16x16,
-    .subspriteTables = sOamTables_16x16,
-    .anims = sAnimTable_Inanimate,
-    .images = sPicTable_ApricornTree,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_ApricornTree,
+    .images = sPicTable_ApricornTreePink,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ApricornTreeBlue = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_APRICORN_TREE_BLUE,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_3,
+    .shadowSize = SHADOW_SIZE_S,
+    .inanimate = TRUE,
+    .compressed = FALSE,
+    .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_ApricornTree,
+    .images = sPicTable_ApricornTreeBlue,
 };
 
 #if IS_FRLG

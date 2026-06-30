@@ -1,5 +1,6 @@
 #include "global.h"
 #include "malloc.h"
+#include "apricorn_tree.h"
 #include "battle_anim.h"
 #include "battle_pyramid.h"
 #include "battle_util.h"
@@ -274,6 +275,7 @@ static void (*const sMovementTypeCallbacks[])(struct Sprite *) =
     [MOVEMENT_TYPE_FACE_RIGHT] = MovementType_FaceDirection,
     [MOVEMENT_TYPE_PLAYER] = MovementType_Player,
     [MOVEMENT_TYPE_BERRY_TREE_GROWTH] = MovementType_BerryTreeGrowth,
+    [MOVEMENT_TYPE_APRICORN_TREE_GROWTH] = MovementType_ApricornTreeGrowth,
     [MOVEMENT_TYPE_FACE_DOWN_AND_UP] = MovementType_FaceDownAndUp,
     [MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT] = MovementType_FaceLeftAndRight,
     [MOVEMENT_TYPE_FACE_UP_AND_LEFT] = MovementType_FaceUpAndLeft,
@@ -409,6 +411,7 @@ const u8 gInitialMovementTypeFacingDirections[NUM_MOVEMENT_TYPES] = {
     [MOVEMENT_TYPE_FACE_RIGHT] = DIR_EAST,
     [MOVEMENT_TYPE_PLAYER] = DIR_SOUTH,
     [MOVEMENT_TYPE_BERRY_TREE_GROWTH] = DIR_SOUTH,
+    [MOVEMENT_TYPE_APRICORN_TREE_GROWTH] = DIR_SOUTH,
     [MOVEMENT_TYPE_FACE_DOWN_AND_UP] = DIR_SOUTH,
     [MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT] = DIR_WEST,
     [MOVEMENT_TYPE_FACE_UP_AND_LEFT] = DIR_NORTH,
@@ -527,6 +530,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_RedLeaf,               OBJ_EVENT_PAL_TAG_RED_LEAF},
     {gObjectEventPal_Deoxys,                OBJ_EVENT_PAL_TAG_DEOXYS},
     {gObjectEventPal_BirthIslandStone,      OBJ_EVENT_PAL_TAG_BIRTH_ISLAND_STONE},
+    {gObjectEventPal_ApricornTreePink,      OBJ_EVENT_PAL_TAG_APRICORN_TREE_PINK},
+    {gObjectEventPal_ApricornTreeBlue,      OBJ_EVENT_PAL_TAG_APRICORN_TREE_BLUE},
     {gObjectEventPal_HoOh,                  OBJ_EVENT_PAL_TAG_HO_OH},
     {gObjectEventPal_Lugia,                 OBJ_EVENT_PAL_TAG_LUGIA},
     {gObjectEventPal_RubySapphireBrendan,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
@@ -4390,6 +4395,53 @@ void MovementType_BerryTreeGrowth(struct Sprite *sprite)
 static bool8 ObjectEventCB2_BerryTree(struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     return gMovementTypeFuncs_BerryTreeGrowth[sprite->sTypeFuncId](objectEvent, sprite);
+}
+
+static void UpdateApricornTreeSprite(struct ObjectEvent *objectEvent, struct Sprite *sprite)
+{
+    u32 id = objectEvent->trainerRange_berryTreeId;
+    u8 stage = GetApricornTreeStage(id);
+    enum ApricornType apricornType = GetApricornTypeByApricornTreeId(id);
+    u16 graphicsId;
+    const struct SpriteFrameImage *picTable;
+
+    switch (apricornType)
+    {
+    case APRICORN_RED:    picTable = sPicTable_ApricornTreeRed;    graphicsId = OBJ_EVENT_GFX_APRICORN_TREE_PINK; break;
+    case APRICORN_PINK:   picTable = sPicTable_ApricornTreePink;   graphicsId = OBJ_EVENT_GFX_APRICORN_TREE_PINK; break;
+    case APRICORN_WHITE:  picTable = sPicTable_ApricornTreeWhite;  graphicsId = OBJ_EVENT_GFX_APRICORN_TREE_PINK; break;
+    case APRICORN_YELLOW: picTable = sPicTable_ApricornTreeYellow; graphicsId = OBJ_EVENT_GFX_APRICORN_TREE_PINK; break;
+    case APRICORN_BLUE:   picTable = sPicTable_ApricornTreeBlue;   graphicsId = OBJ_EVENT_GFX_APRICORN_TREE_BLUE; break;
+    case APRICORN_BLACK:  picTable = sPicTable_ApricornTreeBlack;  graphicsId = OBJ_EVENT_GFX_APRICORN_TREE_BLUE; break;
+    case APRICORN_GREEN:  picTable = sPicTable_ApricornTreeGreen;  graphicsId = OBJ_EVENT_GFX_APRICORN_TREE_BLUE; break;
+    default:              picTable = sPicTable_ApricornTreeRed;    graphicsId = OBJ_EVENT_GFX_APRICORN_TREE_PINK; break;
+    }
+
+    objectEvent->graphicsId = graphicsId;
+    objectEvent->invisible = FALSE;
+    sprite->invisible = FALSE;
+    sprite->images = picTable;
+    sprite->animNum = stage;
+    StartSpriteAnim(sprite, stage);
+}
+
+void MovementType_ApricornTreeGrowth(struct Sprite *sprite)
+{
+    struct ObjectEvent *objectEvent = &gObjectEvents[sprite->sObjEventId];
+
+    if (!(sprite->sBerryTreeFlags & BERRY_FLAG_SET_GFX))
+    {
+        UpdateApricornTreeSprite(objectEvent, sprite);
+        sprite->sBerryTreeFlags |= BERRY_FLAG_SET_GFX;
+    }
+}
+
+void ApricornTreeResetSprite(u8 objectEventId)
+{
+    struct ObjectEvent *objectEvent = &gObjectEvents[objectEventId];
+    struct Sprite *sprite = &gSprites[objectEvent->spriteId];
+    sprite->sBerryTreeFlags &= ~BERRY_FLAG_SET_GFX;
+    UpdateApricornTreeSprite(objectEvent, sprite);
 }
 
 // BERRYTREEFUNC_NORMAL

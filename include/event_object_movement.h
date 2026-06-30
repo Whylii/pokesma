@@ -288,6 +288,7 @@ void MovementType_WanderLeftAndRight(struct Sprite *sprite);
 void MovementType_FaceDirection(struct Sprite *sprite);
 void MovementType_Player(struct Sprite *sprite);
 void MovementType_BerryTreeGrowth(struct Sprite *sprite);
+void MovementType_ApricornTreeGrowth(struct Sprite *sprite);
 void MovementType_FaceDownAndUp(struct Sprite *sprite);
 void MovementType_FaceLeftAndRight(struct Sprite *sprite);
 void MovementType_FaceUpAndLeft(struct Sprite *sprite);
@@ -533,6 +534,7 @@ bool8 MovementAction_EmoteDoubleExclamationMark_Step0(struct ObjectEvent *, stru
 bool8 PlayerIsUnderWaterfall(struct ObjectEvent *objectEvent);
 
 u8 GetObjectEventApricornTreeId(u8 objectEventId);
+void ApricornTreeResetSprite(u8 objectEventId);
 u16 GetGraphicsIdForMon(enum Species species, bool32 shiny, bool32 female);
 
 // Overworld Wild Encounter
