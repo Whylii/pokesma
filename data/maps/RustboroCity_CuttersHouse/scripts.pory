@@ -41,6 +41,8 @@ script RustboroCity_CuttersHouse_EventScript_PlayerAnsweredNo {
 script RustboroCity_CuttersHouse_EventScript_AfterBattle {
     msgbox (RustboroCity_CuttersHouse_Text_AfterBattle, MSGBOX_NPC)
     giveitem (ITEM_MULTITOOL)
+    playfanfare(MUS_OBTAIN_ITEM)
+    waitfanfare()
     release
     end
 }   

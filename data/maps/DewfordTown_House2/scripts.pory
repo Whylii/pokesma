@@ -45,7 +45,7 @@ DewfordTown_House2_Text_NoRoom:
 DewfordTown_House2_Text_ExplainSilkScarf:
 	.string "Dieser Seidenschal steigert die Stärke\n"
 	.string "der Normalen Attacken.\p"
-	.string "Dieser wunderbare SCHAL passt einfach\n"
+	.string "Dieser wunderbare Schal passt einfach\n"
 	.string "zu fast allen Pokémon!$"
 
 DewfordTown_House2_Text_BrawlySoCool:
