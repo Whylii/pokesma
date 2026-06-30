@@ -288,6 +288,7 @@ void MovementType_WanderLeftAndRight(struct Sprite *sprite);
 void MovementType_FaceDirection(struct Sprite *sprite);
 void MovementType_Player(struct Sprite *sprite);
 void MovementType_BerryTreeGrowth(struct Sprite *sprite);
+void MovementType_ApricornTreeGrowth(struct Sprite *sprite);
 void MovementType_FaceDownAndUp(struct Sprite *sprite);
 void MovementType_FaceLeftAndRight(struct Sprite *sprite);
 void MovementType_FaceUpAndLeft(struct Sprite *sprite);

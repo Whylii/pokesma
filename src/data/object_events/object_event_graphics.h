@@ -468,7 +468,10 @@ const u16 gObjectEventPal_StrangeBall[] = INCGFX_U16("graphics/object_events/pic
 const u32 gFieldEffectObjectPic_CaveDust[] = INCGFX_U32("graphics/field_effects/pics/cave_dust.png", ".4bpp");
 const u16 gFieldEffectObjectPalette_CaveDust[] = INCGFX_U16("graphics/field_effects/palettes/cave_dust.pal", ".gbapal");
 
-const u32 gObjectEventPic_ApricornTree[] = INCGFX_U32("graphics/object_events/pics/misc/apricorn_tree.png", ".4bpp", "-mwidth 2 -mheight 2");
+const u32 gObjectEventPic_ApricornTreePink[] = INCGFX_U32("graphics/object_events/pics/misc/apricorn_tree_pink.png", ".4bpp", "-mwidth 2 -mheight 2");
+const u32 gObjectEventPic_ApricornTreeBlue[] = INCGFX_U32("graphics/object_events/pics/misc/apricorn_tree_blue.png", ".4bpp", "-mwidth 2 -mheight 2");
+const u16 gObjectEventPal_ApricornTreePink[] = INCGFX_U16("graphics/object_events/palettes/apricorn_tree_pink.pal", ".gbapal");
+const u16 gObjectEventPal_ApricornTreeBlue[] = INCGFX_U16("graphics/object_events/palettes/apricorn_tree_blue.pal", ".gbapal");
 
 const u32 gFieldEffectObjectPic_ShinySparkle[] = INCGFX_U32("graphics/field_effects/pics/shiny_sparkle.png", ".4bpp", "-mwidth 2 -mheight 4");
 

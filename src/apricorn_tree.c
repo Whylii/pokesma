@@ -8,10 +8,41 @@
 #include "string_util.h"
 #include "data/apricorns.h"
 
-void DailyResetApricornTrees(void)
+static bool32 IsApricornTreePicked(u32 id)
+{
+    return GetApricornTreeStage(id) == APRICORN_STAGE_SAPLING;
+}
+
+u8 GetApricornTreeStage(u32 id)
+{
+    if (id > APRICORN_TREE_COUNT)
+        return APRICORN_STAGE_SAPLING;
+#if (APRICORN_TREE_COUNT > 0)
+    return gSaveBlock3Ptr->apricornTrees[id];
+#else
+    return APRICORN_STAGE_SAPLING;
+#endif
+}
+
+void SetApricornTreeStage(u32 id, u8 stage)
+{
+    if (id > APRICORN_TREE_COUNT)
+        return;
+#if (APRICORN_TREE_COUNT > 0)
+    gSaveBlock3Ptr->apricornTrees[id] = stage;
+#endif
+}
+
+void AdvanceApricornTrees(void)
 {
 #if (APRICORN_TREE_COUNT > 0)
-    memset(&gSaveBlock3Ptr->apricornTrees[0], 0, NUM_APRICORN_TREE_BYTES);
+    u32 i;
+    for (i = 1; i < APRICORN_TREE_COUNT; i++)
+    {
+        u8 stage = gSaveBlock3Ptr->apricornTrees[i];
+        if (stage < APRICORN_STAGE_MATURE)
+            gSaveBlock3Ptr->apricornTrees[i] = stage + 1;
+    }
 #endif
 }
 
@@ -33,7 +64,7 @@ void ObjectEventInteractionPickApricornTree(void)
     if (gSpecialVar_0x8006)
     {
         AddBagItem((enum Item)apricorn, GetApricornCountByApricornTreeId(id));
-        SetApricornTreePicked(id);
+        SetApricornTreeStage(id, APRICORN_STAGE_SAPLING);
     }
     gSpecialVar_Result = GetItemPocket((enum Item)apricorn);
 }
@@ -60,27 +91,4 @@ u8 GetApricornCountByApricornTreeId(u32 id)
     }
     else
         return 0;
-}
-
-bool8 IsApricornTreePicked(u32 id)
-{
-    if (id > APRICORN_TREE_COUNT)
-        return TRUE;
-
-#if (APRICORN_TREE_COUNT > 0)
-    return gSaveBlock3Ptr->apricornTrees[id / 8] & (1 << (id % 8));
-#else
-    return TRUE;
-#endif
-}
-
-void SetApricornTreePicked(u32 id)
-{
-    if (id > APRICORN_TREE_COUNT)
-        return;
-
-#if (APRICORN_TREE_COUNT > 0)
-    u8 *flagByte = &gSaveBlock3Ptr->apricornTrees[id / 8];
-    *flagByte = (*flagByte) | (1 << (id % 8));
-#endif
 }

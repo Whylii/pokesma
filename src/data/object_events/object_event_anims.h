@@ -1197,6 +1197,15 @@ static const union AnimCmd *const sAnimTable_Inanimate[] = {
     [ANIM_STAY_STILL] = sAnim_StayStill,
 };
 
+static const union AnimCmd *const sAnimTable_ApricornTree[] = {
+    [APRICORN_STAGE_SAPLING]    = sAnim_StayStill,
+    [APRICORN_STAGE_GROWING_1]  = sAnim_StayStill,
+    [APRICORN_STAGE_GROWING_2]  = sAnim_StayStill,
+    [APRICORN_STAGE_BUDDING]    = sAnim_StayStill,
+    [APRICORN_STAGE_FLOWERING]  = sAnim_StayStill,
+    [APRICORN_STAGE_MATURE]     = sAnim_StayStill,
+};
+
 static const union AnimCmd *const sAnimTable_QuintyPlump[] = {
     [ANIM_STD_FACE_SOUTH] = sAnim_QuintyPlumpFaceSouth,
     [ANIM_STD_FACE_NORTH] = sAnim_QuintyPlumpFaceNorth,

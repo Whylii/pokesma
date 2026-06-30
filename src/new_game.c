@@ -8,6 +8,7 @@
 #include "pokemon_size_record.h"
 #include "script.h"
 #include "lottery_corner.h"
+#include "apricorn_tree.h"
 #include "play_time.h"
 #include "mauville_old_man.h"
 #include "match_call.h"
@@ -192,6 +193,13 @@ void NewGameInitData(void)
     ResetGabbyAndTy();
     ClearSecretBases();
     ClearBerryTrees();
+#if APRICORN_TREE_COUNT > 0
+    {
+        u32 i;
+        for (i = 1; i < APRICORN_TREE_COUNT; i++)
+            gSaveBlock3Ptr->apricornTrees[i] = APRICORN_STAGE_MATURE;
+    }
+#endif
     SetMoney(&gSaveBlock1Ptr->money, 3000);
     SetCoins(0);
     GetNewDerby();

@@ -64,7 +64,7 @@ static void UpdatePerDay(struct Time *localTime)
         SetShoalItemFlag(daysSince);
         SetRandomLotteryNumber(daysSince);
         UpdateDaysPassedSinceFormChange(daysSince);
-        DailyResetApricornTrees();
+        AdvanceApricornTrees();
         *days = localTime->days;
     }
 }

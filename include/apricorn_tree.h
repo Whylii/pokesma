@@ -3,10 +3,10 @@
 
 #include "constants/apricorn_tree.h"
 
-bool8 IsApricornTreePicked(u32 id);
-void SetApricornTreePicked(u32 id);
+u8 GetApricornTreeStage(u32 id);
+void SetApricornTreeStage(u32 id, u8 stage);
+void AdvanceApricornTrees(void);
 
-void DailyResetApricornTrees(void);
 void ObjectEventInteractionGetApricornTreeData(void);
 void ObjectEventInteractionPickApricornTree(void);
 enum ApricornType GetApricornTypeByApricornTreeId(u32 id);

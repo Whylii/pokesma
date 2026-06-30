@@ -146,8 +146,6 @@
 #define NUM_FLAG_BYTES ROUND_BITS_TO_BYTES(FLAGS_COUNT)
 #define NUM_TRENDY_SAYING_BYTES ROUND_BITS_TO_BYTES(NUM_TRENDY_SAYINGS)
 
-#define NUM_APRICORN_TREE_BYTES ROUND_BITS_TO_BYTES(APRICORN_TREE_COUNT)
-
 // This produces an error at compile-time if expr is zero.
 // It looks like file.c:line: size of array `id' is negative
 #define STATIC_ASSERT(expr, id) typedef char id[(expr) ? 1 : -1];
@@ -269,7 +267,7 @@ struct SaveBlock3
 #endif
     u8 dexNavChain;
 #if APRICORN_TREE_COUNT > 0
-    u8 apricornTrees[NUM_APRICORN_TREE_BYTES];
+    u8 apricornTrees[APRICORN_TREE_COUNT];
 #endif
 }; /* max size 1624 bytes */
 
