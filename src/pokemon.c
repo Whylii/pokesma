@@ -722,25 +722,6 @@ static const u32 sCompressedStatuses[] =
 STATIC_ASSERT(sizeof(struct BoxPokemon) == 64, BoxPokemonSize);
 STATIC_ASSERT(MAX_LEVEL <= 100, PokemonExpPotentiallyTooSmall);
 
-static u32 CompressStatus(u32 status)
-{
-    s32 i;
-    for (i = 0; i < ARRAY_COUNT(sCompressedStatuses); i++)
-    {
-        if (sCompressedStatuses[i] == status)
-            return i;
-    }
-    return 0; // STATUS1_NONE
-}
-
-static u32 UncompressStatus(u32 compressedStatus)
-{
-    if (compressedStatus < ARRAY_COUNT(sCompressedStatuses))
-        return sCompressedStatuses[compressedStatus];
-    else
-        return STATUS1_NONE;
-}
-
 void ZeroBoxMonData(struct BoxPokemon *boxMon)
 {
     u8 *raw = (u8 *)boxMon;
@@ -923,7 +904,6 @@ void CreateBoxMon(struct BoxPokemon *boxMon, enum Species species, u8 level, u32
 {
     u8 speciesName[POKEMON_NAME_LENGTH + 1];
     u32 value;
-    u16 checksum;
     bool32 isShiny;
 
     ZeroBoxMonData(boxMon);
@@ -1923,7 +1903,6 @@ u32 GetMonData2(struct Pokemon *mon, s32 field)
 
 u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
 {
-    s32 i;
     u32 retVal = 0;
 
     switch (field)
