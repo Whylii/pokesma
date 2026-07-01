@@ -55,7 +55,6 @@
 #include "slot_machine.h"
 #include "sound.h"
 #include "string_util.h"
-#include "strings.h"
 #include "text.h"
 #include "text_window.h"
 #include "trainer_see.h"
@@ -68,7 +67,6 @@
 #include "constants/event_objects.h"
 #include "constants/map_types.h"
 #include "constants/party_menu.h"
-#include "region_map.h"
 
 typedef u16 (*SpecialFunc)(void);
 typedef void (*NativeFunc)(struct ScriptContext *ctx);
@@ -2271,36 +2269,6 @@ bool8 ScrCmd_vbufferstring(struct ScriptContext *ctx)
     const u8 *src = (u8 *)(addr - sAddressOffset);
     u8 *dest = sScriptStringVars[stringVarIndex];
     StringCopy(dest, src);
-    return FALSE;
-}
-
-static const u8 *GetRegionMapTypeName(enum RegionMapType type)
-{
-    switch (type)
-    {
-    case REGION_MAP_HOENN:
-        return gText_Hoenn;
-    case REGION_MAP_KANTO:
-    case REGION_MAP_SEVII123:
-    case REGION_MAP_SEVII45:
-    case REGION_MAP_SEVII67:
-        return gText_Kanto;
-    default:
-        return gText_Hoenn;
-    }
-}
-
-bool8 ScrCmd_bufferregionname(struct ScriptContext *ctx)
-{
-    u8 stringVarIndex = ScriptReadByte(ctx);
-    enum RegionMapType regionMap = VarGet(ScriptReadHalfword(ctx));
-
-    Script_RequestEffects(SCREFF_V1);
-
-    if (regionMap >= NUM_REGION_MAP_TYPES)
-        regionMap = GetRegionMapType(gMapHeader.regionMapSectionId);
-
-    StringCopy(sScriptStringVars[stringVarIndex], GetRegionMapTypeName(regionMap));
     return FALSE;
 }
 

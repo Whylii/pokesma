@@ -1913,13 +1913,6 @@
 	.2byte \trainerId
 	.endm
 
-	@ Writes the name of the region to the specified buffer.
-	.macro bufferregionname stringVarId:req, regionMapType=255
-	callnative ScrCmd_bufferregionname
-	stringvar \stringVarId
-	.2byte \regionMapType
-	.endm
-
 	@ Starts a Pokenav call with the given text.
 	.macro pokenavcall text:req
 	.byte SCR_OP_POKENAVCALL

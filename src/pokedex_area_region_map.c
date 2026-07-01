@@ -12,11 +12,8 @@
 
 void LoadPokedexAreaMapGfx(void)
 {
-    LoadPokedexAreaMapGfxForRegionType(GetRegionMapType(gMapHeader.regionMapSectionId));
-}
+    enum RegionMapType regionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);
 
-void LoadPokedexAreaMapGfxForRegionType(enum RegionMapType regionMapType)
-{
     SetBgAttribute(POKEDEX_AREA_MAP_BG, BG_ATTR_METRIC, 0);
     DecompressAndCopyTileDataToVram(POKEDEX_AREA_MAP_BG, gRegionMapInfos[regionMapType].dexMapGfx, 0, 0, 0);
     DecompressAndCopyTileDataToVram(POKEDEX_AREA_MAP_BG, gRegionMapInfos[regionMapType].dexMapTilemap, 0, 0, 1);

@@ -82,15 +82,6 @@ static EWRAM_DATA struct {
 
 static bool32 sDrawFlyDestTextWindow;
 
-static enum RegionMapType sFlyMapRegionType;
-
-struct FlyLocation
-{
-    enum RegionMapType regionMapType;
-    u16 flag;
-    u16 mapsec;
-};
-
 static u8 ProcessRegionMapInput_Full(void);
 static u8 MoveRegionMapCursor_Full(void);
 static u8 ProcessRegionMapInput_Zoomed(void);
@@ -750,20 +741,14 @@ bool8 LoadRegionMapGfx(void)
     switch (sRegionMap->initStep)
     {
     case 0:
-        if (sFlyMap != NULL)
-            regionMapType = sFlyMapRegionType;
-        else
-            regionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);
+        regionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);
         if (sRegionMap->bgManaged)
             DecompressAndCopyTileDataToVram(sRegionMap->bgNum, gRegionMapInfos[regionMapType].regionMapGfx, 0, 0, 0);
         else
             DecompressDataWithHeaderVram(gRegionMapInfos[regionMapType].regionMapGfx, (u16 *)BG_CHAR_ADDR(2));
         break;
     case 1:
-        if (sFlyMap != NULL)
-            regionMapType = sFlyMapRegionType;
-        else
-            regionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);
+        regionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);
         if (sRegionMap->bgManaged)
         {
             if (!FreeTempTileDataBuffersIfPossible())
@@ -775,10 +760,7 @@ bool8 LoadRegionMapGfx(void)
         }
         break;
     case 2:
-        if (sFlyMap != NULL)
-            regionMapType = sFlyMapRegionType;
-        else
-            regionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);
+        regionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);
         if (!FreeTempTileDataBuffersIfPossible())
             LoadPalette(gRegionMapInfos[regionMapType].regionMapPalette, BG_PLTT_ID(7), 3 * PLTT_SIZE_4BPP);
         break;
@@ -896,9 +878,9 @@ static u8 ProcessRegionMapInput_Full(void)
     {
         input = MAP_INPUT_B_BUTTON;
     }
-    else if (JOY_NEW(SELECT_BUTTON))
+    else if (JOY_NEW(R_BUTTON))
     {
-        input = MAP_INPUT_SELECT_BUTTON;
+        input = MAP_INPUT_R_BUTTON;
     }
     if (input == MAP_INPUT_MOVE_START)
     {
@@ -1201,24 +1183,8 @@ enum RegionMapType GetRegionMapType(u32 mapSecId)
     }
 }
 
-static enum Region GetRegionForMapType(enum RegionMapType regionMapType)
-{
-    switch (regionMapType)
-    {
-    case REGION_MAP_KANTO:
-    case REGION_MAP_SEVII123:
-    case REGION_MAP_SEVII45:
-    case REGION_MAP_SEVII67:
-        return REGION_KANTO;
-    case REGION_MAP_HOENN:
-    default:
-        return REGION_HOENN;
-    }
-}
-
 static mapsec_u16_t GetMapSecIdAt(u16 x, u16 y)
 {
-    enum Region region;
     if (y < MAPCURSOR_Y_MIN || y > MAPCURSOR_Y_MAX || x < MAPCURSOR_X_MIN || x > MAPCURSOR_X_MAX)
     {
         return MAPSEC_NONE;
@@ -1226,31 +1192,10 @@ static mapsec_u16_t GetMapSecIdAt(u16 x, u16 y)
     y -= MAPCURSOR_Y_MIN;
     x -= MAPCURSOR_X_MIN;
 
-    if (sFlyMap != NULL)
-        region = GetRegionForMapType(sFlyMapRegionType);
-    else
-        region = GetCurrentRegion();
-
-    switch (region)
+    switch (GetCurrentRegion())
     {
     case REGION_KANTO:
-    {
-        enum KantoSubRegion subregion;
-        if (sFlyMap != NULL)
-        {
-            switch (sFlyMapRegionType)
-            {
-            case REGION_MAP_SEVII123: subregion = KANTO_SUBREGION_SEVII123; break;
-            case REGION_MAP_SEVII45:  subregion = KANTO_SUBREGION_SEVII45; break;
-            case REGION_MAP_SEVII67:  subregion = KANTO_SUBREGION_SEVII67; break;
-            default:                  subregion = KANTO_SUBREGION_KANTO; break;
-            }
-        }
-        else
-        {
-            subregion = GetKantoSubregion(gMapHeader.regionMapSectionId);
-        }
-        switch (subregion)
+        switch (GetKantoSubregion(gMapHeader.regionMapSectionId))
         {
         case KANTO_SUBREGION_SEVII123:
                 return sRegionMapSections_Sevii123[y][x];
@@ -1262,7 +1207,6 @@ static mapsec_u16_t GetMapSecIdAt(u16 x, u16 y)
         default:
                 return sRegionMapSections_Kanto[y][x];
         }
-    }
     case REGION_HOENN:
     default:
             return sRegionMap_MapSectionLayout[y][x];
@@ -2043,7 +1987,6 @@ void CB2_OpenFlyMap(void)
         gMain.state++;
         break;
     case 4:
-        sFlyMapRegionType = GetRegionMapType(gMapHeader.regionMapSectionId);
         InitRegionMap(&sFlyMap->regionMap, FALSE);
         CreateRegionMapCursor(TAG_CURSOR, TAG_CURSOR);
         CreateRegionMapPlayerIcon(TAG_PLAYER_ICON, TAG_PLAYER_ICON);
@@ -2186,6 +2129,13 @@ static void LoadFlyDestIcons(void)
     CreateFlyDestIcons();
     TryCreateRedOutlineFlyDestIcons();
 }
+
+struct FlyLocation
+{
+    enum RegionMapType regionMapType;
+    u16 flag;
+    u16 mapsec;
+};
 
 static const struct FlyLocation sFlyLocations[] =
 {
@@ -2371,27 +2321,6 @@ static const struct FlyLocation sFlyLocations[] =
     },
 };
 
-bool32 IsRegionMapUnlocked(enum RegionMapType regionMapType)
-{
-    u32 i;
-    if (regionMapType == GetRegionMapType(gMapHeader.regionMapSectionId))
-        return TRUE;
-    for (i = 0; i < ARRAY_COUNT(sFlyLocations); i++)
-    {
-        if (sFlyLocations[i].regionMapType == regionMapType && FlagGet(sFlyLocations[i].flag))
-            return TRUE;
-    }
-    return FALSE;
-}
-
-void ReloadRegionMapGfx(struct RegionMap *regionMap, enum RegionMapType regionMapType)
-{
-    sRegionMap = regionMap;
-    DecompressDataWithHeaderVram(gRegionMapInfos[regionMapType].regionMapGfx, (u16 *)BG_CHAR_ADDR(2));
-    DecompressDataWithHeaderVram(gRegionMapInfos[regionMapType].regionMapTilemap, (u16 *)BG_SCREEN_ADDR(28));
-    FreeTempTileDataBuffersIfPossible();
-    LoadPalette(gRegionMapInfos[regionMapType].regionMapPalette, BG_PLTT_ID(7), 3 * PLTT_SIZE_4BPP);
-}
 
 // Sprite data for SpriteCB_FlyDestIcon
 #define sIconMapSec   data[0]
@@ -2399,7 +2328,7 @@ void ReloadRegionMapGfx(struct RegionMap *regionMap, enum RegionMapType regionMa
 
 static void CreateFlyDestIcons(void)
 {
-    enum RegionMapType regionMapType = sFlyMapRegionType;
+    enum RegionMapType regionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);
     u32 i;
     u16 x;
     u16 y;
@@ -2451,10 +2380,6 @@ static void TryCreateRedOutlineFlyDestIcons(void)
     u16 height;
     mapsec_u16_t mapSecId;
     u8 spriteId;
-
-    // Only show red outlines on the Hoenn map (Battle Frontier)
-    if (sFlyMapRegionType != REGION_MAP_HOENN)
-        return;
 
     for (i = 0; sRedOutlineFlyDestinations[i][1] != MAPSEC_NONE; i++)
     {
@@ -2540,62 +2465,6 @@ static void CB_HandleFlyMapInput(void)
             sFlyMap->choseFlyLocation = FALSE;
             SetFlyMapCallback(CB_ExitFlyMap);
             break;
-        case MAP_INPUT_SELECT_BUTTON:
-        {
-            enum RegionMapType nextRegion;
-            u32 i;
-            nextRegion = sFlyMapRegionType;
-                // Cycle to the next region
-            for (i = 0; i < NUM_REGION_MAP_TYPES; i++)
-            {
-                nextRegion++;
-                if (nextRegion >= NUM_REGION_MAP_TYPES)
-                    nextRegion = REGION_MAP_HOENN;
-                break;
-            }
-            if (i < NUM_REGION_MAP_TYPES)
-            {
-                u16 destX, destY, destW, destH;
-                sFlyMapRegionType = nextRegion;
-                m4aSongNumStart(SE_SELECT);
-                // Disable VBlank, reset sprites, swap BG
-                SetVBlankCallback(NULL);
-                ResetSpriteData();
-                FreeSpriteTileRanges();
-                FreeAllSpritePalettes();
-                ClearScheduledBgCopiesToVram();
-                // Reload BG graphics for the new region
-                DecompressDataWithHeaderVram(gRegionMapInfos[sFlyMapRegionType].regionMapGfx, (u16 *)BG_CHAR_ADDR(2));
-                DecompressDataWithHeaderVram(gRegionMapInfos[sFlyMapRegionType].regionMapTilemap, (u16 *)BG_SCREEN_ADDR(28));
-                LoadPalette(gRegionMapInfos[sFlyMapRegionType].regionMapPalette, BG_PLTT_ID(7), 3 * PLTT_SIZE_4BPP);
-                // Recreate cursor and player icon
-                CreateRegionMapCursor(TAG_CURSOR, TAG_CURSOR);
-                CreateRegionMapPlayerIcon(TAG_PLAYER_ICON, TAG_PLAYER_ICON);
-                // Move cursor to first fly destination in the new region
-                GetMapSecDimensions(sFlyLocations[0].mapsec, &destX, &destY, &destW, &destH);
-                for (i = 0; i < ARRAY_COUNT(sFlyLocations); i++)
-                {
-                    if (sFlyLocations[i].regionMapType == sFlyMapRegionType)
-                    {
-                        GetMapSecDimensions(sFlyLocations[i].mapsec, &destX, &destY, &destW, &destH);
-                        break;
-                    }
-                }
-                sFlyMap->regionMap.cursorPosX = destX + MAPCURSOR_X_MIN;
-                sFlyMap->regionMap.cursorPosY = destY + MAPCURSOR_Y_MIN;
-                sFlyMap->regionMap.playerIconSpritePosX = sFlyMap->regionMap.cursorPosX;
-                sFlyMap->regionMap.playerIconSpritePosY = sFlyMap->regionMap.cursorPosY;
-                sFlyMap->regionMap.mapSecId = sFlyLocations[i].mapsec;
-                sFlyMap->regionMap.mapSecType = GetMapsecType(sFlyLocations[i].mapsec);
-                GetMapName(sFlyMap->regionMap.mapSecName, sFlyLocations[i].mapsec, MAP_NAME_LENGTH);
-                GetPositionOfCursorWithinMapSec();
-                // Reload fly destination icons for the new region
-                LoadFlyDestIcons();
-                DrawFlyDestTextWindow();
-                SetVBlankCallback(VBlankCB_FlyMap);
-            }
-            break;
-        }
         }
     }
 }

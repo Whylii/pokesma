@@ -112,7 +112,6 @@ struct
     /*0xFBC*/ u8 areaUnknownGraphicsBuffer[0x600];
     /*0xFC0*/ u8 areaScreenLabelIds[NUM_LABEL_WINDOWS];
     /*0xFC8*/ u8 areaState;
-    /*0xFC9*/ enum RegionMapType currentRegionMapType;
 } static EWRAM_DATA *sPokedexAreaScreen = NULL;
 
 EWRAM_DATA u8 gAreaTimeOfDay = 0;
@@ -288,6 +287,7 @@ static bool8 DrawAreaGlow(void)
 
 static void FindMapsWithMon(enum Species species)
 {
+    enum RegionMapType currentRegionMapType;
     u16 i;
     struct Roamer *roamer;
 
@@ -331,13 +331,13 @@ static void FindMapsWithMon(enum Species species)
         }
     }
 
-    sPokedexAreaScreen->currentRegionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);
+    currentRegionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);
     // Add regular species to the area map
     for (i = 0; gWildMonHeaders[i].mapGroup != MAP_GROUP(MAP_UNDEFINED); i++)
     {
         u32 headerSectionId = Overworld_GetMapHeaderByGroupAndId(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum)->regionMapSectionId;
 
-        if (GetRegionMapType(headerSectionId) != sPokedexAreaScreen->currentRegionMapType)
+        if (GetRegionMapType(headerSectionId) != currentRegionMapType)
             continue;
 
         if (MapHasSpecies(&gWildMonHeaders[i].encounterTypes[gAreaTimeOfDay], headerSectionId, species))
@@ -740,7 +740,7 @@ static void Task_ShowPokedexAreaScreen(u8 taskId)
         break;
     case 1:
         SetBgAttribute(3, BG_ATTR_CHARBASEINDEX, 3);
-        LoadPokedexAreaMapGfxForRegionType(sPokedexAreaScreen->currentRegionMapType);
+        LoadPokedexAreaMapGfx();
         StringFill(sPokedexAreaScreen->charBuffer, CHAR_SPACE, 16);
         break;
     case 2:
@@ -815,7 +815,7 @@ static void Task_UpdatePokedexAreaScreen(u8 taskId)
         break;
     case 1:
         SetBgAttribute(3, BG_ATTR_CHARBASEINDEX, 3);
-        LoadPokedexAreaMapGfxForRegionType(sPokedexAreaScreen->currentRegionMapType);
+        LoadPokedexAreaMapGfx();
         PokedexAreaMapChangeBgY(-8);
         StringFill(sPokedexAreaScreen->charBuffer, CHAR_SPACE, 16);
         break;
@@ -865,28 +865,7 @@ static void Task_HandlePokedexAreaScreenInput(u8 taskId)
             return;
         break;
     case 1:
-        if (JOY_NEW(SELECT_BUTTON))
-        {
-            enum RegionMapType nextType;
-            u32 i;
-            nextType = sPokedexAreaScreen->currentRegionMapType;
-            for (i = 0; i < NUM_REGION_MAP_TYPES; i++)
-            {
-                nextType++;
-                if (nextType >= NUM_REGION_MAP_TYPES)
-                    nextType = REGION_MAP_HOENN;
-                if (IsRegionMapUnlocked(nextType))
-                    break;
-            }
-            if (i < NUM_REGION_MAP_TYPES && nextType != sPokedexAreaScreen->currentRegionMapType)
-            {
-                sPokedexAreaScreen->currentRegionMapType = nextType;
-                PlaySE(SE_SELECT);
-                FindMapsWithMon(sPokedexAreaScreen->species);
-                sPokedexAreaScreen->areaState = DEX_UPDATE_AREA_SCREEN;
-            }
-        }
-        else if (JOY_NEW(B_BUTTON))
+        if (JOY_NEW(B_BUTTON))
         {
             gTasks[taskId].data[1] = 1;
             PlaySE(SE_DEX_PAGE);
