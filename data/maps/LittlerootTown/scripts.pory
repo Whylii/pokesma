@@ -20,13 +20,29 @@ text LittlerootTownOldMan{
 	für dich!"
 }
 
-raw `
-LittlerootTown_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_OnTransition
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, LittlerootTown_OnFrame
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, LittlerootTown_OnWarp
-	.byte 0
+mapscripts LittlerootTown_MapScripts {
+MAP_SCRIPT_ON_LOAD {
+// Set all the flags used by the birds so that they start out all hidden
+    setflag(FLAG_TEMP_1)
+	setflag(FLAG_TEMP_2)
+	random(3)
+    switch(var(VAR_RESULT)) {
+        case 0:
+        // This will display only the bird(s) using FLAG_TEMP_1
+        clearflag(FLAG_TEMP_1)
+		case 1:
+		clearflag(FLAG_TEMP_2)
+		case 2:
+		clearflag(FLAG_TEMP_1)
+		clearflag(FLAG_TEMP_2)
+    	}
+	}
+MAP_SCRIPT_ON_TRANSITION: LittlerootTown_OnTransition
+MAP_SCRIPT_ON_FRAME_TABLE: LittlerootTown_OnFrame
+MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE: LittlerootTown_OnWarp
+}
 
+raw `
 	@ State descriptions for VAR_LITTLEROOT_TOWN_STATE
 	@ 1: Met Rival
 	@ 2: Saving Birch

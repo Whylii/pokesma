@@ -1,8 +1,23 @@
-raw `
-OldaleTown_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, OldaleTown_OnTransition
-	.byte 0
+mapscripts OldaleTown_MapScripts {
+MAP_SCRIPT_ON_LOAD {
+    setflag(FLAG_TEMP_1)
+	setflag(FLAG_TEMP_2)
+	random(3)
+    switch(var(VAR_RESULT)) {
+        case 0:
+        // This will display only the bird(s) using FLAG_TEMP_1
+        clearflag(FLAG_TEMP_1)
+		case 1:
+		clearflag(FLAG_TEMP_2)
+		case 2:
+		clearflag(FLAG_TEMP_1)
+		clearflag(FLAG_TEMP_2)
+    	}
+	}
+MAP_SCRIPT_ON_TRANSITION: OldaleTown_OnTransition
+}
 
+raw `
 OldaleTown_OnTransition:
 	call Common_EventScript_SetupRivalGfxId
 	setflag FLAG_VISITED_OLDALE_TOWN

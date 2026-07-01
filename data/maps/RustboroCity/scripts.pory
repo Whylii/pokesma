@@ -1,9 +1,23 @@
-raw `
-RustboroCity_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, RustboroCity_OnTransition
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, RustboroCity_OnFrame
-	.byte 0
+mapscripts RustboroCity_MapScripts {
+MAP_SCRIPT_ON_LOAD {
+    setflag(FLAG_TEMP_1)
+    setflag(FLAG_TEMP_2)
+    setflag(FLAG_TEMP_3)
+    random(3)
+    switch(var(VAR_RESULT)) {
+        case 0:
+        clearflag(FLAG_TEMP_1)
+        case 1:
+        clearflag(FLAG_TEMP_2)
+        case 2:
+        clearflag(FLAG_TEMP_3)
+    }
+}
+MAP_SCRIPT_ON_TRANSITION: RustboroCity_OnTransition
+MAP_SCRIPT_ON_FRAME_TABLE: RustboroCity_OnFrame
+}
 
+raw `
 RustboroCity_OnTransition:
 	setflag FLAG_VISITED_RUSTBORO_CITY
 	call Common_EventScript_SetupRivalGfxId

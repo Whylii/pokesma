@@ -73,12 +73,19 @@ text Route109_Text_PkmnSignAngel3{
     sich sehr tief im Wasser:"
 }
 
+mapscripts Route109_MapScripts {
+MAP_SCRIPT_ON_LOAD {
+    setflag(FLAG_TEMP_1)
+    random(2)
+    if (var(VAR_RESULT) == 0) {
+        clearflag(FLAG_TEMP_1)
+    }
+}
+}
+
 raw `
 @ NOTE: Route 109's sail to Dewford script references local IDs from Dewford's map.
 @  These are labeled in DewfordTown/scripts.inc
-
-Route109_MapScripts::
-	.byte 0
 
 Route109_EventScript_StartDepartForDewford::
 	call EventScript_BackupMrBrineyLocation

@@ -73,11 +73,22 @@ text DewfordTown_Text_PkmnSignAngel3{
     sich sehr tief im Wasser:"
 }
 
-raw `
-DewfordTown_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, DewfordTown_OnTransition
-	.byte 0
+mapscripts DewfordTown_MapScripts {
+MAP_SCRIPT_ON_LOAD {
+    setflag(FLAG_TEMP_1)
+    setflag(FLAG_TEMP_2)
+    random(2)
+    switch(var(VAR_RESULT)) {
+        case 0:
+        clearflag(FLAG_TEMP_1)
+        case 1:
+        clearflag(FLAG_TEMP_2)
+    }
+}
+MAP_SCRIPT_ON_TRANSITION: DewfordTown_OnTransition
+}
 
+raw `
 DewfordTown_OnTransition:
 	setflag FLAG_VISITED_DEWFORD_TOWN
 	end

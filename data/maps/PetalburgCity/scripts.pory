@@ -66,12 +66,39 @@ text PetalburgCity_Text_PkmnSignAngel3{
     sich sehr tief im Wasser:"
 }
 
-raw `
-PetalburgCity_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, PetalburgCity_OnTransition
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, PetalburgCity_OnFrame
-	.byte 0
+mapscripts PetalburgCity_MapScripts {
+MAP_SCRIPT_ON_LOAD {
+    setflag(FLAG_TEMP_1)
+    setflag(FLAG_TEMP_2)
+    setflag(FLAG_TEMP_3)
+    setflag(FLAG_TEMP_4)
+    random(6)
+    switch(var(VAR_RESULT)) {
+        case 0:
+        clearflag(FLAG_TEMP_1)
+        clearflag(FLAG_TEMP_2)
+        case 1:
+        clearflag(FLAG_TEMP_1)
+        clearflag(FLAG_TEMP_3)
+        case 2:
+        clearflag(FLAG_TEMP_1)
+        clearflag(FLAG_TEMP_4)
+        case 3:
+        clearflag(FLAG_TEMP_2)
+        clearflag(FLAG_TEMP_3)
+        case 4:
+        clearflag(FLAG_TEMP_2)
+        clearflag(FLAG_TEMP_4)
+        case 5:
+        clearflag(FLAG_TEMP_3)
+        clearflag(FLAG_TEMP_4)
+    }
+}
+MAP_SCRIPT_ON_TRANSITION: PetalburgCity_OnTransition
+MAP_SCRIPT_ON_FRAME_TABLE: PetalburgCity_OnFrame
+}
 
+raw `
 PetalburgCity_OnTransition:
 	setflag FLAG_VISITED_PETALBURG_CITY
 	call_if_eq VAR_PETALBURG_CITY_STATE, 0, PetalburgCity_EventScript_MoveGymBoyToWestEntrance

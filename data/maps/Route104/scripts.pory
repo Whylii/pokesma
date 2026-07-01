@@ -85,12 +85,23 @@ text Route104_Text_PkmnSignAngel3{
     sich sehr tief im Wasser:"
 }
 
-raw `
-Route104_MapScripts::
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route104_OnFrame
-	map_script MAP_SCRIPT_ON_TRANSITION, Route104_OnTransition
-	.byte 0
+mapscripts Route104_MapScripts {
+MAP_SCRIPT_ON_LOAD {
+    setflag(FLAG_TEMP_1)
+    setflag(FLAG_TEMP_2)
+    random(2)
+    switch(var(VAR_RESULT)) {
+        case 0:
+        clearflag(FLAG_TEMP_1)
+        case 1:
+        clearflag(FLAG_TEMP_2)
+    }
+}
+MAP_SCRIPT_ON_FRAME_TABLE: Route104_OnFrame
+MAP_SCRIPT_ON_TRANSITION: Route104_OnTransition
+}
 
+raw `
 Route104_OnFrame:
 	map_script_2 VAR_BOARD_BRINEY_BOAT_STATE, 1, Route104_EventScript_StartSailToDewford
 	.2byte 0
