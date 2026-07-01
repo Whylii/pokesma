@@ -1750,3 +1750,4 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/wild_encounter.inc"
 
 	.include "data/maps/LittlerootTown_House3_1F/scripts.inc"
+	.include "data/maps/KantoArrival/scripts.inc"

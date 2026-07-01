@@ -1,0 +1,13 @@
+raw `
+KantoArrival_MapScripts::
+	.byte 0
+
+KantoArrival_EventScript_ArrivalText::
+	msgbox KantoArrival_Text_WelcomeToKanto, MSGBOX_SIGN
+	end
+
+KantoArrival_Text_WelcomeToKanto::
+	.string "You arrived in Kanto!\n"
+	.string "Use the Fly Map to travel back to Hoenn.$"
+
+`

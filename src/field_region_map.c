@@ -1,5 +1,6 @@
 #include "global.h"
 #include "bg.h"
+#include "decompress.h"
 #include "event_data.h"
 #include "field_effect.h"
 #include "gpu_regs.h"
@@ -17,6 +18,7 @@
 #include "window.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "decompress.h"
 
 /*
  *  This is the type of map shown when interacting with the metatiles for
@@ -43,6 +45,7 @@ static EWRAM_DATA struct {
     u32 unused;
     struct RegionMap regionMap;
     u16 state;
+    enum RegionMapType regionType;
 } *sFieldRegionMapHandler = NULL;
 
 static void MCB2_InitRegionMapRegisters(void);
@@ -148,6 +151,7 @@ static void FieldUpdateRegionMap(void)
     switch (sFieldRegionMapHandler->state)
     {
     case 0:
+        sFieldRegionMapHandler->regionType = GetRegionMapType(gMapHeader.regionMapSectionId);
         InitRegionMap(&sFieldRegionMapHandler->regionMap, FALSE);
         CreateRegionMapPlayerIcon(TAG_PLAYER_ICON, TAG_PLAYER_ICON);
         CreateRegionMapCursor(TAG_CURSOR, TAG_CURSOR);
@@ -195,6 +199,38 @@ static void FieldUpdateRegionMap(void)
                     gSkipShowMonAnim = TRUE;
                     ReturnToFieldFromFlyMapSelect();
                 }
+                break;
+        case MAP_INPUT_SELECT_BUTTON:
+        {
+            enum RegionMapType nextType;
+            u32 i;
+            nextType = sFieldRegionMapHandler->regionType;
+            for (i = 0; i < NUM_REGION_MAP_TYPES; i++)
+            {
+                nextType++;
+                if (nextType >= NUM_REGION_MAP_TYPES)
+                    nextType = REGION_MAP_HOENN;
+                if (IsRegionMapUnlocked(nextType))
+                    break;
+            }
+            if (i < NUM_REGION_MAP_TYPES)
+            {
+                sFieldRegionMapHandler->regionType = nextType;
+                PlaySE(SE_SELECT);
+                SetVBlankCallback(NULL);
+                ResetSpriteData();
+                FreeSpriteTileRanges();
+                FreeAllSpritePalettes();
+                ClearScheduledBgCopiesToVram();
+                InitRegionMapData(&sFieldRegionMapHandler->regionMap, NULL, FALSE);
+                ReloadRegionMapGfx(&sFieldRegionMapHandler->regionMap, nextType);
+                CreateRegionMapCursor(TAG_CURSOR, TAG_CURSOR);
+                CreateRegionMapPlayerIcon(TAG_PLAYER_ICON, TAG_PLAYER_ICON);
+                SetVBlankCallback(VBCB_FieldUpdateRegionMap);
+                PrintTitleWindowText();
+            }
+            break;
+        }
         }
         break;
     case 5:
@@ -232,10 +268,20 @@ static void PrintTitleWindowText(void)
 {
     static const u8 FlyPromptText[] = _("{R_BUTTON} FLY");
     const u8 *region;
-    if (IS_FRLG)
+    switch (sFieldRegionMapHandler->regionType)
+    {
+    case REGION_MAP_KANTO:
         region = gText_Kanto;
-    else
+        break;
+    case REGION_MAP_SEVII123:
+    case REGION_MAP_SEVII45:
+    case REGION_MAP_SEVII67:
+        region = gText_Kanto;
+        break;
+    default:
         region = gText_Hoenn;
+        break;
+    }
     u32 hoennOffset = GetStringCenterAlignXOffset(FONT_NORMAL, region, 0x38);
     u32 flyOffset = GetStringCenterAlignXOffset(FONT_NORMAL, FlyPromptText, 0x38);
 

@@ -12,7 +12,8 @@ enum RegionMapType
     REGION_MAP_KANTO,
     REGION_MAP_SEVII123,
     REGION_MAP_SEVII45,
-    REGION_MAP_SEVII67
+    REGION_MAP_SEVII67,
+    NUM_REGION_MAP_TYPES
 };
 
 enum
@@ -23,7 +24,8 @@ enum
     MAP_INPUT_MOVE_END,
     MAP_INPUT_A_BUTTON,
     MAP_INPUT_B_BUTTON,
-    MAP_INPUT_R_BUTTON
+    MAP_INPUT_R_BUTTON,
+    MAP_INPUT_SELECT_BUTTON
 };
 
 enum {
@@ -136,6 +138,9 @@ void TrySetPlayerIconBlink(void);
 void BlendRegionMap(u16 color, u32 coeff);
 void SetRegionMapDataForZoom(void);
 enum RegionMapType GetRegionMapType(u32 mapSecId);
+
+bool32 IsRegionMapUnlocked(enum RegionMapType regionMapType);
+void ReloadRegionMapGfx(struct RegionMap *regionMap, enum RegionMapType regionMapType);
 
 //Pokenav Fly funcs
 u32 FilterFlyDestination(struct RegionMap* regionMap);
