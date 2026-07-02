@@ -195,7 +195,7 @@ const u8 sText_s[] =_("s");
 
 u8 *CopyItemNameHandlePlural(enum Item itemId, u8 *dst, u32 quantity)
 {
-    if (DoesItemHavePluralName(itemId))
+    if (quantity > 1 && DoesItemHavePluralName(itemId))
     {
         return StringCopy(dst, GetItemPluralName(itemId));
     }

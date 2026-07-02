@@ -1,9 +1,9 @@
 // fallback
 const u8 gFallbackPokedexText[] = _(
-    "This is a newly discovered Pokémon.\n"
-    "It is currently under investigation.\n"
-    "No detailed information is available\n"
-    "at this time.");
+    "Dieses Pokémon wurde erst kürzlich\n"
+    "entdeckt. Es wird zurzeit noch\n"
+    "untersucht. Nähere Informationen\n"
+    "liegen noch nicht vor.");
 
 // Gen 1 families
 const u8 gRaticateAlolaPokedexText[] = _(
@@ -58,225 +58,231 @@ const u8 gArceusPokedexText[] = _(
 
 // Gen 5 families
 const u8 gGenesectPokedexText[] = _(
-    "Over 300 million years ago, it was\n"
-    "feared as the strongest of hunters.\n"
-    "Team Plasma altered it and attached\n"
-    "a cannon to its back.");
+    "Vor über 300 Millionen Jahren wurde\n"
+    "es als stärkster Jäger gefürchtet.\n"
+    "Team Plasma veränderte es und\n"
+    "montierte eine Kanone auf seinem Rücken.");
 
 // Gen 6 families
 const u8 gGreninjaPokedexText[] = _(
-    "It appears and vanishes with a ninja's\n"
-    "grace. It toys with its enemies using\n"
-    "swift movements, while slicing them with\n"
-    "throwing stars made of compressed water.");
+    "Mit der Anmut eines Ninjas erscheint\n"
+    "und verschwindet Quajutsu. Es spielt mit\n"
+    "seinen Gegnern und schneidet sie mit\n"
+    "Wurfsternen aus komprimiertem Wasser.");
 
 const u8 gScatterbugPokedexText[] = _(
-    "When under attack from bird Pokémon,\n"
-    "it spews a poisonous black powder that\n"
-    "causes paralysis on contact. Scatterbug\n"
-    "can live in any region or climate.");
+    "Wird es von Vogel-Pokémon angegriffen,\n"
+    "sprüht Purmel ein schwarzes Giftpulver, das\n"
+    "bei Berührung paralysiert. Purmel\n"
+    "kann in jeder Region und jedem Klima leben.");
 
 const u8 gSpewpaPokedexText[] = _(
-    "It lives hidden within thicket shadows.\n"
-    "When predators attack, it quickly bristles\n"
-    "the fur covering its body in an effort to\n"
-    "threaten them.");
+    "Puponcho lebt versteckt im Schatten von\n"
+    "Dickichten. Greifen Räuber an, sträubt\n"
+    "es schnell das Fell auf seinem Körper,\n"
+    "um sie zu bedrohen.");
 
 const u8 gFurfrouPokedexText[] = _(
-    "Trimming its fluffy fur not only makes\n"
-    "it more elegant but also increases the\n"
-    "swiftness of its movements. These\n"
-    "Pokémon were the guardians of kings.");
+    "Das Stutzen seines flauschigen Fells\n"
+    "macht Coiffwaff nicht nur eleganter, sondern\n"
+    "erhöht auch die Schnelligkeit seiner\n"
+    "Bewegungen. Einst waren sie Wächter von Königen.");
 
 const u8 gXerneasPokedexText[] = _(
-    "Legends say that when the horns on\n"
-    "its head shine in seven colors, it is\n"
-    "sharing everlasting life. It slept for a\n"
-    "thousand years in the form of a tree");
+    "Der Legende nach schenkt Xerneas ewiges\n"
+    "Leben, wenn die Hörner auf seinem Kopf\n"
+    "in sieben Farben leuchten. Es schlief\n"
+    "tausend Jahre in Gestalt eines Baumes.");
 
 const u8 gZygarde50PokedexText[] = _(
-    "It's said to be monitoring the ecosystem\n"
-    "from deep in the caves where it lives.\n"
-    "There are rumors that even greater power\n"
-    "lies hidden within its cells.");
+    "Man sagt, Zygarde beobachtet das Ökosystem\n"
+    "aus den Tiefen der Höhlen, in denen es\n"
+    "lebt. Es gibt Gerüchte, dass in seinen\n"
+    "Zellen noch größere Kräfte schlummern.");
 
 const u8 gZygarde10PokedexText[] = _(
-    "This is Zygarde when about 10% of\n"
-    "its pieces have been assembled. It\n"
-    "leaps at its opponent's chest and\n"
-    "sinks its sharp fangs into them.");
+    "Dies ist Zygarde, wenn etwa 10 % seiner\n"
+    "Teile zusammengesetzt wurden. Es springt\n"
+    "an die Brust seines Gegners und schlägt\n"
+    "seine scharfen Reißzähne in ihn.");
 
 // Gen 7 families
 const u8 gGumshoosPokedexText[] = _(
-    "When it finds a trace of its prey, it\n"
-    "patiently stakes out the location...\n"
-    "but as it's diurnal, it's always snoozing\n"
-    "by nightfall.");
+    "Findet Mangunior eine Spur seiner Beute,\n"
+    "wartet es geduldig... Da es tagaktiv\n"
+    "ist, döst es jedoch bei Einbruch der\n"
+    "Nacht stets vor sich hin.");
 
 const u8 gVikavoltPokedexText[] = _(
-    "It concentrates electrical energy within\n"
-    "its large jaws and uses it to zap its foes.\n"
-    "It overwhelms bird Pokémon with shocking\n"
-    "beams of electrical energy.");
+    "Donarion konzentriert elektrische Energie\n"
+    "in seinen großen Kiefern und versetzt\n"
+    "seinen Feinden damit Stromstöße. Es\n"
+    "überwältigt Vogel-Pokémon mit Elektroschocks.");
 
 const u8 gRibombeePokedexText[] = _(
-    "Ribombee rolls up pollen into puffs.\n"
-    "It makes many different varieties, some\n"
-    "used as food and others used in battle.\n"
-    "They are sometimes sold as supplements.");
+    "Bandelby rollt Pollen zu kleinen\n"
+    "Bällchen. Es stellt viele verschiedene\n"
+    "Sorten her, die als Nahrung oder im\n"
+    "Kampf genutzt werden.");
 
 const u8 gRockruffPokedexText[] = _(
-    "This Pokémon has lived with people since\n"
-    "times long ago. It can sense when its\n"
-    "Trainer is in the dumps and will stick\n"
-    "close by its Trainer's side.");
+    "Wuffels lebt seit jeher mit\n"
+    "Menschen zusammen. Es spürt, wenn es\n"
+    "seinem Trainer schlecht geht, und bleibt\n"
+    "dann stets in seiner Nähe.");
 
 const u8 gAraquanidPokedexText[] = _(
-    "Despite what its appearance suggests,\n"
-    "it cares for others. If it finds vulnerable,\n"
-    "weak Pokémon, it protectively brings\n"
-    "them into its water bubble.");
+    "Trotz seines Aussehens kümmert sich\n"
+    "Aranestro um andere. Findet es\n"
+    "verletzliche, schwache Pokémon, bringt\n"
+    "es sie beschützend in seine Wasserblase.");
 
 const u8 gLurantisPokedexText[] = _(
-    "It requires a lot of effort to maintain\n"
-    "Lurantis's vivid coloring, but some\n"
-    "collectors enjoy this work and treat it\n"
-    "as their hobby.");
+    "Es erfordert viel Mühe, die leuchtende\n"
+    "Farbe von Mantidea zu erhalten, aber\n"
+    "einige Sammler genießen diese Arbeit\n"
+    "und betreiben sie als Hobby.");
 
 const u8 gSalazzlePokedexText[] = _(
-    "For some reason, only females have\n"
-    "been found. It creates a reverse harem of\n"
-    "male Salandit to live with. Its poisonous\n"
-    "gas is filled with pheromones.");
+    "Aus unbekannten Gründen wurden nur\n"
+    "Weibchen von Amfira gefunden. Es lebt\n"
+    "mit einem Harem männlicher Molunk\n"
+    "zusammen. Amfiras Giftgas ist voller\n"
+    "Pheromone.");
 
 const u8 gSilvallyNormalPokedexText[] = _(
-    "Its trust in its partner awakens it.\n"
-    "This Pokémon is capable of changing its\n"
-    "type by equipping special memories, a\n"
-    "trait that is well displayed in battle.");
+    "Das Vertrauen zu seinem Partner\n"
+    "erweckt Amigento. Es kann seinen Typ\n"
+    "durch das Anlegen spezieller Speicher\n"
+    "wechseln, was es im Kampf einsetzt.");
 
 const u8 gSilvallyMemoryPokedexText[] = _(
-    "Upon awakening, its RKS System is\n"
-    "activated. By employing specific\n"
-    "memories, this Pokémon can adapt its\n"
-    "type to confound its enemies.");
+    "Beim Erwachen wird Amigentos RKS-System\n"
+    "aktiviert. Durch die Verwendung\n"
+    "bestimmter Speicher kann es seinen Typ\n"
+    "ändern, um Gegner zu verwirren.");
 
 const u8 gMiniorMeteorPokedexText[] = _(
-    "Originally making its home in the ozone\n"
-    "layer, it hurtles to the ground when the\n"
-    "shell encasing its body grows too heavy.\n"
-    "It was born from mutated nanoparticles.");
+    "Ursprünglich in der Ozonschicht zu\n"
+    "Hause, rast Meteno zu Boden, wenn die\n"
+    "Hülle um seinen Kern zu schwer wird.\n"
+    "Es entstand aus mutierten Nanoteilchen.");
 
 const u8 gMiniorCorePokedexText[] = _(
-    "If its core stays exposed, it will\n"
-    "soon die off. It's possible that it\n"
-    "may survive if it's put into a Poké Ball\n"
-    "quickly enough.");
+    "Bleibt Metenos Kern ungeschützt,\n"
+    "stirbt es bald. Möglicherweise\n"
+    "überlebt es, wenn es schnell genug\n"
+    "in einen Pokéball gesteckt wird.");
 
 const u8 gTogedemaruPokedexText[] = _(
-    "The spiny fur on its back is normally\n"
-    "at rest. When this Pokémon becomes\n"
-    "agitated, its fur stands on end and stabs\n"
-    "into its attackers.");
+    "Die stacheligen Haare auf Togedemarus\n"
+    "Rücken sind normalerweise entspannt.\n"
+    "Wird es erregt, sträubt es sie und\n"
+    "sticht damit seine Angreifer.");
 
 const u8 gMimikyuDisguisedPokedexText[] = _(
-    "A lonely Pokémon, it hides its terrifying\n"
-    "appearance beneath an old rag so it can\n"
-    "get closer to people and other Pokémon.\n"
-    "Its actual appearance is unknown.");
+    "Ein einsames Pokémon, das sein\n"
+    "schreckliches Aussehen unter einem\n"
+    "Lumpen verbirgt, um sich Menschen und\n"
+    "Pokémon zu nähern. Mimigmas\n"
+    "wahres Aussehen ist unbekannt.");
 
 const u8 gMimikyuBustedPokedexText[] = _(
-    "After going to all the effort of\n"
-    "disguising itself, its neck was\n"
-    "broken. Whatever is inside is probably\n"
-    "unharmed, but it's still feeling sad.");
+    "Nach all der Mühe, sich zu verkleiden,\n"
+    "wurde Mimigmas Hals gebrochen. Was\n"
+    "auch immer drinnen ist, ist\n"
+    "wahrscheinlich unverletzt, aber es\n"
+    "ist trotzdem traurig.");
 
 const u8 gKommoOPokedexText[] = _(
-    "Its rigid scales function as offense and\n"
-    "defense. In the past, its scales were\n"
-    "processed and used to make weapons\n"
-    "and other valuable commodities.");
+    "Grandiras' harte Schuppen dienen\n"
+    "sowohl dem Angriff als auch der\n"
+    "Verteidigung. Früher wurden seine\n"
+    "Schuppen verarbeitet, um Waffen\n"
+    "herzustellen.");
 
 // Gen 8 families
 const u8 gAlcremieVanillaCreamPokedexText[] = _(
-    "If Alcremie is content, the secreted cream\n"
-    "from its hands becomes sweeter and richer.\n"
-    "When it trusts a Trainer, it will treat\n"
-    "them to berries it's decorated with cream.");
+    "Ist Pokusan zufrieden, wird die\n"
+    "Sahne aus seinen Händen süßer und\n"
+    "reicher. Vertraut es einem Trainer,\n"
+    "verwöhnt es ihn mit mit Sahne\n"
+    "verzierten Beeren.");
 
 const u8 gAlcremieRubyCreamPokedexText[] = _(
-    "The moment it evolved, it took on a\n"
-    "sweet and tart flavor. This is\n"
-    "because of the way its cells\n"
-    "spontaneously shifted during evolution.");
+    "Im Moment seiner Entwicklung nahm es\n"
+    "einen süß-sauren Geschmack an. Dies\n"
+    "liegt daran, dass sich seine Zellen\n"
+    "während der Evolution spontan veränderten.");
 
 const u8 gAlcremieMatchaCreamPokedexText[] = _(
-    "The moment it evolved, it took on\n"
-    "an aromatic flavor. This is because\n"
-    "of the way its cells spontaneously\n"
-    "shifted during evolution.");
+    "Im Moment seiner Entwicklung nahm es\n"
+    "ein aromatisches Aroma an. Dies liegt\n"
+    "daran, dass sich seine Zellen während\n"
+    "der Evolution spontan veränderten.");
 
 const u8 gAlcremieMintCreamPokedexText[] = _(
-    "The moment it evolved, it took on a\n"
-    "refreshing flavor. This is because\n"
-    "of the way its cells spontaneously\n"
-    "shifted during evolution.");
+    "Im Moment seiner Entwicklung nahm es\n"
+    "einen erfrischenden Geschmack an. Dies\n"
+    "liegt daran, dass sich seine Zellen\n"
+    "während der Evolution spontan veränderten.");
 
 const u8 gAlcremieLemonCreamPokedexText[] = _(
-    "The moment it evolved, it took on a\n"
-    "sour flavor. This is because of the\n"
-    "way its cells spontaneously shifted\n"
-    "during evolution.");
+    "Im Moment seiner Entwicklung nahm es\n"
+    "einen sauren Geschmack an. Dies liegt\n"
+    "daran, dass sich seine Zellen während\n"
+    "der Evolution spontan veränderten.");
 
 const u8 gAlcremieSaltedCreamPokedexText[] = _(
-    "The moment it evolved, it took on a\n"
-    "salty flavor. This is because of the\n"
-    "way its cells spontaneously shifted\n"
-    "during evolution.");
+    "Im Moment seiner Entwicklung nahm es\n"
+    "einen salzigen Geschmack an. Dies liegt\n"
+    "daran, dass sich seine Zellen während\n"
+    "der Evolution spontan veränderten.");
 
 const u8 gAlcremieRubySwirlPokedexText[] = _(
-    "The moment it evolved, it took on a\n"
-    "mixed flavor. This is because of the\n"
-    "way its cells spontaneously shifted\n"
-    "during evolution.");
+    "Im Moment seiner Entwicklung nahm es\n"
+    "einen gemischten Geschmack an. Dies\n"
+    "liegt daran, dass sich seine Zellen\n"
+    "während der Evolution spontan veränderten.");
 
 const u8 gAlcremieCaramelSwirlPokedexText[] = _(
-    "The moment it evolved, it took on a\n"
-    "bitter flavor. This is because of\n"
-    "the way its cells spontaneously\n"
-    "shifted during evolution.");
+    "Im Moment seiner Entwicklung nahm es\n"
+    "einen bitteren Geschmack an. Dies liegt\n"
+    "daran, dass sich seine Zellen während\n"
+    "der Evolution spontan veränderten.");
 
 const u8 gAlcremieRainbowSwirlPokedexText[] = _(
-    "The moment it evolved, it took on a\n"
-    "complex flavor. This is because of\n"
-    "the way its cells spontaneously\n"
-    "shifted during evolution.");
+    "Im Moment seiner Entwicklung nahm es\n"
+    "einen komplexen Geschmack an. Dies\n"
+    "liegt daran, dass sich seine Zellen\n"
+    "während der Evolution spontan veränderten.");
 
 const u8 gToxtricityGigantamaxPokedexText[] = _(
-    "Out of control after its own\n"
-    "poison penetrated its brain, it tears\n"
-    "across the land in a rampage,\n"
-    "contaminating the earth with toxic sweat.");
+    "Außer Kontrolle, nachdem sein eigenes\n"
+    "Gift sein Gehirn durchdrungen hat, rast\n"
+    "es wütend über das Land und verseucht\n"
+    "den Boden mit giftigem Schweiß.");
 
 // Gen 9 families
 const u8 gOgerponTealMaskPokedexText[] = _(
-    "This Pokémon's type changes based on\n"
-    "which mask it's wearing. It confounds\n"
-    "its enemies with nimble movements\n"
-    "and kicks.");
+    "Der Typ dieses Pokémon ändert sich je\n"
+    "nach getragener Maske. Es verwirrt\n"
+    "seine Feinde mit flinken\n"
+    "Bewegungen und Tritten.");
 
 const u8 gOgerponWellspringMaskPokedexText[] = _(
-    "This form excels in both attack\n"
-    "and defense. It ceaselessly unleashes\n"
-    "moves like a spring gushes water.");
+    "Diese Form zeichnet sich sowohl im\n"
+    "Angriff als auch in der Verteidigung\n"
+    "aus. Es setzt unaufhörlich Attacken ein\n"
+    "wie eine sprudelnde Quelle.");
 
 const u8 gOgerponHearthflameMaskPokedexText[] = _(
-    "This form is the most aggressive,\n"
-    "bombarding enemies with the intensity\n"
-    "of flames blazing within a hearth.");
+    "Diese Form ist die aggressivste und\n"
+    "überzieht Gegner mit der Intensität\n"
+    "von Flammen, die in einem Herd lodern.");
 
 const u8 gOgerponCornerstoneMaskPokedexText[] = _(
-    "In this form, it draws on the power\n"
-    "of stone. Its body is rock-solid,\n"
-    "protecting it from all manner of\n"
-    "attacks.");
+    "In dieser Form nutzt es die Kraft von\n"
+    "Stein. Sein Körper ist felsenfest und\n"
+    "schützt es vor allen Arten von\n"
+    "Angriffen.");

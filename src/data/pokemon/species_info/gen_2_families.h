@@ -1,4 +1,4 @@
-#ifdef __INTELLISENSE__
+﻿#ifdef __INTELLISENSE__
 const struct SpeciesInfo gSpeciesInfoGen2[] =
 {
 #endif
@@ -257,14 +257,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .cryId = CRY_MEGANIUM,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_MEGANIUM,
-        .categoryName = _("Herb"),
+        .categoryName = _("Kräuter"),
         .height = 24,
         .weight = 2010,
         .description = COMPOUND_STRING(
-            "This Pokémon can fire a tremendously\n"
-            "powerful Solar Beam from its four\n"
-            "flowers. Another name for this is\n"
-            "Mega Sol Cannon."),
+            "Meganie kann aus seinen vier Blüten\n"
+            "einen gewaltigen Solarstrahl abfeuern.\n"
+            "Daher rührt auch sein Beiname:\n"
+            "Mega-Sol-Kanone."),
         .frontPic = gMonFrontPic_MeganiumMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
@@ -822,14 +822,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .cryId = CRY_FERALIGATR,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_FERALIGATR,
-        .categoryName = _("Double Jaw"),
+        .categoryName = _("Doppelmaul"),
         .height = 23,
         .weight = 1088,
         .description = COMPOUND_STRING(
-            "With its arms and hoodlike fin, this\n"
-            "Pokémon forms a gigantic set of jaws\n"
-            "with a bite 10 times as powerful\n"
-            "as Mega Feraligatr's actual jaws."),
+            "Aus der kapuzenartigen Flosse und\n"
+            "seinen Armen formt Mega-Impergator\n"
+            "einen gigantischen Kiefer mit zehnfach\n"
+            "stärkerer Bisskraft als zuvor."),
         .frontPic = gMonFrontPic_FeraligatrMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
@@ -2241,14 +2241,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .cryId = CRY_AMPHAROS,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_AMPHAROS,
-        .categoryName = _("Light"),
+        .categoryName = _("Leuchte"),
         .height = 14,
         .weight = 615,
         .description = COMPOUND_STRING(
-            "Massive amounts of energy intensely\n"
-            "stimulated Ampharos's cells, apparently\n"
-            "awakening its long-sleeping dragon's\n"
-            "blood."),
+            "Gewaltige Energiemengen stimulierten\n"
+            "Ampharos' Zellen und erweckten sein\n"
+            "lange schlummerndes Drachenblut.\n"
+            "Es ist nun ein Drache vom Typ Elektro."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -5522,14 +5522,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .cryId = CRY_HERACROSS,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_HERACROSS,
-        .categoryName = _("Single Horn"),
+        .categoryName = _("Einzelhorn"),
         .height = 17,
         .weight = 625,
         .description = COMPOUND_STRING(
-            "A tremendous influx of energy builds it up,\n"
-            "but when Mega Evolution ends, Heracross\n"
-            "is bothered by terrible soreness in its\n"
-            "muscles."),
+            "Ein enormer Energieschub lässt Skaraborn\n"
+            "anschwellen. Nach der Mega-Entwicklung\n"
+            "leidet es jedoch unter schrecklichem\n"
+            "Muskelkater."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7279,14 +7279,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .cryId = CRY_SKARMORY,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_SKARMORY,
-        .categoryName = _("Armor Bird"),
+        .categoryName = _("Flugstahl"),
         .height = 17,
         .weight = 404,
         .description = COMPOUND_STRING(
-            "Due to the effects of Mega Evolution,\n"
-            "its pincers have taken a more\n"
-            "diabolical form, ripping anything\n"
-            "they pierce to shreds."),
+            "Durch die Mega-Entwicklung haben sich\n"
+            "Panzaerons Zangen in eine teuflische\n"
+            "Form verwandelt. Sie zerfetzen alles,\n"
+            "was sie durchbohren."),
         .frontPic = gMonFrontPic_SkarmoryMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
@@ -7490,13 +7490,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .cryId = CRY_HOUNDOOM,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_HOUNDOOM,
-        .categoryName = _("Dark"),
+        .categoryName = _("Hades"),
         .height = 19,
         .weight = 495,
         .description = COMPOUND_STRING(
-            "Its red claws and the tips of its tail are\n"
-            "melting from high internal temperatures\n"
-            "that are painful to Houndoom itself.\n"),
+            "Hundemons rote Klauen und Schweifspitze\n"
+            "schmelzen aufgrund der hohen inneren\n"
+            "Temperaturen, die sogar ihm zusetzen.\n"),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -8470,14 +8470,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .cryId = CRY_TYRANITAR,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_TYRANITAR,
-        .categoryName = _("Armor"),
+        .categoryName = _("Panzertier"),
         .height = 25,
         .weight = 2550,
         .description = COMPOUND_STRING(
-            "Due to the colossal power poured into it,\n"
-            "this Pokémon's back split right open. Its\n"
-            "destructive instincts are the only thing\n"
-            "keeping it moving."),
+            "Durch die gewaltige Kraft, die in es\n"
+            "strömte, barst Despotars Rücken. Nur\n"
+            "seine Zerstörungsinstinkte halten es\n"
+            "noch am Leben."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 345,

@@ -277,8 +277,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_TRACE] =
     {
-        .name = _("Fährte"),
-        .description = COMPOUND_STRING("Kopiert Spezial-Fähigk."),
+        .name = _("Erfassen"),
+        .description = COMPOUND_STRING("Kopiert Spezial-Fähigkeit."),
         .aiRating = 6,
         .cantBeCopied = TRUE,
         .cantBeTraced = TRUE, //B_UPDATED_ABILITY_DATA >= GEN_4

@@ -5241,9 +5241,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 0 : 1000,
         .holdEffect = HOLD_EFFECT_DRIVE,
         .description = COMPOUND_STRING(
-            "Changes Genesect's\n"
-            "Techno Blast to\n"
-            "Water-type."),
+            "Ändert die Technik von\n"
+            "Genesect in den Typ\n"
+            "Wasser."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_DRIVE,
         .type = ITEM_USE_BAG_MENU,
@@ -5260,9 +5260,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 0 : 1000,
         .holdEffect = HOLD_EFFECT_DRIVE,
         .description = COMPOUND_STRING(
-            "Changes Genesect's\n"
-            "Techno Blast to\n"
-            "Electric-type."),
+            "Ändert die Technik von\n"
+            "Genesect in den Typ\n"
+            "Elektro."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_DRIVE,
         .type = ITEM_USE_BAG_MENU,
@@ -5279,9 +5279,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 0 : 1000,
         .holdEffect = HOLD_EFFECT_DRIVE,
         .description = COMPOUND_STRING(
-            "Changes Genesect's\n"
-            "Techno Blast to\n"
-            "Fire-type."),
+            "Ändert die Technik von\n"
+            "Genesect in den Typ\n"
+            "Feuer."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_DRIVE,
         .type = ITEM_USE_BAG_MENU,
@@ -5298,9 +5298,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 0 : 1000,
         .holdEffect = HOLD_EFFECT_DRIVE,
         .description = COMPOUND_STRING(
-            "Changes Genesect's\n"
-            "Techno Blast to\n"
-            "Ice-type."),
+            "Ändert die Technik von\n"
+            "Genesect in den Typ\n"
+            "Eis."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_DRIVE,
         .type = ITEM_USE_BAG_MENU,
@@ -5321,9 +5321,10 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "A disc with Fire\n"
-            "type data. It swaps\n"
-            "Silvally's type."),
+            "Eine Disc mit\n"
+            "Feuer-Daten. Sie\n"
+            "enthält Silvallys\n"
+            "Erinnerungen."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -5342,9 +5343,10 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "A disc with Water\n"
-            "type data. It swaps\n"
-            "Silvally's type."),
+            "Eine Disc mit\n"
+            "Wasser-Daten. Sie\n"
+            "enthält Silvallys\n"
+            "Erinnerungen."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -5363,9 +5365,10 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "A disc with Electric\n"
-            "type data. It swaps\n"
-            "Silvally's type."),
+            "Eine Disc mit\n"
+            "Elektro-Daten. Sie\n"
+            "enthält Silvallys\n"
+            "Erinnerungen."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -5384,9 +5387,10 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "A disc with Grass\n"
-            "type data. It swaps\n"
-            "Silvally's type."),
+            "Eine Disc mit\n"
+            "Gras-Daten. Sie\n"
+            "enthält Silvallys\n"
+            "Erinnerungen."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -5405,9 +5409,10 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "A disc with Ice\n"
-            "type data. It swaps\n"
-            "Silvally's type."),
+            "Eine Disc mit\n"
+            "Eis-Daten. Sie\n"
+            "enthält Silvallys\n"
+            "Erinnerungen."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -5426,9 +5431,10 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "Disc with Fighting\n"
-            "type data. It swaps\n"
-            "Silvally's type."),
+            "Eine Disc mit\n"
+            "Kampf-Daten. Sie\n"
+            "enthält Silvallys\n"
+            "Erinnerungen."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -5447,9 +5453,10 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "A disc with Poison\n"
-            "type data. It swaps\n"
-            "Silvally's type."),
+            "Eine Disc mit\n"
+            "Gift-Daten. Sie\n"
+            "enthält Silvallys\n"
+            "Erinnerungen."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -5468,9 +5475,10 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "A disc with Ground\n"
-            "type data. It swaps\n"
-            "Silvally's type."),
+            "Eine Disc mit\n"
+            "Boden-Daten. Sie\n"
+            "enthält Silvallys\n"
+            "Erinnerungen."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -5489,9 +5497,10 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "A disc with Flying\n"
-            "type data. It swaps\n"
-            "Silvally's type."),
+            "Eine Disc mit\n"
+            "Flug-Daten. Sie\n"
+            "enthält Silvallys\n"
+            "Erinnerungen."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -5510,9 +5519,10 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "A disc with Psychic\n"
-            "type data. It swaps\n"
-            "Silvally's type."),
+            "Eine Disc mit\n"
+            "Psycho-Daten. Sie\n"
+            "enthält Silvallys\n"
+            "Erinnerungen."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -5531,9 +5541,10 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "A disc with Bug\n"
-            "type data. It swaps\n"
-            "Silvally's type."),
+            "Eine Disc mit\n"
+            "Käfer-Daten. Sie\n"
+            "enthält Silvallys\n"
+            "Erinnerungen."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -5552,9 +5563,10 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "A disc with Rock\n"
-            "type data. It swaps\n"
-            "Silvally's type."),
+            "Eine Disc mit\n"
+            "Gesteins-Daten. Sie\n"
+            "enthält Silvallys\n"
+            "Erinnerungen."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -5573,9 +5585,10 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "A disc with Ghost\n"
-            "type data. It swaps\n"
-            "Silvally's type."),
+            "Eine Disc mit\n"
+            "Geister-Daten. Sie\n"
+            "enthält Silvallys\n"
+            "Erinnerungen."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -5594,9 +5607,10 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "A disc with Dragon\n"
-            "type data. It swaps\n"
-            "Silvally's type."),
+            "Eine Disc mit\n"
+            "Drachen-Daten. Sie\n"
+            "enthält Silvallys\n"
+            "Erinnerungen."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -5615,9 +5629,10 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "A disc with Dark\n"
-            "type data. It swaps\n"
-            "Silvally's type."),
+            "Eine Disc mit\n"
+            "Unlicht-Daten. Sie\n"
+            "enthält Silvallys\n"
+            "Erinnerungen."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -5636,9 +5651,10 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "A disc with Steel\n"
-            "type data. It swaps\n"
-            "Silvally's type."),
+            "Eine Disc mit\n"
+            "Stahl-Daten. Sie\n"
+            "enthält Silvallys\n"
+            "Erinnerungen."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -5657,9 +5673,10 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "A disc with Fairy\n"
-            "type data. It swaps\n"
-            "Silvally's type."),
+            "Eine Disc mit\n"
+            "Feen-Daten. Sie\n"
+            "enthält Silvallys\n"
+            "Erinnerungen."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -5746,9 +5763,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Venusaur to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Bisaflor."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5794,9 +5811,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Blastoise to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Turtok."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5812,9 +5829,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Beedrill to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Bibor."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5830,9 +5847,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Pidgeot to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Togekiss."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5848,9 +5865,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Alakazam to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Simsala."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5866,9 +5883,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Slowbro to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Lahmus."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5884,9 +5901,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Gengar to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Gengar."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5902,9 +5919,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Kangaskhan to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Kangama."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5920,9 +5937,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Pinsir to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Pinsir."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5938,9 +5955,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Gyarados to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Garados."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5956,9 +5973,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Aerodactyl to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Aerodactyl."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6004,9 +6021,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Ampharos to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Ampharos."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6022,9 +6039,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Steelix to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Stahlos."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6040,9 +6057,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Scizor to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Scherox."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6058,9 +6075,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Heracross to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Skaraborn."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6076,9 +6093,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Houndoom to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Hundemon."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6094,9 +6111,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Tyranitar to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Despotar."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6112,9 +6129,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Sceptile to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Gewaldro."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6130,9 +6147,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Blaziken to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Lohgock."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6148,9 +6165,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Swampert to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Sumpex."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6166,9 +6183,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Gardevoir to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Guardevoir."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6184,9 +6201,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Sableye to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Zobiris."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6202,9 +6219,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Mawile to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Flunkifer."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6220,9 +6237,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Aggron to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Stolloss."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6238,9 +6255,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Medicham to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Meditalis."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6256,9 +6273,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Manectric to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Voltenso."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6274,9 +6291,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Sharpedo to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Tohaido."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6292,9 +6309,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Camerupt to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Camerupt."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6310,9 +6327,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Altaria to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Altaria."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6328,9 +6345,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Banette to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Banette."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6361,9 +6378,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Glalie to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Firnontor."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6379,9 +6396,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Salamence to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Brutalanda."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6397,9 +6414,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Metagross to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Metagross."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6415,9 +6432,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Latias to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Latias."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6433,9 +6450,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Latios to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Latios."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6451,9 +6468,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Lopunny to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Schlapor."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6499,9 +6516,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Abomasnow to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Rexblisar."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6517,9 +6534,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Gallade to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Galagladi."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6535,9 +6552,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Audino to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Ohrdoch."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6553,9 +6570,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Diancie to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Diancie."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6571,9 +6588,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Clefable to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Pixi."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6589,9 +6606,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Victreebel to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Sarzenia."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6607,9 +6624,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Starmie to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Starmie."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6625,9 +6642,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Dragonite to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Dragoran."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6643,9 +6660,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Meganium to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Meganie."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6661,9 +6678,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Feraligatr to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Impergator."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6679,9 +6696,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Skarmory to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Panzaeron."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6697,9 +6714,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Froslass to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Frosdedje."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6715,9 +6732,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Emboar to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Flambirex."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6733,9 +6750,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Excadrill to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Stalobor."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6751,9 +6768,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Scolipede to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Cerapendra."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6769,9 +6786,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Scrafty to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Irokex."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6787,9 +6804,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Eelektross to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Zapplarang."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6805,9 +6822,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Chandelure to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Skelabra."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6823,9 +6840,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Chesnaught to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Brigaron."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6841,9 +6858,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Delphox to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Fennexis."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6859,9 +6876,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Greninja to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Quajutsu."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6877,9 +6894,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Pyroar to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Pyroleo."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6895,9 +6912,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Floette to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Floette."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6913,9 +6930,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Malamar to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Calamanero."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6931,9 +6948,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Barbaracle to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Thanathora."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6949,9 +6966,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Dragalge to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Tandrak."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6967,9 +6984,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Hawlucha to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Resladero."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6985,9 +7002,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Zygarde to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Zygarde."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -7003,9 +7020,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Drampa to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Sen-Long."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -7021,9 +7038,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Falinks to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Legios."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -7039,9 +7056,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Heatran to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Heatran."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -7057,9 +7074,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Darkrai to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Darkrai."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -7075,9 +7092,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Zeraora to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Zeraora."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -7123,9 +7140,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Chimecho to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Palimpalim."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -7156,9 +7173,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Staraptor to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Staraptor."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -7204,9 +7221,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Golurk to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Golgantes."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -7222,9 +7239,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Meowstic to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Psiaugon."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -7240,9 +7257,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Crabominable to\n"
-            "Mega in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Krawell."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -7258,9 +7275,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Golisopod to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Tectass."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -7276,9 +7293,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Magearna to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Magearna."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -7294,9 +7311,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Scovillain to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Halupenjo."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -7312,9 +7329,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Baxcalibur to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Espinodon."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -7330,9 +7347,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Tatsugiri to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Nigiragi."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -7348,9 +7365,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Glimmora to Mega\n"
-            "Evolve in battle."),
+            "Dieser Stein ermöglicht\n"
+            "die Mega-Entwicklung\n"
+            "von Lumiflora."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -7737,9 +7754,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Normal-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Normal-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -7755,9 +7772,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Fire-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Feuer-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -7773,9 +7790,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Water-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Wasser-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -7791,9 +7808,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Electric-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Elektro-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -7809,9 +7826,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Grass-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Pflanzen-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -7827,9 +7844,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Ice-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Eis-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -7845,9 +7862,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Fighting-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Kampf-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -7863,9 +7880,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Poison-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Gift-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -7881,9 +7898,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Ground-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Boden-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -7899,9 +7916,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Flying-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Flug-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -7917,9 +7934,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Psychic-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Psycho-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -7935,9 +7952,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Bug-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Käfer-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -7953,9 +7970,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Rock-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Gestein-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -7971,9 +7988,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Ghost-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Geist-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -7989,9 +8006,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Dragon-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Drachen-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8007,9 +8024,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Dark-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Unlicht-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8025,9 +8042,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Steel-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Stahl-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8043,9 +8060,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Fairy-\n"
-            "type moves into\n"
-            "Z-Moves."),
+            "Ein Kristall, der\n"
+            "Fee-Attacken zu\n"
+            "Z-Attacken aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8061,9 +8078,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Pikachu's\n"
-            "Volt Tackle\n"
-            "into a Z-Move."),
+            "Ein Kristall, der\n"
+            "die Spezialattacke\n"
+            "von Pikachu zu\n"
+            "einer Z-Attacke aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8079,9 +8097,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Eevee's\n"
-            "Last Resort\n"
-            "into a Z-Move."),
+            "Ein Kristall, der\n"
+            "die Spezialattacke\n"
+            "von Evoli zu\n"
+            "einer Z-Attacke aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8097,9 +8116,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Snorlax's\n"
-            "Giga Impact\n"
-            "into a Z-Move."),
+            "Ein Kristall, der\n"
+            "die Spezialattacke\n"
+            "von Relaxo zu\n"
+            "einer Z-Attacke aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8115,9 +8135,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Mew's\n"
-            "Psychic into\n"
-            "a Z-Move."),
+            "Ein Kristall, der\n"
+            "die Spezialattacke\n"
+            "von Mew zu\n"
+            "einer Z-Attacke aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8133,9 +8154,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Decidu-\n"
-            "eye's Spirit Sha-\n"
-            "ckle into a Z-Move."),
+            "Ein Kristall, der\n"
+            "die Spezialattacke\n"
+            "von Silvarro zu\n"
+            "einer Z-Attacke aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8151,9 +8173,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Incine-\n"
-            "roar's Darkest La-\n"
-            "riat into a Z-Move."),
+            "Ein Kristall, der\n"
+            "die Spezialattacke\n"
+            "von Fuegro zu\n"
+            "einer Z-Attacke aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8169,9 +8192,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Primarina's\n"
-            "Sparkling Aria\n"
-            "into a Z-Move."),
+            "Ein Kristall, der\n"
+            "die Spezialattacke\n"
+            "von Primarina zu\n"
+            "einer Z-Attacke aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8187,9 +8211,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Lycanroc's\n"
-            "Stone Edge\n"
-            "into a Z-Move."),
+            "Ein Kristall, der\n"
+            "die Spezialattacke\n"
+            "von Wolwerock zu\n"
+            "einer Z-Attacke aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8205,9 +8230,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Mimikyu's\n"
-            "Play Rough\n"
-            "into a Z-Move."),
+            "Ein Kristall, der\n"
+            "die Spezialattacke\n"
+            "von Mimigma zu\n"
+            "einer Z-Attacke aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8223,9 +8249,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Kommo-o's\n"
-            "Clanging Scales\n"
-            "into a Z-Move."),
+            "Ein Kristall, der\n"
+            "die Spezialattacke\n"
+            "von Grandiras zu\n"
+            "einer Z-Attacke aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8241,9 +8268,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade the tapus'\n"
-            "Nature's Madness\n"
-            "into a Z-Move."),
+            "Ein Kristall, der\n"
+            "die Spezialattacke\n"
+            "von Kapu zu\n"
+            "einer Z-Attacke aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8259,9 +8287,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Solgaleo's\n"
-            "Sunsteel Strike\n"
-            "into a Z-Move."),
+            "Ein Kristall, der\n"
+            "die Spezialattacke\n"
+            "von Solgaleo zu\n"
+            "einer Z-Attacke aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8277,9 +8306,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Lunala's\n"
-            "Moongeist Beam\n"
-            "into a Z-Move."),
+            "Ein Kristall, der\n"
+            "die Spezialattacke\n"
+            "von Lunala zu\n"
+            "einer Z-Attacke aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8295,9 +8325,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Marsha-\n"
-            "dow's Spectral Thi-\n"
-            "ef into a Z-Move."),
+            "Ein Kristall, der\n"
+            "die Spezialattacke\n"
+            "von Marshadow zu\n"
+            "einer Z-Attacke aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8313,9 +8344,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Alolan\n"
-            "Raichu's Thunder-\n"
-            "bolt into a Z-Move."),
+            "Ein Kristall, der\n"
+            "die Spezialattacke\n"
+            "von Alola-Raichu zu\n"
+            "einer Z-Attacke aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8331,9 +8363,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Pikachu w/\n"
-            "a cap's Thunderbolt\n"
-            "into a Z-Move."),
+            "Ein Kristall, der\n"
+            "die Spezialattacke\n"
+            "von Ash-Pikachu zu\n"
+            "einer Z-Attacke aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8349,9 +8382,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "A crystal to turn\n"
-            "fused Necrozma\n"
-            "into a new form."),
+            "Ein Kristall, der\n"
+            "die Spezialattacke\n"
+            "von Ultranecrozma zu\n"
+            "einer Z-Attacke aufwertet."),
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -9583,9 +9617,9 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_TERRAIN_SEED,
         .holdEffectParam = HOLD_EFFECT_PARAM_ELECTRIC_TERRAIN,
         .description = COMPOUND_STRING(
-            "Boosts Defense on\n"
-            "Electric Terrain,\n"
-            "but only one time."),
+            "Erhöht den Vert.\n"
+            "eines Pokémon im\n"
+            "Elektrofeld."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9602,9 +9636,9 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_TERRAIN_SEED,
         .holdEffectParam = HOLD_EFFECT_PARAM_PSYCHIC_TERRAIN,
         .description = COMPOUND_STRING(
-            "Boosts Sp. Def. on\n"
-            "Psychic Terrain,\n"
-            "but only one time."),
+            "Erhöht den Sp. Vert.\n"
+            "eines Pokémon im\n"
+            "Psychofeld."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9621,9 +9655,9 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_TERRAIN_SEED,
         .holdEffectParam = HOLD_EFFECT_PARAM_MISTY_TERRAIN,
         .description = COMPOUND_STRING(
-            "Boosts Sp. Def. on\n"
-            "Misty Terrain,\n"
-            "but only one time."),
+            "Erhöht den Sp. Vert.\n"
+            "eines Pokémon im\n"
+            "Nebelfeld."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9640,9 +9674,9 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_TERRAIN_SEED,
         .holdEffectParam = HOLD_EFFECT_PARAM_GRASSY_TERRAIN,
         .description = COMPOUND_STRING(
-            "Boosts Defense on\n"
-            "Grassy Terrain,\n"
-            "but only one time."),
+            "Erhöht den Vert.\n"
+            "eines Pokémon im\n"
+            "Grasfeld."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -14046,9 +14080,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
-            "Enables {PKMN} holding\n"
-            "their Mega Stone to\n"
-            "Mega Evolve."),
+            "Ermöglicht die Mega-\n"
+            "Entwicklung von\n"
+            "Pokémon, die einen\n"
+            "Mega-Stein tragen."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -14062,9 +14097,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
-            "A strange ring\n"
-            "that enables\n"
-            "Z-Move usage."),
+            "Ein seltsamer Ring,\n"
+            "der die Nutzung von\n"
+            "Z-Attacken ermöglicht."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -14078,9 +14113,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
-            "A band carrying a\n"
-            "Wishing Star that\n"
-            "allows Dynamaxing."),
+            "Ein Band mit der\n"
+            "Kraft der Dynamax-\n"
+            "Energie."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -15190,9 +15225,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Terakristall-Orb"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Energy charges can\n"
-            "be used to cause\n"
-            "Terastallization."),
+            "Energieladungen\n"
+            "ermöglichen Tera-\n"
+            "Kristallisation."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -15514,9 +15549,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Schwarzaugit"),
         .price = 8000,
         .description = COMPOUND_STRING(
-            "A black stone that\n"
-            "makes some Pokémon\n"
-            "evolve."),
+            "Ein schwarzer Stein\n"
+            "mit geheimnisvoller\n"
+            "Kraft."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -15532,9 +15567,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Linkkabel"),
         .price = 8000,
         .description = COMPOUND_STRING(
-            "A mysterious string\n"
-            "that makes some\n"
-            "Pokémon evolve."),
+            "Ein mysteriöses\n"
+            "Kabel, das Tausch-\n"
+            "Entwicklungen auslöst."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -15550,9 +15585,10 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Torfblock"),
         .price = 10000,
         .description = COMPOUND_STRING(
-            "A block of material\n"
-            "that makes some\n"
-            "Pokémon evolve."),
+            "Ein Block aus Torf,\n"
+            "der die Entwicklung\n"
+            "von Ursaring zu\n"
+            "Ursaluna auslöst."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -15569,9 +15605,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 20,
         .holdEffect = HOLD_EFFECT_BERSERK_GENE,
         .description = COMPOUND_STRING(
-            "Sharply boosts\n"
-            "Attack, but causes\n"
-            "lasting confusion."),
+            "Erhöht den Angriff\n"
+            "stark, doch verwirrt\n"
+            "den Träger danach."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -15588,9 +15624,9 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = COMPOUND_STRING(
-            "A hold item that\n"
-            "raises the power of\n"
-            "Fairy-type moves."),
+            "Ein Item zum Tragen,\n"
+            "das Fee-Attacken\n"
+            "verstärkt."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -15606,9 +15642,10 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Sirupapfel"),
         .price = 2200,
         .description = COMPOUND_STRING(
-            "A very syrupy apple\n"
-            "that makes certain\n"
-            "Pokémon evolve."),
+            "Ein sehr sirupartiger\n"
+            "Apfel. Löst die\n"
+            "Entwicklung bei\n"
+            "Mampfaxo aus."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -15624,9 +15661,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Tasse"),
         .price = 1600,
         .description = COMPOUND_STRING(
-            "A cracked teacup\n"
-            "that makes certain\n"
-            "Pokémon evolve."),
+            "Eine zerbrochene\n"
+            "Tasse von\n"
+            "mysteriöser Herkunft."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -15642,9 +15679,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Perfekte Teetasse"),
         .price = 38000,
         .description = COMPOUND_STRING(
-            "A chipped teacup\n"
-            "that makes certain\n"
-            "Pokémon evolve."),
+            "Eine angeschlagene\n"
+            "Tasse von\n"
+            "mysteriöser Herkunft."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -15680,9 +15717,9 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_OGERPON_MASK,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
-            "Allows Ogerpon to\n"
-            "wield the Water-\n"
-            "type in battle."),
+            "Erlaubt Ogerpon\n"
+            "seine Quell-\n"
+            "Maske zu tragen."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -15698,9 +15735,9 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_OGERPON_MASK,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
-            "Allows Ogerpon to\n"
-            "wield the Fire-\n"
-            "type in battle."),
+            "Erlaubt Ogerpon\n"
+            "seine Herdfeuer-\n"
+            "Maske zu tragen."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -15811,9 +15848,10 @@ const struct ItemInfo gItemsInfo[] =
         .pluralName = ITEM_PLURAL_NAME("Fresh-Start Mochi"),
         .price = 300,
         .description = COMPOUND_STRING(
-            "An item that resets\n"
-            "all base points of\n"
-            "a Pokémon."),
+            "Setzt die Basiswerte\n"
+            "eines Pokémon auf\n"
+            "den Ausgangswert\n"
+            "zurück."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
@@ -15830,9 +15868,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
-            "A charm that will\n"
-            "raise the shards\n"
-            "from Tera Raids."),
+            "Ein Charme, der\n"
+            "die Begegnung mit\n"
+            "schillernden Pokémon\n"
+            "wahrscheinlicher macht."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -15845,9 +15884,10 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Metalllegierung"),
         .price = 6000,
         .description = COMPOUND_STRING(
-            "A peculiar metal\n"
-            "that makes certain\n"
-            "Pokémon evolve."),
+            "Ein seltsames Metall,\n"
+            "das die Entwicklung\n"
+            "von Ditto zu\n"
+            "Metamorph auslöst."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,

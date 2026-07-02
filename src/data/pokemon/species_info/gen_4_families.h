@@ -962,10 +962,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 19,
         .weight = 500,
         .description = COMPOUND_STRING(
-            "Mega Staraptor is a top-class flier.\n"
-            "It can easily soar through the sky while\n"
-            "gripping a Steelix that weighs more than\n"
-            "880 lbs."),
+            "Staraptor jagt mit Mega-Kraft\n"
+            "durch die Lüfte. Es trägt selbst\n"
+            "schwere Pokémon mühelos fort."),
         .frontPic = gMonFrontPic_StaraptorMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
@@ -3551,10 +3550,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 13,
         .weight = 283,
         .description = COMPOUND_STRING(
-            "Mega Evolution awakens its combative\n"
-            "instincts. It has shed any fur that got in\n"
-            "the way of its attacks.\n"
-            "crescent."),
+            "Mega-Schlapor erwacht zum\n"
+            "Kämpfer. Es entfernt alles Fell,\n"
+            "das seine Attacken behindert."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -4465,10 +4463,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 19,
         .weight = 950,
         .description = COMPOUND_STRING(
-            "Excess energy melted its arms and wings\n"
-            "into giant scythes, sending it mad with\n"
-            "rage. It swings its scythes wildly and\n"
-            "slices the ground to pieces."),
+            "Seine Arme und Flügel schmolzen\n"
+            "zu mächtigen Sicheln. In blinder\n"
+            "Wut zerfetzt es den Boden."),
         .pokemonScale = 256,
         .pokemonOffset = 1,
         .trainerScale = 326,
@@ -4545,10 +4542,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 19,
         .weight = 990,
         .description = COMPOUND_STRING(
-            "Garchomp has gained a new Mega-Evolved\n"
-            "form. It flies around foes at Mach speed\n"
-            "and cuts them to shreds with its sinister\n"
-            "wing claws."),
+            "Knakracks neue Mega-Form\n"
+            "umkreist Feinde mit Über-\n"
+            "schall und zerschneidet sie\n"
+            "mit seinen Flügelklauen."),
         .frontPic = gMonFrontPic_GarchompMegaZ,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
@@ -4745,10 +4742,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 13,
         .weight = 575,
         .description = COMPOUND_STRING(
-            "It readies itself to face its enemies by\n"
-            "focusing its mental energies. Its fighting\n"
-            "style can be summed up in a single word:\n"
-            "heartless."),
+            "Lucario schärft seinen Geist,\n"
+            "um Gegner zu bezwingen. Sein\n"
+            "Kampfstil kennt kein Erbarmen."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -4820,10 +4816,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 13,
         .weight = 494,
         .description = COMPOUND_STRING(
-            "By completely cloaking itself in its aura,\n"
-            "Mega Lucario Z can parry all manner of\n"
-            "attacks, battling as if it were gracefully\n"
-            "dancing."),
+            "Mega-Lucario Z hüllt sich\n"
+            "in seine Aura und pariert\n"
+            "Attacken wie ein anmutiger\n"
+            "Tanz."),
         .frontPic = gMonFrontPic_LucarioMegaZ,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
@@ -5793,10 +5789,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 27,
         .weight = 1850,
         .description = COMPOUND_STRING(
-            "The sprouts on Abomasnow's back grow into\n"
-            "great shafts of ice when it Mega Evolves.\n"
-            "Dislikes associating with others and\n"
-            "chooses to live quietly deep in mountains."),
+            "Rexblisars Rücksprossen wachsen\n"
+            "zu gewaltigen Eissäulen. Es\n"
+            "lebt zurückgezogen im Gebirge."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 348,
@@ -6975,10 +6970,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 28,
         .weight = 5700,
         .description = COMPOUND_STRING(
-            "It's said that if it goes all out, it\n"
-            "can heat its body up to temperatures\n"
-            "over 1.8 million degrees Fahrenheit.\n"
-            "This heat keeps enemies at bay."),
+            "Heatran erhitzt seinen Körper\n"
+            "auf über eine Million Grad.\n"
+            "Diese Hitze vertreibt jeden\n"
+            "Gegner."),
         .frontPic = gMonFrontPic_HeatranMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
@@ -7598,10 +7593,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 30,
         .weight = 2400,
         .description = COMPOUND_STRING(
-            "Its dark power blocks out the sun,\n"
-            "plunging the surrounding area into\n"
-            "darkness. There is no escaping its\n"
-            "evil eye."),
+            "Darkrais Finsternis löscht\n"
+            "die Sonne aus. Die Umgebung\n"
+            "fällt in tiefste Dunkelheit."),
         .frontPic = gMonFrontPic_DarkraiMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,

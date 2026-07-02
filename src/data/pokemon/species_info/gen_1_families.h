@@ -1,4 +1,4 @@
-#ifdef __INTELLISENSE__
+﻿#ifdef __INTELLISENSE__
 const struct SpeciesInfo gSpeciesInfoGen1[] =
 {
 #endif
@@ -333,14 +333,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .speciesName = _("Bisaflor"),
         .cryId = CRY_VENUSAUR,
         .natDexNum = NATIONAL_DEX_VENUSAUR,
-        .categoryName = _("Seed"),
+        .categoryName = _("Samen"),
         .height = 240,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "Spits big amounts of pollen like a volcano.\n"
-            "Breathing too much of it causes fainting.\n"
-            "In battle, it swings around two thick vines\n"
-            "that can easily topple 10-story buildings."),
+            "Bisaflor spuckt gewaltige Pollenmengen\n"
+            "wie ein Vulkan aus. Zu viel davon ein-\n"
+            "zuatmen führt zur Bewusstlosigkeit. Es\n"
+            "schwingt zwei dicke Ranken im Kampf."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 388,
@@ -614,13 +614,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_CHARIZARD,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_CHARIZARD,
-        .categoryName = _("Flame"),
+        .categoryName = _("Flamme"),
         .height = 17,
         .weight = 1105,
         .description = COMPOUND_STRING(
-            "The overwhelming power that fills its\n"
-            "entire body causes it to turn black\n"
-            "and creates intense blue flames."),
+            "Die überwältigende Kraft in seinem\n"
+            "Körper färbt ihn schwarz und erzeugt\n"
+            "intensive blaue Flammen."),
         .pokemonScale = 256,
         .pokemonOffset = 1,
         .trainerScale = 302,
@@ -685,14 +685,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_CHARIZARD,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_CHARIZARD,
-        .categoryName = _("Flame"),
+        .categoryName = _("Flamme"),
         .height = 17,
         .weight = 1005,
         .description = COMPOUND_STRING(
-            "Its bond with its Trainer is the source\n"
-            "of its power. It boasts speed and\n"
-            "maneuverability greater than that of a\n"
-            "jet fighter."),
+            "Die Bindung zu seinem Trainer ist\n"
+            "die Quelle seiner Kraft. Es ist\n"
+            "schneller und wendiger als ein\n"
+            "Düsenjäger."),
         .pokemonScale = 256,
         .pokemonOffset = 1,
         .trainerScale = 302,
@@ -755,14 +755,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .speciesName = _("Glurak"),
         .cryId = CRY_CHARIZARD,
         .natDexNum = NATIONAL_DEX_CHARIZARD,
-        .categoryName = _("Flame"),
+        .categoryName = _("Flamme"),
         .height = 280,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The flame inside its body burns\n"
-            "hotter than 3,600 degrees Fahrenheit.\n"
-            "When Charizard roars, that\n"
-            "temperature climbs even higher."),
+            "Die Flamme in Gluraks Innerem\n"
+            "brennt mit über 2.000 Grad. Wenn\n"
+            "es brüllt, steigt die Temperatur\n"
+            "noch weiter an."),
         .pokemonScale = 256,
         .pokemonOffset = 1,
         .trainerScale = 302,
@@ -1040,14 +1040,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_BLASTOISE,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_BLASTOISE,
-        .categoryName = _("Shellfish"),
+        .categoryName = _("Panzertier"),
         .height = 16,
         .weight = 1011,
         .description = COMPOUND_STRING(
-            "The cannon on its back is as powerful\n"
-            "as a tank gun. Its tough legs and back\n"
-            "enable it to withstand the recoil from\n"
-            "firing the cannon."),
+            "Die Kanone auf Turtoks Rücken ist\n"
+            "so stark wie ein Panzergeschütz.\n"
+            "Seine kräftigen Beine halten dem\n"
+            "Rückstoß beim Abfeuern stand."),
         .pokemonScale = 256,
         .pokemonOffset = -1,
         .trainerScale = 293,
@@ -1110,14 +1110,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .speciesName = _("Turtok"),
         .cryId = CRY_BLASTOISE,
         .natDexNum = NATIONAL_DEX_BLASTOISE,
-        .categoryName = _("Shellfish"),
+        .categoryName = _("Panzertier"),
         .height = 250,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "It's not very good at precision\n"
-            "shooting. When attacking, it just fires\n"
-            "its 31 cannons over and over and\n"
-            "over."),
+            "Präzises Zielen ist nicht seine Stärke.\n"
+            "Im Kampf feuert es einfach seine 31\n"
+            "Kanonen immer und immer wieder\n"
+            "ab."),
         .pokemonScale = 256,
         .pokemonOffset = -1,
         .trainerScale = 293,
@@ -1420,14 +1420,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .speciesName = _("Smettbo"),
         .cryId = CRY_BUTTERFREE,
         .natDexNum = NATIONAL_DEX_BUTTERFREE,
-        .categoryName = _("Butterfly"),
+        .categoryName = _("Falter"),
         .height = 170,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "Once it has opponents trapped in a\n"
-            "tornado that could blow away a 10-\n"
-            "ton truck, it finishes them off with\n"
-            "its poisonous scales."),
+            "Hat es Gegner in einem Tornado\n"
+            "gefangen, der einen Zehn-Tonnen-\n"
+            "Laster fortreißt, erledigt es sie\n"
+            "mit seinen Giftpfeilen."),
         .pokemonScale = 312,
         .pokemonOffset = 2,
         .trainerScale = 256,
@@ -1724,14 +1724,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_BEEDRILL,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_BEEDRILL,
-        .categoryName = _("Poison Bee"),
+        .categoryName = _("Giftbiene"),
         .height = 14,
         .weight = 405,
         .description = COMPOUND_STRING(
-            "Its legs have become poison stingers.\n"
-            "It stabs its prey repeatedly with the\n"
-            "stingers on its limbs, dealing the final\n"
-            "blow with the stinger on its rear."),
+            "Seine Beine wurden zu Giftstacheln.\n"
+            "Es sticht damit immer wieder auf\n"
+            "seine Beute ein und setzt den\n"
+            "Todesstoß mit seinem Hinterstachel."),
         .pokemonScale = 366,
         .pokemonOffset = 2,
         .trainerScale = 256,
@@ -2031,13 +2031,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_PIDGEOT,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_PIDGEOT,
-        .categoryName = _("Bird"),
+        .categoryName = _("Vogel"),
         .height = 22,
         .weight = 505,
         .description = COMPOUND_STRING(
-            "With its muscular strength now greatly\n"
-            "increased, it can fly continuously\n"
-            "for two weeks without resting."),
+            "Seine Muskelkraft hat enorm zugen-\n"
+            "ommen. Es kann nun zwei Wochen\n"
+            "lang ohne Pause fliegen."),
         .pokemonScale = 269,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3785,14 +3785,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .speciesName = _("Pikachu"),
         .cryId = CRY_PIKACHU,
         .natDexNum = NATIONAL_DEX_PIKACHU,
-        .categoryName = _("Mouse"),
+        .categoryName = _("Maus"),
         .height = 210,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "When it smashes its opponents with\n"
-            "its bolt-shaped tail, it delivers a\n"
-            "surge of electricity equivalent to a\n"
-            "lightning strike."),
+            "Schmettert es Gegner mit seinem\n"
+            "blitzförmigen Schweif, entlädt sich\n"
+            "ein Stromstoß gleich einem Blitz-\n"
+            "einschlag."),
         .pokemonScale = 479,
         .pokemonOffset = 19,
         .trainerScale = 256,
@@ -4087,14 +4087,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_RAICHU,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_RAICHU,
-        .categoryName = _("Mouse"),
+        .categoryName = _("Maus"),
         .height = 12,
         .weight = 380,
         .description = COMPOUND_STRING(
-            "It resembles an X as it flies through\n"
-            "the air with 50 million volts of\n"
-            "electricity sparking from its ears and\n"
-            "forked tail."),
+            "Es fliegt wie ein X durch die Lüfte,\n"
+            "während 50 Millionen Volt aus seinen\n"
+            "Ohren und dem gegabelten Schweif\n"
+            "sprühen."),
         .frontPic = gMonFrontPic_RaichuMegaX,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
@@ -4147,14 +4147,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_RAICHU,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_RAICHU,
-        .categoryName = _("Mouse"),
+        .categoryName = _("Maus"),
         .height = 10,
         .weight = 260,
         .description = COMPOUND_STRING(
-            "It fires bolts of electricity from the\n"
-            "tip of its tail and from the spiky tufts\n"
-            "of fur growing out of its temples. This\n"
-            "electricity forms the letter Y."),
+            "Es feuert Elektrizität aus seiner\n"
+            "Schweifspitze und den stacheligen\n"
+            "Fellbüscheln an den Schläfen. Diese\n"
+            "Elektrizität formt den Buchstaben Y."),
         .frontPic = gMonFrontPic_RaichuMegaY,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 4,
@@ -5188,13 +5188,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_CLEFABLE,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_CLEFABLE,
-        .categoryName = _("Fairy"),
+        .categoryName = _("Fee"),
         .height = 17,
         .weight = 423,
         .description = COMPOUND_STRING(
-            "It flies by using the power of\n"
-            "moonlight to control gravity within\n"
-            "a radius of over 32 feet around it."),
+            "Es fliegt mithilfe des Mondlichts,\n"
+            "indem es die Schwerkraft in einem\n"
+            "Umkreis von zehn Metern kontrol-\n"
+            "liert."),
         .frontPic = gMonFrontPic_ClefableMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
@@ -7473,14 +7474,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .speciesName = _("Mauzi"),
         .cryId = CRY_MEOWTH,
         .natDexNum = NATIONAL_DEX_MEOWTH,
-        .categoryName = _("Scratch Cat"),
+        .categoryName = _("Kratzkatze"),
         .height = 330,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The pattern that has appeared on\n"
-            "its giant coin is thought to be the\n"
-            "key to unlocking the secrets of the\n"
-            "Dynamax phenomenon."),
+            "Das Muster auf seiner riesigen\n"
+            "Münze soll der Schlüssel sein, um\n"
+            "das Geheimnis des Dynamax-Phäno-\n"
+            "mens zu lüften."),
         .pokemonScale = 480,
         .pokemonOffset = 19,
         .trainerScale = 256,
@@ -8775,9 +8776,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 12,
         .weight = 480,
         .description = COMPOUND_STRING(
-            "Having traded away its muscles, Alakazam's\n"
-            "true power has been unleashed. With its\n"
-            "psychic powers, it can foresee all things."),
+            "Simsala hat seine Muskeln eingebüßt,\n"
+            "dafür aber seine wahre Kraft entfes-\n"
+            "selt. Mit seinen Psi-Kräften kann es\n"
+            "alles vorhersehen."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -9091,14 +9093,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .speciesName = _("Machomei"),
         .cryId = CRY_MACHAMP,
         .natDexNum = NATIONAL_DEX_MACHAMP,
-        .categoryName = _("Superpower"),
+        .categoryName = _("Kraftprotz"),
         .height = 250,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "One of these Pokémon once used\n"
-            "its immeasurable strength to lift a\n"
-            "large ship that was in trouble. It\n"
-            "then carried the ship to port."),
+            "Eines dieser Pokémon hob einst ein\n"
+            "manövrierunfähiges großes Schiff\n"
+            "mit seiner immensen Kraft an und\n"
+            "trug es in den Hafen."),
         .pokemonScale = 280,
         .pokemonOffset = 1,
         .trainerScale = 269,
@@ -9390,14 +9392,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_VICTREEBEL,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_VICTREEBEL,
-        .categoryName = _("Flycatcher"),
+        .categoryName = _("Fliegenfalle"),
         .height = 45,
         .weight = 1255,
         .description = COMPOUND_STRING(
-            "The volume of this Pokémon's acid\n"
-            "has increased due to Mega Evolution,\n"
-            "filling its mouth. If not careful,\n"
-            "the acid will overflow and spill out."),
+            "Durch die Mega-Entwicklung hat sich\n"
+            "die Säuremenge in Sarzenias Maul\n"
+            "vergrößert. Wenn es nicht aufpasst,\n"
+            "läuft die Säure über."),
         .frontPic = gMonFrontPic_VictreebelMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
@@ -10518,14 +10520,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .speciesName = _("Lahmus"),
         .cryId = CRY_SLOWBRO,
         .natDexNum = NATIONAL_DEX_SLOWBRO,
-        .categoryName = _("Hermit Crab"),
+        .categoryName = _("Symbiose"),
         .height = 20,
         .weight = 1200,
         .description = COMPOUND_STRING(
-            "When bathed in the energy of Mega\n"
-            "Evolution, Shellder converts into\n"
-            "impregnable armor. There is virtually no\n"
-            "change in Slowpoke."),
+            "Durch die Mega-Energie verwandelt\n"
+            "sich Muschas in eine undurchdring-\n"
+            "liche Rüstung. Lahmus selbst ändert\n"
+            "sich kaum."),
         .pokemonScale = 256,
         .pokemonOffset = 6,
         .trainerScale = 296,
@@ -12254,14 +12256,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_GENGAR,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_GENGAR,
-        .categoryName = _("Shadow"),
+        .categoryName = _("Schatten"),
         .height = 14,
         .weight = 405,
         .description = COMPOUND_STRING(
-            "Gengar's relationships are warped. It\n"
-            "tries to take the lives of anyone and\n"
-            "everyone. It will even try to curse the\n"
-            "Trainer who is its master!"),
+            "Gengars Beziehungen sind gestört.\n"
+            "Es will das Leben aller auslöschen.\n"
+            "Sogar seinen eigenen Trainer ver-\n"
+            "flucht es."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 302,
@@ -12325,14 +12327,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .speciesName = _("Gengar"),
         .cryId = CRY_GENGAR,
         .natDexNum = NATIONAL_DEX_GENGAR,
-        .categoryName = _("Shadow"),
+        .categoryName = _("Schatten"),
         .height = 200,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "Rumor has it that its gigantic\n"
-            "mouth leads not into its body, filled\n"
-            "with cursed energy, but instead\n"
-            "directly to the afterlife."),
+            "Man munkelt, sein gigantisches Maul\n"
+            "führt nicht in seinen Körper, sondern\n"
+            "direkt ins Jenseits."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 302,
@@ -12549,14 +12550,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_STEELIX,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_STEELIX,
-        .categoryName = _("Iron Snake"),
+        .categoryName = _("Stahlboa"),
         .height = 105,
         .weight = 7400,
         .description = COMPOUND_STRING(
-            "The cells within its body, crystallized by\n"
-            "the energy produced from Mega Evolution,\n"
-            "are stronger than any mineral and able\n"
-            "to withstand any temperature."),
+            "Die Zellen in Stahlos' Körper wurden\n"
+            "durch Mega-Energie kristallisiert.\n"
+            "Sie sind härter als jedes Mineral\n"
+            "und halten jeder Temperatur stand."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 516,
@@ -12933,14 +12934,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .speciesName = _("Kingler"),
         .cryId = CRY_KINGLER,
         .natDexNum = NATIONAL_DEX_KINGLER,
-        .categoryName = _("Pincer"),
+        .categoryName = _("Kneifer"),
         .height = 190,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The flow of Gigantamax energy has\n"
-            "spurred this Pokémon's left pincer\n"
-            "to grow to an enormous size. That\n"
-            "claw can pulverize anything."),
+            "Die Gigantamax-Energie ließ Kinglers\n"
+            "linke Schere enorm wachsen. Diese\n"
+            "Schere kann alles zermalmen."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 256,
@@ -15192,14 +15192,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_KANGASKHAN,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_KANGASKHAN,
-        .categoryName = _("Parent"),
+        .categoryName = _("Muttertier"),
         .height = 22,
         .weight = 1000,
         .description = COMPOUND_STRING(
-            "When the mother sees the back of her\n"
-            "Mega-Evolved child, it makes her think\n"
-            "of the day when her child will inevitably\n"
-            "leave her."),
+            "Wenn die Mutter den Rücken ihres\n"
+            "Mega-entwickelten Kindes sieht, muss\n"
+            "sie an den Tag denken, an dem es sie\n"
+            "unweigerlich verlassen wird."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 387,
@@ -15832,14 +15832,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_STARMIE,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_STARMIE,
-        .categoryName = _("Mysterious"),
+        .categoryName = _("Mysteriös"),
         .height = 23,
         .weight = 800,
         .description = COMPOUND_STRING(
-            "Its movements have become more\n"
-            "humanlike. Whether it's simply\n"
-            "trying to communicate or wants to\n"
-            "supplant humanity is unclear."),
+            "Seine Bewegungen sind menschlicher\n"
+            "geworden. Ob es kommunizieren oder\n"
+            "die Menschheit verdrängen will,\n"
+            "ist unklar."),
         .frontPic = gMonFrontPic_StarmieMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
@@ -16378,14 +16378,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_SCIZOR,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_SCIZOR,
-        .categoryName = _("Pincer"),
+        .categoryName = _("Kneifer"),
         .height = 20,
         .weight = 1250,
         .description = COMPOUND_STRING(
-            "The excess energy that bathes this\n"
-            "Pokémon keeps it in constant danger of\n"
-            "overflow. It can't sustain a battle over\n"
-            "long periods of time."),
+            "Die überschüssige Energie versetzt\n"
+            "Scherox in ständige Gefahr zu über-\n"
+            "kochen. Es kann keine langen Kämpfe\n"
+            "durchhalten."),
         .pokemonScale = 278,
         .pokemonOffset = 1,
         .trainerScale = 256,
@@ -17195,14 +17195,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_PINSIR,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_PINSIR,
-        .categoryName = _("Stag Beetle"),
+        .categoryName = _("Kneifkäfer"),
         .height = 17,
         .weight = 590,
         .description = COMPOUND_STRING(
-            "The influence of Mega Evolution leaves it\n"
-            "in a state of constant excitement.\n"
-            "It pierces enemies with its two large\n"
-            "horns before shredding them."),
+            "Die Mega-Entwicklung versetzt Pinsir\n"
+            "in ständige Aufregung. Es spießt\n"
+            "Gegner mit seinen Hörnern auf und\n"
+            "zerreißt sie."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 257,
@@ -17720,14 +17720,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_GYARADOS,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_GYARADOS,
-        .categoryName = _("Atrocious"),
+        .categoryName = _("Grausam"),
         .height = 65,
         .weight = 3050,
         .description = COMPOUND_STRING(
-            "Although it obeys its instinctive drive to\n"
-            "destroy everything within its reach, it\n"
-            "will respond to orders from a Trainer it\n"
-            "truly trusts."),
+            "Obwohl Garados seinem Trieb folgt,\n"
+            "alles zu zerstören, gehorcht es den\n"
+            "Befehlen eines Trainers, dem es\n"
+            "wirklich vertraut."),
         .pokemonScale = 256,
         .pokemonOffset = 6,
         .trainerScale = 481,
@@ -17870,10 +17870,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 240,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "Over 5,000 people can ride on its\n"
-            "shell at once. And it's a very\n"
-            "comfortable ride, without the slightest\n"
-            "shaking or swaying."),
+            "Über 5.000 Menschen können auf\n"
+            "Lapras' Panzer reiten. Und es ist\n"
+            "eine sehr bequeme Fahrt ohne das\n"
+            "geringste Rütteln."),
         .pokemonScale = 257,
         .pokemonOffset = 10,
         .trainerScale = 423,
@@ -18108,10 +18108,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 180,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "Having gotten even friendlier and\n"
-            "more innocent, Eevee tries to play\n"
-            "with anyone around, only to end up\n"
-            "crushing them with its immense body."),
+            "Noch freundlicher und unbeschwerter\n"
+            "geworden, will Evoli mit jedem spie-\n"
+            "len, zerquetscht dabei aber verse-\n"
+            "hentlich alle mit seinem riesigen Körper."),
         .pokemonScale = 476,
         .pokemonOffset = 18,
         .trainerScale = 256,
@@ -19402,9 +19402,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 21,
         .weight = 790,
         .description = COMPOUND_STRING(
-            "The power of Mega Evolution has\n"
-            "completely restored its genes. The rocks\n"
-            "on its body are harder than diamond."),
+            "Die Mega-Entwicklung hat Aerodactyls\n"
+            "Gene vollständig wiederhergestellt.\n"
+            "Die Steine an seinem Körper sind\n"
+            "härter als Diamant."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 302,
@@ -19618,14 +19619,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .speciesName = _("Relaxo"),
         .cryId = CRY_SNORLAX,
         .natDexNum = NATIONAL_DEX_SNORLAX,
-        .categoryName = _("Sleeping"),
+        .categoryName = _("Tagträumer"),
         .height = 350,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "Gigantamax energy has affected\n"
-            "stray seeds and even pebbles that\n"
-            "got stuck to Snorlax, making them grow\n"
-            "to a huge size."),
+            "Die Gigantamax-Energie hat Samen\n"
+            "und Kieselsteine, die an Relaxo\n"
+            "kleben blieben, zu enormer Größe\n"
+            "heranwachsen lassen."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 423,
@@ -20381,14 +20382,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_DRAGONITE,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_DRAGONITE,
-        .categoryName = _("Dragon"),
+        .categoryName = _("Drache"),
         .height = 22,
         .weight = 2900,
         .description = COMPOUND_STRING(
-            "Mega Evolution has excessively\n"
-            "powered up this Pokémon's feelings\n"
-            "of kindness. It finishes off its\n"
-            "opponents with mercy in its heart."),
+            "Die Mega-Entwicklung hat Dragorans\n"
+            "Güte übermäßig verstärkt. Es\n"
+            "erledigt seine Gegner mit Barm-\n"
+            "herzigkeit im Herzen."),
         .frontPic = gMonFrontPic_DragoniteMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
@@ -20520,14 +20521,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_MEWTWO,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_MEWTWO,
-        .categoryName = _("Genetic"),
+        .categoryName = _("Genmutant"),
         .height = 23,
         .weight = 1270,
         .description = COMPOUND_STRING(
-            "Psychic power has augmented its muscles.\n"
-            "It has a grip strength of one ton and can\n"
-            "sprint a hundred meters in two seconds\n"
-            "flat!"),
+            "Psychokräfte haben Mewtus Muskeln\n"
+            "verstärkt. Es hat eine Tonne Greif-\n"
+            "kraft und sprintet 100 Meter in\n"
+            "zwei Sekunden."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 309,
@@ -20595,14 +20596,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .cryId = CRY_MEWTWO,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_MEWTWO,
-        .categoryName = _("Genetic"),
+        .categoryName = _("Genmutant"),
         .height = 15,
         .weight = 330,
         .description = COMPOUND_STRING(
-            "Despite its diminished size, its mental\n"
-            "power has grown phenomenally. With a mere\n"
-            "thought, it can smash a skyscraper to\n"
-            "smithereens."),
+            "Trotz seiner geringeren Größe hat\n"
+            "sich Mewtus mentale Kraft phänome-\n"
+            "nal verstärkt. Mit einem Gedanken\n"
+            "zermalmt es einen Wolkenkratzer."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 309,

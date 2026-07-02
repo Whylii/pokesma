@@ -414,8 +414,8 @@ DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 
 DewfordTown_Gym_Text_ExplainBulkUp:
 	.string "Die TM08 enthält Protzer.\p"
-	.string "Diese Attacke hebt den Status des\n"
-	.string "Angriffs und der Verteidigung.\p"
+	.string "Diese Attacke hebt den\n"
+	.string "Angriff und die Verteidigung.\p"
 	.string "… … … … … …$"
 
 DewfordTown_Gym_Text_RegisteredBrawly:

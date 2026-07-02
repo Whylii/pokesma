@@ -1,4 +1,4 @@
-#ifdef __INTELLISENSE__
+﻿#ifdef __INTELLISENSE__
 const struct SpeciesInfo gSpeciesInfoGen3[] =
 {
 #endif
@@ -246,14 +246,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_SCEPTILE,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_SCEPTILE,
-        .categoryName = _("Forest"),
+        .categoryName = _("Dschungel"),
         .height = 19,
         .weight = 552,
         .description = COMPOUND_STRING(
-            "Thanks to the power in its quick legs,\n"
-            "Mega Sceptile can be on its opponent in a\n"
-            "flash. It can cut off a portion of its tail\n"
-            "to fire it like a missile at an opponent."),
+            "Dank seiner schnellen Beine ist Mega-\n"
+            "Gewaldro im Nu beim Gegner. Es kann\n"
+            "ein Stück seines Schweifes abtrennen\n"
+            "und es wie eine Rakete abfeuern."),
         .pokemonScale = 256,
         .pokemonOffset = -1,
         .trainerScale = 275,
@@ -578,14 +578,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_BLAZIKEN,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_BLAZIKEN,
-        .categoryName = _("Blaze"),
+        .categoryName = _("Großbrand"),
         .height = 19,
         .weight = 520,
         .description = COMPOUND_STRING(
-            "As it unleashes a flurry of savage kicks,\n"
-            "its legs can begin to burn from the\n"
-            "friction of the surrounding atmosphere.\n"
-            "They're always a source of pride to it."),
+            "Wenn es eine Serie wilder Tritte ent-\n"
+            "fesselt, können seine Beine durch die\n"
+            "Reibung der Luft zu brennen beginnen.\n"
+            "Sie sind für es eine Quelle des Stolzes."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 301,
@@ -876,14 +876,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_SWAMPERT,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_SWAMPERT,
-        .categoryName = _("Mud Fish"),
+        .categoryName = _("Lehmhüpfer"),
         .height = 19,
         .weight = 1020,
         .description = COMPOUND_STRING(
-            "When it Mega Evolves, the strength that it\n"
-            "needs to act in the water is increased.\n"
-            "It can use its tenacious power\n"
-            "both on land and in the water."),
+            "Wenn es sich entwickelt, wird die Kraft,\n"
+            "die es im Wasser braucht, verstärkt.\n"
+            "Es kann seine zähe Power sowohl an\n"
+            "Land als auch im Wasser einsetzen."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2922,14 +2922,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_GARDEVOIR,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_GARDEVOIR,
-        .categoryName = _("Embrace"),
+        .categoryName = _("Umarmung"),
         .height = 16,
         .weight = 484,
         .description = COMPOUND_STRING(
-            "By opening its heart, Mega Gardevoir\n"
-            "becomes able to use tremendous psychic\n"
-            "power. The red plate in its chest is said to\n"
-            "be a physical manifestation of its heart."),
+            "Durch das Öffnen seines Herzens kann\n"
+            "Mega-Guardevoir gewaltige Psycho-\n"
+            "kräfte einsetzen. Die rote Platte auf\n"
+            "seiner Brust ist die Form seines Herzens."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3075,14 +3075,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_GALLADE,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_GALLADE,
-        .categoryName = _("Blade"),
+        .categoryName = _("Klinge"),
         .height = 16,
         .weight = 564,
         .description = COMPOUND_STRING(
-            "Mega Gallade has a knightly appearance.\n"
-            "It can use its psychic power to reshape\n"
-            "both arms into blades simultaneously and\n"
-            "fight using a dual-wielding style."),
+            "Mega-Galagladi hat ein ritterliches\n"
+            "Aussehen. Es kann beide Arme gleich-\n"
+            "zeitig mit Psychokraft in Klingen\n"
+            "verwandeln und zweihändig kämpfen."),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
@@ -4679,13 +4679,13 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_SABLEYE,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_SABLEYE,
-        .categoryName = _("Darkness"),
+        .categoryName = _("Finsternis"),
         .height = 5,
         .weight = 1610,
         .description = COMPOUND_STRING(
-            "Bathed in the energy of Mega Evolution,\n"
-            "the gemstone on its chest expands, rips\n"
-            "through its skin, and falls out."),
+            "Durch die Mega-Energie vergrößert sich\n"
+            "der Edelstein auf seiner Brust, reißt\n"
+            "durch die Haut und fällt heraus."),
         .pokemonScale = 451,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -4837,14 +4837,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_MAWILE,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_MAWILE,
-        .categoryName = _("Deceiver"),
+        .categoryName = _("Schwindler"),
         .height = 10,
         .weight = 235,
         .description = COMPOUND_STRING(
-            "Its two sets of jaws thrash about\n"
-            "violently as if they each had a will of\n"
-            "their own. One gnash from them can turn a\n"
-            "boulder to dust."),
+            "Seine beiden Kieferpaare zucken wild,\n"
+            "als hätten sie einen eigenen Willen.\n"
+            "Ein einziger Biss kann einen Felsen\n"
+            "zu Staub zermahlen."),
         .pokemonScale = 466,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -5134,14 +5134,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_AGGRON,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_AGGRON,
-        .categoryName = _("Iron Armor"),
+        .categoryName = _("Eisenpanzer"),
         .height = 22,
         .weight = 3950,
         .description = COMPOUND_STRING(
-            "When Aggron Mega Evolves into\n"
-            "Mega Aggron, the destructive ability of\n"
-            "its fearsome horns can turn a steel-clad\n"
-            "tank into so much scrap metal."),
+            "Wenn Stolloss zu Mega-Stolloss wird,\n"
+            "kann die zerstörerische Kraft seiner\n"
+            "Hörner einen Panzer in Schrott\n"
+            "verwandeln."),
         .pokemonScale = 256,
         .pokemonOffset = -1,
         .trainerScale = 350,
@@ -5378,14 +5378,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_MEDICHAM,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_MEDICHAM,
-        .categoryName = _("Meditate"),
+        .categoryName = _("Meditation"),
         .height = 13,
         .weight = 315,
         .description = COMPOUND_STRING(
-            "It uses its amped-up willpower to create\n"
-            "additional arms for itself. The more it\n"
-            "has trained its spirit, the more realistic\n"
-            "and dexterous these arms become."),
+            "Es nutzt seine enorme Willenskraft, um\n"
+            "zusätzliche Arme zu erschaffen. Je mehr\n"
+            "es seinen Geist trainiert hat, desto\n"
+            "realistischer werden diese Arme."),
         .pokemonScale = 298,
         .pokemonOffset = 5,
         .trainerScale = 256,
@@ -5596,13 +5596,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_MANECTRIC,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_MANECTRIC,
-        .categoryName = _("Discharge"),
+        .categoryName = _("Entladung"),
         .height = 18,
         .weight = 440,
         .description = COMPOUND_STRING(
-            "Too much electricity has built up in its\n"
-            "body, irritating Manectric. Its explosive\n"
-            "speed is equal to that of a lightning bolt."),
+            "Zu viel Elektrizität hat sich in seinem\n"
+            "Körper aufgestaut und reizt Voltenso.\n"
+            "Seine Geschwindigkeit gleicht der eines\n"
+            "Blitzes."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 257,
@@ -6566,10 +6567,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 25,
         .weight = 1303,
         .description = COMPOUND_STRING(
-            "The yellow patterns it bears are old scars.\n"
-            "The energy from Mega Evolution runs\n"
-            "through them, causing it sharp pain and\n"
-            "suffering."),
+            "Die gelben Muster auf ihm sind alte\n"
+            "Narben. Die Mega-Energie fließt durch\n"
+            "sie und verursacht heftige Schmerzen\n"
+            "und Leid."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 317,
@@ -6962,14 +6963,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_CAMERUPT,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_CAMERUPT,
-        .categoryName = _("Eruption"),
+        .categoryName = _("Ausbruch"),
         .height = 25,
         .weight = 3205,
         .description = COMPOUND_STRING(
-            "The humps on its back have transformed\n"
-            "into one large and very active volcano. It\n"
-            "has a deep hatred of water or any moisture\n"
-            "and has an explosive personality."),
+            "Die Höcker auf seinem Rücken sind zu\n"
+            "einem großen aktiven Vulkan geworden.\n"
+            "Es hasst Wasser und Feuchtigkeit und\n"
+            "hat ein explosives Wesen."),
         .pokemonScale = 256,
         .pokemonOffset = 7,
         .trainerScale = 345,
@@ -7884,14 +7885,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_ALTARIA,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_ALTARIA,
-        .categoryName = _("Humming"),
+        .categoryName = _("Summsel"),
         .height = 15,
         .weight = 206,
         .description = COMPOUND_STRING(
-            "It sings with a voice that is even more\n"
-            "beautiful than before it Mega Evolved.\n"
-            "Its feathers became larger for protection\n"
-            "and glimmer with an iridescent sheen."),
+            "Es singt mit einer noch schöneren\n"
+            "Stimme als vor der Mega-Entwicklung.\n"
+            "Seine Federn wurden größer und\n"
+            "schimmern in schillernden Farben."),
         .pokemonScale = 327,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9781,9 +9782,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 12,
         .weight = 130,
         .description = COMPOUND_STRING(
-            "Extraordinary energy amplifies its\n"
-            "cursing power to such an extent that it\n"
-            "can't help but curse its own Trainer."),
+            "Enorme Energie verstärkt seine Fluch-\n"
+            "kraft so sehr, dass es nicht anders\n"
+            "kann, als sogar seinen eigenen\n"
+            "Trainer zu verfluchen."),
         .pokemonScale = 262,
         .pokemonOffset = 9,
         .trainerScale = 256,
@@ -10351,10 +10353,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 12,
         .weight = 80,
         .description = COMPOUND_STRING(
-            "It vibrates its entire body to attack in\n"
-            "all directions using sound waves. Any who\n"
-            "hear the vibrations get so confused, they\n"
-            "forget who they are."),
+            "Es vibriert mit dem ganzen Körper, um\n"
+            "mit Schallwellen anzugreifen. Jeder,\n"
+            "der diese Vibrationen hört, wird so\n"
+            "verwirrt, dass er sich selbst vergisst."),
         .frontPic = gMonFrontPic_ChimechoMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
@@ -10489,14 +10491,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_ABSOL,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_ABSOL,
-        .categoryName = _("Disaster"),
+        .categoryName = _("Desaster"),
         .height = 12,
         .weight = 490,
         .description = COMPOUND_STRING(
-            "As the energy of Mega Evolution fills it,\n"
-            "its fur bristles. What you see on its back\n"
-            "are not true wings, and this Pokémon isn't\n"
-            "able to fly."),
+            "Wenn die Mega-Energie es erfüllt,\n"
+            "sträubt sich sein Fell. Was man auf\n"
+            "seinem Rücken sieht, sind keine\n"
+            "Flügel; es kann nicht fliegen."),
         .pokemonScale = 301,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -10565,14 +10567,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_ABSOL,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_ABSOL,
-        .categoryName = _("Disaster"),
+        .categoryName = _("Desaster"),
         .height = 12,
         .weight = 490,
         .description = COMPOUND_STRING(
-            "Using fur that it has made into sharp,\n"
-            "clawlike shapes, it cuts down foes with\n"
-            "a single blow. This is an act of kindness\n"
-            "to keep them from suffering."),
+            "Mit Fell, das es zu scharfen Klauen-\n"
+            "formen geformt hat, schneidet es\n"
+            "Feinde mit einem Schlag nieder. Dies\n"
+            "ist ein Akt der Gnade, um Leid zu ersparen."),
         .frontPic = gMonFrontPic_AbsolMegaZ,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
@@ -10784,13 +10786,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_GLALIE,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_GLALIE,
-        .categoryName = _("Face"),
+        .categoryName = _("Antlitz"),
         .height = 21,
         .weight = 3502,
         .description = COMPOUND_STRING(
-            "The power of Mega Evolution was so strong\n"
-            "that it smashed Glalie's jaw. Its inability\n"
-            "to eat very well leaves Glalie irritated."),
+            "Die Kraft der Mega-Entwicklung war so\n"
+            "stark, dass sie Firnontors Kiefer\n"
+            "zertrümmerte. Das Fressen fällt ihm\n"
+            "schwer, was es reizbar macht."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 344,
@@ -10929,14 +10932,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_FROSLASS,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_FROSLASS,
-        .categoryName = _("Snow Land"),
+        .categoryName = _("Schneegebiet"),
         .height = 26,
         .weight = 296,
         .description = COMPOUND_STRING(
-            "This Pokémon can use eerie cold\n"
-            "air imbued with ghost energy to\n"
-            "freeze even insubstantial things,\n"
-            "such as flames or the wind."),
+            "Es kann unheimliche Kaltluft mit\n"
+            "Geisterenergie nutzen, um selbst\n"
+            "nicht greifbare Dinge wie Flammen\n"
+            "oder den Wind einzufrieren."),
         .frontPic = gMonFrontPic_FroslassMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
@@ -11828,14 +11831,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_SALAMENCE,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_SALAMENCE,
-        .categoryName = _("Dragon"),
+        .categoryName = _("Drache"),
         .height = 18,
         .weight = 1126,
         .description = COMPOUND_STRING(
-            "Mega Evolution fuels its brutality, and it\n"
-            "may even turn on the Trainer who raised it.\n"
-            "It's been dubbed the blood-soaked.\n"
-            "crescent."),
+            "Mega-Entwicklung schürt seine Brutali-\n"
+            "tät. Es könnte sich sogar gegen seinen\n"
+            "Trainer wenden. Man nennt es die\n"
+            "blutgetränkte Sichel."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12128,13 +12131,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_METAGROSS,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_METAGROSS,
-        .categoryName = _("Iron Leg"),
+        .categoryName = _("Eisenfuß"),
         .height = 25,
         .weight = 9429,
         .description = COMPOUND_STRING(
-            "When it knows it can't win, it digs the\n"
-            "claws on its legs into its opponent and\n"
-            "starts the countdown to a big explosion."),
+            "Weiß es, dass es nicht gewinnen kann,\n"
+            "gräbt es seine Klauen in den Gegner\n"
+            "und beginnt den Countdown zu einer\n"
+            "gewaltigen Explosion."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 447,
@@ -12522,14 +12526,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_LATIAS,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_LATIAS,
-        .categoryName = _("Eon"),
+        .categoryName = _("Äon"),
         .height = 18,
         .weight = 520,
         .description = COMPOUND_STRING(
-            "Its body is smaller than Mega Latios's\n"
-            "body. It is more agile and can make very\n"
-            "sharp turns. When it Mega Evolves, its\n"
-            "defensive strength grows substantially."),
+            "Sein Körper ist kleiner als der von\n"
+            "Mega-Latios. Es ist wendiger und kann\n"
+            "sehr enge Kurven fliegen. Seine\n"
+            "Verteidigungskraft wächst enorm."),
         .pokemonScale = 304,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -12681,14 +12685,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_LATIOS,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_LATIOS,
-        .categoryName = _("Eon"),
+        .categoryName = _("Äon"),
         .height = 23,
         .weight = 700,
         .description = COMPOUND_STRING(
-            "It's larger than Mega Latias, and can\n"
-            "achieve higher speeds in flight.\n"
-            "This Pokémon can use its speed in battle\n"
-            "to unleash a flurry of attacks."),
+            "Es ist größer als Mega-Latias und kann\n"
+            "im Flug höhere Geschwindigkeiten\n"
+            "erreichen. Es nutzt seine Schnelligkeit\n"
+            "für eine Serie von Angriffen."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 294,
@@ -13150,14 +13154,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .speciesName = _("Rayquaza"),
         .cryId = CRY_RAYQUAZA_MEGA,
         .natDexNum = NATIONAL_DEX_RAYQUAZA,
-        .categoryName = _("Sky High"),
+        .categoryName = _("Himmelhoch"),
         .height = 108,
         .weight = 3920,
         .description = COMPOUND_STRING(
-            "Particles stream from the filaments that\n"
-            "extend from its jaw. They can control the\n"
-            "density and humidity of the air, allowing\n"
-            "Rayquaza to manipulate the weather."),
+            "Partikel strömen aus den Filamenten\n"
+            "an seinem Kiefer. Sie kontrollieren\n"
+            "die Luftfeuchtigkeit und -dichte,\n"
+            "sodass es das Wetter manipulieren kann."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 448,

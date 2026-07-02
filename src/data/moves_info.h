@@ -9420,7 +9420,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Protzer"),
         .description = COMPOUND_STRING(
             "Pumpt den Körper auf.\n"
-            "ANG. u. Vert. erhöht."),
+            "erhöht Angriff und\n"
+            "Verteidigung."),
         .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_FIGHTING,
@@ -16543,8 +16544,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Kulleraugen"),
         .description = COMPOUND_STRING(
-            "Senkt Angr. und\n"
-            "greift zuerst an."),
+            "Senkt Angriff des Ziels.\n"
+            "Hohe Erstschlagquote."),
         .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_FAIRY,
