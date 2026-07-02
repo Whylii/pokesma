@@ -1521,6 +1521,10 @@ void Task_HandleChooseMonInput(u8 taskId)
                     gPartyMenu.slotId2 = gPartyMenu.slotId;
                 }
             }
+            else if (gPartyMenu.action == PARTY_ACTION_SWITCH)
+            {
+                HandleChooseMonSelection(taskId, slotPtr);
+            }
             break;
         }
     }
@@ -1800,6 +1804,9 @@ static u16 PartyMenuButtonHandler(s8 *slotPtr)
 
     if (JOY_NEW(START_BUTTON))
         return START_BUTTON;
+
+    if (JOY_NEW(SELECT_BUTTON))
+        return SELECT_BUTTON;
 
     // Cycling player and party teams for in-battle party menu in full-team multis
     if ((gPartyMenu.layout == PARTY_LAYOUT_MULTI_FULL || gPartyMenu.layout == PARTY_LAYOUT_MULTI_FULL_PARTNER)

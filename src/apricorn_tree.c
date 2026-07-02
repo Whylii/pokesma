@@ -39,7 +39,7 @@ void AdvanceApricornTrees(void)
     for (i = 1; i < APRICORN_TREE_COUNT; i++)
     {
         u8 stage = gSaveBlock3Ptr->apricornTrees[i].stage;
-        if (stage < APRICORN_STAGE_MATURE)
+        if (stage < APRICORN_STAGE_MATURE || gSaveBlock3Ptr->apricornTrees[i].count == 0)
         {
             gSaveBlock3Ptr->apricornTrees[i].stage = APRICORN_STAGE_MATURE;
             if (gApricornTrees[i].maximum > gApricornTrees[i].minimum)
