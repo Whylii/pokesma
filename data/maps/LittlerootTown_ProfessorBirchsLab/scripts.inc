@@ -9,7 +9,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_Aide::
 # 16 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto_if_set FLAG_BIRCH_AIDE_MET, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_2
 # 22 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork, MSGBOX_DEFAULT
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork, MSGBOX_NPC
 # 23 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setflag FLAG_BIRCH_AIDE_MET
 # 24 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
@@ -32,7 +32,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_Aide_6:
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_2:
 # 17 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork, MSGBOX_DEFAULT
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork, MSGBOX_NPC
 # 18 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	release
 	end

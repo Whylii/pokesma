@@ -14,12 +14,12 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_Aide {
         end
     } 
     elif (flag(FLAG_BIRCH_AIDE_MET)) {
-        msgbox(LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork, MSGBOX_DEFAULT)
+        msgbox(LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork, MSGBOX_NPC)
         release
         end
     } 
     else {
-        msgbox(LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork, MSGBOX_DEFAULT)
+        msgbox(LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork, MSGBOX_NPC)
         setflag(FLAG_BIRCH_AIDE_MET)
         release
         end

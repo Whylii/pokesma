@@ -2,301 +2,301 @@ const struct EasyChatWordInfo gEasyChatGroup_Status[] = {
     [EC_INDEX(EC_WORD_DARK)] =
     {
         .text = COMPOUND_STRING("Unlicht"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_AIR_LOCK),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_KEEN_EYE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_STENCH)] =
     {
         .text = COMPOUND_STRING("Duftnote"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_ALT_COLOR),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_GUTS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THICK_FAT)] =
     {
         .text = COMPOUND_STRING("Speckschicht"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_ARENA_TRAP),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_ALT_COLOR),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_RAIN_DISH)] =
     {
         .text = COMPOUND_STRING("Regengenuss"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_BATTLE_ARMOR),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_RUN_AWAY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DRIZZLE)] =
     {
         .text = COMPOUND_STRING("Niesel"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_BEAUTIFUL),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_CUTENESS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ARENA_TRAP)] =
     {
         .text = COMPOUND_STRING("Ausweglos"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_BEAUTY),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_CUTE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_INTIMIDATE)] =
     {
         .text = COMPOUND_STRING("Bedroher"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_BLAZE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_WATER_VEIL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ROCK_HEAD)] =
     {
         .text = COMPOUND_STRING("Steinhaupt"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_BUG),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_ARENA_TRAP),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_COLOR)] =
     {
         .text = COMPOUND_STRING("Farbe"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_CHLOROPHYLL),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_INTIMIDATE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ALT_COLOR)] =
     {
         .text = COMPOUND_STRING("Alt. Farbe"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_CLEAR_BODY),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_LIGHTNINGROD),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ROCK)] =
     {
         .text = COMPOUND_STRING("Gestein"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_CLOUD_NINE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_GROUND),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BEAUTIFUL)] =
     {
         .text = COMPOUND_STRING("Schön"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_COLOR),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_CUTE_CHARM),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BEAUTY)] =
     {
         .text = COMPOUND_STRING("Schönheit"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_COLOR_CHANGE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_CHLOROPHYLL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_AIR_LOCK)] =
     {
         .text = COMPOUND_STRING("Klimaschutz"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_COMPOUNDEYES),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_COOL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PSYCHIC)] =
     {
         .text = COMPOUND_STRING("Psycho"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_COOL),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_COOLNESS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HYPER_CUTTER)] =
     {
         .text = COMPOUND_STRING("Scherenmacht"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_COOLNESS),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_OBLIVIOUS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FIGHTING)] =
     {
         .text = COMPOUND_STRING("Kampf"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_CUTE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_DRAGON),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SHADOW_TAG)] =
     {
         .text = COMPOUND_STRING("Wegsperre"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_CUTE_CHARM),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_STENCH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SMART)] =
     {
         .text = COMPOUND_STRING("Klug"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_CUTENESS),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_DROUGHT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SMARTNESS)] =
     {
         .text = COMPOUND_STRING("Klugheit"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_DAMP),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_SERENE_GRACE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SPEED_BOOST)] =
     {
         .text = COMPOUND_STRING("Temposchub"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_DARK),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_ICE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_COOL)] =
     {
         .text = COMPOUND_STRING("Cool"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_DRAGON),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_ELECTRIC),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_COOLNESS)] =
     {
         .text = COMPOUND_STRING("Coolness"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_DRIZZLE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_ILLUMINATE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BATTLE_ARMOR)] =
     {
         .text = COMPOUND_STRING("Kampfpanzer"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_DROUGHT),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_PRESSURE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CUTE)] =
     {
         .text = COMPOUND_STRING("Anmutig"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_EARLY_BIRD),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_SHED_SKIN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CUTENESS)] =
     {
         .text = COMPOUND_STRING("Anmut"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_EFFECT_SPORE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_COMPOUNDEYES),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_STURDY)] =
     {
         .text = COMPOUND_STRING("Robustheit"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_ELECTRIC),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_TRACE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SUCTION_CUPS)] =
     {
         .text = COMPOUND_STRING("Saugnapf"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_FIGHTING),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_COLOR),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GRASS)] =
     {
         .text = COMPOUND_STRING("Pflanze"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_FIRE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_COLOR_CHANGE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CLEAR_BODY)] =
     {
         .text = COMPOUND_STRING("Neutraltorso"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_FLAME_BODY),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_DAMP),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TORRENT)] =
     {
         .text = COMPOUND_STRING("Sturzbach"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_FLASH_FIRE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_FIRE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GHOST)] =
     {
         .text = COMPOUND_STRING("Geist"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_FLYING),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_FLASH_FIRE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ICE)] =
     {
         .text = COMPOUND_STRING("Eis"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_FORECAST),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_FLAME_BODY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GUTS)] =
     {
         .text = COMPOUND_STRING("Adrenalin"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_GHOST),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_LIMBER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ROUGH_SKIN)] =
     {
         .text = COMPOUND_STRING("Rauhaut"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_GRASS),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_FLYING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SHELL_ARMOR)] =
     {
         .text = COMPOUND_STRING("Panzerhaut"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_GROUND),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_EARLY_BIRD),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_NATURAL_CURE)] =
     {
         .text = COMPOUND_STRING("Innere Kraft"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_GUTS),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_GHOST),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DAMP)] =
     {
         .text = COMPOUND_STRING("Feuchtigkeit"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HUGE_POWER),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_ROCK),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GROUND)] =
     {
         .text = COMPOUND_STRING("Boden"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HUSTLE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_POISON),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LIMBER)] =
     {
         .text = COMPOUND_STRING("Flexibilität"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HYPER_CUTTER),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_POISON_POINT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MAGNET_PULL)] =
     {
         .text = COMPOUND_STRING("Magnetfalle"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_ICE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_BLAZE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WHITE_SMOKE)] =
     {
         .text = COMPOUND_STRING("Pulverrauch"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_ILLUMINATE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_WATER_ABSORB),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SYNCHRONIZE)] =
     {
         .text = COMPOUND_STRING("Synchro"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_IMMUNITY),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_SWARM),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OVERGROW)] =
     {
         .text = COMPOUND_STRING("Notdünger"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_INNER_FOCUS),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_IMMUNITY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SWIFT_SWIM)] =
     {
         .text = COMPOUND_STRING("Wassertempo"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_INSOMNIA),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_NATURAL_CURE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SAND_STREAM)] =
     {
         .text = COMPOUND_STRING("Sandsturm"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_INTIMIDATE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_INSOMNIA),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SAND_VEIL)] =
     {
         .text = COMPOUND_STRING("Sandschleier"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_KEEN_EYE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_BUG),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_KEEN_EYE)] =
     {
         .text = COMPOUND_STRING("Adlerauge"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_LEVITATE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_FIGHTING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_INNER_FOCUS)] =
     {
         .text = COMPOUND_STRING("Konzentrator"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_LIGHTNINGROD),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_BATTLE_ARMOR),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_STATIC)] =
     {
         .text = COMPOUND_STRING("Statik"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_LIMBER),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_AIR_LOCK),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TYPE)] =
@@ -308,343 +308,343 @@ const struct EasyChatWordInfo gEasyChatGroup_Status[] = {
     [EC_INDEX(EC_WORD_TOUGH)] =
     {
         .text = COMPOUND_STRING("Stark"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_MAGMA_ARMOR),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_SMART),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TOUGHNESS)] =
     {
         .text = COMPOUND_STRING("Stärke"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_MAGNET_PULL),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_SMARTNESS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SHED_SKIN)] =
     {
         .text = COMPOUND_STRING("Expidermis"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_MARVEL_SCALE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_INNER_FOCUS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HUGE_POWER)] =
     {
         .text = COMPOUND_STRING("Kraftkoloss"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_MINUS),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_HUGE_POWER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_VOLT_ABSORB)] =
     {
         .text = COMPOUND_STRING("Voltabsorber"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_NATURAL_CURE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_SOUNDPROOF),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WATER_ABSORB)] =
     {
         .text = COMPOUND_STRING("H2o-absorber"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_NORMAL),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_MAGMA_ARMOR),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ELECTRIC)] =
     {
         .text = COMPOUND_STRING("Elektro"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_OBLIVIOUS),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_MAGNET_PULL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FORECAST)] =
     {
         .text = COMPOUND_STRING("Prognose"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_OVERGROW),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_PURE_POWER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SERENE_GRACE)] =
     {
         .text = COMPOUND_STRING("Edelmut"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_OWN_TEMPO),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_MINUS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_POISON)] =
     {
         .text = COMPOUND_STRING("Gift"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_PATTERN),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_PICKUP),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_POISON_POINT)] =
     {
         .text = COMPOUND_STRING("Giftdorn"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_PICKUP),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_VITAL_SPIRIT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DRAGON)] =
     {
         .text = COMPOUND_STRING("Drachen"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_PKRS),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_PATTERN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TRACE)] =
     {
         .text = COMPOUND_STRING("Fährte"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_PLUS),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_CLEAR_BODY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OBLIVIOUS)] =
     {
         .text = COMPOUND_STRING("Dösigkeit"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_POISON),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_DRIZZLE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TRUANT)] =
     {
         .text = COMPOUND_STRING("Schnarchnase"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_POISON_POINT),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_NORMAL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_RUN_AWAY)] =
     {
         .text = COMPOUND_STRING("Angsthase"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_PRESSURE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_OVERGROW),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_STICKY_HOLD)] =
     {
         .text = COMPOUND_STRING("Wertehalter"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_PSYCHIC),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_MARVEL_SCALE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CLOUD_NINE)] =
     {
         .text = COMPOUND_STRING("Wolke Sieben"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_PURE_POWER),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_SHELL_ARMOR),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_NORMAL)] =
     {
         .text = COMPOUND_STRING("Normal"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_RAIN_DISH),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_GRASS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_STEEL)] =
     {
         .text = COMPOUND_STRING("Stahl"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_ROCK),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_PLUS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ILLUMINATE)] =
     {
         .text = COMPOUND_STRING("Erleuchtung"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_ROCK_HEAD),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_PKRS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_EARLY_BIRD)] =
     {
         .text = COMPOUND_STRING("Frühwecker"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_ROUGH_SKIN),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_FORECAST),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HUSTLE)] =
     {
         .text = COMPOUND_STRING("Übereifer"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_RUN_AWAY),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_PSYCHIC),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SHINE)] =
     {
         .text = COMPOUND_STRING("Scheinen"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SAND_STREAM),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_SHIELD_DUST),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FLYING)] =
     {
         .text = COMPOUND_STRING("Fliegen"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SAND_VEIL),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_WHITE_SMOKE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DROUGHT)] =
     {
         .text = COMPOUND_STRING("Dürre"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SERENE_GRACE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_ROUGH_SKIN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LIGHTNINGROD)] =
     {
         .text = COMPOUND_STRING("Blitzfänger"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SHADOW_TAG),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_RAIN_DISH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_COMPOUNDEYES)] =
     {
         .text = COMPOUND_STRING("Facettenauge"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SHED_SKIN),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_STURDY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MARVEL_SCALE)] =
     {
         .text = COMPOUND_STRING("Notschutz"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SHELL_ARMOR),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_SAND_VEIL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WONDER_GUARD)] =
     {
         .text = COMPOUND_STRING("Wunderwache"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SHIELD_DUST),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_SAND_STREAM),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_INSOMNIA)] =
     {
         .text = COMPOUND_STRING("Insomnia"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SHINE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_SUCTION_CUPS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LEVITATE)] =
     {
         .text = COMPOUND_STRING("Schwebe"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SMART),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_SHINE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PLUS)] =
     {
         .text = COMPOUND_STRING("Plus"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SMARTNESS),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_HYPER_CUTTER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PRESSURE)] =
     {
         .text = COMPOUND_STRING("Erzwinger"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SOUNDPROOF),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_TRUANT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LIQUID_OOZE)] =
     {
         .text = COMPOUND_STRING("Kloakensosse"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SPEED_BOOST),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_BEAUTIFUL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_COLOR_CHANGE)] =
     {
         .text = COMPOUND_STRING("Farbwechsel"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_STATIC),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_BEAUTY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SOUNDPROOF)] =
     {
         .text = COMPOUND_STRING("Lärmschutz"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_STEEL),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_LEVITATE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_EFFECT_SPORE)] =
     {
         .text = COMPOUND_STRING("Sporenwirt"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_STENCH),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_THICK_FAT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PKRS)] =
     {
         .text = COMPOUND_STRING("Pokérus"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_STICKY_HOLD),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_EFFECT_SPORE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FIRE)] =
     {
         .text = COMPOUND_STRING("Feuer"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_STURDY),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_STEEL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FLAME_BODY)] =
     {
         .text = COMPOUND_STRING("Flammkörper"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SUCTION_CUPS),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_TOUGH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MINUS)] =
     {
         .text = COMPOUND_STRING("Minus"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SWARM),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_TOUGHNESS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OWN_TEMPO)] =
     {
         .text = COMPOUND_STRING("Tempomacher"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SWIFT_SWIM),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_STATIC),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MAGMA_ARMOR)] =
     {
         .text = COMPOUND_STRING("Magmapanzer"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SYNCHRONIZE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_ROCK_HEAD),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WATER)] =
     {
         .text = COMPOUND_STRING("Wasser"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_THICK_FAT),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_TORRENT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WATER_VEIL)] =
     {
         .text = COMPOUND_STRING("Aquahülle"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_TORRENT),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_SYNCHRONIZE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BUG)] =
     {
         .text = COMPOUND_STRING("Käfer"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_TOUGH),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_OWN_TEMPO),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SWARM)] =
     {
         .text = COMPOUND_STRING("Hexaplaga"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_TOUGHNESS),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_SPEED_BOOST),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CUTE_CHARM)] =
     {
         .text = COMPOUND_STRING("Charmebolzen"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_TRACE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_TYPE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_IMMUNITY)] =
     {
         .text = COMPOUND_STRING("Immunität"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_TRUANT),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_HUSTLE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BLAZE)] =
     {
         .text = COMPOUND_STRING("Grossbrand"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_TYPE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_DARK),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PICKUP)] =
     {
         .text = COMPOUND_STRING("Mitnahme"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_VITAL_SPIRIT),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_VOLT_ABSORB),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PATTERN)] =
     {
         .text = COMPOUND_STRING("Muster"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_VOLT_ABSORB),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_WATER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FLASH_FIRE)] =
     {
         .text = COMPOUND_STRING("Feuerfänger"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WATER),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_SWIFT_SWIM),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_VITAL_SPIRIT)] =
     {
         .text = COMPOUND_STRING("Munterkeit"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WATER_ABSORB),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_SHADOW_TAG),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CHLOROPHYLL)] =
     {
         .text = COMPOUND_STRING("Chlorophyll"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WATER_VEIL),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_STICKY_HOLD),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PURE_POWER)] =
     {
         .text = COMPOUND_STRING("Mentalkraft"),
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WHITE_SMOKE),
+        .alphabeticalOrder = EC_INDEX(EC_WORD_CLOUD_NINE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SHIELD_DUST)] =

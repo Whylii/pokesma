@@ -1389,7 +1389,10 @@ u8 GetLevelFromBoxMonExp(struct BoxPokemon *boxMon)
 
 u16 GiveMoveToMon(struct Pokemon *mon, enum Move move)
 {
-    return GiveMoveToBoxMon(&mon->box, move);
+    u16 result = GiveMoveToBoxMon(&mon->box, move);
+    if (result == move)
+        MonRestorePP(mon);
+    return result;
 }
 
 u16 GiveMoveToBoxMon(struct BoxPokemon *boxMon, enum Move move)
@@ -1431,6 +1434,7 @@ u16 GiveMoveToBattleMon(struct BattlePokemon *mon, enum Move move)
 void SetMonMoveSlot(struct Pokemon *mon, enum Move move, u8 slot)
 {
     SetBoxMonMoveSlot(&mon->box, move, slot);
+    MonRestorePP(mon);
 }
 
 void SetBoxMonMoveSlot(struct BoxPokemon *mon, enum Move move, u8 slot)

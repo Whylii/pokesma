@@ -1508,6 +1508,20 @@ void Task_HandleChooseMonInput(u8 taskId)
             UpdatePartyToBattleOrder();
             RefreshPartyMenu();
             break;
+        case SELECT_BUTTON:
+            if (gPartyMenu.action == PARTY_ACTION_CHOOSE_MON)
+            {
+                u8 slot = *slotPtr;
+                if (slot < gPartiesCount[B_TRAINER_PLAYER])
+                {
+                    PlaySE(SE_SELECT);
+                    gPartyMenu.action = PARTY_ACTION_SWITCH;
+                    DisplayPartyMenuStdMessage(PARTY_MSG_MOVE_TO_WHERE);
+                    AnimatePartySlot(gPartyMenu.slotId, 1);
+                    gPartyMenu.slotId2 = gPartyMenu.slotId;
+                }
+            }
+            break;
         }
     }
 }

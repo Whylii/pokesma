@@ -12807,7 +12807,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Klauenwetzer"),
         .description = COMPOUND_STRING(
             "Der Anwender schärft\n"
-            "Krallen schärfen\n"
+            "Klauen erhöht\n"
             "Angriff u. Genauigk."),
         .effect = EFFECT_STAT_CHANGE,
         .power = 0,

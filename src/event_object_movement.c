@@ -4422,6 +4422,8 @@ static void UpdateApricornTreeSprite(struct ObjectEvent *objectEvent, struct Spr
     sprite->invisible = FALSE;
     sprite->images = picTable;
     sprite->animNum = stage;
+    sprite->subspriteTableNum = 6;
+    sprite->subspriteMode = SUBSPRITES_ON;
     StartSpriteAnim(sprite, stage);
 }
 

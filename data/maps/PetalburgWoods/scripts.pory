@@ -1,3 +1,38 @@
+script PetalburgWoods_EventScript_PkmnSign{
+    msgbox ("Hier findest du Informationen über die 
+    Pokémon, die in diesem Wald leben.", MSGBOX_SIGN)
+        showmonpic (SPECIES_POOCHYENA, 10, 3)
+        playmoncry (SPECIES_POOCHYENA, 0)
+        delay (60)
+        hidemonpic
+        showmonpic (SPECIES_WURMPLE, 10, 3)
+        playmoncry (SPECIES_WURMPLE, 0)
+        delay (60)
+        hidemonpic
+        showmonpic (SPECIES_SHROOMISH, 10, 3)
+        playmoncry (SPECIES_SHROOMISH, 0)
+        delay (60)
+        hidemonpic
+		showmonpic (SPECIES_SILCOON, 10, 3)
+        playmoncry (SPECIES_SILCOON, 0)
+        delay (60)
+        hidemonpic
+		showmonpic (SPECIES_CASCOON, 10, 3)
+        playmoncry (SPECIES_CASCOON, 0)
+        delay (60)
+        hidemonpic
+		showmonpic (SPECIES_TAILLOW, 10, 3)
+        playmoncry (SPECIES_TAILLOW, 0)
+        delay (60)
+        hidemonpic
+		showmonpic (SPECIES_SLAKOTH, 10, 3)
+        playmoncry (SPECIES_SLAKOTH, 0)
+        delay (60)
+        hidemonpic
+        release
+    end
+}
+
 raw `
 PetalburgWoods_MapScripts::
 	.byte 0

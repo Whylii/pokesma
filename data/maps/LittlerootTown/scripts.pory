@@ -5,7 +5,6 @@ script LittlerootTown_EventScript_OldMan{
 	}
 	else {
 		msgbox (LittlerootTownOldMan, MSGBOX_NPC)
-		giveitem(ITEM_EXP_SHARE)
 	}
     release
 }
@@ -15,9 +14,7 @@ text LittlerootTownOldManAlreadyHasEXPShare{
 }
 text LittlerootTownOldMan{
     "Oh,
-    Hallo {PLAYER}!
-	Hier, ein EP-Teiler
-	für dich!"
+    Hallo {PLAYER}!"
 }
 
 mapscripts LittlerootTown_MapScripts {

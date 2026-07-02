@@ -155,8 +155,8 @@ struct __attribute__((packed)) BoxPokemon
     u32 isBadEgg:1;
     u32 hasSpecies:1;
     u32 isEgg:1;
-    u32 abilityNum:1;
-    u32 unusedBitfield1:7;
+    u32 abilityNum:2;
+    u32 unusedBitfield1:6;
 
     // Word 2: experience, language, nature, bool ribbons
     u32 experience:21;

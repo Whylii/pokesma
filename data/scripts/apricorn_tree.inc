@@ -61,7 +61,7 @@ ApricornTree_EventScript_CancelPickingApricorn::
 	end
 
 ApricornTree_Text_Intro:
-	.string "Es ist eine Aprikoko!$"
+	.string "Es ist ein Aprikokobaum!$"
 
 ApricornTree_Text_Empty:
 	.string "Hier sind keine Aprikokos…$"

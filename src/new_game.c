@@ -193,16 +193,7 @@ void NewGameInitData(void)
     ResetGabbyAndTy();
     ClearSecretBases();
     ClearBerryTrees();
-#if APRICORN_TREE_COUNT > 0
-    {
-        u32 i;
-        for (i = 1; i < APRICORN_TREE_COUNT; i++)
-        {
-            gSaveBlock3Ptr->apricornTrees[i].stage = APRICORN_STAGE_MATURE;
-            gSaveBlock3Ptr->apricornTrees[i].count = 0;
-        }
-    }
-#endif
+    AdvanceApricornTrees();
     SetMoney(&gSaveBlock1Ptr->money, 3000);
     SetCoins(0);
     GetNewDerby();
