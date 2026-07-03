@@ -1,4 +1,4 @@
-﻿CableClub_Text_WelcomeWhichCableClubService:
+CableClub_Text_WelcomeWhichCableClubService:
 	.string "Willkommen im Pokémon\n"
 	.string "Kabel-Club!\p"
 	.string "Welchen Service möchtest du\n"
@@ -283,7 +283,7 @@ MossdeepCity_GameCorner_1F_Text_DodrioBerryPickingInfo:
 	.string "“Beerenernte mit Dodri”\p"
 	.string "Bewege Dodris drei Köpfe, um die\n"
 	.string "fallenden Beeren zu fangen.\p"
-	.string "Drücke das {Plus} Steuerkreuz nach\n"
+	.string "Drücke das {PLUS} Steuerkreuz nach\n"
 	.string "rechts, oben oder links, um die\l"
 	.string "Köpfe zu bewegen.\l"
 	.string "Um an diesem Spiel teilnehmen zu\l"

@@ -1,4 +1,4 @@
-﻿LilycoveCity_DepartmentStore_1F_Text_LotteryCornerDrawTicket:
+LilycoveCity_DepartmentStore_1F_Text_LotteryCornerDrawTicket:
 	.string "Dies ist die Pokémon-Lotterie.\p"
 	.string "Alle Besucher des Einkaufszentrums\n"
 	.string "können einen Pokémon-Lottoschein\l"

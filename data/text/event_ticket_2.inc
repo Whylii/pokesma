@@ -1,4 +1,4 @@
-﻿EventTicket_Text_OldSeaMapTooFar:
+EventTicket_Text_OldSeaMapTooFar:
 	.string "Nun, was gibt’s, Kindchen?\p"
 	.string "Wie? Du besitzt eine alte, zerknitterte\n"
 	.string "Karte?\p"

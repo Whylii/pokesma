@@ -1,4 +1,4 @@
-﻿gBirchDexRatingText_AreYouCurious::
+gBirchDexRatingText_AreYouCurious::
 	.string "Prof. Birk: Ah, {PLAYER}{KUN}!\p"
 	.string "Möchtest du mir deine Fortschritte\n"
 	.string "mit dem Pokédex zeigen?$"

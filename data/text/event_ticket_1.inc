@@ -1,4 +1,4 @@
-﻿EventTicket_Text_ShowOldSeaMap:
+EventTicket_Text_ShowOldSeaMap:
 	.string "Die Fähre nach Graphitport ist…\p"
 	.string "Verzeihung? Ob wir zu diesem Ort, der\n"
 	.string "auf der Karte eingezeichnet ist,\l"

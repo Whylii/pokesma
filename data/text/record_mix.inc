@@ -1,4 +1,4 @@
-﻿Text_WouldYouLikeToMixRecords:
+Text_WouldYouLikeToMixRecords:
 	.string "Möchtest du deine Rekorde mit\n"
 	.string "anderen Trainern austauschen?$"
 

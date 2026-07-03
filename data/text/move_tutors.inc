@@ -1,4 +1,4 @@
-﻿MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce:
+MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce:
 	.string "Diese Attacke kann nur einmal\n"
 	.string "erlernt werden! Ist das in Ordnung?$"
 

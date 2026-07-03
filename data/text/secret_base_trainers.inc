@@ -1,4 +1,4 @@
-﻿SecretBase_Text_Trainer0Intro:
+SecretBase_Text_Trainer0Intro:
 	.string "Hast du dir schon eine Geheimbasis\n"
 	.string "eingerichtet?\p"
 	.string "Ich bin hier und dort, überall hin-\n"

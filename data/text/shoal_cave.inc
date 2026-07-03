@@ -1,4 +1,4 @@
-﻿ShoalCave_LowTideEntranceRoom_Text_AreYouPlanningOnGoingInThere:
+ShoalCave_LowTideEntranceRoom_Text_AreYouPlanningOnGoingInThere:
 	.string "Hast du vor, tiefer hineinzugehen?\p"
 	.string "Würdest du mir bitte Küstensalz\n"
 	.string "und Küstenschalen mitbringen?\p"

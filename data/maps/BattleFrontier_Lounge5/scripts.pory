@@ -70,6 +70,12 @@ BattleFrontier_Lounge5_Text_NatureGirlAttackHighSupportLow::
 	.string "Leben gern! Aber wenn es genug\l"
 	.string "Autschies hat, wird es faul!$"
 
+BattleFrontier_Lounge5_Text_NatureGirlDefenseHighAttackLow::
+	.string "Hmm…\p"
+	.string "Dieses hier sagt, es liebt Kämpfe!\n"
+	.string "Es wird sogar kämpfen, wenn es\l"
+	.string "ganz viele Autschies hat!$"
+
 BattleFrontier_Lounge5_Text_NatureGirlDefenseHighDefenseLow::
 	.string "Hmhm…\p"
 	.string "Dieses sagt, es passt auf sich auf!\n"

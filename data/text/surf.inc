@@ -1,4 +1,4 @@
-﻿gText_WantToSurfWithPokemon:
+gText_WantToSurfWithPokemon:
     .string "Das Wasser ist ruhig…\n"
     .string "{STR_VAR_1} bitten zu surfen?$"
 
