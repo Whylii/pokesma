@@ -677,7 +677,7 @@ Route107_Text_DeniseDefeated:
 
 Route107_Text_DenisePostBattle:
 	.string "Verrücktheiten zu erzählen, ist der\n"
-	.string "neue Trend in der Faustauhaven HALLE.$"
+	.string "neue Trend in der Faustauhaven Halle.$"
 
 Route107_Text_BethIntro:
 	.string "Willst du gegen mich kämpfen?\n"
@@ -985,7 +985,7 @@ Route109_Text_PaulNotEnoughPokemon:
 
 Route109_Text_MelIntro:
 	.string "Geli: Wir sind total ineinander verliebt.\n"
-	.string "Unsere Romanze wärmt ganz HOENN!$"
+	.string "Unsere Romanze wärmt ganz Hoenn!$"
 
 Route109_Text_MelDefeated:
 	.string "Geli: Wir haben verloren. Das ist meine\n"
@@ -1769,7 +1769,7 @@ Route113_Text_ToriDefeat:
 
 Route113_Text_ToriPostBattle:
 	.string "Li: Wie viel Asche wir haben? Ich\n"
-	.string "hoffe, genug für eine WEISSE FLÖTE.$"
+	.string "hoffe, genug für eine Weiße FLÖTE.$"
 
 Route113_Text_ToriNotEnoughMons:
 	.string "Li: Wir wollen einen 2-gegen-2-Kampf.\n"
@@ -3313,36 +3313,36 @@ Route121_Text_TammyPostBattle:
 	.string "Werk…$"
 
 Route121_Text_KateIntro:
-	.string "EVA: Zusammen sind wir furchtlos!\n"
+	.string "Eva: Zusammen sind wir furchtlos!\n"
 	.string "Wir demonstrieren dir unsere Stärke!$"
 
 Route121_Text_KateDefeat:
-	.string "EVA: Ich habe vor den Augen meiner\n"
+	.string "Eva: Ich habe vor den Augen meiner\n"
 	.string "Juniorpartnerin versagt…$"
 
 Route121_Text_KatePostBattle:
-	.string "EVA: Wenn sich jemand auf mich\n"
+	.string "Eva: Wenn sich jemand auf mich\n"
 	.string "verlässt, versuche ich ihm gegenüber\l"
 	.string "immer cool aufzutreten…$"
 
 Route121_Text_KateNotEnoughMons:
-	.string "EVA: Wenn du nur ein Pokémon hast,\n"
+	.string "Eva: Wenn du nur ein Pokémon hast,\n"
 	.string "können wir nicht mit dir kämpfen.\p"
 	.string "Das wäre äußerst unfair.$"
 
 Route121_Text_JoyIntro:
-	.string "UTE: Zusammen sind wir furchtlos!\n"
+	.string "Ute: Zusammen sind wir furchtlos!\n"
 	.string "Wir demonstrieren dir unsere Stärke!$"
 
 Route121_Text_JoyDefeat:
-	.string "UTE: Bitte vergib mir, EVA!$"
+	.string "Ute: Bitte vergib mir, Eva!$"
 
 Route121_Text_JoyPostBattle:
-	.string "UTE: Ehehehe, ich muss wohl noch etwas\n"
+	.string "Ute: Ehehehe, ich muss wohl noch etwas\n"
 	.string "mit meiner Seniorpartnerin trainieren.$"
 
 Route121_Text_JoyNotEnoughMons:
-	.string "UTE: Du brauchst mindestens zwei\n"
+	.string "Ute: Du brauchst mindestens zwei\n"
 	.string "Pokémon, um gegen uns zu kämpfen.$"
 
 Route121_Text_JessicaIntro:
@@ -3354,7 +3354,7 @@ Route121_Text_JessicaDefeat:
 	.string "Sache doch nicht gleich so ernst!$"
 
 Route121_Text_JessicaPostBattle:
-	.string "Vielleicht werde ich in die SAFARI-ZONE\n"
+	.string "Vielleicht werde ich in die Safari-Zone\n"
 	.string "gehen und mehr Pokémon fangen!$"
 
 Route121_Text_JessicaRegister:
@@ -3370,7 +3370,7 @@ Route121_Text_JessicaRematchDefeat:
 	.string "Du nimmst es wirklich zu ernst!$"
 
 Route121_Text_JessicaPostRematch:
-	.string "Vielleicht werde ich in die SAFARI-ZONE\n"
+	.string "Vielleicht werde ich in die Safari-Zone\n"
 	.string "gehen und mehr Pokémon fangen!$"
 
 Route121_Text_CristinIntro:
@@ -3418,8 +3418,8 @@ Route121_Text_CaleDefeat:
 	.string "erwartet?!$"
 
 Route121_Text_CalePostBattle:
-	.string "Ich habe im EINKAUFSZENTRUM von\n"
-	.string "SEEGRASULB einfach zu viel eingekauft.\p"
+	.string "Ich habe im Einkaufszentrum von\n"
+	.string "Seegrasulb einfach zu viel eingekauft.\p"
 	.string "Du findest das Zentrum dort hinten.\n"
 	.string "Ich wünschte, ich hätte auch einen\l"
 	.string "Beutel, wie du einen hast.$"

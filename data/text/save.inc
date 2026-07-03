@@ -14,13 +14,13 @@ gText_PlayerSavedGame::
 	.string "{PLAYER} hat das Spiel gespeichert.$"
 
 gText_DifferentSaveFile::
-	.string "ACHTUNG!\p"
+	.string "Achtung!\p"
 	.string "Es gibt bereits einen Spielstand.\p"
-	.string "Wenn jetzt gesichert wird, geht\n"
+	.string "Wenn jetzt gespeichert wird, geht\n"
 	.string "der andere Spielstand mit allen\l"
 	.string "Items und Pokémon für immer\l"
 	.string "verloren.\l"
-	.string "Bist du sicher, dass du sichern\l"
+	.string "Bist du sicher, dass du speichern\l"
 	.string "und den anderen Spielstand\l"
 	.string "überschreiben möchtest?$"
 

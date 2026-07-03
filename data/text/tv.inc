@@ -384,7 +384,7 @@ gTVFanClubOpinionsText00::
 	.string "aus. Ist das nicht fantastisch?\p"
 	.string "Heute bringen wir euch eine Reportage\n"
 	.string "unseres Reporters ins Haus, der im Auf-\l"
-	.string "trag des Pokémon-FANCLUBs unter-\l"
+	.string "trag des Pokémon-FanClubs unter-\l"
 	.string "wegs war.\p"
 	.string "Wer ist heute der glückliche\n"
 	.string "Pokémon-Fan, den wir hier vorstellen?\p"
@@ -416,7 +416,7 @@ gTVFanClubOpinionsText02::
 	.string "Huhuhuuu! Was für ein origineller\n"
 	.string "Vergleich!\p"
 	.string "Man spürt gleich das intensive Gefühl,\n"
-	.string "das der TRAINER für {STR_VAR_2}\l"
+	.string "das der Trainer für {STR_VAR_2}\l"
 	.string "empfindet!$"
 
 gTVFanClubOpinionsText03::
@@ -427,7 +427,7 @@ gTVFanClubOpinionsText03::
 	.string "“{STR_VAR_3}!”\p"
 	.string "Heiaaa! Was für eine spektakuläre\n"
 	.string "Erklärung!\p"
-	.string "Die Liebe dieses TRAINERs zu seinem\n"
+	.string "Die Liebe dieses Trainers zu seinem\n"
 	.string "{STR_VAR_2} wird mehr als deutlich!$"
 
 gTVFanClubOpinionsText04::
@@ -1242,7 +1242,7 @@ gTVTodaysRivalTrainerText07::
 
 gTVTodaysRivalTrainerText08::
 	.string "Unser Heutiger Rivale ist\n"
-	.string "TRAINER {STR_VAR_1}. Er befindet sich\l"
+	.string "Trainer {STR_VAR_1}. Er befindet sich\l"
 	.string "momentan in einer Geheimbasis.\p"
 	.string "{STR_VAR_1} hat bis jetzt {STR_VAR_2} Pokémon\n"
 	.string "im Pokédex verzeichnet.$"
@@ -1604,7 +1604,7 @@ gTVSecretBaseVisitText07::
 gTVSecretBaseVisitText08::
 	.string "Oh!\n"
 	.string "Da kommt {STR_VAR_1}!\l"
-	.string "Stellen wir den TRAINER auf die Probe!\p"
+	.string "Stellen wir den Trainer auf die Probe!\p"
 	.string "… … … … …\n"
 	.string "… … … … …$"
 
@@ -1813,7 +1813,7 @@ gTVTrainerFanClubText11::
 	.string "{STR_VAR_3}!”\p"
 	.string "Das klingt einfach einzigartig!\n"
 	.string "Ich kann verstehen, warum jemand\l"
-	.string "FAN von {STR_VAR_1} wird!\p"
+	.string "Fan von {STR_VAR_1} wird!\p"
 	.string "Okay, du da, vor dem Fernsehgerät!\n"
 	.string "Schließ dich uns an! Alle zusammen!\p"
 	.string "MC: Ich sage {STR_VAR_1},\n"
