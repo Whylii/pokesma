@@ -1,4 +1,4 @@
-// multichoice lists
+﻿// multichoice lists
 static const struct MenuAction MultichoiceList_BrineyOnDewford[] =
 {
     {COMPOUND_STRING("Blütenburg")},
@@ -10,7 +10,7 @@ const u8 gText_Info2[] = _("Info");
 
 static const struct MenuAction MultichoiceList_EnterInfo[] =
 {
-    {COMPOUND_STRING("Enter?")},
+    {COMPOUND_STRING("Eintreten?")},
     {gText_Info2},
     {gText_Exit},
 };
@@ -642,7 +642,7 @@ static const struct MenuAction MultichoiceList_FrontierRules[] =
     {COMPOUND_STRING("TWO STYLES")},
     {COMPOUND_STRING("Lv. 50")},
     {COMPOUND_STRING("Offene Kämpfe")},
-    {COMPOUND_STRING("{PKMN} Typ & Nr.")},
+    {COMPOUND_STRING("{Pokémon} Typ & Nr.")},
     {COMPOUND_STRING("Gehaltene Items")},
     {gText_Exit},
 };
@@ -672,7 +672,7 @@ static const struct MenuAction MultichoiceList_BattleArenaRules[] =
 static const struct MenuAction MultichoiceList_BattleTowerRules[] =
 {
     {COMPOUND_STRING("Duellturm Info")},
-    {COMPOUND_STRING("Kampf {PKMN}")},
+    {COMPOUND_STRING("Kampf {Pokémon}")},
     {COMPOUND_STRING("Battle Salon")},
     {COMPOUND_STRING("Multi-Link")},
     {gText_Exit},
