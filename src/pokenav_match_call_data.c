@@ -490,7 +490,7 @@ static const struct MatchCallStructTrainer sJuanMatchCallHeader =
     }
 };
 
-static const u8 gText_EliteFourMatchCallDesc[] = _("ELITE FOUR");
+static const u8 gText_EliteFourMatchCallDesc[] = _("Top Vier");
 
 static const struct MatchCallStructTrainer sSidneyMatchCallHeader =
 {

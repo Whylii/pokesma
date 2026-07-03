@@ -48,11 +48,22 @@ def extract_repo_species_data() -> list:
         with open(families_fname, "r") as family_fp:
             species_lines = family_fp.readlines()
         is_last_line_preprocessor = False
+        in_intellisense_block = False
         for line in species_lines:
+            if line.strip().startswith("#ifdef"):
+                in_intellisense_block = True
+                continue
+            if in_intellisense_block:
+                if line.strip() == "#endif":
+                    in_intellisense_block = False
+                continue
+
             if is_valid_preprocessor(line):
                 is_last_line_preprocessor = True
-                if line.startswith("#endif") and (isinstance(species_data[-1], str) and species_data[-1].startswith("#if")):
+                if line.startswith("#endif") and species_data and isinstance(species_data[-1], str) and species_data[-1].startswith("#if"):
                     del species_data[-1]
+                elif line.strip() == "#endif":
+                    pass
                 else:
                     species_data.append(line)
                 continue
