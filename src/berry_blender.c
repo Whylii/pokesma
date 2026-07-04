@@ -252,43 +252,43 @@ static const u16 sBlenderOuter_Pal[] = INCGFX_U16("graphics/berry_blender/outer.
 static const u16 sUnused_Pal[] = INCGFX_U16("graphics/berry_blender/unused.pal", ".gbapal");
 static const u16 sEmpty_Pal[16 * 14] = {0};
 
-static const u8 sText_BerryBlenderStart[] = _("Starting up the BERRY BLENDER.\pPlease select a BERRY from your BAG\nto put in the BERRY BLENDER.\p");
+static const u8 sText_BerryBlenderStart[] = _("Beerenmixer wird gestartet.\pWähle eine Beere aus deinem Beutel.\p");
 static const u8 sText_NewParagraph[] = _("\p");
-static const u8 sText_WasMade[] = _(" was made!");
+static const u8 sText_WasMade[] = _("wurde hergestellt!");
 
 static const u8 *const sBlenderOpponentsNames[] =
 {
-    [BLENDER_MISTER] = COMPOUND_STRING("MISTER"),
-    [BLENDER_LADDIE] = COMPOUND_STRING("LADDIE"),
-    [BLENDER_LASSIE] = COMPOUND_STRING("LASSIE"),
-    [BLENDER_MASTER] = COMPOUND_STRING("MASTER"),
-    [BLENDER_DUDE]   = COMPOUND_STRING("DUDE"),
-    [BLENDER_MISS]   = COMPOUND_STRING("MISS"),
+    [BLENDER_MISTER] = COMPOUND_STRING("Mister"),
+    [BLENDER_LADDIE] = COMPOUND_STRING("Laddie"),
+    [BLENDER_LASSIE] = COMPOUND_STRING("Lassie"),
+    [BLENDER_MASTER] = COMPOUND_STRING("Master"),
+    [BLENDER_DUDE]   = COMPOUND_STRING("Dude"),
+    [BLENDER_MISS]   = COMPOUND_STRING("Miss"),
 };
 
-static const u8 sText_CommunicationStandby[] = _("Communication standby…");
-static const u8 sText_WouldLikeToBlendAnotherBerry[] = _("Would you like to blend another BERRY?");
-static const u8 sText_RunOutOfBerriesForBlending[] = _("You've run out of BERRIES for\nblending in the BERRY BLENDER.\p");
-static const u8 sText_YourPokeblockCaseIsFull[] = _("Your {POKEBLOCK} CASE is full.\p");
-static const u8 sText_HasNoBerriesToPut[] = _(" has no BERRIES to put in\nthe BERRY BLENDER.");
-static const u8 sText_ApostropheSPokeblockCaseIsFull[] = _("'s {POKEBLOCK} CASE is full.\p");
-static const u8 sText_BlendingResults[] = _("RESULTS OF BLENDING");
-static const u8 sText_SpaceBerry[] = _(" BERRY");
-static const u8 sText_Time[] = _("Time:");
-static const u8 sText_Min[] = _(" min. ");
-static const u8 sText_Sec[] = _(" sec.");
-static const u8 sText_MaximumSpeed[] = _("MAXIMUM SPEED");
-static const u8 sText_RPM[] = _(" RPM");
+static const u8 sText_CommunicationStandby[] = _("Kommunikation …");
+static const u8 sText_WouldLikeToBlendAnotherBerry[] = _("Möchtest du eine weitere Beere");
+static const u8 sText_RunOutOfBerriesForBlending[] = _("Dir sind die Beeren zum\nMixen im Beerenmixer ausgegangen.\p");
+static const u8 sText_YourPokeblockCaseIsFull[] = _("Dein {POKEBLOCK}-Box ist voll.\p");
+static const u8 sText_HasNoBerriesToPut[] = _("hat keine Beeren für den\nBeerenmixer.");
+static const u8 sText_ApostropheSPokeblockCaseIsFull[] = _("s {POKEBLOCK}-Box ist voll.\p");
+static const u8 sText_BlendingResults[] = _("Mixergebnis");
+static const u8 sText_SpaceBerry[] = _("Beere");
+static const u8 sText_Time[] = _("Zeit:");
+static const u8 sText_Min[] = _("Min.");
+static const u8 sText_Sec[] = _("Sek.");
+static const u8 sText_MaximumSpeed[] = _("Höchstgeschwindigkeit");
+static const u8 sText_RPM[] = _("U/Min");
 static const u8 sText_Dot[] = _(".");
 static const u8 sText_NewLine[] = _("\n");
-static const u8 sText_Ranking[] = _("RANKING");
-static const u8 sText_TheLevelIs[] = _("The level is ");
-static const u8 sText_TheFeelIs[] = _(", and the feel is ");
+static const u8 sText_Ranking[] = _("Rangliste");
+static const u8 sText_TheLevelIs[] = _("Das Level ist");
+static const u8 sText_TheFeelIs[] = _(", und die Konsistenz ist");
 static const u8 sText_Dot2[] = _(".");
 
-static const u8 sText_SavingDontTurnOff2[] = _("SAVING…\nDON'T TURN OFF THE POWER.");
-static const u8 sText_BlenderMaxSpeedRecord[] = _("BERRY BLENDER\nMAXIMUM SPEED RECORD!");
-static const u8 sText_234Players[] = _("2 PLAYERS\n3 PLAYERS\n4 PLAYERS");
+static const u8 sText_SavingDontTurnOff2[] = _("Speichern…\nDas Gerät nicht ausschalten.");
+static const u8 sText_BlenderMaxSpeedRecord[] = _("Beerenmixer\nHöchstgeschwindigkeit!");
+static const u8 sText_234Players[] = _("2 Spieler\n3 Spieler\n4 Spieler");
 
 static const struct BgTemplate sBgTemplates[3] =
 {
@@ -889,8 +889,8 @@ static const u8 sBlackPokeblockFlavorFlags[] = {
     (1 << FLAVOR_SOUR)   | (1 << FLAVOR_SWEET)  | (1 << FLAVOR_SPICY),
 };
 
-static const u8 sJPText_GoodTvReady[] = _("\nいいTVができました "); // Unused
-static const u8 sJPText_BadTvReady[] = _("\nダメTVができました "); // Unused
+static const u8 sJPText_GoodTvReady[] = _("\nいいTVができました"); // Unused
+static const u8 sJPText_BadTvReady[] = _("\nダメTVができました"); // Unused
 static const u8 sJPText_Flavors[][5] = {_("からい"), _("しぶい"), _("あまい"), _("にがい"), _("すっぱい")}; // Unused
 
 static const u8 sUnused[] = {

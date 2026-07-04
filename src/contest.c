@@ -677,50 +677,50 @@ const struct ContestCategory gContestCategoryInfo[CONTEST_CATEGORIES_COUNT + 1] 
 {
     [CONTEST_CATEGORY_COOL] =
     {
-        .name = COMPOUND_STRING("COOL"),
-        .condition = COMPOUND_STRING("coolness"),
-        .generic = COMPOUND_STRING("COOL Move"),
-        .negativeTrait = COMPOUND_STRING("shyness"),
+        .name = COMPOUND_STRING("Cool"),
+        .condition = COMPOUND_STRING("Coolness"),
+        .generic = COMPOUND_STRING("gut"),
+        .negativeTrait = COMPOUND_STRING("langweilig"),
         .palette = 13,
         .tile = 0x4040,
     },
 
     [CONTEST_CATEGORY_BEAUTY] =
     {
-        .name = COMPOUND_STRING("BEAUTY"),
-        .condition = COMPOUND_STRING("beauty"),
-        .generic = COMPOUND_STRING("BEAUTY Move"),
-        .negativeTrait = COMPOUND_STRING("anxiety"),
+        .name = COMPOUND_STRING("Schönheit"),
+        .condition = COMPOUND_STRING("Schönheit"),
+        .generic = COMPOUND_STRING("sehr gut"),
+        .negativeTrait = COMPOUND_STRING("hässlich"),
         .palette = 14,
         .tile = 0x4045,
     },
 
     [CONTEST_CATEGORY_CUTE] =
     {
-        .name = COMPOUND_STRING("CUTE"),
-        .condition = COMPOUND_STRING("cuteness"),
-        .generic = COMPOUND_STRING("CUTE Move"),
-        .negativeTrait = COMPOUND_STRING("laziness"),
+        .name = COMPOUND_STRING("Süß"),
+        .condition = COMPOUND_STRING("Süße"),
+        .generic = COMPOUND_STRING("hervorragend"),
+        .negativeTrait = COMPOUND_STRING("unartig"),
         .palette = 14,
         .tile = 0x404A,
     },
 
     [CONTEST_CATEGORY_SMART] =
     {
-        .name = COMPOUND_STRING("SMART"),
-        .condition = COMPOUND_STRING("smartness"),
-        .generic = COMPOUND_STRING("SMART Move"),
-        .negativeTrait = COMPOUND_STRING("hesitancy"),
+        .name = COMPOUND_STRING("Klugheit"),
+        .condition = COMPOUND_STRING("Klugheit"),
+        .generic = COMPOUND_STRING("fantastisch"),
+        .negativeTrait = COMPOUND_STRING("dumm"),
         .palette = 15,
         .tile = 0x406A,
     },
 
     [CONTEST_CATEGORY_TOUGH] =
     {
-        .name = COMPOUND_STRING("TOUGH"),
-        .condition = COMPOUND_STRING("toughness"),
-        .generic = COMPOUND_STRING("TOUGH Move"),
-        .negativeTrait = COMPOUND_STRING("fear"),
+        .name = COMPOUND_STRING("Stärke"),
+        .condition = COMPOUND_STRING("Stärke"),
+        .generic = COMPOUND_STRING("einzigartig"),
+        .negativeTrait = COMPOUND_STRING("schwach"),
         .palette = 13,
         .tile = 0x408A,
     },

@@ -829,11 +829,11 @@ static const struct MenuAction sMultichoiceList_Eeveelutions[] = {
     {COMPOUND_STRING("Alles gesehen.")}
 };
 
-static const u8 gText_SeviiIslands[] = _("SEVII ISLANDS");
-static const u8 gText_OneIsland[] = _("ONE ISLAND");
-static const u8 gText_TwoIsland[] = _("TWO ISLAND");
-static const u8 gText_ThreeIsland[] = _("THREE ISLAND");
-static const u8 gText_Vermilion[] = _("VERMILION");
+static const u8 gText_SeviiIslands[] = _("Sevii-Inseln");
+static const u8 gText_OneIsland[] = _("Eiland 1");
+static const u8 gText_TwoIsland[] = _("Eiland 2");
+static const u8 gText_ThreeIsland[] = _("Eiland 3");
+static const u8 gText_Vermilion[] = _("Orania");
 
 static const struct MenuAction sMultichoiceList_Island23[] = {
     {gText_TwoIsland},

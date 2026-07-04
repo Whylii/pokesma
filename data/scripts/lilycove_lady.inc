@@ -532,11 +532,11 @@ LilycoveCity_PokemonCenter_1F_Text_ThankYouForLastTime:
 	.string "Thank you for last time…$"
 
 LilycoveCity_PokemonCenter_1F_Text_PlayerGaveMeBadThing:
-	.string "Before, I think it was {STR_VAR_3}…\p"
-	.string "{STR_VAR_3} gave me one {STR_VAR_2},\n"
-	.string "saying it was {STR_VAR_1}.\p"
-	.string "But it wasn't {STR_VAR_1}.\n"
-	.string "Not in the least bit.$"
+	.string "Vor einiger Zeit gab {STR_VAR_3}\n"
+	.string "mir ein {STR_VAR_2},\n"
+	.string "und sagte, es sei {STR_VAR_1}.\p"
+	.string "Aber es war gar nicht\n"
+	.string "{STR_VAR_1}. Nicht im Geringsten.$"
 
 LilycoveCity_PokemonCenter_1F_Text_PlayerGaveMeGreatThing:
 	.string "Before, {STR_VAR_3} gave me a very\n"
