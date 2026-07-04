@@ -1492,7 +1492,7 @@ const u8 gText_Loss[] = _("{BACKGROUND TRANSPARENT}{ACCENT TRANSPARENT}Niederlag
 const u8 gText_Draw[] = _("{BACKGROUND TRANSPARENT}{ACCENT TRANSPARENT}Unentschieden");
 static const u8 sText_SpaceIs[] = _(" ist");
 static const u8 sText_ApostropheS[] = _("'s");
-const u8 gText_BattleTourney[] = _("BATTLE TOURNEY");
+const u8 gText_BattleTourney[] = _("Kampf-Turnier");
 
 const u8 *const gRoundsStringTable[DOME_ROUNDS_COUNT] =
 {
