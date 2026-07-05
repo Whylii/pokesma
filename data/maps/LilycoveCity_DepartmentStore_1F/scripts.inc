@@ -139,32 +139,34 @@ LilycoveCity_DepartmentStore_1F_EventScript_FloorNamesSign::
 	end
 
 LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore:
-	.string "Welcome to LILYCOVE DEPARTMENT STORE.$"
+	.string "Willkommen im Einkaufszentrum von\n"
+	.string "Seegrasulb City.$"
 
 LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings:
-	.string "Whenever I come to the DEPARTMENT\n"
-	.string "STORE, I always end up buying all sorts\l"
-	.string "of things because it's so fun.$"
+	.string "Immer wenn ich in das Einkaufszentrum\n"
+	.string "gehe, endet das damit, dass ich tausend\l"
+	.string "Dinge kaufe, weil es so viel Spaß macht.$"
 
 LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture:
-	.string "Today, my mom is going to buy me some\n"
-	.string "nice furniture.$"
+	.string "Heute wird mir meine Mama ein paar\n"
+	.string "schöne Möbel kaufen.$"
 
 LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill:
-	.string "I'm buying something for my AZUMARILL\n"
-	.string "as a reward for winning a CONTEST.$"
+	.string "Ich kaufe etwas Schönes für mein\n"
+	.string "Azumarill, weil es einen Wettbewerb\l"
+	.string "gewonnen hat.$"
 
 LilycoveCity_DepartmentStore_1F_Text_Azumarill:
-	.string "AZUMARILL: Maririroo!$"
+	.string "Azumarill: Maririroo!$"
 
 LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign:
-	.string "1F: SERVICE COUNTER\n"
-	.string "    LOTTERY CORNER\p"
-	.string "2F: TRAINER'S ZONE\p"
-	.string "3F: BATTLE COLLECTION\p"
-	.string "4F: TM CORNER\p"
-	.string "5F: POKé DOLL FLOOR\p"
-	.string "ROOFTOP: ROOFTOP PLAZA$"
+	.string "EG: Information\n"
+	.string "       Lotterie\p"
+	.string "1S: Alles für den Trainer\p"
+	.string "2S: Alles für den Kampf\p"
+	.string "3S: TMs\p"
+	.string "4S: Poképuppen\p"
+	.string "Dach: Dachterrasse$"
 
 @ Unused
 LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun:

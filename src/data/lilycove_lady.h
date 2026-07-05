@@ -40,35 +40,35 @@ static const struct LilycoveContestLadyValues sContestLadyValues[] =
         .monGfxId = OBJ_EVENT_GFX_ZIGZAGOON_1,
         .monSpecies = SPECIES_ZIGZAGOON,
         .monName = COMPOUND_STRING("HANDSOME"),
-        .categoryName = COMPOUND_STRING("coolness"),
+        .categoryName = COMPOUND_STRING("Coolness"),
         .contestName = gText_CoolnessContest,
     },
     [CONTEST_CATEGORY_BEAUTY] = {
         .monGfxId = OBJ_EVENT_GFX_SKITTY,
         .monSpecies = SPECIES_SKITTY,
         .monName = COMPOUND_STRING("VINNY"),
-        .categoryName = COMPOUND_STRING("beauty"),
+        .categoryName = COMPOUND_STRING("Schönheit"),
         .contestName = gText_BeautyContest,
     },
     [CONTEST_CATEGORY_CUTE] = {
         .monGfxId = OBJ_EVENT_GFX_POOCHYENA,
         .monSpecies = SPECIES_POOCHYENA,
         .monName = COMPOUND_STRING("MOREME"),
-        .categoryName = COMPOUND_STRING("cuteness"),
+        .categoryName = COMPOUND_STRING("Niedlichkeit"),
         .contestName = gText_CutenessContest,
     },
     [CONTEST_CATEGORY_SMART] = {
         .monGfxId = OBJ_EVENT_GFX_KECLEON,
         .monSpecies = SPECIES_KECLEON,
         .monName = COMPOUND_STRING("IRONHARD"),
-        .categoryName = COMPOUND_STRING("smartness"),
+        .categoryName = COMPOUND_STRING("Klugheit"),
         .contestName = gText_SmartnessContest,
     },
     [CONTEST_CATEGORY_TOUGH] = {
         .monGfxId = OBJ_EVENT_GFX_PIKACHU,
         .monSpecies = SPECIES_PIKACHU,
         .monName = COMPOUND_STRING("MUSCLE"),
-        .categoryName = COMPOUND_STRING("toughness"),
+        .categoryName = COMPOUND_STRING("Stärke"),
         .contestName = gText_ToughnessContest,
     },
 };
@@ -417,10 +417,10 @@ static const u16 sFavorLadyAcceptedItems_Pointy[] =
 
 static const struct LilycoveFavorLady sFavorLady[] =
 {
-    {.request = COMPOUND_STRING("slippery"), .acceptedItems = sFavorLadyAcceptedItems_Slippery, .prize = ITEM_LUXURY_BALL},
-    {.request = COMPOUND_STRING("roundish"), .acceptedItems = sFavorLadyAcceptedItems_Roundish, .prize = ITEM_NUGGET},
-    {.request = COMPOUND_STRING("wham-ish"), .acceptedItems = sFavorLadyAcceptedItems_Whamish,  .prize = ITEM_PROTEIN},
-    {.request = COMPOUND_STRING("shiny"),    .acceptedItems = sFavorLadyAcceptedItems_Shiny,    .prize = ITEM_HEART_SCALE},
-    {.request = COMPOUND_STRING("sticky"),   .acceptedItems = sFavorLadyAcceptedItems_Sticky,   .prize = ITEM_RARE_CANDY},
-    {.request = COMPOUND_STRING("pointy"),   .acceptedItems = sFavorLadyAcceptedItems_Pointy,   .prize = ITEM_PP_MAX},
+    {.request = COMPOUND_STRING("glitschig"), .acceptedItems = sFavorLadyAcceptedItems_Slippery, .prize = ITEM_LUXURY_BALL},
+    {.request = COMPOUND_STRING("rundlich"), .acceptedItems = sFavorLadyAcceptedItems_Roundish, .prize = ITEM_NUGGET},
+    {.request = COMPOUND_STRING("knallig"), .acceptedItems = sFavorLadyAcceptedItems_Whamish,  .prize = ITEM_PROTEIN},
+    {.request = COMPOUND_STRING("glänzend"),    .acceptedItems = sFavorLadyAcceptedItems_Shiny,    .prize = ITEM_HEART_SCALE},
+    {.request = COMPOUND_STRING("klebrig"),   .acceptedItems = sFavorLadyAcceptedItems_Sticky,   .prize = ITEM_RARE_CANDY},
+    {.request = COMPOUND_STRING("spitz"),   .acceptedItems = sFavorLadyAcceptedItems_Pointy,   .prize = ITEM_PP_MAX},
 };

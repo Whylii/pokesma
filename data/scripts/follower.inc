@@ -1,14 +1,17 @@
 gText_FollowerLovesYou::
-	.string "{STR_VAR_1} is regarding you with\nadoration!$"
+	.string "{STR_VAR_1} sieht dich voller\n"
+	.string "Bewunderung an!$"
 
 gText_FollowerLostInThought::
-	.string "{STR_VAR_1} seems lost in thought.$"
+	.string "{STR_VAR_1} wirkt gedankenverloren.$"
 
 gText_FollowerDefault::
-	.string "ERROR 404: Script not found.$"
+	.string "FEHLER 404: Skript nicht gefunden.$"
 
 gText_WantsToFly::
-	.string "{STR_VAR_1} looks up at the\nsky restlessly.\pWould you like to use FLY?$"
+	.string "{STR_VAR_1} schaut unruhig\n"
+	.string "zum Himmel.\p"
+	.string "Möchtest du Fliegen einsetzen?$"
 
 EventScript_Follower::
 	lock

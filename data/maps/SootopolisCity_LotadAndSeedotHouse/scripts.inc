@@ -104,99 +104,101 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_LotadSizeRecord::
 	end
 
 SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot:
-	.string "Do you know the POKéMON SEEDOT?\n"
-	.string "It's hardly ever seen in SOOTOPOLIS.\p"
-	.string "Anyway, I love big SEEDOT.\n"
-	.string "The bigger the better.\p"
-	.string "But my younger brother, he says that\n"
-	.string "LOTAD is bigger.\p"
-	.string "That's silly.\n"
-	.string "SEEDOT has to be bigger than that!\p"
-	.string "Huh? Do you have a SEEDOT with you?\n"
-	.string "P-p-please, show me!$"
+	.string "Kennst du das Pokémon Samurzel?\n"
+	.string "In Xeneroville wird es kaum gesehen.\p"
+	.string "Aber ich liebe große Samurzel.\n"
+	.string "Je größer, desto besser.\p"
+	.string "Aber mein jüngerer Bruder sagt, dass\n"
+	.string "Loturzel größer ist.\p"
+	.string "Verrückt! Samurzel muss einfach\n"
+	.string "größer sein!\p"
+	.string "Wie? Du hast ein Samurzel dabei?\n"
+	.string "B-b-bitte zeig es mir!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad:
-	.string "{STR_VAR_2}!\n"
-	.string "Oh, my gosh, this is a big one!\p"
-	.string "It might even beat the big LOTAD\n"
-	.string "my younger brother saw!\p"
-	.string "Thanks for showing me.\n"
-	.string "This is my thanks!$"
+	.string "{STR_VAR_2} cm!\n"
+	.string "Meine Güte, ist das aber groß!\p"
+	.string "Das wird sogar größer als das Loturzel\n"
+	.string "sein, das mein Bruder gesehen hat!\p"
+	.string "Danke, dass du es mir gezeigt hast.\n"
+	.string "Hier, ein kleines Dankeschön!$"
 
 @ Unused
 SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1:
 	.string "{PLAYER} received a POTION.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1:
-	.string "Hunh?\n"
-	.string "Your BAG is crammed full.$"
+	.string "Huch.\n"
+	.string "Dein Beutel ist ja randvoll.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot:
-	.string "{STR_VAR_2}, is it?\p"
-	.string "Hmm… I've seen a bigger SEEDOT\n"
-	.string "than this one.$"
+	.string "{STR_VAR_2} cm, nicht wahr?\p"
+	.string "Hmm… Ich habe schon größere\n"
+	.string "Samurzel als dieses gesehen.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotSeedot:
-	.string "Oh, now this is quite something…\n"
-	.string "But it's not a SEEDOT!$"
+	.string "Na, das ist doch schon ganz ordentlich…\n"
+	.string "Aber das ist kein Samurzel!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot:
-	.string "You don't have a big SEEDOT?\n"
-	.string "That's too bad…\p"
-	.string "If you get a big SEEDOT, please\n"
-	.string "come show me.$"
+	.string "Du hast gar kein großes Samurzel?\n"
+	.string "Och, wie schade…\p"
+	.string "Wenn du ein großes Samurzel hast,\n"
+	.string "dann komm bitte wieder und zeig es mir.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory:
-	.string "The biggest SEEDOT in history!\n"
-	.string "{STR_VAR_2}'s {STR_VAR_3} giant!\p"
-	.string "A SEEDOT bigger than a LOTAD\n"
-	.string "always wanted!$"
+	.string "Das größte Samurzel aller Zeiten!\n"
+	.string "Der {STR_VAR_3} cm-Gigant von {STR_VAR_2}!\p"
+	.string "Ein Samurzel, so groß, wie ein\n"
+	.string "Loturzel gerne sein würde!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad:
-	.string "Do you know the POKéMON LOTAD?\n"
-	.string "It's rarely seen in SOOTOPOLIS.\p"
-	.string "I love, I mean love, big LOTAD!\p"
-	.string "My big brother says that SEEDOT is\n"
-	.string "bigger.\p"
-	.string "But that's wrong! Everyone knows that\n"
-	.string "LOTAD is a lot bigger.\p"
-	.string "Hunh? Do you have a LOTAD?\n"
-	.string "P-p-please show me!$"
+	.string "Kennst du das Pokémon Loturzel?\n"
+	.string "Das ist bisher selten in Xeneroville\l"
+	.string "aufgetaucht.\p"
+	.string "Ich liebe große Loturzel.\p"
+	.string "Mein großer Bruder sagt, dass\n"
+	.string "Samurzel größer ist.\p"
+	.string "Aber das stimmt gar nicht! Jeder weiß\n"
+	.string "doch, dass Loturzel viel größer\l"
+	.string "ist.\p"
+	.string "Wie? Oh, du hast ein Loturzel?\n"
+	.string "Bitte, bitte zeig es mir!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot:
-	.string "{STR_VAR_2}!\n"
-	.string "Wow, that is big!\p"
-	.string "It might be even bigger than the huge\n"
-	.string "SEEDOT my big brother saw.\p"
-	.string "Thanks for showing me!\n"
-	.string "This is my thanks!$"
+	.string "{STR_VAR_2} cm!\n"
+	.string "Wow, das ist aber groß!\p"
+	.string "Das ist bestimmt größer als das\n"
+	.string "Samurzel, das mein Bruder gesehen\l"
+	.string "hat.\p"
+	.string "Danke, dass ich es anschauen durfte.\n"
+	.string "Hier, ein kleines Dankeschön!$"
 
 @ Unused
 SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion2:
 	.string "{PLAYER} received a POTION.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull2:
-	.string "Hunh?\n"
-	.string "Your BAG is crammed full.$"
+	.string "Huups, dein Beutel ist voll.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad:
-	.string "{STR_VAR_2}?\p"
-	.string "Hmm… I've seen a bigger LOTAD\n"
-	.string "than this one here.$"
+	.string "{STR_VAR_2} cm?\p"
+	.string "Ach… Da habe ich aber schon ein\n"
+	.string "größeres Loturzel gesehen.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad:
-	.string "Well, isn't this something!\n"
-	.string "But it's no LOTAD!$"
+	.string "Nun, das ist ganz stattlich.\n"
+	.string "Aber es ist kein Loturzel!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigLotad:
-	.string "Don't you have a big LOTAD?\n"
-	.string "How disappointing…\p"
-	.string "If you get a big LOTAD, please\n"
-	.string "come show me!$"
+	.string "Hast du kein großes Loturzel?\n"
+	.string "Och, wie enttäuschend…\p"
+	.string "Wenn du ein großes Loturzel hast,\n"
+	.string "dann komm bitte wieder her.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory:
-	.string "The biggest LOTAD in history!\n"
-	.string "{STR_VAR_2}'s {STR_VAR_3} colossus!\p"
-	.string "A LOTAD bigger than a SEEDOT\n"
-	.string "always wanted!$"
+	.string "Das größte Loturzel aller Zeiten!\n"
+	.string "Der {STR_VAR_3} cm-Koloss von {STR_VAR_2}!\p"
+	.string "Ein Loturzel, so groß, wie ein\n"
+	.string "Samurzel gerne sein würde.$"
 

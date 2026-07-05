@@ -65,23 +65,23 @@ EverGrandeCity_SidneysRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_SidneysRoom_Text_IntroSpeech:
-	.string "Welcome, challenger!\n"
-	.string "I'm SIDNEY of the ELITE FOUR.\p"
-	.string "I like that look you're giving me.\n"
-	.string "I guess you'll give me a good match.\l"
-	.string "That's good! Looking real good!\p"
-	.string "All right! You and me, let's enjoy\n"
-	.string "a battle that can only be staged\l"
-	.string "here in the POKéMON LEAGUE!$"
+	.string "Willkommen, Herausforderer!\n"
+	.string "Ich bin Ulrich von den Top Vier.\p"
+	.string "Ich mag deinen herausfordernden Blick.\n"
+	.string "Ich denke, das wird ein guter Kampf.\l"
+	.string "Gut! Das sieht gut aus!\p"
+	.string "Schön! Dann lass uns beide einen Kampf\n"
+	.string "erleben, wie man ihn nur hier in der\l"
+	.string "Pokémon Liga erleben kann!$"
 
 EverGrandeCity_SidneysRoom_Text_Defeat:
-	.string "Well, how do you like that? I lost!\n"
-	.string "Eh, it was fun, so it doesn't matter.$"
+	.string "Ich habe verloren! Ich, Ulrich von den\n"
+	.string "Top Vier. Macht nichts, es war amüsant.$"
 
 EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
-	.string "Well, listen to what this loser has\n"
-	.string "to say.\p"
-	.string "You've got what it takes to go far.\n"
-	.string "Now, go on to the next room and enjoy\l"
-	.string "your next battle!$"
+	.string "Nun, hör dir an, was dieser Verlierer\n"
+	.string "zu sagen hat.\p"
+	.string "Du bist bestens ausgerüstet.\n"
+	.string "Daher solltest du nun in den nächsten\l"
+	.string "Raum gehen - zum nächsten Kampf.$"
 

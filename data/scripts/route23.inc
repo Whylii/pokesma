@@ -212,31 +212,31 @@ Route23_Movement_WalkDown::
 	step_end
 
 Text_OnlySkilledTrainersAllowedThrough::
-	.string "Only truly skilled TRAINERS are\n"
-	.string "allowed through.\p"
-	.string "You don't have the {STR_VAR_1}\n"
-	.string "yet!$"
+	.string "Nur wirklich talentierte Trainer\n"
+	.string "kommen hier durch.\p"
+	.string "Du hast den {STR_VAR_1}\n"
+	.string "noch nicht!$"
 
 Text_CantLetYouPass::
-	.string "Rules are rules.\n"
-	.string "I can't let you pass.$"
+	.string "Regeln sind Regeln.\n"
+	.string "Ich kann dich nicht durchlassen.$"
 
 Text_OhThatsBadgeGoRightAhead::
-	.string "Oh! That is the {STR_VAR_1}!\n"
-	.string "Go right ahead.$"
+	.string "Oh! Das ist der {STR_VAR_1}!\n"
+	.string "Bitte schön, geh weiter.$"
 
 Text_OnlyPassWithBadgeDontHaveYet::
-	.string "You can pass here only if you have\n"
-	.string "the {STR_VAR_1}.\p"
-	.string "You don't have the {STR_VAR_1}\n"
-	.string "yet.\p"
-	.string "You have to have it to get to\n"
-	.string "the POKéMON LEAGUE.$"
+	.string "Hier darfst du nur passieren, wenn\n"
+	.string "du den {STR_VAR_1} hast.\p"
+	.string "Du hast den {STR_VAR_1}\n"
+	.string "noch nicht.\p"
+	.string "Du brauchst ihn, um zur\n"
+	.string "Pokémon-Liga zu gelangen.$"
 
 Text_OnlyPassWithBadgeOhGoAhead::
-	.string "You can pass here only if you have\n"
-	.string "the {STR_VAR_1}.\p"
-	.string "Oh! That is the {STR_VAR_1}!{PAUSE_MUSIC}{PLAY_BGM}{MUS_LEVEL_UP}{PAUSE 0x60}{RESUME_MUSIC}\p"
-	.string "Okay, then.\n"
-	.string "Please, go right ahead.$"
+	.string "Hier darfst du nur passieren, wenn\n"
+	.string "du den {STR_VAR_1} hast.\p"
+	.string "Oh! Das ist der {STR_VAR_1}!{PAUSE_MUSIC}{PLAY_BGM}{MUS_LEVEL_UP}{PAUSE 0x60}{RESUME_MUSIC}\p"
+	.string "In Ordnung.\n"
+	.string "Bitte schön, geh weiter.$"
 

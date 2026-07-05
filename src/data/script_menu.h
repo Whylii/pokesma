@@ -6,7 +6,7 @@ static const struct MenuAction MultichoiceList_BrineyOnDewford[] =
     {gText_Exit},
 };
 
-const u8 gText_Info2[] = _("INFO");
+const u8 gText_Info2[] = _("Info");
 
 static const struct MenuAction MultichoiceList_EnterInfo[] =
 {
@@ -33,9 +33,9 @@ static const struct MenuAction MultichoiceList_ContestType[] =
     {gText_Exit},
 };
 
-const u8 gText_Decoration2[] = _("DECORATION");
-const u8 gText_PackUp[] = _("PACK UP");
-const u8 gText_Registry[] = _("REGISTRY");
+const u8 gText_Decoration2[] = _("Dekoration");
+const u8 gText_PackUp[] = _("Einpacken");
+const u8 gText_Registry[] = _("Registrierung");
 
 static const struct MenuAction MultichoiceList_BasePCWithRegistry[] =
 {
@@ -294,7 +294,7 @@ static const struct MenuAction MultichoiceList_HowsFishing[] =
     {COMPOUND_STRING("Not so good")},
 };
 
-const u8 gText_LilycoveCity[] = _("LILYCOVE CITY");
+const u8 gText_LilycoveCity[] = _("Seegrasulb City");
 
 static const struct MenuAction MultichoiceList_SSTidalSlateportWithBF[] =
 {
@@ -332,10 +332,10 @@ static const struct MenuAction MultichoiceList_Floors[] =
     {gText_Exit},
 };
 
-const u8 gText_RedShard[] = _("RED SHARD");
-const u8 gText_YellowShard[] = _("YELLOW SHARD");
-const u8 gText_BlueShard[] = _("BLUE SHARD");
-const u8 gText_GreenShard[] = _("GREEN SHARD");
+const u8 gText_RedShard[] = _("Purpurstück");
+const u8 gText_YellowShard[] = _("Gelbstück");
+const u8 gText_BlueShard[] = _("IndigostückBLUE SHARD");
+const u8 gText_GreenShard[] = _("Grünstück");
 
 static const struct MenuAction MultichoiceList_ShardsR[] =
 {
@@ -444,12 +444,12 @@ static const struct MenuAction MultichoiceList_ShardsRYBG[] =
     {gText_Exit},
 };
 
-const u8 gText_Opponent[] = _("OPPONENT");
-const u8 gText_Tourney_Tree[] = _("TOURNEY TREE");
-const u8 gText_ReadyToStart[] = _("READY TO START");
-const u8 gText_Record2[] = _("RECORD");
-const u8 gText_Rest[] = _("REST");
-const u8 gText_Retire[] = _("RETIRE");
+const u8 gText_Opponent[] = _("Gegner");
+const u8 gText_Tourney_Tree[] = _("Turnierbaum");
+const u8 gText_ReadyToStart[] = _("Bereit");
+const u8 gText_Record2[] = _("Rekord");
+const u8 gText_Rest[] = _("Ausruhen");
+const u8 gText_Retire[] = _("Aufgeben");
 
 static const struct MenuAction MultichoiceList_TourneyWithRecord[] =
 {
@@ -476,9 +476,9 @@ static const struct MenuAction MultichoiceList_Tent[] =
     {COMPOUND_STRING("BLUE TENT")},
 };
 
-const u8 gText_TradeCenter[] = _("TRADE CENTER");
-const u8 gText_Colosseum[] = _("COLOSSEUM");
-const u8 gText_RecordCorner[] = _("RECORD CORNER");
+const u8 gText_TradeCenter[] = _("Tauschbörse");
+const u8 gText_Colosseum[] = _("Kolosseum");
+const u8 gText_RecordCorner[] = _("Rekord-Ecke");
 
 static const struct MenuAction MultichoiceList_LinkServicesNoBerry[] =
 {
@@ -504,7 +504,7 @@ static const struct MenuAction MultichoiceList_BattleMode[] =
     {gText_Exit},
 };
 
-const u8 gText_BerryCrush3[] = _("BERRY CRUSH");
+const u8 gText_BerryCrush3[] = _("Beerenmühle");
 
 static const struct MenuAction MultichoiceList_LinkServicesNoRecord[] =
 {
@@ -655,10 +655,10 @@ static const struct MenuAction MultichoiceList_FrontierPassInfo[] =
     {gText_Exit},
 };
 
-const u8 gText_BattleRules[] = _("BATTLE RULES");
-const u8 gText_JudgeMind[] = _("JUDGE: MIND");
-const u8 gText_JudgeSkill[] = _("JUDGE: SKILL");
-const u8 gText_JudgeBody[] = _("JUDGE: BODY");
+const u8 gText_BattleRules[] = _("Kampfregeln");
+const u8 gText_JudgeMind[] = _("Ringrichter: Verstand");
+const u8 gText_JudgeSkill[] = _("Ringrichter: Geschick");
+const u8 gText_JudgeBody[] = _("Ringrichter: Körper");
 
 static const struct MenuAction MultichoiceList_BattleArenaRules[] =
 {
@@ -686,10 +686,10 @@ static const struct MenuAction MultichoiceList_BattleDomeRules[] =
     {gText_Exit},
 };
 
-const u8 gText_BasicRules[] = _("BASIC RULES");
-const u8 gText_SwapPartners[] = _("SWAP: PARTNER");
-const u8 gText_SwapNumber[] = _("SWAP: NUMBER");
-const u8 gText_SwapNotes[] = _("SWAP: NOTES");
+const u8 gText_BasicRules[] = _("Grundregeln");
+const u8 gText_SwapPartners[] = _("Tausch: Partner");
+const u8 gText_SwapNumber[] = _("Tausch: Nummer");
+const u8 gText_SwapNotes[] = _("Tausch: Noten");
 
 static const struct MenuAction MultichoiceList_BattleFactoryRules[] =
 {
@@ -728,7 +728,7 @@ static const struct MenuAction MultichoiceList_BattlePikeRules[] =
     {gText_Exit},
 };
 
-const u8 gText_GoOn[] = _("GO ON");
+const u8 gText_GoOn[] = _("Weiter");
 
 static const struct MenuAction MultichoiceList_GoOnRecordRestRetire[] =
 {
@@ -829,11 +829,11 @@ static const struct MenuAction sMultichoiceList_Eeveelutions[] = {
     {COMPOUND_STRING("Quit looking.")}
 };
 
-static const u8 gText_SeviiIslands[] = _("SEVII ISLANDS");
-static const u8 gText_OneIsland[] = _("ONE ISLAND");
-static const u8 gText_TwoIsland[] = _("TWO ISLAND");
-static const u8 gText_ThreeIsland[] = _("THREE ISLAND");
-static const u8 gText_Vermilion[] = _("VERMILION");
+static const u8 gText_SeviiIslands[] = _("Sevii-Inseln");
+static const u8 gText_OneIsland[] = _("Eiland 1");
+static const u8 gText_TwoIsland[] = _("Eiland 2");
+static const u8 gText_ThreeIsland[] = _("Eiland 3");
+static const u8 gText_Vermilion[] = _("Orania");
 
 static const struct MenuAction sMultichoiceList_Island23[] = {
     {gText_TwoIsland},
@@ -905,7 +905,7 @@ static const struct MenuAction sMultichoiceList_SeagallopVermilion[] = {
     {gText_Exit}
 };
 
-const u8 sText_NoThanks[] = _("NO THANKS");
+const u8 sText_NoThanks[] = _("Nein danke");
 
 static const struct MenuAction sMultichoiceList_GameCornerPokemonPrizes[] = {
 #if defined(FIRERED)

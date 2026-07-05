@@ -1,58 +1,58 @@
 MoveRelearner_Text_WouldLearnNewMoves:
-	.string "Hi, I'm the Move Relearner.\n"
-	.string "Would you like to learn new moves?$"
+	.string "Hallo, ich bin der Attacken-Lehrer.\n"
+	.string "Möchtest du neue Attacken lernen?$"
 
 MoveRelearner_Text_LevelUpMoves:
-	.string "Level Up Moves$"
+	.string "Level-Up-Attacken$"
 
 MoveRelearner_Text_EggMoves:
-	.string "Egg Moves$"
+	.string "Ei-Attacken$"
 
 MoveRelearner_Text_TMMoves:
-	.string "TM Moves$"
+	.string "TM-Attacken$"
 
 MoveRelearner_Text_TutormoveMoves:
-	.string "Tutor Moves$"
+	.string "Attacken-Lehrer$"
 
 MoveRelearner_Text_SeeYa:
-	.string "See ya!$"
+	.string "Bis später!$"
 
 MoveRelearner_Text_AnythingElse:
-	.string "Is there anything else I may do for you?$"
+	.string "Kann ich sonst noch etwas für dich tun?$"
 
 MoveRelearner_Text_ChoosePkmn:
-	.string "Please choose your Pokémon.$"
+	.string "Bitte wähle ein Pokémon aus.$"
 
 MoveRelearner_Text_HaveNoPkmn:
-	.string "You have no Pokémon.$"
+	.string "Du hast keine Pokémon.$"
 
 MoveRelearner_Text_CantTeachMoveToEgg:
-	.string "Sorry…\n"
-	.string "But an Egg can't learn moves.$"
+	.string "Tut mir Leid...\n"
+	.string "Aber ein Ei kann keine Attacken lernen.$"
 
 MoveRelearner_Text_CantTeachMoveToPkmn:
-	.string "Sorry…\p"
-	.string "It doesn't appear as if I have any move\n"
-	.string "I can teach that Pokémon.$"
+	.string "Tut mir Leid...\p"
+	.string "Es scheint, als hätte ich keine Attacke,\n"
+	.string "die ich diesem Pokémon beibringen kann.$"
 
 MoveRelearner_Text_LevelUpMoveLWR::
-	.string "level up move$"
+	.string "Level-Up-Attacke$"
 
 MoveRelearner_Text_EggMoveLWR::
-	.string "egg move$"
+	.string "Ei-attacke$"
 
 MoveRelearner_Text_TMMoveLWR::
-	.string "TM move$"
+	.string "TM-attacke$"
 
 MoveRelearner_Text_TutorMoveLWR::
-	.string "tutor move$"
+	.string "Attacken-Lehrer$"
 
 MoveRelearner_Text_MoveLWR::
-	.string "move$"
+	.string "Attacke$"
 
 MoveRelearner_Text_WhichXmoveShouldTeach:
-	.string "Which {STR_VAR_3} should I teach?$"
+	.string "Welche {STR_VAR_3} soll ich beibringen?$"
 
 MoveRelearner_Text_ThankYouComeAgain:
-	.string "Thank you for using our services.\n"
-	.string "Please come again!$"
+	.string "Danke, dass du unseren Service nutzt.\n"
+	.string "Bitte komm bald wieder!$"

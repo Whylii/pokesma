@@ -75,7 +75,8 @@ ViridianForest_Text_RickIntro::
 	.string "Let's battle 'em!$"
 
 ViridianForest_Text_RickDefeat::
-	.string "No!\nCATERPIE can't hack it!$"
+	.string "No!\n"
+	.string "CATERPIE can't hack it!$"
 
 ViridianForest_Text_RickPostBattle::
 	.string "Ssh! You'll scare the bugs away.\n"

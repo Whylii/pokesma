@@ -69,7 +69,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 {
     [BATTLE_ENVIRONMENT_GRASS] =
     {
-        .name = _("Grass"),
+        .name = _("Gras"),
     #if B_NATURE_POWER_MOVES >= GEN_6
         .naturePower = MOVE_ENERGY_BALL,
     #elif B_NATURE_POWER_MOVES >= GEN_4
@@ -89,7 +89,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_LONG_GRASS] =
     {
-        .name = _("Long Grass"),
+        .name = _("Hohes Gras"),
     #if B_NATURE_POWER_MOVES >= GEN_6
         .naturePower = MOVE_ENERGY_BALL,
     #elif B_NATURE_POWER_MOVES >= GEN_4
@@ -123,7 +123,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_UNDERWATER] =
     {
-        .name = _("Underwater"),
+        .name = _("Unterwasser"),
         .naturePower = MOVE_HYDRO_PUMP,
         .secretPowerAnimation = B_SECRET_POWER_ANIMATION >= GEN_6 ? gBattleAnimMove_WaterPulse : gBattleAnimMove_Waterfall,
         .secretPowerEffect = B_SECRET_POWER_EFFECT >= GEN_6 ? SECRET_POWER_ATK_MINUS_1 : SECRET_POWER_DEF_MINUS_1,
@@ -137,7 +137,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_WATER] =
     {
-        .name = _("Water"),
+        .name = _("Wasser"),
         .naturePower = B_NATURE_POWER_MOVES >= GEN_4 ? MOVE_HYDRO_PUMP : MOVE_SURF,
         .secretPowerAnimation = B_SECRET_POWER_ANIMATION >= GEN_4 ? gBattleAnimMove_WaterPulse : gBattleAnimMove_Surf,
         .secretPowerEffect = SECRET_POWER_ATK_MINUS_1,
@@ -151,7 +151,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_POND] =
     {
-        .name = _("Pond"),
+        .name = _("Teich"),
         .naturePower = B_NATURE_POWER_MOVES >= GEN_4 ? MOVE_HYDRO_PUMP : MOVE_BUBBLE_BEAM,
         .secretPowerAnimation = B_SECRET_POWER_ANIMATION >= GEN_4 ? gBattleAnimMove_WaterPulse : gBattleAnimMove_BubbleBeam,
         .secretPowerEffect = B_SECRET_POWER_EFFECT >= GEN_4 ? SECRET_POWER_ATK_MINUS_1 : SECRET_POWER_SPD_MINUS_1,
@@ -165,7 +165,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_MOUNTAIN] =
     {
-        .name = _("Mountain"),
+        .name = _("Berg"),
     #if B_NATURE_POWER_MOVES >= GEN_6
         .naturePower = MOVE_EARTH_POWER,
     #elif B_NATURE_POWER_MOVES >= GEN_5
@@ -191,7 +191,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_CAVE] =
     {
-        .name = _("Cave"),
+        .name = _("Höhle"),
         .naturePower = CAVE_NATURE_POWER,
         .secretPowerAnimation = CAVE_SECRET_POWER_ANIMATION,
         .secretPowerEffect = CAVE_SECRET_POWER_EFFECT,
@@ -205,7 +205,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_BUILDING] =
     {
-        .name = _("Building"),
+        .name = _("Gebäude"),
         .naturePower = BUILDING_NATURE_POWER,
         .secretPowerAnimation = BUILDING_SECRET_POWER_ANIMATION,
         .secretPowerEffect = BUILDING_SECRET_POWER_EFFECT,
@@ -219,7 +219,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_PLAIN] =
     {
-        .name = _("Plain"),
+        .name = _("Ebene"),
         .naturePower = PLAIN_NATURE_POWER,
         .secretPowerAnimation = PLAIN_SECRET_POWER_ANIMATION,
         .secretPowerEffect = PLAIN_SECRET_POWER_EFFECT,
@@ -233,7 +233,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_FRONTIER] =
     {
-        .name = _("Frontier"),
+        .name = _("Kampfzone"),
         .secretPowerAnimation = BUILDING_SECRET_POWER_ANIMATION,
         .secretPowerEffect = BUILDING_SECRET_POWER_EFFECT,
         .camouflageType = BUILDING_CAMOUFLAGE_TYPE,
@@ -246,7 +246,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_GYM] =
     {
-        .name = _("Gym"),
+        .name = _("Arena"),
         .secretPowerAnimation = BUILDING_SECRET_POWER_ANIMATION,
         .secretPowerEffect = BUILDING_SECRET_POWER_EFFECT,
         .camouflageType = BUILDING_CAMOUFLAGE_TYPE,
@@ -259,7 +259,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_LEADER] =
     {
-        .name = _("Leader"),
+        .name = _("Arenaleiter"),
         .secretPowerAnimation = BUILDING_SECRET_POWER_ANIMATION,
         .secretPowerEffect = BUILDING_SECRET_POWER_EFFECT,
         .camouflageType = BUILDING_CAMOUFLAGE_TYPE,
@@ -298,7 +298,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_SIDNEY] =
     {
-        .name = _("Sidney"),
+        .name = _("Ulrich"),
         .secretPowerAnimation = BUILDING_SECRET_POWER_ANIMATION,
         .secretPowerEffect = BUILDING_SECRET_POWER_EFFECT,
         .camouflageType = BUILDING_CAMOUFLAGE_TYPE,
@@ -311,7 +311,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_PHOEBE] =
     {
-        .name = _("Phoebe"),
+        .name = _("Antonia"),
         .secretPowerAnimation = BUILDING_SECRET_POWER_ANIMATION,
         .secretPowerEffect = BUILDING_SECRET_POWER_EFFECT,
         .camouflageType = BUILDING_CAMOUFLAGE_TYPE,
@@ -324,7 +324,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_GLACIA] =
     {
-        .name = _("Glacia"),
+        .name = _("Eisblume"),
         .secretPowerAnimation = BUILDING_SECRET_POWER_ANIMATION,
         .secretPowerEffect = BUILDING_SECRET_POWER_EFFECT,
         .camouflageType = BUILDING_CAMOUFLAGE_TYPE,
@@ -337,7 +337,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_DRAKE] =
     {
-        .name = _("Drake"),
+        .name = _("Draco"),
         .secretPowerAnimation = BUILDING_SECRET_POWER_ANIMATION,
         .secretPowerEffect = BUILDING_SECRET_POWER_EFFECT,
         .camouflageType = BUILDING_CAMOUFLAGE_TYPE,
@@ -445,7 +445,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_MARSH] =
     {
-        .name = _("Marsh"),
+        .name = _("Sumpf"),
         .naturePower = MOVE_MUD_BOMB,
         .secretPowerAnimation = gBattleAnimMove_MudShot,
         .secretPowerEffect = SECRET_POWER_SPD_MINUS_1,
@@ -465,7 +465,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_SNOW] =
     {
-        .name = _("Snow"),
+        .name = _("Schnee"),
     #if B_NATURE_POWER_MOVES >= GEN_7
         .naturePower = MOVE_ICE_BEAM,
     #elif B_NATURE_POWER_MOVES == GEN_6
@@ -481,7 +481,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_ICE] =
     {
-        .name = _("Ice"),
+        .name = _("Eis"),
         .naturePower = MOVE_ICE_BEAM,
         .secretPowerAnimation = gBattleAnimMove_IceShard,
         .secretPowerEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
@@ -491,7 +491,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_VOLCANO] =
     {
-        .name = _("Volcano"),
+        .name = _("Vulkan"),
         .naturePower = MOVE_LAVA_PLUME,
         .secretPowerAnimation = gBattleAnimMove_Incinerate,
         .secretPowerEffect = MOVE_EFFECT_BURN,

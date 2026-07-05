@@ -545,11 +545,11 @@ EventScript_OpenDoor::
 
 Text_CardKeyOpenedDoor::
 	.string "Bingo!\n"
-	.string "The CARD KEY opened the door!$"
+	.string "Der Schlüsselcode öffnet die Tür!$"
 
 Text_ItNeedsCardKey::
-	.string "No!\n"
-	.string "It needs a CARD KEY!$"
+	.string "Nein!\n"
+	.string "Hier braucht man einen Schlüsselcode!$"
 
 Text_TheDoorIsOpen::
-	.string "The door is open…$"
+	.string "Die Tür ist offen...$"

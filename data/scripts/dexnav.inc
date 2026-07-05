@@ -44,4 +44,5 @@ sText_LostSignal:
 	.string "The signal was lost!$"
 
 sText_TooDark:
-	.string "It's too dark to search\nfor a Pokémon!$"
+	.string "It's too dark to search\n"
+	.string "for a Pokémon!$"

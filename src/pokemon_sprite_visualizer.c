@@ -473,44 +473,74 @@ static const struct SubmenuText sSubmenuText[] =
 {
     [SUBMENU_SPECIES] =
     {
-        .instructions = COMPOUND_STRING("{START_BUTTON} Shiny\n{B_BUTTON} Exit  {A_BUTTON} Anims and BG$"),
-        .instructionsGender = COMPOUND_STRING("{START_BUTTON} Shiny {SELECT_BUTTON} Gender\n{B_BUTTON} Exit  {A_BUTTON} Anims and BG$"),
+        .instructions = COMPOUND_STRING(
+    "{START_BUTTON} Shiny\n"
+    "{B_BUTTON} Exit  {A_BUTTON} Anims and BG$"),
+        .instructionsGender = COMPOUND_STRING(
+    "{START_BUTTON} Shiny {SELECT_BUTTON} Gender\n"
+    "{B_BUTTON} Exit  {A_BUTTON} Anims and BG$"),
     },
 
     [SUBMENU_ANIMS_BG] =
     {
-        .instructions = COMPOUND_STRING("{START_BUTTON} Shiny\n{B_BUTTON} Back  {A_BUTTON} Sprite Coords$"),
-        .instructionsGender = COMPOUND_STRING("{START_BUTTON} Shiny {SELECT_BUTTON} Gender\n{B_BUTTON} Back  {A_BUTTON} Sprite Coords$"),
+        .instructions = COMPOUND_STRING(
+    "{START_BUTTON} Shiny\n"
+    "{B_BUTTON} Back  {A_BUTTON} Sprite Coords$"),
+        .instructionsGender = COMPOUND_STRING(
+    "{START_BUTTON} Shiny {SELECT_BUTTON} Gender\n"
+    "{B_BUTTON} Back  {A_BUTTON} Sprite Coords$"),
     },
 
     [SUBMENU_SPRITE_COORDS] =
     {
 #if B_ENEMY_MON_SHADOW_STYLE >= GEN_4 && P_GBA_STYLE_SPECIES_GFX == FALSE
-        .instructions = COMPOUND_STRING("{START_BUTTON} Shiny\n{B_BUTTON} Back  {A_BUTTON} Shadow Coords$"),
-        .instructionsGender = COMPOUND_STRING("{START_BUTTON} Shiny {SELECT_BUTTON} Gender\n{B_BUTTON} Back  {A_BUTTON} Shadow Coords$"),
+        .instructions = COMPOUND_STRING(
+    "{START_BUTTON} Shiny\n"
+    "{B_BUTTON} Back  {A_BUTTON} Shadow Coords$"),
+        .instructionsGender = COMPOUND_STRING(
+    "{START_BUTTON} Shiny {SELECT_BUTTON} Gender\n"
+    "{B_BUTTON} Back  {A_BUTTON} Shadow Coords$"),
 #else
-        .instructions = COMPOUND_STRING("{START_BUTTON} Shiny\n{B_BUTTON} Back  {A_BUTTON} Move BGs$"),
-        .instructionsGender = COMPOUND_STRING("{START_BUTTON} Shiny {SELECT_BUTTON} Gender\n{B_BUTTON} Back  {A_BUTTON} Move BGs$"),
+        .instructions = COMPOUND_STRING(
+    "{START_BUTTON} Shiny\n"
+    "{B_BUTTON} Back  {A_BUTTON} Move BGs$"),
+        .instructionsGender = COMPOUND_STRING(
+    "{START_BUTTON} Shiny {SELECT_BUTTON} Gender\n"
+    "{B_BUTTON} Back  {A_BUTTON} Move BGs$"),
 #endif
-        .bottomLeft = COMPOUND_STRING("B coords:\nF coords:\nF elev:"),
+        .bottomLeft = COMPOUND_STRING(
+    "B coords:\n"
+    "F coords:\n"
+    "F elev:"),
     },
 
     [SUBMENU_SHADOW_COORDS] =
     {
 #if B_ENEMY_MON_SHADOW_STYLE >= GEN_4 && P_GBA_STYLE_SPECIES_GFX == FALSE
-        .instructions = COMPOUND_STRING("{START_BUTTON} Shiny\n{B_BUTTON} Back  {A_BUTTON} Move BGs$"),
-        .instructionsGender = COMPOUND_STRING("{START_BUTTON} Shiny\n{B_BUTTON} Back  {A_BUTTON} Move BGs$"),
+        .instructions = COMPOUND_STRING(
+    "{START_BUTTON} Shiny\n"
+    "{B_BUTTON} Back  {A_BUTTON} Move BGs$"),
+        .instructionsGender = COMPOUND_STRING(
+    "{START_BUTTON} Shiny\n"
+    "{B_BUTTON} Back  {A_BUTTON} Move BGs$"),
 #else
         .instructions = COMPOUND_STRING("$"),
         .instructionsGender = COMPOUND_STRING("$"),
 #endif
-        .bottomLeft = COMPOUND_STRING("X coords:\nY coords:\nSize:"),
+        .bottomLeft = COMPOUND_STRING(
+    "X coords:\n"
+    "Y coords:\n"
+    "Size:"),
     },
 
     [SUBMENU_MOVE_BACKGROUNDS] =
     {
-        .instructions = COMPOUND_STRING("{START_BUTTON} Shiny\n{B_BUTTON} Back$"),
-        .instructionsGender = COMPOUND_STRING("{START_BUTTON} Shiny {SELECT_BUTTON} Gender\n{B_BUTTON} Back$"),
+        .instructions = COMPOUND_STRING(
+    "{START_BUTTON} Shiny\n"
+    "{B_BUTTON} Back$"),
+        .instructionsGender = COMPOUND_STRING(
+    "{START_BUTTON} Shiny {SELECT_BUTTON} Gender\n"
+    "{B_BUTTON} Back$"),
         .bottomLeft = COMPOUND_STRING("Move BG:"),
     },
 };

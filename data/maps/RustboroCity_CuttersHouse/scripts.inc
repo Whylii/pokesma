@@ -45,8 +45,9 @@ RustboroCity_CuttersHouse_Text_ExplainCut:
 	.string "more than once.$"
 
 RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees:
-	.string "When they were expanding the city of\n"
-	.string "RUSTBORO, my dad helped out.\p"
-	.string "He made his POKéMON use CUT to clear\n"
-	.string "the land of trees.$"
+	.string "Als sie die Stadt Metarost City\n"
+	.string "vergrößert haben, hat mein Vater ihnen\l"
+	.string "geholfen.\p"
+	.string "Seine Pokémon fällten die Bäume mit\n"
+	.string "Zerschneider.$"
 

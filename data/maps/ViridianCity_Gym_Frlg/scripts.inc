@@ -153,7 +153,7 @@ ViridianCity_Gym_Text_ExplainTM26::
 	.string "It is a powerful attack that causes\n"
 	.string "a massive tremor.\p"
 	.string "I made it when I ran the GYM here,\n"
-	.string "far too long ago… $"
+	.string "far too long ago…$"
 
 ViridianCity_Gym_Text_YouDoNotHaveSpace::
 	.string "You do not have space for this!$"

@@ -55,18 +55,19 @@ LilycoveCity_DepartmentStore_3F_EventScript_Woman::
 	end
 
 LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon:
-	.string "For quickly toughening up POKéMON,\n"
-	.string "items are the best.\p"
-	.string "PROTEIN boosts ATTACK,\n"
-	.string "and CALCIUM raises SP. ATK.$"
+	.string "Um Pokémon schnell stärker zu machen,\n"
+	.string "eignen sich Items hervorragend.\p"
+	.string "Protein steigert den Angriff und\n"
+	.string "Kalzium den Spez. Angriff.$"
 
 LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance:
-	.string "I want my POKéMON to have more\n"
-	.string "endurance.\p"
-	.string "I'm trying to decide whether to raise\n"
-	.string "DEFENSE with IRON, or SP. DEF with ZINC.$"
+	.string "Ich möchte, dass mein Pokémon mehr\n"
+	.string "Ausdauer hat.\p"
+	.string "Ich frage mich, ob ich lieber die\n"
+	.string "Verteidigung mit Eisen oder die Spez.\l"
+	.string "Verteitidung mit Zink steigern soll.$"
 
 LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon:
-	.string "I gave a CARBOS to my POKéMON,\n"
-	.string "and its SPEED went up.$"
+	.string "Ich habe meinem Pokémon Carbon\n"
+	.string "gegeben, um die Init. zu erhöhen.$"
 

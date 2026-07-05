@@ -88,222 +88,227 @@ SafariZone_EventScript_PokeblockPresent::
 	end
 
 SafariZone_Text_WouldYouLikeToExit:
-	.string "Would you like to exit the SAFARI\n"
-	.string "ZONE right now?$"
+	.string "Möchtest du die Safari-Zone jetzt\n"
+	.string "verlassen?$"
 
 SafariZone_Text_TimesUp:
-	.string "Ding-dong! Time's up!\n"
-	.string "Your SAFARI Game is over.$"
+	.string "Klingeling! Die Zeit ist um!\n"
+	.string "Dein Safari-Spiel ist vorbei.$"
 
 SafariZone_Text_OutOfBalls:
-	.string "You've run out of SAFARI BALLS.\n"
-	.string "Your SAFARI Game is over.$"
+	.string "Deine Safari-Bälle sind aufgebraucht.\n"
+	.string "Dein Safari-Spiel ist vorbei.$"
 
 SafariZone_Text_PlacePokeblockOnFeeder:
-	.string "Would you like to place a {POKEBLOCK}\n"
-	.string "on the {POKEBLOCK} FEEDER?$"
+	.string "Möchtest du einen {POKEBLOCK} in\n"
+	.string "den Futternapf legen?$"
 
 SafariZone_Text_PokeblockStillHere:
-	.string "The {STR_VAR_1} you left\n"
-	.string "before is still here.$"
+	.string "Der {STR_VAR_1}, den du zurückgelassen\n"
+	.string "hast, ist noch da.$"
 
 SafariZone_Text_PokeblockWasPlaced:
-	.string "The {STR_VAR_1} was placed\n"
-	.string "on the {POKEBLOCK} FEEDER.$"
+	.string "{STR_VAR_1} wurde auf den\n"
+	.string "Futternapf gelegt.$"
 
 Route121_SafariZoneEntrance_Text_WelcomeToSafariZone:
-	.string "Welcome to the SAFARI ZONE!\p"
-	.string "Here, you may witness many kinds of\n"
-	.string "POKéMON rarely seen in HOENN.\p"
-	.string "And, you'll see them in their wild,\n"
-	.string "untamed state in natural habitats.\p"
-	.string "What's more, we've thrown open the\n"
-	.string "gates to POKéMON TRAINERS.\p"
-	.string "You're encouraged to catch POKéMON\n"
-	.string "for keeps!\p"
-	.string "Come in and enjoy the SAFARI ZONE!$"
+	.string "Willkommen in der Safari-Zone!\p"
+	.string "Hier kannst du viele Arten von\n"
+	.string "Pokémon sehen, die in Hoenn selten sind.\p"
+	.string "Und du siehst sie in ihrem wilden,\n"
+	.string "natürlichen Lebensraum.\p"
+	.string "Wir haben die Tore auch für\n"
+	.string "Pokémon-Trainer geöffnet.\p"
+	.string "Du darfst die Pokémon hier für\n"
+	.string "immer fangen!\p"
+	.string "Komm rein und genieß die Safari-Zone!$"
 
 Route121_SafariZoneEntrance_Text_WelcomeFirstTime:
-	.string "Welcome to the SAFARI ZONE!\n"
-	.string "Is it your first time here?$"
+	.string "Willkommen in der Safari-Zone!\n"
+	.string "Bist du zum ersten Mal hier?$"
 
 Route121_SafariZoneEntrance_Text_ComeInAndEnjoy:
-	.string "Come in and enjoy the SAFARI ZONE!$"
+	.string "Komm rein und genieß die Safari-Zone!$"
 
 Route121_SafariZoneEntrance_Text_FirstTimeInfo:
-	.string "When you enter the SAFARI ZONE, you\n"
-	.string "start with 30 SAFARI BALLS for\l"
-	.string "catching POKéMON.\p"
-	.string "The SAFARI Game is over when you run\n"
-	.string "out of SAFARI BALLS, or when you've\l"
-	.string "walked 500 steps.\p"
-	.string "Come in and enjoy the SAFARI ZONE!$"
+	.string "Wenn du die Safari-Zone betrittst,\n"
+	.string "erhältst du 30 Safari-Bälle zum\l"
+	.string "Pokémon-Fang.\p"
+	.string "Das Safari-Spiel endet, wenn du\n"
+	.string "keine Safari-Bälle mehr hast oder\l"
+	.string "500 Schritte gelaufen bist.\p"
+	.string "Komm rein und genieß die Safari-Zone!$"
 
 Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay:
-	.string "Welcome to the SAFARI ZONE!\p"
-	.string "All you can catch for just ¥500!\n"
-	.string "Would you like to play a SAFARI Game?$"
+	.string "Willkommen in der Safari-Zone!\p"
+	.string "Fangen, so viel du willst, für nur 500¥!\n"
+	.string "Möchtest du ein Safari-Spiel spielen?$"
 
 Route121_SafariZoneEntrance_Text_PlayAnotherTime:
 	.string "Okay.\n"
-	.string "Please play another time!$"
+	.string "Spiel ein andermal wieder!$"
 
 Route121_SafariZoneEntrance_Text_NotEnoughMoney:
-	.string "You don't have enough money.\n"
-	.string "Sorry.$"
+	.string "Du hast nicht genug Geld.\n"
+	.string "Tut mir leid.$"
 
 Route121_SafariZoneEntrance_Text_ThatWillBe500Please:
-	.string "That will be ¥500, please.$"
+	.string "Das macht dann 500¥, bitte.$"
 
 Route121_SafariZoneEntrance_Text_HereAreYourSafariBalls:
-	.string "Here are your SAFARI BALLS.$"
+	.string "Hier sind deine Safari-Bälle.$"
 
 Route121_SafariZoneEntrance_Text_Received30SafariBalls:
-	.string "{PLAYER} received 30 SAFARI BALLS.$"
+	.string "{PLAYER} erhält 30 Safari-Bälle.$"
 
 Route121_SafariZoneEntrance_Text_PleaseEnjoyYourself:
-	.string "We'll let you know when your game\n"
-	.string "is over.\p"
-	.string "So, until then, enjoy yourself, please!\n"
-	.string "Off you go on your wild excursion!$"
+	.string "Wir sagen dir Bescheid, wenn dein\n"
+	.string "Spiel vorbei ist.\p"
+	.string "Bis dahin wünschen wir dir viel Spaß!\n"
+	.string "Auf geht's zu deinem Wildnis-Abenteuer!$"
 
 Route121_SafariZoneEntrance_Text_PCIsFull:
-	.string "Excuse me!\n"
-	.string "Your PC BOX is full.$"
+	.string "Entschuldigung!\n"
+	.string "Deine PC-Box ist voll.$"
 
 Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase:
-	.string "Excuse me!\n"
-	.string "You seem to be without a {POKEBLOCK} CASE.\p"
-	.string "Your SAFARI Game will be much more\n"
-	.string "fruitful if you use {POKEBLOCK}S.\p"
-	.string "Please come back with a {POKEBLOCK} CASE.\p"
-	.string "You may obtain a {POKEBLOCK} CASE from\n"
-	.string "the LILYCOVE CONTEST HALL.$"
+	.string "Entschuldigung!\n"
+	.string "Du hast anscheinend keinen\n"
+	.string "{POKEBLOCK}-Box.\p"
+	.string "Dein Safari-Spiel wird viel\n"
+	.string "erfolgreicher sein, wenn du {POKEBLOCK}S\l"
+	.string "benutzt.\p"
+	.string "Bitte komm mit einem {POKEBLOCK}-Box\n"
+	.string "wieder.\p"
+	.string "Einen {POKEBLOCK}-Box bekommst du\n"
+	.string "in der Lilycove-Wettbewerbshalle.$"
 
 SafariZone_South_Text_StillHaveTimeExit:
-	.string "You still have time left. Would you like\n"
-	.string "to exit the SAFARI ZONE now?$"
+	.string "Du hast noch Zeit. Möchtest du die\n"
+	.string "Safari-Zone jetzt verlassen?$"
 
 SafariZone_South_Text_EnjoyTheRestOfYourAdventure:
-	.string "Please enjoy the rest of your wild\n"
-	.string "adventure!$"
+	.string "Viel Spaß beim Rest deines\n"
+	.string "Wildnis-Abenteuers!$"
 
 SafariZone_South_Text_ExitEarlyThankYouForPlaying:
 	.string "Okay.\p"
-	.string "I'll take back your remaining SAFARI\n"
-	.string "BALLS.\p"
-	.string "Thank you for playing.\n"
-	.string "We hope to see you again.$"
+	.string "Ich nehme deine übrigen Safari-Bälle\n"
+	.string "zurück.\p"
+	.string "Vielen Dank für dein Spiel.\n"
+	.string "Wir hoffen, dich bald wiederzusehen.$"
 
 SafariZone_South_Text_GoodLuck:
-	.string "Good luck!\p"
-	.string "If you need anything, don't hesitate\n"
-	.string "to tell me, please!$"
+	.string "Viel Glück!\p"
+	.string "Wenn du etwas brauchst, sag mir\n"
+	.string "bitte Bescheid!$"
 
 SafariZone_South_Text_Boy:
-	.string "Did you know?\p"
-	.string "If you put a {POKEBLOCK} in that square box,\n"
-	.string "POKéMON gather around.$"
+	.string "Weißt du was?\p"
+	.string "Wenn du einen {POKEBLOCK} in den Kasten\n"
+	.string "legst, sammeln sich Pokémon darum.$"
 
 SafariZone_South_Text_Man:
-	.string "I want to keep going deeper, but I\n"
-	.string "forgot to bring a BIKE.\p"
-	.string "Something tells me that rare POKéMON\n"
-	.string "live in the outlying areas.$"
+	.string "Ich will tiefer hinein, aber ich habe\n"
+	.string "vergessen, ein Fahrrad mitzunehmen.\p"
+	.string "Irgendwie habe ich das Gefühl, dass\n"
+	.string "seltene Pokémon in den Außenbereichen leben.$"
 
 SafariZone_Southwest_Text_Woman:
-	.string "Sometimes, when I toss a {POKEBLOCK} at \n"
-	.string "POKéMON, it gets ignored.\p"
-	.string "Do POKéMON have likes and dislikes\n"
-	.string "about what they eat?$"
+	.string "Manchmal ignorieren Pokémon den\n"
+	.string "{POKEBLOCK}, den ich zuwerfe.\p"
+	.string "Haben Pokémon etwa Vorlieben, was\n"
+	.string "sie fressen?$"
 
 SafariZone_Northwest_Text_Man:
-	.string "Gasp… Gasp…\n"
-	.string "I…made it out here…but…\p"
-	.string "I'm exhausted… I don't have the\n"
-	.string "energy to catch POKéMON…$"
+	.string "Keuch... Keuch...\n"
+	.string "Ich... hab es hierher geschafft...\p"
+	.string "Aber ich bin total erschöpft...\n"
+	.string "Ich hab keine Kraft mehr zum Pokémon-Fang...$"
 
 SafariZone_North_Text_Fisherman:
-	.string "I'm on a mission to find WATER POKéMON\n"
-	.string "you don't see in HOENN.\p"
-	.string "Do you have any idea where the lake is?$"
+	.string "Ich bin auf der Suche nach Wasser-\n"
+	.string "Pokémon, die man in Hoenn nicht sieht.\p"
+	.string "Weißt du zufällig, wo der See ist?$"
 
 SafariZone_North_Text_Man:
-	.string "I'm going to catch a lot of rare POKéMON\n"
-	.string "here and trade them with my friends!$"
+	.string "Ich fang hier viele seltene Pokémon\n"
+	.string "und tausch sie mit meinen Freunden!$"
 
 SafariZone_South_Text_Youngster:
-	.string "I put a {POKEBLOCK} on the {POKEBLOCK} FEEDER.\n"
-	.string "But it seems to have disappeared.\p"
-	.string "I guess POKéMON must have eaten it\n"
-	.string "without me noticing.$"
+	.string "Ich habe einen {POKEBLOCK} in den\n"
+	.string "Futternapf gelegt.\p"
+	.string "Aber er ist verschwunden.\p"
+	.string "Ein Pokémon hat ihn wohl gefressen,\n"
+	.string "ohne dass ich es gemerkt habe.$"
 
 Route121_SafariZoneEntrance_Text_TrainerTip:
-	.string "SAFARI ZONE TRAINER TIP!\p"
-	.string "Throw {POKEBLOCK}S at wild POKéMON to make\n"
-	.string "them less likely to flee.$"
+	.string "Safari-Zone-Trainertipp!\p"
+	.string "Wirf {POKEBLOCK} auf wilde Pokémon,\n"
+	.string "damit sie nicht so schnell fliehen.$"
 
 SafariZone_Southwest_Text_RestHouseSign:
-	.string "“Relieve your tired feet.”\n"
-	.string "REST HOUSE$"
+	.string "Gönn deinen müden Füßen eine Pause.\n"
+	.string "Rast-Haus$"
 
 SafariZone_RestHouse_Text_Youngster:
-	.string "I don't have any {POKEBLOCK}S, but I caught\n"
-	.string "a good number of POKéMON.\p"
-	.string "You can improve your chances of making\n"
-	.string "a catch by getting closer to them\l"
-	.string "before throwing a SAFARI BALL.$"
+	.string "Ich habe keine {POKEBLOCK}, aber ich\n"
+	.string "habe einige Pokémon gefangen.\p"
+	.string "Du erhöhst deine Fangchancen, wenn\n"
+	.string "du dich vor dem Wurf des Safari-Balls\l"
+	.string "annäherst.$"
 
 SafariZone_RestHouse_Text_PsychicM:
-	.string "If you use {POKEBLOCK}S, wild POKéMON won't\n"
-	.string "be so quick to run away.\p"
-	.string "It's not much use to give {POKEBLOCK}S to\n"
-	.string "POKéMON that don't flee easily.$"
+	.string "Mit {POKEBLOCK} laufen wilde Pokémon\n"
+	.string "nicht so schnell weg.\p"
+	.string "Es bringt wenig, {POKEBLOCK} an Pokémon\n"
+	.string "zu verfüttern, die sowieso nicht fliehen.$"
 
 SafariZone_RestHouse_Text_FatMan:
-	.string "If you put a {POKEBLOCK} on the FEEDER,\n"
-	.string "POKéMON are attracted to it.\p"
-	.string "I think POKéMON with the same sort of\n"
-	.string "nature are drawn by a certain {POKEBLOCK}.$"
+	.string "Wenn du einen {POKEBLOCK} in den\n"
+	.string "Futternapf legst, werden Pokémon angelockt.\p"
+	.string "Ich glaube, Pokémon mit einem bestimmten\n"
+	.string "Wesen fühlen sich zu bestimmten {POKEBLOCK} hin.$"
 
 SafariZone_South_Text_AreaOffLimits1:
-	.string "This area is still under construction.\n"
-	.string "It's off-limits, sorry!$"
+	.string "Dieser Bereich wird noch gebaut.\n"
+	.string "Der Zutritt ist verboten, sorry!$"
 
 SafariZone_Southeast_Text_ExpansionIsFinished:
-	.string "The SAFARI ZONE's expansion project\n"
-	.string "is finished now.\p"
-	.string "We hope you will enjoy the new area.$"
+	.string "Das Erweiterungsprojekt der\n"
+	.string "Safari-Zone ist jetzt abgeschlossen.\p"
+	.string "Wir hoffen, du genießt die neue Fläche.$"
 
 SafariZone_South_Text_AreaOffLimits2:
-	.string "This area is still under construction.\n"
-	.string "It's off-limits, sorry!$"
+	.string "Dieser Bereich wird noch gebaut.\n"
+	.string "Der Zutritt ist verboten, sorry!$"
 
 SafariZone_Southeast_Text_LittleGirl:
-	.string "Wow! Whee! I haven't seen any of\n"
-	.string "these POKéMON before!$"
+	.string "Wow! Juhu! Diese Pokémon hab ich\n"
+	.string "noch nie gesehen!$"
 
 SafariZone_Southeast_Text_FatMan:
-	.string "The POKéMON in this area are all\n"
-	.string "new to me.\p"
-	.string "And I'm allowed to catch these rare\n"
-	.string "POKéMON! Too cool!$"
+	.string "Die Pokémon hier sind alle\n"
+	.string "neu für mich.\p"
+	.string "Und ich darf diese seltenen Pokémon\n"
+	.string "fangen! Voll cool!$"
 
 SafariZone_Southeast_Text_RichBoy:
-	.string "The POKéMON around here seem to be\n"
-	.string "from somewhere other than HOENN.$"
+	.string "Die Pokémon hier scheinen aus einer\n"
+	.string "anderen Region als Hoenn zu sein.$"
 
 SafariZone_Northeast_Text_Boy:
-	.string "I only have a couple SAFARI BALLS left.\p"
-	.string "I'm having a hard time trying to\n"
-	.string "decide what I should catch.$"
+	.string "Ich habe nur noch ein paar\n"
+	.string "Safari-Bälle übrig.\p"
+	.string "Ich kann mich kaum entscheiden,\n"
+	.string "was ich fangen soll.$"
 
 SafariZone_Northeast_Text_Woman:
-	.string "I heard that you can see PIKACHU here.\n"
-	.string "Where might one be?$"
+	.string "Ich hab gehört, dass man hier Pikachu\n"
+	.string "sehen kann. Wo könnte eines sein?$"
 
 SafariZone_Northeast_Text_Girl:
-	.string "Oh, boo!\n"
-	.string "I can't seem to catch anything!\p"
-	.string "I'll end up wasting the admission\n"
-	.string "price if I don't catch something!$"
+	.string "Oh, Mann!\n"
+	.string "Ich kann einfach nichts fangen!\p"
+	.string "Wenn ich nichts fange, war das\n"
+	.string "Eintrittsgeld umsonst!$"
