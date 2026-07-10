@@ -22,7 +22,7 @@ CableClub_Text_RecordCornerUsingLinkCable::
 
 @ Unused
 CableClub_Text_CloseThisMenu:
-	.string "Close this menu.$"
+	.string "Menü schließen.$"
 
 CableClub_Text_NeedTwoMonsForDoubleBattle:
 	.string "Für einen DOPPELKampf brauchst du\n"
@@ -56,8 +56,8 @@ gText_AwaitingLinkup::
 
 @ Unused
 CableClub_Text_OkayToSaveProgress::
-	.string "Your progress must be saved before\n"
-	.string "linking. Is it okay to save?$"
+	.string "Du musst speichern bevor du\n"
+	.string "dich verbindest. Ist es okay jetzt zu speichern?$"
 
 CableClub_Text_PleaseEnter:
 	.string "Bitte eintreten.$"
@@ -186,11 +186,11 @@ CableClub_Text_ParticipantsStepUpToCounter:
 
 @ Unused
 CableClub_Text_Hello:
-	.string "Hello!$"
+	.string "Hallo!$"
 
 @ Unused
 CableClub_Text_PleaseWait:
-	.string "Please wait.$"
+	.string "Bitte warten.$"
 
 CableClub_Text_YouMayTradeHere::
 	.string "Hier kannst du mit deinen Freunden\n"
@@ -218,11 +218,11 @@ CableClub_Text_CancelSelectedItem::
 
 @ Unused
 CableClub_Text_WhichBattleMode:
-	.string "Which battle mode would you like?$"
+	.string "Wähle den Kampfmodus.$"
 
 @ Unused
 CableClub_Text_ReturnsToPreviousStep:
-	.string "Returns to the previous step.$"
+	.string "Zurück zum vorherigen Schritt.$"
 
 CableClub_Text_NeedBerryForBerryCrush:
 	.string "Um die BeereNMÜHLE benutzen\n"
@@ -323,8 +323,8 @@ MossdeepCity_GameCorner_1F_Text_AllGoodToGo:
 
 @ Unused
 MossdeepCity_GameCorner_1F_Text_LeavingDoComeAgain:
-	.string "Are you leaving now?\n"
-	.string "Do come again!$"
+	.string "Gehst du schon?\n"
+	.string "Bis bald!$"
 
 MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon:
 	.string "Es scheint, dass keines deiner\n"
@@ -348,8 +348,8 @@ MossdeepCity_GameCorner_1F_Text_OnlyDodrioAllowed:
 
 @ Unused
 MossdeepCity_GameCorner_1F_Text_RetryPlease:
-	.string "Could you retry this from the start\n"
-	.string "again, please?$"
+	.string "Bitte versuche es nocheinmal\n"
+	.string "von vorne.$"
 
 CableClub_Text_WelcomeWhichDirectCornerRoom:
 	.string "Willkommen im Pokémon\n"

@@ -353,7 +353,8 @@ BattleFrontier_ExchangeServiceCorner_Text_WelcomePleaseChoosePrize:
 
 @ Unused
 BattleFrontier_ExchangeServiceCorner_Text_PleaseChoosePrize:
-	.string "Please choose a prize from this list.$"
+	.string "Bitte wähle einen Preis\n"
+	.string "von dieser Liste.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmPurchase:
 	.string "Du möchtest das {STR_VAR_1}\n"

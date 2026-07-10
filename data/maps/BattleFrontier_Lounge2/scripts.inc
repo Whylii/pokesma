@@ -129,9 +129,9 @@ BattleFrontier_Lounge2_Text_SwingByForTheLatestWord::
 
 @ Unused
 BattleFrontier_Lounge2_Text_MyInformationsBeenUsefulRight::
-	.string "Well? Well? Well?\p"
-	.string "I'm sure my information's been\n"
-	.string "seriously useful to you, right?$"
+	.string "So so?\p"
+	.string "Ich bin sicher meine Information\n"
+	.string "war wirklich hilfreich, oder?$"
 
 BattleFrontier_Lounge2_Text_FacilityIsHottest::
 	.string "Mal sehen…\p"

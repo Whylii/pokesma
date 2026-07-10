@@ -41,9 +41,9 @@ FallarborTown_BattleTentLobby_Text_SaveBeforeChallenge:
 
 @ Unused
 FallarborTown_BattleTentLobby_Text_WhichLevelMode:
-	.string "We offer two levels of challenge,\n"
-	.string "Level 50 and Open Level.\l"
-	.string "Which is your choice?$"
+	.string "Du kannst zwischen zwei\n"
+	.string "Herausforderungen wählen.\l"
+	.string "Level 50 oder offene Level?$"
 
 FallarborTown_BattleTentLobby_Text_SelectThreeMons:
 	.string "Sehr schön! Dann bestimme jetzt bitte\n"
@@ -308,16 +308,15 @@ SlateportCity_BattleTentLobby_Text_ReturnPersonalMons:
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_ReceivedPrize:
-	.string "{PLAYER} received the prize\n"
-	.string "{STR_VAR_1}.$"
+	.string "{PLAYER} erhielt{STR_VAR_1}.$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_RulesAreListed:
-	.string "The Battle Swap rules are listed.$"
+	.string "Die Kampftauschregeln stehen hier.$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_ReadWhichHeading:
-	.string "Which heading do you want to read?$"
+	.string "Welches Thema möchtest du lesen?$"
 
 SlateportCity_BattleTentLobby_Text_ExplainBasicRules:
 	.string "In einem Wechselkampf darfst du\n"

@@ -401,7 +401,7 @@ Route117_PokemonDayCare_Text_WhatWillYouBattleWith:
 	.string "Komm ein andermal wieder.$"
 
 Text_EggHatchHuh:
-	.string "Huh?$"
+	.string "Oh?$"
 
 Route117_PokemonDayCare_Text_YoullBeLeftWithJustOne:
 	.string "Hm?\n"

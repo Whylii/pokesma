@@ -660,7 +660,7 @@ LilycoveCity_Text_TeamAquaRenovatedCavern:
 	.string "but then that TEAM AQUA lot came\l"
 	.string "along and made their renovations.\p"
 	.string "They call themselves\n"
-	.string "the “nature-loving TEAM AQUA”!\p"
+	.string "the nature-loving TEAM AQUA!\p"
 	.string "But what they do and what they say\n"
 	.string "don't match at all!$"
 

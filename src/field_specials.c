@@ -172,8 +172,8 @@ static u16 SampleResortGorgeousReward(void);
 static void Task_ShakeScreen(u8 taskId);
 static void Task_EndScreenShake(u8 taskId);
 
-static const u8 sText_BigGuy[] = _("Big guy");
-static const u8 sText_BigGirl[] = _("Big girl");
+static const u8 sText_BigGuy[] = _("Großer Junge");
+static const u8 sText_BigGirl[] = _("Großes Mädchen");
 static const u8 sText_Son[] = _("Sohn");
 static const u8 sText_Daughter[] = _("Tochter");
 static const u8 sText_99TimesPlus[] = _("99 mal +");

@@ -618,7 +618,7 @@ MauvilleCity_PokemonCenter_1F_Text_TimesShoppedTitle::
 	.string "Der glückliche KäuferMal eingekauft$"
 
 MauvilleCity_PokemonCenter_1F_Text_TimesShoppedAction::
-	.string "Shopped$"
+	.string "Geshoppt$"
 
 MauvilleCity_PokemonCenter_1F_Text_TimesShoppedStory::
 	.string "Dies ist die Sage von einem Trainer\n"

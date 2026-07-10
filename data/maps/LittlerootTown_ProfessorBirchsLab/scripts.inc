@@ -657,29 +657,28 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall::
 	end
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork:
-	.string "Hunh? PROF. BIRCH?\p"
-	.string "The PROF's away on fieldwork.\n"
-	.string "Ergo, he isn't here.\p"
-	.string "Oh, let me explain what fieldwork is.\p"
-	.string "It is to study things in the natural\n"
-	.string "environment, like fields and mountains,\l"
-	.string "instead of a laboratory.\p"
-	.string "The PROF isn't one for doing desk work.\n"
-	.string "He's the type of person who would\l"
-	.string "rather go outside and experience\l"
-	.string "things than read about them here.$"
+	.string "Hm? Prof. Birk?\p"
+	.string "Der Professor arbeitet an einer\n"
+	.string "Feldstudie.\p"
+	.string "Oh, das bedeutet er studiert\p"
+	.string "Pokémon in ihrem natürlichen\n"
+	.string "Lebensraum, anstatt im Labor.\p"
+	.string "Der Prof sitzt nicht gerne still.\n"
+	.string "Er würde lieber draußen eigene\l"
+	.string "Erfahrungen machen, also nur\l"
+	.string "davon zu lesen.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork:
-	.string "The PROF isn't one for doing desk work.\n"
-	.string "He's the type of person who would\l"
-	.string "rather go outside and experience\l"
-	.string "things than read about them here.$"
+	.string "Der Prof sitzt nicht gerne still.\n"
+	.string "Er würde lieber draußen eigene\l"
+	.string "Erfahrungen machen, also nur\l"
+	.string "davon zu lesen.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchEnjoysRivalsHelpToo:
-	.string "PROF. BIRCH is studying the habitats\n"
-	.string "and distribution of POKéMON.\p"
-	.string "The PROF enjoys {RIVAL}'s help, too.\n"
-	.string "There's a lot of love there.$"
+	.string "Prof. Birk studiert die natürlichen\n"
+	.string "Lebensräume der Pokémon.\p"
+	.string "{RIVAL} hilft ihm sehr.\n"
+	.string "Die Beiden sind ein tolles Team.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon:
 	.string "Prof. Birk: Du bist also {PLAYER}{KUN}!\p"
@@ -933,8 +932,8 @@ LittlerootTown_ProfessorBirchsLab_Text_TakeYourTimeAllInvaluable:
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_PickedFinePokemon:
-	.string "PROF. BIRCH: I see!\n"
-	.string "You picked a fine Pokémon!$"
+	.string "Prof. Birk: Aha!\n"
+	.string "Ein tolles Pokémon!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ReceivedJohtoStarter:
 	.string "{PLAYER} erhält\n"
@@ -942,8 +941,8 @@ LittlerootTown_ProfessorBirchsLab_Text_ReceivedJohtoStarter:
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_NicknameJohtoStarter:
-	.string "Want to give a nickname to\n"
-	.string "the {STR_VAR_1} you received?$"
+	.string "Möchtest du {STR_VAR_1}\n"
+	.string "einen Kosenamen geben?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting:
 	.string "Prof. Birk: Vergiss nicht! Dein\n"
@@ -959,8 +958,8 @@ LittlerootTown_ProfessorBirchsLab_Text_BetterLeaveOthersAlone:
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_DontHaveAnyRoomForPokemon:
-	.string "Oh, you don't have any room for\n"
-	.string "this Pokémon.$"
+	.string "Oh, du hast keinen Platz für\n"
+	.string "dieses Pokémon.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhatNextImStayingHere:
 	.string "Maike: {PLAYER}{KUN}, jetzt…\n"

@@ -526,19 +526,19 @@ BattleFrontier_BattleDomeLobby_Text_CongratsForWinningTourney:
 
 @ Unused
 BattleFrontier_BattleDomeLobby_Text_HereIsYourPrize:
-	.string "Here is your prize for your Battle\n"
-	.string "Tournament victory.$"
+	.string "Hier ist dein Preis für den\n"
+	.string "Sieg im Kampfturnier.$"
 
 @ Used by Verdanturf Tent
 BattleFrontier_BattleDomeLobby_Text_ReceivedPrize:
-	.string "{PLAYER} received the prize\n"
+	.string "{PLAYER} erhielt den Preis\n"
 	.string "{STR_VAR_1}.$"
 
 @ Unused
 BattleFrontier_BattleDomeLobby_Text_BagFullMakeRoom:
-	.string "Oh, your BAG appears to be full.\p"
-	.string "Please make room in your BAG, then come\n"
-	.string "see me.$"
+	.string "Oh, dein Beutel ist voll.\p"
+	.string "Komm wieder, wenn du Platz\n"
+	.string "geschafft hast.$"
 
 BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying:
 	.string "Vielen Dank für die Teilnahme!$"

@@ -657,7 +657,7 @@ const u8 gText_First[] = _("ersten Preis");
 const u8 gText_Second[] = _("zweiten Preis");
 const u8 gText_Third[] = _("dritten Preis");
 #if OW_POISON_DAMAGE < GEN_4
-const u8 gText_PkmnFainted_FldPsn[] = _("{STR_VAR_1} wurde besiegt…\p\n");
+const u8 gText_PkmnFainted_FldPsn[] = _("{STR_VAR_1} survived the poisoning.\nThe poison faded away!\p");
 #else
 const u8 gText_PkmnFainted_FldPsn[] = _("{STR_VAR_1} survived the poisoning.\nThe poison faded away!\p");
 #endif

@@ -658,30 +658,30 @@ BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell:
 @ Possibly replaced/superseded by the hard battle room, which is the same but the battle isnt optional
 @ Unused
 BattleFrontier_BattlePikeRoomNormal_Text_CareForBattleWillRestoreMons:
-	.string "Excuse me…\p"
-	.string "Would you care for a battle?\n"
-	.string "I'll restore your Pokémon if you win.$"
+	.string "Entschuldige…\p"
+	.string "Würdest du gerne kämpfen? Ich heile\n"
+	.string "deine Pokémon falls du gewinnst.$"
 
 @ Unused
 BattleFrontier_BattlePikeRoomNormal_Text_NowShallWe:
-	.string "Very well…\n"
-	.string "Now, shall we?$"
+	.string "Also gut…\n"
+	.string "Bist du bereit?$"
 
 @ Unused
 BattleFrontier_BattlePikeRoomNormal_Text_HowUnsportingOfYou:
-	.string "I see…\n"
-	.string "How unsporting of you…$"
+	.string "Ich verstehe…\n"
+	.string "Wie unsportlich von dir…$"
 
 @ Unused
 BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreMonsAsPromised:
-	.string "Magnificent…\p"
-	.string "As promised, I shall restore your\n"
-	.string "Pokémon to full health.$"
+	.string "Ausgezeichnet…\p"
+	.string "Wie versprochen, werde ich\n"
+	.string "deine Pokémon heilen.$"
 
 @ Unused
 BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell2:
-	.string "The best of luck to you.\n"
-	.string "Farewell.$"
+	.string "Ich wünsche dir alles Gute!\n"
+	.string "Leb wohl…$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_WatchOut:
 	.string "Oh je!\p"
@@ -828,11 +828,11 @@ BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealTwo:
 
 @ Unused
 BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreAllMons:
-	.string "I welcome you…\p"
-	.string "Giggle…\n"
-	.string "You should thank your lucky stars…\p"
-	.string "Since you have chosen this room,\n"
-	.string "all your Pokémon will be restored…$"
+	.string "Willkommen…\p"
+	.string "Kicher…\n"
+	.string "Du hast Glück gehabt…\p"
+	.string "Da du diesen Raum gewählt hast,\n"
+	.string "werden alle deine Pokémon geheilt…$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_ShallFetchOurMaster:
 	.string "Ich werde unsere Meisterin rufen…$"

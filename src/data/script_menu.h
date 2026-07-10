@@ -971,9 +971,9 @@ static const struct MenuAction sMultichoiceList_CeladonVendingMachine[] = {
     {gText_Exit}
 };
 
-const u8 sText_FreshWater[] = _("FRESH WATER");
-const u8 sText_SodaPop[] = _("SODA POP");
-const u8 sText_Lemonade[] = _("LEMONADE");
+const u8 sText_FreshWater[] = _("Tafelwasser");
+const u8 sText_SodaPop[] = _("Sprudel");
+const u8 sText_Lemonade[] = _("Limonade");
 
 static const struct MenuAction sMultichoiceList_ThirstyGirlFreshWater[] = {
     {sText_FreshWater},
@@ -1022,9 +1022,9 @@ static const struct MenuAction sMultichoiceList_RocketHideoutElevator[] = {
     {gText_Exit}
 };
 
-static const u8 sText_HelixFossil[] = _("HELIX FOSSIL");
-static const u8 sText_DomeFossil[] = _("DOME FOSSIL");
-static const u8 sText_OldAmber[] = _("OLD AMBER");
+static const u8 sText_HelixFossil[] = _("Helixfossil");
+static const u8 sText_DomeFossil[] = _("Domfossil");
+static const u8 sText_OldAmber[] = _("Altbernstein");
 
 static const struct MenuAction sMultichoiceList_Helix[] = {
     {sText_HelixFossil},
@@ -1079,8 +1079,8 @@ static const struct MenuAction sMultichoiceList_TrainerCardIconTint[] = {
     {COMPOUND_STRING("SEPIA")}
 };
 
-static const u8 sText_Eggs[] = _("EGGS");
-static const u8 sText_Victories[] = _("VICTORIES");
+static const u8 sText_Eggs[] = _("Eier");
+static const u8 sText_Victories[] = _("Siege");
 
 static const struct MenuAction sMultichoiceList_HOF_Quit[] = {
     {gText_HallOfFame},

@@ -153,14 +153,14 @@ Text_PokecenterSign::
 	.string "glücklich aus.$"
 
 Text_Indigo_UltimateGoal::
-	.string "INDIGO PLATEAU\p"
-	.string "The ultimate goal of TRAINERS!\n"
-	.string "POKéMON LEAGUE HQ$"
+	.string "Indigo-Plateau\p"
+	.string "Das ultimative Ziel aller Trainer!\n"
+	.string "Hauptquartier der Pokémon Liga.$"
 
 Text_Indigo_HighestAuthority::
-	.string "INDIGO PLATEAU\p"
-	.string "The highest POKéMON authority!\n"
-	.string "POKéMON LEAGUE HQ$"
+	.string "Indigo-Plateau\p"
+	.string "Das Pokémon Liga-Hauptquartier ist\n"
+	.string "die höchste Pokémon-Autorität!$"
 
 Text_Food::
 	.string "Es ist ein Pokémon.\n"

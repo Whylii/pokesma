@@ -174,19 +174,10 @@ const u8 sText_s[] = _("s");
 
 u8 *CopyItemNameHandlePlural(enum Item itemId, u8 *dst, u32 quantity)
 {
-    if (quantity == 1)
-    {
-        return StringCopy(dst, GetItemName(itemId));
-    }
-    else if (DoesItemHavePluralName(itemId))
-    {
+    if (quantity > 1 && DoesItemHavePluralName(itemId))
         return StringCopy(dst, GetItemPluralName(itemId));
-    }
     else
-    {
-        u8 *end = StringCopy(dst, GetItemName(itemId));
-        return StringCopy(end, sText_s);
-    }
+        return StringCopy(dst, GetItemName(itemId));
 }
 
 bool32 IsBagPocketNonEmpty(enum Pocket pocketId)

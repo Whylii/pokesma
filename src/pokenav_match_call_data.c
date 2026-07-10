@@ -642,18 +642,18 @@ static void (*const sMatchCall_GetNameAndDescFunctions[])(match_call_t, const u8
     MatchCall_GetNameAndDesc_Birch
 };
 
-static const u8 gText_MatchCallSteven_Strategy[] = _("Attack the weak points!");
-static const u8 gText_MatchCallSteven_Pokemon[] = _("Ultimate STEEL POKéMON.");
+static const u8 gText_MatchCallSteven_Strategy[] = _("Die Schwachpunkte angreifen!");
+static const u8 gText_MatchCallSteven_Pokemon[] = _("Ultimatives Stahl-Pokémon.");
 
-static const u8 gText_MatchCallBrendan_Strategy[] = _("Battle with knowledge!");
-static const u8 gText_MatchCallBrendan_Pokemon[] = _("I will use various POKéMON.");
-static const u8 gText_MatchCallBrendan_Intro1[] = _("I'll be a better POKéMON");
-static const u8 gText_MatchCallBrendan_Intro2[] = _("prof than my father is!");
+static const u8 gText_MatchCallBrendan_Strategy[] = _("Ein Kampf mit Strategie!");
+static const u8 gText_MatchCallBrendan_Pokemon[] = _("Ich werde viele Pokémon fangen.");
+static const u8 gText_MatchCallBrendan_Intro1[] = _("Ich werde ein besserer");
+static const u8 gText_MatchCallBrendan_Intro2[] = _("Professor als mein Paps!");
 
-static const u8 gText_MatchCallMay_Strategy[] = _("I'm not so good at battles.");
-static const u8 gText_MatchCallMay_Pokemon[] = _("I'll use any POKéMON!");
-static const u8 gText_MatchCallMay_Intro1[] = _("My POKéMON and I help");
-static const u8 gText_MatchCallMay_Intro2[] = _("my father's research.");
+static const u8 gText_MatchCallMay_Strategy[] = _("Ich bin nicht die beste Kämpferin.");
+static const u8 gText_MatchCallMay_Pokemon[] = _("Ich werde viele Pokémon fangen.");
+static const u8 gText_MatchCallMay_Intro1[] = _("Mein Pokémon und ich helfen");
+static const u8 gText_MatchCallMay_Intro2[] = _("der Forschung meines Paps.");
 
 static const struct MatchCallCheckPageOverride sCheckPageOverrides[] = {
     {

@@ -44,9 +44,9 @@ EventScript_CancelCut::
 	end
 
 Text_WantToCut:
-	.string "This tree looks like it can be\n"
-	.string "CUT down!\p"
-	.string "Would you like to CUT it?$"
+	.string "Dieser Baum kann gefällt\n"
+	.string "werden!\p"
+	.string "Möchtest du Zerschneider einsetzen?$"
 
 Text_MonUsedFieldMove:
 	.string "{STR_VAR_1} setzt {STR_VAR_2} ein!$"
@@ -264,14 +264,14 @@ EventScript_CancelStrength::
 	end
 
 Text_WantToStrength:
-	.string "It's a big boulder, but a POKéMON\n"
-	.string "may be able to push it aside.\p"
-	.string "Would you like to use STRENGTH?$"
+	.string "Ein großer Felsen, aber ein Pokémon\n"
+	.string "kann ihn verschieben.\p"
+	.string "Möchtest du Stärke einsetzen?$"
 
 Text_MonUsedStrength:
-	.string "{STR_VAR_1} used STRENGTH!\p"
-	.string "{STR_VAR_1}'s STRENGTH made it\n"
-	.string "possible to move boulders around!$"
+	.string "{STR_VAR_1} setzt Stärke ein!\p"
+	.string "Stärke ermöglicht es,\n"
+	.string "Felsen zu bewegen!$"
 
 Text_CantStrength:
 	.string "Ein großer Felsbrocken,\n"
@@ -314,7 +314,7 @@ Text_WantToWaterfall:
 	.string "Möchtest du Wasserfall einsetzen?$"
 
 Text_MonUsedWaterfall:
-	.string "{STR_VAR_1} used WATERFALL.$"
+	.string "{STR_VAR_1} setzt Wasserfall ein.$"
 
 EventScript_UseDive::
 	lockall

@@ -1,9 +1,9 @@
 gText_WouldYouLikeToRestYourPkmn::
-	.string "Hello, and welcome to\n"
-	.string "the POKéMON CENTER.\p"
-	.string "We restore your tired POKéMON\n"
-	.string "to full health.\p"
-	.string "Would you like to rest your POKéMON?$"
+	.string "Hallo, Willkommen im\n"
+	.string "Pokémon-Center.\p"
+	.string "Wir heilen deine Pokémon.\p"
+	.string "Möchtest du deine Pokémon\n"
+	.string "heilen lassen?$"
 
 gText_IllTakeYourPkmn::
 	.string "Okay, ich nehme deine Pokémon\n"
@@ -36,8 +36,8 @@ gText_NoticesGoldCard::
 	.string "dein Pokémon-Team heilen zu dürfen?$"
 
 gText_YouWantTheUsual::
-	.string "I'm delighted to see you, {PLAYER}!\n"
-	.string "You want the usual, am I right?$"
+	.string "Schön dich zu sehen, {PLAYER}!\n"
+	.string "Einmal wie immer?$"
 
 gText_IllTakeYourPkmn2::
 	.string "Okay, ich nehme deine Pokémon\n"

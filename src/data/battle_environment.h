@@ -405,7 +405,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_SOARING] =
     {
-        .name = _("Soaring"),
+        .name = _("Luftraum"),
         .naturePower = MOVE_AIR_SLASH,
         .secretPowerAnimation = gBattleAnimMove_Gust,
         .secretPowerEffect = SECRET_POWER_SPD_MINUS_1,
@@ -415,7 +415,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_SKY_PILLAR] =
     {
-        .name = _("Sky Pillar"),
+        .name = _("Himmelturm"),
         .naturePower = MOVE_AIR_SLASH,
         .secretPowerAnimation = gBattleAnimMove_Gust,
         .secretPowerEffect = SECRET_POWER_SPD_MINUS_1,
@@ -425,7 +425,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_BURIAL_GROUND] =
     {
-        .name = _("Burial Ground"),
+        .name = _("Friedhof"),
         .naturePower = MOVE_SHADOW_BALL,
         .secretPowerAnimation = gBattleAnimMove_ShadowSneak,
         .secretPowerEffect = MOVE_EFFECT_FLINCH,
@@ -435,7 +435,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_PUDDLE] =
     {
-        .name = _("Puddle"),
+        .name = _("Pfütze"),
         .naturePower = MOVE_MUD_BOMB,
         .secretPowerAnimation = B_SECRET_POWER_ANIMATION >= GEN_5 ? gBattleAnimMove_MudShot : gBattleAnimMove_MudSlap,
         .secretPowerEffect = B_SECRET_POWER_EFFECT >= GEN_5 ? SECRET_POWER_SPD_MINUS_1 : SECRET_POWER_ACC_MINUS_1,
@@ -455,7 +455,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_SWAMP] =
     {
-        .name = _("Swamp"),
+        .name = _("Sumpf"),
         .naturePower = MOVE_MUD_BOMB,
         .secretPowerAnimation = gBattleAnimMove_MudShot,
         .secretPowerEffect = SECRET_POWER_SPD_MINUS_1,
@@ -501,7 +501,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_DISTORTION_WORLD] =
     {
-        .name = _("Distortion World"),
+        .name = _("Zerrwelt"),
         .naturePower = MOVE_TRI_ATTACK,
         .secretPowerAnimation = gBattleAnimMove_Pound,
         .secretPowerEffect = MOVE_EFFECT_PARALYSIS,
@@ -511,7 +511,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_SPACE] =
     {
-        .name = _("Space"),
+        .name = _("Weltall"),
         .naturePower = MOVE_DRACO_METEOR,
         .secretPowerAnimation = gBattleAnimMove_Swift,
         .secretPowerEffect = MOVE_EFFECT_FLINCH,
@@ -521,7 +521,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_ULTRA_SPACE] =
     {
-        .name = _("Ultra Space"),
+        .name = _("Ultradimension"),
         .naturePower = MOVE_PSYSHOCK,
         .secretPowerAnimation = gBattleAnimMove_Psywave,
         .secretPowerEffect = SECRET_POWER_DEF_MINUS_1,

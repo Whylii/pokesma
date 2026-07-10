@@ -177,16 +177,16 @@ static void DoTVShowSecretBaseSecrets(void);
 static void DoTVShowSafariFanClub(void);
 static void DoTVShowLilycoveContestLady(void);
 
-static const u8 sText_Good[] = _("Good");
-static const u8 sText_VeryGood[] = _("Very good");
-static const u8 sText_Excellent[] = _("Excellent");
+static const u8 sText_Good[] = _("Gut");
+static const u8 sText_VeryGood[] = _("Sehr gut");
+static const u8 sText_Excellent[] = _("Exzellent");
 static const u8 sText_SoSo[] = _("So-so");
-static const u8 sText_Bad[] = _("Bad");
-static const u8 sText_TheWorst[] = _("The worst");
+static const u8 sText_Bad[] = _("Schlecht");
+static const u8 sText_TheWorst[] = _("Das Schlimmste");
 
-static const u8 sText_Slots[] = _("SLOTS");
-static const u8 sText_Roulette[] = _("ROULETTE");
-static const u8 sText_Jackpot[] = _("jackpot");
+static const u8 sText_Slots[] = _("Spielautomat");
+static const u8 sText_Roulette[] = _("Roulette");
+static const u8 sText_Jackpot[] = _("Jackpot");
 
 static const struct {
     enum Species species;

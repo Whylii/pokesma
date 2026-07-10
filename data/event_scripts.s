@@ -1401,8 +1401,8 @@ gText_PokeblockLinkCanceled::
 	.string "Die Verbindung wurde abgebrochen.$"
 
 gText_UnusedNicknameReceivedPokemon::
-	.string "Want to give a nickname to\n"
-	.string "the {STR_VAR_2} you received?$"
+	.string "Möchtest du dem {STR_VAR_2} einen\n"
+	.string "Kosenamen geben?$"
 
 gText_PlayerWhitedOut::
 	.string "{PLAYER} hat kein kampffähiges Pokémon\n"
@@ -1489,13 +1489,13 @@ gText_UndergoingAdjustments::
 
 @ Unused
 gText_SorryTradeCenterInspections::
-	.string "I'm terribly sorry. The TRADE CENTER\n"
-	.string "is undergoing inspections.$"
+	.string "Entschuldige bitte, die Tausch-Ecke\n"
+	.string "wird gerade renoviert.$"
 
 @ Unused
 gText_SorryRecordCornerPreparation::
-	.string "I'm terribly sorry. The RECORD CORNER\n"
-	.string "is under preparation.$"
+	.string "Entschuldige bitte, die Rekord-Ecke\n"
+	.string "wird gerade renoviert.$"
 
 gText_PlayerHandedOverTheItem::
 	.string "{PLAYER} übergibt\n"

@@ -928,7 +928,7 @@ BattleFrontier_BattleTowerLobby_EventScript_ExitRules::
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom:
-	.string "I'll direct you to your BATTLE ROOM now.$"
+	.string "Ich führe dich nun zum Kampfraum.$"
 
 BattleFrontier_BattleTowerLobby_Text_DidntSaveBeforeQuitting:
 	.string "Entschuldigung!\p"
@@ -944,8 +944,8 @@ BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven:
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize:
-	.string "For beating seven TrainerS in a row,\n"
-	.string "you have earned this fabulous prize!\p"
+	.string "Für deinen Sieg über sieben Trainer,\n"
+	.string "erhälst du diesen tollen Preis!\p"
 	.string "$"
 
 BattleFrontier_BattleTowerLobby_Text_ReceivedPrize:
@@ -954,9 +954,9 @@ BattleFrontier_BattleTowerLobby_Text_ReceivedPrize:
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom:
-	.string "Oh, your BAG appears to be full.\p"
-	.string "Please make room in your BAG, then come\n"
-	.string "see me.$"
+	.string "Oh, dein Beutel ist voll.\p"
+	.string "Komm wieder, wenn du etwas\n"
+	.string "Platz gemacht hast.$"
 
 BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying:
 	.string "Vielen Dank für die Teilnahme!\p"
@@ -1042,21 +1042,21 @@ BattleFrontier_BattleTowerLobby_Text_CanLeaveUntilLossOrSevenWins:
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_DoubleBattleRoomConstruction:
-	.string "Welcome to the BATTLE TOWER\n"
-	.string "DOUBLE BATTLE CORNER!\p"
-	.string "Unfortunately, the BATTLE ROOMS\n"
-	.string "are still under construction.\p"
-	.string "Please come back when the work\n"
-	.string "is completed.$"
+	.string "Willkommen zur Doppelkampf-Ecke\n"
+	.string "des Kampfturms!\p"
+	.string "Leider sind die Kampfräume noch\n"
+	.string "im Umbau.\p"
+	.string "Bitte komm wieder, wenn\n"
+	.string "die Arbeiten abgeschlossen sind.$"
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_MultiBattleRoomConstruction:
-	.string "Welcome to the BATTLE TOWER\n"
-	.string "MULTI BATTLE CORNER!\p"
-	.string "Unfortunately, the BATTLE ROOMS\n"
-	.string "are still under construction.\p"
-	.string "Please come back when the work\n"
-	.string "is completed.$"
+	.string "Willkommen zur Multikampf-Ecke\n"
+	.string "des Kampfturms!\p"
+	.string "Leider sind die Kampfräume noch\n"
+	.string "im Umbau.\p"
+	.string "Bitte komm wieder, wenn\n"
+	.string "die Arbeiten abgeschlossen sind.$"
 
 BattleFrontier_BattleTowerLobby_Text_LookForwardToAnotherChallenge:
 	.string "Wir freuen uns auf deine nächste\n"
@@ -1069,8 +1069,8 @@ BattleFrontier_BattleTowerLobby_Text_WhichLevelMode:
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_PleaseSelectMons:
-	.string "Please select the Pokémon you wish\n"
-	.string "to enter.$"
+	.string "Bitte wähle die Pokémon aus, die\n"
+	.string "antreten sollen.$"
 
 BattleFrontier_BattleTowerLobby_Text_OkayToSaveBeforeEntering:
 	.string "Bevor du einen Kampfraum betrittst,\n"
@@ -1086,26 +1086,24 @@ BattleFrontier_BattleTowerLobby_Text_RecordLastMatch:
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50:
-	.string "Excuse me!\p"
-	.string "You don't have {STR_VAR_2} eligible Pokémon.\p"
-	.string "You must have {STR_VAR_2} different Pokémon\n"
-	.string "of Level 50 or less to enter.\p"
-	.string "They also must be holding different\n"
-	.string "kinds of items.\p"
-	.string "EGGS{STR_VAR_1}.$"
+	.string "Entschuldige!\p"
+	.string "Du hast keine {STR_VAR_2} erlaubten\n"
+	.string "Pokémon von Level 50 oder weniger.\p"
+	.string "Jedes muss außerdem ein anderes Item\n"
+	.string "halten.\p"
+	.string "Eier{STR_VAR_1} nicht zugelassen.$"
 
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsEnd:
 	.string "Bitte komm wieder, wenn du bereit bist.$"
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpen:
-	.string "Excuse me!\p"
-	.string "You don't have {STR_VAR_2} eligible Pokémon.\p"
-	.string "You must have {STR_VAR_2} different Pokémon\n"
-	.string "to enter.\p"
-	.string "They also must be holding different\n"
-	.string "kinds of items.\p"
-	.string "EGGS{STR_VAR_1}.$"
+	.string "Entschuldige!\p"
+	.string "Du hast keine {STR_VAR_2} erlaubten\n"
+	.string "Pokémon.\p"
+	.string "Jedes muss außerdem ein anderes Item\n"
+	.string "halten.\p"
+	.string "Eier{STR_VAR_1} nicht zugelassen.$"
 
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Singles:
 	.string "Entschuldigung!\p"
@@ -1313,11 +1311,11 @@ BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons2:
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_ChoseSameMonAsFriend:
-	.string "You have chosen the same kind of\n"
-	.string "Pokémon as your friend.\p"
-	.string "Please choose two Pokémon different\n"
-	.string "from your friend's, match the level\l"
-	.string "you wish to enter, and register again.$"
+	.string "Du hast die gleiche Art Pokémon\n"
+	.string "gewählt wie dein Freund.\p"
+	.string "Bitte wähle zwei unterschiedliche Pokémon,\n"
+	.string "wähle das Level, und\l"
+	.string "registriere dich erneut.$"
 
 BattleFrontier_BattleTowerLobby_Text_LinkMultiOnlyForTwoPlayers:
 	.string "Der Link-Multikampf-Raum ist nur für\n"
@@ -1337,17 +1335,17 @@ BattleFrontier_BattleTowerLobby_Text_FriendChoseDifferentLvlMode:
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_FriendChoseDifferentLvlModeSameMon:
-	.string "Your friend has chosen a different\n"
-	.string "battle level.\p"
-	.string "Your friend has also selected\n"
-	.string "the Pokémon {STR_VAR_1}.$"
+	.string "Dein Freund hat ein anderes Level\n"
+	.string "ausgewählt.\p"
+	.string "Außerdem wurde das Pokémon\n"
+	.string "{STR_VAR_1} doppelt gewählt.$"
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_FriendChoseDifferentLvlModeSameMons:
-	.string "Your friend has chosen a different\n"
-	.string "battle level.\p"
-	.string "Your friend has also selected the\n"
-	.string "Pokémon {STR_VAR_1} and {STR_VAR_2}.$"
+	.string "Dein Freund hat ein anderes Level\n"
+	.string "ausgewählt.\p"
+	.string "Außerdem wurde die Pokémon\n"
+	.string "{STR_VAR_1} und {STR_VAR_2} doppelt gewählt.$"
 
 BattleFrontier_BattleTowerLobby_Text_ChooseDifferentMonsMatchLvlMode:
 	.string "Bitte wähle zwei andere Pokémon aus, damit\n"

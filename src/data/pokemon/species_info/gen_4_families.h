@@ -958,7 +958,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .cryId = CRY_STARAPTOR,
     #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_STARAPTOR,
-        .categoryName = _("Predator"),
+        .categoryName = _("Raubtier"),
         .height = 19,
         .weight = 500,
         .description = COMPOUND_STRING(
