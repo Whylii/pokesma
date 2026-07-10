@@ -330,7 +330,7 @@ LilycoveCity_ContestHall_Text_EnteredBunchOfContests:
 LilycoveCity_ContestHall_Text_ManWhoWonEarlierHadPokeblocks:
 	.string "Der junge Mann, der vor kurzem hier ge-\n"
 	.string "wonnen hat, hatte viele verschiedene\l"
-	.string "{POKEBLOCK} bei sich.\p"
+	.string "Pokériegel bei sich.\p"
 	.string "Ob man gewinnt, wenn man genug dieser\n"
 	.string "Items dabei hat?$"
 

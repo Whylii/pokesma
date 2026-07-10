@@ -1360,7 +1360,7 @@ LilycoveCity_ContestLobby_Text_ReceptionDontHavePokeblockCase:
 	.string "Hier ist der Anmeldeschalter für\n"
 	.string "Pokémon-Wettbewerbe.\p"
 	.string "Oh? Du hast wohl noch keine\n"
-	.string "{POKEBLOCK}-Box\p"
+	.string "Pokériegel-Box\p"
 	.string "Dann müssen wir dir den geben!$"
 
 LilycoveCity_ContestLobby_Text_NowThatWeveClearedThatUp:

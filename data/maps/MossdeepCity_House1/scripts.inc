@@ -32,11 +32,11 @@ MossdeepCity_House1_Text_ItLikesXPokeblocks:
 	.string "Sicherheit {STR_VAR_1}!$"
 
 MossdeepCity_House1_Text_DoesntLikeOrDislikePokeblocks:
-	.string "Es scheint {POKEBLOCK}\n"
+	.string "Es scheint Pokériegel\n"
 	.string "weder zu lieben noch abzulehnen.$"
 
 MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes:
 	.string "Mein Mann weiß auf den ersten Blick,\n"
-	.string "welche Art von {POKEBLOCK}\l"
+	.string "welche Art von Pokériegel\l"
 	.string "ein Pokémon mag und welche nicht.$"
 

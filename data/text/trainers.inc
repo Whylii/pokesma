@@ -2475,7 +2475,7 @@ Route117_Text_LydiaRematchDefeat:
 
 Route117_Text_LydiaPostRematch:
 	.string "Pokémon mögen, abhängig von ihrem\n"
-	.string "Wesen, die unterschiedlichsten {POKEBLOCK}.$"
+	.string "Wesen, die unterschiedlichsten Pokériegel.$"
 
 Route117_Text_DylanIntro:
 	.string "Ich bin mitten in einem Triathlon. Aber\n"

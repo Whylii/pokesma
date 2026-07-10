@@ -91,7 +91,7 @@ LilycoveCity_Text_BecauseYoureTrainer:
 LilycoveCity_Text_PokeblocksSuitPokemon:
 	.string "Grundsätzlich verhält es sich so...\p"
 	.string "So, wie die würdevolle Einfachheit mich\n"
-	.string "ziert, zieren {POKEBLOCK} Pokémon.$"
+	.string "ziert, zieren Pokériegel Pokémon.$"
 
 Route123_BerryMastersHouse_Text_YoureDeservingOfBerry:
 	.string "Du kannst mich Beerenmeister\n"

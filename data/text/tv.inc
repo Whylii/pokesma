@@ -604,8 +604,8 @@ gTVMassOutbreakText00::
 
 gTV3CheersForPokeblocksText00::
 	.string "MC: Ich hoffe, ihr seid in Topstimmung!\n"
-	.string "3 Hochs für die {POKEBLOCK}!\p"
-	.string "Heute untersuchen wir {POKEBLOCK}, die\n"
+	.string "3 Hochs für die Pokériegel!\p"
+	.string "Heute untersuchen wir Pokériegel, die\n"
 	.string "von {STR_VAR_1} und Freunden\l"
 	.string "hergestellt wurden.\p"
 	.string "Und ohne weitere Verzögerung werden\n"
@@ -626,7 +626,7 @@ gTV3CheersForPokeblocksText02::
 	.string "Das Talent von {STR_VAR_1} beim\n"
 	.string "Beerenmixen könnte besser sein.\p"
 	.string "Wäre dieser Trainer besser, würden\n"
-	.string "auch die {POKEBLOCK} besser schmecken.$"
+	.string "auch die Pokériegel besser schmecken.$"
 
 gTV3CheersForPokeblocksText03::
 	.string "Schluppuck: Schlupp! Puck!\p"
@@ -646,7 +646,7 @@ gTV3CheersForPokeblocksText04::
 gTV3CheersForPokeblocksText05::
 	.string "Freut euch auf die nächste Sendung!\n"
 	.string "Unsere Devise lautet\l"
-	.string "3 Hochs für die {POKEBLOCK}!$"
+	.string "3 Hochs für die Pokériegel!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer::
 	.string "Hey, du da!\p"
@@ -2509,12 +2509,12 @@ gTVSafariFanClubText01::
 	.string "gefangen!$"
 
 gTVSafariFanClubText02::
-	.string "Der Trainer setzt seine {POKEBLOCK} sehr\n"
+	.string "Der Trainer setzt seine Pokériegel sehr\n"
 	.string "intelligent ein. Ich glaube, er hat\p"
 	.string "bisher {STR_VAR_2} davon verwendet.$"
 
 gTVSafariFanClubText03::
-	.string "Der Trainer hat keinen {POKEBLOCK}\n"
+	.string "Der Trainer hat keinen Pokériegel\n"
 	.string "verwendet. Nicht einen einzigen!\p"
 	.string "Das ist ein wahrer Profi!$"
 
@@ -2540,13 +2540,13 @@ gTVSafariFanClubText06::
 	.string "einziges Pokémon fangen.$"
 
 gTVSafariFanClubText07::
-	.string "Dabei setzt der Trainer {POKEBLOCK} ein.\n"
+	.string "Dabei setzt der Trainer Pokériegel ein.\n"
 	.string "Diesmal waren es, glaube ich, {STR_VAR_2}.\p"
 	.string "Mann, ich würde mir wirklich wünschen,\n"
 	.string "er würde sich geschickter anstellen.$"
 
 gTVSafariFanClubText08::
-	.string "Ich glaube, wenn der Trainer {POKEBLOCK}\n"
+	.string "Ich glaube, wenn der Trainer Pokériegel\n"
 	.string "verwenden würde, die er bisher noch\p"
 	.string "nicht verwendet hat, hätte er gute\n"
 	.string "Chancen.$"

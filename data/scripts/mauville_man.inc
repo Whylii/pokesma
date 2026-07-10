@@ -576,13 +576,13 @@ MauvilleCity_PokemonCenter_1F_Text_MadePokeblocksTitle::
 	.string "Der Mixer-liebende Trainer$"
 
 MauvilleCity_PokemonCenter_1F_Text_MadePokeblocksAction::
-	.string "{POKEBLOCK} gemixt$"
+	.string "Pokériegel gemixt$"
 
 MauvilleCity_PokemonCenter_1F_Text_MadePokeblocksStory::
 	.string "Dies ist die Sage von einem Trainer\n"
 	.string "namens {STR_VAR_3}.\p"
 	.string "Dieser Trainer mixte {STR_VAR_1} Mal\n"
-	.string "{POKEBLOCK}!\p"
+	.string "Pokériegel!\p"
 	.string "{STR_VAR_3} ist der absolute Meister\n"
 	.string "im Beeren-Mixer!$"
 

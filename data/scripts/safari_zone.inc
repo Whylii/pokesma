@@ -100,7 +100,7 @@ SafariZone_Text_OutOfBalls:
 	.string "Dein Safari-Spiel ist vorbei.$"
 
 SafariZone_Text_PlacePokeblockOnFeeder:
-	.string "Möchtest du einen {POKEBLOCK} in\n"
+	.string "Möchtest du einen Pokériegel in\n"
 	.string "den Futternapf legen?$"
 
 SafariZone_Text_PokeblockStillHere:
@@ -174,13 +174,13 @@ Route121_SafariZoneEntrance_Text_PCIsFull:
 Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase:
 	.string "Entschuldigung!\n"
 	.string "Du hast anscheinend keinen\n"
-	.string "{POKEBLOCK}-Box.\p"
+	.string "Pokériegel-Box.\p"
 	.string "Dein Safari-Spiel wird viel\n"
-	.string "erfolgreicher sein, wenn du {POKEBLOCK}S\l"
+	.string "erfolgreicher sein, wenn du PokériegelS\l"
 	.string "benutzt.\p"
-	.string "Bitte komm mit einem {POKEBLOCK}-Box\n"
+	.string "Bitte komm mit einem Pokériegel-Box\n"
 	.string "wieder.\p"
-	.string "Einen {POKEBLOCK}-Box bekommst du\n"
+	.string "Einen Pokériegel-Box bekommst du\n"
 	.string "in der Lilycove-Wettbewerbshalle.$"
 
 SafariZone_South_Text_StillHaveTimeExit:
@@ -205,7 +205,7 @@ SafariZone_South_Text_GoodLuck:
 
 SafariZone_South_Text_Boy:
 	.string "Weißt du was?\p"
-	.string "Wenn du einen {POKEBLOCK} in den Kasten\n"
+	.string "Wenn du einen Pokériegel in den Kasten\n"
 	.string "legst, sammeln sich Pokémon darum.$"
 
 SafariZone_South_Text_Man:
@@ -216,7 +216,7 @@ SafariZone_South_Text_Man:
 
 SafariZone_Southwest_Text_Woman:
 	.string "Manchmal ignorieren Pokémon den\n"
-	.string "{POKEBLOCK}, den ich zuwerfe.\p"
+	.string "Pokériegel, den ich zuwerfe.\p"
 	.string "Haben Pokémon etwa Vorlieben, was\n"
 	.string "sie fressen?$"
 
@@ -236,7 +236,7 @@ SafariZone_North_Text_Man:
 	.string "und tausch sie mit meinen Freunden!$"
 
 SafariZone_South_Text_Youngster:
-	.string "Ich habe einen {POKEBLOCK} in den\n"
+	.string "Ich habe einen Pokériegel in den\n"
 	.string "Futternapf gelegt.\p"
 	.string "Aber er ist verschwunden.\p"
 	.string "Ein Pokémon hat ihn wohl gefressen,\n"
@@ -244,7 +244,7 @@ SafariZone_South_Text_Youngster:
 
 Route121_SafariZoneEntrance_Text_TrainerTip:
 	.string "Safari-Zone-Trainertipp!\p"
-	.string "Wirf {POKEBLOCK} auf wilde Pokémon,\n"
+	.string "Wirf Pokériegel auf wilde Pokémon,\n"
 	.string "damit sie nicht so schnell fliehen.$"
 
 SafariZone_Southwest_Text_RestHouseSign:
@@ -252,23 +252,23 @@ SafariZone_Southwest_Text_RestHouseSign:
 	.string "Rast-Haus$"
 
 SafariZone_RestHouse_Text_Youngster:
-	.string "Ich habe keine {POKEBLOCK}, aber ich\n"
+	.string "Ich habe keine Pokériegel, aber ich\n"
 	.string "habe einige Pokémon gefangen.\p"
 	.string "Du erhöhst deine Fangchancen, wenn\n"
 	.string "du dich vor dem Wurf des Safari-Balls\l"
 	.string "annäherst.$"
 
 SafariZone_RestHouse_Text_PsychicM:
-	.string "Mit {POKEBLOCK} laufen wilde Pokémon\n"
+	.string "Mit Pokériegel laufen wilde Pokémon\n"
 	.string "nicht so schnell weg.\p"
-	.string "Es bringt wenig, {POKEBLOCK} an Pokémon\n"
+	.string "Es bringt wenig, Pokériegel an Pokémon\n"
 	.string "zu verfüttern, die sowieso nicht fliehen.$"
 
 SafariZone_RestHouse_Text_FatMan:
-	.string "Wenn du einen {POKEBLOCK} in den\n"
+	.string "Wenn du einen Pokériegel in den\n"
 	.string "Futternapf legst, werden Pokémon angelockt.\p"
 	.string "Ich glaube, Pokémon mit einem bestimmten\n"
-	.string "Wesen fühlen sich zu bestimmten {POKEBLOCK} hin.$"
+	.string "Wesen fühlen sich zu bestimmten Pokériegel hin.$"
 
 SafariZone_South_Text_AreaOffLimits1:
 	.string "Dieser Bereich wird noch gebaut.\n"

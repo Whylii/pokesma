@@ -731,13 +731,13 @@ LilycoveCity_Text_FasterSpinBetterPokeblocks:
 	.string "Man muss mit anderen zusammenarbeiten,\n"
 	.string "um ihn schneller drehen zu können.\p"
 	.string "Ich habe gehört, je schneller man ihn\n"
-	.string "dreht, desto besser werden die {POKEBLOCK}.$"
+	.string "dreht, desto besser werden die Pokériegel.$"
 
 LilycoveCity_Text_ExplainBerryBlender:
 	.string "Damit stellt man eine Leckerei her, die\n"
-	.string "{POKEBLOCK} genannt wird.\p"
+	.string "Pokériegel genannt wird.\p"
 	.string "Wenn du einem Pokémon einen guten\n"
-	.string "{POKEBLOCK} gibst, verbessern sich seine\l"
+	.string "Pokériegel gibst, verbessern sich seine\l"
 	.string "Eigenschaften.$"
 
 LilycoveCity_Text_HeardTowerCalledSkyPillar:

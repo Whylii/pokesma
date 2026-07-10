@@ -11252,7 +11252,7 @@ const struct ItemInfo gItemsInfo[] =
         .pluralName = ITEM_PLURAL_NAME("Rabutabeeren"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .description = COMPOUND_STRING(
-	"{POKEBLOCK}-Zutat.\n"
+	"Pokériegel-Zutat.\n"
 	"Säe im Lehmboden\n"
 	"um Rabuta zu ernten."),
         .pocket = POCKET_BERRIES,
@@ -11513,7 +11513,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_GROUND,
         .description = COMPOUND_STRING(
-    "{POKEBLOCK}-Zutat.\n"
+    "Pokériegel-Zutat.\n"
     "Säe im Lehmboden\n"
     "um Himmih zu ernten."),
         .pocket = POCKET_BERRIES,
@@ -11532,7 +11532,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_FLYING,
         .description = COMPOUND_STRING(
-    "{POKEBLOCK}-Zutat.\n"
+    "Pokériegel-Zutat.\n"
     "Säe im Lehmboden\n"
     "um Morb zu ernten."),
         .pocket = POCKET_BERRIES,
@@ -11551,7 +11551,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_PSYCHIC,
         .description = COMPOUND_STRING(
-    "{POKEBLOCK}-Zutat.\n"
+    "Pokériegel-Zutat.\n"
     "Säe im Lehmboden\n"
     "um Nanab zu ernten."),
         .pocket = POCKET_BERRIES,
@@ -11570,7 +11570,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_BUG,
         .description = COMPOUND_STRING(
-    "{POKEBLOCK}-Zutat.\n"
+    "Pokériegel-Zutat.\n"
     "Säe im Lehmboden\n"
     "um Nirbe zu ernten."),
         .pocket = POCKET_BERRIES,
@@ -11589,7 +11589,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_ROCK,
         .description = COMPOUND_STRING(
-    "{POKEBLOCK}-Zutat.\n"
+    "Pokériegel-Zutat.\n"
     "Säe im Lehmboden\n"
     "um Sanana zu ernten."),
         .pocket = POCKET_BERRIES,
@@ -11722,7 +11722,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_DEFENSE_UP,
         .holdEffectParam = 4,
         .description = COMPOUND_STRING(
-    "{POKEBLOCK}-Zutat.\n"
+    "Pokériegel-Zutat.\n"
     "Säe im Lehmboden\n"
     "um Saim zu ernten."),
         .pocket = POCKET_BERRIES,
@@ -11741,7 +11741,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_SPEED_UP,
         .holdEffectParam = 4,
         .description = COMPOUND_STRING(
-    "{POKEBLOCK}-Zutat.\n"
+    "Pokériegel-Zutat.\n"
     "Säe im Lehmboden\n"
     "um Magost zu ernten."),
         .pocket = POCKET_BERRIES,
@@ -11760,7 +11760,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_SP_ATTACK_UP,
         .holdEffectParam = 4,
         .description = COMPOUND_STRING(
-    "{POKEBLOCK}-Zutat.\n"
+    "Pokériegel-Zutat.\n"
     "Säe im Lehmboden\n"
     "um Rabuta zu ernten."),
         .pocket = POCKET_BERRIES,
@@ -11779,7 +11779,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_SP_DEFENSE_UP,
         .holdEffectParam = 4,
         .description = COMPOUND_STRING(
-    "{POKEBLOCK}-Zutat.\n"
+    "Pokériegel-Zutat.\n"
     "Säe im Lehmboden\n"
     "um Tronzi zu ernten."),
         .pocket = POCKET_BERRIES,
@@ -11798,7 +11798,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_CRITICAL_UP,
         .holdEffectParam = 4,
         .description = COMPOUND_STRING(
-    "{POKEBLOCK}-Zutat.\n"
+    "Pokériegel-Zutat.\n"
     "Säe im Lehmboden\n"
     "um Kiwan zu ernten."),
         .pocket = POCKET_BERRIES,
@@ -11817,7 +11817,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_RANDOM_STAT_UP,
         .holdEffectParam = 4,
         .description = COMPOUND_STRING(
-    "{POKEBLOCK}-Zutat.\n"
+    "Pokériegel-Zutat.\n"
     "Säe im Lehmboden\n"
     "um Pallm zu ernten."),
         .pocket = POCKET_BERRIES,
@@ -11835,7 +11835,7 @@ const struct ItemInfo gItemsInfo[] =
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_ENIGMA_BERRY,
         .description = COMPOUND_STRING(
-    "{POKEBLOCK}-Zutat.\n"
+    "Pokériegel-Zutat.\n"
     "Säe im Lehmboden\n"
     "um Wasmel zu ernten."),
         .pocket = POCKET_BERRIES,
@@ -11854,7 +11854,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MICLE_BERRY,
         .holdEffectParam = 4,
         .description = COMPOUND_STRING(
-    "{POKEBLOCK}-Zutat.\n"
+    "Pokériegel-Zutat.\n"
     "Säe im Lehmboden\n"
     "um Durin zu ernten."),
         .pocket = POCKET_BERRIES,
@@ -11873,7 +11873,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_CUSTAP_BERRY,
         .holdEffectParam = 4,
         .description = COMPOUND_STRING(
-    "{POKEBLOCK}-Zutat.\n"
+    "Pokériegel-Zutat.\n"
     "Säe im Lehmboden\n"
     "um Myrtil zu ernten."),
         .pocket = POCKET_BERRIES,
@@ -12362,7 +12362,7 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("TM27"),
         .price = 1000,
         .description = COMPOUND_STRING(
-    "{POKEBLOCK}-Zutat.\n"
+    "Pokériegel-Zutat.\n"
     "Säe im Lehmboden um\n"
     "ein Mysterium zu ernten."),
         .importance = I_REUSABLE_TMS,
@@ -13851,7 +13851,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POKEBLOCK_CASE] =
     {
-        .name = ITEM_NAME("{POKEBLOCK}-Kasten"),
+        .name = ITEM_NAME("Pokériegel-Kasten"),
         .price = 0,
         .description = COMPOUND_STRING("sQuestionMarksDesc"),
         .importance = 1,

@@ -2729,10 +2729,10 @@ static const u8 sText_SortItemsHow[] = _("Wonach sortieren?");
 static const u8 sText_ItemsSorted[] = _("Items nach {STR_VAR_1} sortiert!");
 static const u8 *const sSortTypeStrings[] =
 {
-    [SORT_ALPHABETICALLY] = COMPOUND_STRING("name"),
-    [SORT_BY_TYPE] = COMPOUND_STRING("type"),
-    [SORT_BY_AMOUNT] = COMPOUND_STRING("amount"),
-    [SORT_BY_INDEX] = COMPOUND_STRING("index")
+    [SORT_ALPHABETICALLY] = COMPOUND_STRING("Name"),
+    [SORT_BY_TYPE] = COMPOUND_STRING("Typ"),
+    [SORT_BY_AMOUNT] = COMPOUND_STRING("Anzahl"),
+    [SORT_BY_INDEX] = COMPOUND_STRING("Index")
 };
 
 static const u8 sBagMenuSortItems[] =

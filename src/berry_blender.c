@@ -258,20 +258,20 @@ static const u8 sText_WasMade[] = _("wurde hergestellt!");
 
 static const u8 *const sBlenderOpponentsNames[] =
 {
-    [BLENDER_MISTER] = COMPOUND_STRING("MISTER"),
-    [BLENDER_LADDIE] = COMPOUND_STRING("LADDIE"),
-    [BLENDER_LASSIE] = COMPOUND_STRING("LASSIE"),
-    [BLENDER_MASTER] = COMPOUND_STRING("MASTER"),
-    [BLENDER_DUDE]   = COMPOUND_STRING("DUDE"),
-    [BLENDER_MISS]   = COMPOUND_STRING("MISS"),
+    [BLENDER_MISTER] = COMPOUND_STRING("Herr"),
+    [BLENDER_LADDIE] = COMPOUND_STRING("Junge"),
+    [BLENDER_LASSIE] = COMPOUND_STRING("Mädel"),
+    [BLENDER_MASTER] = COMPOUND_STRING("Profi"),
+    [BLENDER_DUDE]   = COMPOUND_STRING("Dude"),
+    [BLENDER_MISS]   = COMPOUND_STRING("Fräulein"),
 };
 
 static const u8 sText_CommunicationStandby[] = _("Kommunikation …");
 static const u8 sText_WouldLikeToBlendAnotherBerry[] = _("Möchtest du eine weitere Beere");
 static const u8 sText_RunOutOfBerriesForBlending[] = _("Dir sind die Beeren zum\nMixen im Beerenmixer ausgegangen.\p");
-static const u8 sText_YourPokeblockCaseIsFull[] = _("Dein {POKEBLOCK}-Box ist voll.\p");
+static const u8 sText_YourPokeblockCaseIsFull[] = _("Dein Pokériegel-Box ist voll.\p");
 static const u8 sText_HasNoBerriesToPut[] = _("hat keine Beeren für den\nBeerenmixer.");
-static const u8 sText_ApostropheSPokeblockCaseIsFull[] = _("s {POKEBLOCK}-Box ist voll.\p");
+static const u8 sText_ApostropheSPokeblockCaseIsFull[] = _("s Pokériegel-Box ist voll.\p");
 static const u8 sText_BlendingResults[] = _("Mixergebnis");
 static const u8 sText_SpaceBerry[] = _("Beere");
 static const u8 sText_Time[] = _("Zeit:");

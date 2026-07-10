@@ -860,18 +860,18 @@ void UpdateSpeciesSpritePSS(struct BoxPokemon *boxmon);
 
 static const u8 gText_JustOnePkmn[] = _("Es ist nur ein Pokémon bei dir.");
 static const u8 gText_PartyFull[] = _("Dein Team ist voll!");
-static const u8 gText_Box[] = _("Box");
+static const u8 gText_Box[] = _("Box ");
 
 struct {
     const u8 *text;
     const u8 *desc;
 } static const sMainMenuTexts[OPTIONS_COUNT] =
 {
-    [OPTION_WITHDRAW] = {COMPOUND_STRING("Pokémon mitnehmen"), COMPOUND_STRING("Move POKéMON stored in BOXES to\nyour party.")},
-    [OPTION_DEPOSIT] = {COMPOUND_STRING("Pokémon ablegen"),  COMPOUND_STRING("Store POKéMON in your party in BOXES.")},
-    [OPTION_MOVE_MONS] = {COMPOUND_STRING("Pokémon bewegen"),     COMPOUND_STRING("Organize the POKéMON in BOXES and\nin your party.")},
-    [OPTION_MOVE_ITEMS] = {COMPOUND_STRING("Items bewegen"),       COMPOUND_STRING("Move items held by any POKéMON\nin a BOX or your party.")},
-    [OPTION_EXIT] = {COMPOUND_STRING("Zurück!"),          COMPOUND_STRING("Return to the previous menu.")}
+    [OPTION_WITHDRAW] = {COMPOUND_STRING("Pokémon mitnehmen"), COMPOUND_STRING("Nehme Pokémon aus den Boxen in\ndein Team.")},
+    [OPTION_DEPOSIT] = {COMPOUND_STRING("Pokémon ablegen"),  COMPOUND_STRING("Lagere Pokémon aus deinem Team\nin Boxen an.")},
+    [OPTION_MOVE_MONS] = {COMPOUND_STRING("Pokémon bewegen"),     COMPOUND_STRING("Organisiere Pokémon in Boxen\nund deinem Team.")},
+    [OPTION_MOVE_ITEMS] = {COMPOUND_STRING("Items bewegen"),       COMPOUND_STRING("Bewege Items von Pokémon\nin Boxen oder deinem Team.")},
+    [OPTION_EXIT] = {COMPOUND_STRING("Zurück"),          COMPOUND_STRING("Zurück zum vorherigen Menü.")}
 };
 
 static const struct WindowTemplate sWindowTemplate_MainMenu =

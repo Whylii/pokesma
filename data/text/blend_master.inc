@@ -26,7 +26,7 @@ BerryBlender_Text_BlendMasterKnowHowToMakePokeblocks:
 	.string "Sicher!\p"
 	.string "Übrigens...\n"
 	.string "Weißt du eigentlich, wie man aus Beeren\l"
-	.string "{POKEBLOCK} herstellt?$"
+	.string "Pokériegel herstellt?$"
 
 BerryBlender_Text_BlendMasterExplainBerryBlending:
 	.string "Hmm!\p"
@@ -47,16 +47,16 @@ BerryBlender_Text_BlendMasterLetsBerryBlender:
 
 BerryBlender_Text_BlendMasterNoPokeblockCase:
 	.string "Hmm!\p"
-	.string "Du hast keine {POKEBLOCK}-Box!\p"
+	.string "Du hast keine Pokériegel-Box!\p"
 	.string "Ich bin den ganzen Tag hier!\n"
-	.string "Hol dir die {POKEBLOCK}-Box und komm dann\l"
+	.string "Hol dir die Pokériegel-Box und komm dann\l"
 	.string "wieder.$"
 
 BerryBlender_Text_BlendMasterPokeblockCaseFull:
 	.string "Hmm!\p"
-	.string "Deine {POKEBLOCK}-Box scheint voll zu sein.\p"
+	.string "Deine Pokériegel-Box scheint voll zu sein.\p"
 	.string "Ich bin den ganzen Tag hier!\n"
-	.string "Verwende einige {POKEBLOCK} und komm\l"
+	.string "Verwende einige Pokériegel und komm\l"
 	.string "dann wieder.$"
 
 BerryBlender_Text_WhoaAwesome:
@@ -71,7 +71,7 @@ BerryBlender_Text_WhatAnExpert:
 
 BerryBlender_Text_MadeAmazingPokeblocksWithMaster:
 	.string "Als ich mit dem Meister gemixt habe,\n"
-	.string "haben wir die besten {POKEBLOCK}\l"
+	.string "haben wir die besten Pokériegel\l"
 	.string "hergestellt!$"
 
 BerryBlender_Text_QualitiesOfBlendMaster:
