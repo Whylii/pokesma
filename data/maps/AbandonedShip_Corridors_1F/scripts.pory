@@ -1,0 +1,29 @@
+raw `
+AbandonedShip_Corridors_1F_MapScripts::
+	.byte 0
+
+AbandonedShip_Corridors_1F_EventScript_Youngster::
+	msgbox AbandonedShip_Corridors_1F_Text_IsntItFunHere, MSGBOX_NPC
+	end
+
+AbandonedShip_Corridors_1F_EventScript_Charlie::
+	trainerbattle_single TRAINER_CHARLIE, AbandonedShip_Corridors_1F_Text_CharlieIntro, AbandonedShip_Corridors_1F_Text_CharlieDefeat
+	msgbox AbandonedShip_Corridors_1F_Text_CharliePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+AbandonedShip_Corridors_1F_Text_CharlieIntro:
+	.string "Was gibt es daran zu lachen, dass ich\n"
+	.string "meinen Schlauch mit an Bord habe?$"
+
+AbandonedShip_Corridors_1F_Text_CharlieDefeat:
+	.string "Boah, du bist echt zu stark für mich!$"
+
+AbandonedShip_Corridors_1F_Text_CharliePostBattle:
+	.string "Es ist gar nicht leicht, Pokémon zu\n"
+	.string "fangen, wenn man sich an einem\n"
+	.string "Schlauch festhalten muss!$"
+
+AbandonedShip_Corridors_1F_Text_IsntItFunHere:
+	.string "Ist das hier nicht lustig?\n"
+	.string "Ich freu mich so, hier zu sein!$"
+`
