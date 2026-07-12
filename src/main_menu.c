@@ -18,6 +18,7 @@
 #include "list_menu.h"
 #include "mystery_event_menu.h"
 #include "naming_screen.h"
+#include "ui_main_menu.h"
 #include "oak_speech.h"
 #include "option_menu.h"
 #include "overworld.h"
@@ -261,12 +262,12 @@ static const u8 gText_SaveFileErased[] = _("Der Spielstand wurde gelöscht.");
 static const u8 gJPText_No1MSubCircuit[] = _("1Mサブきばんが ささっていません！");
 static const u8 gText_BatteryRunDry[] = _("Interne Batterie ist verbraucht.\nSpiel kann fortgesetzt werden.\pAber zeitbasierende Spiel-Events\nwerden nicht mehr initiiert.");
 
-static const u8 gText_MainMenuNewGame[] = _("Neues Spiel");
-static const u8 gText_MainMenuContinue[] = _("Weiter");
-static const u8 gText_MainMenuOption[] = _("Optionen");
-static const u8 gText_MainMenuMysteryGift[] = _("Geheimgeschehen");
-static const u8 gText_MainMenuMysteryGift2[] = _("Geheimgeschenen");
-static const u8 gText_MainMenuMysteryEvents[] = _("Geheimgeschenen");
+const u8 gText_MainMenuNewGame[] = _("Neues Spiel");
+const u8 gText_MainMenuContinue[] = _("Weiter");
+const u8 gText_MainMenuOption[] = _("Optionen");
+const u8 gText_MainMenuMysteryGift[] = _("Geheimgeschehen");
+const u8 gText_MainMenuMysteryGift2[] = _("Geheimgeschenen");
+const u8 gText_MainMenuMysteryEvents[] = _("Geheimgeschenen");
 static const u8 gText_WirelessNotConnected[] = _("Der Drahtlose GBA-Adapter ist\nnicht angeschlossen.");
 static const u8 gText_MysteryGiftCantUse[] = _("Drahtloser Adapter angeschlossen;\nGeheimgeschehen unmöglich.");
 static const u8 gText_MysteryEventsCantUse[] = _("Drahtloser Adapter angeschlossen;\nGeheimgeschehen unmöglich.");
@@ -761,6 +762,9 @@ static void Task_DisplayMainMenu(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
     u16 palette;
+
+    gTasks[taskId].func = Task_OpenMainMenu;
+    return;
 
     if (!gPaletteFade.active)
     {
@@ -2310,4 +2314,70 @@ static void Task_NewGameBirchSpeech_ReturnFromNamingScreenShowTextbox(u8 taskId)
     }
 }
 
+#undef tTimer
+
+#define tBG1HOFS data[4]
+#define tPlayerSpriteId data[2]
+#define tTimer data[7]
+
+void CB2_NewGameBirchSpeech_FromNewMainMenu(void)
+{
+    u8 taskId;
+
+    ResetBgsAndClearDma3BusyFlags(0);
+    SetGpuReg(REG_OFFSET_DISPCNT, 0);
+    SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_OBJ_ON | DISPCNT_OBJ_1D_MAP);
+    InitBgsFromTemplates(0, sMainMenuBgTemplates, ARRAY_COUNT(sMainMenuBgTemplates));
+    InitBgFromTemplate(&sBirchBgTemplate);
+    SetVBlankCallback(NULL);
+    SetGpuReg(REG_OFFSET_BG2CNT, 0);
+    SetGpuReg(REG_OFFSET_BG1CNT, 0);
+    SetGpuReg(REG_OFFSET_BG0CNT, 0);
+    SetGpuReg(REG_OFFSET_BG2HOFS, 0);
+    SetGpuReg(REG_OFFSET_BG2VOFS, 0);
+    SetGpuReg(REG_OFFSET_BG1HOFS, 0);
+    SetGpuReg(REG_OFFSET_BG1VOFS, 0);
+    SetGpuReg(REG_OFFSET_BG0HOFS, 0);
+    SetGpuReg(REG_OFFSET_BG0VOFS, 0);
+    DmaFill16(3, 0, (void *)VRAM, VRAM_SIZE);
+    DmaFill32(3, 0, (void *)OAM, OAM_SIZE);
+    DmaFill16(3, 0, (void *)(PLTT + 2), PLTT_SIZE - 2);
+    ResetPaletteFade();
+    DecompressDataWithHeaderVram(sBirchSpeechShadowGfx, (void *)VRAM);
+    DecompressDataWithHeaderVram(sBirchSpeechBgMap, (void *)(BG_SCREEN_ADDR(7)));
+    LoadPalette(sBirchSpeechBgPals, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
+    LoadPalette(&sBirchSpeechBgGradientPal[8], BG_PLTT_ID(0) + 1, PLTT_SIZEOF(8));
+    ResetTasks();
+    taskId = CreateTask(Task_NewGameBirchSpeech_WaitToShowBirch, 0);
+    gTasks[taskId].tBG1HOFS = 0;
+    gTasks[taskId].tPlayerSpriteId = SPRITE_NONE;
+    gTasks[taskId].data[3] = 0xFF;
+    gTasks[taskId].tTimer = 0xD8;
+    ScanlineEffect_Stop();
+    ResetSpriteData();
+    FreeAllSpritePalettes();
+    ResetAllPicSprites();
+    AddBirchSpeechObjects(taskId);
+    PlayBGM(MUS_ROUTE122);
+    BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
+    SetGpuReg(REG_OFFSET_WIN0H, 0);
+    SetGpuReg(REG_OFFSET_WIN0V, 0);
+    SetGpuReg(REG_OFFSET_WININ, 0);
+    SetGpuReg(REG_OFFSET_WINOUT, 0);
+    SetGpuReg(REG_OFFSET_BLDCNT, 0);
+    SetGpuReg(REG_OFFSET_BLDALPHA, 0);
+    SetGpuReg(REG_OFFSET_BLDY, 0);
+    ShowBg(0);
+    ShowBg(1);
+    SetVBlankCallback(VBlankCB_MainMenu);
+    SetMainCallback2(CB2_MainMenu);
+    InitWindows(sNewGameBirchSpeechTextWindows);
+    LoadMainMenuWindowFrameTiles(0, 0xF3);
+    LoadMessageBoxGfx(0, BIRCH_DLG_BASE_TILE_NUM, BG_PLTT_ID(15));
+    PutWindowTilemap(0);
+    CopyWindowToVram(0, COPYWIN_FULL);
+}
+
+#undef tBG1HOFS
+#undef tPlayerSpriteId
 #undef tTimer
