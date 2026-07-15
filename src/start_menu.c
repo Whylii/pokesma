@@ -44,6 +44,7 @@
 #include "text_window.h"
 #include "trainer_card.h"
 #include "window.h"
+#include "heat_start_menu.h"
 #include "union_room.h"
 #include "dexnav.h"
 #include "wild_encounter.h"
@@ -583,11 +584,7 @@ static void CreateStartMenuTask(TaskFunc followupFunc)
 
 static bool8 FieldCB_ReturnToFieldStartMenu(void)
 {
-    if (InitStartMenuStep() == FALSE)
-    {
-        return FALSE;
-    }
-
+    HeatStartMenu_Init();
     ReturnToFieldOpenStartMenu();
     return TRUE;
 }

@@ -504,6 +504,8 @@ static void Task_MainMenuTurnOff(u8 taskId)
 {
     if (!gPaletteFade.active)
     {
+        SetVBlankCallback(NULL);
+        *(u16 *)(PLTT) = RGB_BLACK;
         SetGpuReg(REG_OFFSET_DISPCNT, 0);
         SetGpuReg(REG_OFFSET_WIN0H, 0);
         SetGpuReg(REG_OFFSET_WIN0V, 0);
@@ -514,8 +516,8 @@ static void Task_MainMenuTurnOff(u8 taskId)
         SetGpuReg(REG_OFFSET_BLDCNT, 0);
         SetGpuReg(REG_OFFSET_BLDALPHA, 0);
         SetGpuReg(REG_OFFSET_BLDY, 0);
-        SetMainCallback2(sMainMenuDataPtr->savedCallback);
         MainMenu_FreeResources();
+        SetMainCallback2(sMainMenuDataPtr->savedCallback);
         DestroyTask(taskId);
     }
 }
@@ -1016,14 +1018,15 @@ static void Task_MainMenuMain(u8 taskId)
     if (JOY_NEW(A_BUTTON)) // If Pressed A go to thing you pressed A on
     {
         PlaySE(SE_SELECT);
-        BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, RGB_BLACK);
         switch(sSelectedOption)
         {
             case HW_WIN_CONTINUE:
+                BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, RGB_BLACK);
                 sMainMenuDataPtr->savedCallback = CB2_ContinueSavedGame;
                 sSelectedOption = HW_WIN_CONTINUE;
                 break;
             case HW_WIN_NEW_GAME:
+                BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, RGB_BLACK);
                 sMainMenuDataPtr->savedCallback = CB2_NewGameBirchSpeech_FromNewMainMenu;
                 sSelectedOption = HW_WIN_CONTINUE;
                 break;
@@ -1032,10 +1035,12 @@ static void Task_MainMenuMain(u8 taskId)
                 sMainMenuDataPtr->savedCallback = CB2_InitOptionMenu;
                 break;
             case HW_WIN_MYSTERY_EVENT:
+                BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, RGB_BLACK);
                 sMainMenuDataPtr->savedCallback = CB2_InitMysteryEventMenu;
                 sSelectedOption = HW_WIN_CONTINUE;
                 break;
             case HW_WIN_MYSTERY_GIFT:
+                BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, RGB_BLACK);
                 if((menuType == HAS_MYSTERY_EVENTS) && !(IsWirelessAdapterConnected()))
                     //sMainMenuDataPtr->savedCallback = CB2_InitEReader;
                     sMainMenuDataPtr->savedCallback = CB2_InitMysteryGift; // E-Reader Crashes IDK Why Exactly But You Can Uncomment It

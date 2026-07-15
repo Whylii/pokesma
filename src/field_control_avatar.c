@@ -7,6 +7,7 @@
 #include "dexnav.h"
 #include "faraway_island.h"
 #include "follower_npc.h"
+#include "heat_start_menu.h"
 #include "event_data.h"
 #include "event_object_movement.h"
 #include "event_scripts.h"
@@ -23,6 +24,7 @@
 #include "follower_npc.h"
 #include "item_menu.h"
 #include "link.h"
+#include "map_name_popup.h"
 #include "match_call.h"
 #include "metatile_behavior.h"
 #include "overworld.h"
@@ -227,7 +229,9 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
     {
         FlagSet(FLAG_OPENED_START_MENU);
         PlaySE(SE_WIN_OPEN);
-        ShowStartMenu();
+        HideMapNamePopUpWindow();
+        HeatStartMenu_Init();
+        gMain.newKeys = 0;
         return TRUE;
     }
 
@@ -1351,7 +1355,7 @@ static void Task_OpenStartMenu(u8 taskId)
         return;
 
     PlaySE(SE_WIN_OPEN);
-    ShowStartMenu();
+    HeatStartMenu_Init();
     DestroyTask(taskId);
 }
 
