@@ -117,7 +117,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_INSOMNIA] =
     {
-        .name = _("Schlaflosigkeit"),
+        .name = _("Insomnia"),
         .description = COMPOUND_STRING("Verhindert Einschlafen."),
         .aiRating = 4,
         .breakable = TRUE,
@@ -375,7 +375,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_FLAME_BODY] =
     {
-        .name = _("Flamkörper"),
+        .name = _("Flammkörper"),
         .description = COMPOUND_STRING("Verbrennt bei Berührung."),
         .aiRating = 4,
     },
@@ -2158,6 +2158,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
     },
 
     [ABILITY_ELECTROMORPHOSIS] =
@@ -2433,20 +2435,14 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_PIERCING_DRILL] =
     {
-        .name = _("Stichbohrer"),
+        .name = _("Piercing Drill"),
         .description = COMPOUND_STRING("Kontakt umgeht Schutz-Attacken."),
     },
 
     [ABILITY_DRAGONIZE] =
     {
-        .name = _("Drachenschicht"),
+        .name = _("Dragonize"),
         .description = COMPOUND_STRING("Normal-Att. werden zu Drache."),
-    },
-
-    [ABILITY_EELEVATE] =
-    {
-        .name = _("Elevate"),
-        .description = COMPOUND_STRING("Keine Spezial-Fähigkeit."),
     },
 
     [ABILITY_314] =
@@ -2457,14 +2453,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_MEGA_SOL] =
     {
-        .name = _("Mega-Solarladung"),
+        .name = _("Mega Sol"),
         .description = COMPOUND_STRING("Agier wie in der Sonne."),
-    },
-
-    [ABILITY_FIRE_MANE] =
-    {
-        .name = _("Feuermähne"),
-        .description = COMPOUND_STRING("Keine Spezial-Fähigkeit."),
     },
 
     [ABILITY_317] =
@@ -2475,7 +2465,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_SPICY_SPRAY] =
     {
-        .name = _("Chilispritzer"),
-        .description = COMPOUND_STRING("Keine Spezial-Fähigkeit."),
+        .name = _("Spicy Spray"),
+        .description = COMPOUND_STRING("Verbrennt Angreifer bei Treffer."),
     },
 };

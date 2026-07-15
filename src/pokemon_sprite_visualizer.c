@@ -519,7 +519,7 @@ static const struct SubmenuText sSubmenuText[] =
 #if B_ENEMY_MON_SHADOW_STYLE >= GEN_4 && P_GBA_STYLE_SPECIES_GFX == FALSE
         .instructions = COMPOUND_STRING(
     "{START_BUTTON} Shiny\n"
-    "{B_BUTTON} Back  {A_BUTTON} Move BGs$"),
+    "{B_BUTTON} Back$"),
         .instructionsGender = COMPOUND_STRING(
     "{START_BUTTON} Shiny\n"
     "{B_BUTTON} Back  {A_BUTTON} Move BGs$"),
@@ -527,10 +527,7 @@ static const struct SubmenuText sSubmenuText[] =
         .instructions = COMPOUND_STRING("$"),
         .instructionsGender = COMPOUND_STRING("$"),
 #endif
-        .bottomLeft = COMPOUND_STRING(
-    "X coords:\n"
-    "Y coords:\n"
-    "Size:"),
+        .bottomLeft = COMPOUND_STRING("Move BG:"),
     },
 
     [SUBMENU_MOVE_BACKGROUNDS] =
