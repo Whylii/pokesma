@@ -33,6 +33,7 @@ static void TilesetAnim_Lavaridge(u16);
 static void TilesetAnim_EverGrande(u16);
 static void TilesetAnim_Pacifidlog(u16);
 static void TilesetAnim_Sootopolis(u16);
+static void TilesetAnim_Mauville_Game_Corner(u16);
 static void TilesetAnim_BattleFrontierOutsideWest(u16);
 static void TilesetAnim_BattleFrontierOutsideEast(u16);
 static void TilesetAnim_Underwater(u16);
@@ -73,6 +74,24 @@ static void QueueAnimTiles_MauvilleGym_ElectricGates(u16);
 static void QueueAnimTiles_SootopolisGym_Waterfalls(u16);
 static void QueueAnimTiles_EliteFour_GroundLights(u16);
 static void QueueAnimTiles_EliteFour_WallLights(u16);
+static void QueueAnimTiles_Mauville_Game_Corner_Lights(u16);
+
+
+const u16 gTilesetAnims_MauvilleGameCorner_Lights_Frame0[] = INCGFX_U16("data/tilesets/secondary/mauville_game_corner/anim/lights/light_anim_0.png", ".4bpp");
+const u16 gTilesetAnims_MauvilleGameCorner_Lights_Frame1[] = INCGFX_U16("data/tilesets/secondary/mauville_game_corner/anim/lights/light_anim_1.png", ".4bpp");
+const u16 gTilesetAnims_MauvilleGameCorner_Lights_Frame2[] = INCGFX_U16("data/tilesets/secondary/mauville_game_corner/anim/lights/light_anim_2.png", ".4bpp");
+const u16 gTilesetAnims_MauvilleGameCorner_Lights_Frame3[] = INCGFX_U16("data/tilesets/secondary/mauville_game_corner/anim/lights/light_anim_3.png", ".4bpp");
+const u16 gTilesetAnims_MauvilleGameCorner_Lights_Frame4[] = INCGFX_U16("data/tilesets/secondary/mauville_game_corner/anim/lights/light_anim_4.png", ".4bpp");
+const u16 gTilesetAnims_MauvilleGameCorner_Lights_Frame5[] = INCGFX_U16("data/tilesets/secondary/mauville_game_corner/anim/lights/light_anim_5.png", ".4bpp");
+
+const u16 *const gTilesetAnims_Mauville_Game_Corner_Lights[] = {
+    gTilesetAnims_MauvilleGameCorner_Lights_Frame0,
+    gTilesetAnims_MauvilleGameCorner_Lights_Frame1,
+    gTilesetAnims_MauvilleGameCorner_Lights_Frame2,
+    gTilesetAnims_MauvilleGameCorner_Lights_Frame3,
+    gTilesetAnims_MauvilleGameCorner_Lights_Frame4,
+    gTilesetAnims_MauvilleGameCorner_Lights_Frame5
+};
 
 const u16 gTilesetAnims_General_Flower_Frame1[] = INCGFX_U16("data/tilesets/primary/general/anim/flower/1.png", ".4bpp");
 const u16 gTilesetAnims_General_Flower_Frame0[] = INCGFX_U16("data/tilesets/primary/general/anim/flower/0.png", ".4bpp");
@@ -673,6 +692,13 @@ static void QueueAnimTiles_General_Waterfall(u16 timer)
     AppendTilesetAnimToBuffer(gTilesetAnims_General_Waterfall[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(496)), 6 * TILE_SIZE_4BPP);
 }
 
+
+static void QueueAnimTiles_Mauville_Game_Corner_Lights(u16 timer)
+{
+    u16 i = timer % 6;
+    AppendTilesetAnimToBuffer(gTilesetAnims_Mauville_Game_Corner_Lights[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(521)), 0x40);
+}
+
 void InitTilesetAnim_Petalburg(void)
 {
     sSecondaryTilesetAnimCounter = 0;
@@ -783,6 +809,14 @@ void InitTilesetAnim_Underwater(void)
     sSecondaryTilesetAnimCounter = 0;
     sSecondaryTilesetAnimCounterMax = 128;
     sSecondaryTilesetAnimCallback = TilesetAnim_Underwater;
+}
+
+
+void InitTilesetAnim_MauvilleGameCorner(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = 128;
+    sSecondaryTilesetAnimCallback = TilesetAnim_Mauville_Game_Corner;
 }
 
 void InitTilesetAnim_SootopolisGym(void)
@@ -923,6 +957,12 @@ static void TilesetAnim_Pacifidlog(u16 timer)
         QueueAnimTiles_Pacifidlog_LogBridges(timer / 16);
     if (timer % 16 == 1)
         QueueAnimTiles_Pacifidlog_WaterCurrents(timer / 16);
+}
+
+
+static void TilesetAnim_Mauville_Game_Corner(u16 timer)
+{
+    QueueAnimTiles_Mauville_Game_Corner_Lights(timer);
 }
 
 static void TilesetAnim_Sootopolis(u16 timer)

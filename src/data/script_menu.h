@@ -271,13 +271,32 @@ static const struct MenuAction MultichoiceList_GameCornerDolls[] =
     {gText_Exit},
 };
 
+static const struct MenuAction MultichoiceList_GameCornerNew[] =
+{
+    {COMPOUND_STRING("Sondernbon{CLEAR_TO 64}4.000 Münzen")},
+    {COMPOUND_STRING("Sonnenstein{CLEAR_TO 64}2.000 Münzen")},
+    {COMPOUND_STRING("Mondstein{CLEAR_TO 64}2.000 Münzen")},
+    {COMPOUND_STRING("Wahlband{CLEAR_TO 64}4.500 Münzen")},
+    {COMPOUND_STRING("Puder{CLEAR_TO 64}4.500 Münzen")},
+    {gText_Exit},
+};
+
 static const struct MenuAction MultichoiceList_GameCornerTMs[] =
 {
-    {COMPOUND_STRING("TM32{CLEAR_TO 72}1.500 Münzen")},
-    {COMPOUND_STRING("TM29{CLEAR_TO 72}3.500 Münzen")},
-    {COMPOUND_STRING("TM35{CLEAR_TO 72}4.000 Münzen")},
-    {COMPOUND_STRING("TM24{CLEAR_TO 72}4.000 Münzen")},
-    {COMPOUND_STRING("TM13{CLEAR_TO 72}4.000 Münzen")},
+    {COMPOUND_STRING("TM32{CLEAR_TO 48}1.500 Münzen")},
+    {COMPOUND_STRING("TM29{CLEAR_TO 48}3.500 Münzen")},
+    {COMPOUND_STRING("TM35{CLEAR_TO 48}4.000 Münzen")},
+    {COMPOUND_STRING("TM24{CLEAR_TO 48}4.000 Münzen")},
+    {COMPOUND_STRING("TM13{CLEAR_TO 48}4.000 Münzen")},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_GameCornerNew2[] =
+{
+    {COMPOUND_STRING("Feuerstein{CLEAR_TO 64}2.000 Münzen")},
+    {COMPOUND_STRING("Donnerstein{CLEAR_TO 64}2.000 Münzen")},
+    {COMPOUND_STRING("Wasserstein{CLEAR_TO 64}2.000 Münzen")},
+    {COMPOUND_STRING("Blattstein{CLEAR_TO 64}2.000 Münzen")},
     {gText_Exit},
 };
 
@@ -1191,6 +1210,8 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_SSTIDAL_BATTLE_FRONTIER]    = MULTICHOICE(MultichoiceList_SSTidalBattleFrontier),
     [MULTI_RIGHTLEFT]                  = MULTICHOICE(MultichoiceList_RightLeft),
     [MULTI_GAME_CORNER_TMS]            = MULTICHOICE(MultichoiceList_GameCornerTMs),
+    [MULTI_GAMECORNER_NEW]             = MULTICHOICE(MultichoiceList_GameCornerNew),
+    [MULTI_GAMECORNER_NEW2]            = MULTICHOICE(MultichoiceList_GameCornerNew2),
     [MULTI_SSTIDAL_SLATEPORT_NO_BF]    = MULTICHOICE(MultichoiceList_SSTidalSlateportNoBF),
     [MULTI_FLOORS]                     = MULTICHOICE(MultichoiceList_Floors),
     [MULTI_SHARDS_R]                   = MULTICHOICE(MultichoiceList_ShardsR),

@@ -78,6 +78,7 @@
 #include "palette.h"
 #include "battle_util.h"
 #include "naming_screen.h"
+#include "rogue_voltorbflip.h"
 #include "chooseboxmon.h"
 
 #define TAG_ITEM_ICON 5500
@@ -187,6 +188,14 @@ static const u8 sText_Brawly[] = _("Kamillo");
 static const u8 sText_Winona[] = _("Wibke");
 static const u8 sText_Phoebe[] = _("Antonia");
 static const u8 sText_Glacia[] = _("Frosina");
+
+
+void Special_ViewVoltorbFlip(void)
+{
+    gMain.savedCallback = CB2_ReturnToField;
+    ScriptContext_Enable();
+    CB2_ShowVoltorbFlip();
+}
 
 void Special_ShowDiploma(void)
 {
