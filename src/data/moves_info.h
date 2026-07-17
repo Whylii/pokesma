@@ -8325,7 +8325,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Tritt mit hoher\n"
             "Volltrefferquote.\n"
-            "Löst Verbrennung aus"),
+            "Löst Verbrennung aus."),
         .effect = EFFECT_HIT,
         .power = 85,
         .type = TYPE_FIRE,
@@ -9369,7 +9369,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Drachenklaue"),
         .description = COMPOUND_STRING(
             "Der Gegner wird mit\n"
-            "scharfe Klauen"),
+            "scharfen Klauen."),
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_DRAGON,
@@ -9566,7 +9566,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         #if B_UPDATED_MOVE_DATA >= GEN_4
         .description = COMPOUND_STRING(
             "Lebensgef. Attacke,\n"
-            "leichte Selbstschädig."),
+            "mit Selbstschädigung.\n"
+            "Kann paralysieren."),
         #else
         .description = COMPOUND_STRING(
             "Lebensgef. Attacke,\n"
@@ -10302,7 +10303,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Gewissheit"),
         .description = COMPOUND_STRING(
             "Kräftiger, wenn Gegner\n"
-            "bereits geschädigt"),
+            "bereits geschädigt."),
         .effect = EFFECT_ASSURANCE,
         .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 60 : 50,
         .type = TYPE_DARK,
@@ -10543,7 +10544,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Egotrip"),
         .description = COMPOUND_STRING(
             "Kopiert gegnerische\n"
-            "Attacke mit mehr Kraft"),
+            "Attacke mit mehr Kraft."),
         .effect = EFFECT_ME_FIRST,
         .power = 0,
         .type = TYPE_NORMAL,
@@ -12542,7 +12543,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Anw. trifft das Ziel\n"
             "mit dem Schweif. Ziel\n"
-            "wird doppelt getroffen"),
+            "wird doppelt getroffen."),
         .effect = EFFECT_HIT,
         .power = 35,
         .type = TYPE_NORMAL,
@@ -12642,7 +12643,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Ziel mit gr. Kraft\n"
             "getroffen. Je höher KP\n"
-            "d. Ziels: stärker"),
+            "d. Ziels: stärker."),
         .effect = EFFECT_POWER_BASED_ON_TARGET_HP,
         .power = 120,
         .type = TYPE_NORMAL,
@@ -13165,7 +13166,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Eine Schlammwelle,\n"
             "die alle Gegner\n"
-            "trifft. Kann vergiften"),
+            "trifft. Kann vergiften."),
         .effect = EFFECT_HIT,
         .power = 95,
         .type = TYPE_POISON,
@@ -14081,7 +14082,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Sehr stark, ver-\n"
             "ursacht sicher Ver-\n"
-            "brennungen, ungenau"),
+            "brennungen, ungenau."),
         .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_FIRE,
@@ -14742,7 +14743,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Fängt Ziel in wildem\n"
             "Wind. Kann\n"
-            "Verwirrung verursachen"),
+            "Verwirrung verursachen."),
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 110 : 120,
         .type = TYPE_FLYING,
@@ -15065,7 +15066,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Starker 2-Runden-\n"
             "Angriff. Kann Ver-\n"
-            "brennungen verursachen"),
+            "brennungen verursachen."),
         .effect = EFFECT_TWO_TURNS_ATTACK,
         .power = 140,
         .type = TYPE_ICE,
