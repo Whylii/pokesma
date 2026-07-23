@@ -699,8 +699,8 @@
 #define FLAG_UNUSED_0x284  0x284 // Unused Flag
 #define FLAG_UNUSED_0x285  0x285 // Unused Flag
 #define FLAG_UNUSED_0x286  0x286 // Unused Flag
-#define FLAG_UNUSED_0x287  0x287 // Unused Flag
-#define FLAG_UNUSED_0x288  0x288 // Unused Flag
+#define FLAG_RS_OUTFIT               0x287 // RS Outfit toggled on
+#define FLAG_OUTFIT_BOX_OBTAINED     0x288 // Player has received the Outfit Box
 #define FLAG_UNUSED_0x289  0x289 // Unused Flag
 #define FLAG_UNUSED_0x28A  0x28A // Unused Flag
 #define FLAG_UNUSED_0x28B  0x28B // Unused Flag

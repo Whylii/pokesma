@@ -194,7 +194,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_WONDER_GUARD] =
     {
         .name = _("Wunderwache"),
-        .description = COMPOUND_STRING("Nur sehr eff. Treff. schaden"),
+        .description = COMPOUND_STRING("Nur sehr eff. Treff. schaden."),
         .aiRating = 10,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
@@ -287,7 +287,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_HUGE_POWER] =
     {
         .name = _("Kraftkoloss"),
-        .description = COMPOUND_STRING("Steigert Angriff"),
+        .description = COMPOUND_STRING("Steigert Angriff."),
         .aiRating = 10,
     },
 
@@ -325,7 +325,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_MAGNET_PULL] =
     {
         .name = _("Magnetfalle"),
-        .description = COMPOUND_STRING("Fängt STAHL-POKéMON."),
+        .description = COMPOUND_STRING("Fängt Stahl-Pokémon."),
         .aiRating = 9,
     },
 
@@ -1955,7 +1955,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_GORILLA_TACTICS] =
     {
         .name = _("Affenfokus"),
-        .description = COMPOUND_STRING("Ups Attack and locks move."),
+        .description = COMPOUND_STRING("Erhöht Angriff, aber schränkt auf eine Attacke ein."),
         .aiRating = 4,
     },
 
@@ -2435,13 +2435,13 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_PIERCING_DRILL] =
     {
-        .name = _("Piercing Drill"),
+        .name = _("Stichbohrer"),
         .description = COMPOUND_STRING("Kontakt umgeht Schutz-Attacken."),
     },
 
     [ABILITY_DRAGONIZE] =
     {
-        .name = _("Dragonize"),
+        .name = _("Drachenschicht"),
         .description = COMPOUND_STRING("Normal-Att. werden zu Drache."),
     },
 
@@ -2453,7 +2453,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_MEGA_SOL] =
     {
-        .name = _("Mega Sol"),
+        .name = _("Mega-Solarladung"),
         .description = COMPOUND_STRING("Agier wie in der Sonne."),
     },
 
@@ -2465,7 +2465,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_SPICY_SPRAY] =
     {
-        .name = _("Spicy Spray"),
+        .name = _("Chilispritzer"),
         .description = COMPOUND_STRING("Verbrennt Angreifer bei Treffer."),
     },
 };
