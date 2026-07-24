@@ -3,7 +3,6 @@
   "name": "Route104",
   "layout": "LAYOUT_ROUTE104",
   "music": "MUS_ROUTE104",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_104",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -494,42 +493,42 @@
     },
     {
       "x": 10,
-      "y": 30,
+      "y": 29,
       "elevation": 3,
       "dest_map": "MAP_PETALBURG_WOODS",
       "dest_warp_id": "0"
     },
     {
       "x": 11,
-      "y": 30,
+      "y": 29,
       "elevation": 3,
       "dest_map": "MAP_PETALBURG_WOODS",
       "dest_warp_id": "1"
     },
     {
       "x": 10,
-      "y": 38,
+      "y": 39,
       "elevation": 3,
       "dest_map": "MAP_PETALBURG_WOODS",
       "dest_warp_id": "2"
     },
     {
       "x": 11,
-      "y": 38,
+      "y": 39,
       "elevation": 3,
       "dest_map": "MAP_PETALBURG_WOODS",
       "dest_warp_id": "3"
     },
     {
       "x": 32,
-      "y": 42,
+      "y": 43,
       "elevation": 3,
       "dest_map": "MAP_PETALBURG_WOODS",
       "dest_warp_id": "4"
     },
     {
       "x": 33,
-      "y": 42,
+      "y": 43,
       "elevation": 3,
       "dest_map": "MAP_PETALBURG_WOODS",
       "dest_warp_id": "5"
@@ -627,5 +626,6 @@
       "item": "ITEM_HEART_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_HEART_SCALE"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }
