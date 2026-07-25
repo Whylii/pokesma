@@ -1996,6 +1996,15 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
     case MON_DATA_MET_GAME:
         retVal = boxMon->metGame;
         break;
+    case MON_DATA_MET_DAY:
+        retVal = boxMon->metDay;
+        break;
+    case MON_DATA_MET_MONTH:
+        retVal = boxMon->metMonth;
+        break;
+    case MON_DATA_MET_YEAR:
+        retVal = boxMon->metYear;
+        break;
     case MON_DATA_POKEBALL:
         retVal = boxMon->pokeball;
         break;
@@ -2298,6 +2307,15 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
         break;
     case MON_DATA_MET_GAME:
         SET8(boxMon->metGame);
+        break;
+    case MON_DATA_MET_DAY:
+        SET8(boxMon->metDay);
+        break;
+    case MON_DATA_MET_MONTH:
+        SET8(boxMon->metMonth);
+        break;
+    case MON_DATA_MET_YEAR:
+        SET8(boxMon->metYear);
         break;
     case MON_DATA_POKEBALL:
         SET8(boxMon->pokeball);

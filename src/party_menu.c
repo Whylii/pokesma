@@ -321,9 +321,9 @@ static void Task_HandleCancelChooseMonYesNoInput(u8);
 static void Task_ReturnToChooseMonAfterText(u8);
 static void UpdateCurrentPartySelection(s8 *, s8);
 static void UpdatePartySelectionSingleLayout(s8 *, s8);
-static void UpdatePartySelectionDoubleLayout(s8 *, s8);
-static s8 GetNewSlotDoubleLayout(s8, s8);
-static void PrintMessage(const u8 *);
+static UNUSED void UpdatePartySelectionDoubleLayout(s8 *, s8);
+static UNUSED s8 GetNewSlotDoubleLayout(s8, s8);
+static UNUSED void PrintMessage(const u8 *);
 static void Task_PrintAndWaitForText(u8);
 static bool16 IsMonAllowedInPokemonJump(struct Pokemon *);
 static bool16 IsMonAllowedInDodrioBerryPicking(struct Pokemon *);
@@ -1893,7 +1893,7 @@ static void UpdatePartySelectionSingleLayout(s8 *slotPtr, s8 movementDir)
     }
 }
 
-static void UpdatePartySelectionDoubleLayout(s8 *slotPtr, s8 movementDir)
+static UNUSED void UpdatePartySelectionDoubleLayout(s8 *slotPtr, s8 movementDir)
 {
     // PARTY_SIZE + 1 is Cancel, PARTY_SIZE is Confirm
     // newSlot is used temporarily as a movement direction during its later assignment
@@ -1984,7 +1984,7 @@ static void UpdatePartySelectionDoubleLayout(s8 *slotPtr, s8 movementDir)
     }
 }
 
-static s8 GetNewSlotDoubleLayout(s8 slotId, s8 movementDir)
+static UNUSED s8 GetNewSlotDoubleLayout(s8 slotId, s8 movementDir)
 {
     while (TRUE)
     {
@@ -2918,7 +2918,7 @@ static u8 DisplaySelectionWindow(u8 windowType)
     return sPartyMenuInternal->windowId[0];
 }
 
-static void PrintMessage(const u8 *text)
+static UNUSED void PrintMessage(const u8 *text)
 {
     DrawStdFrameWithCustomTileAndPalette(WIN_MSG, FALSE, 0x4F, 13);
     gTextFlags.canABSpeedUpPrint = TRUE;
@@ -3328,7 +3328,6 @@ static void SlidePartyMenuBoxOneStep(u8 taskId)
 static void Task_SlideSelectedSlotsOffscreen(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
-    u16 slidingSlotPositions[2];
 
     if (tCount % 4 != 3)
     {
@@ -3342,9 +3341,6 @@ static void Task_SlideSelectedSlotsOffscreen(u8 taskId)
         ScheduleBgCopyTilemapToVram(0);
         tCount++;
     }
-    slidingSlotPositions[0] = tSlot1Left + tSlot1Offset;
-    slidingSlotPositions[1] = tSlot2Left + tSlot2Offset;
-
     // Both slots have slid offscreen
     if (tCount >= 24)
     {

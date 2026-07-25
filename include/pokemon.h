@@ -71,6 +71,9 @@ enum MonData {
     MON_DATA_MET_LOCATION,
     MON_DATA_MET_LEVEL,
     MON_DATA_MET_GAME,
+    MON_DATA_MET_DAY,
+    MON_DATA_MET_MONTH,
+    MON_DATA_MET_YEAR,
     MON_DATA_POKEBALL,
     MON_DATA_HP_IV,
     MON_DATA_ATK_IV,
@@ -181,7 +184,9 @@ struct __attribute__((packed)) BoxPokemon
     u32 metGame:3;
     u32 otGender:1;
     u32 pokeball:6;
-    u32 unusedBitfield6:15;
+    u32 metDay:5;
+    u32 metMonth:4;
+    u32 metYear:6;
 };
 
 struct Pokemon

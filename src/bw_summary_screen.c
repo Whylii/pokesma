@@ -4226,6 +4226,31 @@ static void BufferMonTrainerMemo(void)
             text = gText_XNatureObtainedInTrade;
         }
 
+        {
+            struct Pokemon mon;
+            CopyMonToSummaryStruct(&mon);
+            u8 day = mon.box.metDay;
+            u8 month = mon.box.metMonth;
+            u16 year = mon.box.metYear + 2000;
+            if (day != 0 && month != 0)
+            {
+                static const u8 sDatumPrefix[] = _("Datum:");
+                StringCopy(gStringVar3, sDatumPrefix);
+                u8 *pos = gStringVar3 + StringLength(gStringVar3);
+                pos[0] = 0x00; pos++; // space after colon
+                pos = ConvertIntToDecimalStringN(pos, day, STR_CONV_MODE_LEADING_ZEROS, 2);
+                pos[0] = 0xAD; pos++;
+                pos = ConvertIntToDecimalStringN(pos, month, STR_CONV_MODE_LEADING_ZEROS, 2);
+                pos[0] = 0xAD; pos++;
+                ConvertIntToDecimalStringN(pos, year, STR_CONV_MODE_LEFT_ALIGN, 4);
+                DynamicPlaceholderTextUtil_SetPlaceholderPtr(5, gStringVar3);
+                DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, text);
+                Free(metLevelString);
+                Free(metLocationString);
+                return;
+            }
+        }
+
         DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, text);
 
         Free(metLevelString);

@@ -8,6 +8,7 @@
 #include "pokemon_storage_system.h"
 #include "event_data.h"
 #include "random.h"
+#include "rtc.h"
 #include "main.h"
 #include "egg_hatch.h"
 #include "text.h"
@@ -1119,6 +1120,16 @@ void CreateEgg(struct Pokemon *mon, enum Species species, bool8 setHotSpringsLoc
     SetMonData(mon, MON_DATA_NICKNAME, sJapaneseEggNickname);
     SetMonData(mon, MON_DATA_FRIENDSHIP, &gSpeciesInfo[species].eggCycles);
     SetMonData(mon, MON_DATA_MET_LEVEL, &metLevel);
+    {
+        struct SiiRtcInfo rtc;
+        RtcGetDateTime(&rtc);
+        u8 day = ConvertBcdToBinary(rtc.day);
+        u8 month = ConvertBcdToBinary(rtc.month);
+        u8 year = ConvertBcdToBinary(rtc.year);
+        SetMonData(mon, MON_DATA_MET_DAY, &day);
+        SetMonData(mon, MON_DATA_MET_MONTH, &month);
+        SetMonData(mon, MON_DATA_MET_YEAR, &year);
+    }
     SetMonData(mon, MON_DATA_LANGUAGE, &language);
     if (setHotSpringsLocation)
     {
@@ -1147,6 +1158,16 @@ static void SetInitialEggData(struct Pokemon *mon, enum Species species, struct 
     SetMonData(mon, MON_DATA_NICKNAME, sJapaneseEggNickname);
     SetMonData(mon, MON_DATA_FRIENDSHIP, &gSpeciesInfo[species].eggCycles);
     SetMonData(mon, MON_DATA_MET_LEVEL, &metLevel);
+    {
+        struct SiiRtcInfo rtc;
+        RtcGetDateTime(&rtc);
+        u8 day = ConvertBcdToBinary(rtc.day);
+        u8 month = ConvertBcdToBinary(rtc.month);
+        u8 year = ConvertBcdToBinary(rtc.year);
+        SetMonData(mon, MON_DATA_MET_DAY, &day);
+        SetMonData(mon, MON_DATA_MET_MONTH, &month);
+        SetMonData(mon, MON_DATA_MET_YEAR, &year);
+    }
     SetMonData(mon, MON_DATA_LANGUAGE, &language);
 }
 

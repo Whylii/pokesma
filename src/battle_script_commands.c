@@ -17,6 +17,7 @@
 #include "util.h"
 #include "pokemon.h"
 #include "random.h"
+#include "rtc.h"
 #include "battle_controllers.h"
 #include "battle_interface.h"
 #include "text.h"
@@ -9664,6 +9665,18 @@ u8 GetCatchingBattler(void)
         return GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
 }
 
+static void SetMonMetDate(struct Pokemon *mon)
+{
+    struct SiiRtcInfo rtc;
+    RtcGetDateTime(&rtc);
+    u8 day = ConvertBcdToBinary(rtc.day);
+    u8 month = ConvertBcdToBinary(rtc.month);
+    u8 year = ConvertBcdToBinary(rtc.year);
+    SetMonData(mon, MON_DATA_MET_DAY, &day);
+    SetMonData(mon, MON_DATA_MET_MONTH, &month);
+    SetMonData(mon, MON_DATA_MET_YEAR, &year);
+}
+
 static void FinalizeCapture(void)
 {
     enum PokeBall ballId = ItemIdToBallId(gLastThrownBall);
@@ -9680,6 +9693,7 @@ static void FinalizeCapture(void)
     gBattlescriptCurrInstr = BattleScript_SuccessBallThrow;
     struct Pokemon *caughtMon = GetBattlerMon(gBattlerTarget);
     SetMonData(caughtMon, MON_DATA_POKEBALL, &ballId);
+    SetMonMetDate(caughtMon);
 
     if (CalculatePlayerPartyCount() == PARTY_SIZE)
         gBattleCommunication[MULTISTRING_CHOOSER] = 0;

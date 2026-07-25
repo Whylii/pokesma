@@ -3507,6 +3507,16 @@ static void DebugAction_Give_Pokemon_ComplexCreateMon(u8 taskId) //https://githu
     //Nature
     u32 personality = GetMonPersonality(species, MON_GENDER_RANDOM, nature, RANDOM_UNOWN_LETTER);
     CreateMon(&mon, species, level, personality, OTID_STRUCT_PLAYER_ID);
+    {
+        struct SiiRtcInfo rtc;
+        RtcGetDateTime(&rtc);
+        u8 day = ConvertBcdToBinary(rtc.day);
+        u8 month = ConvertBcdToBinary(rtc.month);
+        u8 year = ConvertBcdToBinary(rtc.year);
+        SetMonData(&mon, MON_DATA_MET_DAY, &day);
+        SetMonData(&mon, MON_DATA_MET_MONTH, &month);
+        SetMonData(&mon, MON_DATA_MET_YEAR, &year);
+    }
 
     //Shininess
     SetMonData(&mon, MON_DATA_IS_SHINY, &isShiny);

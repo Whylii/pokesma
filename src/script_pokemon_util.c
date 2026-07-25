@@ -458,6 +458,16 @@ static u32 ScriptGiveMonParameterized(u8 side, u8 slot, enum Species species, u8
     if (ball > POKEBALL_COUNT)
         ball = BALL_POKE;
     SetMonData(&mon, MON_DATA_POKEBALL, &ball);
+    {
+        struct SiiRtcInfo rtc;
+        RtcGetDateTime(&rtc);
+        u8 day = ConvertBcdToBinary(rtc.day);
+        u8 month = ConvertBcdToBinary(rtc.month);
+        u8 year = ConvertBcdToBinary(rtc.year);
+        SetMonData(&mon, MON_DATA_MET_DAY, &day);
+        SetMonData(&mon, MON_DATA_MET_MONTH, &month);
+        SetMonData(&mon, MON_DATA_MET_YEAR, &year);
+    }
 
     // held item
     SetMonData(&mon, MON_DATA_HELD_ITEM, &item);
@@ -487,6 +497,16 @@ u32 ScriptGiveMon(enum Species species, u8 level, enum Item item)
         heldItem[0] = item;
         heldItem[1] = item >> 8;
         SetMonData(&mon, MON_DATA_HELD_ITEM, heldItem);
+    }
+    {
+        struct SiiRtcInfo rtc;
+        RtcGetDateTime(&rtc);
+        u8 day = ConvertBcdToBinary(rtc.day);
+        u8 month = ConvertBcdToBinary(rtc.month);
+        u8 year = ConvertBcdToBinary(rtc.year);
+        SetMonData(&mon, MON_DATA_MET_DAY, &day);
+        SetMonData(&mon, MON_DATA_MET_MONTH, &month);
+        SetMonData(&mon, MON_DATA_MET_YEAR, &year);
     }
 
     return GiveScriptedMonToPlayer(&mon, PARTY_SIZE);

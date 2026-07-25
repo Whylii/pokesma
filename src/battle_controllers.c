@@ -13,6 +13,7 @@
 #include "cable_club.h"
 #include "event_data.h"
 #include "event_object_movement.h"
+#include "rtc.h"
 #include "item.h"
 #include "link.h"
 #include "link_rfu.h"
@@ -1872,6 +1873,16 @@ static void SetBattlerMonData(enum BattlerId battler, struct Pokemon *party, u32
         break;
     case REQUEST_MET_LEVEL_BATTLE:
         SetMonData(&party[monId], MON_DATA_MET_LEVEL, &gBattleResources->bufferA[battler][3]);
+        {
+            struct SiiRtcInfo rtc;
+            RtcGetDateTime(&rtc);
+            u8 day = ConvertBcdToBinary(rtc.day);
+            u8 month = ConvertBcdToBinary(rtc.month);
+            u8 year = ConvertBcdToBinary(rtc.year);
+            SetMonData(&party[monId], MON_DATA_MET_DAY, &day);
+            SetMonData(&party[monId], MON_DATA_MET_MONTH, &month);
+            SetMonData(&party[monId], MON_DATA_MET_YEAR, &year);
+        }
         break;
     case REQUEST_MET_GAME_BATTLE:
         SetMonData(&party[monId], MON_DATA_MET_GAME, &gBattleResources->bufferA[battler][3]);

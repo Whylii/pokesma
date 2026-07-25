@@ -1,5 +1,6 @@
 #include "global.h"
 #include "pokemon.h"
+#include "rtc.h"
 #include "egg_hatch.h"
 #include "pokedex.h"
 #include "constants/items.h"
@@ -386,6 +387,16 @@ static void AddHatchedMonToParty(u8 id)
 
     metLocation = GetCurrentRegionMapSectionId();
     SetMonData(mon, MON_DATA_MET_LOCATION, &metLocation);
+    {
+        struct SiiRtcInfo rtc;
+        RtcGetDateTime(&rtc);
+        u8 day = ConvertBcdToBinary(rtc.day);
+        u8 month = ConvertBcdToBinary(rtc.month);
+        u8 year = ConvertBcdToBinary(rtc.year);
+        SetMonData(mon, MON_DATA_MET_DAY, &day);
+        SetMonData(mon, MON_DATA_MET_MONTH, &month);
+        SetMonData(mon, MON_DATA_MET_YEAR, &year);
+    }
 
     MonRestorePP(mon);
     CalculateMonStats(mon);
