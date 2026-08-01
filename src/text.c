@@ -33,6 +33,7 @@ static u16 FontFunc_SmallNarrower(struct TextPrinter *);
 static u16 FontFunc_ShortNarrow(struct TextPrinter *);
 static u16 FontFunc_ShortNarrower(struct TextPrinter *);
 static u16 FontFunc_BW_Summary_Screen(struct TextPrinter *);
+static u16 FontFunc_BattleUIElements(struct TextPrinter *);
 static void DecompressGlyph_Small(u16, bool32);
 static void DecompressGlyph_Normal(u16, bool32);
 static void DecompressGlyph_Short(u16, bool32);
@@ -43,6 +44,7 @@ static void DecompressGlyph_Narrower(u16, bool32);
 static void DecompressGlyph_SmallNarrower(u16, bool32);
 static void DecompressGlyph_ShortNarrow(u16, bool32);
 static void DecompressGlyph_ShortNarrower(u16, bool32);
+static void DecompressGlyph_BattleUIElements(u16, bool32);
 static u32 GetGlyphWidth_Small(u16, bool32);
 static u32 GetGlyphWidth_Normal(u16, bool32);
 static u32 GetGlyphWidth_Short(u16, bool32);
@@ -52,10 +54,12 @@ static u32 GetGlyphWidth_Narrower(u16, bool32);
 static u32 GetGlyphWidth_SmallNarrower(u16, bool32);
 static u32 GetGlyphWidth_ShortNarrow(u16, bool32);
 static u32 GetGlyphWidth_ShortNarrower(u16, bool32);
+static u32 GetGlyphWidth_BattleUIElements(u16, bool32);
 static struct TextPrinter *AllocateTextPrinter(void);
 static u32 GetNumTextPrinters(void);
 static void FreeFinishedTextPrinters(void);
 static void SpriteCB_TextCursor(struct Sprite *sprite);
+static inline bool32 IsOutlinedFont(u32 fontId);
 
 static EWRAM_DATA struct TextPrinter *sFirstTextPrinter = NULL;
 
@@ -89,6 +93,7 @@ static const struct GlyphWidthFunc sGlyphWidthFuncs[] =
     { FONT_SHORT_NARROW,   GetGlyphWidth_ShortNarrow },
     { FONT_SHORT_NARROWER, GetGlyphWidth_ShortNarrower },
     { FONT_BW_SUMMARY_SCREEN, GetGlyphWidth_Short },
+    { FONT_BATTLE_UI_ELEMENTS, GetGlyphWidth_BattleUIElements },
 };
 
 struct
@@ -281,6 +286,17 @@ static const struct FontInfo sFontInfos[] =
         .bgColor = 1,
         .shadowColor = 3,
     },
+    [FONT_BATTLE_UI_ELEMENTS] = {
+        .fontFunction = FontFunc_BattleUIElements,
+        .maxLetterWidth = 16,
+        .maxLetterHeight = 16,
+        .letterSpacing = -1,
+        .lineSpacing = 0,
+        .color.foreground = 2,
+        .color.background = 1,
+        .color.accent = 4,
+        .color.shadow = 3,
+    },
 };
 
 static const u8 sMenuCursorDimensions[][2] =
@@ -300,6 +316,7 @@ static const u8 sMenuCursorDimensions[][2] =
     [FONT_SHORT_NARROW]   = { 8,  14 },
     [FONT_SHORT_NARROWER] = { 8,  14 },
     [FONT_BW_SUMMARY_SCREEN] = { 8,  14 },
+    [FONT_BATTLE_UI_ELEMENTS] = { 8, 16 },
 };
 
 // these three arrays are most for readability, ie instead of returning a magic number 8
@@ -1002,6 +1019,9 @@ static void PrintGlyph(struct TextPrinter *textPrinter)
         //  Set the print offset for the next glyph
         textPrinter->printerTemplate.currentX = newWidth;
 
+        if ((IsOutlinedFont(textPrinter->printerTemplate.fontId) || IsOutlinedFont(textPrinter->fontId))
+         && textPrinter->printerTemplate.currentX)
+            textPrinter->printerTemplate.currentX--;
     }
     else
     {
@@ -1014,6 +1034,16 @@ static void PrintGlyph(struct TextPrinter *textPrinter)
                 ClearTextSpan(textPrinter, width);
                 textPrinter->printerTemplate.currentX += width;
             }
+        }
+        else if (IsOutlinedFont(textPrinter->printerTemplate.fontId)
+              || IsOutlinedFont(textPrinter->fontId))
+        {
+            // Outlined glyphs are drawn a pixel into their neighbour so the
+            // outlines share an edge rather than doubling up.
+            textPrinter->printerTemplate.currentX += gCurGlyph.width;
+            // POKéBLOCK uses full width, don't decrement
+            if (gCurGlyph.width < 16)
+                textPrinter->printerTemplate.currentX--;
         }
         else
         {
@@ -1177,6 +1207,16 @@ static u16 FontFunc_BW_Summary_Screen(struct TextPrinter *textPrinter)
     if (textPrinter->hasFontIdBeenSet == FALSE)
     {
         textPrinter->fontId = FONT_BW_SUMMARY_SCREEN;
+        textPrinter->hasFontIdBeenSet = TRUE;
+    }
+    return RenderText(textPrinter);
+}
+
+static u16 FontFunc_BattleUIElements(struct TextPrinter *textPrinter)
+{
+    if (textPrinter->hasFontIdBeenSet == FALSE)
+    {
+        textPrinter->fontId = FONT_BATTLE_UI_ELEMENTS;
         textPrinter->hasFontIdBeenSet = TRUE;
     }
     return RenderText(textPrinter);
@@ -1632,6 +1672,9 @@ static u16 RenderText(struct TextPrinter *textPrinter)
         case FONT_SHORT_NARROW:
             DecompressGlyph_ShortNarrow(currChar, textPrinter->japanese);
             break;
+        case FONT_BATTLE_UI_ELEMENTS:
+            DecompressGlyph_BattleUIElements(currChar, textPrinter->japanese);
+            break;
         case FONT_SHORT_NARROWER:
             DecompressGlyph_ShortNarrower(currChar, textPrinter->japanese);
             break;
@@ -1901,8 +1944,13 @@ s32 GetStringWidth(u8 fontId, const u8 *str, s16 letterSpacing)
                 else
                 {
                     lineWidth += glyphWidth;
-                    if (isJapanese && str[1] != EOS)
-                        lineWidth += localLetterSpacing;
+                    if (str[1] != EOS)
+                    {
+                        if (isJapanese)
+                            lineWidth += localLetterSpacing;
+                        else if (IsOutlinedFont(fontId))
+                            lineWidth--;
+                    }
                 }
             }
             bufferPointer = 0;
@@ -1980,8 +2028,13 @@ s32 GetStringWidth(u8 fontId, const u8 *str, s16 letterSpacing)
             else
             {
                 lineWidth += glyphWidth;
-                if (isJapanese && str[1] != EOS)
-                    lineWidth += localLetterSpacing;
+                if (str[1] != EOS)
+                {
+                    if (isJapanese)
+                        lineWidth += localLetterSpacing;
+                    else if (IsOutlinedFont(fontId))
+                        lineWidth--;
+                }
             }
             break;
         case CHAR_PROMPT_SCROLL:
@@ -1998,12 +2051,26 @@ s32 GetStringWidth(u8 fontId, const u8 *str, s16 letterSpacing)
             else
             {
                 lineWidth += glyphWidth;
-                if (isJapanese && str[1] != EOS)
-                    lineWidth += localLetterSpacing;
+                if (str[1] != EOS)
+                {
+                    if (isJapanese)
+                        lineWidth += localLetterSpacing;
+                    else if (IsOutlinedFont(fontId))
+                        lineWidth--;
+                }
             }
             break;
         }
         ++str;
+    }
+
+    // Outlined glyphs overlap by a pixel, so the run is one pixel short of the
+    // sum of its glyph widths.
+    if (IsOutlinedFont(fontId))
+    {
+        lineWidth--;
+        if (width)
+            width--;
     }
 
     if (lineWidth > width)
@@ -2623,6 +2690,38 @@ static u32 GetGlyphWidth_ShortNarrower(u16 glyphId, bool32 isJapanese)
         return gFontShortJapaneseGlyphWidths[glyphId];
     else
         return gFontShortNarrowerLatinGlyphWidths[glyphId];
+}
+
+static void DecompressGlyph_BattleUIElements(u16 glyphId, bool32 isJapanese)
+{
+    const u16 *glyphs = gFontBattleUIElementsLatinGlyphs + TILE_OFFSET_4BPP(glyphId);
+
+    gCurGlyph.width = gFontBattleUIElementsLatinGlyphSizes[glyphId][0];
+    gCurGlyph.height = gFontBattleUIElementsLatinGlyphSizes[glyphId][1];
+
+    if (gCurGlyph.width <= 8)
+    {
+        DecompressGlyphTile(glyphs,      gCurGlyph.gfxBufferTop);
+        DecompressGlyphTile(glyphs + 16, gCurGlyph.gfxBufferBottom);
+    }
+    else
+    {
+        DecompressGlyphTile(glyphs,     gCurGlyph.gfxBufferTop);
+        DecompressGlyphTile(glyphs + 8, gCurGlyph.gfxBufferTop + 8);
+
+        DecompressGlyphTile(glyphs + 16, gCurGlyph.gfxBufferBottom);
+        DecompressGlyphTile(glyphs + 24, gCurGlyph.gfxBufferBottom + 8);
+    }
+}
+
+static u32 GetGlyphWidth_BattleUIElements(u16 glyphId, bool32 isJapanese)
+{
+    return isJapanese ? 8 : gFontBattleUIElementsLatinGlyphSizes[glyphId][0];
+}
+
+static inline bool32 IsOutlinedFont(u32 fontId)
+{
+    return (fontId == FONT_BATTLE_UI_ELEMENTS);
 }
 
 static const s8 sNarrowerFontIds[] =

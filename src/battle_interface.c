@@ -35,7 +35,8 @@
 #include "constants/items.h"
 #include "caps.h"
 
-#define HEALTHBOX_BG_INDEX 2
+#define HEALTHBOX_BG_INDEX 0
+#define SAFARI_HEALTHBOX_BG_INDEX 2
 
 enum
 {   // Corresponds to gHealthboxElementsGfxTable (and the tables after it) in graphics.c
@@ -76,9 +77,6 @@ enum
     HEALTHBOX_GFX_STATUS_BRN_BATTLER0,  //status brn
     HEALTHBOX_GFX_34,
     HEALTHBOX_GFX_35,
-    HEALTHBOX_GFX_STATUS_FRB_BATTLER0,  //status frb
-    HEALTHBOX_GFX_116,
-    HEALTHBOX_GFX_117,
     HEALTHBOX_GFX_36, //misc [Black section]
     HEALTHBOX_GFX_37, //misc [Black section]
     HEALTHBOX_GFX_38, //misc [Black section]
@@ -129,9 +127,6 @@ enum
     HEALTHBOX_GFX_STATUS_BRN_BATTLER1, //status2 "BRN"
     HEALTHBOX_GFX_84,
     HEALTHBOX_GFX_85,
-    HEALTHBOX_GFX_STATUS_FRB_BATTLER1, //status2 "FRB"
-    HEALTHBOX_GFX_118,
-    HEALTHBOX_GFX_119,
     HEALTHBOX_GFX_STATUS_PSN_BATTLER2, //status3 "PSN"
     HEALTHBOX_GFX_87,
     HEALTHBOX_GFX_88,
@@ -147,9 +142,6 @@ enum
     HEALTHBOX_GFX_STATUS_BRN_BATTLER2, //status3 "BRN"
     HEALTHBOX_GFX_99,
     HEALTHBOX_GFX_100,
-    HEALTHBOX_GFX_STATUS_FRB_BATTLER2, //status3 "FRB"
-    HEALTHBOX_GFX_120,
-    HEALTHBOX_GFX_121,
     HEALTHBOX_GFX_STATUS_PSN_BATTLER3, //status4 "PSN"
     HEALTHBOX_GFX_102,
     HEALTHBOX_GFX_103,
@@ -165,9 +157,6 @@ enum
     HEALTHBOX_GFX_STATUS_BRN_BATTLER3, //status4 "BRN"
     HEALTHBOX_GFX_114,
     HEALTHBOX_GFX_115,
-    HEALTHBOX_GFX_STATUS_FRB_BATTLER3, //status4 "FRB"
-    HEALTHBOX_GFX_122,
-    HEALTHBOX_GFX_123,
     HEALTHBOX_GFX_FRAME_END,
     HEALTHBOX_GFX_FRAME_END_BAR,
 };
@@ -191,7 +180,6 @@ static void SpriteCB_StatusSummaryBalls_Enter(struct Sprite *);
 static void SpriteCB_StatusSummaryBalls_Exit(struct Sprite *);
 static void SpriteCB_StatusSummaryBalls_OnSwitchout(struct Sprite *);
 
-static u8 GetStatusIconForBattlerId(u8, enum BattlerId);
 static s32 CalcNewBarValue(s32, s32, s32, s32 *, u8, u16);
 static u8 GetScaledExpFraction(s32, s32, s32, u8);
 static void MoveBattleBarGraphically(enum BattlerId, u8);
@@ -252,7 +240,7 @@ static const struct SpriteTemplate sHealthboxOpponentSpriteTemplates[2] =
 static const struct SpriteTemplate sHealthboxSafariSpriteTemplate =
 {
     .tileTag = TAG_HEALTHBOX_SAFARI_TILE,
-    .paletteTag = TAG_HEALTHBOX_PAL,
+    .paletteTag = TAG_HEALTHBOX_SAFARI_PAL,
     .oam = &sOamData_64x32,
 };
 
@@ -308,7 +296,7 @@ static const struct Subsprite sHealthBar_Subsprites_Player[] =
 {
     {
         .x = -16,
-        .y = 0,
+.y = 0,
         .shape = SPRITE_SHAPE(32x8),
         .size = SPRITE_SIZE(32x8),
         .tileOffset = 0,
@@ -324,9 +312,8 @@ static const struct Subsprite sHealthBar_Subsprites_Player[] =
     }
 };
 
-/*       v-- Origin
-[]  [0  +  ][1     ]   8x8 + 64x8
-2^ ^--- Note 8px space
+/*  v-- Origin
+[0  +  ][1     ]   64x8
 */
 static const struct Subsprite sHealthBar_Subsprites_Opponent[] =
 {
@@ -346,9 +333,11 @@ static const struct Subsprite sHealthBar_Subsprites_Opponent[] =
         .tileOffset = 4,
         .priority = 1
     },
+    /* Caught-ball symbol rides on this sprite (healthbar palette = original
+       colors), on the same row as the name, far left. */
     {
-        .x = -32,
-        .y = 0,
+        .x = -36,
+        .y = -8,
         .shape = SPRITE_SHAPE(8x8),
         .size = SPRITE_SIZE(8x8),
         .tileOffset = 8,
@@ -538,24 +527,6 @@ static const struct SpriteTemplate sStatusSummaryBallsSpriteTemplates[2] =
 static const u8 sEmptyWhiteText_GrayHighlight[] = __("{COLOR WHITE}{BACKGROUND DARK_GRAY}{ACCENT DARK_GRAY}              ");
 static const u8 sEmptyWhiteText_TransparentHighlight[] = __("{COLOR WHITE}{BACKGROUND TRANSPARENT}{ACCENT TRANSPARENT}              ");
 
-enum
-{
-    PAL_STATUS_PSN,
-    PAL_STATUS_PAR,
-    PAL_STATUS_SLP,
-    PAL_STATUS_FRZ,
-    PAL_STATUS_BRN
-};
-
-static const u16 sStatusIconColors[] =
-{
-    [PAL_STATUS_PSN] = RGB(24, 12, 24),
-    [PAL_STATUS_PAR] = RGB(23, 23, 3),
-    [PAL_STATUS_SLP] = RGB(20, 20, 17),
-    [PAL_STATUS_FRZ] = RGB(17, 22, 28),
-    [PAL_STATUS_BRN] = RGB(28, 14, 10),
-};
-
 static const struct WindowTemplate sHealthboxWindowTemplate = {
     .bg = 0,
     .tilemapLeft = 0,
@@ -567,6 +538,14 @@ static const struct WindowTemplate sHealthboxWindowTemplate = {
 };
 
 static const union TextColor sHealthBoxTextColor =
+{
+    .background = 0,
+    .foreground = 2,
+    .shadow = 7,
+    .accent = 0
+};
+
+static const union TextColor sSafariHealthBoxTextColor =
 {
     .background = 0,
     .foreground = 1,
@@ -591,6 +570,225 @@ static const union TextColor sHealthBoxTextColor =
 // data fields for healthbar
 #define hBar_HealthBoxSpriteId      data[5]
 #define hBar_Data6                  data[6]
+
+#define BW_NAME_TILE_PLAYER             10
+#define BW_NAME_TILE_OPPONENT           10
+#define BW_LEVEL_TILE_SINGLE_PLAYER     74
+#define BW_LEVEL_TILE_DOUBLE_PLAYER     42
+#define BW_LEVEL_LABEL_SINGLE_PLAYER    73
+#define BW_LEVEL_LABEL_DOUBLE_PLAYER    41
+#define BW_HP_TILE_PLAYER               30
+#define BW_NAME_FONT_MAX_TILES           7
+
+// Opponent name row (healthbox row 1, drawn on the healthbox sprites only --
+// never on the HP healthbar sprite). The row rides on the nickname: the
+// caught ball sits at the far left on the separate healthbar sprite; the
+// gender and the level are placed one empty tile after the name / gender.
+// Row offsets (0 = main sprite row 1 col 0) map through GetBwRowTile to
+// main tiles 8..15 and right-sprite row-1 tiles 40..47:
+//   [ball] [ ] [ name .. ] [ ] [gender] [ ] [Lv.] [level..]
+static void *GetBwHealthboxTileDest(u8 healthboxSpriteId, u32 tileOffset)
+{
+    return (void *)(OBJ_VRAM0 + (gSprites[healthboxSpriteId].oam.tileNum + tileOffset) * TILE_SIZE_4BPP);
+}
+
+static const u8 *GetBwNameGlyph(u8 character)
+{
+    u32 tile;
+
+    if (character >= CHAR_0 && character <= CHAR_9)
+        tile = character - CHAR_0;
+    else if (character >= CHAR_A && character <= CHAR_Z)
+        tile = 24 + character - CHAR_A;
+    else if (character >= CHAR_a && character <= CHAR_z)
+        tile = 50 + character - CHAR_a;
+    else
+    {
+        switch (character)
+        {
+        case CHAR_SPACE:
+        case CHAR_COLON:
+            tile = 10;
+            break;
+        case CHAR_QUESTION_MARK:
+            tile = 12;
+            break;
+        case CHAR_HYPHEN:
+            tile = 13;
+            break;
+        case CHAR_PERIOD:
+            tile = 14;
+            break;
+        case CHAR_SLASH:
+            tile = 15;
+            break;
+        case CHAR_DBL_QUOTE_LEFT:
+            tile = 16;
+            break;
+        case CHAR_DBL_QUOTE_RIGHT:
+            tile = 17;
+            break;
+        case CHAR_SGL_QUOTE_LEFT:
+            tile = 18;
+            break;
+        case CHAR_SGL_QUOTE_RIGHT:
+            tile = 19;
+            break;
+        case CHAR_ELLIPSIS:
+            tile = 20;
+            break;
+        case CHAR_COMMA:
+            tile = 21;
+            break;
+        case CHAR_MALE:
+            tile = 22;
+            break;
+        case CHAR_FEMALE:
+            tile = 23;
+            break;
+        default:
+            tile = 12;
+            break;
+        }
+    }
+
+    return (const u8 *)gBattleInterface_BwNameFontGfx + tile * TILE_SIZE_4BPP;
+}
+
+// Most source glyphs are five pixels wide and use a four-pixel advance. Narrow
+// glyphs use a three-pixel advance so names containing I, i, or l do not develop
+// conspicuous gaps. Direct composition also removes tile-boundary spacing changes.
+static u32 DrawBwOutlinedFont(u8 healthboxSpriteId, u32 tileOffset, u32 tileCount, const u8 *text)
+{
+    u32 tileBuffer[(BW_NAME_FONT_MAX_TILES + 1) * TILE_SIZE_4BPP / sizeof(u32)] = {0};
+    u8 *canvas = (u8 *)tileBuffer;
+    u32 cursor = 0;
+    u32 canvasWidth = tileCount * 8;
+
+    for (u32 i = 0; text[i] != EOS && i < 14; i++)
+    {
+        const u8 *glyph = GetBwNameGlyph(text[i]);
+        u32 advance = 4;
+
+        if (text[i] == CHAR_SPACE)
+        {
+            cursor += 4;
+            continue;
+        }
+
+        // Gender symbols need their full tile rather than the four-pixel text
+        // advance. The caller's optional padding space preserves their original
+        // alignment after both odd- and even-length names.
+        if (text[i] == CHAR_MALE || text[i] == CHAR_FEMALE)
+            cursor = (cursor + 7) & ~7;
+        else
+        {
+            u32 glyphWidth = 0;
+
+            for (u32 y = 0; y < 8; y++)
+            {
+                for (u32 x = 0; x < 8; x++)
+                {
+                    u8 glyphPair = glyph[y * 4 + x / 2];
+                    u8 glyphPixel = x & 1 ? glyphPair >> 4 : glyphPair & 0xF;
+
+                    if (glyphPixel != 0 && glyphWidth < x + 1)
+                        glyphWidth = x + 1;
+                }
+            }
+
+            if (glyphWidth <= 4)
+                advance = 3;
+        }
+
+        for (u32 y = 0; y < 8; y++)
+        {
+            for (u32 x = 0; x < 8 && cursor + x < canvasWidth; x++)
+            {
+                u8 glyphPair = glyph[y * 4 + x / 2];
+                u8 glyphPixel = x & 1 ? glyphPair >> 4 : glyphPair & 0xF;
+                u32 canvasX = cursor + x + 1;
+                u8 *canvasPair = canvas + (canvasX / 8) * TILE_SIZE_4BPP + y * 4 + (canvasX % 8) / 2;
+                u8 canvasPixel = canvasX & 1 ? *canvasPair >> 4 : *canvasPair & 0xF;
+
+                // Index 3 is an isolated pale-gray antialias color in this
+                // palette; use the regular dark outline for a clean edge.
+                if (glyphPixel == 3)
+                    glyphPixel = 1;
+
+                // The source lowercase p leaves both right-hand corners open.
+                // Complete those two outline pixels so its bowl reads as a
+                // closed shape at native GBA resolution.
+                if (text[i] == CHAR_p && x == 4 && (y == 1 || y == 5))
+                    glyphPixel = 1;
+
+                if (glyphPixel == 0)
+                    continue;
+
+                // Adjacent five-pixel glyphs share one column. Dark outlines
+                // win that overlap so closed shapes such as p, b, d, and o do
+                // not have their edge erased by the next letter's interior.
+                if (canvasPixel == 0 || (glyphPixel == 1 && canvasPixel != 1))
+                {
+                    if (canvasX & 1)
+                        *canvasPair = (*canvasPair & 0x0F) | (glyphPixel << 4);
+                    else
+                        *canvasPair = (*canvasPair & 0xF0) | glyphPixel;
+                }
+            }
+        }
+
+        cursor += text[i] == CHAR_MALE || text[i] == CHAR_FEMALE ? 8 : advance;
+    }
+
+    CpuCopy32(tileBuffer, GetBwHealthboxTileDest(healthboxSpriteId, tileOffset), tileCount * TILE_SIZE_4BPP);
+
+    return cursor;
+}
+
+static u32 GetBwTextAdvance(const u8 *text)
+{
+    u32 cursor = 0;
+
+    for (u32 i = 0; text[i] != EOS && i < 14; i++)
+    {
+        if (text[i] == CHAR_SPACE)
+            cursor += 4;
+        else if (text[i] == CHAR_MALE || text[i] == CHAR_FEMALE)
+            cursor = (cursor + 7) & ~7;
+        else
+        {
+            const u8 *glyph = GetBwNameGlyph(text[i]);
+            u32 glyphWidth = 0;
+
+            for (u32 y = 0; y < 8; y++)
+            {
+                for (u32 x = 0; x < 8; x++)
+                {
+                    u8 glyphPair = glyph[y * 4 + x / 2];
+                    u8 glyphPixel = x & 1 ? glyphPair >> 4 : glyphPair & 0xF;
+
+                    if (glyphPixel != 0 && glyphWidth < x + 1)
+                        glyphWidth = x + 1;
+                }
+            }
+
+            cursor += glyphWidth <= 4 ? 3 : 4;
+        }
+    }
+
+    return cursor;
+}
+
+static u32 GetBwRowTile(u32 rowOffset)
+{
+    return rowOffset < 8 ? rowOffset + 8 : rowOffset + 32;
+}
+
+static u32 GetBwPlayerRowTile(u32 rowOffset, bool32 isSingle)
+{
+    return rowOffset < 8 ? rowOffset + 8 : rowOffset + (isSingle ? 64 : 32);
+}
 
 // This function is here to cover a specific case - one player's mon in a 2 vs 1 double battle. In this scenario - display singles layout.
 // The same goes for a 2 vs 1 where opponent has only one Pokémon.
@@ -830,14 +1028,14 @@ static const s16 sBattlerHealthboxCoords[BATTLE_COORDS_COUNT][MAX_BATTLERS_COUNT
 {
     [BATTLE_COORDS_SINGLES] =
     {
-        [B_POSITION_PLAYER_LEFT]   = { 158, 88 },
-        [B_POSITION_OPPONENT_LEFT] = { 44,  30 },
+        [B_POSITION_PLAYER_LEFT]   = { 157, 88 },
+        [B_POSITION_OPPONENT_LEFT] = { 32,  30 },
     },
     [BATTLE_COORDS_DOUBLES] =
     {
-        [B_POSITION_PLAYER_LEFT]    = { 159, 76 },
-        [B_POSITION_PLAYER_RIGHT]   = { 171, 101 },
-        [B_POSITION_OPPONENT_LEFT]  = { 44,  19 },
+        [B_POSITION_PLAYER_LEFT]    = { 156, 76 },
+        [B_POSITION_PLAYER_RIGHT]   = { 168, 101 },
+        [B_POSITION_OPPONENT_LEFT]  = { 32,  19 },
         [B_POSITION_OPPONENT_RIGHT] = { 32,  44 },
     },
 };
@@ -861,41 +1059,69 @@ void InitBattlerHealthboxCoords(enum BattlerId battler)
 
 static void UpdateLvlInHealthbox(u8 healthboxSpriteId, u8 lvl)
 {
-    u8 text[16];
     enum BattlerId battler = gSprites[healthboxSpriteId].hMain_Battler;
-    u32 spriteId = gSprites[healthboxSpriteId].oam.affineParam;
+    bool32 isPlayer = IsOnPlayerSide(battler);
+    bool32 hasIndicator = GetIndicatorPalTag(battler) != TAG_NONE;
+    enum BattleCoordTypes coords = GetBattlerCoordsIndex(battler);
+    u32 levelTile;
+    u32 labelTile;
+    u8 text[8];
+    u8 *textPtr;
 
-    // Don't print Lv char if mon has a gimmick with an indicator active.
-    if (GetIndicatorPalTag(battler) != TAG_NONE)
+    if (!isPlayer)
     {
-        ConvertIntToDecimalStringN(text, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
+        u8 nickname[POKEMON_NAME_LENGTH + 1];
+        u32 nameTiles;
+
+        GetMonData(GetBattlerMon(battler), MON_DATA_NICKNAME, nickname);
+        StringGet_Nickname(nickname);
+        nameTiles = (GetBwTextAdvance(nickname) + 7) / 8;
+        if (nameTiles > 6)
+            nameTiles = 6;
+
+        labelTile = GetBwRowTile(nameTiles + 5);
+        levelTile = GetBwRowTile(nameTiles + 6);
+    }
+    else
+    {
+        u8 nickname[POKEMON_NAME_LENGTH + 1];
+        u32 nameTiles;
+        bool32 isSingle = (coords == BATTLE_COORDS_SINGLES);
+
+        GetMonData(GetBattlerMon(battler), MON_DATA_NICKNAME, nickname);
+        StringGet_Nickname(nickname);
+        nameTiles = (GetBwTextAdvance(nickname) + 7) / 8;
+        if (nameTiles > 6)
+            nameTiles = 6;
+
+        levelTile = GetBwPlayerRowTile(nameTiles + 6, isSingle);
+        labelTile = GetBwPlayerRowTile(nameTiles + 5, isSingle);
+    }
+
+    CpuFill32(0, GetBwHealthboxTileDest(healthboxSpriteId, levelTile), 4 * TILE_SIZE_4BPP);
+
+    if (hasIndicator)
+    {
         UpdateIndicatorLevelData(healthboxSpriteId, lvl);
         UpdateIndicatorVisibilityAndType(healthboxSpriteId, FALSE);
+        CpuFill32(0, GetBwHealthboxTileDest(healthboxSpriteId, labelTile), TILE_SIZE_4BPP);
+        levelTile += 1;
     }
     else
     {
-        text[0] = CHAR_EXTRA_SYMBOL;
-        text[1] = CHAR_LV_2;
-
-        ConvertIntToDecimalStringN(text + 2, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
         UpdateIndicatorVisibilityAndType(healthboxSpriteId, TRUE);
+        CpuCopy32(gBattleInterface_BwLevelLabelGfx, GetBwHealthboxTileDest(healthboxSpriteId, labelTile), TILE_SIZE_4BPP);
     }
 
-    u32 width = GetStringWidth(FONT_SMALL, text, 0);
-
-    if (IsOnPlayerSide(battler))
-    {
-        FillSpriteRectColor(spriteId, 8, 5, 24, 11, HEALTHBOX_BG_INDEX);
-        AddSpriteTextPrinterParameterized6(spriteId, FONT_SMALL, 32 - width, 3, 0, 0, sHealthBoxTextColor, 0, text);
-    }
-    else
-    {
-        FillSpriteRectColor(spriteId, 0, 5, 24, 11, HEALTHBOX_BG_INDEX);
-        AddSpriteTextPrinterParameterized6(spriteId, FONT_SMALL, 24 - width, 3, 0, 0, sHealthBoxTextColor, 0, text);
-    }
+    textPtr = ConvertIntToDecimalStringN(text, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
+    *textPtr++ = CHAR_SPACE;
+    *textPtr++ = CHAR_SPACE;
+    *textPtr++ = CHAR_SPACE;
+    *textPtr = EOS;
+    DrawBwOutlinedFont(healthboxSpriteId, levelTile, 3, text);
 }
 
-#define HP_FONT FONT_SMALL
+#define HP_FONT FONT_SMALL_NARROWER
 #define HP_MAX_DIGITS 4
 #define HP_RIGHT_SPRITE_CHARS 6
 
@@ -930,6 +1156,67 @@ static void PrintHpOnHealthbox(u32 spriteId, s16 currHp, s16 maxHp, u32 bgColor,
 
     gSprites[spriteId].data[1] = savedValue1;
     gSprites[spriteId2].data[1] = savedValue2;
+}
+
+static u32 GetDecimalDigitCount(u32 value)
+{
+    if (value >= 100)
+        return 3;
+    if (value >= 10)
+        return 2;
+    return 1;
+}
+
+static u32 GetBwHpTileOffset(u32 slot)
+{
+    // Slots 0-2 occupy the last three tiles of the left 64x64 sprite.
+    // Slots 3-6 continue on the matching row of the right sprite.
+    if (slot < 3)
+        return BW_HP_TILE_PLAYER - 1 + slot;
+    return 88 + slot - 3;
+}
+
+static void CopyBwHpGlyph(u8 healthboxSpriteId, u32 slot, u32 glyph)
+{
+    const u8 *src = (const u8 *)gBattleInterface_BwHpNumbersFontGfx + glyph * TILE_SIZE_4BPP;
+    CpuCopy32(src, GetBwHealthboxTileDest(healthboxSpriteId, GetBwHpTileOffset(slot)), TILE_SIZE_4BPP);
+}
+
+static void PrintBwHpOnHealthbox(u8 healthboxSpriteId, s16 currHp, s16 maxHp)
+{
+    u32 current = max(currHp, 0);
+    u32 maximum = max(maxHp, 0);
+    u32 digits;
+
+    // The original numeric sheet is three digits wide. Preserve expansion's
+    // four-digit HP support with its existing printer for those rare values.
+    if (current > 999 || maximum > 999)
+    {
+        PrintHpOnHealthbox(healthboxSpriteId, currHp, maxHp, HEALTHBOX_BG_INDEX, 16);
+        return;
+    }
+
+    for (u32 slot = 0; slot < 7; slot++)
+        CopyBwHpGlyph(healthboxSpriteId, slot, 11); // Blank numeric tile.
+
+    CopyBwHpGlyph(healthboxSpriteId, 3, 0); // Slash.
+
+    digits = GetDecimalDigitCount(current);
+    for (u32 i = 0; i < digits; i++)
+    {
+        u32 place = 2 - i;
+        CopyBwHpGlyph(healthboxSpriteId, place, 1 + current % 10);
+        current /= 10;
+    }
+
+    digits = GetDecimalDigitCount(maximum);
+    u32 divisor = digits == 3 ? 100 : digits == 2 ? 10 : 1;
+    for (u32 i = 0; i < digits; i++)
+    {
+        CopyBwHpGlyph(healthboxSpriteId, 4 + i, 1 + maximum / divisor);
+        maximum %= divisor;
+        divisor = max(divisor / 10, 1);
+    }
 }
 
 // Note: this is only possible to trigger via debug, it was an unused GF function.
@@ -1019,7 +1306,7 @@ void UpdateHpTextInHealthbox(u32 healthboxSpriteId, u32 maxOrCurrent, s16 currHp
     {
         if (IsOnPlayerSide(battler)) // Player
         {
-            PrintHpOnHealthbox(healthboxSpriteId, currHp, maxHp, HEALTHBOX_BG_INDEX, 16);
+            PrintBwHpOnHealthbox(healthboxSpriteId, currHp, maxHp);
         }
         else // Opponent
         {
@@ -1683,9 +1970,7 @@ static void SpriteCB_StatusSummaryBalls_OnSwitchout(struct Sprite *sprite)
 
 void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
 {
-    u32 healthboxSpriteId2 = gSprites[healthboxSpriteId].oam.affineParam;
     u8 nickname[POKEMON_NAME_LENGTH + 1];
-    void *ptr;
     u32 species;
     u8 gender;
     struct Pokemon *illusionMon = GetIllusionMonPtr(gSprites[healthboxSpriteId].hMain_Battler);
@@ -1694,7 +1979,6 @@ void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
 
     GetMonData(mon, MON_DATA_NICKNAME, nickname);
     StringGet_Nickname(nickname);
-    ptr = StringCopy(gDisplayedStringBattle, nickname);
 
     gender = GetMonGender(mon);
     species = GetMonData(mon, MON_DATA_SPECIES);
@@ -1705,41 +1989,56 @@ void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
     if (GetBattlerSide(gSprites[healthboxSpriteId].hMain_Battler) == B_SIDE_OPPONENT && IsGhostBattleWithoutScope())
         gender = 100;
 
-    switch (gender)
+    if (IsOnPlayerSide(gSprites[healthboxSpriteId].hMain_Battler))
     {
-    default:
-        StringCopy(ptr, gText_HealthboxGender_None);
-        break;
-    case MON_MALE:
-        StringCopy(ptr, gText_HealthboxGender_Male);
-        break;
-    case MON_FEMALE:
-        StringCopy(ptr, gText_HealthboxGender_Female);
-        break;
-    }
+        enum BattleCoordTypes coords = GetBattlerCoordsIndex(gSprites[healthboxSpriteId].hMain_Battler);
+        bool32 isSingle = (coords == BATTLE_COORDS_SINGLES);
+        u32 nameTiles;
 
-    //  Don't assume that healthbox sprites don't have data in the fields used for sprite printing
-    //  and set up temporary values with what's needed
-    s16 savedValue1 = gSprites[healthboxSpriteId].data[1];
-    s16 savedValue2 = gSprites[healthboxSpriteId2].data[1];
-    gSprites[healthboxSpriteId].data[1] = healthboxSpriteId2;
-    gSprites[healthboxSpriteId2].data[1] = SPRITE_NONE;
+        nameTiles = (GetBwTextAdvance(nickname) + 7) / 8;
+        if (nameTiles > 6)
+            nameTiles = 6;
 
-    u32 fontId = GetFontIdToFit(gDisplayedStringBattle, FONT_SMALL, 0, 55);
+        // Player name row, laid out like the opponent's: the gender sits one
+        // empty tile after the name and the level follows it. No ball on this
+        // side, so the name lane and the level lane (right sprite starts at
+        // tile 72 for singles, 40 for doubles) are cleared first.
+        CpuFill32(0, GetBwHealthboxTileDest(healthboxSpriteId, 8), 8 * TILE_SIZE_4BPP);
+        CpuFill32(0, GetBwHealthboxTileDest(healthboxSpriteId, isSingle ? 72 : 40), 8 * TILE_SIZE_4BPP);
+        DrawBwOutlinedFont(healthboxSpriteId, BW_NAME_TILE_PLAYER, 6, nickname);
+        if (gender == MON_MALE || gender == MON_FEMALE)
+        {
+            u8 genderText[2];
 
-    if (IsOnPlayerSide(gSprites[healthboxSpriteId].data[6]))
-    {
-        FillSpriteRectColor(healthboxSpriteId, 16, 5, 55, 11, HEALTHBOX_BG_INDEX);
-        AddSpriteTextPrinterParameterized6(healthboxSpriteId, fontId, 16, 3, 0, 0, sHealthBoxTextColor, 0, gDisplayedStringBattle);
+            genderText[0] = gender == MON_MALE ? CHAR_MALE : CHAR_FEMALE;
+            genderText[1] = EOS;
+            DrawBwOutlinedFont(healthboxSpriteId, GetBwPlayerRowTile(nameTiles + 3, isSingle), 1, genderText);
+        }
+        UpdateLvlInHealthbox(healthboxSpriteId, GetMonData(mon, MON_DATA_LEVEL));
     }
     else
     {
-        FillSpriteRectColor(healthboxSpriteId, 8, 5, 55, 11, HEALTHBOX_BG_INDEX);
-        AddSpriteTextPrinterParameterized6(healthboxSpriteId, fontId, 8, 3, 0, 0, sHealthBoxTextColor, 0, gDisplayedStringBattle);
-    }
+        // Opponent name row rides on the nickname (see the layout comment above
+        // the BW_*_OPPONENT defines): gender is one tile after the name and
+        // the level follows it, so the full row-1 lane on both sprites is
+        // cleared first. The caught ball lives on the healthbar sprite's own
+        // tile, not on these healthbox tiles, so it is unaffected.
+        CpuFill32(0, GetBwHealthboxTileDest(healthboxSpriteId, 8), 8 * TILE_SIZE_4BPP);
+        CpuFill32(0, GetBwHealthboxTileDest(healthboxSpriteId, 40), 8 * TILE_SIZE_4BPP);
+        DrawBwOutlinedFont(healthboxSpriteId, BW_NAME_TILE_OPPONENT, 6, nickname);
+        if (gender == MON_MALE || gender == MON_FEMALE)
+        {
+            u32 nameTiles = (GetBwTextAdvance(nickname) + 7) / 8;
+            u8 genderText[2];
 
-    gSprites[healthboxSpriteId].data[1] = savedValue1;
-    gSprites[healthboxSpriteId2].data[1] = savedValue2;
+            if (nameTiles > 6)
+                nameTiles = 6;
+            genderText[0] = gender == MON_MALE ? CHAR_MALE : CHAR_FEMALE;
+            genderText[1] = EOS;
+            DrawBwOutlinedFont(healthboxSpriteId, GetBwRowTile(nameTiles + 3), 1, genderText);
+        }
+        UpdateLvlInHealthbox(healthboxSpriteId, GetMonData(mon, MON_DATA_LEVEL));
+    }
 }
 
 void TryAddPokeballIconToHealthbox(u8 healthboxSpriteId, bool8 noStatus)
@@ -1770,163 +2069,73 @@ void TryAddPokeballIconToHealthbox(u8 healthboxSpriteId, bool8 noStatus)
 
 static void UpdateStatusIconInHealthbox(u8 healthboxSpriteId)
 {
-    s32 i;
-    enum BattlerId battler;
-    u8 healthBarSpriteId;
-    u32 status, pltAdder;
-    const u8 *statusGfxPtr;
-    s16 tileNumAdder;
-    u8 statusPalId;
-
-    battler = gSprites[healthboxSpriteId].hMain_Battler;
-    healthBarSpriteId = gSprites[healthboxSpriteId].hMain_HealthBarSpriteId;
-    status = GetMonData(GetBattlerMon(battler), MON_DATA_STATUS);
-    if (IsOnPlayerSide(battler))
+    enum
     {
-        switch (GetBattlerCoordsIndex(battler))
-        {
-        case BATTLE_COORDS_SINGLES:
-            tileNumAdder = 0x1A;
-            break;
-        default:
-            tileNumAdder = 0x12;
-            break;
-        }
-    }
-    else
-    {
-        tileNumAdder = 0x11;
-    }
+        BW_STATUS_PSN,
+        BW_STATUS_PAR,
+        BW_STATUS_SLP,
+        BW_STATUS_FRZ,
+        BW_STATUS_BRN,
+        BW_STATUS_TOX,
+        BW_STATUS_NONE,
+    };
+    enum BattlerId battler = gSprites[healthboxSpriteId].hMain_Battler;
+    u8 healthBarSpriteId = gSprites[healthboxSpriteId].hMain_HealthBarSpriteId;
+    u32 status = GetMonData(GetBattlerMon(battler), MON_DATA_STATUS);
+    bool32 isSinglePlayer = IsOnPlayerSide(battler) && GetBattlerCoordsIndex(battler) == BATTLE_COORDS_SINGLES;
+    const u8 *statusGfx = (const u8 *)(isSinglePlayer
+                                      ? gBattleInterface_BwStatusSingleGfx
+                                      : gBattleInterface_BwStatusDoubleGfx);
+    u32 statusId;
+    u32 tileNumAdder;
 
     if (status & STATUS1_SLEEP)
-    {
-        statusGfxPtr = GetHealthboxElementGfxPtr(GetStatusIconForBattlerId(HEALTHBOX_GFX_STATUS_SLP_BATTLER0, battler));
-        statusPalId = PAL_STATUS_SLP;
-    }
-    else if (status & STATUS1_PSN_ANY)
-    {
-        statusGfxPtr = GetHealthboxElementGfxPtr(GetStatusIconForBattlerId(HEALTHBOX_GFX_STATUS_PSN_BATTLER0, battler));
-        statusPalId = PAL_STATUS_PSN;
-    }
+        statusId = BW_STATUS_SLP;
+    else if (status & STATUS1_TOXIC_POISON)
+        statusId = BW_STATUS_TOX;
+    else if (status & STATUS1_POISON)
+        statusId = BW_STATUS_PSN;
     else if (status & STATUS1_BURN)
-    {
-        statusGfxPtr = GetHealthboxElementGfxPtr(GetStatusIconForBattlerId(HEALTHBOX_GFX_STATUS_BRN_BATTLER0, battler));
-        statusPalId = PAL_STATUS_BRN;
-    }
-    else if (status & STATUS1_FREEZE)
-    {
-        statusGfxPtr = GetHealthboxElementGfxPtr(GetStatusIconForBattlerId(HEALTHBOX_GFX_STATUS_FRZ_BATTLER0, battler));
-        statusPalId = PAL_STATUS_FRZ;
-    }
-    else if (status & STATUS1_FROSTBITE)
-    {
-        statusGfxPtr = GetHealthboxElementGfxPtr(GetStatusIconForBattlerId(HEALTHBOX_GFX_STATUS_FRB_BATTLER0, battler));
-        statusPalId = PAL_STATUS_FRZ;
-    }
+        statusId = BW_STATUS_BRN;
+    else if (status & (STATUS1_FREEZE | STATUS1_FROSTBITE))
+        statusId = BW_STATUS_FRZ;
     else if (status & STATUS1_PARALYSIS)
+        statusId = BW_STATUS_PAR;
+    else
+        statusId = BW_STATUS_NONE;
+
+    if (isSinglePlayer)
+        tileNumAdder = 0x1A;
+    else if (IsOnPlayerSide(battler))
+        tileNumAdder = 0x11;
+    else
+        tileNumAdder = 0x10;
+
+    CpuCopy32(statusGfx + statusId * 3 * TILE_SIZE_4BPP,
+              (void *)(OBJ_VRAM0 + (gSprites[healthboxSpriteId].oam.tileNum + tileNumAdder) * TILE_SIZE_4BPP),
+              3 * TILE_SIZE_4BPP);
+
+    if (statusId == BW_STATUS_NONE)
     {
-        statusGfxPtr = GetHealthboxElementGfxPtr(GetStatusIconForBattlerId(HEALTHBOX_GFX_STATUS_PRZ_BATTLER0, battler));
-        statusPalId = PAL_STATUS_PAR;
+        if (!gBattleSpritesDataPtr->battlerData[battler].hpNumbersNoBars)
+            CpuCopy32(GetHealthboxElementGfxPtr(HEALTHBOX_GFX_1),
+                      (void *)(OBJ_VRAM0 + gSprites[healthBarSpriteId].oam.tileNum * TILE_SIZE_4BPP),
+                      2 * TILE_SIZE_4BPP);
+        TryAddPokeballIconToHealthbox(healthboxSpriteId, TRUE);
     }
     else
     {
-        statusGfxPtr = GetHealthboxElementGfxPtr(HEALTHBOX_GFX_39);
-
-        for (i = 0; i < 3; i++)
-            CpuCopy32(statusGfxPtr, (void *)(OBJ_VRAM0 + (gSprites[healthboxSpriteId].oam.tileNum + tileNumAdder + i) * TILE_SIZE_4BPP), 32);
-
-        if (!gBattleSpritesDataPtr->battlerData[battler].hpNumbersNoBars)
-            CpuCopy32(GetHealthboxElementGfxPtr(HEALTHBOX_GFX_1), (void *)(OBJ_VRAM0 + gSprites[healthBarSpriteId].oam.tileNum * TILE_SIZE_4BPP), 64);
-
-        TryAddPokeballIconToHealthbox(healthboxSpriteId, TRUE);
-        return;
-    }
-
-    pltAdder = PLTT_ID(gSprites[healthboxSpriteId].oam.paletteNum);
-    pltAdder += battler + 12;
-
-    FillPalette(sStatusIconColors[statusPalId], OBJ_PLTT_OFFSET + pltAdder, PLTT_SIZEOF(1));
-    CpuCopy16(&gPlttBufferUnfaded[OBJ_PLTT_OFFSET + pltAdder], (u16 *)OBJ_PLTT + pltAdder, PLTT_SIZEOF(1));
-    CpuCopy32(statusGfxPtr, (void *)(OBJ_VRAM0 + (gSprites[healthboxSpriteId].oam.tileNum + tileNumAdder) * TILE_SIZE_4BPP), 96);
-    if (GetBattlerCoordsIndex(battler) == BATTLE_COORDS_DOUBLES || !IsOnPlayerSide(battler))
-    {
-        if (!gBattleSpritesDataPtr->battlerData[battler].hpNumbersNoBars)
+        if (!isSinglePlayer && !gBattleSpritesDataPtr->battlerData[battler].hpNumbersNoBars)
         {
-            CpuCopy32(GetHealthboxElementGfxPtr(HEALTHBOX_GFX_0), (void *)(OBJ_VRAM0 + gSprites[healthBarSpriteId].oam.tileNum * TILE_SIZE_4BPP), 32);
-            CpuCopy32(GetHealthboxElementGfxPtr(HEALTHBOX_GFX_65), (void *)(OBJ_VRAM0 + (gSprites[healthBarSpriteId].oam.tileNum + 1) * TILE_SIZE_4BPP), 32);
+            CpuCopy32(GetHealthboxElementGfxPtr(HEALTHBOX_GFX_0),
+                      (void *)(OBJ_VRAM0 + gSprites[healthBarSpriteId].oam.tileNum * TILE_SIZE_4BPP),
+                      TILE_SIZE_4BPP);
+            CpuCopy32(GetHealthboxElementGfxPtr(HEALTHBOX_GFX_65),
+                      (void *)(OBJ_VRAM0 + (gSprites[healthBarSpriteId].oam.tileNum + 1) * TILE_SIZE_4BPP),
+                      TILE_SIZE_4BPP);
         }
+        TryAddPokeballIconToHealthbox(healthboxSpriteId, FALSE);
     }
-    TryAddPokeballIconToHealthbox(healthboxSpriteId, FALSE);
-}
-
-static u8 GetStatusIconForBattlerId(u8 statusElementId, enum BattlerId battler)
-{
-    u8 ret = statusElementId;
-
-    switch (statusElementId)
-    {
-    case HEALTHBOX_GFX_STATUS_PSN_BATTLER0:
-        if (battler == 0)
-            ret = HEALTHBOX_GFX_STATUS_PSN_BATTLER0;
-        else if (battler == 1)
-            ret = HEALTHBOX_GFX_STATUS_PSN_BATTLER1;
-        else if (battler == 2)
-            ret = HEALTHBOX_GFX_STATUS_PSN_BATTLER2;
-        else
-            ret = HEALTHBOX_GFX_STATUS_PSN_BATTLER3;
-        break;
-    case HEALTHBOX_GFX_STATUS_PRZ_BATTLER0:
-        if (battler == 0)
-            ret = HEALTHBOX_GFX_STATUS_PRZ_BATTLER0;
-        else if (battler == 1)
-            ret = HEALTHBOX_GFX_STATUS_PRZ_BATTLER1;
-        else if (battler == 2)
-            ret = HEALTHBOX_GFX_STATUS_PRZ_BATTLER2;
-        else
-            ret = HEALTHBOX_GFX_STATUS_PRZ_BATTLER3;
-        break;
-    case HEALTHBOX_GFX_STATUS_SLP_BATTLER0:
-        if (battler == 0)
-            ret = HEALTHBOX_GFX_STATUS_SLP_BATTLER0;
-        else if (battler == 1)
-            ret = HEALTHBOX_GFX_STATUS_SLP_BATTLER1;
-        else if (battler == 2)
-            ret = HEALTHBOX_GFX_STATUS_SLP_BATTLER2;
-        else
-            ret = HEALTHBOX_GFX_STATUS_SLP_BATTLER3;
-        break;
-    case HEALTHBOX_GFX_STATUS_FRZ_BATTLER0:
-        if (battler == 0)
-            ret = HEALTHBOX_GFX_STATUS_FRZ_BATTLER0;
-        else if (battler == 1)
-            ret = HEALTHBOX_GFX_STATUS_FRZ_BATTLER1;
-        else if (battler == 2)
-            ret = HEALTHBOX_GFX_STATUS_FRZ_BATTLER2;
-        else
-            ret = HEALTHBOX_GFX_STATUS_FRZ_BATTLER3;
-        break;
-    case HEALTHBOX_GFX_STATUS_FRB_BATTLER0:
-        if (battler == 0)
-            ret = HEALTHBOX_GFX_STATUS_FRB_BATTLER0;
-        else if (battler == 1)
-            ret = HEALTHBOX_GFX_STATUS_FRB_BATTLER1;
-        else if (battler == 2)
-            ret = HEALTHBOX_GFX_STATUS_FRB_BATTLER2;
-        else
-            ret = HEALTHBOX_GFX_STATUS_FRB_BATTLER3;
-        break;
-    case HEALTHBOX_GFX_STATUS_BRN_BATTLER0:
-        if (battler == 0)
-            ret = HEALTHBOX_GFX_STATUS_BRN_BATTLER0;
-        else if (battler == 1)
-            ret = HEALTHBOX_GFX_STATUS_BRN_BATTLER1;
-        else if (battler == 2)
-            ret = HEALTHBOX_GFX_STATUS_BRN_BATTLER2;
-        else
-            ret = HEALTHBOX_GFX_STATUS_BRN_BATTLER3;
-        break;
-    }
-    return ret;
 }
 
 static void UpdateSafariBallsTextOnHealthbox(u8 healthboxSpriteId)
@@ -1938,7 +2147,7 @@ static void UpdateSafariBallsTextOnHealthbox(u8 healthboxSpriteId)
     gSprites[healthboxSpriteId].data[1] = healthboxSpriteId2;
     gSprites[healthboxSpriteId2].data[1] = SPRITE_NONE;
 
-    AddSpriteTextPrinterParameterized6(healthboxSpriteId, FONT_SMALL, 16, 3, 0, 0, sHealthBoxTextColor, 0, gText_SafariBalls);
+    AddSpriteTextPrinterParameterized6(healthboxSpriteId, FONT_SMALL, 20, 3, 0, 0, sSafariHealthBoxTextColor, 0, gText_SafariBalls);
 
     gSprites[healthboxSpriteId].data[1] = savedValue1;
     gSprites[healthboxSpriteId2].data[1] = savedValue2;
@@ -1960,8 +2169,8 @@ static void UpdateLeftNoOfBallsTextOnHealthbox(u8 healthboxSpriteId)
     txtPtr = StringCopy(text, gText_SafariBallLeft);
     ConvertIntToDecimalStringN(txtPtr, gNumSafariBalls, STR_CONV_MODE_LEFT_ALIGN, 2);
 
-    FillSpriteRectColor(healthboxSpriteId, 55, 19, 40, 12, HEALTHBOX_BG_INDEX);
-    AddSpriteTextPrinterParameterized6(healthboxSpriteId, FONT_SMALL, 55, 19, 0, 0, sHealthBoxTextColor, 0, text);
+    FillSpriteRectColor(healthboxSpriteId, 55, 19, 40, 12, SAFARI_HEALTHBOX_BG_INDEX);
+    AddSpriteTextPrinterParameterized6(healthboxSpriteId, FONT_SMALL, 55, 19, 0, 0, sSafariHealthBoxTextColor, 0, text);
 
     gSprites[healthboxSpriteId].data[1] = savedValue1;
     gSprites[healthboxSpriteId2].data[1] = savedValue2;
@@ -2918,6 +3127,9 @@ static void DestroyLastUsedBallGfx(struct Sprite *sprite)
 void TryToAddMoveInfoWindow(void)
 {
     if (!B_SHOW_MOVE_DESCRIPTION)
+        return;
+
+    if (!B_SHOW_MOVE_DESCRIPTION_PROMPT)
         return;
 
     if (B_MOVE_DESCRIPTION_BUTTON == L_BUTTON && gSaveBlock2Ptr->optionsButtonMode == OPTIONS_BUTTON_MODE_L_EQUALS_A)
