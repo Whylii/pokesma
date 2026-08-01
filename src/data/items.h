@@ -168,8 +168,8 @@ const struct ItemInfo gItemsInfo[] =
         .sortType = ITEM_TYPE_UNCATEGORIZED,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconPic = gItemIcon_QuestionMark,
-        .iconPalette = gItemIconPalette_QuestionMark,
+        .iconPic = gItemIcon_Multitool,
+        .iconPalette = gItemIconPalette_Multitool,
     },
 
 // Poké Balls
@@ -15841,6 +15841,22 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+    [ITEM_MULTITOOL] =
+    {
+        .name = ITEM_NAME("Multitool"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Ein praktisches\n"
+            "Werkzeug für\n"
+            "alle Fälle."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_Multitool,
+        .iconPic = gItemIcon_Multitool,
+        .iconPalette = gItemIconPalette_Multitool,
+    },
+
 };
 
 #undef ITEM_NAME

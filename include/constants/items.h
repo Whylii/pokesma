@@ -1053,6 +1053,9 @@ enum __attribute__((packed)) Item
     ITEM_GLIMMORANITE = 873,
     ITEM_OUTFIT_BOX = 874,
 
+    ITEM_MULTITOOL,
+
+
     ITEMS_COUNT,
     ITEM_FIELD_ARROW = ITEMS_COUNT,
 };

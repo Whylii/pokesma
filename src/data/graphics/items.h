@@ -2107,6 +2107,9 @@ const u16 gItemIconPalette_JubilifeMuffin[] = INCGFX_U16("graphics/items/icon_pa
 const u32 gItemIcon_PokeshiDoll[] = INCGFX_U32("graphics/items/icons/pokeshi_doll.png", ".4bpp.smol");
 const u16 gItemIconPalette_PokeshiDoll[] = INCGFX_U16("graphics/items/icon_palettes/pokeshi_doll.pal", ".gbapal");
 
+const u32 gItemIcon_Multitool[] = INCGFX_U32("graphics/items/icons/multitool.png", ".4bpp.smol");
+const u16 gItemIconPalette_Multitool[] = INCGFX_U16("graphics/items/icon_palettes/multitool.pal", ".gbapal");
+
 const u32 gItemIcon_SwapSnack[] = INCGFX_U32("graphics/items/icons/swap_snack.png", ".4bpp.smol");
 const u16 gItemIconPalette_SwapSnack[] = INCGFX_U16("graphics/items/icon_palettes/swap_snack.pal", ".gbapal");
 

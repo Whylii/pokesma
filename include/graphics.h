@@ -1767,6 +1767,8 @@ extern const u32 gItemIcon_JubilifeMuffin[];
 extern const u16 gItemIconPalette_JubilifeMuffin[];
 extern const u32 gItemIcon_PokeshiDoll[];
 extern const u16 gItemIconPalette_PokeshiDoll[];
+extern const u32 gItemIcon_Multitool[];
+extern const u16 gItemIconPalette_Multitool[];
 extern const u32 gItemIcon_SwapSnack[];
 extern const u16 gItemIconPalette_SwapSnack[];
 extern const u32 gItemIcon_TwiceSpicedRadish[];

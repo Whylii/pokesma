@@ -12,6 +12,17 @@ struct FieldMoveInfo
     u8 partyMsgID;
 };
 
+enum {
+    FIELD_MOVE_SOURCE_POKEMON,
+    FIELD_MOVE_SOURCE_ITEM,
+};
+
+void SetFieldMoveSource(u8 source);
+u8 GetFieldMoveSource(void);
+
+bool8 CanUseFly(void);
+bool8 CanUseFlash(void);
+
 extern const struct FieldMoveInfo gFieldMoveInfo[];
 
 static inline bool32 SetUpFieldMove(enum FieldMove fieldMove)

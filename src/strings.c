@@ -665,7 +665,7 @@ const u8 gText_PkmnFainted_FldPsn[] = _("{STR_VAR_1} survived the poisoning.\nTh
 const u8 gText_PkmnFainted_FldPsn[] = _("{STR_VAR_1} survived the poisoning.\nThe poison faded away!\p");
 #endif
 const u8 gText_Marco[] = _("Marco");
-const u8 gText_TrainerCardName[] = _("Name");
+const u8 gText_TrainerCardName[] = _("Name: ");
 const u8 gText_TrainerCardIDNo[] = _("ID.");
 const u8 gText_TrainerCardMoney[] = _("Geld");
 const u8 gText_PokeDollar[] = _("¥"); // Unused

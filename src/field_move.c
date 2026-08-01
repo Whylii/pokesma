@@ -7,6 +7,49 @@
 #include "constants/field_move.h"
 #include "constants/moves.h"
 #include "constants/party_menu.h"
+#include "item.h"
+
+static u8 sFieldMoveSource = FIELD_MOVE_SOURCE_POKEMON;
+
+void SetFieldMoveSource(u8 source)
+{
+    sFieldMoveSource = source;
+}
+
+u8 GetFieldMoveSource(void)
+{
+    return sFieldMoveSource;
+}
+
+bool8 CanUseFly(void)
+{
+    // Check if Fly is unlocked via badge
+    if (IsFieldMoveUnlocked(FIELD_MOVE_FLY))
+    {
+        // Check for the Multitool item
+        if (CheckBagHasItem(ITEM_MULTITOOL, 1))
+        {
+            sFieldMoveSource = FIELD_MOVE_SOURCE_ITEM;
+            return TRUE;
+        }
+    }
+    return FALSE;
+}
+
+bool8 CanUseFlash(void)
+{
+    // Check if Flash is unlocked via badge
+    if (IsFieldMoveUnlocked(FIELD_MOVE_FLASH))
+    {
+        // Check for the Multitool item
+        if (CheckBagHasItem(ITEM_MULTITOOL, 1))
+        {
+            sFieldMoveSource = FIELD_MOVE_SOURCE_ITEM;
+            return TRUE;
+        }
+    }
+    return FALSE;
+}
 
 static bool32 IsFieldMoveUnlocked_Cut(void)
 {
