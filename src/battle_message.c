@@ -2852,37 +2852,25 @@ static void GetBattlerNick(enum BattlerId battler, u8 *dst)
 }
 
 #define HANDLE_NICKNAME_STRING_CASE(battler)                            \
+    GetBattlerNick(battler, text);                                      \
     if (!IsOnPlayerSide(battler))                                       \
     {                                                                   \
         if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)                     \
-            toCpy = sText_FoePkmnPrefix;                                \
+            StringAppend(text, sText_FoePkmnPrefix);                    \
         else                                                            \
-            toCpy = sText_WildPkmnPrefix;                               \
-        while (*toCpy != EOS)                                           \
-        {                                                               \
-            dst[dstID] = *toCpy;                                        \
-            dstID++;                                                    \
-            toCpy++;                                                    \
-        }                                                               \
+            StringAppend(text, sText_WildPkmnPrefix);                   \
     }                                                                   \
-    GetBattlerNick(battler, text);                                      \
     toCpy = text;
 
 #define HANDLE_NICKNAME_STRING_LOWERCASE(battler)                       \
-    if (!IsOnPlayerSide(battler))                       \
+    GetBattlerNick(battler, text);                                      \
+    if (!IsOnPlayerSide(battler))                                       \
     {                                                                   \
         if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)                     \
-            toCpy = sText_FoePkmnPrefixLower;                           \
+            StringAppend(text, sText_FoePkmnPrefixLower);               \
         else                                                            \
-            toCpy = sText_WildPkmnPrefixLower;                          \
-        while (*toCpy != EOS)                                           \
-        {                                                               \
-            dst[dstID] = *toCpy;                                        \
-            dstID++;                                                    \
-            toCpy++;                                                    \
-        }                                                               \
+            StringAppend(text, sText_WildPkmnPrefixLower);              \
     }                                                                   \
-    GetBattlerNick(battler, text);                                      \
     toCpy = text;
 
 static const u8 *BattleStringGetOpponentNameByTrainerId(u16 trainerId, u8 *text, u8 multiplayerId, enum BattlerId battler)
@@ -3352,21 +3340,15 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst, u32 dstSize)
                 }
                 break;
             case B_TXT_26: // ?
+                GetMonData(&GetBattlerParty(gBattleScripting.battler)[gBattleStruct->scriptPartyIdx], MON_DATA_NICKNAME, text);
+                StringGet_Nickname(text);
                 if (!IsOnPlayerSide(gBattleScripting.battler))
                 {
                     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
-                        toCpy = sText_FoePkmnPrefix;
+                        StringAppend(text, sText_FoePkmnPrefix);
                     else
-                        toCpy = sText_WildPkmnPrefix;
-                    while (*toCpy != EOS)
-                    {
-                        dst[dstID] = *toCpy;
-                        dstID++;
-                        toCpy++;
-                    }
+                        StringAppend(text, sText_WildPkmnPrefix);
                 }
-                GetMonData(&GetBattlerParty(gBattleScripting.battler)[gBattleStruct->scriptPartyIdx], MON_DATA_NICKNAME, text);
-                StringGet_Nickname(text);
                 toCpy = text;
                 break;
             case B_TXT_PC_CREATOR_NAME: // lanette pc
@@ -3727,6 +3709,9 @@ void ExpandBattleTextBuffPlaceholders(const u8 *src, u8 *dst)
             break;
         case B_BUFF_MON_NICK_WITH_PREFIX: // poke nick with prefix
         case B_BUFF_MON_NICK_WITH_PREFIX_LOWER: // poke nick with lowercase prefix
+            GetMonData(&GetBattlerParty(src[srcID + 1])[src[srcID + 2]], MON_DATA_NICKNAME, nickname);
+            StringGet_Nickname(nickname);
+            StringAppend(dst, nickname);
             if (!IsOnPlayerSide(src[srcID + 1]))
             {
                 if (src[srcID] == B_BUFF_MON_NICK_WITH_PREFIX_LOWER)
@@ -3744,9 +3729,6 @@ void ExpandBattleTextBuffPlaceholders(const u8 *src, u8 *dst)
                         StringAppend(dst, sText_WildPkmnPrefix);
                 }
             }
-            GetMonData(&GetBattlerParty(src[srcID + 1])[src[srcID + 2]], MON_DATA_NICKNAME, nickname);
-            StringGet_Nickname(nickname);
-            StringAppend(dst, nickname);
             srcID += 3;
             break;
         case B_BUFF_STAT: // stats

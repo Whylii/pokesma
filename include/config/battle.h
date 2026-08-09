@@ -318,14 +318,14 @@
 
 // Interface settings
 #define B_FAST_INTRO_PKMN_TEXT              TRUE  // If set to TRUE, battle intro texts print at the same time as animation of a Pokémon, as opposing to waiting for the animation to end.
-#define B_FAST_INTRO_NO_SLIDE               FALSE // If set to TRUE, the slide animation that happens at the beginning of the battle is skipped.
+#define B_FAST_INTRO_NO_SLIDE               TRUE // If set to TRUE, the slide animation that happens at the beginning of the battle is skipped.
 #define B_FAST_HP_DRAIN                     TRUE  // If set to TRUE, HP bars will move faster.
 #define B_FAST_EXP_GROW                     TRUE  // If set to TRUE, EXP bars will move faster.
 #define B_SHOW_TARGETS                      TRUE  // If set to TRUE, all available targets, for moves hitting 2 or 3 Pokémon, will be shown before selecting a move.
 #define B_SHOW_CATEGORY_ICON                TRUE  // If set to TRUE, it will show an icon in the summary and move relearner showing the move's category.
 #define B_HIDE_HEALTHBOX_IN_ANIMS           TRUE  // If set to TRUE, hides healthboxes during move animations.
-#define B_WAIT_TIME_MULTIPLIER              16    // This determines how long text pauses in battle last. Vanilla is 16. Lower values result in faster battles.
-#define B_QUICK_MOVE_CURSOR_TO_RUN          FALSE // If set to TRUE, pushing B in the battle options against a wild encounter will move the cursor to the run option
+#define B_WAIT_TIME_MULTIPLIER              12    // This determines how long text pauses in battle last. Vanilla is 16. Lower values result in faster battles.
+#define B_QUICK_MOVE_CURSOR_TO_RUN          TRUE // If set to TRUE, pushing B in the battle options against a wild encounter will move the cursor to the run option
 #define B_RUN_TRAINER_BATTLE                TRUE  // If set to TRUE, players can run from Trainer battles. This is treated as a whiteout.
 #define B_MOVE_DESCRIPTION_BUTTON           L_BUTTON // If set to a button other than B_LAST_USED_BALL_BUTTON, pressing this button will open the move description menu
 #define B_SHOW_USELESS_Z_MOVE_INFO          FALSE // If set to TRUE, Z-moves without additional effects like newer gen status moves will say "no additional effect"
@@ -361,7 +361,7 @@
 #define B_TOXIC_REVERSAL                GEN_LATEST // In Gen5+, bad poison will change to regular poison at the end of battles.
 #define B_TRY_CATCH_TRAINER_BALL        GEN_LATEST // In Gen4+, trying to catch a Trainer's Pokémon does not consume the Poké Ball.
 #define B_SLEEP_CLAUSE                  FALSE      // Enables Sleep Clause all the time in every case, overriding B_FLAG_SLEEP_CLAUSE. Use that for modularity.
-#define B_PARTNER_MONS_MARKED_SEEN      FALSE      // If TRUE, if your double battle partner sends out a Pokémon you haven't encountered yet, it will be marked as SEEN in your Pokédex.
+#define B_PARTNER_MONS_MARKED_SEEN      TRUE      // If TRUE, if your double battle partner sends out a Pokémon you haven't encountered yet, it will be marked as SEEN in your Pokédex.
 #define B_MULTI_HALF_TEAMS              FALSE      // If TRUE, trainers will be capped at 3 Pokémon each when there are 2 trainers on one side in a battle. If FALSE, per-battle capping may still be set using `Multi Party: Half` in `trainers.party`
 
 #define NUM_BEEPS_GEN_LATEST            4                    // Loops 4 times

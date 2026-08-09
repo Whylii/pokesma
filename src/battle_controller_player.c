@@ -1817,12 +1817,11 @@ static void MoveSelectionDisplayMoveDescription(enum BattlerId battler)
     }
 
     u8 pwr_num[3], acc_num[3];
-    u8 cat_desc[7] = _("CAT: ");
-    u8 pwr_desc[7] = _("PWR: ");
-    u8 acc_desc[7] = _("ACC: ");
-    u8 cat_start[] = _("{CLEAR_TO 3}");
-    u8 pwr_start[] = _("{CLEAR_TO 56}");
-    u8 acc_start[] = _("{CLEAR_TO 108}");
+    u8 cat_desc[] = _("Kategorie ");
+    u8 pwr_desc[] = _("Stärke ");
+    u8 acc_desc[] = _("Genauigkeit ");
+    u8 col1[] = _("{CLEAR_TO 3}");
+    u8 col2[] = _("{CLEAR_TO 72}");
     if (BattleUI_UsesInputBox())
     {
         DrawStdFrameWithCustomTileAndPalette(B_WIN_MOVE_DESCRIPTION, FALSE, 0x22, 1);
@@ -1840,20 +1839,19 @@ static void MoveSelectionDisplayMoveDescription(enum BattlerId battler)
         StringCopy(acc_num, gText_BattleSwitchWhich5);
     else
         ConvertIntToDecimalStringN(acc_num, acc, STR_CONV_MODE_LEFT_ALIGN, 3);
-    StringCopy(gDisplayedStringBattle, cat_start);
+    StringCopy(gDisplayedStringBattle, col1);
     StringAppend(gDisplayedStringBattle, cat_desc);
-    StringAppend(gDisplayedStringBattle, pwr_start);
+    StringAppend(gDisplayedStringBattle, col2);
     StringAppend(gDisplayedStringBattle, pwr_desc);
     StringAppend(gDisplayedStringBattle, pwr_num);
-    StringAppend(gDisplayedStringBattle, acc_start);
+    StringAppend(gDisplayedStringBattle, gText_NewLine);
+    StringAppend(gDisplayedStringBattle, col1);
     StringAppend(gDisplayedStringBattle, acc_desc);
     StringAppend(gDisplayedStringBattle, acc_num);
-    StringAppend(gDisplayedStringBattle, gText_NewLine);
-    StringAppend(gDisplayedStringBattle, GetMoveDescription(move));
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_DESCRIPTION);
 
     if (gCategoryIconSpriteId == 0xFF)
-        gCategoryIconSpriteId = CreateSprite(&gSpriteTemplate_CategoryIcons, 38, 64, 1);
+        gCategoryIconSpriteId = CreateSprite(&gSpriteTemplate_CategoryIcons, 66, 72, 1);
 
     StartSpriteAnim(&gSprites[gCategoryIconSpriteId], cat);
 
