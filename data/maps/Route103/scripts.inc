@@ -683,7 +683,6 @@ Route103_Text_BrendanTimeToHeadBack:
 # 342 "data/maps/Route103/scripts.pory"
 
 # 343 "data/maps/Route103/scripts.pory"
-
 Route103_Text_ShouldHaveBroughtPotion:
 # 344 "data/maps/Route103/scripts.pory"
 	.string "Mein Pokémon ist unglaublich müde…\n"

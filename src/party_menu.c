@@ -1506,7 +1506,7 @@ void Task_HandleChooseMonInput(u8 taskId)
             if (gPartyMenu.action == PARTY_ACTION_CHOOSE_MON)
             {
                 u8 slot = *slotPtr;
-                if (slot < gPartiesCount[B_TRAINER_PLAYER])
+                if (slot < gPartiesCount[B_TRAINER_PLAYER] && gPartiesCount[B_TRAINER_PLAYER] > 1)
                 {
                     PlaySE(SE_SELECT);
                     gPartyMenu.action = PARTY_ACTION_SWITCH;
@@ -1517,7 +1517,10 @@ void Task_HandleChooseMonInput(u8 taskId)
             }
             else if (gPartyMenu.action == PARTY_ACTION_SWITCH)
             {
-                HandleChooseMonSelection(taskId, slotPtr);
+                if (*slotPtr < gPartiesCount[B_TRAINER_PLAYER])
+                    HandleChooseMonSelection(taskId, slotPtr);
+                else
+                    HandleChooseMonCancel(taskId, slotPtr);
             }
             break;
         }
@@ -1887,7 +1890,9 @@ static void UpdatePartySelectionSingleLayout(s8 *slotPtr, s8 movementDir)
             (*slotPtr)++;
         break;
     case MENU_DIR_LEFT:
-        if (*slotPtr % 2 == 1 && *slotPtr - 1 >= 0)
+        if (*slotPtr == PARTY_SIZE || *slotPtr == PARTY_SIZE + 1)
+            *slotPtr = 0;
+        else if (*slotPtr % 2 == 1 && *slotPtr - 1 >= 0)
             (*slotPtr)--;
         break;
     }
